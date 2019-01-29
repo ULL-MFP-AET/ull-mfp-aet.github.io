@@ -1,14 +1,11 @@
 # Procesadores de Lenguajes. Itinerario de Computación. Grado en Ingeniería Informática. Curso 2018/2019.
 
 
-Esta asignatura del [plan de estudios G026](http://www.ull.es/view/centros/etsii/Plan_de_estudios_5/es) del`
-[Grado de Informática](http://www.ull.es/view/centros/etsii/Grado_en_Ingenieria_Informatica/es)
-se ubica en el [segundo cuatrimestre del tercer curso en el itinerario de Computación](http://www.ull.es/download/centros/etsii/Documentos_3/2386211/T5-15.pdf).
+##### El Grado
 
-Esta asignatura participa en el
-[programa de Apoyo a la Docencia Presencial mediante Herramientas TIC del Vicerrectorado de Docencia]() en la modalidad A y las tutorías en modalidad B.
+* <a href="https://www.ull.es/grados/ingenieria-informatica/" target="_blank">Plan de Estudios, exámenes, etc.</a>
+* <a href="https://campusvirtual.ull.es/facultades/course/view.php?id=100" target="_blank">Aula de Coordinación de Tercer curso.(Grado en Ingeniería Informática)</a>
 
-Al finalizar el curso, se solicitará la cumplimentación del "Cuestionario de valoración de los programas".
 
 ##### Recursos
 
