@@ -12,7 +12,7 @@
 
 ##### [Referencias](references.md)
 
-##### [Tema 1: Introducción a JavaScript](https://ull-esit-pl-1819.github.io/tema-1-introduccion-a-js/#referencias-y-recursos-para-el-tema-1º)
+##### [Tema 1: Introducción a JavaScript](tema-1-introduccion-a-js.md)
 
 ##### [Tema 2: Expresiones Regulares y Análisis Léxico]()
 
