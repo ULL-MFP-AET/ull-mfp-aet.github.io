@@ -17,7 +17,7 @@ Al finalizar el curso, se solicitará la cumplimentación del "Cuestionario de v
   - [Repo ull-esit-pl-1819.github.io](https://github.com/ULL-ESIT-PL-1819/ull-esit-pl-1819.github.io)
 * Asignación de Tareas
   * [CodeLab TFG de Samuel](https://codelab-tfg1718.herokuapp.com/)
-  * [Classroom ULL-ESIT-PL-1819](https://classroom.github.com/classrooms/30231254-ull-esit-pl-1819)
+  * [Classroom ULL-ESIT-PL-1819](https://classroom.github.com/classrooms/33938084-procesadores-de-lenguaje)
 * [Instrucciones para el uso de iaas.ull.es](https://casianorodriguezleon.gitbooks.io/ull-esit-1617/recursos/iaas.html)
   - [Gestor online de pools](https://iaas.ull.es/ovirtadmin/admin/)
   - [IaaS - Uso de la aplicación de gestión de pools](https://docs.google.com/document/d/13vP4bd5LhnfNJvV6ncz20ZNTXfeg8ehWbw_ECkn4MAY/edit#)
