@@ -14,7 +14,7 @@
 
 ## [Tema 1: Introducción a JavaScript](tema1-introduccion-a-javascript/README.md)
 
-### [Práctica de Manejo del iaas.ull.es (p1-t1-iaas)](tema1-introduccion-a-javascript/practicas/README.md)
+### [Práctica de Manejo del iaas.ull.es (p1-t1-iaas)](tema1-introduccion-a-javascript/practicas/p1-t1-iaas/README.md)
 
 ## [Tema 2: Expresiones Regulares y Análisis Léxico]()
 
