@@ -31,7 +31,6 @@ Al finalizar el curso, se solicitará la cumplimentación del "Cuestionario de v
 * <a href="https://drive.google.com/file/d/1YtPNm4vS73N21QHzstcYqEzPKJQHCKeD/view" target="_blank">Calendario Académico 2018/2019</a>
 * <a href="https://docs.google.com/document/d/1XHFUAiuECAEAPTZvdsn8aJTCAV3jRovC8Px24HgcfyQ/edit?usp=sharing" target="_blank">Horarios de 3º del grado de Ingeniería Informática para el curso 18/19</a>
 * [Horarios de tutorías del Departamento de Ingeniería Informática](https://docs.google.com/spreadsheets/d/1ZTGvLA70qCYEsBwcA8dCiUZby3ZOM9oHt8kmiNNKId0/edit#gid=0)
-* [Añade el Calendario Google de la asignatura a tu Google Calendar](https://calendar.google.com/calendar/b/1?cid=dWxsLmVkdS5lc19iNDhzaWoxMjM0NmczbjhzYW0xMDlianNnc0Bncm91cC5jYWxlbmRhci5nb29nbGUuY29t)
 
 ##### Exámenes de convocatoria
 
