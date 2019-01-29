@@ -12,7 +12,7 @@
 
 ##### [Referencias](references.md)
 
-##### [Tema 1: Introducción a JavaScript](tema-1-introduccion-a-js.md)
+##### [Tema 1: Introducción a JavaScript](tema-1-introduccion-a-javascript.md)
 
 ##### [Tema 2: Expresiones Regulares y Análisis Léxico]()
 
