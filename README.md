@@ -33,12 +33,6 @@
 * [Instrucciones para las prácticas y trabajos](https://casianorodriguezleon.gitbooks.io/ull-esit-1617/content/instrucciones/)
 * [Comunidad Google+ PL1819](https://plus.google.com/u/2/communities/101901734024125937720)
 
-##### Calendarios y Horarios
-
-* <a href="https://drive.google.com/file/d/1YtPNm4vS73N21QHzstcYqEzPKJQHCKeD/view" target="_blank">Calendario Académico 2018/2019</a>
-* <a href="https://docs.google.com/document/d/1XHFUAiuECAEAPTZvdsn8aJTCAV3jRovC8Px24HgcfyQ/edit?usp=sharing" target="_blank">Horarios de 3º del grado de Ingeniería Informática para el curso 18/19</a>
-* [Horarios de tutorías del Departamento de Ingeniería Informática](https://docs.google.com/spreadsheets/d/1ZTGvLA70qCYEsBwcA8dCiUZby3ZOM9oHt8kmiNNKId0/edit#gid=0)
-
 ##### Exámenes de convocatoria
 
 * <a href="https://docs.google.com/document/d/1dv9Q6gEbs0a2YqlKlNUKG59SpQ3Bp1pH_UWqaTKUPyk/edit" target="_blank">Calendario de exámenes. Tercer curso</a>
@@ -48,6 +42,12 @@
     - 12 de junio 9:00 Aula 2.2
     - 3 de julio 9:30 Aula 2.2
     - 10 de septiembre 9:30 Aula 2.2
+
+##### Calendarios y Horarios
+
+* <a href="https://drive.google.com/file/d/1YtPNm4vS73N21QHzstcYqEzPKJQHCKeD/view" target="_blank">Calendario Académico 2018/2019</a>
+* <a href="https://docs.google.com/document/d/1XHFUAiuECAEAPTZvdsn8aJTCAV3jRovC8Px24HgcfyQ/edit?usp=sharing" target="_blank">Horarios de 3º del grado de Ingeniería Informática para el curso 18/19</a>
+* [Horarios de tutorías del Departamento de Ingeniería Informática](https://docs.google.com/spreadsheets/d/1ZTGvLA70qCYEsBwcA8dCiUZby3ZOM9oHt8kmiNNKId0/edit#gid=0)
 
 
 <br/>
