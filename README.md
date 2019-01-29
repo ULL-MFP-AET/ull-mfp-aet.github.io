@@ -47,16 +47,13 @@ Al finalizar el curso, se solicitará la cumplimentación del "Cuestionario de v
 <hr>
 <br/>
 <p>
-<iframe src="https://calendar.google.com/calendar/b/1/embed?mode=AGENDA&amp;
-height=300&amp;
-width=700&amp;
-wkst=2&amp;
-hl=es&amp;
-bgcolor=%23993399&amp;
-src=ull.edu.es_b48sij12346g3n8sam109bjsgs%40group.calendar.google.com&amp;
-color=%2323164E&amp;
-ctz=Atlantic%2FCanary"
-style="border:solid 1px #777" width="800" height="300" frameborder="0" scrolling="no">
+<iframe 
+src="https://calendar.google.com/calendar/b/2/embed?mode=AGENDA&amp;height=500&amp;wkst=2&amp;hl=es&amp;bgcolor=%23cc33cc&amp;src=ull.edu.es_8hcqtfr5u2h3o1v2smnmcqqu50%40group.calendar.google.com&amp;color=%238C500B&amp;ctz=Atlantic%2FCanary" 
+style="border-width:0" 
+width="800" 
+height="500" 
+frameborder="0" 
+scrolling="yes">
 </iframe>
 </p>
 <br/>
