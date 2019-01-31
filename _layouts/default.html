@@ -29,10 +29,11 @@
             <li><a href="{{site.baseurl}}/references.html">Refs</a></li>
             <li><a href="{{site.baseurl}}/tema1-introduccion-a-javascript/index.html">Tema 1</a></li>
 
+            {% if site.show_downloads %}
             <li class="downloads"><a href="{{ site.github.zip_url }}">ZIP</a></li>
             <li class="downloads"><a href="{{ site.github.tar_url }}">TAR</a></li>
             <li class="title">DOWNLOADS</li>
-            {% if site.show_downloads %} {% endif %}
+            {% endif %}
         </nav>
     </div>
     <!-- end header -->
