@@ -1,4 +1,3 @@
-# Procesadores de Lenguajes. Itinerario de Computación. Grado en Ingeniería Informática. Curso 2018/2019.
 
 ## [Guía Docente](https://www.ull.es/apps/guias/guias/view_guide/16020/)
 
