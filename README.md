@@ -12,7 +12,7 @@
 
 ## [Referencias](references.md)
 
-## [Tema 1: Introducción a JavaScript](tema1-introduccion-a-javascript/README.md)
+## [Tema 1: Introducción a JavaScript](tema1-introduccion-a-javascript/)
 
 ### [Práctica de Manejo del iaas.ull.es (p1-t1-iaas)](tema1-introduccion-a-javascript/practicas/p1-t1-iaas/README.md)
 

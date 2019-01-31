@@ -1,3 +1,4 @@
 title: Procesadores de Lenguajes 2018/2019
 theme: jekyll-theme-midnight
 description: <a href="https://www.ull.es/apps/guias/guias/view_teacher/117245/530/" target="_blank">Casiano Rodríguez León</a>
+exclude: [ 'Arona-winter-course', 'dsi1819', 'dsi1819-introduccion']
