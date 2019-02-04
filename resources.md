@@ -18,6 +18,10 @@
   - [Video del profesor: iaas.ull.es](https://youtu.be/qKHgbV0lYbA)
   - [https://iaas.ull.es/mismaquinas](https://iaas.ull.es/mismaquinas) 
 
+###### Impresión
+
+* [Datos para el servicio de impresión](https://usuarios.ull.es/autogestion/valores_impresion/)
+
 ###### Prácticas
 
 * Herramientas para la Asignación de Tareas
