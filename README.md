@@ -1,5 +1,4 @@
-
-## [Guía Docente](https://www.ull.es/apps/guias/guias/view_guide/16020/)
+## [Guía Docente](guia-docente.md)
 
 ## [El Grado](degree.md)
 
