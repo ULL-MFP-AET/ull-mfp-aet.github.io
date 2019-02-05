@@ -33,3 +33,11 @@
   - [ag](http://conqueringthecommandline.com/book/ack_ag) o [ack](http://conqueringthecommandline.com/book/ack_ag)
   - etc. 
 * [Hágase miembro de la comunidad Google+ PL1819](https://plus.google.com/u/2/communities/101901734024125937720)
+
+### GitHub Classroom
+
+* Una vez acepte la tarea en GitHub Classroom, pasará a ser *outside collaborator* de la organización de la asignatura,
+* En algun momento, el profesor le hará una invitación a ser miembro de pleno derecho de la organización
+    - [Acepte la invitacion del profesor a pertenecer a la organización Github de la asignatura visitando la página de la organización](https://github.com/ULL-ESIT-PL-1819)
+    - También recibirá un email con la invitación. Puede aceptar haciendo click en el correspondiente enlace
+    
