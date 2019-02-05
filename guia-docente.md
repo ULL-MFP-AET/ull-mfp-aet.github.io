@@ -1,6 +1,6 @@
-# [Guía Docente](https://www.ull.es/apps/guias/guias/view_guide/16020/)
+# [Enlace a la Guía Docente](https://www.ull.es/apps/guias/guias/view_guide/16020/)
 
-##  Esprima un Ejemplo de las Fases de un Procesador de Lenguajes
+##  Las Fases de un Procesador de Lenguajes
 
 Esprima is a tool to perform lexical and syntactical analysis of JavaScript programs.
 
