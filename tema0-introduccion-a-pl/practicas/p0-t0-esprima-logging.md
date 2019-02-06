@@ -73,12 +73,12 @@ console.log(`output:\n${output}\n---`);
 
 Se pide:
 
-1. [Acepte la asignación Classroom de esta tarea](https://classroom.github.com/a/GL7rmVu0)
-2. Rellene su entrada en este formulario poniendo su código de github junto a su alu: [formulario a rellenar](https://docs.google.com/forms/d/e/1FAIpQLScBpTDWAqjH6jLstskrwJA1e9kTxWs86lPDVjXm0SsZ-SSiiA/viewform?usp=sf_link)
+1. Acepte la asignación Classroom de esta tarea
+2. Rellene su entrada en el formulario poniendo su código de github junto a su alu
 3. Ejecute paso a paso el código de `logging.js` usando el debugger de chrome, intentando comprender el funcionamiento de la transformación realizada. Haga un resumen de lo que ha aprendido en un fichero Markdown: `informe.md`
-4. Modifique el programa para que los `console.log` insertados informe de los valores de los parámetros pasados a la función como ocurre en el siguiente ejemplo:
+4. Modifique el programa para que los `console.log` insertados informen de los valores de los parámetros pasados a la función como ocurre en el siguiente ejemplo:
 
-```
+```js
 [~/local/src/javascript/learning/esprima-pegjs-jsconfeu-talk(private)]$ node logging.js
 input:
 
