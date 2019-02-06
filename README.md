@@ -1,4 +1,4 @@
-## [Guía Docente](guia-docente.md)
+## [Guía Docente](tema0-introduccion-a-pl/guia-docente.md)
 
 ## [El Grado](degree.md)
 
