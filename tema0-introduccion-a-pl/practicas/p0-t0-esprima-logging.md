@@ -1,3 +1,5 @@
+# Práctica p0-t0-esprima-logging
+
 En clase hemos visto el programa `logging.js` que cuando se ejecuta modifica el código de entrada 
 produciendo como salida un código que inserta  mensajes de `console.log` a la entrada de cada 
 función:
