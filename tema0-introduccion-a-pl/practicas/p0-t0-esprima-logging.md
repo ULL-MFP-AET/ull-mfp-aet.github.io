@@ -3,7 +3,6 @@ produciendo como salida un código que inserta  mensajes de `console.log` a la e
 función:
 
 ```
----
 [~/local/src/javascript/learning/esprima-pegjs-jsconfeu-talk(private)]$ node logging.js 
 input:
 
@@ -74,32 +73,38 @@ console.log(`output:\n${output}\n---`);
 
 Se pide:
 
-1. Ejecute paso a paso el código usando el debugger de chrome intentando comprender el funcionamiento de la transformación realizada
-
-2. Modifique el programa para que los `console.log` insertados informe de los valores de los parámetros pasados a la función como en el siguiente ejemplo:
+1. Rellene su entrada en la hoja de firmas poniendo su código de github junto a su alu
+2. Ejecute paso a paso el código usando el debugger de chrome intentando comprender el funcionamiento de la transformación realizada
+3. Modifique el programa para que los `console.log` insertados informe de los valores de los parámetros pasados a la función como en el siguiente ejemplo:
 
 ```
-~/local/src/javascript/learning/esprima-pegjs-jsconfeu-talk(private)]$ node logging.js 
+[~/local/src/javascript/learning/esprima-pegjs-jsconfeu-talk(private)]$ node logging.js
 input:
 
 function foo(a, b) {
   var x = 'blah';
   var y = (function (z) {
     return z+3;
-  })();
+  })(2);
 }
 foo(1, 'wut', 3);
 
 ---
 output:
 function foo(a, b) {
-    console.log('Entering foo(a,b)');
+    console.log('Entering foo(' + a, b + ')');
     var x = 'blah';
     var y = function (z) {
-        console.log('Entering <anonymous function>(z)');
+        console.log('Entering <anonymous function>(' + z + ')');
         return z + 3;
-    }();
+    }(2);
 }
 foo(1, 'wut', 3);
 ---
+```
+Cuando se ejecuta la salida se obtiene:
+```
+~/local/src/javascript/learning/esprima-pegjs-jsconfeu-talk(private)]$ node out.js 
+Entering foo(1 wut)
+Entering <anonymous function>(2)
 ```

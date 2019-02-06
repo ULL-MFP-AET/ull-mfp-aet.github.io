@@ -12,3 +12,7 @@ Esprima is a tool to perform lexical and syntactical analysis of JavaScript prog
     * This repository contains code samples from the talk [Parsing, Compiling, and Static Metaprogramming][talk] at JSConfEU 2013. You can find [slides for the talk on Speaker Deck](https://speakerdeck.com/pdubroy/parsing-compiling-and-static-metaprogramming).
 
 [talk]: http://2013.jsconf.eu/speakers/patrick-dubroy-parsing-compiling-and-static-metaprogramming.html
+
+### Prácticas
+
+1. [Descripción de la Práctica p0-t0-esprima-logging](practicas/p0-t0-esprima-logging)
