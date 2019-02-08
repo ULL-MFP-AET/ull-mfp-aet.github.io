@@ -29,6 +29,11 @@
   * [CodeLab TFG de Samuel](https://codelab-tfg1718.herokuapp.com/)
 * [Instrucciones para las entregas de Prácticas y Trabajos](https://casianorodriguezleon.gitbooks.io/ull-esit-1617/content/instrucciones/)
 
+###### Sede ULL
+
+* [Sede ULL](https://sede.ull.es/)
+    - [Solicitud General](https://sede.ull.es/ecivilis-site/catalog/showProcedure/229)
+    - [Mis trámites](https://sede.ull.es/ecivilis-site/records/myRecords)
 ###### Google+
 
 * [Comunidad Google+ PL1819](https://plus.google.com/u/2/communities/101901734024125937720)
