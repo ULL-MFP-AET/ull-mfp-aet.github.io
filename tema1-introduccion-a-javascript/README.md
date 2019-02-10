@@ -11,8 +11,7 @@
 
 ### Prácticas
 
-1. <a href="practicas/p1-t1-iaas/" target="_blank">Descr
-ipción de la Práctica p1-t1-iaas</a>
+1. <a href="practicas/p1-t1-iaas/" target="_blank">Descripción de la Práctica p1-t1-iaas</a>
     - [Express Web Framework (Node.js/JavaScript)](https://developer.mozilla.org/en-US/docs/Learn/Server-side/Express_Nodejs) (Mozilla)
 
 ## Capítulo 2. Editores. Entornos de Trabajo
@@ -55,6 +54,11 @@ ipción de la Práctica p1-t1-iaas</a>
 - <a href="https://proquest-safaribooksonline-com.accedys2.bbtk.ull.es/book/web-development/9781680505344" target="_blank">Node.js 8 the Right Way</a> Practical, Server-Side JS that Scales. Jim R. Wilson 2018 Edition. Safari. Acceda por medio del <a href="https://www.ull.es/servicios/biblioteca/servicios/puntoq/"  target="_blank">PuntoQ</a> de la ULL
 - [Book "Node.js 8 the Right Way"](https://books.google.es/books?id=oA9QDwAAQBAJ&lpg=PT96&ots=-mLQPlvsSj&dq=should%20ldjclient%20emit%20a%20close%20event&hl=es&pg=PP1#v=onepage&q=should%20ldjclient%20emit%20a%20close%20event&f=false) 2018 Edition Google Books
 - [Book "Node.js 8 the Right Way"](https://github.com/iMarcoGovea/books/blob/master/nodejs/Node.js%20the%20Right%20Way.pdf) Old Edition in GitHub
+
+
+#### Streams
+
+- [A Brief History of Node Streams](https://medium.com/the-node-js-collection/a-brief-history-of-node-streams-pt-1-3401db451f21)
 
 ## Capítulo 4. Pruebas, Integración y Calidad
 
