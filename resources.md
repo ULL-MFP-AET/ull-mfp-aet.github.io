@@ -25,6 +25,7 @@
 ###### STIC
 
 - [Gestor de incidencias. RT para rt.stic.ull.es](https://usuarios.ull.es/rt/SelfService/)
+- [Servicio de vpn: guías de configuración](https://www.ull.es/servicios/stic/2016/05/10/servicio-de-vpn-de-la-ull/)
 
 ###### Prácticas
 
