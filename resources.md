@@ -22,6 +22,10 @@
 
 * [Datos para el servicio de impresión](https://usuarios.ull.es/autogestion/valores_impresion/)
 
+###### STIC
+
+- [Gestor de incidencias. RT para rt.stic.ull.es](https://usuarios.ull.es/rt/SelfService/)
+
 ###### Prácticas
 
 * Herramientas para la Asignación de Tareas
