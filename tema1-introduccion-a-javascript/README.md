@@ -62,7 +62,7 @@
 
 ## Capítulo 4. Pruebas, Integración y Calidad
 
-### Chapter 5. Transforming Data and Testing Continuously
+### Transforming Data and Testing Continuously
 
 * [GitHub repo ULL-MII-CA-1819/nodejs-the-right-way. Chapter 5. Transforming Data and Testing Continuously](https://github.com/ULL-MII-CA-1819/nodejs-the-right-way/tree/master/transforming-data-and-testing-continuously-chapter-5)
 * [Safari. Node.js The Right Way. Chapter 5 Transforming Data and Testing Continuously](https://proquest-safaribooksonline-com.accedys2.bbtk.ull.es/book/web-development/9781680505344/part-iidot-working-with-data/chp_databases_html#X2ludGVybmFsX0h0bWxWaWV3P3htbGlkPTk3ODE2ODA1MDUzNDQlMkZjaHBfdHJhbnNmb3JtaW5nX2RhdGFfaHRtbCZxdWVyeT0=)
@@ -92,6 +92,9 @@
   * [Istanbul](https://casianorodriguezleon.gitbooks.io/ull-esit-1617/content/apuntes/pruebas/istanbul.html)
   * [BrowserSync](https://casianorodriguezleon.gitbooks.io/ull-esit-1617/content/apuntes/pruebas/browsersync.html)
 
+### Prácticas
+
+1. <a href="practicas/p2-t1-testing/" target="_blank">Descripción de la Práctica p2-t1-testing</a>
 
 ## Capítulo 5. Programación Funcional
 
