@@ -16,6 +16,8 @@
 
 ### [Práctica de Manejo del iaas.ull.es (p1-t1-iaas)](tema1-introduccion-a-javascript/practicas/p1-t1-iaas/README.md)
 
+### [Práctica de Testing. Traduciendo de XML a JSON (p2-t1-testing)](tema1-introduccion-a-javascript/practicas/p2-t1-testing/)
+
 ## [Tema 2: Expresiones Regulares y Análisis Léxico](tema2-expresiones-regulares-y-analisis-lexico/README.md)
 
 ## [Tema 3: Análisis Sintáctico Descendente Recursivo](tema3-analisis-descendente-predictivo-recursivo)
