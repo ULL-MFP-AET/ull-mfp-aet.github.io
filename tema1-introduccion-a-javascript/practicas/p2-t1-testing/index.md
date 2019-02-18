@@ -8,11 +8,12 @@
     en Safari y resuelva los problemas en la secciónes *Extracting Classification Codes* y *Extracting Sources*
 
 * En el repo creado al aceptar la assignación deberá dejar
-  - los ejemplos realizados durante la lectura, 
-  - Ejemplos de ejecuciones
-  - las pruebas, 
-  - las soluciones a los problemas planteados 
-  - un tutorial explicando lo que ha aprendido. 
+  - Los códigos de los ejemplos realizados durante la lectura, 
+  - Capturas de ejecuciones
+  - Las pruebas, 
+  - Las soluciones a los problemas planteados 
+  - Un `gulpfile.js` para la ejecución de las tareas
+  - Un `README.md` con un tutorial explicando lo que ha aprendido. 
 
 Suba el enlace al repo en el campus.
 
