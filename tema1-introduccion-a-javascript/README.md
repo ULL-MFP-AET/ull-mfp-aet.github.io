@@ -34,7 +34,7 @@
 
 ### Debugging NodeJS
 
-* [Debugging NodeJS](https://casianorodriguezleon.gitbooks.io/ull-esit-1617/content/apuntes/nodejs/)
+* [Debugging NodeJS](https://crguezl.github.io/ull-esit-1617/_book/apuntes/nodejs/)
 * Debugging in 2017 with Node.js YouTube video https://youtu.be/Xb_0awoShR8
     * [Debugging in 2017 with Node.js](https://youtu.be/Xb_0awoShR8) YouTube
 
@@ -70,27 +70,27 @@
 
 ### Apuntes sobre Herramientas para Pruebas
 
-* [Sección Pruebas en los Apuntes del curso 16/17](https://casianorodriguezleon.gitbooks.io/ull-esit-1617/content/apuntes/pruebas/)
-  * [Mocha](https://casianorodriguezleon.gitbooks.io/ull-esit-1617/content/apuntes/pruebas/mocha.html)
-  * [Should](https://casianorodriguezleon.gitbooks.io/ull-esit-1617/content/apuntes/pruebas/mocha.html#should)
-  * [Travis](https://casianorodriguezleon.gitbooks.io/ull-esit-1617/content/apuntes/pruebas/travis.html)
-  * [Chai](https://casianorodriguezleon.gitbooks.io/ull-esit-1617/content/apuntes/pruebas/chai.html)
-  * [Sinon](https://casianorodriguezleon.gitbooks.io/ull-esit-1617/content/apuntes/pruebas/sinon.html)
-  * [Karma](https://casianorodriguezleon.gitbooks.io/ull-esit-1617/content/apuntes/pruebas/karma.html)
-  * [Covering](https://casianorodriguezleon.gitbooks.io/ull-esit-1617/content/apuntes/pruebas/covering.html)
-  * [Blanket](https://casianorodriguezleon.gitbooks.io/ull-esit-1617/content/apuntes/pruebas/blanket.html)
-  * [Istanbul](https://casianorodriguezleon.gitbooks.io/ull-esit-1617/content/apuntes/pruebas/istanbul.html)
-  * [BrowserSync](https://casianorodriguezleon.gitbooks.io/ull-esit-1617/content/apuntes/pruebas/browsersync.html)
+* [Sección Pruebas en los Apuntes del curso 16/17](https://crguezl.github.io/ull-esit-1617/_book/apuntes/pruebas/)
+  * [Mocha](https://crguezl.github.io/ull-esit-1617/_book/apuntes/pruebas/mocha.html)
+  * [Should](https://crguezl.github.io/ull-esit-1617/_book/apuntes/pruebas/mocha.html#should)
+  * [Travis](https://crguezl.github.io/ull-esit-1617/_book/apuntes/pruebas/travis.html)
+  * [Chai](https://crguezl.github.io/ull-esit-1617/_book/apuntes/pruebas/chai.html)
+  * [Sinon](https://crguezl.github.io/ull-esit-1617/_book/apuntes/pruebas/sinon.html)
+  * [Karma](https://crguezl.github.io/ull-esit-1617/_book/apuntes/pruebas/karma.html)
+  * [Covering](https://crguezl.github.io/ull-esit-1617/_book/apuntes/pruebas/covering.html)
+  * [Blanket](https://crguezl.github.io/ull-esit-1617/_book/apuntes/pruebas/blanket.html)
+  * [Istanbul](https://crguezl.github.io/ull-esit-1617/_book/apuntes/pruebas/istanbul.html)
+  * [BrowserSync](https://crguezl.github.io/ull-esit-1617/_book/apuntes/pruebas/browsersync.html)
 
 #### Pruebas en el Navegador/Browser
 
 * [Learning JavaScript Test-Driven Development by Example](https://www.sitepoint.com/learning-javascript-test-driven-development-by-example/) SitePoint Tutorial
 * [Mocha y Chai en el navegador. Apuntes del curso 15/16](https://casianorodriguezleon.gitbooks.io/pl1516/content/practicas/mochachaisinon.html)
 * [Testing your frontend JavaScript code using mocha, chai, and sinon. Nicolas Perriault](https://nicolas.perriault.net/code/2013/testing-frontend-javascript-code-using-mocha-chai-and-sinon/)
- [Covering](https://casianorodriguezleon.gitbooks.io/ull-esit-1617/content/apuntes/pruebas/covering.html)
-  * [Blanket](https://casianorodriguezleon.gitbooks.io/ull-esit-1617/content/apuntes/pruebas/blanket.html)
-  * [Istanbul](https://casianorodriguezleon.gitbooks.io/ull-esit-1617/content/apuntes/pruebas/istanbul.html)
-  * [BrowserSync](https://casianorodriguezleon.gitbooks.io/ull-esit-1617/content/apuntes/pruebas/browsersync.html)
+ [Covering](https://crguezl.github.io/ull-esit-1617/_book/apuntes/pruebas/covering.html)
+  * [Blanket](https://crguezl.github.io/ull-esit-1617/_book/apuntes/pruebas/blanket.html)
+  * [Istanbul](https://crguezl.github.io/ull-esit-1617/_book/apuntes/pruebas/istanbul.html)
+  * [BrowserSync](https://crguezl.github.io/ull-esit-1617/_book/apuntes/pruebas/browsersync.html)
 
 ### Prácticas
 
@@ -135,7 +135,7 @@
 
 ## Capítulo 7. Módulos en NPM
 
-* [Creación de Paquetes NPM](https://casianorodriguezleon.gitbooks.io/ull-esit-1617/content/apuntes/npm/nodejspackages.html) (Apuntes)
+* [Creación de Paquetes NPM](https://crguezl.github.io/ull-esit-1617/_book/apuntes/npm/nodejspackages.html) (Apuntes)
 * [Ejemplo en https://github.com/ULL-ESIT-DSI-1617/create-a-npm-module](https://github.com/ULL-ESIT-DSI-1617/create-a-npm-module)
   - [Submódulo https://github.com/ULL-ESIT-DSI-1617/scapegoat](https://github.com/ULL-ESIT-DSI-1617/scapegoat)
   - [Submódulo https://github.com/ULL-ESIT-DSI-1617/prueba-scapegoat](https://github.com/ULL-ESIT-DSI-1617/prueba-scapegoat)
@@ -183,11 +183,11 @@ un macro-repo que consiste en el repo del módulo y en el programa de uso.
 ## Capítulo 9. Diseño: Smells, Strategy Pattern y el Switch Smell
 
 * [Apuntes del curso 15/16: Code Smells/Código Hediondo](https://casianorodriguezleon.gitbooks.io/pl1516/content/apuntes/codesmell.html)
-* [Apuntes del curso 16/17: Patrones de Diseño](https://casianorodriguezleon.gitbooks.io/ull-esit-1617/content/apuntes/patterns/)
+* [Apuntes del curso 16/17: Patrones de Diseño](https://crguezl.github.io/ull-esit-1617/_book/apuntes/patterns/)
 * [Apuntes del curso 15/16: Eliminando Switch Smell](https://casianorodriguezleon.gitbooks.io/pl1516/content/practicas/noswitchsmell.html)
-* [Apuntes del curso 16/17: Strategy Pattern](https://casianorodriguezleon.gitbooks.io/ull-esit-1617/content/apuntes/patterns/strategypattern.html)
-* [Apuntes del curso 16/17: Práctica: Evaluar Strategy Pattern](https://casianorodriguezleon.gitbooks.io/ull-esit-1617/content/practicas/practicaevaluastrategypattern.html)
-* [Apuntes del curso 16/17: Práctica: Creación de Paquetes NPM y Strategy Pattern](https://casianorodriguezleon.gitbooks.io/ull-esit-1617/content/practicas/practicamodulestrategypattern.html)
+* [Apuntes del curso 16/17: Strategy Pattern](https://crguezl.github.io/ull-esit-1617/_book/apuntes/patterns/strategypattern.html)
+* [Apuntes del curso 16/17: Práctica: Evaluar Strategy Pattern](https://crguezl.github.io/ull-esit-1617/_book/practicas/practicaevaluastrategypattern.html)
+* [Apuntes del curso 16/17: Práctica: Creación de Paquetes NPM y Strategy Pattern](https://crguezl.github.io/ull-esit-1617/_book/practicas/practicamodulestrategypattern.html)
 * [JSHint](http://jshint.com/)
 
 ## Capítulo 10. JavaScript and The Browser

@@ -10,7 +10,8 @@
 * En el repo creado al aceptar la assignación deberá dejar
   - Los códigos de los ejemplos realizados durante la lectura, 
   - Capturas de ejecuciones
-  - Las pruebas, 
+  - Las pruebas,
+  - Añada integración contínua con [Travis](https://crguezl.github.io/ull-esit-1617/_book/apuntes/pruebas/travis.html)
   - Las soluciones a los problemas planteados 
   - Un `gulpfile.js` para la ejecución de las tareas
   - Un `README.md` con un tutorial explicando lo que ha aprendido. 
