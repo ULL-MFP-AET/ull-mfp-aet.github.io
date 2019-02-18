@@ -132,6 +132,36 @@ Book [132](../data/cache/epub/132/pg132.rdf) is *The Art of War*:
       <pgterms:file rdf:about="http://www.gutenberg.org/ebooks/132.epub.noimages">
 ```
 
+The important pieces of information that we’d like to extract are as follows:
+
+- The Gutenberg ID (132)
+- The book’s title
+- The list of authors (agents)
+- The list of subjects
+
+What we want to have:
+
+A way to transform all these XML files to equivalent JSON documents, suitable for passing in to [elasticsearch](https://www.elastic.co/blog/a-practical-introduction-to-elasticsearch)
+
+```
+[~/local/src/CA/sol-nodejs-the-right-way/transforming-data-and-testing-continuously-chapter-5(master)]$ node databases/rdf-to-json.js data/cache/epub/132/pg132.rdf
+```
+
+```json
+{
+  "id": 132,
+  "title": "The Art of War",
+  "authors": [
+    "Sunzi, active 6th century B.C.",
+    "Giles, Lionel"
+  ],
+  "subjects": [
+    "Military art and science -- Early works to 1800",
+    "War -- Early works to 1800"
+  ]
+}
+```
+
 ##### Extracting Classification Codes
 
 When extracting fields from the Project Gutenberg RDF (XML) files, in ​Traversing the Document​, we specifically selected the Library of Congress Subject Headings (LCSH) and stored them in an array called subjects. At that time, we carefully avoided the Library of Congress Classification (LCC) single-letter codes. Recall that the LCC portion of an RDF file looks like this:
