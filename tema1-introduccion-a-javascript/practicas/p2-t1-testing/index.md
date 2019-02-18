@@ -45,6 +45,11 @@ I made a `gulpfile.js` to simplify the execution of tasks and included a target 
 See the code of the gulp task:
 
 ```js
+var gulp = require('gulp');
+var shell = require('gulp-shell');
+
+...
+
 /********************* CHAPTER 5 *********************/
 // Chapter 5: Transforming Data and Testing Continuously
 gulp.task("c5-get-guttenberg", shell.task(
