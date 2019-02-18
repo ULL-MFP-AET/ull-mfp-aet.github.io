@@ -29,7 +29,7 @@ See [Section *The Complete Project Gutenberg Catalog*](https://www.gutenberg.org
 To obtain the data:
 
 ```
-curl -O https://www.gutenberg.org/cache/epub/feeds/rdf-files.tar.bz2'
+curl -O https://www.gutenberg.org/cache/epub/feeds/rdf-files.tar.bz2
 ```
 
 then you have to extract the files form the archive:
@@ -39,7 +39,8 @@ tar -xvjf rdf-files.tar.bz2
 ```
 
 I made a `gulpfile.js` to simplify the execution of tasks and included a target `c5-get-guttenberg`:
-My [`gulpfile.js`](https://github.com/ULL-MII-CA-1819/nodejs-the-right-way/blob/master/gulpfile.js) (not available at the moment)
+
+(Here is my [`gulpfile.js`](https://github.com/ULL-MII-CA-1819/nodejs-the-right-way/blob/master/gulpfile.js) not available at the moment)
 
 See the code of the gulp task:
 
