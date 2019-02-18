@@ -48,7 +48,7 @@ See the code of the gulp task:
 var gulp = require('gulp');
 var shell = require('gulp-shell');
 
-...
+// ... many tasks omitted
 
 /********************* CHAPTER 5 *********************/
 // Chapter 5: Transforming Data and Testing Continuously
