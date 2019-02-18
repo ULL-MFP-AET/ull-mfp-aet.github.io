@@ -1,10 +1,10 @@
 # Práctica: Transforming Data and Testing Continuously (p2-t1-testing)
 
-* Lea el 
+* Deberá primero estar autenticado en [BULL PuntoQ](https://www.ull.es/servicios/biblioteca/servicios/puntoq/), luego lea:
 
-    [Capítulo 5 "Transforming Data and Testing Continuously" de *Node.JS The Right Way*](https://proquest-safaribooksonline-com.accedys2.bbtk.ull.es/book/web-development/9781680505344/part-iidot-working-with-data/chp_databases_html#X2ludGVybmFsX0h0bWxWaWV3P3htbGlkPTk3ODE2ODA1MDUzNDQlMkZjaHBfdHJhbnNmb3JtaW5nX2RhdGFfaHRtbCZxdWVyeT0=)  (Deberá primero estar autenticado en [BULL PuntoQ](https://www.ull.es/servicios/biblioteca/servicios/puntoq/))
+    [Capítulo 5 "Transforming Data and Testing Continuously" de *Node.JS The Right Way*](https://proquest-safaribooksonline-com.accedys2.bbtk.ull.es/book/web-development/9781680505344/part-iidot-working-with-data/chp_databases_html#X2ludGVybmFsX0h0bWxWaWV3P3htbGlkPTk3ODE2ODA1MDUzNDQlMkZjaHBfdHJhbnNmb3JtaW5nX2RhdGFfaHRtbCZxdWVyeT0=)
 
-    y resuelva los problemas en la secciónes *Extracting Classification Codes* y *Extracting Sources*
+    en Safari y resuelva los problemas en la secciónes *Extracting Classification Codes* y *Extracting Sources*
 
 ##### Extracting Classification Codes
 
