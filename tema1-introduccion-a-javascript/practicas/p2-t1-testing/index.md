@@ -26,14 +26,20 @@ Before we can start manipulating data with Node.js, we have to get it. The data 
 
 See [Section *The Complete Project Gutenberg Catalog*](https://www.gutenberg.org/wiki/Gutenberg:Feeds)
 
+To obtain the data:
 
-Execute
+```
+curl -O https://www.gutenberg.org/cache/epub/feeds/rdf-files.tar.bz2'
+```
 
-`gulp c5-test-databases`
+then you have to extract the files form the archive:
 
-See section chapter 5 in
+```
+tar -xvjf rdf-files.tar.bz2
+```
 
-[`gulpfile.js`](https://github.com/ULL-MII-CA-1819/nodejs-the-right-way/blob/master/gulpfile.js)
+I made a `gulpfile.js` to simplify the execution of tasks and included a target `c5-get-guttenberg`:
+My [`gulpfile.js`](https://github.com/ULL-MII-CA-1819/nodejs-the-right-way/blob/master/gulpfile.js) (not available at the moment)
 
 See the code of the gulp task:
 
