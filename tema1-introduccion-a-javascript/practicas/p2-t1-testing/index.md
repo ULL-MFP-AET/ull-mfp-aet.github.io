@@ -6,6 +6,14 @@
 
     en Safari y resuelva los problemas en la secciónes *Extracting Classification Codes* y *Extracting Sources*
 
+* En el repo creado al aceptar la assignación deberá dejar
+  - los ejemplos realizados durante la lectura, 
+  - Ejemplos de ejecuciones
+  - las pruebas, 
+  - las soluciones a los problemas planteados 
+  - un tutorial explicando lo que ha aprendido. 
+
+Suba el enlace al repo en el campus.
 ##### Extracting Classification Codes
 
 When extracting fields from the Project Gutenberg RDF (XML) files, in ​Traversing the Document​, we specifically selected the Library of Congress Subject Headings (LCSH) and stored them in an array called subjects. At that time, we carefully avoided the Library of Congress Classification (LCC) single-letter codes. Recall that the LCC portion of an RDF file looks like this:
@@ -79,12 +87,6 @@ Consider these questions:
 Once you have an idea of what data you’ll want to extract, try creating a JSON object by hand for this one download source. When you’re happy with your data representation, use your existing continuous testing infrastructure and add a test that checks for this new information.
 
 Finally, extend the book object produced in `parse-rdf.js` to include this data to make the test pass.
-
-## Entrega
-
-En el repo creado al aceptar la assignación deberá dejar los ejemplos realizados durante la lectura, las pruebas, las soluciones a los problemas planteados así como un tutorial explicando lo que ha aprendido. 
-
-Suba el enlace al repo en el campus.
 
 ## Recursos
 
