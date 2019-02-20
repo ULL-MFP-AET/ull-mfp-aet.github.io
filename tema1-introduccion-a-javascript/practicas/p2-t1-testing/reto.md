@@ -35,7 +35,7 @@ y **webpage**s:
 Convierta el valor de la entrada `authors` en un Array
 de objetos que disponga de atributos `name` y `webpages`. 
 El atributo `webpages` es el valor del atributo `rdf:resource` 
-del elemento `pgterms:webpage`:
+de los elementos `pgterms:webpage`:
 
 ```json
 {
