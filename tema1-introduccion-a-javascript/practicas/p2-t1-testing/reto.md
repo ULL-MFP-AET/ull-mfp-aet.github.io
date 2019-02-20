@@ -33,7 +33,7 @@ y **webpage**s:
 ```
 
 Convierta el valor de la entrada `authors` en un Array
-de objetos que disponga de atributos `name` y `webpages`. 
+de objetos, cada uno de los cuales disponga de atributos `name` y `webpages`. 
 El atributo `webpages` es el valor del atributo `rdf:resource` 
 de los elementos `pgterms:webpage`:
 
