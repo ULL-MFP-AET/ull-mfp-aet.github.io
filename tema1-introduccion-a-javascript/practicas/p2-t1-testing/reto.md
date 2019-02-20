@@ -18,7 +18,7 @@ En el JSON generado, el valor de la entrada `authors` es un Array de Strings:
 }
 ```
 
-En los ficheros RDF figura información adicional sobre los autores. Por ejemplo tienen **alias**
+En los ficheros RDF figura información adicional sobre los autores. Por ejemplo tienen atributos **alias**
 y **webpage**s:
 
 ```xml
