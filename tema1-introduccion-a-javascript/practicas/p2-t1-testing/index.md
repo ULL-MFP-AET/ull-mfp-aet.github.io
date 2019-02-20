@@ -257,3 +257,7 @@ Finally, extend the book object produced in `parse-rdf.js` to include this data 
 * [BULL PuntoQ](https://www.ull.es/servicios/biblioteca/servicios/puntoq/)
 * [Safari. Chapter 5
 Transforming Data and Testing Continuously](https://proquest-safaribooksonline-com.accedys2.bbtk.ull.es/book/web-development/9781680505344/part-iidot-working-with-data/chp_databases_html#X2ludGVybmFsX0h0bWxWaWV3P3htbGlkPTk3ODE2ODA1MDUzNDQlMkZjaHBfdHJhbnNmb3JtaW5nX2RhdGFfaHRtbCZxdWVyeT0=)
+
+## Reto
+
+Durante la hora de práctica, realice el reto que le propone el profesor
