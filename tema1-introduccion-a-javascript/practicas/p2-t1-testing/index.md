@@ -224,7 +224,7 @@ Most of the metadata in the Project Gutenberg RDF files describes where each boo
 
         ...
 
-<dcterms:hasFormat>
+    <dcterms:hasFormat>
       <pgterms:file rdf:about="http://www.gutenberg.org/ebooks/132.kindle.noimages">
         <dcterms:isFormatOf rdf:resource="ebooks/132"/>
         <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2015-08-01T01:24:38.440052</dcterms:modified>
