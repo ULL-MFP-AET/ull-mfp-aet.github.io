@@ -59,3 +59,4 @@ de los elementos `pgterms:webpage`:
 ```
 
 Esta vez invierta el BDD: una vez escrita su solución, escriba las pruebas.
+Quizá el módulo [chai-things](https://www.npmjs.com/package/chai-things) pueda serle de ayuda.
