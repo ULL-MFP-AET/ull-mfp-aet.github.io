@@ -42,6 +42,7 @@
 ## Capítulo 2: Análisis Léxico
 
 * [Compiler Construction by Wikipedians](https://books.google.es/books?id=nMZnyp_zW8AC&pg=PA570#v=onepage&q=Lexical&f=false). Chapter  Lexical Analysis
+* [Un caso a estudiar: El módulo npm lexical-parser](https://github.com/Eitz/lexical-parser)
 * [Esprima. Chapter 3. Lexical Analysis (Tokenization)](http://esprima.readthedocs.io/en/latest/lexical-analysis.html)
     - [RepoULL-ESIT-GRADOII-PL/esprima-pegjs-jsconfeu-talk](https://github.com/ULL-ESIT-GRADOII-PL/esprima-pegjs-jsconfeu-talk)
 * [jison-lex](https://github.com/zaach/jison-lex)
