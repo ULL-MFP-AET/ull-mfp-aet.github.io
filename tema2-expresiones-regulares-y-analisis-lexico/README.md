@@ -1,6 +1,6 @@
 # Tema 2: Expresiones Regulares y Análisis Léxico
 
-#### Apuntes 
+## Capítulo. Introducción a las Expresiones Regulares
 
 * [Eloquent JavaScript (2nd Edition): Regular Expressions](http://eloquentjavascript.net/09_regexp.html)
 * [Eloquent JavaScript (3d Edition): Regular Expressions](http://eloquentjavascript.net/3rd_edition/09_regexp.html)
@@ -14,7 +14,22 @@
   - [Parsing de ficheros ini](http://crguezl.github.io/pl-grado-ini-files/): despliegue
   - [Repo con el código del parsing de ficheros ini](https://github.com/crguezl/pl-grado-ini-files)
 
-#### Ejercicios
+### Backtracking en Expresiones Regulares
+
+- [Backtracking. Paréntesis dentro de una RegExp](https://casianorodriguezleon.gitbooks.io/ull-esit-1617/content/apuntes/regexp/regexpejercicios.html#backtracking)
+
+### Funciones en el Argumento de Reemplazo
+
+- [Funciones en el Argumento de Reemplazo](https://casianorodriguezleon.gitbooks.io/ull-esit-1617/content/apuntes/regexp/regexpejercicios.html#reemplazofunciones)
+
+### Expresiones Regulares Extendidas y Unicode
+
+* [Repositorio con ejemplos de uso de XRegExp](https://github.com/ULL-ESIT-GRADOII-PL/xregexp-example) 
+* [JavaScript y Unicode](https://github.com/ULL-ESIT-PL/unicode-js) (Repo en GitHub unicode-js)
+* [Ejemplos de extensiones de XRegExp para Unicode](https://github.com/ULL-ESIT-GRADOII-PL/xregexp-example/blob/gh-pages/unicode.js)
+
+### Ejercicios
+
 * [Ejercicios de Expresiones Regulares](https://casianorodriguezleon.gitbooks.io/ull-esit-1617/content/apuntes/regexp/regexpejercicios.html)
   - [lookahead](https://casianorodriguezleon.gitbooks.io/ull-esit-1617/content/apuntes/regexp/regexpejercicios.html#lookahead)
   - [lookbehind](https://casianorodriguezleon.gitbooks.io/ull-esit-1617/content/apuntes/regexp/regexpejercicios.html#lookbehind)
@@ -24,30 +39,15 @@
   - Tarea. Haga los ejercicios en [https://regexone.com/](https://regexone.com/)
   - Tarea. Haga los ejercicios en [https://www.w3resource.com/javascript-exercises/javascript-regexp-exercises.php](https://www.w3resource.com/javascript-exercises/javascript-regexp-exercises.php)
 
-#### Backtracking en Expresiones Regulares
-
-- [Backtracking. Paréntesis dentro de una RegExp](https://casianorodriguezleon.gitbooks.io/ull-esit-1617/content/apuntes/regexp/regexpejercicios.html#backtracking)
-
-#### Funciones en el Argumento de Reemplazo
-
-- [Funciones en el Argumento de Reemplazo](https://casianorodriguezleon.gitbooks.io/ull-esit-1617/content/apuntes/regexp/regexpejercicios.html#reemplazofunciones)
-
-#### Expresiones Regulares Extendidas y Unicode
-
-* [Repositorio con ejemplos de uso de XRegExp](https://github.com/ULL-ESIT-GRADOII-PL/xregexp-example) 
-* [JavaScript y Unicode](https://github.com/ULL-ESIT-PL/unicode-js) (Repo en GitHub unicode-js)
-* [Ejemplos de extensiones de XRegExp para Unicode](https://github.com/ULL-ESIT-GRADOII-PL/xregexp-example/blob/gh-pages/unicode.js)
-
-#### Expresiones Regulares en Perl y en otros lenguajes
-
-* [Expresiones Regulares en Perl](http://nereida.deioc.ull.es/~pl/perlexamples/node7.html)
-* [Expresiones Regulares en varios lenguajes](http://nereida.deioc.ull.es/~pl/perlexamples/node28.html)
-
-
-#### Análisis Léxico
+## Capítulo 2: Análisis Léxico
 
 * [Compiler Construction by Wikipedians](https://books.google.es/books?id=nMZnyp_zW8AC&pg=PA570#v=onepage&q=Lexical&f=false). Chapter  Lexical Analysis
 * [Esprima. Chapter 3. Lexical Analysis (Tokenization)](http://esprima.readthedocs.io/en/latest/lexical-analysis.html)
     - [RepoULL-ESIT-GRADOII-PL/esprima-pegjs-jsconfeu-talk](https://github.com/ULL-ESIT-GRADOII-PL/esprima-pegjs-jsconfeu-talk)
 * [jison-lex](https://github.com/zaach/jison-lex)
 * [lexer](https://github.com/aaditmshah/lexer)
+
+## Capítulo 3: Expresiones Regulares en Perl y en otros lenguajes
+
+* [Expresiones Regulares en Perl](http://nereida.deioc.ull.es/~pl/perlexamples/node7.html)
+* [Expresiones Regulares en varios lenguajes](http://nereida.deioc.ull.es/~pl/perlexamples/node28.html)
