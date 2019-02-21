@@ -1,6 +1,6 @@
 # Tema 2: Expresiones Regulares y Análisis Léxico
 
-## Capítulo. Introducción a las Expresiones Regulares
+## Capítulo 1. Introducción a las Expresiones Regulares
 
 * [Eloquent JavaScript (2nd Edition): Regular Expressions](http://eloquentjavascript.net/09_regexp.html)
 * [Eloquent JavaScript (3d Edition): Regular Expressions](http://eloquentjavascript.net/3rd_edition/09_regexp.html)
