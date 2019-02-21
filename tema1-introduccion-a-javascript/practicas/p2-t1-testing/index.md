@@ -258,6 +258,7 @@ Finally, extend the book object produced in `parse-rdf.js` to include this data 
 * [Safari. Chapter 5
 Transforming Data and Testing Continuously](https://proquest-safaribooksonline-com.accedys2.bbtk.ull.es/book/web-development/9781680505344/part-iidot-working-with-data/chp_databases_html#X2ludGVybmFsX0h0bWxWaWV3P3htbGlkPTk3ODE2ODA1MDUzNDQlMkZjaHBfdHJhbnNmb3JtaW5nX2RhdGFfaHRtbCZxdWVyeT0=)
 
-## Reto
+## Solución y Reto
 
-Durante la hora de práctica, realice el reto que le propone el profesor
+* [Una solución](https://github.com/ULL-MII-CA-1819/t1-p7-transforming-data-and-testing-continuously-marreA/blob/master/databases/lib/parse-rdf.js) (No accesible en este momento)
+* Durante la hora de práctica, realice el [reto](reto) que le propone el profesor
