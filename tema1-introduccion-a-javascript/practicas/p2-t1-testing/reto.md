@@ -57,3 +57,5 @@ de los elementos `pgterms:webpage`:
   ]
 }
 ```
+
+Esta vez invierta el BDD: una vez escrita su solución, escriba las pruebas.
