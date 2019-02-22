@@ -260,5 +260,5 @@ Transforming Data and Testing Continuously](https://proquest-safaribooksonline-c
 
 ## Solución y Reto
 
-* [Una solución](https://github.com/ULL-MII-CA-1819/t1-p7-transforming-data-and-testing-continuously-marreA/blob/master/databases/lib/parse-rdf.js) (No accesible en este momento)
+* [Una solución](https://github.com/ULL-ESIT-PL-1819/p2-t1-testing-crguezl) (No accesible en este momento)
 * Durante la hora de práctica, realice el [reto](reto) que le propone el profesor
