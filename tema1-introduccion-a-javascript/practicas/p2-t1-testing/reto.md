@@ -60,3 +60,9 @@ de los elementos `pgterms:webpage`:
 
 Esta vez invierta el BDD: una vez escrita su solución, escriba las pruebas.
 Quizá el módulo [chai-things](https://www.npmjs.com/package/chai-things) pueda serle de ayuda.
+Por ejemplo, podemos usar el atributo `all` para comprobar si todos los elementos
+cumplen una determinada afirmación:
+
+```js
+ expect(book.authors).to.all.have.property("name").and.all.have.a.property("webpages");
+ ```
