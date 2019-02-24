@@ -1,4 +1,4 @@
-# Reto para la Práctica p2-t1-testing
+# Reto 1 para la Práctica p2-t1-testing
 
 En el JSON generado, el valor de la entrada `authors` es un Array de Strings:
 
@@ -58,7 +58,10 @@ de los elementos `pgterms:webpage`:
 }
 ```
 
+# Reto 2 para la Práctica p2-t1-testing: Testing
+
 Esta vez invierta el BDD: una vez escrita su solución, escriba las pruebas.
+
 Quizá el módulo [chai-things](https://www.npmjs.com/package/chai-things) pueda serle de ayuda.
 Por ejemplo, podemos usar el atributo `all` para comprobar si todos los elementos
 cumplen una determinada afirmación:

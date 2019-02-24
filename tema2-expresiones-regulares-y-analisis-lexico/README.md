@@ -52,3 +52,7 @@
 
 * [Expresiones Regulares en Perl](http://nereida.deioc.ull.es/~pl/perlexamples/node7.html)
 * [Expresiones Regulares en varios lenguajes](http://nereida.deioc.ull.es/~pl/perlexamples/node28.html)
+
+## Práctica
+
+Resuelva los ejercicios de Expresiones Regulares propuestos por el profesor
