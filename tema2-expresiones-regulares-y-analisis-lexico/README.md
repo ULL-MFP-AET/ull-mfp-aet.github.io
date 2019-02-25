@@ -32,7 +32,10 @@
 
 ### Ejercicios
 
-* [Ejercicios de Expresiones Regulares](https://casianorodriguezleon.gitbooks.io/ull-esit-1617/content/apuntes/regexp/regexpejercicios.html)
+* Ejercicio: [Usar new Regexp("string") versus slash literal](https://youtu.be/ASQ35gSjmeI). Similitudes y diferencias. Vídeo del profesor
+    - ![](http://i3.ytimg.com/vi/ASQ35gSjmeI/hqdefault.jpg)
+    - Explique la diferencia observada entre las dos formas de construir una RegExp
+* [Ejercicios de Expresiones Regulares en los apuntes](https://casianorodriguezleon.gitbooks.io/ull-esit-1617/content/apuntes/regexp/regexpejercicios.html)
   - [lookahead](https://casianorodriguezleon.gitbooks.io/ull-esit-1617/content/apuntes/regexp/regexpejercicios.html#lookahead)
   - [lookbehind](https://casianorodriguezleon.gitbooks.io/ull-esit-1617/content/apuntes/regexp/regexpejercicios.html#lookbehind)
   - [Ejercicio: Palabras repetidas](https://youtu.be/GfLkvLM7pA8) Vídeo del profesor
