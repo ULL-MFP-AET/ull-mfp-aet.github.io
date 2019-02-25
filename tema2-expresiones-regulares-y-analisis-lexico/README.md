@@ -38,13 +38,13 @@
 * [Ejercicios de Expresiones Regulares en los apuntes](https://casianorodriguezleon.gitbooks.io/ull-esit-1617/content/apuntes/regexp/regexpejercicios.html)
   - [lookahead](https://casianorodriguezleon.gitbooks.io/ull-esit-1617/content/apuntes/regexp/regexpejercicios.html#lookahead)
   - [lookbehind](https://casianorodriguezleon.gitbooks.io/ull-esit-1617/content/apuntes/regexp/regexpejercicios.html#lookbehind)
-  - [Ejercicio: Palabras repetidas](https://youtu.be/GfLkvLM7pA8) Vídeo del profesor
-      * [Repo en GitHub](https://github.com/ULL-ESIT-PL/repeated-words-regexp)
-      * [![](http://i3.ytimg.com/vi/GfLkvLM7pA8/hqdefault.jpg)](https://youtu.be/GfLkvLM7pA8)
-  - [Ejercicio: Buscar las secuencias que empiezan por 12 en posiciones múltiplos de 6](https://youtu.be/A5JoNlTawFA) Vídeo del profesor
-      * [![](http://i3.ytimg.com/vi/A5JoNlTawFA/hqdefault.jpg)](ttps://youtu.be/A5JoNlTawFA)
-  - Tarea. Haga los ejercicios en [https://regexone.com/](https://regexone.com/)
-  - Tarea. Haga los ejercicios en [https://www.w3resource.com/javascript-exercises/javascript-regexp-exercises.php](https://www.w3resource.com/javascript-exercises/javascript-regexp-exercises.php)
+* [Ejercicio: Palabras repetidas](https://youtu.be/GfLkvLM7pA8) Vídeo del profesor
+   * [Repo en GitHub](https://github.com/ULL-ESIT-PL/repeated-words-regexp)
+   * [![](http://i3.ytimg.com/vi/GfLkvLM7pA8/hqdefault.jpg)](https://youtu.be/GfLkvLM7pA8)
+* [Ejercicio: Buscar las secuencias que empiezan por 12 en posiciones múltiplos de 6](https://youtu.be/A5JoNlTawFA) Vídeo del profesor
+  * [![](http://i3.ytimg.com/vi/A5JoNlTawFA/hqdefault.jpg)](ttps://youtu.be/A5JoNlTawFA)
+* Tarea. Haga los ejercicios en [https://regexone.com/](https://regexone.com/)
+* Tarea. Haga los ejercicios en [https://www.w3resource.com/javascript-exercises/javascript-regexp-exercises.php](https://www.w3resource.com/javascript-exercises/javascript-regexp-exercises.php)
 
 ## Capítulo 2: Análisis Léxico
 
