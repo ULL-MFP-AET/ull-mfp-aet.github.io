@@ -37,6 +37,7 @@
   - [lookbehind](https://casianorodriguezleon.gitbooks.io/ull-esit-1617/content/apuntes/regexp/regexpejercicios.html#lookbehind)
   - [Ejercicio: Palabras repetidas](https://youtu.be/GfLkvLM7pA8) Vídeo del profesor
       * [Repo en GitHub](https://github.com/ULL-ESIT-PL/repeated-words-regexp)
+      * ![](http://i3.ytimg.com/vi/GfLkvLM7pA8/hqdefault.jpg)
   - [Ejercicio: Buscar las secuencias que empiezan por 12 en posiciones múltiplos de 6](https://youtu.be/A5JoNlTawFA) Vídeo del profesor
   - Tarea. Haga los ejercicios en [https://regexone.com/](https://regexone.com/)
   - Tarea. Haga los ejercicios en [https://www.w3resource.com/javascript-exercises/javascript-regexp-exercises.php](https://www.w3resource.com/javascript-exercises/javascript-regexp-exercises.php)
