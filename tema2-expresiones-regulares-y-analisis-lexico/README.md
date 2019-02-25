@@ -4,7 +4,7 @@
 
 * [Eloquent JavaScript (2nd Edition): Regular Expressions](http://eloquentjavascript.net/09_regexp.html)
 * [Eloquent JavaScript (3d Edition): Regular Expressions](http://eloquentjavascript.net/3rd_edition/09_regexp.html)
-  - Ejercicio: [Usar new Regexp("string") versus slash literal](https://youtu.be/ASQ35gSjmeI) similitudes y diferencias. Vídeo del profesor
+  - Ejercicio: [Usar new Regexp("string") versus slash literal](https://youtu.be/ASQ35gSjmeI). Similitudes y diferencias. Vídeo del profesor
   - ![](http://i3.ytimg.com/vi/ASQ35gSjmeI/hqdefault.jpg)
   - Explique la diferencia observada entre las dos formas de construir una RegExp
 * [Apuntes de Expresiones Regulares](https://casianorodriguezleon.gitbooks.io/ull-esit-1617/content/apuntes/regexp/) del profesor (gitbook)
