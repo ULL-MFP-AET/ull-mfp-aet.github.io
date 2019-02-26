@@ -57,7 +57,7 @@ the chapter [New regular expression features in ECMAScript 6](http://2ality.com/
     - [RepoULL-ESIT-GRADOII-PL/esprima-pegjs-jsconfeu-talk](https://github.com/ULL-ESIT-GRADOII-PL/esprima-pegjs-jsconfeu-talk)
 * [jison-lex](https://github.com/zaach/jison-lex)
 * [lexer](https://github.com/aaditmshah/lexer)
-* [Expresiones Regulares en Flex](https://campusvirtual.ull.es/ocw/pluginfile.php/2313/mod_resource/content/0/perlexamples/node19.html)
+* [Expresiones Regulares en Flex](https://ull-esit-pl-1617.github.io/apuntesingenieriainformaticaPL/node19.html)
 
 
 ## Capítulo 3: Expresiones Regulares en Perl y en otros lenguajes
