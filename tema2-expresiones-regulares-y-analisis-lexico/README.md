@@ -72,6 +72,10 @@
 * Tarea. Haga los ejercicios en [https://regexone.com/](https://regexone.com/)
 * Tarea. Haga los ejercicios en [https://www.w3resource.com/javascript-exercises/javascript-regexp-exercises.php](https://www.w3resource.com/javascript-exercises/javascript-regexp-exercises.php)
 
+## Práctica p3-t2-regexp
+
+Resuelva los ejercicios de Expresiones Regulares propuestos por el profesor
+
 ## Capítulo 2: Análisis Léxico
 
 * [Example: using sticky matching for tokenizing](http://2ality.com/2015/07/regexp-es6.html#example-using-sticky-matching-for-tokenizing) inside 
@@ -92,6 +96,3 @@ the chapter [New regular expression features in ECMAScript 6](http://2ality.com/
 * [Expresiones Regulares en Perl](http://nereida.deioc.ull.es/~pl/perlexamples/node7.html)
 * [Expresiones Regulares en varios lenguajes](http://nereida.deioc.ull.es/~pl/perlexamples/node28.html)
 
-## Práctica
-
-Resuelva los ejercicios de Expresiones Regulares propuestos por el profesor
