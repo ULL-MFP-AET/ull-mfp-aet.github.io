@@ -20,6 +20,8 @@
 
 ## [Tema 2: Expresiones Regulares y Análisis Léxico](tema2-expresiones-regulares-y-analisis-lexico/README.md)
 
+### [ Práctica de Expresiones Regulares (p3-t2-regexp)](tema2-expresiones-regulares-y-analisis-lexico/practicas/p3-t2-regexp/reto)
+
 ## [Tema 3: Análisis Sintáctico Descendente Recursivo](tema3-analisis-descendente-predictivo-recursivo)
 
 ## [Tema 4: Parsing Expression Grammars](tema4-parsing-expression-grammars)
