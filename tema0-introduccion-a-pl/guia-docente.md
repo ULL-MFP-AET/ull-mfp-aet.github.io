@@ -15,4 +15,5 @@ Esprima is a tool to perform lexical and syntactical analysis of JavaScript prog
 
 ### Prácticas
 
-1. [Descripción de la Práctica p0-t0-esprima-logging](practicas/p0-t0-esprima-logging)
+1. [Práctica pb-gh-campus-expert](practicas/pb-gh-campus-expert)
+2. [Descripción de la Práctica p0-t0-esprima-logging](practicas/p0-t0-esprima-logging)

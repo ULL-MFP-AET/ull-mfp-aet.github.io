@@ -10,6 +10,8 @@
 
 ## [Tema 0: La Asignatura de PL. Guía Docente](tema0-introduccion-a-pl/guia-docente.md)
 
+### [Práctica pb-gh-campus-expert](tema0-introduccion-a-pl/practicas/pb-gh-campus-expert)
+
 ### [Práctica p0-t0-esprima-logging](tema0-introduccion-a-pl/practicas/p0-t0-esprima-logging)
 
 ## [Tema 1: Introducción a JavaScript](tema1-introduccion-a-javascript/)
