@@ -4,7 +4,7 @@
 
 ## [Exámenes de convocatoria](exams.md)
 
-## [Calendarios y Horarios](timetables.md)
+## [Calendarios, Horarios y Exámenes](timetables.md)
 
 ## [Referencias](references.md)
 
