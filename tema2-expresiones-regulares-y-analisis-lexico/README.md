@@ -76,7 +76,7 @@
 
 Resuelva los ejercicios de Expresiones Regulares propuestos por el profesor
 
-* [Práctica de Expresiones Regulares (p3-t2-regexp)](practicas/p3-t2-regexp/reto)
+* [Práctica de Expresiones Regulares (p3-t2-regexp)](practicas/p3-t2-regexp/reto) (no disponible)
 
 ## Capítulo 2: Análisis Léxico
 
