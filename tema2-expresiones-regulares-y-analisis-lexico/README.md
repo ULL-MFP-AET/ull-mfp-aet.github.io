@@ -72,7 +72,7 @@
 * Tarea. Haga los ejercicios en [https://regexone.com/](https://regexone.com/)
 * Tarea. Haga los ejercicios en [https://www.w3resource.com/javascript-exercises/javascript-regexp-exercises.php](https://www.w3resource.com/javascript-exercises/javascript-regexp-exercises.php)
 
-## Práctica p3-t2-regexp
+### Práctica p3-t2-regexp
 
 Resuelva los ejercicios de Expresiones Regulares propuestos por el profesor
 
@@ -92,6 +92,9 @@ the chapter [New regular expression features in ECMAScript 6](http://2ality.com/
 * [lexer](https://github.com/aaditmshah/lexer)
 * [Expresiones Regulares en Flex](https://ull-esit-pl-1617.github.io/apuntesingenieriainformaticaPL/node19.html)
 
+### Práctica p4-t2-lexer
+
+* [Práctica Escribir un Analizador Léxico para Javascript (p4-t2-lexer)](practicas/p4-t2-lexer/README.md)
 
 ## Capítulo 3: Expresiones Regulares en Perl y en otros lenguajes
 
