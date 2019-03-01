@@ -24,6 +24,8 @@
 
 ### [ Práctica de Expresiones Regulares (p3-t2-regexp)](tema2-expresiones-regulares-y-analisis-lexico/practicas/p3-t2-regexp/reto)
 
+### [Práctica Escribir un Analizador Léxico para Javascript (p4-t2-lexer)](tema2-expresiones-regulares-y-analisis-lexico/practicas/p4-t2-lexer/README.md)
+
 ## [Tema 3: Análisis Sintáctico Descendente Recursivo](tema3-analisis-descendente-predictivo-recursivo)
 
 ## [Tema 4: Parsing Expression Grammars](tema4-parsing-expression-grammars)
