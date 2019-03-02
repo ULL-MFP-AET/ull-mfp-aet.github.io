@@ -60,6 +60,19 @@ regulares. Reescriba el analizador léxico en [tokens.js](https://github.com/dou
        [~/srcPLgrado/lexical_analysis_top_down_operator_precedence(gh-pages)]$ pwd -P
        /Users/casiano/local/src/javascript/PLgrado/lexical_analysis_top_down_operator_precedence
 ```
+* sol-i
+  * [sol-a auth](https://github.com/ULL-ESIT-PL-1718/authentication-angeligareta)
+  * [sol-ai](https://github.com/ULL-ESIT-PL-1718/analizador-lexico-para-js-angeligareta)
+* sol-ca
+  * [sol-ca-auth](https://github.com/ULL-ESIT-PL-1718/alu0100966589-AuthModule)
+  * [sol-ca](https://github.com/ULL-ESIT-PL-1718/analizador-lexico-para-js-alu0100966589)
+* sol-da
+  * [sol-da-auth](https://github.com/ULL-ESIT-PL-1718/auth-alu0100973914)
+  * [sol-da](https://github.com/ULL-ESIT-PL-1718/analizador-lexico-para-js-alu0100973914)
+* sol-cri
+  * [sol-cri](https://github.com/ULL-ESIT-PL-1718/analizador-lexico-para-js-alu0100945850)
+  * [sol-cri-auth](https://github.com/ULL-ESIT-PL-1718/auth-alu0100945850)
+
 
 
 
