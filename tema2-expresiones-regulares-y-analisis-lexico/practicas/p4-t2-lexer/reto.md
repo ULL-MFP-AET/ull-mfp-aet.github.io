@@ -34,7 +34,7 @@ debería producir una salida parecida a esta:
 ## Tips
 
 ```js
-> [anlizador-lexico(master)]$ node
+> [analizador-lexico(master)]$ node
 > XRegExp = require("xregexp")
 > id = XRegExp('[_\\pL][_\\pL\\pN]+'); // L: Letter, N: number
 > id.exec("Русский६")
