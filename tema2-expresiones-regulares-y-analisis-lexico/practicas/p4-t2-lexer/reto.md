@@ -31,6 +31,20 @@ debería producir una salida parecida a esta:
     }
 ```
 
+## Tips
+
+```js
+> [anlizador-lexico(master)]$ node
+> XRegExp = require("xregexp")
+> id = XRegExp('[_\\pL][_\\pL\\pN]+'); // L: Letter, N: number
+> id.exec("Русский६")
+[ 'Русский६', index: 0, input: 'Русский६' ]
+> number = XRegExp('\\pN+', "g"); // N: number
+> "६६७+६७*2".match(number)
+[ '६६७', '६७', '2' ]
+> 
+```
+
 ## Recursos
 
 * [XRegexp](http://xregexp.com/) 
