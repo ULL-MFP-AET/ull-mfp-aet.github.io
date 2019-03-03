@@ -53,6 +53,7 @@ regulares. Reescriba el analizador léxico en [tokens.js](https://github.com/dou
     - [ULL-ESIT-PL-1617/evaluar-manejo-de-cookies-y-sessions-en-expressjs](https://github.com/ULL-ESIT-PL-1617/evaluar-manejo-de-cookies-y-sessions-en-expressjs-alu0100825510)
   * [Apuntes de Heroku](https://casianorodriguezleon.gitbooks.io/ull-esit-1617/content/recursos/heroku.html)
   * [Como Desplegar una Aplicación Web en iaas.ull.es](https://github.com/SYTW/iaas-ull-es)
+* Expresiones Regulares
   * [Apuntes: Expresiones Regulares](../apuntes/regexp/README.md)
   * [Eloquent JS: Chapter 9: Regular Expressions](http://eloquentjavascript.net/09_regexp.html)
   * [ejs](https://ejs.co/)
