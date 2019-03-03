@@ -100,8 +100,11 @@ regulares. Reescriba el analizador léxico en [tokens.js](https://github.com/dou
 ### Notas para el Profesor
 
 ```bash
-       [~/srcPLgrado/lexical_analysis_top_down_operator_precedence(gh-pages)]$ pwd -P
-       /Users/casiano/local/src/javascript/PLgrado/lexical_analysis_top_down_operator_precedence
+[~/srcPLgrado/lexical_analysis_top_down_operator_precedence(gh-pages)]$ pwd -P
+/Users/casiano/local/src/javascript/PLgrado/lexical_analysis_top_down_operator_precedence
+[~/campus-virtual/1819/pl1819/introduccion/tema2-expresiones-regulares-y-analisis-lexico/practicas/p4-t2-lexer/pl1718-solutions(master)]$ pwd -P
+/Users/casiano/local/academica/centros/ETSII/GRADO/PL/campus-virtual/tema2-regexp-y-lexico/practica-analisis-lexico-tdop/solutions
+
 ```
 * sol-i
   * [sol-a auth](https://github.com/ULL-ESIT-PL-1718/authentication-angeligareta)
