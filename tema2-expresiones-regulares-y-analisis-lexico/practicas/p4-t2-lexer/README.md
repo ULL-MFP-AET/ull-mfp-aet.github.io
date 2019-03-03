@@ -43,17 +43,57 @@ regulares. Reescriba el analizador léxico en [tokens.js](https://github.com/dou
 
 ### Recursos
 
-1.  Una solución incompleta  de esta práctica se encuentra en:
-    -   [https://github.com/crguezl/ull-etsii-grado-pl-minijavascript/tree/gh-pages](https://github.com/crguezl/ull-etsii-grado-pl-minijavascript/tree/gh-pages) en github.
-    -   Veala en funcionamiento en [http://crguezl.github.io/ull-etsii-grado-pl-minijavascript/](http://crguezl.github.io/ull-etsii-grado-pl-minijavascript/)
-2.  El método `tokens` retorna el array de tokens [https://github.com/crguezl/ull-etsii-grado-pl-minijavascript/blob/gh-pages/tokens.js](https://github.com/crguezl/ull-etsii-grado-pl-minijavascript/blob/gh-pages/tokens.js)
-3. Ejemplo de server con cookies y sessions: [ULL-ESIT-PL-1617/evaluar-manejo-de-cookies-y-sessions-en-expressjs](https://github.com/ULL-ESIT-PL-1617/evaluar-manejo-de-cookies-y-sessions-en-expressjs-alu0100825510).
-  - [ULL-ESIT-PL-1617/evaluar-manejo-de-cookies-y-sessions-en-expressjs](https://github.com/ULL-ESIT-PL-1617/evaluar-manejo-de-cookies-y-sessions-en-expressjs-alu0100825510)
-4. [Apuntes de Heroku](https://casianorodriguezleon.gitbooks.io/ull-esit-1617/content/recursos/heroku.html)
-5. [Como Desplegar una Aplicación Web en iaas.ull.es](https://github.com/SYTW/iaas-ull-es)
-6. [Apuntes: Expresiones Regulares](../apuntes/regexp/README.md)
-7. [Eloquent JS: Chapter 9: Regular Expressions](http://eloquentjavascript.net/09_regexp.html)
-8. [ejs](https://ejs.co/)
+* Lexical Analysis
+  * Una solución incompleta  de esta práctica se encuentra en:
+     -   [https://github.com/crguezl/ull-etsii-grado-pl-minijavascript/tree/gh-pages](https://github.com/crguezl/ull-etsii-grado-pl-minijavascript/tree/gh-pages) en github.
+     -   Veala en funcionamiento en [http://crguezl.github.io/ull-etsii-grado-pl-minijavascript/](http://crguezl.github.io/ull-etsii-grado-pl-minijavascript/)
+  * El método `tokens` retorna el array de tokens [https://github.com/crguezl/ull-etsii-grado-pl-minijavascript/blob/gh-pages/tokens.js](https://github.com/crguezl/ull-etsii-grado-pl-minijavascript/blob/gh-pages/tokens.js)
+* Programación Web
+  * Ejemplo de server con cookies y sessions: [ULL-ESIT-PL-1617/evaluar-manejo-de-cookies-y-sessions-en-expressjs](https://github.com/ULL-ESIT-PL-1617/evaluar-manejo-de-cookies-y-sessions-en-expressjs-alu0100825510).
+    - [ULL-ESIT-PL-1617/evaluar-manejo-de-cookies-y-sessions-en-expressjs](https://github.com/ULL-ESIT-PL-1617/evaluar-manejo-de-cookies-y-sessions-en-expressjs-alu0100825510)
+  * [Apuntes de Heroku](https://casianorodriguezleon.gitbooks.io/ull-esit-1617/content/recursos/heroku.html)
+  * [Como Desplegar una Aplicación Web en iaas.ull.es](https://github.com/SYTW/iaas-ull-es)
+  * [Apuntes: Expresiones Regulares](../apuntes/regexp/README.md)
+  * [Eloquent JS: Chapter 9: Regular Expressions](http://eloquentjavascript.net/09_regexp.html)
+  * [ejs](https://ejs.co/)
+* XRegexp
+  * [XRegexp](http://xregexp.com/) 
+    - [XRegexp en GitHub](https://github.com/slevithan/xregexp)
+    - [xregexp-all.js](https://unpkg.com/xregexp/xregexp-all.js)
+  * [JavaScript y Unicode](https://github.com/ULL-ESIT-PL/unicode-js) (Repo en GitHub unicode-js)
+  * [Repositorio con ejemplos de uso de XRegExp](https://github.com/ULL-ESIT-GRADOII-PL/xregexp-example) 
+  * [Ejemplos de extensiones de XRegExp para Unicode](https://github.com/ULL-ESIT-GRADOII-PL/xregexp-example/blob/gh-pages/unicode.js)
+  * [Módulo @ull-esit-pl/uninums](https://www.npmjs.com/package/@ull-esit-pl/uninums)
+
+    ```js
+    > uninums = require("@ull-esit-pl/uninums")
+    { normalSpaces: [Function: normalSpaces],
+      normalDigits: [Function: normalDigits],
+      parseUniInt: [Function: parseUniInt],
+      parseUniFloat: [Function: parseUniFloat],
+      sortNumeric: [Function: sortNumeric] }
+    > uninums.parseUniInt('६.६')
+    6
+    > uninums.parseUniFloat('६.६')
+    6.6
+    > uninums.parseUniFloat('६.६e६')
+    6600000
+    > uninums.sortNumeric(['٣ dogs','١٠ cats','٢ mice']) 
+    [ '٢ mice', '٣ dogs', '١٠ cats' ]
+    > uninums.normalDigits('٢ mice')
+    '2 mice'
+    > uninums.normalDigits('٣ dog')
+    '3 dog'
+    > uninums.normalDigits('١٠ cats')
+    '10 cats'
+    > uninums.normalDigits('٠۴६')
+    '046'
+    ```
+* Diseño
+  * [Apuntes: Code Smells](https://casianorodriguezleon.gitbooks.io/ull-esit-1617/content/apuntes/patterns/codesmell.html)
+  * [Principios de Diseño](https://casianorodriguezleon.gitbooks.io/ull-esit-1617/content/apuntes/patterns/designprinciples.html)
+  * [Patrones de Diseño](https://casianorodriguezleon.gitbooks.io/ull-esit-1617/content/apuntes/patterns/)
+  * [Strategy Pattern](https://casianorodriguezleon.gitbooks.io/ull-esit-1617/content/apuntes/patterns/strategypattern.html)
 
 ### Notas para el Profesor
 
