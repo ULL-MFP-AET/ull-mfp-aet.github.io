@@ -106,8 +106,10 @@ regulares. Reescriba el analizador léxico en [tokens.js](https://github.com/dou
 /Users/casiano/local/academica/centros/ETSII/GRADO/PL/campus-virtual/tema2-regexp-y-lexico/practica-analisis-lexico-tdop/solutions
 
 ```
-* sol-i
-  * [sol-a auth](https://github.com/ULL-ESIT-PL-1718/authentication-angeligareta)
+* sol-cas
+  * [sol-cas](https://github.com/ULL-ESIT-PL-1819/analizador-lexico-para-js)
+* sol-ai
+  * [sol-ai auth](https://github.com/ULL-ESIT-PL-1718/authentication-angeligareta)
   * [sol-ai](https://github.com/ULL-ESIT-PL-1718/analizador-lexico-para-js-angeligareta)
 * sol-ca
   * [sol-ca-auth](https://github.com/ULL-ESIT-PL-1718/alu0100966589-AuthModule)
