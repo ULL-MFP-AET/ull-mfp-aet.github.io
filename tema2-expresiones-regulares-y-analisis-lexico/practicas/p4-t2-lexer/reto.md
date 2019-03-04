@@ -4,7 +4,7 @@ Usando [XRegExp](http://xregexp.com/) añada a su analizador léxico la capacida
 Por ejemplo, la entrada:
 
 ```
-var α  = ६६७ /* 667 en Devanagari */ * ६७ /* 67 en Devanagari */;
+var αβ /* griego */ = ६६७ /* 667 en Devanagari */ * ६७ /* 67 en Devanagari */;
 ```
 
 debería producir una salida parecida a esta:
@@ -14,7 +14,7 @@ debería producir una salida parecida a esta:
     "value": "=",
     "arity": "binary",
     "first": {
-        "value": "α",
+        "value": "αβ",
         "arity": "name"
     },
     "second": {
