@@ -36,7 +36,7 @@ regulares. Reescriba el analizador léxico en [tokens.js](https://github.com/dou
     - [https://github.com/crguezl/ull-etsii-grado-pl-minijavascript/blob/gh-pages/tokens.js](https://github.com/crguezl/ull-etsii-grado-pl-minijavascript/blob/gh-pages/tokens.js)
 3. Modifique la solución de Crockford usado regexps en [tokens.js](https://github.com/douglascrockford/TDOP/blob/master/tokens.js)
 4.  Añada un server ([vea aquí un ejemplo](https://github.com/ULL-ESIT-PL-1617/evaluar-manejo-de-cookies-y-sessions-en-expressjs-alu0100825510)) para el HTML y haga el despliegue de su aplicación en la máquina virtual del [iaas](https://github.com/SYTW/iaas-ull-es) o en [Heroku](https://casianorodriguezleon.gitbooks.io/ull-esit-1617/content/recursos/heroku.html)
-6. Opcional: Use [sessions](/apuntes/cookies/README.md) para controlar quien accede a la aplicación. Puede ver un ejemplo de como hacerlo en los ficheros:
+6. Opcional: Use [sessions](https://casianorodriguezleon.gitbooks.io/ull-esit-1617/content/apuntes/cookies/) para controlar quien accede a la aplicación. Puede ver un ejemplo de como hacerlo en los ficheros:
   - [ULL-ESIT-PL-1617/evaluar-manejo-de-cookies-y-sessions-en-expressjs](https://github.com/ULL-ESIT-PL-1617/evaluar-manejo-de-cookies-y-sessions-en-expressjs-alu0100825510)
 7. En el `README.md` escriba un tutorial con lo que ha aprendido en esta práctica
 8. Cuando haga la entrega indique los enlaces a los repos (analizador) así como a los despliegues. Ponga también el enlace al despliegue en el README de su repo.
