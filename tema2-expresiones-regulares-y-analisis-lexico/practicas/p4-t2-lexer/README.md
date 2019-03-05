@@ -19,7 +19,7 @@ Vamos a trabajar a partir de este repo de Douglas Crockford:
 -   [tokens.js](https://github.com/douglascrockford/TDOP/blob/master/tokens.js) produces an array of token objects from a string. 
 
 Douglas Crockford escribió [este analizador léxico](https://github.com/douglascrockford/TDOP/blob/master/tokens.js) sin usar expresiones
-regulares. Crockford prescindió de las regexp porque 
+regulares. Creo que, en parte,  Crockford prescindió de las regexp porque 
 el analizador sintáctico corresponde a un
 subconjunto de JS que no tiene - entre otras cosas - expresiones
 regulares y  el autor quería que el analizador se pudiera analizar
