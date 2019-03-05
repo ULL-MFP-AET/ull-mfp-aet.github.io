@@ -56,8 +56,6 @@ regulares. Reescriba el analizador léxico en [tokens.js](https://github.com/dou
     * [Sessions y Authentication (apuntes 16/17)](https://casianorodriguezleon.gitbooks.io/ull-esit-1617/content/apuntes/authentication/)
   * Despliegues
     * [Como Desplegar una Aplicación Web en iaas.ull.es](https://github.com/SYTW/iaas-ull-es)
-    * [iaas](https://github.com/SYTW/iaas-ull-es)
-    * [Heroku](https://casianorodriguezleon.gitbooks.io/ull-esit-1617/content/recursos/heroku.html)
     * [Apuntes de Heroku](https://casianorodriguezleon.gitbooks.io/ull-esit-1617/content/recursos/heroku.html)
 * Expresiones Regulares
   * [Apuntes: Expresiones Regulares](../apuntes/regexp/README.md)
