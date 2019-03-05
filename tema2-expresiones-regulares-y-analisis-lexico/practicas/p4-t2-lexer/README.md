@@ -54,9 +54,14 @@ regulares. Reescriba el analizador léxico en [tokens.js](https://github.com/dou
     * Ejemplo de server con cookies y sessions: [ULL-ESIT-PL-1617/evaluar-manejo-de-cookies-y-sessions-en-expressjs](https://github.com/ULL-ESIT-PL-1617/evaluar-manejo-de-cookies-y-sessions-en-expressjs-alu0100825510).
     * [Cookies (apuntes 16/17)](https://casianorodriguezleon.gitbooks.io/ull-esit-1617/content/apuntes/cookies/)
     * [Sessions y Authentication (apuntes 16/17)](https://casianorodriguezleon.gitbooks.io/ull-esit-1617/content/apuntes/authentication/)
+  * Express
+    * [Apuntes de Express 1617](https://casianorodriguezleon.gitbooks.io/ull-esit-1617/content/apuntes/express/)
   * Despliegues
     * [Como Desplegar una Aplicación Web en iaas.ull.es](https://github.com/SYTW/iaas-ull-es)
     * [Apuntes de Heroku](https://casianorodriguezleon.gitbooks.io/ull-esit-1617/content/recursos/heroku.html)
+  * Webpack
+    * [Webpack guide: "getting started"](https://webpack.js.org/guides/getting-started/)
+    * [Youtube video Webpack 4 por Fatz](https://youtu.be/vF2emKbaP4M)
 * Expresiones Regulares
   * [Apuntes: Expresiones Regulares](../apuntes/regexp/README.md)
   * [Eloquent JS: Chapter 9: Regular Expressions](http://eloquentjavascript.net/09_regexp.html)
