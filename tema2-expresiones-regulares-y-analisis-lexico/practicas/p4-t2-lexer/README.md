@@ -104,6 +104,26 @@ regulares. Reescriba el analizador léxico en [tokens.js](https://github.com/dou
   * [Patrones de Diseño](https://casianorodriguezleon.gitbooks.io/ull-esit-1617/content/apuntes/patterns/)
   * [Strategy Pattern](https://casianorodriguezleon.gitbooks.io/ull-esit-1617/content/apuntes/patterns/strategypattern.html)
   * [Práctica: Eliminando Switch Smell](https://casianorodriguezleon.gitbooks.io/ull-esit-1617/content/practicas/practicanoswitchsmell.html)
+* Creación de Módulos
+  * Véase la sección
+  [Creación de Paquetes y Módulos en NodeJS](https://casianorodriguezleon.gitbooks.io/ull-esit-1617/content/apuntes/npm/nodejspackages.html)
+  * [Ejemplo de módulo npm: ULL-ESIT-DSI-1617/scapegoat](https://github.com/ULL-ESIT-DSI-1617/scapegoat)
+  * [prueba-scapegoat. Ejemplo de programa cliente](https://github.com/ULL-ESIT-DSI-1617/prueba-scapegoat)
+  * [Repo combinado librería + cliente de prueba](https://github.com/ULL-ESIT-DSI-1617/create-a-npm-module)
+    - [Video que explica como hacer un repo combinado](https://youtu.be/17cZY3na3As)
+  * [Solución:  repo ULL-ESIT-GRADOII-PL/modulos](https://github.com/ULL-ESIT-GRADOII-PL/modulos/tree/master)
+  * [Como funciona *require*](https://youtu.be/qffmnSCRR3c) Video del profesor
+  * [Best practice: Specify global dependencies in your gulpfile](https://stackoverflow.com/questions/14657170/installing-global-npm-dependencies-via-package-json)
+  * [Node.js — How to test your new NPM module without publishing it every 5 minutes](https://medium.com/@the1mills/how-to-test-your-npm-module-without-publishing-it-every-5-minutes-1c4cb4b369be)
+  * [Best practice: Better local require() paths for Node.js](https://gist.github.com/branneman/8048520):
+     - When the directory structure of your Node.js **application** (not library!) has some depth, you end up with a lot of annoying relative paths in your require calls like:
+      ```
+       var Article = require('../../../models/article');
+      ```
+     Those suck for maintenance and they're ugly.
+
+
+
 
 ### Notas para el Profesor
 
