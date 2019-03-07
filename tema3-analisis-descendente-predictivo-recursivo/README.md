@@ -20,7 +20,7 @@
 * [How to implement a programming language in JavaScript](http://lisperator.net/pltut/) (Un Intérprete Lisp)
 
 
-## Capítulo 2: conceptos Teóricos para los Analizadores Descendentes Recursivos Predictivos
+## Capítulo 2: Conceptos Teóricos para los Analizadores Descendentes Recursivos Predictivos
 
 * [Apuntes de PL de la II. Derivaciones a vacio](http://nereida.deioc.ull.es/~pl/perlexamples/node88.html)
 * [Construcción de los FIRST y los FOLLOW](http://nereida.deioc.ull.es/~pl/perlexamples/node89.html)
