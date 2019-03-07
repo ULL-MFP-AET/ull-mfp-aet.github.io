@@ -28,6 +28,8 @@
 
 ## [Tema 3: Análisis Sintáctico Descendente Recursivo](tema3-analisis-descendente-predictivo-recursivo)
 
+### [Práctica p5-t3-egg-0](tema3-analisis-descendente-predictivo-recursivo/practicas/p5-t3-egg-0)
+
 ## [Tema 4: Parsing Expression Grammars](tema4-parsing-expression-grammars)
 
 ## [Tema 5: Análisis Ascendente](tema5-analisis-ascendente)
