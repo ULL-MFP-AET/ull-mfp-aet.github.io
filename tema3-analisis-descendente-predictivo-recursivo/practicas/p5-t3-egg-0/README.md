@@ -7,8 +7,6 @@
 4. Mejore los mensajes de error usando esta información
 5. El analizador léxico actual destruye la cadena conteniendo el programa conforme la analiza.  Es posible  escribir una analizador léxico que recorra la cadena conteniendo el programa sin destruirla usando la opción `sticky`. Estudie esta mejora
 6. Mejore las pruebas, especialmente con programas que contienen errores
-6. Añada índices negativos (a la Ruby) para los arrays
-7. Añada mapas/hashes al lenguaje
 8. Haga que el ejecutable `egg` funcione como un bucle REPL cuando no se le proporciona un fichero de entrada
   ```lisp
   [~/ull-pl1718-campus-virtual/tema3-analisis-sintactico/src/egg/crguezl-egg(private)]$ bin/egg.js
@@ -22,6 +20,10 @@
   > goodbye!
   ```
   * En este [Vídeo *Programando un bucle REPL para el lenguaje Egg*](https://youtu.be/5gIlt6r29lw) explicamos como hacerlo
+<!-- 
+6. Añada índices negativos (a la Ruby) para los arrays
+7. Añada mapas/hashes al lenguaje
+-->
 9. Parta de este [repo](https://github.com/ULL-ESIT-PL-1617/egg)
 
 ### Recursos
