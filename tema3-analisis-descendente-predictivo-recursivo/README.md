@@ -14,6 +14,10 @@
     * [Side effects of stubbing console in tests](https://gyandeeps.com/console-stubbing/)
     * [Unit Test like a Secret Agent with Sinon.js](http://elijahmanor.com/unit-test-like-a-secret-agent-with-sinon-js/) by Elijah Manor
 
+### Práctica p5-t3-egg-0
+
+* [Descripción de la Práctica](practicas/p5-t3-egg-0)
+
 ### Otros ejemplos de lenguajes con analizadores Predictivos Descendentes Recursivos
 
 * [TinyC](https://github.com/ULL-ESIT-PL-1718/tiny-c) Repo con un ejemplo de PDR en C
