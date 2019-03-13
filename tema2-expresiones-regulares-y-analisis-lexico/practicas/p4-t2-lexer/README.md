@@ -106,7 +106,8 @@ regulares. Reescriba el analizador léxico en [tokens.js](https://github.com/dou
   * [Práctica: Eliminando Switch Smell](https://casianorodriguezleon.gitbooks.io/ull-esit-1617/content/practicas/practicanoswitchsmell.html)
 * Creación de Módulos
   * Véase la sección
-  [Creación de Paquetes y Módulos en NodeJS](https://casianorodriguezleon.gitbooks.io/ull-esit-1617/content/apuntes/npm/nodejspackages.html)
+    - [Creación de Paquetes y Módulos en NodeJS](https://crguezl.github.io/ull-esit-1617/_book/apuntes/npm/nodejspackages.html) GitHub
+    - [Creación de Paquetes y Módulos en NodeJS](https://casianorodriguezleon.gitbooks.io/ull-esit-1617/content/apuntes/npm/nodejspackages.html) GitBook
   * [Ejemplo de módulo npm: ULL-ESIT-DSI-1617/scapegoat](https://github.com/ULL-ESIT-DSI-1617/scapegoat)
   * [prueba-scapegoat. Ejemplo de programa cliente](https://github.com/ULL-ESIT-DSI-1617/prueba-scapegoat)
   * [Repo combinado librería + cliente de prueba](https://github.com/ULL-ESIT-DSI-1617/create-a-npm-module)
