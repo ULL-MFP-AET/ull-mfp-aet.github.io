@@ -32,7 +32,7 @@ debería producir una salida parecida a esta:
 ```
 
 
-## Recursos
+## Tips y Recursos
 
 * [XRegexp](http://xregexp.com/) 
   - [XRegexp en GitHub](https://github.com/slevithan/xregexp)
