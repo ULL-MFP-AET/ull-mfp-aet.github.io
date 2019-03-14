@@ -53,7 +53,7 @@ debería producir una salida parecida a esta:
   - El fichero [xregexp-all.js](https://unpkg.com/xregexp/xregexp-all.js) también viene con la distribución `npm`:
 
     ```
-    [~/.../analizador-lexico-para-js-carlos-dominguez(master)]$ ls -l node_modules/xregexp/
+    $ ls -l node_modules/xregexp/
     total 568
     -rw-r--r--  1 casiano  staff    1106 26 oct  1985 LICENSE
     -rw-r--r--  1 casiano  staff    9861 26 oct  1985 README.md
