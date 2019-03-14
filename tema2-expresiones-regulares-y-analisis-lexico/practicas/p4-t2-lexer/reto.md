@@ -63,7 +63,7 @@ debería producir una salida parecida a esta:
   [ '६६७', '६७', '2' ]
   > 
   ```
-* Tip: Aquí  les dejo un módulo [Módulo @ull-esit-pl/uninums](https://www.npmjs.com/package/@ull-esit-pl/uninums) que les ayudará a obtener la representación interna de una cadena unicode que contenga un número:
+* Tip: Aquí  les dejo un móduloyf) [Módulo @ull-esit-pl/uninums](https://www.npmjs.com/package/@ull-esit-pl/uninums) que les ayudará a obtener la representación interna de una cadena unicode que contenga un número:
 
   ```js
   > uninums = require("@ull-esit-pl/uninums")
@@ -89,6 +89,18 @@ debería producir una salida parecida a esta:
   > uninums.normalDigits('٠۴६')
   '046'
   ```
+* Dado que [Módulo @ull-esit-pl/uninums](https://www.npmjs.com/package/@ull-esit-pl/uninums) se va a usar en el cliente necesitamos una versión para el mismo. Una vez instalado, use el fichero `node_modules/\@ull-esit-pl/uninums/uninums-web.js`:
+
+  ```
+  [~/.../analizador-lexico-para-js-carlos-dominguez(reto)]$ ls -l node_modules/\@ull-esit-pl/uninums/
+  total 56
+  -rw-r--r--  1 casiano  staff  4101  4 mar 09:50 README.md
+  -rw-r--r--  1 casiano  staff  1648  4 mar 09:50 package.json
+  -rw-r--r--  1 casiano  staff  1571  4 mar 09:50 test.html
+  -rw-r--r--  1 casiano  staff  3696  4 mar 09:50 uninums-web.js
+  -rw-r--r--  1 casiano  staff  3641  4 mar 09:50 uninums.js
+  -rw-r--r--  1 casiano  staff  2903  4 mar 09:50 uninums.min.js
+```
 
 * [JavaScript y Unicode](https://github.com/ULL-ESIT-PL/unicode-js) (Repo en GitHub unicode-js)
 * [Repositorio con ejemplos de uso de XRegExp](https://github.com/ULL-ESIT-GRADOII-PL/xregexp-example) 
