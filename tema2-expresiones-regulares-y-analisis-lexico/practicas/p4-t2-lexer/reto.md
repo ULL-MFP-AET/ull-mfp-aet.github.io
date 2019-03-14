@@ -63,7 +63,7 @@ debería producir una salida parecida a esta:
   [ '६६७', '६७', '2' ]
   > 
   ```
-* Tip: Aquí  les dejo un móduloyf) [Módulo @ull-esit-pl/uninums](https://www.npmjs.com/package/@ull-esit-pl/uninums) que les ayudará a obtener la representación interna de una cadena unicode que contenga un número:
+* Tip: Aquí  les dejo un módulo [Módulo @ull-esit-pl/uninums](https://www.npmjs.com/package/@ull-esit-pl/uninums) que les ayudará a obtener la representación interna de una cadena unicode que contenga un número:
 
   ```js
   > uninums = require("@ull-esit-pl/uninums")
