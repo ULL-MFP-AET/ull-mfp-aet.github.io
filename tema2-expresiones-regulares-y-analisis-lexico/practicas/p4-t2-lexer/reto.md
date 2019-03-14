@@ -49,7 +49,21 @@ debería producir una salida parecida a esta:
 
 * [XRegexp](http://xregexp.com/) 
   - [XRegexp en GitHub](https://github.com/slevithan/xregexp)
-  - [xregexp-all.js](https://unpkg.com/xregexp/xregexp-all.js)
+  - Cuando se quiere usar XRegexp en el browser se debe cargar el fichero [xregexp-all.js](https://unpkg.com/xregexp/xregexp-all.js)
+  - El fichero[xregexp-all.js](https://unpkg.com/xregexp/xregexp-all.js) también viene con la distribución `npm`:
+
+    ```
+    [~/.../analizador-lexico-para-js-carlos-dominguez(master)]$ ls -l node_modules/xregexp/
+    total 568
+    -rw-r--r--  1 casiano  staff    1106 26 oct  1985 LICENSE
+    -rw-r--r--  1 casiano  staff    9861 26 oct  1985 README.md
+    drwxr-xr-x  5 casiano  staff     160  4 mar 09:33 lib
+    -rw-r--r--  1 casiano  staff    2759  4 mar 09:33 package.json
+    drwxr-xr-x  5 casiano  staff     160  4 mar 09:33 src
+    drwxr-xr-x  3 casiano  staff      96  4 mar 09:33 tools
+    -rw-r--r--  1 casiano  staff  269593 26 oct  1985 xregexp-all.js
+    ```
+ 
 * [JavaScript y Unicode](https://github.com/ULL-ESIT-PL/unicode-js) (Repo en GitHub unicode-js)
 * [Repositorio con ejemplos de uso de XRegExp](https://github.com/ULL-ESIT-GRADOII-PL/xregexp-example) 
 * [Ejemplos de extensiones de XRegExp para Unicode](https://github.com/ULL-ESIT-GRADOII-PL/xregexp-example/blob/gh-pages/unicode.js)
