@@ -61,7 +61,7 @@ debería producir una salida parecida a esta:
     -rw-r--r--  1 casiano  staff    2759  4 mar 09:33 package.json
     drwxr-xr-x  5 casiano  staff     160  4 mar 09:33 src
     drwxr-xr-x  3 casiano  staff      96  4 mar 09:33 tools
-    -rw-r--r--  1 casiano  staff  269593 26 oct  1985 xregexp-all.js
+    -rw-r--r--  1 casiano  staff  269593 26 oct  1985 xregexp-all.js ☜
     ```
  
 * [JavaScript y Unicode](https://github.com/ULL-ESIT-PL/unicode-js) (Repo en GitHub unicode-js)
