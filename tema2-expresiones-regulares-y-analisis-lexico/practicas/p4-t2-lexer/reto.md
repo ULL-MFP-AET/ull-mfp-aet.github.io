@@ -89,7 +89,7 @@ debería producir una salida parecida a esta:
   > uninums.normalDigits('٠۴६')
   '046'
   ```
-* Dado que [Módulo @ull-esit-pl/uninums](https://www.npmjs.com/package/@ull-esit-pl/uninums) se va a usar en el cliente necesitamos una versión para el mismo. Una vez instalado, use el fichero `node_modules/\@ull-esit-pl/uninums/uninums-web.js`:
+* Tip: Dado que [Módulo @ull-esit-pl/uninums](https://www.npmjs.com/package/@ull-esit-pl/uninums) se va a usar en el cliente necesitamos una versión para el mismo. Una vez instalado, use el fichero `node_modules/\@ull-esit-pl/uninums/uninums-web.js`:
 
   ```
   [~/.../analizador-lexico-para-js-carlos-dominguez(reto)]$ ls -l node_modules/\@ull-esit-pl/uninums/
