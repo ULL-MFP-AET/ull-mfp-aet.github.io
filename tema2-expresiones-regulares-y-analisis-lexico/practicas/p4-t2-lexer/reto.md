@@ -1,6 +1,6 @@
 # Reto para la Práctica Analizador Léxico para Un Subconjunto de JavaScript (p4-t2-lexer)
 
-Usando [XRegExp](http://xregexp.com/) añada a su analizador léxico la capacidad de procesar identificadores y números en unicode.
+Usando [XRegExp](http://xregexp.com/) y [Módulo @ull-esit-pl/uninums](https://www.npmjs.com/package/@ull-esit-pl/uninums) añada a su analizador léxico la capacidad de procesar identificadores y números en unicode.
 Por ejemplo, la entrada:
 
 ```
