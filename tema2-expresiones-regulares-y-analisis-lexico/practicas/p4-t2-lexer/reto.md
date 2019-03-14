@@ -50,7 +50,7 @@ debería producir una salida parecida a esta:
 * [XRegexp](http://xregexp.com/) 
   - [XRegexp en GitHub](https://github.com/slevithan/xregexp)
   - Cuando se quiere usar XRegexp en el browser se debe cargar el fichero [xregexp-all.js](https://unpkg.com/xregexp/xregexp-all.js)
-  - El fichero[xregexp-all.js](https://unpkg.com/xregexp/xregexp-all.js) también viene con la distribución `npm`:
+  - El fichero [xregexp-all.js](https://unpkg.com/xregexp/xregexp-all.js) también viene con la distribución `npm`:
 
     ```
     [~/.../analizador-lexico-para-js-carlos-dominguez(master)]$ ls -l node_modules/xregexp/
