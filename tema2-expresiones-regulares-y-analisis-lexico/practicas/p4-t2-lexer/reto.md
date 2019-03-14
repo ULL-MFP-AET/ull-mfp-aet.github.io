@@ -31,19 +31,6 @@ debería producir una salida parecida a esta:
     }
 ```
 
-## Tips
-
-```js
-> [analizador-lexico(master)]$ node
-> XRegExp = require("xregexp")
-> id = XRegExp('[_\\pL][_\\pL\\pN]+'); // L: Letter, N: number
-> id.exec("Русский६")
-[ 'Русский६', index: 0, input: 'Русский६' ]
-> number = XRegExp('\\pN+', "g"); // N: number
-> "६६७+६७*2".match(number)
-[ '६६७', '६७', '2' ]
-> 
-```
 
 ## Recursos
 
@@ -63,11 +50,21 @@ debería producir una salida parecida a esta:
     drwxr-xr-x  3 casiano  staff      96  4 mar 09:33 tools
     -rw-r--r--  1 casiano  staff  269593 26 oct  1985 xregexp-all.js ☜
     ```
- 
-* [JavaScript y Unicode](https://github.com/ULL-ESIT-PL/unicode-js) (Repo en GitHub unicode-js)
-* [Repositorio con ejemplos de uso de XRegExp](https://github.com/ULL-ESIT-GRADOII-PL/xregexp-example) 
-* [Ejemplos de extensiones de XRegExp para Unicode](https://github.com/ULL-ESIT-GRADOII-PL/xregexp-example/blob/gh-pages/unicode.js)
-* [Módulo @ull-esit-pl/uninums](https://www.npmjs.com/package/@ull-esit-pl/uninums)
+* Tip
+
+  ```js
+  > [analizador-lexico(master)]$ node
+  > XRegExp = require("xregexp")
+  > id = XRegExp('[_\\pL][_\\pL\\pN]+'); // L: Letter, N: number
+  > id.exec("Русский६")
+  [ 'Русский६', index: 0, input: 'Русский६' ]
+  > number = XRegExp('\\pN+', "g"); // N: number
+  > "६६७+६७*2".match(number)
+  [ '६६७', '६७', '2' ]
+  > 
+  ```
+* Tip: Aquí  les dejo un módulo [Módulo @ull-esit-pl/uninums](https://www.npmjs.com/package/@ull-esit-pl/uninums) que les ayudará a obtener la representación interna de una cadena unicode que contenga un número:
+
   ```js
   > uninums = require("@ull-esit-pl/uninums")
   { normalSpaces: [Function: normalSpaces],
@@ -92,6 +89,10 @@ debería producir una salida parecida a esta:
   > uninums.normalDigits('٠۴६')
   '046'
   ```
+
+* [JavaScript y Unicode](https://github.com/ULL-ESIT-PL/unicode-js) (Repo en GitHub unicode-js)
+* [Repositorio con ejemplos de uso de XRegExp](https://github.com/ULL-ESIT-GRADOII-PL/xregexp-example) 
+* [Ejemplos de extensiones de XRegExp para Unicode](https://github.com/ULL-ESIT-GRADOII-PL/xregexp-example/blob/gh-pages/unicode.js)
 
 ## Notas para el Profesor
 
