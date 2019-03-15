@@ -102,7 +102,7 @@ debería producir una salida parecida a esta:
   -rw-r--r--  1 casiano  staff  2903  4 mar 09:50 uninums.min.js
 ```
 
-* [uninums.js](uninums.js)
+* Use este fichero en el cliente: [uninums.js](uninums.js)
 
 * [JavaScript y Unicode](https://github.com/ULL-ESIT-PL/unicode-js) (Repo en GitHub unicode-js)
 * [Repositorio con ejemplos de uso de XRegExp](https://github.com/ULL-ESIT-GRADOII-PL/xregexp-example) 
