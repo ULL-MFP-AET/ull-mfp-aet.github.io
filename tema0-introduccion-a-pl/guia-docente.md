@@ -1,4 +1,6 @@
-# [Enlace a la Guía Docente](https://www.ull.es/apps/guias/guias/view_guide/16020/)
+# Tema 0:Introducción a la Asignatura Procesadores de Lenguajes
+
+## [Enlace a la Guía Docente](https://www.ull.es/apps/guias/guias/view_guide/16020/)
 
 ##  Las Fases de un Procesador de Lenguajes
 
@@ -11,9 +13,11 @@ Esprima is a tool to perform lexical and syntactical analysis of JavaScript prog
     * Local repo: `/Users/casiano/local/src/javascript/learning/esprima-pegjs-jsconfeu-talk`
     * This repository contains code samples from the talk [Parsing, Compiling, and Static Metaprogramming][talk] at JSConfEU 2013. You can find [slides for the talk on Speaker Deck](https://speakerdeck.com/pdubroy/parsing-compiling-and-static-metaprogramming).
 
-[talk]: http://2013.jsconf.eu/speakers/patrick-dubroy-parsing-compiling-and-static-metaprogramming.html
+ * [Martha Girdler: The JavaScript Interpreter, Interpreted -- JSConf EU 2013](https://youtu.be/iSxNCYcPAFk)
 
 ### Prácticas
 
 1. [Práctica pb-gh-campus-expert](practicas/pb-gh-campus-expert)
 2. [Descripción de la Práctica p0-t0-esprima-logging](practicas/p0-t0-esprima-logging)
+
+[talk]: http://2013.jsconf.eu/speakers/patrick-dubroy-parsing-compiling-and-static-metaprogramming.html
