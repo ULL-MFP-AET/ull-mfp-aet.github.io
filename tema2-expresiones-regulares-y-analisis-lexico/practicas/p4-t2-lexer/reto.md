@@ -181,10 +181,10 @@ configuration file. For example:
   ```js
       const parseINI = require('@aluXXXX/parse-ini');
       console.log(parseINI(`
-      name=Vasilis
+      name=Torres Quevedo
       [address]
-      city=Tessaloniki`));
-      // → {name: "Vasilis", address: {city: "Tessaloniki"}}
+      invention=The chess player`));
+      // → {name: "Torres Quevedo", address: {invention: "The chess player"}}
   ```
 
 * Write several unit tests using `mocha`.` `Here you have an initial template:
@@ -195,11 +195,11 @@ configuration file. For example:
 
   describe("parseINI", function() {
     it("should parse a INI input", function() {
-      let expected = {name: "Vasilis", address: {city: "Tessaloniki"}};
+      let expected = {name: "Torres Quevedo", address: {invention: "The chess player"}};
       let  result = parseINI(`
-      name=Vasilis
+      name=Torres Quevedo
       [address]
-      city=Tessaloniki`));
+      invention=The chess player`));
       expected.should.eql(result);
     })
     it("should have an error if not valid", function() {
