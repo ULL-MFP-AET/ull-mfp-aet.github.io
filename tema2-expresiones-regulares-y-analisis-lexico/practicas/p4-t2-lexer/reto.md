@@ -194,7 +194,7 @@ configuration file. For example:
   var parser = require('../lib/parse-ini.js');
 
   describe("parseINI", function() {
-    it("blah blah", function() {
+    it("should parse a INI input", function() {
       let expected = {name: "Vasilis", address: {city: "Tessaloniki"}};
       let  result = parseINI(`
       name=Vasilis
