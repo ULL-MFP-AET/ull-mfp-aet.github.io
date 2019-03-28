@@ -187,8 +187,8 @@ configuration file. For example:
       // → {name: "Torres Quevedo", address: {invention: "The chess player"}}
   ```
 
-* Write several unit tests using [`mocha`](https://mochajs.org/#getting-started).
-  Here you have an initial template using [`should`](https://www.npmjs.com/package/should)
+* Write several unit tests using [mocha](https://mochajs.org/#getting-started).
+  Here you have an initial template using [should](https://www.npmjs.com/package/should)
 
   ```js
   var should = require("should");
