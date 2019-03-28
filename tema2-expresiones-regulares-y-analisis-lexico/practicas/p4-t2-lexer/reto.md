@@ -176,12 +176,14 @@ That completely describes the language. Here is an example:
 providing a function `parseINI` to convert a INI string into a JavaScript object reflecting the
 configuration file. For example:
 
-    const parseINI = require('@aluXXXX/parse-ini');
-    console.log(parseINI(`
-    name=Vasilis
-    [address]
-    city=Tessaloniki`));
-    // → {name: "Vasilis", address: {city: "Tessaloniki"}}
+  ```js
+      const parseINI = require('@aluXXXX/parse-ini');
+      console.log(parseINI(`
+      name=Vasilis
+      [address]
+      city=Tessaloniki`));
+      // → {name: "Vasilis", address: {city: "Tessaloniki"}}
+  ```
 
 * Write several unit tests using `mocha`. Here you have an initial template:
 
