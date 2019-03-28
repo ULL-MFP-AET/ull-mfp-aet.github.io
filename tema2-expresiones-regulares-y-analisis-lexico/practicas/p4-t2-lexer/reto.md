@@ -173,7 +173,7 @@ That completely describes the language. Here is an example:
 ### Requirements
 
 * Our task is to write and **publish** a npm module (in your user scope) 
-providing a function `parseINI` to convert a INI string into an object reflecting the
+providing a function `parseINI` to convert a INI string into a JavaScript object reflecting the
 configuration file. For example:
 
     const parseINI = require('@aluXXXX/parse-ini');
