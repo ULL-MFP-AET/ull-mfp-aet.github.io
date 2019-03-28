@@ -1,4 +1,6 @@
-# Reto para la Práctica Analizador Léxico para Un Subconjunto de JavaScript (p4-t2-lexer)
+# Retos para la Práctica Analizador Léxico para Un Subconjunto de JavaScript (p4-t2-lexer)
+
+## Reto 1: Unicode
 
 Usando [XRegExp](http://xregexp.com/) y [Módulo @ull-esit-pl/uninums](https://www.npmjs.com/package/@ull-esit-pl/uninums) añada a su analizador léxico la capacidad de procesar identificadores y números en unicode.
 Por ejemplo, la entrada:
@@ -134,5 +136,72 @@ debería producir una salida parecida a esta:
   * [sol-cri-auth](https://github.com/ULL-ESIT-PL-1718/auth-alu0100945850)
 
 
+## Reto 2: Ficheros INI
+
+The **INI** file format is an informal standard for configuration files.
+INI files are simple text files with a basic structure composed of lists
+of sections, and each section is a list of property-value pairs. The
+exact rules for this format are as follows:
+
+-   Blank lines and lines starting with semicolons are ignored.
+
+-   Lines wrapped in `[` and `]` start a new section.
+
+-   Lines containing an alphanumeric identifier followed by an `=`
+    character add a setting to the current section.
+
+-   Anything else is invalid.
+
+That completely describes the language. Here is an example:
+
+    ; comments are preceded by a semicolon
+    ; global section
+    searchengine=https://duckduckgo.com/?q=$1
+    spitefulness=9.7
+
+    ; each section but the global starts with [identifier]
+    [gandalf]
+    fullname=Mithrandir
+    type=grey wizard
+    website=http://tolkiengateway.net/wiki/Gandalf
+
+    [gollum]
+    fullname=Sméagol
+    type=hobbit
+    website=https://lotr.fandom.com/wiki/Gollum
+
+### question
+
+* Our task is to write and **publish** a npm module providing a function
+`parseINI` to convert a INI string into an object reflecting the
+configuration file. For example:
+
+    const parseINI = require('@aluXXXX/parse-ini');
+    console.log(parseINI(`
+    name=Vasilis
+    [address]
+    city=Tessaloniki`));
+    // → {name: "Vasilis", address: {city: "Tessaloniki"}}
+
+* Write several unit tests using `mocha`. Here you have an initial template:
+
+  ```js
+  var should = require("should");
+  var parser = require('../lib/parse-ini.js');
+
+  describe("parseINI", function() {
+    it("blah blah", function() {
+      let expected = {name: "Vasilis", address: {city: "Tessaloniki"}};
+      let  result = parseINI(`
+      name=Vasilis
+      [address]
+      city=Tessaloniki`));
+      expected.should.eql(result);
+    })
+    it("should have an error if not valid", function() {
+      (function(){parseINI('chazam')}).should.throw(Error);
+    })
+  })
+  ```
 
 
