@@ -138,7 +138,7 @@ debería producir una salida parecida a esta:
 
 ## Reto 2: Ficheros INI
 
-The **INI** file format is an informal standard for configuration files.
+The **[INI](https://en.wikipedia.org/wiki/INI_file)** file format is an informal standard for configuration files.
 INI files are simple text files with a basic structure composed of lists
 of sections, and each section is a list of property-value pairs. The
 exact rules for this format are as follows:
