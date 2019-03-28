@@ -185,7 +185,7 @@ configuration file. For example:
       // → {name: "Vasilis", address: {city: "Tessaloniki"}}
   ```
 
-* Write several unit tests using `mocha`. Here you have an initial template:
+* Write several unit tests using `mocha`.\ Here you have an initial template:
 
   ```js
   var should = require("should");
