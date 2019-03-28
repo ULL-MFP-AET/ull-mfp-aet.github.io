@@ -188,7 +188,7 @@ configuration file. For example:
   ```
 
 * Write several unit tests using [`mocha`](https://mochajs.org/#getting-started).
-` `Here you have an initial template using [`should`](https://www.npmjs.com/package/should)
+  Here you have an initial template using [`should`](https://www.npmjs.com/package/should)
 
   ```js
   var should = require("should");
