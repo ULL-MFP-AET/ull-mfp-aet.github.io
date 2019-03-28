@@ -170,10 +170,10 @@ That completely describes the language. Here is an example:
     type=hobbit
     website=https://lotr.fandom.com/wiki/Gollum
 
-### question
+### Requirements
 
-* Our task is to write and **publish** a npm module providing a function
-`parseINI` to convert a INI string into an object reflecting the
+* Our task is to write and **publish** a npm module (in your user scope) 
+providing a function `parseINI` to convert a INI string into an object reflecting the
 configuration file. For example:
 
     const parseINI = require('@aluXXXX/parse-ini');
@@ -199,7 +199,7 @@ configuration file. For example:
       expected.should.eql(result);
     })
     it("should have an error if not valid", function() {
-      (function(){parseINI('chazam')}).should.throw(Error);
+      (function(){parseINI('chazam')}).should.throw(/Error/);
     })
   })
   ```
