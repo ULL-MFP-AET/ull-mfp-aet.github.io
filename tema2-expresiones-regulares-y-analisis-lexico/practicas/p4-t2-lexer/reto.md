@@ -208,5 +208,5 @@ configuration file. For example:
     })
   })
   ```
-
+* Añada a su `README-md` de esta práctica los enlaces al repo del reto y al módulo en npm
 
