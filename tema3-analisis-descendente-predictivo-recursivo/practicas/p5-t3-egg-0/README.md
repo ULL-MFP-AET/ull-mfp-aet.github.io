@@ -19,6 +19,7 @@
   1
   > # Pulsamos CTRL-D
   > goodbye!
+
   ```
   * En este [Vídeo *Programando un bucle REPL para el lenguaje Egg*](https://youtu.be/5gIlt6r29lw) explicamos como hacerlo
 <!-- 6. Añada índices negativos (a la Ruby) para los arrays -->
