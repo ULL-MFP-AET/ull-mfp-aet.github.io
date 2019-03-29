@@ -9,6 +9,7 @@
 5. El analizador léxico actual destruye la cadena conteniendo el programa conforme la analiza.  Es posible  escribir una analizador léxico que recorra la cadena conteniendo el programa sin destruirla usando la opción `sticky`. Estudie esta mejora
 6. Mejore las pruebas, especialmente con programas que contienen errores
 8. Haga que el ejecutable `egg` funcione como un bucle REPL cuando no se le proporciona un fichero de entrada
+
   ```lisp
   [~/ull-pl1718-campus-virtual/tema3-analisis-sintactico/src/egg/crguezl-egg(private)]$ bin/egg.js
   > def(x, array(1,2,array(3,4))) # x = [1,2,[3,4]]
