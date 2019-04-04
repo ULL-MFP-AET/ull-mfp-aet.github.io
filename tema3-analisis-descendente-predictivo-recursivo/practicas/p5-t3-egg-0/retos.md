@@ -23,12 +23,14 @@
   ```
 
 2. Introduzca una prueba en `test/test.js` que demuestre que una entrada como la de [`examples/scope-err.egg`](https://github.com/ULL-ESIT-PL-1617/egg/blob/reto/examples/scope-err.egg):
+
   ```lisp
   do( 
     set(x,9),
     print(x) # ReferenceError: Tried setting an undefined variable: x
   )
   ```
+
   produce una excepción de este estilo: `SyntaxError: Unexpected input after reached the end of parsing 1: 5) ;`
   Estudie [la API de Should.js](https://shouldjs.github.io/#should-throws)
 
