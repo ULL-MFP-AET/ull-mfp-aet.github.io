@@ -42,7 +42,7 @@
 
 4. Introduzca una prueba en `test/test.js` que demuestre que una entrada como la de `examples/one.egg`: 
 
-  ```lisp
+  ```js
   do(
     define(x, 4),
     define(setx, fun(val, 
