@@ -78,6 +78,7 @@ obj("meth", args)
 ```
 
   **[~/campus-virtual/1819/pl1819/introduccion/tema3-analisis-descendente-predictivo-recursivo/practicas/p5-t3-egg-0/egg(private2019)]$ cat examples/method.egg**
+
   ```js
   do(
     def(x, array[1,4,5]),
@@ -85,12 +86,17 @@ obj("meth", args)
   )
   ```
 
+  que cuando se ejecuta da:
+
   ```
   [~/campus-virtual/1819/pl1819/introduccion/tema3-analisis-descendente-predictivo-recursivo/practicas/p5-t3-egg-0/egg/crguezl-egg(private2019)]$ bin/egg.js examples/method.egg 
   1-4-5
   ```
 
+  Otro ejemplo:
+
   **[~/campus-virtual/1819/pl1819/introduccion/tema3-analisis-descendente-predictivo-recursivo/practicas/p5-t3-egg-0/egg/crguezl-egg(private2019)]$ cat examples/method2.egg**
+
   ```js
   do(
     def(x, "hello"),
@@ -98,18 +104,25 @@ obj("meth", args)
   )
   ```
 
+  que cuando se ejecuta da:
+
   ```
   [~/campus-virtual/1819/pl1819/introduccion/tema3-analisis-descendente-predictivo-recursivo/practicas/p5-t3-egg-0/egg/crguezl-egg(private2019)]$ bin/egg.js examples/method2.egg 
   HELLO
   ```
 
+  Se debería poder concatenar las llamadas de métodos:
+
   **[~/campus-virtual/1819/pl1819/introduccion/tema3-analisis-descendente-predictivo-recursivo/practicas/p5-t3-egg-0/egg/crguezl-egg(private2019)]$ cat examples/method3.egg**
+
   ```js
   do(
     def(x, array["a","b","c"]),
     print(x("join", "-")("toUpperCase"))
   )
   ```
+
+  que cuando se ejecuta da:
 
   ```
   [~/campus-virtual/1819/pl1819/introduccion/tema3-analisis-descendente-predictivo-recursivo/practicas/p5-t3-egg-0/egg/crguezl-egg(private2019)]$ bin/egg.js examples/method3.egg 
