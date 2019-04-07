@@ -178,7 +178,7 @@ tiene un método con nombre `"meth"`, este  pueda ser llamado usando la sintáxi
   }
   ```
 
-  Que cuando se ejecuta debería dar algo como esto:
+  Que cuando se ejecuta debería dar una salida como esta:
 
   ```
   [~/.../crguezl-egg(private2019)]$ bin/egg.js  examples/string-apply.egg 
