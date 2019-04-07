@@ -1,8 +1,13 @@
 ### Requisitos
 
 1. Use el repo de GitHub dado por la asignación de esta tarea partiendo de la [práctica anterior](https://crguezl.github.io/ull-esit-1617/_book/practicas/practica-egg.html)
-9. Modifique el AST para dar una solución OOP con clases: una clase `Value`, una clase `Word`, una clase `Apply`, ...
-de manera que cada clase de objeto dispone de un método `evaluate`. 
+9. Modifique el AST para dar una solución OOP con clases: 
+
+  -- una clase `Value`, 
+  -- una clase `Word`, 
+  -- una clase `Apply`, ...
+
+  de manera que cada clase de objeto dispone de un método `evaluate`. 
 
   ```
   [~/ull-pl1718-campus-virtual/tema3-analisis-sintactico/src/egg/crguezl-egg(private)]$ cat lib/ast.js 
