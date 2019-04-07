@@ -63,6 +63,34 @@ de manera que cada clase de objeto dispone de un método `evaluate`.
   3 directories, 14 files
   ```
   La función `evaluate` con el `switch` que estaba en `lib/eggvm.js` desaparece en esta versión
+2. Modifique la evaluación de los nodos `Apply`de manera que programas como estos funcionen:
+
+  **[~/campus-virtual/1819/pl1819/introduccion/tema3-analisis-descendente-predictivo-recursivo/practicas/p5-t3-egg-0/egg(private2019)]$ cat examples/method.egg **
+  ```js
+  do(
+    def(x, array[1,4,5]),
+    print(x("join", "-"))
+  )
+  ```
+  ```
+  [~/campus-virtual/1819/pl1819/introduccion/tema3-analisis-descendente-predictivo-recursivo/practicas/p5-t3-egg-0/egg/crguezl-egg(private2019)]$ bin/egg.js examples/method.egg 
+  1-4-5
+  [~/campus-virtual/1819/pl1819/introduccion/tema3-analisis-descendente-predictivo-recursivo/practicas/p5-t3-egg-0/egg/crguezl-egg(private2019)]$ cat examples/method2.egg 
+  do(
+    def(x, "hello"),
+    print(x("toUpperCase"))
+  )
+  [~/campus-virtual/1819/pl1819/introduccion/tema3-analisis-descendente-predictivo-recursivo/practicas/p5-t3-egg-0/egg/crguezl-egg(private2019)]$ bin/egg.js examples/method2.egg 
+  HELLO
+  [~/campus-virtual/1819/pl1819/introduccion/tema3-analisis-descendente-predictivo-recursivo/practicas/p5-t3-egg-0/egg/crguezl-egg(private2019)]$ cat examples/method3.egg 
+  do(
+    def(x, array["a","b","c"]),
+    print(x("join", "-")("toUpperCase"))
+  )
+  [~/campus-virtual/1819/pl1819/introduccion/tema3-analisis-descendente-predictivo-recursivo/practicas/p5-t3-egg-0/egg/crguezl-egg(private2019)]$ bin/egg.js examples/method3.egg 
+  A-B-C
+  ```
+
 6. Añada índices negativos (a la Ruby) para los arrays 
 7. Añada mapas/hashes al lenguaje
 2. Haga que el ejecutable `egg` funcione como un bucle REPL cuando no se le proporciona un fichero de entrada
