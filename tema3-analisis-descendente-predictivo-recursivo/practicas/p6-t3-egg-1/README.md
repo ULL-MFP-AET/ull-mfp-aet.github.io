@@ -1,4 +1,6 @@
-### Requisitos
+# Práctica: Egg. A Programming Language. Segunda Parte (p6-t3-egg-1)
+
+## Requisitos
 
 * Use el repo de GitHub dado por la asignación de esta tarea partiendo de la [práctica anterior](https://crguezl.github.io/ull-esit-1617/_book/practicas/practica-egg.html)
 * Modifique el AST para dar una solución OOP con clases: 
@@ -215,7 +217,7 @@
   ```
   Si quiere saber mas sobre stubbing estudie la librería [sinon](http://sinonjs.org/)
 
-### Recursos
+## Recursos
 
 * [Eloquent JS: Chapter 11. Project: A Programming Language](http://eloquentjavascript.net/11_language.html)
 * [El lenguaje egg: repo en GitHub](https://github.com/ULL-ESIT-PL-1617/egg)
