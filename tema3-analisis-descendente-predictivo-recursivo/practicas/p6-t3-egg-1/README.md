@@ -73,9 +73,10 @@
 * Modifique la evaluación de los nodos `Apply` de manera que si el objeto JavaScript subyacente `obj`
 tiene un método con nombre `"meth"`, este  pueda ser llamado usando la sintáxis de `Apply`: 
 
-```js 
-obj("meth", args)
-```
+  ```js 
+  obj("meth", args)
+  ```
+
   Por ejemplo:
 
   **[~/campus-virtual/1819/pl1819/introduccion/tema3-analisis-descendente-predictivo-recursivo/practicas/p5-t3-egg-0/egg(private2019)]$ cat examples/method.egg**
