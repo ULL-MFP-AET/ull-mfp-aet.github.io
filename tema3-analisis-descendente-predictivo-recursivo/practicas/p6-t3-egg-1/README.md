@@ -172,7 +172,8 @@ obj("meth", args)
 
   ```js
   do {
-    print("hello"("length"))
+    print("hello"("length")),
+    print(4("toFixed", 2))
   }
   ```
 
@@ -181,6 +182,7 @@ obj("meth", args)
   ```
   [~/.../crguezl-egg(private2019)]$ bin/egg.js  examples/string-apply.egg 
   5
+  4.00
   ```
 
 * Añada índices negativos (a la Ruby) para los arrays 
