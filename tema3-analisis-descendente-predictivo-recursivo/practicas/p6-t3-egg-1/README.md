@@ -130,6 +130,23 @@ obj("meth", args)
   A-B-C
   ```
 
+  la concatenación puede ser larga
+
+  **[~/.../crguezl-egg(private2019)]$ cat examples/method-concatenation.egg**
+  
+  ```js
+  do(
+    print(array[1,4,5]("join", "-")("substring",0,2)("concat", "hello egg"))
+  )
+  ```
+
+  cuya ejecución resulta en:
+
+  ```
+  [~/.../crguezl-egg(private2019)]$ bin/egg.js  examples/method-concatenation.egg 
+  1-hello egg
+  ```
+
 * Utilizando lo anterior y JS Monkey patching, añada propiedades a los objetos JavaScript, de manera que programas como este funcionen:
 
   **[~/campus-virtual/1819/pl1819/introduccion/tema3-analisis-descendente-predictivo-recursivo/practicas/p5-t3-egg-0/egg/crguezl-egg(private2019)]$ cat examples/property.egg**
