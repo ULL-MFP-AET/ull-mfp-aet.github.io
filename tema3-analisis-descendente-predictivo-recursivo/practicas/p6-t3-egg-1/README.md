@@ -167,6 +167,29 @@ tiene un método con nombre `"meth"`, este  pueda ser llamado usando la sintáxi
   2
   3
   ```
+
+* Modifique la evaluación de los nodos `Apply` para que cuando se trata de una propiedad/atributo que no es una función/método se retorne el valor de la propiedad:
+
+  **[~/.../crguezl-egg(develop-oop-idea)]$ cat examples/array-properties.egg**
+
+  ```js
+  do(
+    def(x, array[1, 4, array[5, 3]]),
+    print(x[0]),   # 1
+    print(x[2]),   # [5, 3]
+    print(x[2][1]) # 3
+  )
+  ```
+
+  Este es el resultado de la ejecución:
+
+  ```
+  [~/.../crguezl-egg(develop-oop-idea)]$ bin/egg.js examples/array-properties.egg 
+  1
+  [ 5, 3 ]
+  3
+  ```
+
 * Modifique la gramática de Egg para que las `String` y los `Number` puedan hacer `apply`:
 
   **[~/.../crguezl-egg(private2019)]$ cat examples/string-apply.egg**
