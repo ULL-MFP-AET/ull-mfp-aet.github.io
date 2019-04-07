@@ -211,7 +211,8 @@ tiene un método con nombre `"meth"`, este  pueda ser llamado usando la sintáxi
   que se ejecutará siempre que el método llamado no exista. En el ejemplo que sigue se a definido para la clase `Array` que 
   el método por defecto sea la indexación (via Monkey patching de `Array`):
 
-  **[~/.../crguezl-egg(develop-oop-idea)]$ cat examples/array-call-default.egg **
+  **[~/.../crguezl-egg(develop-oop-idea)]$ cat examples/array-call-default.egg**
+
   ```js
   do(
     def(x, array[1, 4, array[5, 3]]),
