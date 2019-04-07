@@ -9,8 +9,8 @@
 
   de manera que cada clase de objeto dispone de un método `evaluate`. 
 
-  ```
-  [~/ull-pl1718-campus-virtual/tema3-analisis-sintactico/src/egg/crguezl-egg(private)]$ cat lib/ast.js 
+  **[~/ull-pl1718-campus-virtual/tema3-analisis-sintactico/src/egg/crguezl-egg(private)]$ cat lib/ast.js**
+  ```js
   // The AST classes
   const {specialForms} = require("./registry.js");
 
@@ -78,6 +78,7 @@
     print(x("join", "-"))
   )
   ```
+
   ```
   [~/campus-virtual/1819/pl1819/introduccion/tema3-analisis-descendente-predictivo-recursivo/practicas/p5-t3-egg-0/egg/crguezl-egg(private2019)]$ bin/egg.js examples/method.egg 
   1-4-5
