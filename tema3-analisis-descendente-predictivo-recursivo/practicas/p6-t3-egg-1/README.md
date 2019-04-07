@@ -185,8 +185,7 @@ obj("meth", args)
   4.00
   ```
 
-* Extienda las clases Number y String con Monkey Patching para permitir mayor expresividad como en este ejemplo en el que 
-se añade a los números un método `+`::
+* Extienda las clases Number y String con Monkey Patching para permitir mayor expresividad en el lenguaje Egg como en este ejemplo en el que se añade a los números un método `+`::
 
   ```js
   do {
