@@ -129,9 +129,10 @@ obj("meth", args)
   A-B-C
   ```
 
-* Añada propiedades JavaScript al lenguaje, de manera que programas como este funcionen:
+* Utilizando lo anterior y JS Monkey patching, añada propiedades a los objetos JavaScript, de manera que programas como este funcionen:
 
   **[~/campus-virtual/1819/pl1819/introduccion/tema3-analisis-descendente-predictivo-recursivo/practicas/p5-t3-egg-0/egg/crguezl-egg(private2019)]$ cat examples/property.egg**
+
   ```js
   do( # test properties in egg
     def(x, array[1,array[3,2,5]]),
