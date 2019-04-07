@@ -222,6 +222,7 @@ tiene un método con nombre `"meth"`, este  pueda ser llamado usando la sintáxi
   )
   ```
 
+  Que cuando se ejecuta da esta salida:
 
   ```
   [~/.../crguezl-egg(develop-oop-idea)]$ bin/egg.js  examples/array-call-default.egg 
