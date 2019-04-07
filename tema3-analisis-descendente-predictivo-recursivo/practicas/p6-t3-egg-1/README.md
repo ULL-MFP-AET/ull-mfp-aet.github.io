@@ -111,13 +111,16 @@
 
 * Añada propiedades JavaScript al lenguaje, de manera que programas como este funcionen:
 
-  ```
-  [~/campus-virtual/1819/pl1819/introduccion/tema3-analisis-descendente-predictivo-recursivo/practicas/p5-t3-egg-0/egg/crguezl-egg(private2019)]$ cat examples/property.egg 
+  **[~/campus-virtual/1819/pl1819/introduccion/tema3-analisis-descendente-predictivo-recursivo/practicas/p5-t3-egg-0/egg/crguezl-egg(private2019)]$ cat examples/property.egg**
+  ```js
   do( # test properties in egg
     def(x, array[1,array[3,2,5]]),
     print(x("length")),          # 2
     print(x["sub", 1]("length")) # 3
   )
+  ```
+
+  ```
   [~/campus-virtual/1819/pl1819/introduccion/tema3-analisis-descendente-predictivo-recursivo/practicas/p5-t3-egg-0/egg/crguezl-egg(private2019)]$ bin/egg.js examples/property.egg 
   2
   3
