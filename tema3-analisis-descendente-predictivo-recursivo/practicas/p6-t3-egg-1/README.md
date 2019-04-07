@@ -1,7 +1,7 @@
 ### Requisitos
 
-1. Use el repo de GitHub dado por la asignación de esta tarea partiendo de la [práctica anterior](https://crguezl.github.io/ull-esit-1617/_book/practicas/practica-egg.html)
-9. Modifique el AST para dar una solución OOP con clases: 
+* Use el repo de GitHub dado por la asignación de esta tarea partiendo de la [práctica anterior](https://crguezl.github.io/ull-esit-1617/_book/practicas/practica-egg.html)
+* Modifique el AST para dar una solución OOP con clases: 
   - una clase `Value`, 
   - una clase `Word`, 
   - una clase `Apply`, ...
@@ -68,7 +68,7 @@
 
   La función `evaluate` con el `switch` que estaba en `lib/eggvm.js` desaparece en esta versión
 
-3. Modifique la evaluación de los nodos `Apply`de manera que introducimos el conceptode método y ciertos elementos de OOP haciendo que programas como estos funcionen:
+* Modifique la evaluación de los nodos `Apply`de manera que introducimos el conceptode método y ciertos elementos de OOP haciendo que programas como estos funcionen:
 
   **[~/campus-virtual/1819/pl1819/introduccion/tema3-analisis-descendente-predictivo-recursivo/practicas/p5-t3-egg-0/egg(private2019)]$ cat examples/method.egg**
   ```js
@@ -109,7 +109,7 @@
   A-B-C
   ```
 
-3. Añada propiedades JavaScript al lenguaje, de manera que programas como este funcionen:
+* Añada propiedades JavaScript al lenguaje, de manera que programas como este funcionen:
 
   ```
   [~/campus-virtual/1819/pl1819/introduccion/tema3-analisis-descendente-predictivo-recursivo/practicas/p5-t3-egg-0/egg/crguezl-egg(private2019)]$ cat examples/property.egg 
@@ -123,11 +123,11 @@
   3
   ```
 
-6. Añada índices negativos (a la Ruby) para los arrays 
+* Añada índices negativos (a la Ruby) para los arrays 
 
-7. Añada mapas/hashes al lenguaje
+* Añada mapas/hashes al lenguaje
 
-2. Haga que el ejecutable `egg` funcione como un bucle REPL cuando no se le proporciona un fichero de entrada
+* Haga que el ejecutable `egg` funcione como un bucle REPL cuando no se le proporciona un fichero de entrada
   ```lisp
   [~/ull-pl1718-campus-virtual/tema3-analisis-sintactico/src/egg/crguezl-egg(private)]$ bin/egg.js
   > def(x, array(1,2,array(3,4))) # x = [1,2,[3,4]]
@@ -140,7 +140,7 @@
   > goodbye!
   ```
   * En este [Vídeo *Programando un bucle REPL para el lenguaje Egg*](https://youtu.be/5gIlt6r29lw) explicamos como hacerlo
-9. Modifique la versión actual del lenguaje egg para que acepte como entrada este programa en [`examples/reto.egg`](https://github.com/ULL-ESIT-PL-1617/egg/blob/reto/examples/reto.egg) en la rama `reto` del repo:
+* Modifique la versión actual del lenguaje egg para que acepte como entrada este programa en [`examples/reto.egg`](https://github.com/ULL-ESIT-PL-1617/egg/blob/reto/examples/reto.egg) en la rama `reto` del repo:
   ```lisp
   do {
     def(sum,  ; function
@@ -160,7 +160,7 @@
    print(+("sum(array[1, 2, 3]) := ", sum(array[1, 2, 3])))
   }
   ```
-2. Introduzca una prueba en `test/test.js` que demuestre que una entrada como la de [`examples/scope-err.egg`](https://github.com/ULL-ESIT-PL-1617/egg/blob/reto/examples/scope-err.egg):
+* Introduzca una prueba en `test/test.js` que demuestre que una entrada como la de [`examples/scope-err.egg`](https://github.com/ULL-ESIT-PL-1617/egg/blob/reto/examples/scope-err.egg):
   ```lisp
   do( 
     set(x,9),
@@ -170,13 +170,13 @@
   produce una excepción de este estilo: `SyntaxError: Unexpected input after reached the end of parsing 1: 5) ;`
   Estudie [la API de Should.js](https://shouldjs.github.io/#should-throws)
 
-2. Introduzca una prueba en `test/test.js` que demuestre que una entrada como la de `examples/number-as-fun-err.egg`: 
+* Introduzca una prueba en `test/test.js` que demuestre que una entrada como la de `examples/number-as-fun-err.egg`: 
   ```lisp
   4(5) ; Calling a number as a function
   ```
   produce una excepción
 
-2. Introduzca una prueba en `test/test.js` que demuestre que una entrada como la de `examples/one.egg`: 
+* Introduzca una prueba en `test/test.js` que demuestre que una entrada como la de `examples/one.egg`: 
   ```lisp
   do(
     define(x, 4),
