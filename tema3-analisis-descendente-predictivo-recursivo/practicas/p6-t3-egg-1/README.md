@@ -185,6 +185,27 @@ obj("meth", args)
   4.00
   ```
 
+* Extienda las clases Number y String con Monkey Patching para permitir mayor expresividad como en este ejemplo en el que 
+se añade a los números un método `+`::
+
+  ```js
+  do {
+    print("hello"("length")),
+    print(4("toFixed", 2)),
+    print(4("+", 5, 7, 3)) # 19
+  }
+  ```
+
+  Cuando se ejecuta obtenemos:
+
+  ```
+  [~/.../crguezl-egg(private2019)]$ bin/egg.js  examples/string-apply.egg 
+  5
+  4.00
+  19
+  ```
+
+  
 * Añada índices negativos (a la Ruby) para los arrays 
 
 * Añada mapas/hashes al lenguaje Egg
