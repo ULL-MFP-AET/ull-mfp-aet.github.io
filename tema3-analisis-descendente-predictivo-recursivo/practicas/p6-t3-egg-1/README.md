@@ -166,6 +166,22 @@ obj("meth", args)
   2
   3
   ```
+* Modifique la gramática de Egg para que las `String` y los `Number` puedan hacer `apply`:
+
+  **[~/.../crguezl-egg(private2019)]$ cat examples/string-apply.egg**
+
+  ```js
+  do {
+    print("hello"("length"))
+  }
+  ```
+
+  Que cuando se ejecuta debería dar algo como esto:
+
+  ```
+  [~/.../crguezl-egg(private2019)]$ bin/egg.js  examples/string-apply.egg 
+  5
+  ```
 
 * Añada índices negativos (a la Ruby) para los arrays 
 
