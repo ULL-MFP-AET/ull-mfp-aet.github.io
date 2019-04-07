@@ -128,7 +128,7 @@
 
 * Añada índices negativos (a la Ruby) para los arrays 
 
-* Añada mapas/hashes al lenguaje
+* Añada mapas/hashes al lenguaje Egg
 
 * Haga que el ejecutable `egg` funcione como un bucle REPL cuando no se le proporciona un fichero de entrada
   ```lisp
