@@ -187,6 +187,8 @@ obj("meth", args)
 
 * Extienda las clases Number y String con Monkey Patching para permitir mayor expresividad en el lenguaje Egg como en este ejemplo en el que se añade a los números un método `+`::
 
+  **[~/.../crguezl-egg(private2019)]$ cat examples/string-apply.egg**
+
   ```js
   do {
     print("hello"("length")),
