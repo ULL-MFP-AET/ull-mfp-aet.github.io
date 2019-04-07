@@ -141,6 +141,8 @@ obj("meth", args)
   )
   ```
 
+  que cuando se ejecuta da:
+
   ```
   [~/campus-virtual/1819/pl1819/introduccion/tema3-analisis-descendente-predictivo-recursivo/practicas/p5-t3-egg-0/egg/crguezl-egg(private2019)]$ bin/egg.js examples/property.egg 
   2
