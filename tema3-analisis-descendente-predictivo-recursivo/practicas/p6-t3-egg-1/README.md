@@ -68,7 +68,7 @@
 
   La función `evaluate` con el `switch` que estaba en `lib/eggvm.js` desaparece en esta versión
 
-3. Modifique la evaluación de los nodos `Apply`de manera que programas como estos funcionen:
+3. Modifique la evaluación de los nodos `Apply`de manera que introducimos el conceptode método y ciertos elementos de OOP haciendo que programas como estos funcionen:
 
   **[~/campus-virtual/1819/pl1819/introduccion/tema3-analisis-descendente-predictivo-recursivo/practicas/p5-t3-egg-0/egg(private2019)]$ cat examples/method.egg**
   ```js
