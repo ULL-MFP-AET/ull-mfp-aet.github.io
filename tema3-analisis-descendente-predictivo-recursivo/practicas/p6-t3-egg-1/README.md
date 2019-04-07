@@ -186,7 +186,7 @@ tiene un método con nombre `"meth"`, este  pueda ser llamado usando la sintáxi
   4.00
   ```
 
-* Extienda las clases Number y String con Monkey Patching para permitir mayor expresividad en el lenguaje Egg como en este ejemplo en el que se añade a los números un método `+`::
+* Extienda las clases Number y String con Monkey Patching para permitir mayor expresividad en el lenguaje Egg como en este ejemplo en el que los números tienen un método `+`:
 
   **[~/.../crguezl-egg(private2019)]$ cat examples/string-apply.egg**
 
@@ -207,7 +207,28 @@ tiene un método con nombre `"meth"`, este  pueda ser llamado usando la sintáxi
   19
   ```
 
-  
+* Añada a los objetos del lenguaje Egg la posibilidad de que los objetos de una clase JS tengan una *rutina por defecto*
+  que se ejecutará siempre que el método llamado no exista. En el ejemplo que sigue se a definido para la clase `Array` que 
+  el método por defecto sea la indexación (via Monkey patching de `Array`):
+
+  **[~/.../crguezl-egg(develop-oop-idea)]$ cat examples/array-call-default.egg **
+  ```js
+  do(
+    def(x, array[1, 4, array[5, 3]]),
+    print(x[0]),   # 1
+    print(x[2]),   # [5, 3]
+    print(x[2, 1]) # 3
+  )
+  ```
+
+
+  ```
+  [~/.../crguezl-egg(develop-oop-idea)]$ bin/egg.js  examples/array-call-default.egg 
+  1
+  [ 5, 3 ]
+  [ 5, 3 ]
+  ```  
+
 * Añada índices negativos (a la Ruby) para los arrays 
 
 * Añada mapas/hashes al lenguaje Egg
