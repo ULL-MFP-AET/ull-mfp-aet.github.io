@@ -299,7 +299,27 @@ tiene un método con nombre `"meth"`, este  pueda ser llamado usando la sintáxi
 
 * Añada mapas/hashes al lenguaje Egg
 
+  **[~/.../crguezl-egg(private2019)]$ cat examples/map.egg **
 
+  ```
+  do {
+    def(x, map["x", 4, "y", map["z", 3]]),
+    print(x),                               # { x: 4, y: { z: 3 } }
+    print(element(x, "x")),                 # 4
+    print(element(x, "y")),                 # { z: 3 }
+    print(element(x, "y", "z"))             # 3
+  }
+  ```
+  
+  Ejecución:
+
+  ```
+  [~/.../crguezl-egg(private2019)]$ bin/egg.js examples/map.egg 
+  { x: 4, y: { z: 3 } }
+  4
+  { z: 3 }
+  3
+  ```
 
 ## Recursos
 
