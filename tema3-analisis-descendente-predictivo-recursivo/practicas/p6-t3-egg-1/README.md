@@ -264,6 +264,9 @@ tiene un método con nombre `"meth"`, este  pueda ser llamado usando la sintáxi
     set(x,1, 2),
     print(x)
   )
+  ```
+
+  ```
   [~/.../crguezl-egg(private2019)]$ bin/egg.js examples/set-error.egg 
   ReferenceError: Tried to set with indices a scalar variable ''x'
   ```
