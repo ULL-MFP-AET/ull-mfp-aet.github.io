@@ -323,37 +323,37 @@ tiene un método con nombre `"meth"`, este  pueda ser llamado usando la sintáxi
 
 * Añada objetos al lenguaje Egg de manera que podamos escribir programas como este:
 
-**[~/.../crguezl-egg(private2019)]$ cat examples/objects.egg**
- 
-```
-do (
-  def(x, object ( 
-    "c", 0,
-    "gc", ->{element[this, "c"]},
-    "sc", ->{value, =(this, "c", value)},
-    "inc", ->{=(this, "c", +(element[this, "c"],1))}
-  )),
-  print(x),
-  print(x("gc")),
-  x("sc", 4),
-  print(x("gc")),
-  x("inc"),
-  print(x("gc")),
-)
-```
+  **[~/.../crguezl-egg(private2019)]$ cat examples/objects.egg**
+   
+  ```
+  do (
+    def(x, object ( 
+      "c", 0,
+      "gc", ->{element[this, "c"]},
+      "sc", ->{value, =(this, "c", value)},
+      "inc", ->{=(this, "c", +(element[this, "c"],1))}
+    )),
+    print(x),
+    print(x("gc")),
+    x("sc", 4),
+    print(x("gc")),
+    x("inc"),
+    print(x("gc")),
+  )
+  ```
 
-Ejecución:
+  Ejecución:
 
-```
-[~/.../crguezl-egg(private2019)]$ bin/egg.js examples/objects.egg 
-{ c: 0,
-  gc: [Function: bound ],
-  sc: [Function: bound ],
-  inc: [Function: bound ] }
-0
-4
-5
-```
+  ```
+  [~/.../crguezl-egg(private2019)]$ bin/egg.js examples/objects.egg 
+  { c: 0,
+    gc: [Function: bound ],
+    sc: [Function: bound ],
+    inc: [Function: bound ] }
+  0
+  4
+  5
+  ```
 
 ## Recursos
 
