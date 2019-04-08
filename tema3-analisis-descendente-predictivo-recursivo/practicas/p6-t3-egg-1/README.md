@@ -232,7 +232,43 @@ tiene un método con nombre `"meth"`, este  pueda ser llamado usando la sintáxi
 
 * Añada índices negativos (a la Ruby) para los arrays 
 
+* Extienda `set` para que se puedan modificar elementos de los arrays
+
+  **[~/.../crguezl-egg(private2019)]$ cat examples/array-set-index.egg** 
+
+  ```
+  do(
+    def(x, array[1,2,3, array[9,8,7]]),
+    set(x, 2, 9),
+    print(x),             # [ 1, 2, 9, [ 9, 8, 7 ] ]
+    set(x, 3, 1, 1000),
+    print(x)              # [ 1, 2, 9, [ 9, 1000, 7 ] ]
+  )
+  ```
+
+  Ejecución:
+
+  ```
+  [~/.../crguezl-egg(private2019)]$ bin/egg.js examples/array-set-index.egg 
+  [ 1, 2, 9, [ 9, 8, 7 ] ]
+  [ 1, 2, 9, [ 9, 1000, 7 ] ]
+  ```
+
+  **[~/.../crguezl-egg(private2019)]$ cat examples/set-error.egg**
+
+  ```
+  do(
+    def(x,4),
+    set(x,1, 2),
+    print(x)
+  )
+  [~/.../crguezl-egg(private2019)]$ bin/egg.js examples/set-error.egg 
+  ReferenceError: Tried to set with indices a scalar variable ''x'
+  ```
+
 * Añada mapas/hashes al lenguaje Egg
+
+
 
 ## Recursos
 
