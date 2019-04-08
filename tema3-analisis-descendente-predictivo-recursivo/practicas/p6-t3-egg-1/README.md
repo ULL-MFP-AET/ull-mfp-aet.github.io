@@ -240,7 +240,7 @@ tiene un método con nombre `"meth"`, este  pueda ser llamado usando la sintáxi
   do(
     def(x, array[1, array[2,3]]),
     print(element(x,0)),          # 1
-    print(element(x,1)),          #  [ 2, 3 ]
+    print(element(x,1)),          # [ 2, 3 ]
     print(element(x,1,1)),        # 3
     print(element(x,-1,-1)),      # 3
     print(element(x,-1,0))        # 2
@@ -299,7 +299,7 @@ tiene un método con nombre `"meth"`, este  pueda ser llamado usando la sintáxi
 
 * Añada mapas/hashes al lenguaje Egg
 
-  **[~/.../crguezl-egg(private2019)]$ cat examples/map.egg **
+  **[~/.../crguezl-egg(private2019)]$ cat examples/map.egg**
 
   ```
   do {
