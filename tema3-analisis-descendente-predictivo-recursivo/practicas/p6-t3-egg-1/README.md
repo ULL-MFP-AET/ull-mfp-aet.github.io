@@ -254,6 +254,8 @@ tiene un método con nombre `"meth"`, este  pueda ser llamado usando la sintáxi
   [ 1, 2, 9, [ 9, 1000, 7 ] ]
   ```
 
+  No se debería poder hacer un `set` con índices de una variable no estructurada
+
   **[~/.../crguezl-egg(private2019)]$ cat examples/set-error.egg**
 
   ```
