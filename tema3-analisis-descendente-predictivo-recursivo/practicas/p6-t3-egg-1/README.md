@@ -277,11 +277,11 @@ tiene un método con nombre `"meth"`, este  pueda ser llamado usando la sintáxi
   produce una excepción de este estilo: `SyntaxError: Unexpected input after reached the end of parsing 1: 5) ;`
   Estudie [la API de Should.js](https://shouldjs.github.io/#should-throws)
 
-* Introduzca una prueba en `test/test.js` que demuestre que una entrada como la de `examples/number-as-fun-err.egg`: 
+* Ahora deberá comentar/suprimir la prueba que hizo en `test/test.js` que hacía que una entrada como la de `examples/number-as-fun-err.egg`: 
   ```lisp
   4(5) ; Calling a number as a function
   ```
-  produce una excepción
+  producía una excepción
 
 * Introduzca una prueba en `test/test.js` que demuestre que una entrada como la de `examples/one.egg`: 
   ```lisp
