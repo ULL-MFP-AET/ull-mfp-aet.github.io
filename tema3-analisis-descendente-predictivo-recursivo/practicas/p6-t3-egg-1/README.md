@@ -232,6 +232,32 @@ tiene un método con nombre `"meth"`, este  pueda ser llamado usando la sintáxi
 
 * Añada índices negativos (a la Ruby) para los arrays 
 
+* Añada la posibilidad de indexar con mas de un índice a `element`
+
+  **[~/.../crguezl-egg(private2019)]$ cat  examples/array-index.egg**
+
+  ```
+  do(
+    def(x, array[1, array[2,3]]),
+    print(element(x,0)),          # 1
+    print(element(x,1)),          #  [ 2, 3 ]
+    print(element(x,1,1)),        # 3
+    print(element(x,-1,-1)),      # 3
+    print(element(x,-1,0))        # 2
+   )
+  ```
+
+  Ejecución:
+
+  ```
+  [~/.../crguezl-egg(private2019)]$ bin/egg.js  examples/array-index.egg 
+  1
+  [ 2, 3 ]
+  3
+  3
+  2
+  ```
+
 * Extienda `set` para que se puedan modificar elementos de los arrays
 
   **[~/.../crguezl-egg(private2019)]$ cat examples/array-set-index.egg** 
