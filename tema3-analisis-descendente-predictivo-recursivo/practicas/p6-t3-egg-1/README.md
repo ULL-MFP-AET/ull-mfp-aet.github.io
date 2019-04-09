@@ -420,6 +420,9 @@ tiene un método con nombre `"meth"`, este  pueda ser llamado usando la sintáxi
   4
   5
   ```
+* Añada expresiones regulares al lenguaje Egg
+* Expanda el lenguaje con un `require` para que permita el uso de librerías 
+* Extienda el lenguaje con uno o varios tipos de  bucle `for`
 
 ## Recursos
 
