@@ -439,6 +439,7 @@ tiene un método con nombre `"meth"`, este  pueda ser llamado usando la sintáxi
   ```js
   a("b")("c")(arg1)
   ```
+  Esto es,el dot es como una llamada/apply a un solo argumento
 
 ## Recursos
 
