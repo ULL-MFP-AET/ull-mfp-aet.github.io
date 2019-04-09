@@ -345,7 +345,7 @@ tiene un método con nombre `"meth"`, este  pueda ser llamado usando la sintáxi
 
   Una forma de hacer esto es empezar haciendo que el análisis léxico acepte el carácter `:` para el token `COMMA`
 
-  ```
+  ```js
   const COMMA = new XRegExp(`
     (
       ,|:(?!=) # : is an alias for comma ',' when not followed by '='
@@ -354,7 +354,8 @@ tiene un método con nombre `"meth"`, este  pueda ser llamado usando la sintáxi
   ```
 
   y *trucando* nuestro analizador léxico para que siempre que una `WORD` vaya seguida de `:` se retorne una `STRING`!:
-  ```
+
+  ```js
   nextToken = function() {
     if (count < result.length) {
       lookahead = result[count++];
