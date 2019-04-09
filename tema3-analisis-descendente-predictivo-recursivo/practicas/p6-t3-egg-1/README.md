@@ -321,6 +321,53 @@ tiene un método con nombre `"meth"`, este  pueda ser llamado usando la sintáxi
   3
   ```
 
+* Nos gustaría poder escribir los hashes/mapas usando `:` para separar el nombre de la clave del valor, como en este ejemplo:
+
+
+  **[~/.../crguezl-egg(develop-oop-idea)]$ cat examples/map-colon.egg**
+ 
+  ```
+  do {
+    def(x, map[x: 4, y: map[z: 3]]),
+    print(x),                               # { x: 4, y: { z: 3 } }
+    print(element(x, "x")),                 # 4
+    print(element(x, "y")),                 # { z: 3 }
+    print(element(x, "y", "z"))             # 3
+  }
+
+  [~/.../crguezl-egg(develop-oop-idea)]$ bin/egg.js  examples/map-colon.egg 
+  { x: 4, y: { z: 3 } }
+  4
+  { z: 3 }
+  3
+
+  ```
+
+  Una forma de hacer esto es empezar haciendo que el análisis léxico acepte el carácter `:` para el token `COMMA`
+
+  ```
+  const COMMA = new XRegExp(`
+    (
+      ,|:(?!=) # : is an alias for comma ',' when not followed by '='
+    )
+  `, 'xy');
+  ```
+
+  y *trucando* el analizador léxico para que siempre que una `WORD` va seguida de `:` se retorne una `STRING`!:
+  ```
+  nextToken = function() {
+    if (count < result.length) {
+      lookahead = result[count++];
+      if (lookahead && (lookahead.type === 'WORD') && (result[count] && result[count].value === ":")) {
+        //debugger;
+        lookahead.type = "STRING";
+      }
+      return lookahead;
+    }
+    else return null;
+  }
+  ```
+
 * Añada objetos al lenguaje Egg de manera que podamos escribir programas como este:
 
   **[~/.../crguezl-egg(private2019)]$ cat examples/objects.egg**
