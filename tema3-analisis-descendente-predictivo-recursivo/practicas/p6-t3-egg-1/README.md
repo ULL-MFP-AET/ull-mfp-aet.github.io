@@ -422,6 +422,10 @@ tiene un método con nombre `"meth"`, este  pueda ser llamado usando la sintáxi
   ```
 * Añada expresiones regulares al lenguaje Egg
 * Expanda el lenguaje con un `require` para que permita el uso de librerías 
+  * Repase el vídeo [Como implementar la funcionalidad de "require"](https://www.youtube.com/watch?v=qffmnSCRR3c&feature=youtu.be).
+  * Aquí tiene un enlace al [Repo correspondiente al vídeo](https://github.com/ULL-ESIT-MII-CA-1718/ejs-chapter10-modules/tree/master/require).
+  * Memoize las librerías para que no se carguen dos veces
+  * Procure añadir esta funcionalidad sin tocar el código principal usando el strategy pattern + registry pattern
 * Extienda el lenguaje con uno o varios tipos de  bucle `for`
 
 ## Recursos
