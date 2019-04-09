@@ -353,7 +353,7 @@ tiene un método con nombre `"meth"`, este  pueda ser llamado usando la sintáxi
   `, 'xy');
   ```
 
-  y *trucando* el analizador léxico para que siempre que una `WORD` va seguida de `:` se retorne una `STRING`!:
+  y *trucando* nuestro analizador léxico para que siempre que una `WORD` vaya seguida de `:` se retorne una `STRING`!:
   ```
   nextToken = function() {
     if (count < result.length) {
