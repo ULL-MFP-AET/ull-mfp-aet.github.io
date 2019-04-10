@@ -437,7 +437,7 @@ tiene un método con nombre `"meth"`, este  pueda ser llamado usando la sintáxi
   es equivalente a esta otra expresión:
 
   ```js
-  a("b")("c")(arg1)
+  a("b")("c", arg1)
   ```
   Esto es,el dot es como una llamada/apply a un solo argumento
 
