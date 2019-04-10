@@ -441,6 +441,48 @@ tiene un método con nombre `"meth"`, este  pueda ser llamado usando la sintáxi
   ```
   Esto es,el dot es como una llamada/apply del objeto en el que el primer argumento es el atributo/método
 
+  **[~/.../crguezl-egg(private2019)]$ cat examples/dot-obj-2.egg**
+
+  ```
+  do (
+    def(x, object ( 
+      c:   0,
+      gc:  ->{this.c},
+      sc:  ->{value, =(this, "c", value)},
+      inc: ->{=(this, "c", +(this.c, 1))}
+    )),
+    print(x),
+    print(x["c"]),
+    print(x.c),
+    print(x.gc),             # calls the function!
+    print(element(x, "gc")), # [Function: bound ]
+    print(x("sub", "gc")),   # [Function: bound ]
+    print(x.sub("gc")),      # [Function: bound ]
+    print(x.sc(5)),
+    print(x("sc", 5)),
+    print(x.gc)
+  )
+  ```
+
+  Ejecución:
+
+  ```
+  [~/.../crguezl-egg(private2019)]$ node bin/egg.js examples/dot-obj-2.egg 
+  { c: 0,
+    gc: [Function: bound ],
+    sc: [Function: bound ],
+    inc: [Function: bound ] }
+  0
+  0
+  0
+  [Function: bound ]
+  [Function: bound ]
+  [Function: bound ]
+  5
+  5
+  5
+  ```
+
 ## Recursos
 
 * [Eloquent JS: Chapter 11. Project: A Programming Language](http://eloquentjavascript.net/11_language.html)
