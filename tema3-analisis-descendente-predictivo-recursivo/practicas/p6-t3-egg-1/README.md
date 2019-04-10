@@ -427,7 +427,7 @@ tiene un método con nombre `"meth"`, este  pueda ser llamado usando la sintáxi
   * Memoize las librerías para que no se carguen dos veces
   * Procure añadir esta funcionalidad sin tocar el código principal usando el strategy pattern + registry pattern
 * Extienda el lenguaje con uno o varios tipos de  bucle `for`
-* Introduzca el operador punto (dot) para poder acceder a los métodos y atributos de un  objeto.
+* Syntactic Sugar: Introduzca el operador punto (dot) para poder acceder a los métodos y atributos de un  objeto.
   La idea es que una expresión como:
 
   ```js
