@@ -6,7 +6,7 @@ Sugerencia de metodología:
 
 * Crearemos un [Project Board](https://help.github.com/en/articles/about-project-boards) para nuestro repo (Automated kanban)
 * Cada vez que nos disponemos a abordar un nuevo objetivo añadimos una incidencia que incorporamos al tablero TODO. Lo iremos 
-moviendo conforme progresa
+moviendo (tablero IN PROGESS) conforme progresa
 * Conforme vayamos logrando objetivos los movemos a la columna DONE y crearemos y publicaremos un [tag](https://git-scm.com/book/en/v2/Git-Basics-Tagging) en nuestro repo con el nombre del objetivo logrado. 
     - Ejemplo: `git tag -a array-negative-index -m "arrays can be indexed with negative indices" && git push origin --tags`
 * Para cada entrega, creamos una rama con el correspondiente nombre `p#-t3-egg-#` y especificamos en el fichero `README.md` 
