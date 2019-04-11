@@ -547,7 +547,7 @@ Sugerencia de metodología:
 * Crearemos un [Project Board](https://help.github.com/en/articles/about-project-boards) para nuestro repo (Automated kanban)
 * Cada vez que nos disponemos a abordar un nuevo objetivo añadimos una incidencia que incorporamos al tablero TODO. Lo iremos 
 moviendo (tablero IN PROGESS) conforme progresa
-* Conforme vayamos logrando objetivos 
+* Conforme vayamos logrando objetivos:
   - los movemos a la columna DONE 
   - cerramos la incidencia 
   - y crearemos y publicaremos un [tag](https://git-scm.com/book/en/v2/Git-Basics-Tagging) en nuestro repo con el nombre del objetivo logrado. 
