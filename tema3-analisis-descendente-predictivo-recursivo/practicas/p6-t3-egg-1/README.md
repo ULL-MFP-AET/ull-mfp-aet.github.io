@@ -4,7 +4,7 @@
     - Ejemplo: `git tag -a array-negative-index -m "arrays can be indexed with negative indices" && git push origin --tags`
 * Para cada entrega, creamos una rama con el correspondiente nombre `p#-t3-egg-#` y especificamos en el fichero `README.md` 
 el grupo de objetivos logrados hasta ese momento
-* Cada vez que logramos un nuevo objetivo añadimos en el directorio `examples` un programa `examples/objetivo.egg` cuya ejecución muestra el buen funcionamiento de nuestro código. A continuació añadimos una prueba en el direcotio `test/` que ejecuta el corresponidente programa `egg` y verifica que la salida es la esperada.
+* Cada vez que logramos un nuevo objetivo añadimos en el directorio `examples` un programa `examples/objetivo.egg` cuya ejecución muestra el buen funcionamiento de nuestro código. A continuació añadimos una prueba en el direcotio `test/` que ejecuta el correspondiente programa `egg` y verifica que la salida es la esperada.
 * Ejecutamos todas las pruebas `npm test` cada vez que resolvemos un nuevo objetivo
 
 ## Requisitos
