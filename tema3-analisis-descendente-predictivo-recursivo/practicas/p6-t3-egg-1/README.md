@@ -549,7 +549,7 @@ Sugerencia de metodología:
 moviendo (tablero IN PROGESS) conforme progresa
 * Conforme vayamos logrando objetivos:
   - los movemos a la columna DONE 
-  - cerramos la incidencia 
+  - cerramos la incidencia  que habíamos creado para ese objetivo
   - y crearemos y publicaremos un [tag](https://git-scm.com/book/en/v2/Git-Basics-Tagging) en nuestro repo con el nombre del objetivo logrado. 
     - Ejemplo: `git tag -a array-negative-index -m "arrays can be indexed with negative indices" && git push origin --tags`
 * Para cada entrega, 
