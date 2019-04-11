@@ -504,7 +504,7 @@ tiene un método con nombre `"meth"`, este  pueda ser llamado usando la sintáxi
   5
   ```
 
-  Otro ejemplo:
+  Otro ejemplo con números:
 
   **[~/.../crguezl-egg(private2019)]$ cat examples/dot-num.egg**
 
