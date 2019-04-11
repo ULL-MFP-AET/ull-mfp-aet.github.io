@@ -1,5 +1,7 @@
 # Práctica: Egg. A Programming Language. Continuación. (p6-t3-egg-1) (p7-t3-egg-2) (p8-t3-egg-4) (etc)
 
+## Metodología 
+
 * Conforme vayamos logrando objetivos crearemos y publicaremos un [tag](https://git-scm.com/book/en/v2/Git-Basics-Tagging) en nuestro repo con el nombre del objetivo logrado. 
     - Ejemplo: `git tag -a array-negative-index -m "arrays can be indexed with negative indices" && git push origin --tags`
 * Para cada entrega, creamos una rama con el correspondiente nombre `p#-t3-egg-#` y especificamos en el fichero `README.md` 
