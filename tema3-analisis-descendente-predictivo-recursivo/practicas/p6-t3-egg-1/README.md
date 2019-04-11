@@ -558,7 +558,7 @@ moviendo (tablero IN PROGESS) conforme progresa
 * Pruebas:
   - Cada vez que logramos un nuevo objetivo añadimos en el directorio `examples` un programa `examples/objetivo.egg` cuya ejecución muestra el buen funcionamiento de nuestro código. 
   - A continuación añadimos una prueba en el directorio `test/` que ejecuta el correspondiente programa `examples/objetivo.egg` y verifica que la salida es la esperada.
-  - Ejecutamos todas las pruebas `npm test` cada vez que resolvemos un nuevo objetivo
+  - Ejecutamos **todas** las pruebas `npm test` cada vez que resolvemos un nuevo objetivo
 
 
 ## Recursos
