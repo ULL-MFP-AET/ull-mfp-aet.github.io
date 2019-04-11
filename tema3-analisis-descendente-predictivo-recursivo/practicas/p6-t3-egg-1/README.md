@@ -554,7 +554,7 @@ moviendo (tablero IN PROGESS) conforme progresa
     - Ejemplo: `git tag -a array-negative-index -m "arrays can be indexed with negative indices" && git push origin --tags`
 * Para cada entrega, 
   - creamos una rama con el correspondiente nombre `p#-t3-egg-#` y 
-  - especificamos en el fichero `README.md` el grupo de objetivos logrados hasta ese momento
+  - especificamos en el fichero `README.md` el grupo de objetivos logrados hasta ese momento y la fecha de la entrega
 * Pruebas:
   - Cada vez que logramos un nuevo objetivo añadimos en el directorio `examples` un programa `examples/objetivo.egg` cuya ejecución muestra el buen funcionamiento de nuestro código. 
   - A continuación añadimos una prueba en el directorio `test/` que ejecuta el correspondiente programa `examples/objetivo.egg` y verifica que la salida es la esperada.
