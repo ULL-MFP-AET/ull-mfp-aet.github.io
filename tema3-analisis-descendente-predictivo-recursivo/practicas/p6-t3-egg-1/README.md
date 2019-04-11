@@ -441,6 +441,27 @@ tiene un método con nombre `"meth"`, este  pueda ser llamado usando la sintáxi
   ```
   Esto es,el dot es como una llamada/apply del objeto en el que el primer argumento es el atributo/método
 
+  **~/.../crguezl-egg(private2019)]$ cat examples/dot.egg**
+
+  ```
+  do(
+    def(x, array[1,4,5]),
+    def(s, x.join("-")),                 # The same as x("join", "-")
+    print(s),                            # 1-4-5
+    print(array[1,4,5].join("-").length) # 5
+  )
+  ```
+
+  Ejecución:
+
+  ```
+  [~/.../crguezl-egg(private2019)]$ bin/egg.js examples/dot.egg 
+  1-4-5
+  5
+  ```
+
+  Otro ejemplo, esta vez con objetos Egg.
+
   **[~/.../crguezl-egg(private2019)]$ cat examples/dot-obj-2.egg**
 
   ```
