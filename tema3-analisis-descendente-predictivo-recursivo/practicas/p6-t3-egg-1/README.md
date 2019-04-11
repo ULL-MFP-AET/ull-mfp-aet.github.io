@@ -483,6 +483,29 @@ tiene un método con nombre `"meth"`, este  pueda ser llamado usando la sintáxi
   5
   ```
 
+  Otro ejemplo:
+
+  **[~/.../crguezl-egg(private2019)]$ cat examples/dot-num.egg**
+
+  ```
+  do{
+    print(4.toFixed(2)),
+    def(x, 4),
+    print(x("toFixed", 2)),
+    def(z, x.toFixed(2)),
+    print(z),
+  }
+  ```
+
+  Ejecución:
+
+  ```
+  [~/.../crguezl-egg(private2019)]$ bin/egg.js examples/dot-num.egg 
+  4.00
+  4.00
+  4.00
+  ```
+
 ## Recursos
 
 * [Eloquent JS: Chapter 11. Project: A Programming Language](http://eloquentjavascript.net/11_language.html)
