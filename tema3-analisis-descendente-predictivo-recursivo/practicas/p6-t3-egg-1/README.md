@@ -1,6 +1,6 @@
 <!-- START doctoc generated TOC please keep comment here to allow auto update -->
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
-## Table of Contents
+## Índice
 
 - [Práctica: Egg. A Programming Language. Continuación. (p6-t3-egg-1) (p7-t3-egg-2) (p8-t3-egg-4) (etc)](#pr%C3%A1ctica-egg-a-programming-language-continuaci%C3%B3n-p6-t3-egg-1-p7-t3-egg-2-p8-t3-egg-4-etc)
   - [Requisitos](#requisitos)
