@@ -1,3 +1,14 @@
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+## Table of Contents
+
+- [Práctica: Egg. A Programming Language. Continuación. (p6-t3-egg-1) (p7-t3-egg-2) (p8-t3-egg-4) (etc)](#pr%C3%A1ctica-egg-a-programming-language-continuaci%C3%B3n-p6-t3-egg-1-p7-t3-egg-2-p8-t3-egg-4-etc)
+  - [Requisitos](#requisitos)
+  - [Metodología  de Trabajo](#metodolog%C3%ADa--de-trabajo)
+  - [Recursos](#recursos)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
 # Práctica: Egg. A Programming Language. Continuación. (p6-t3-egg-1) (p7-t3-egg-2) (p8-t3-egg-4) (etc)
 
 ## Requisitos
