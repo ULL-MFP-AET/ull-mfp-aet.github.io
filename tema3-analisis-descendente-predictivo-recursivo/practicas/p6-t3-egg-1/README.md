@@ -538,6 +538,83 @@ tiene un método con nombre `"meth"`, este  pueda ser llamado usando la sintáxi
   * Memoize las librerías para que no se carguen dos veces
   * Procure añadir esta funcionalidad sin tocar el código principal usando el strategy pattern + registry pattern
 * Añada expresiones regulares al lenguaje Egg
+
+  **[~/.../crguezl-egg(develop-oop-idea)]$ cat examples/regexp.egg** 
+
+  ```js
+  do {
+    :=(d, r/
+           (?<year>  \d{4} ) -?  # year 
+           (?<month> \d{2} ) -?  # month 
+           (?<day>   \d{2} )     # day
+          /x),
+    print(d.test("1987-07-14")),  # true
+    :=(m, d.exec("1987-07-14")),  
+    print(m), #  [ '1987-07-14', '1987', '07', '14', index: 0, input: '1987-07-14' ]
+    print(m.index), # 0
+    
+    :=(x, RegExp.exec("2015-02-22", d)), 
+                    /*
+                    [ '2015-02-22',
+                      '2015',
+                      '02',
+                      '22',
+                      index: 0,
+                      input: '2015-02-22',
+                      year: '2015',
+                      month: '02',
+                      day: '22' ]
+                    */
+    print(x),
+    print(x.year), # 2015
+    print(x.month) # 02
+  }
+  ```
+
+  Ejecución:
+
+  ```
+  [~/.../crguezl-egg(develop-oop-idea)]$ bin/egg.js examples/regexp.egg 
+  true
+  [ '1987-07-14', '1987', '07', '14', index: 0, input: '1987-07-14' ]
+  0
+  [ '2015-02-22',
+    '2015',
+    '02',
+    '22',
+    index: 0,
+    input: '2015-02-22',
+    year: '2015',
+    month: '02',
+    day: '22' ]
+  2015
+  02
+  ```
+  Otro ejemplo:
+
+  **[~/campus-virtual/1819/pl1819/introduccion/tema3-analisis-descendente-predictivo-recursivo/practicas/p5-t3-egg-0/egg/crguezl-egg(develop-oop-idea)]$ cat examples/regexp-simple.egg** 
+
+  ```js
+  do {
+    :=(r, r/(\w+)
+           \s+
+           (\d+)  # numero 
+          /x),
+    :=(s, r.test("a 4")),
+    :=(m, r.exec(";;; a 42")),
+    print(s),
+    print(m),
+  }
+  ```
+
+  Ejecución:
+
+  ```
+  [~/campus-virtual/1819/pl1819/introduccion/tema3-analisis-descendente-predictivo-recursivo/practicas/p5-t3-egg-0/egg/crguezl-egg(develop-oop-idea)]$ bin/egg.js examples/regexp-simple.egg 
+  true
+  [ 'a 42', 'a', '42', index: 4, input: ';;; a 42' ]
+  ```
+
 * Extienda el lenguaje con uno o varios tipos de  bucle `for`
 
 ## Metodología  de Trabajo
