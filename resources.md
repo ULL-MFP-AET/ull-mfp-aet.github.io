@@ -26,15 +26,29 @@
   - [Video del profesor: iaas.ull.es](https://youtu.be/qKHgbV0lYbA)
   - [https://iaas.ull.es/mismaquinas](https://iaas.ull.es/mismaquinas) 
 
-## Impresión
-
-* [Datos para el servicio de impresión](https://usuarios.ull.es/autogestion/valores_impresion/)
 
 ## STIC
 
+### Incidencias
+
 - [Gestor de incidencias. RT para rt.stic.ull.es](https://usuarios.ull.es/rt/SelfService/)
+
+### VPN
+
 - [Servicio de vpn: guías de configuración](https://www.ull.es/servicios/stic/2016/05/10/servicio-de-vpn-de-la-ull/)
+
+### Mapa de Recursos
+
 - [Mapa de recursos de la ULL](https://www.ull.es/donde/)
+
+### Impresión
+
+* [Datos para el servicio de impresión](https://usuarios.ull.es/autogestion/valores_impresion/)
+
+### Cambio de contraseña
+
+* [Cambio de contraseña](https://usuarios.ull.es/autogestion/cambio_password_google/)
+
 
 ## Prácticas
 
