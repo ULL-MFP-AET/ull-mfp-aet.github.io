@@ -1,5 +1,11 @@
 # Recursos
 
+## Campus Virtual
+
+* [PL 18/19](https://campusvirtual.ull.es/1819/course/view.php?id=1110)
+* [Participantes](https://campusvirtual.ull.es/1819/user/index.php?page=0&perpage=20&contextid=0&id=1110&newcourse)
+* [Calificaciones](https://campusvirtual.ull.es/1819/grade/report/grader/index.php?id=1110)
+
 ## BULL
 
 * [BULL PuntoQ](https://www.ull.es/servicios/biblioteca/servicios/puntoq/)
