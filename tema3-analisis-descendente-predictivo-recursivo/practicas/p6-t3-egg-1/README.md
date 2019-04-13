@@ -537,6 +537,42 @@ tiene un método con nombre `"meth"`, este  pueda ser llamado usando la sintáxi
   * Aquí tiene un enlace al [Repo correspondiente al vídeo](https://github.com/ULL-ESIT-MII-CA-1718/ejs-chapter10-modules/tree/master/require).
   * Memoize las librerías para que no se carguen dos veces
   * Procure añadir esta funcionalidad sin tocar el código principal usando el strategy pattern + registry pattern
+
+  Código del Módulo: **[~/.../crguezl-egg(private2019)]$ cat examples/require/module.egg**
+
+  ```js
+  # module. Exports z
+  do {
+    print("inside module"),
+    :=(z, map{inc: ->{x, 
+                       +(x,1)
+                     } # end fun
+             } # end map
+    ), # end of :=
+    z  # el último valor será exportado
+  }
+  ```
+
+  Programa Cliente: **[~/.../crguezl-egg(private2019)]$ cat examples/require/client.egg**
+
+  ```js
+  do {
+    :=(z, require("examples/require/module.egg")),
+    print(z.inc(4)),
+    :=(w, require("examples/require/module.egg")),
+  }
+  ```
+
+  Ejecución:
+
+  ```
+  [~/.../crguezl-egg(private2019)]$ bin/egg.js examples/require/client.egg 
+  inside module
+  5
+  ```
+
+  Observe como `inside module` aparece una sola vez pese a que el módulo es *required* dos veces
+
 * Añada expresiones regulares al lenguaje Egg
 
   **[~/.../crguezl-egg(develop-oop-idea)]$ cat examples/regexp.egg** 
