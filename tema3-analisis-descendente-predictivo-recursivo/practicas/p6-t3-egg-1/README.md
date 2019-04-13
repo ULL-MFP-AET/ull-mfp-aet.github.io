@@ -14,6 +14,9 @@
 ## Requisitos
 
 * Use el repo de GitHub dado por la asignación de esta tarea partiendo de la [práctica anterior](https://crguezl.github.io/ull-esit-1617/_book/practicas/practica-egg.html)
+
+### Clases de nodos del AST: evaluate como método del nodo
+
 * Modifique el AST para dar una solución OOP con clases: 
   - una clase `Value`, 
   - una clase `Word`, 
@@ -80,6 +83,8 @@
   ```
 
   La función `evaluate` con el `switch` que estaba en `lib/eggvm.js` desaparece en esta versión
+
+### Llamada a Métodos JS de los Objetos
 
 * Modifique la evaluación de los nodos `Apply` de manera que si el objeto JavaScript subyacente `obj`
 tiene un método con nombre `"meth"`, este  pueda ser llamado usando la sintáxis de `Apply`: 
@@ -159,6 +164,8 @@ tiene un método con nombre `"meth"`, este  pueda ser llamado usando la sintáxi
   1-hello egg
   ```
 
+### Propiedades JS de los objetos
+
 * Utilizando lo anterior y JS Monkey patching, añada propiedades a los objetos JavaScript, de manera que programas como este funcionen:
 
   **[~/campus-virtual/1819/pl1819/introduccion/tema3-analisis-descendente-predictivo-recursivo/practicas/p5-t3-egg-0/egg/crguezl-egg(private2019)]$ cat examples/property.egg**
@@ -178,6 +185,8 @@ tiene un método con nombre `"meth"`, este  pueda ser llamado usando la sintáxi
   2
   3
   ```
+
+### Propiedades
 
 * Modifique la evaluación de los nodos `Apply` para que cuando se trata de una propiedad/atributo que no es una función/método se retorne el valor de la propiedad:
 
@@ -201,6 +210,8 @@ tiene un método con nombre `"meth"`, este  pueda ser llamado usando la sintáxi
   3
   ```
 
+### Todos pueden llamar
+
 * Modifique la gramática de Egg para que las `String` y los `Number` puedan hacer `apply`:
 
   **[~/.../crguezl-egg(private2019)]$ cat examples/string-apply.egg**
@@ -219,6 +230,8 @@ tiene un método con nombre `"meth"`, este  pueda ser llamado usando la sintáxi
   5
   4.00
   ```
+
+### Monkey Patching
 
 * Extienda las clases Number y String con Monkey Patching para permitir mayor expresividad en el lenguaje Egg como en este ejemplo en el que los números tienen un método `+`:
 
@@ -242,6 +255,8 @@ tiene un método con nombre `"meth"`, este  pueda ser llamado usando la sintáxi
   ```
 
 * Añada índices negativos (a la Ruby) para los arrays 
+
+### Element
 
 * Añada la posibilidad de indexar con mas de un índice a `element`
 
@@ -268,6 +283,8 @@ tiene un método con nombre `"meth"`, este  pueda ser llamado usando la sintáxi
   3
   2
   ```
+
+### Set
 
 * Extienda `set` para que se puedan modificar elementos de los arrays
 
@@ -307,6 +324,8 @@ tiene un método con nombre `"meth"`, este  pueda ser llamado usando la sintáxi
   [~/.../crguezl-egg(private2019)]$ bin/egg.js examples/set-error.egg 
   ReferenceError: Tried to set with indices a scalar variable ''x'
   ```
+
+### Hashes
 
 * Añada mapas/hashes al lenguaje Egg
 
@@ -398,6 +417,8 @@ tiene un método con nombre `"meth"`, este  pueda ser llamado usando la sintáxi
   3
   ```
 
+### OOP en Egg
+
 * Añada objetos al lenguaje Egg de manera que podamos escribir programas como este:
 
   **[~/.../crguezl-egg(private2019)]$ cat examples/objects.egg**
@@ -431,6 +452,8 @@ tiene un método con nombre `"meth"`, este  pueda ser llamado usando la sintáxi
   4
   5
   ```
+
+### DOT
 
 * Syntactic Sugar: Introduzca el operador punto (dot) para poder acceder a los métodos y atributos de un  objeto.
   La idea es que una expresión como:
@@ -532,6 +555,8 @@ tiene un método con nombre `"meth"`, este  pueda ser llamado usando la sintáxi
   4.00
   ```
 
+### Require
+
 * Expanda el lenguaje con un `require` para que permita el uso de librerías 
   * Repase el vídeo [Como implementar la funcionalidad de "require"](https://www.youtube.com/watch?v=qffmnSCRR3c&feature=youtu.be).
   * Aquí tiene un enlace al [Repo correspondiente al vídeo](https://github.com/ULL-ESIT-MII-CA-1718/ejs-chapter10-modules/tree/master/require).
@@ -572,6 +597,8 @@ tiene un método con nombre `"meth"`, este  pueda ser llamado usando la sintáxi
   ```
 
   Observe como `inside module` aparece una sola vez pese a que el módulo es *required* dos veces
+
+### RegExps
 
 * Añada expresiones regulares al lenguaje Egg
 
