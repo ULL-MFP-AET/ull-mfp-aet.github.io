@@ -634,7 +634,8 @@ moviendo (tablero IN PROGESS) conforme progresa
   - especificamos en el fichero `README.md` el grupo de objetivos logrados hasta ese momento y la fecha de la entrega
 * Pruebas:
   - Cada vez que logramos un nuevo objetivo añadimos en el directorio `examples` un programa `examples/objetivo.egg` cuya ejecución muestra el buen funcionamiento de nuestro código. 
-  - A continuación añadimos una prueba en el directorio `test/` que ejecuta el correspondiente programa `examples/objetivo.egg` y verifica que la salida es la esperada.
+  - A continuación añadimos una prueba en el directorio `test/` que ejecuta el correspondiente programa y verifica que la salida es la esperada.
+  - Puede usar el módulo [@ull-esit-pl/example2test](https://www.npmjs.com/package/@ull-esit-pl/example2test) para simplificar esta metodología
   - Ejecutamos **todas** las pruebas `npm test` cada vez que resolvemos un nuevo objetivo
 
 
@@ -646,5 +647,6 @@ moviendo (tablero IN PROGESS) conforme progresa
 * [NodeJS Readline gist](https://gist.github.com/crguezl/430642e29a2b9293317320d0d1759387)
 * En el repo [ULL-ESIT-PL-1617/interpreter-egg](https://github.com/ULL-ESIT-PL-1617/interpreter-egg) se muestra como hacer un bucle REPL
 * [XRegExp](http://xregexp.com/)
+* El módulo [@ull-esit-pl/example2test](https://www.npmjs.com/package/@ull-esit-pl/example2test)
 
 
