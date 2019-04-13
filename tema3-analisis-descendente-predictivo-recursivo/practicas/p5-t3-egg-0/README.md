@@ -1,6 +1,6 @@
 # Práctica: Egg. A Programming Language (p5-t1-egg-0)
 
-### Requisitos
+## Requisitos
 
 1. Use el repo de GitHub dado por la asignación de esta tarea partiendo del repo en [ULL-ESIT-PL-1617/egg](https://github.com/ULL-ESIT-PL-1617/egg)
 2. Use [XRegExp](http://xregexp.com/) para sangrar y comentar las expresiones regulares
