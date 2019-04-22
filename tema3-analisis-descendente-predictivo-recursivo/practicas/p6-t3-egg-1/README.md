@@ -392,16 +392,20 @@ tiene un método con nombre `"meth"`, este  pueda ser llamado usando la sintáxi
 
 * Haga que los mapas tengan un método `sub`  que permita indexar los mapas:
 
-  ```
-    [~/.../crguezl-egg(develop-oop-idea)]$ cat examples/map-sub.egg 
+  **[~/.../crguezl-egg(develop-oop-idea)]$ cat examples/map-sub.egg**
+
+  ```js
   do(
     def(x, map{a: 1, b: 4, c: map{d: 5, e: 3}}),
     print(x["sub", "a"]),     # 1
     print(x["sub", "c"]),     # Map { d: 5, e: 3 }
     print(x["sub", "c", "e"]) # 3
   )
+  ```
 
+  Ejecución:
 
+  ```
   [~/.../crguezl-egg(develop-oop-idea)]$ bin/egg.js examples/map-sub.egg 
   1
   Map { d: 5, e: 3 }
