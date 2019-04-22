@@ -26,7 +26,7 @@
 
 ### [Práctica Escribir un Analizador Léxico para Javascript (p4-t2-lexer)](tema2-expresiones-regulares-y-analisis-lexico/practicas/p4-t2-lexer/README.md)
 
-## [Tema 3: Análisis Sintáctico Descendente Recursivo](tema3-analisis-descendente-predictivo-recursivo)
+## [Tema 3: Análisis Sintáctico Descendente Recursivo (e Interpretación de Código)](tema3-analisis-descendente-predictivo-recursivo)
 
 ### [Práctica p5-t3-egg-0](tema3-analisis-descendente-predictivo-recursivo/practicas/p5-t3-egg-0)
 

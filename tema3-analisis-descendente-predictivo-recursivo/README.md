@@ -1,4 +1,4 @@
-# Análisis Sintactico Descendente Recursivo Predictivo
+# Análisis Sintactico Descendente Recursivo Predictivo (e Interpretación de Código)
 
 ## Capítulo 1: Introducción. El Lenguaje Egg
 
