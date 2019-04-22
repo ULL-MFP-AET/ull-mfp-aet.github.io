@@ -1,25 +1,3 @@
-<!-- START doctoc generated TOC please keep comment here to allow auto update -->
-<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
-**Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
-
-- [Práctica: Egg. A Programming Language. Continuación. (p6-t3-egg-1) (p7-t3-egg-2) (p8-t3-egg-4) (etc)](#pr%C3%A1ctica-egg-a-programming-language-continuaci%C3%B3n-p6-t3-egg-1-p7-t3-egg-2-p8-t3-egg-4-etc)
-  - [Requisitos](#requisitos)
-    - [Clases de nodos del AST: evaluate como método del nodo](#clases-de-nodos-del-ast-evaluate-como-m%C3%A9todo-del-nodo)
-    - [Llamada a Métodos JS de los Objetos](#llamada-a-m%C3%A9todos-js-de-los-objetos)
-    - [Propiedades JS de los objetos](#propiedades-js-de-los-objetos)
-    - [Propiedades](#propiedades)
-    - [Todos pueden llamar](#todos-pueden-llamar)
-    - [Monkey Patching](#monkey-patching)
-    - [Element](#element)
-    - [Set](#set)
-    - [Hashes](#hashes)
-    - [Require](#require)
-    - [RegExps](#regexps)
-  - [Metodología  de Trabajo](#metodolog%C3%ADa--de-trabajo)
-  - [Recursos](#recursos)
-
-<!-- END doctoc generated TOC please keep comment here to allow auto update -->
-
 # Práctica: Egg. A Programming Language. Continuación. (p6-t3-egg-1) (p7-t3-egg-2) (p8-t3-egg-4) (etc)
 
 ## Requisitos
@@ -197,7 +175,7 @@ tiene un método con nombre `"meth"`, este  pueda ser llamado usando la sintáxi
   3
   ```
 
-### Propiedades
+### Acceso a las Propiedades de los Objetos JavaScript 
 
 * Modifique la evaluación de los nodos `Apply` para que cuando se trata de una propiedad/atributo que no es una función/método se retorne el valor de la propiedad:
 
@@ -267,7 +245,7 @@ tiene un método con nombre `"meth"`, este  pueda ser llamado usando la sintáxi
 
 * Añada índices negativos (a la Ruby) para los arrays 
 
-### Element
+### Element: Posibilidad de Indexar con mas de un Índice
 
 * Añada la posibilidad de indexar con mas de un índice a `element`
 
@@ -295,7 +273,7 @@ tiene un método con nombre `"meth"`, este  pueda ser llamado usando la sintáxi
   2
   ```
 
-### Set
+### Set: Modificar Elementos de un Array
 
 * Extienda `set` para que se puedan modificar elementos de los arrays
 
