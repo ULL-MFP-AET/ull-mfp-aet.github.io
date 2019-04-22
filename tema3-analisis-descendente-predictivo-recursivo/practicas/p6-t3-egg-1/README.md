@@ -397,9 +397,9 @@ tiene un método con nombre `"meth"`, este  pueda ser llamado usando la sintáxi
   ```js
   do(
     def(x, map{a: 1, b: 4, c: map{d: 5, e: 3}}),
-    print(x["sub", "a"]),     # 1
-    print(x["sub", "c"]),     # Map { d: 5, e: 3 }
-    print(x["sub", "c", "e"]) # 3
+    print(x[sub: "a"]),     # 1
+    print(x[sub: "c"]),     # Map { d: 5, e: 3 }
+    print(x[sub: "c", "e"]) # 3
   )
   ```
 
