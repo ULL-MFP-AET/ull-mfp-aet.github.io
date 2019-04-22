@@ -340,6 +340,8 @@ tiene un método con nombre `"meth"`, este  pueda ser llamado usando la sintáxi
   3
   ```
 
+### Dos puntos como operador léxico
+
 * Nos gustaría poder escribir los hashes/mapas usando `:` para separar el nombre de la clave del valor, como en este ejemplo:
 
 
