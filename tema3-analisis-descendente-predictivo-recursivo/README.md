@@ -31,8 +31,8 @@
 
 ## Capítulo 2: Conceptos Teóricos para los Analizadores Descendentes Recursivos Predictivos
 
-* [Apuntes de PL: Análisis Sintáctico Predictivo Recursivo](http://crguezl.github.io/pl-html/node22.html)
-* [Apuntes de PL de la II. Derivaciones a vacio](http://nereida.deioc.ull.es/~pl/perlexamples/node88.html)
+* [Apuntes de PL: Análisis Sintáctico Predictivo Recursivo](http://crguezl.github.io/pl-html/node22.html) (JavaScript)
+* [Apuntes de PL de la II. Derivaciones a vacio](http://nereida.deioc.ull.es/~pl/perlexamples/node88.html) (Perl)
 * [Construcción de los FIRST y los FOLLOW](http://nereida.deioc.ull.es/~pl/perlexamples/node89.html)
 * [Apuntes de Analizadores Descendentes Recursivos](https://casianorodriguezleon.gitbooks.io/ull-esit-1617/content/apuntes/parsing/recursivodescendente/) GitBook 1617
 * [Repo con un ADRP](https://github.com/crguezl/prdcalc) (Ruby, Web app con Sinatra, CoffeeScript y JS en el cliente)
