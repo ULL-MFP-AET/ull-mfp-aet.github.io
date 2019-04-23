@@ -1,6 +1,6 @@
-## Trabajo Fin de Asignatura PL
+# Trabajo Fin de Asignatura PL
 
-### Introducción
+## Introducción
 
 Cualquier propuesta relacionada con lo visto en la asignatura es bienvenida.
 
@@ -11,6 +11,8 @@ pero puede proponer un TFA con otro tópico relacionado con PL.
 facilitar la resolución de problemas en un contexto específico que sea del interés del alumno
 * En cada caso busque en npm librerías que le den apoyo para que la tarea resulte mas fácil
 * Estas extensiones debería estar en módulos separados que extienden Egg usando el patrón register-strategy
+
+## Ideas
 
 ### Añadir Herencia entre objetos a Egg
 
@@ -114,5 +116,10 @@ do {
     */
 }
 ```
+
+## Recursos
+
+* Vídeo [Cómo funciona Async/Await en menos de 15 minutos](https://youtu.be/u2axmPnxUoo) YouTube Vídeo por Appdelante
+* [Book *The Modern Javascript Tutorial*. Chapter Promises, async/await](https://javascript.info/async)
 
 
