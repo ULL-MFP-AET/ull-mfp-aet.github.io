@@ -418,7 +418,7 @@ tiene un método con nombre `"meth"`, este  pueda ser llamado usando la sintáxi
 
   **[~/.../crguezl-egg(private2019)]$ cat examples/objects.egg**
    
-  ```
+  ```js
   do (
     def(x, object ( 
       "c", 0,
@@ -451,7 +451,7 @@ tiene un método con nombre `"meth"`, este  pueda ser llamado usando la sintáxi
 #### Binding
 
 Esta sección describe una conducta que no es un requisito. 
-Simplemente ilustra como el hacr un binding de los métodos al objeto
+Simplemente ilustra como el hacer un binding de los métodos al objeto
 tiene consecuencias:
 
 **[~/.../crguezl-egg(private2019)]$ cat examples/bind.egg**
