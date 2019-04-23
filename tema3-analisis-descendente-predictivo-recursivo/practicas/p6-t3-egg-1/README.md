@@ -478,6 +478,8 @@ do (
 )
 ```
 
+Ejecución:
+
 ```
 [~/.../crguezl-egg(private2019)]$ bin/egg.js examples/bind.egg 
 { c: 0,
