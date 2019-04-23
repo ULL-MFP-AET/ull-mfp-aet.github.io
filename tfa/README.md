@@ -119,7 +119,7 @@ do {
 
 ## Recursos
 
-* Vídeo [Cómo funciona Async/Await en menos de 15 minutos](https://youtu.be/u2axmPnxUoo) YouTube Vídeo por Appdelante
 * [Book *The Modern Javascript Tutorial*. Chapter Promises, async/await](https://javascript.info/async)
+* Vídeo [Cómo funciona Async/Await en menos de 15 minutos](https://youtu.be/u2axmPnxUoo) YouTube Vídeo por Appdelante
 
 
