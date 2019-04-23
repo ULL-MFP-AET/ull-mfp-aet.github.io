@@ -7,8 +7,8 @@ Cualquier propuesta relacionada con lo visto en la asignatura es bienvenida.
 Las ideas que se proponen aquí son las de extender el lenguaje [Egg](https://github.com/ULL-ESIT-PL-1819/egg)
 pero puede proponer un TFA con otro tópico relacionado con PL.
 
-* Especial interés puede ser en extenderlo  como DSL con funcionalidades para 
-facilitar la resolución de problemas de un contexto específico que sea del interés del alumno
+* Especial interés puede ser en extender Egg  con un DSL con funcionalidades para 
+facilitar la resolución de problemas en un contexto específico que sea del interés del alumno
 * En cada caso busque en npm librerías que le den apoyo para que la tarea resulte mas fácil
 * Estas extensiones debería estar en módulos separados que extienden Egg usando el patrón register-strategy
 
