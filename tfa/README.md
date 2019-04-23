@@ -34,7 +34,7 @@ do(
 
 La idea es introducir una función `use` que es parecida a `require` 
 pero con la diferencia de que extiende el lenguaje `Egg`
-mediante una librería escrita en JavaScript. como ejemplos de uso, véanse las siguientes 
+mediante una librería escrita en JavaScript. Como ejemplos de uso, véanse las siguientes 
 secciones 
 
 ### Ejemplo: Egg para facilitar el manejo de GitHub
