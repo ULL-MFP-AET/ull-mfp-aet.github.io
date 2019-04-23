@@ -35,7 +35,7 @@ do(
 La idea general es extender el lenguaje [Egg](https://github.com/ULL-ESIT-PL-1819/egg) con funcionalidades para la 
 manipulación de GitHub
 
-```
+```js
 do {
   use('github'),
   :=(pl, org("ULL-ESIT-PL-1819")), # Object describing the org
@@ -51,7 +51,7 @@ La función `use` es parecida a `require` pero con la diferencia de que extiende
 
 La idea general es extender el lenguaje [Egg](https://github.com/ULL-ESIT-PL-1819/egg) con funcionalidades para el cálculo científico
 
-```
+```js
 do {
   use('science'),
   :=(v1, arr(4, 5, 9)),
@@ -65,7 +65,7 @@ do {
 
 La idea general es extender el lenguaje [Egg](https://github.com/ULL-ESIT-PL-1819/egg) con funcionalidades para la descripción de tareas. Este código sería el contenido de un fichero `eggfile.egg`:
 
-```
+```js
 tasks {
   use('tasks'),
   task(compile: sh("gcc hello.c"), depends: "mylib"),
@@ -85,7 +85,7 @@ $ example.egg -vt 1000 one.js two.js
 
 Tendríamos que escribir `example-egg` siguiendo un patrón como este:
 
-```
+```js
 do {
   use('command-line'),
   :=(optionDefinition, arr [
