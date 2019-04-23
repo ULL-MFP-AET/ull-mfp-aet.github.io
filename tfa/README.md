@@ -12,7 +12,7 @@ facilitar la resolución de problemas de un contexto específico que sea del int
 * En cada caso busque en npm librerías que le den apoyo para que la tarea resulte mas fácil
 * Estas extensiones debería estar en módulos separados que extienden Egg usando el patrón register-strategy
 
-#### Añadir Herencia entre objetos a Egg
+### Añadir Herencia entre objetos a Egg
 
 Podría ser mediante un método `child` como este:
 
@@ -30,7 +30,7 @@ do(
 )
 ```
 
-#### Ejemplo: Egg para facilitar el manejo de GitHub
+### Ejemplo: Egg para facilitar el manejo de GitHub
 
 La idea general es extender el lenguaje [Egg](https://github.com/ULL-ESIT-PL-1718/egg) con funcionalidades para la 
 manipulación de GitHub
@@ -45,7 +45,7 @@ do {
 }
 ```
 
-#### Ejemplo: Egg para Calculo Científico
+### Ejemplo: Egg para Calculo Científico
 
 La idea general es extender el lenguaje [Egg](https://github.com/ULL-ESIT-PL-1718/egg) con funcionalidades para el cálculo científico
 
@@ -59,7 +59,7 @@ do {
 }
 ```
 
-#### Ejemplo: Egg para Describir Tareas
+### Ejemplo: Egg para Describir Tareas
 
 La idea general es extender el lenguaje [Egg](https://github.com/ULL-ESIT-PL-1718/egg) con funcionalidades para la descripción de tareas. Este código sería el contenido de un fichero `eggfile.egg`:
 
@@ -72,7 +72,7 @@ tasks {
 }
 ```
 
-#### Ejemplo: Command line processing 
+### Ejemplo: Command line processing 
 
 La idea general es extender el lenguaje [Egg](https://github.com/ULL-ESIT-PL-1718/egg) con funcionalidades para procesar los argumentos dados en línea de comandos:
 
