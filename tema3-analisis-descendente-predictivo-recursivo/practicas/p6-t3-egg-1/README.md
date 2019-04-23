@@ -448,6 +448,51 @@ tiene un método con nombre `"meth"`, este  pueda ser llamado usando la sintáxi
   5
   ```
 
+#### Binding
+
+Esta sección describe una conducta que no es un requisito. 
+Simplemente ilustra como el hacr un binding de los métodos al objeto
+tiene consecuencias:
+
+**[~/.../crguezl-egg(private2019)]$ cat examples/bind.egg**
+
+```js
+do (
+  def(x, object ( 
+    "c", 0,
+    "gc", ->{element[this, "c"]},
+    "sc", ->{value, =(this, "c", value)},
+    "inc", ->{=(this, "c", +(element[this, "c"],1))}
+  )),
+  print(x),
+  x.sc(4),
+  define(g, element(x, "gc")),
+  print(g),    # [Function: bound ]
+  print(g()),  # 4
+  define(h, element(x, "sc")),
+  print(h),    # [Function: bound ]
+  print(h(5)), # 5
+  print(x.c),  # 5
+  print(x.gc), # 5
+  print(g()),  # 5
+)
+```
+
+```
+[~/.../crguezl-egg(private2019)]$ bin/egg.js examples/bind.egg 
+{ c: 0,
+  gc: [Function: bound ],
+  sc: [Function: bound ],
+  inc: [Function: bound ] }
+[Function: bound ]
+4
+[Function: bound ]
+5
+5
+5
+5
+```
+
 ### DOT
 
 * Syntactic Sugar: Introduzca el operador punto (dot) para poder acceder a los métodos y atributos de un  objeto.
