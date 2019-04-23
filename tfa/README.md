@@ -4,7 +4,7 @@
 
 Cualquier propuesta relacionada con lo visto en la asignatura es bienvenida.
 
-Las ideas que se proponen aquí son las de extender el lenguaje [Egg](https://github.com/ULL-ESIT-PL-1617/egg)
+Las ideas que se proponen aquí son las de extender el lenguaje [Egg](https://github.com/ULL-ESIT-PL-1819/egg)
 pero puede proponer un TFA con otro tópico relacionado con PL.
 
 * Especial interés puede ser en extenderlo  como DSL con funcionalidades para 
@@ -32,22 +32,24 @@ do(
 
 ### Ejemplo: Egg para facilitar el manejo de GitHub
 
-La idea general es extender el lenguaje [Egg](https://github.com/ULL-ESIT-PL-1718/egg) con funcionalidades para la 
+La idea general es extender el lenguaje [Egg](https://github.com/ULL-ESIT-PL-1819/egg) con funcionalidades para la 
 manipulación de GitHub
 
 ```
 do {
   use('github'),
-  :=(pl, org("ULL-ESIT-PL-1718")), # Object describing the org
+  :=(pl, org("ULL-ESIT-PL-1819")), # Object describing the org
   :=(peoplePL, people(pl)), # Array of objects with the people in the org
   :=(alus, /alu\d+/.match(peoplePL.names())), # Array of strings 
   print(alus)
 }
 ```
 
+La función `use` es parecida a `require` pero con la diferencia de que extiende el lenguaje`Egg`mediante una librería escrita en JavaScript.
+
 ### Ejemplo: Egg para Calculo Científico
 
-La idea general es extender el lenguaje [Egg](https://github.com/ULL-ESIT-PL-1718/egg) con funcionalidades para el cálculo científico
+La idea general es extender el lenguaje [Egg](https://github.com/ULL-ESIT-PL-1819/egg) con funcionalidades para el cálculo científico
 
 ```
 do {
@@ -61,7 +63,7 @@ do {
 
 ### Ejemplo: Egg para Describir Tareas
 
-La idea general es extender el lenguaje [Egg](https://github.com/ULL-ESIT-PL-1718/egg) con funcionalidades para la descripción de tareas. Este código sería el contenido de un fichero `eggfile.egg`:
+La idea general es extender el lenguaje [Egg](https://github.com/ULL-ESIT-PL-1819/egg) con funcionalidades para la descripción de tareas. Este código sería el contenido de un fichero `eggfile.egg`:
 
 ```
 tasks {
@@ -74,7 +76,7 @@ tasks {
 
 ### Ejemplo: Command line processing 
 
-La idea general es extender el lenguaje [Egg](https://github.com/ULL-ESIT-PL-1718/egg) con funcionalidades para procesar los argumentos dados en línea de comandos:
+La idea general es extender el lenguaje [Egg](https://github.com/ULL-ESIT-PL-1819/egg) con funcionalidades para procesar los argumentos dados en línea de comandos:
 
 Por ejemplo para una ejecución como esta:
 ```
