@@ -30,6 +30,13 @@ do(
 )
 ```
 
+### Extensión de Egg con `use`
+
+La idea es introducir una función `use` que es parecida a `require` 
+pero con la diferencia de que extiende el lenguaje `Egg`
+mediante una librería escrita en JavaScript. como ejemplos de uso, véanse las siguientes 
+secciones 
+
 ### Ejemplo: Egg para facilitar el manejo de GitHub
 
 La idea general es extender el lenguaje [Egg](https://github.com/ULL-ESIT-PL-1819/egg) con funcionalidades para la 
@@ -45,7 +52,6 @@ do {
 }
 ```
 
-La función `use` es parecida a `require` pero con la diferencia de que extiende el lenguaje`Egg`mediante una librería escrita en JavaScript.
 
 ### Ejemplo: Egg para Calculo Científico
 
