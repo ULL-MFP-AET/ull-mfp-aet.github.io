@@ -2,7 +2,10 @@
 
 ### Introducción
 
-La idea general es extender el lenguaje [Egg](https://github.com/ULL-ESIT-PL-1617/egg)
+Cualquier propuesta relacionada con lo visto en la asignatura es bienvenida.
+
+Las ideas que se proponen aquí son las de extender el lenguaje [Egg](https://github.com/ULL-ESIT-PL-1617/egg)
+pero puede proponer un TFA con otro tópico relacionado con PL.
 
 * Especial interés puede ser en extenderlo  como DSL con funcionalidades para 
 facilitar la resolución de problemas de un contexto específico que sea del interés del alumno
