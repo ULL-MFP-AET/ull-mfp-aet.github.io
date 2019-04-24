@@ -46,7 +46,8 @@
 *   [Esquemas de Traducción](http://crguezl.github.io/pl-html/node24.html)
 *   [Eliminación de la Recursión por la Izquierda en un Esquema de Traducción](http://crguezl.github.io/pl-html/node25.html)
 *   [Práctica: Analizador Descendente Predictivo Recursivo](http://crguezl.github.io/pl-html/node26.html)
-
+  * [Repo con un ADRP](https://github.com/ULL-ESIT-PL-1819/parser-pdr-example) (Node.js, Web app con ExpressJS, CoffeeScript)
+    - [Fichero main.coffee conteniendo un ADPR](https://github.com/ULL-ESIT-PL-1819/parser-pdr-example/blob/master/views/main.coffee)
 
 ### [Apuntes de PL de la II. Derivaciones a vacio](http://nereida.deioc.ull.es/~pl/perlexamples/node88.html) (Perl)
 
@@ -58,8 +59,6 @@
 
 ### Repos
 
-* [Repo con un ADRP](https://github.com/ULL-ESIT-PL-1819/parser-pdr-example) (Node.js, Web app con ExpressJS, CoffeeScript)
-  - [Fichero main.coffee conteniendo un ADPR](https://github.com/ULL-ESIT-PL-1819/parser-pdr-example/blob/master/views/main.coffee)
 * [Repo con un ADRP](https://github.com/crguezl/prdcalc) (Ruby, Web app con Sinatra, CoffeeScript y JS en el cliente)
   - [Fichero main.js conteniendo un ADPR](https://github.com/crguezl/prdcalc/blob/master/views/main.js)
 
