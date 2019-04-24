@@ -66,14 +66,6 @@
 *   [Ejercicio: Ambiguedad y LL(1)](http://nereida.deioc.ull.es/~pl/perlexamples/node95.html)
 *   [Práctica: Un analizador APDR](http://nereida.deioc.ull.es/~pl/perlexamples/node96.html)
 *   [Práctica: Generación Automática de Analizadores Predictivos](http://nereida.deioc.ull.es/~pl/perlexamples/node97.html)
-    *   [Objetivo](http://nereida.deioc.ull.es/~pl/perlexamples/node97.html#SECTION008613010000000000000)
-    *   [El Módulo <tt>Grammar</tt>](http://nereida.deioc.ull.es/~pl/perlexamples/node97.html#SECTION008613020000000000000)
-    *   [Descripción del objetivo: La función <tt>gap</tt>](http://nereida.deioc.ull.es/~pl/perlexamples/node97.html#SECTION008613030000000000000)
-    *   [Descripción del objetivo: La función <tt>parser</tt>](http://nereida.deioc.ull.es/~pl/perlexamples/node97.html#SECTION008613040000000000000)
-    *   [Cálculo de los First y los Follow con <tt>PL::FirstFollow</tt>](http://nereida.deioc.ull.es/~pl/perlexamples/node97.html#SECTION008613050000000000000)
-    *   [Uso de Templates](http://nereida.deioc.ull.es/~pl/perlexamples/node97.html#SECTION008613060000000000000)
-    *   [Concatenación y Documentos <tt>HERE</tt>](http://nereida.deioc.ull.es/~pl/perlexamples/node97.html#SECTION008613070000000000000)
-    *   [Descarga de los Módulos Necesarios](http://nereida.deioc.ull.es/~pl/perlexamples/node97.html#SECTION008613080000000000000)
 
 ### GitBook 1617
 
