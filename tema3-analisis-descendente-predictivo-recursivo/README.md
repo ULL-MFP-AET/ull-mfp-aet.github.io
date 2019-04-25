@@ -28,6 +28,9 @@
 * [A very simple JS based Lisp interpreter](https://youtu.be/VqIic9tshfg) YouTube video by Andrea Griffini
 * [How to implement a programming language in JavaScript](http://lisperator.net/pltut/) (Un Intérprete Lisp)
 
+### Práctica p8-t3-pdr-infix2egg
+
+* [Descripción de la Práctica p8-t3-pdr-infix2egg](practicas/p8-t3-pdr-infix2egg)
 
 ## Capítulo 2: Conceptos Teóricos para los Analizadores Descendentes Recursivos Predictivos
 
@@ -49,7 +52,7 @@
   * [Repo con un ADRP](https://github.com/ULL-ESIT-PL-1819/parser-pdr-example) (Node.js, Web app con ExpressJS, CoffeeScript)
     - [Fichero main.coffee conteniendo un ADPR](https://github.com/ULL-ESIT-PL-1819/parser-pdr-example/blob/master/views/main.coffee)
 
-### [Apuntes de PL de la II. Derivaciones a vacio](http://nereida.deioc.ull.es/~pl/perlexamples/node88.html) (Perl)
+### [Apuntes de PL de la II](http://nereida.deioc.ull.es/~pl/perlexamples/node88.html) (Perl)
 
 * [Construcción de los FIRST y los FOLLOW](http://nereida.deioc.ull.es/~pl/perlexamples/node89.html)
 

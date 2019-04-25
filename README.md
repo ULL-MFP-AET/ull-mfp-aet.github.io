@@ -32,6 +32,8 @@
 
 ### [Práctica p6-t3-egg-1](tema3-analisis-descendente-predictivo-recursivo/practicas/p6-t3-egg-1)
 
+### [Práctica p8-t3-pdr-infix2egg](tema3-analisis-descendente-predictivo-recursivo/practicas/p8-t3-pdr-infix2egg)
+
 ## [Tema 4: Parsing Expression Grammars](tema4-parsing-expression-grammars)
 
 ## [Tema 5: Análisis Ascendente](tema5-analisis-ascendente)
