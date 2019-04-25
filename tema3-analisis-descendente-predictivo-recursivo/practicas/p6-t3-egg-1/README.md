@@ -1,4 +1,4 @@
-# Práctica: Egg. A Programming Language. Continuación. (p6-t3-egg-1) (p7-t3-egg-2) (p8-t3-egg-4) (etc)
+# Práctica: Egg. A Programming Language. Continuación. (p6-t3-egg-1) (p7-t3-egg-2)
 
 ## Requisitos
 
