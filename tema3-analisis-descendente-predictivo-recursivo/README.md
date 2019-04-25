@@ -22,6 +22,10 @@
 
 * [Descripción de la Práctica](practicas/p6-t3-egg-1)
 
+### Práctica p7-t3-egg-1
+
+* [Descripción de la Práctica](practicas/p6-t3-egg-1)
+
 ### Otros ejemplos de lenguajes con analizadores Predictivos Descendentes Recursivos
 
 * [TinyC](https://github.com/ULL-ESIT-PL-1718/tiny-c) Repo con un ejemplo de PDR en C
