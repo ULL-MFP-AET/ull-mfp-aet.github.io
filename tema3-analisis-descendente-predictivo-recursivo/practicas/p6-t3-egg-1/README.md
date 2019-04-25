@@ -82,7 +82,7 @@ Despúes de conseguido el requisito anterior nos encontramos con un problema:
 definido en las clases de nodos `VALUE`, `WORD`y `APPLY`
 
 Escriba una función `json2AST` que convierta la estructura de datos plana en un AST en los que cada nodo pertenece a la clase correspondiente 
-
+Modifique la función `runFromEVM` que ejecuta el código de la máquina virtual para que siga funcionando. 
 
 
 ### Llamada a Métodos JS de los Objetos
