@@ -8,6 +8,8 @@ Diseñe un lenguaje de programación sencillo (Sintáxis convencional *a la C/BA
 
 {% include_relative ../p6-t3-egg-1/json2ast.md %}
 
+prueba
+
 ##### Posibles puntos de partida
 
 * Buenos puntos de partida
