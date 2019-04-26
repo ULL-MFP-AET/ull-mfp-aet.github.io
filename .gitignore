@@ -1,6 +1,9 @@
 Arona-winter-course
 _site/
 Gemfile.lock
+apuntes-ull-esit-1617
+ull-esit-1617
+
 tema0-introduccion-a-pl/practicas/code
 
 tema1-introduccion-a-javascript/practicas/p1-t1-iaas/documentacion-iaas-ull-es
@@ -44,5 +47,8 @@ tema3-analisis-descendente-predictivo-recursivo/practicas/p6-t3-egg-1/require-cr
 tema3-analisis-descendente-predictivo-recursivo/practicas/example2test
 tema3-analisis-descendente-predictivo-recursivo/PDRsrc
 tema3-analisis-descendente-predictivo-recursivo/parser-pdr-example
+tema3-analisis-descendente-predictivo-recursivo/practicas/p8-t3-pdr-infix2egg/practica-infix-2-egg-pdr
 
 tfa/tfa-pl-1718
+
+
