@@ -6,6 +6,8 @@ en las clases creadas nos encontramos con que `bin/eggvm` deja de funcionar. Est
 2. Cuando ejecutamos `bin/eggvm prog.egg.evm` falla porque la estructura del JSON es un mapa y ahora `evaluate` es un método
 definido en las clases de nodos `VALUE`, `WORD`y `APPLY`
 
+**Solución**
+
 Escriba una función `json2AST` que convierta la estructura de datos plana en un AST en los que cada nodo pertenece a la clase correspondiente 
 Modifique la función `runFromEVM` que ejecuta el código de la máquina virtual para que siga funcionando. 
 
