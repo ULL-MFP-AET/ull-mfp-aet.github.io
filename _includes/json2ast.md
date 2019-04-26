@@ -1,5 +1,6 @@
 
-Despúes de conseguido el requisito anterior nos encontramos con un problema:
+Despúes de que hayamos definido las clases de nodos del AST y hayamos añadido `evaluate` como método
+en las clases creadas nos encontramos con que `bin/eggvm` deja de funcionar. Esto es así porque:
 
 1. `bin/eggc prog.egg` produce como salida un JSON `prog.egg.evm` conteniendo la estructura del árbol descrita en JSON
 2. Cuando ejecutamos `bin/eggvm prog.egg.evm` falla porque la estructura del JSON es plana y ahora `evaluate` es un método
