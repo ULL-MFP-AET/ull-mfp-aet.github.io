@@ -10,7 +10,7 @@ blah blah
 
 {% include_relative ../p6-t3-egg-1/json2ast.md %}
 
-##### Posibles puntos de partida
+### Posibles puntos de partida
 
 * Buenos puntos de partida
   * [Tiny-C](https://github.com/ULL-ESIT-PL-1718/tiny-c) 
@@ -42,7 +42,7 @@ blah blah
 
 Posiblemente las mas recomendables para empezar son Tiny-C y Mini-Pascal. Después puede usar las otras para responder a la pregunta ¿como amplío el lenguaje con ...?
 
-##### Requisitos
+### Requisitos
 
 1. Escriba la gramática de manera que sea procesable por un ADPR. Puede usar los operadores
 `*` y `+` dentro de la gramática para indicar repeticiones
