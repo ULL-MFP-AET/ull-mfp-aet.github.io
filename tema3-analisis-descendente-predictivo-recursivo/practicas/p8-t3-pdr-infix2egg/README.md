@@ -4,7 +4,7 @@
 
 Diseñe un lenguaje de programación sencillo (Sintáxis convencional *a la C/BASIC/JavaScript/...*). Escriba un analizador sintáctico que genere [árboles de análisis abstracto que conformen a los usados por el intérprete del lenguaje Egg](https://github.com/ULL-ESIT-PL-1617/egg/blob/master/README.md).
 
-### Actualice la máquina virtual `evm` para que pueda ejecutar los ficheros de código `.js.egg` (JSON)
+### Actualice la máquina virtual `evm` para que pueda ejecutar los ficheros de código `.egg.evm` (JSON)
 
 {% include json2ast.md %}
 
