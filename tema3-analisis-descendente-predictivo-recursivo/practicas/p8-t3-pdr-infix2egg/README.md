@@ -8,7 +8,7 @@ Diseñe un lenguaje de programación sencillo (Sintáxis convencional *a la C/BA
 
 blah blah
 
-{% include_relative ../p6-t3-egg-1/json2ast.md %}
+{% include json2ast.md %}
 
 ### Posibles puntos de partida
 

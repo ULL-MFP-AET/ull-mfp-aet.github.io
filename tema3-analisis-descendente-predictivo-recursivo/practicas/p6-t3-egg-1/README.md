@@ -75,7 +75,7 @@
 
 ### Actualice la máquina virtual `evm` para que pueda ejecutar los JSON
 
-{% include_relative json2ast.md %}
+{% include json2ast.md %}
 
 
 ### Llamada a Métodos JS de los Objetos
