@@ -6,6 +6,8 @@ Diseñe un lenguaje de programación sencillo (Sintáxis convencional *a la C/BA
 
 ### Actualice la máquina virtual `evm` para que pueda ejecutar los JSON
 
+blah blah
+
 {% include_relative ../p6-t3-egg-1/json2ast.md %}
 
 ##### Posibles puntos de partida
