@@ -26,7 +26,7 @@ Escriba un analizador sintáctico descendente recursivo (PDR) que genere [árbol
 
 {% include json2ast.md %}
 
-### Posibles puntos de partida
+### Posibles puntos de partida para su Gramática
 
 * Buenos puntos de partida
   * [Tiny-C](https://github.com/ULL-ESIT-PL-1718/tiny-c) 
