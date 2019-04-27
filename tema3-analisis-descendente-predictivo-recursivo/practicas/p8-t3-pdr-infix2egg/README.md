@@ -74,7 +74,6 @@ Después puede usar las otras para responder a la pregunta ¿Como amplío el len
 
 * [Apuntes de PL: Análisis Sintáctico Predictivo Recursivo](http://crguezl.github.io/pl-html/node22.html)
 * [Repo con una solución a un lenguaje similar](https://github.com/crguezl/prdcalc)
-  -  [Despliegue en Heroku](https://pl1718-prdcalc.herokuapp.com/)
   - [Fichero main.js con un parser similar al que se solicita](https://github.com/crguezl/prdcalc/blob/master/views/main.js)
 * [Repo inicial del que parte la asignación ClassRoom](https://github.com/ULL-ESIT-PL-1617/solution-evalua-pdr)
 * [Repo con una solución a Eloquent JS. Chapter 12 Project. A Programming Language](https://github.com/ULL-ESIT-PL-1617/egg)
