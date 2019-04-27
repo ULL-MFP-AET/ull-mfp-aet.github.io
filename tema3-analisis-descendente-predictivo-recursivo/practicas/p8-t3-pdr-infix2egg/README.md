@@ -28,7 +28,8 @@ Escriba un analizador sintáctico descendente recursivo (PDR) que genere [árbol
   * [Tiny Basic](https://en.wikipedia.org/wiki/Tiny_BASIC). Muy sencillo
   * [Niklaus Wirth's PL/0](https://en.wikipedia.org/wiki/Recursive_descent_parser) in the Wikipedia.  Sencillo
 * Complicados pero posibles
-  * [The C Proggaming Language](https://cs.indstate.edu/~cbasavaraj/cs559/the_c_programming_language_2.pdf) léase la descripción de la gramática de C. Páginas 234 a la 239
+  * Aqui tiene una gramática del lenguaje C escrita en Parse::Eyapp, una herramienta de generación de analizadores sintácticos para el lenguaje Perl que desarrollé hace muchos años. :
+    - [The C Proggaming Language](https://fastapi.metacpan.org/source/CASIANO/Parse-Eyapp-1.142/examples/languages/C/ansic.eyp)
   * [Irie Pascal Grammar](http://www.irietools.com/iriepascal/progref534.html)
 * Mucho trabajo. Complicados:
   * Acorn
