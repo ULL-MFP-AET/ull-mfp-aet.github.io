@@ -34,10 +34,11 @@ Escriba un analizador sintáctico descendente recursivo (PDR) que genere [árbol
     * [Un compilador de ANSI C descendente recursivo](https://sites.google.com/site/lccretargetablecompiler/)
   * [Irie Pascal Grammar](http://www.irietools.com/iriepascal/progref534.html)
 * Mucho trabajo. Complicados:
-  * Acorn
-    * [Acorn A small, fast, JavaScript-based JavaScript parser](https://github.com/acornjs/acorn)
-    * [by Marijn Haverbeke. Acorn: yet another JavaScript parser](http://marijnhaverbeke.nl/blog/acorn.html)
-  * [Gramática de JS en PEGjs](https://github.com/pegjs/pegjs/blob/master/examples/javascript.pegjs)
+  * JS
+    * Acorn un compilador de JS descendente recursivo:
+      * [Acorn A small, fast, JavaScript-based JavaScript parser](https://github.com/acornjs/acorn)
+      * [by Marijn Haverbeke. Acorn: yet another JavaScript parser](http://marijnhaverbeke.nl/blog/acorn.html)
+    * [Gramática de JS en PEGjs](https://github.com/pegjs/pegjs/blob/master/examples/javascript.pegjs)
   * [Python Grammar](https://docs.python.org/3/reference/grammar.html)
   * [Ruby Grammar](https://www.cse.buffalo.edu/~regan/cse305/RubyBNF.pdf)
   * [Java Grammar](https://docs.oracle.com/javase/specs/jls/se7/html/jls-18.html)
