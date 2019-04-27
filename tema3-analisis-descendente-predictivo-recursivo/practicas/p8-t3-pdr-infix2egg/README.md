@@ -66,7 +66,8 @@ una aproximación OOP.
   * [Ruby Grammar](https://www.cse.buffalo.edu/~regan/cse305/RubyBNF.pdf)
   * [Java Grammar](https://docs.oracle.com/javase/specs/jls/se7/html/jls-18.html)
 
-Posiblemente las mas recomendables para empezar son Tiny-C y Mini-Pascal. 
+Posiblemente las mas recomendables para empezar son Tiny-C, 
+[Niklaus Wirth's PL/0](https://en.wikipedia.org/wiki/Recursive_descent_parser) y Mini-Pascal. 
 Después puede usar las otras para responder a la pregunta ¿Como amplío el lenguaje con ...?
 
 ### Recursos
