@@ -25,7 +25,7 @@ Escriba un analizador sintáctico descendente recursivo (PDR) que genere [árbol
 ### Problema: Actualice la máquina virtual `evm` para que pueda ejecutar los ficheros de código `prog.egg.evm` (JSON)
 
 Cuando tenga terminado su lenguaje querrá ejecutar sus programas usando `evm`. 
-Se puede encontrar con un problema.
+Se puede encontrar entonces con un pequeño problema.
 
 Recuerde que hemos modificado la función `evaluate` de la máquina virtual de Egg para seguir
 una aproximación OOP.
