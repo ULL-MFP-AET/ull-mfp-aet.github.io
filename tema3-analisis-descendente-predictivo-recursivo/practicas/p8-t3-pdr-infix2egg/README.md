@@ -27,6 +27,9 @@ Escriba un analizador sintáctico descendente recursivo (PDR) que genere [árbol
 Cuando tenga terminado su lenguaje querrá ejecutar sus programas usando `evm`. 
 Se puede encontrar con un problema.
 
+Recuerde que hemos modificado la función `evaluate` de la máquina virtual de Egg para seguir
+una aproximación OOP.
+
 {% include json2ast.md %}
 
 ### Posibles puntos de partida para su Gramática
