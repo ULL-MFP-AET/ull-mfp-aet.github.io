@@ -7,9 +7,9 @@ Escriba un analizador sintáctico descendente recursivo (PDR) que genere [árbol
 
 ### Requisitos
 
-1. Escriba la gramática de manera que sea procesable por un ADPR. Puede usar los operadores
+1. Escriba la gramática de su lenguaje de manera que sea procesable por un ADPR. Puede usar los operadores
 `*` y `+` dentro de la gramática para indicar repeticiones
-2. Escriba el analizador sintáctico para dicho lenguaje. Deberá devolver el [árbol de análisis sintáctico conforme a los árboles usados por el intérprete Egg](https://github.com/ULL-ESIT-PL-1617/egg/blob/master/README.md)
+2. Escriba el analizador sintáctico para su lenguaje. Deberá devolver el [árbol de análisis sintáctico conforme a los árboles usados por el intérprete Egg](https://github.com/ULL-ESIT-PL-1617/egg/blob/master/README.md)
 3. El lenguaje debe tener 
   - declaraciones (aunque no tiene que ser necesariamente tipeado). Esto es, deberían poder declararse objetos como variables, constantes y funciones
   - sentencias `if`, 
