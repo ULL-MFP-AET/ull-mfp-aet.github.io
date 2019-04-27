@@ -5,6 +5,23 @@
 Diseñe un lenguaje de programación sencillo (Sintáxis convencional *a la C/BASIC/JavaScript/...*). 
 Escriba un analizador sintáctico descendente recursivo (PDR) que genere [árboles de análisis abstracto que conformen a los usados por el intérprete del lenguaje Egg](https://github.com/ULL-ESIT-PL-1617/egg/blob/master/README.md).
 
+### Requisitos
+
+1. Escriba la gramática de manera que sea procesable por un ADPR. Puede usar los operadores
+`*` y `+` dentro de la gramática para indicar repeticiones
+2. Escriba el analizador sintáctico para dicho lenguaje. Deberá devolver el [árbol de análisis sintáctico conforme a los árboles usados por el intérprete Egg](https://github.com/ULL-ESIT-PL-1617/egg/blob/master/README.md)
+3. El lenguaje debe tener 
+  - declaraciones (aunque no tiene que ser necesariamente tipeado). Esto es, deberían poder declararse objetos como variables, constantes y funciones
+  - sentencias `if`, 
+  - `condiciones` como `a <= b`, 
+  - `asignaciones`, 
+  - alguna forma de bucle, 
+  - `funciones` y  llamadas a funciones, 
+  - etc.
+4. La gramática deberá disponerse de forma que sea analizable por un PDR
+5. Escriba pruebas  para el código desarrollado
+6. Use integración en la nube (Travis/ CircleCI)
+
 ### Actualice la máquina virtual `evm` para que pueda ejecutar los ficheros de código `prog.egg.evm` (JSON)
 
 {% include json2ast.md %}
@@ -45,23 +62,6 @@ Escriba un analizador sintáctico descendente recursivo (PDR) que genere [árbol
 
 Posiblemente las mas recomendables para empezar son Tiny-C y Mini-Pascal. 
 Después puede usar las otras para responder a la pregunta ¿Como amplío el lenguaje con ...?
-
-### Requisitos
-
-1. Escriba la gramática de manera que sea procesable por un ADPR. Puede usar los operadores
-`*` y `+` dentro de la gramática para indicar repeticiones
-2. Escriba el analizador sintáctico para dicho lenguaje. Deberá devolver el [árbol de análisis sintáctico conforme a los árboles usados por el intérprete Egg](https://github.com/ULL-ESIT-PL-1617/egg/blob/master/README.md)
-3. El lenguaje debe tener 
-  - declaraciones (aunque no tiene que ser necesariamente tipeado). Esto es, deberían poder declararse objetos como variables, constantes y funciones
-  - sentencias `if`, 
-  - `condiciones` como `a <= b`, 
-  - `asignaciones`, 
-  - alguna forma de bucle, 
-  - `funciones` y  llamadas a funciones, 
-  - etc.
-4. La gramática deberá disponerse de forma que sea analizable por un PDR
-5. Escriba pruebas  para el código desarrollado
-6. Use integración en la nube (Travis/ CircleCI)
 
 ### Recursos
 
