@@ -24,6 +24,9 @@ Escriba un analizador sintáctico descendente recursivo (PDR) que genere [árbol
 
 ### Problema: Actualice la máquina virtual `evm` para que pueda ejecutar los ficheros de código `prog.egg.evm` (JSON)
 
+Cuando tenga terminado su lenguaje querrá ejecutar sus programas usando `evm`. 
+Se puede encontrar con un problema.
+
 {% include json2ast.md %}
 
 ### Posibles puntos de partida para su Gramática
