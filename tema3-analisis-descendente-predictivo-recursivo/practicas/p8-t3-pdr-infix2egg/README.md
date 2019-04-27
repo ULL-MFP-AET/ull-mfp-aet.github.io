@@ -22,7 +22,7 @@ Escriba un analizador sintáctico descendente recursivo (PDR) que genere [árbol
 5. Escriba pruebas  para el código desarrollado
 6. Use integración en la nube (Travis/ CircleCI)
 
-### Actualice la máquina virtual `evm` para que pueda ejecutar los ficheros de código `prog.egg.evm` (JSON)
+### Problema: Actualice la máquina virtual `evm` para que pueda ejecutar los ficheros de código `prog.egg.evm` (JSON)
 
 {% include json2ast.md %}
 
