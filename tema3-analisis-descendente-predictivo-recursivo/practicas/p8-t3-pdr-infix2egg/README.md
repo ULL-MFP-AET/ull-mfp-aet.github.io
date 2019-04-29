@@ -84,7 +84,7 @@ El ejemplo que sigue provee soluciones a estos problemas:
 **[~/.../crguezl-infix2-egg(master)]$ cat bin/infix2egg.js **
 
 
-```
+```js
 #!/usr/bin/env node
 const fs = require('fs');
 const commander = require('commander');
