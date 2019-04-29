@@ -159,6 +159,42 @@ Veamos un ejemplo basado en PL/0:
           | '(' expression ')'
   ```
 
+  Sigue un ejemplo de programa generado por esta gramática, en el que usamos algunas de las primitivas proveídas por la máquina virtual Egg como `array` y `print`
+
+  ```ruby
+  begin
+      # array is an egg function that returns an array
+      let result = call array(2, 3, 4, 5);
+
+      # print is also egg function
+      call print(result);
+
+      # We can also access array properties
+      call print("Array length: " + result.length);
+
+      # And call array methods
+      let string = call result.join(" ~ ");
+      call print(string);
+
+      # We can use array map method by passing an anonymous function as argument
+      let doubles = call result.map(func(x, i, a) begin
+              x * 2
+      end);
+      call print(doubles)
+  end
+  ```
+
+  Cuando lo ejecutamos:
+
+  ```
+  bin/infix2egg.js --run examples/arrays.inf
+  [ 2, 3, 4, 5 ]
+  Array length: 4
+  2 ~ 3 ~ 4 ~ 5
+  [ 4, 6, 8, 10 ]
+  ```
+
+
 
 
 ### Recursos
