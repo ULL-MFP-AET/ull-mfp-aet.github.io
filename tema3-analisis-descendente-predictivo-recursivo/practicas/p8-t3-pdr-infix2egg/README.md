@@ -125,10 +125,6 @@ irlo extendiendo hacia [mini-pascal](https://github.com/ULL-ESIT-PL-1819/mini-pa
 Veamos un ejemplo basado en PL/0:
 
   ```yacc
-  V = { expressions, expression, comparison, sum, factor, operand  }
-  Start symbol: expressions
-  Productions:
-
       expressions → expression
           | 'begin' expression (SENTENCE_SEPARATOR expression)* 'end'
 
