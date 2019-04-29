@@ -168,9 +168,6 @@ Veamos un ejemplo basado en PL/0:
 
       # print is also egg function
       call print(result);
-
-      # We can also access array properties
-      call print("Array length: " + result.length);
   end
   ```
 
