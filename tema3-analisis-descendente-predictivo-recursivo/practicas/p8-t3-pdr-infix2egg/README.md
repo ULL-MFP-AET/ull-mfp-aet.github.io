@@ -35,7 +35,7 @@ una aproximación OOP.
 ### Posibles puntos de partida para su Gramática
 
 * Buenos puntos de partida
-  * [Niklaus Wirth's PL/0](https://en.wikipedia.org/wiki/Recursive_descent_parser) in the Wikipedia.  Sencillo
+  * [Niklaus Wirth's PL/0](https://en.wikipedia.org/wiki/Recursive_descent_parser) in the Wikipedia.  Sencillo. Cumple todos los requisitos solicitados
   * [Tiny-C](https://github.com/ULL-ESIT-PL-1718/tiny-c) 
       - Un subconjunto hiper-minimal de C con un compilador y una VM  escritas en C. 
       - Contiene un lexer
