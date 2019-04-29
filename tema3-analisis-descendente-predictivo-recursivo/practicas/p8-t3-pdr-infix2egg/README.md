@@ -46,7 +46,7 @@ una aproximación OOP.
       - [Mini Pascal Compiler in Python](https://github.com/ULL-ESIT-PL-1819/mini-pascal-compiler)
       - [Gramática](https://github.com/ULL-ESIT-PL-1819/mini-pascal-compiler/blob/master/grammar)
   * [Tiny Basic](https://en.wikipedia.org/wiki/Tiny_BASIC). Muy sencillo
-* Sencillos
+* Muy Sencillos
   * Dos vídeos en YouTube implementando una sencilla calculadora en C usando la técnica PDR. Si estas empezando
     * [Let's write a recursive-descent parser in C (Part 1)](https://youtu.be/N55XNj8KjC4) YouTube
     * [Let's write a recursive-descent parser in C (Part 2)](https://youtu.be/NdW_ApiaivU) YouTube
