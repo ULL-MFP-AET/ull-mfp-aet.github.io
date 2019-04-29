@@ -77,7 +77,7 @@ Puede usar el módulo [commander](https://www.npmjs.com/package/commander) para 
 
   El ejemplo que sigue provee soluciones a estos problemas:
 
-  **[~/.../crguezl-infix2-egg(master)]$ cat bin/infix2egg.js **
+  **[~/.../crguezl-infix2-egg(master)]$ cat bin/infix2egg.js**
 
 
   ```js
