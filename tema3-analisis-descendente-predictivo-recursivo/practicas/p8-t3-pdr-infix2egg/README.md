@@ -69,10 +69,6 @@ una aproximación OOP.
   * [Ruby Grammar](https://www.cse.buffalo.edu/~regan/cse305/RubyBNF.pdf)
   * [Java Grammar](https://docs.oracle.com/javase/specs/jls/se7/html/jls-18.html)
 
-Posiblemente las mas recomendables para empezar son Tiny-C, 
-[Niklaus Wirth's PL/0](https://en.wikipedia.org/wiki/Recursive_descent_parser) y Mini-Pascal. 
-Después puede usar las otras para responder a la pregunta ¿Como amplío el lenguaje con ...?
-
 ### Sugerencias
 
 1. A la hora de escribir el ejecutable que hace la traducción se encontrará con el problema de parsear la línea de comandos.
@@ -81,48 +77,91 @@ Puede usar el módulo [commander](https://www.npmjs.com/package/commander) para 
 
 El ejemplo que sigue provee soluciones a estos problemas:
 
-**[~/.../crguezl-infix2-egg(master)]$ cat bin/infix2egg.js **
+  **[~/.../crguezl-infix2-egg(master)]$ cat bin/infix2egg.js **
 
 
-```js
-#!/usr/bin/env node
-const fs = require('fs');
-const commander = require('commander');
-const { egg } = require('@XXXXXXXXXX/egg');
-const { parseFromFile } = require('../lib/parseFile');
+  ```js
+  #!/usr/bin/env node
+  const fs = require('fs');
+  const commander = require('commander');
+  const { egg } = require('@XXXXXXXXXX/egg');
+  const { parseFromFile } = require('../lib/parseFile');
 
-commander
-  .version(require('../package.json').version)
-  .option('-r --run <fileName>', 'compiles the input infix program and runs it using the egg interpreter')
-  .option('-c --compile <fileName>', 'compile the infix program to produce a JSON containing the input egg AST')
-  .option('-i --interpret <fileName>', 'interprets the egg AST')
-  .option('-p --plugins [plugin1:plugin2:...:pluginK]', 'specify infix/egg plugins', val => val.split(':'))
-  .parse(process.argv);
+  commander
+    .version(require('../package.json').version)
+    .option('-r --run <fileName>', 'compiles the input infix program and runs it using the egg interpreter')
+    .option('-c --compile <fileName>', 'compile the infix program to produce a JSON containing the input egg AST')
+    .option('-i --interpret <fileName>', 'interprets the egg AST')
+    .option('-p --plugins [plugin1:plugin2:...:pluginK]', 'specify infix/egg plugins', val => val.split(':'))
+    .parse(process.argv);
 
-// Execute plugins
-if (commander.plugins) {
-  commander.plugins.forEach(require);
-}
-// Compile and interpret
-if (commander.run) {
-  const ast = JSON.stringify(parseFromFile(commander.run));
-  egg.interpretFromPlainAst(ast);
-}
-// Run the parser to produce the EGG AST from the infix program
-else if (commander.compile) {
-  const outputPath = `${commander.compile}.egg.evm`;
-  const ast = parseFromFile(commander.compile);
-  fs.writeFileSync(outputPath, JSON.stringify(ast, null, '\t'));
-}
-// Interpret
-else if (commander.interpret) {
-  egg.runFromEVM(commander.interpret);
-}
-// Show help
-else {
-  commander.help();
-}
-```
+  // Execute plugins
+  if (commander.plugins) {
+    commander.plugins.forEach(require);
+  }
+  // Compile and interpret
+  if (commander.run) {
+    const ast = JSON.stringify(parseFromFile(commander.run));
+    egg.interpretFromPlainAst(ast);
+  }
+  // Run the parser to produce the EGG AST from the infix program
+  else if (commander.compile) {
+    const outputPath = `${commander.compile}.egg.evm`;
+    const ast = parseFromFile(commander.compile);
+    fs.writeFileSync(outputPath, JSON.stringify(ast, null, '\t'));
+  }
+  // Interpret
+  else if (commander.interpret) {
+    egg.runFromEVM(commander.interpret);
+  }
+  // Show help
+  else {
+    commander.help();
+  }
+  ```
+
+3. Posiblemente de los lenguajes considerados en la sección previa la opción mas sencilla sea empezar con un lenguaje basado en 
+[Niklaus Wirth's PL/0](https://en.wikipedia.org/wiki/Recursive_descent_parser) y -si se dispone de tiempo -
+irlo extendiendo hacia [mini-pascal](https://github.com/ULL-ESIT-PL-1819/mini-pascal-compiler/blob/master/grammar).
+Veamos un ejemplo basado en PL/0:
+
+  ```yacc
+  ∑ = tokens
+  V = { expressions, expression, comparison, sum, factor, operand  }
+  Start symbol: expressions
+  Productions:
+
+      expressions → expression
+          | 'begin' expression (SENTENCE_SEPARATOR expression)* 'end'
+
+      expression → 'if' expression 'then' expressions
+          | 'if' expression 'then' expressions 'else' expressions
+          | 'while' expression 'do' expressions
+          | 'func' ID '(' (ID ',')* ID? ')' expressions
+          | 'func' '(' (ID ',')* ID? ')' expressions
+          | 'let' ID '=' expression
+          | 'set' ID '=' expression
+          | 'call' ID '(' (expression ',')* expression ')'
+          | 'call' ID '(' ')'
+          | comparison
+
+      comparison → sum (COMPOP sum)*
+
+      sum → factor (ADDOP factor)*
+
+      factor → unary (MULOP unary)*
+
+      unary → UNARYOP ? operand
+
+      operand → ID
+          | NUM
+          | STRING
+          | BOOLEAN
+          | '(' expression ')'
+  ```
+
+
+Después puede usar las otras para responder a la pregunta ¿Como amplío el lenguaje con ...?
 
 ### Recursos
 
