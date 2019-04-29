@@ -73,6 +73,58 @@ Posiblemente las mas recomendables para empezar son Tiny-C,
 [Niklaus Wirth's PL/0](https://en.wikipedia.org/wiki/Recursive_descent_parser) y Mini-Pascal. 
 Después puede usar las otras para responder a la pregunta ¿Como amplío el lenguaje con ...?
 
+### Sugerencias
+
+1. A la hora de escribir el ejecutable se encontrará con el problema de parsear la línea de comandos.
+Puede usar el módulo [commander](https://www.npmjs.com/package/commander) para ello
+2. Dado que esta práctica esta en un repo y su intérprete de `egg` está en otro repo, tenemos que resolver el problema de las "dependecias externas". Podríamos usar submódulos git o simplemente publicar en npm nuestro intérprete egg y usarlo en nuestro compilador del lenguaje infijo que hemos diseñado
+
+El ejemplo que sigue provee soluciones a estos problemas:
+
+**[~/.../crguezl-infix2-egg(master)]$ cat bin/infix2egg.js **
+
+
+```
+#!/usr/bin/env node
+const fs = require('fs');
+const commander = require('commander');
+const { egg } = require('@XXXXXXXXXX/egg');
+const { parseFromFile } = require('../lib/parseFile');
+
+commander
+  .version(require('../package.json').version)
+  .option('-r --run <fileName>', 'compiles the input infix program and runs it using the egg interpreter')
+  .option('-c --compile <fileName>', 'compile the infix program to produce a JSON containing the input egg AST')
+  .option('-i --interpret <fileName>', 'interprets the egg AST')
+  .option('-p --plugins [plugin1:plugin2:...:pluginK]', 'specify infix/egg plugins', val => val.split(':'))
+  .parse(process.argv);
+
+// Execute plugins
+if (commander.plugins) {
+  commander.plugins.forEach(require);
+}
+
+// Compile and interpret
+if (commander.run) {
+  const ast = JSON.stringify(parseFromFile(commander.run));
+  egg.interpretFromPlainAst(ast);
+}
+// Run the parser to produce the EGG AST from the infix program
+else if (commander.compile) {
+  const outputPath = `${commander.compile}.egg.evm`;
+  const ast = parseFromFile(commander.compile);
+  fs.writeFileSync(outputPath, JSON.stringify(ast, null, '\t'));
+}
+// Interpret
+else if (commander.interpret) {
+  egg.runFromEVM(commander.interpret);
+}
+// Show help
+else {
+  commander.help();
+}
+```
+
 ### Recursos
 
 * [Apuntes de PL: Análisis Sintáctico Predictivo Recursivo](http://crguezl.github.io/pl-html/node22.html)
