@@ -75,7 +75,7 @@ una aproximación OOP.
 Puede usar el módulo [commander](https://www.npmjs.com/package/commander) para ello
 2. Dado que esta práctica esta en un repo y su intérprete de `egg` está en otro repo, tenemos que resolver el problema de las "dependecias externas". Podríamos usar submódulos git o simplemente publicar en npm nuestro intérprete egg y usarlo en nuestro compilador del lenguaje infijo que hemos diseñado
 
-El ejemplo que sigue provee soluciones a estos problemas:
+  El ejemplo que sigue provee soluciones a estos problemas:
 
   **[~/.../crguezl-infix2-egg(master)]$ cat bin/infix2egg.js **
 
@@ -161,7 +161,6 @@ Veamos un ejemplo basado en PL/0:
   ```
 
 
-Después puede usar las otras para responder a la pregunta ¿Como amplío el lenguaje con ...?
 
 ### Recursos
 
