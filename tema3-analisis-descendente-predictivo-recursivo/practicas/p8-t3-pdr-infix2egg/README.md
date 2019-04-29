@@ -103,7 +103,6 @@ commander
 if (commander.plugins) {
   commander.plugins.forEach(require);
 }
-
 // Compile and interpret
 if (commander.run) {
   const ast = JSON.stringify(parseFromFile(commander.run));
