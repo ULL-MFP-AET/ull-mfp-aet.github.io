@@ -35,6 +35,7 @@ una aproximación OOP.
 ### Posibles puntos de partida para su Gramática
 
 * Buenos puntos de partida
+  * [Niklaus Wirth's PL/0](https://en.wikipedia.org/wiki/Recursive_descent_parser) in the Wikipedia.  Sencillo
   * [Tiny-C](https://github.com/ULL-ESIT-PL-1718/tiny-c) 
       - Un subconjunto hiper-minimal de C con un compilador y una VM  escritas en C. 
       - Contiene un lexer
@@ -44,18 +45,19 @@ una aproximación OOP.
   * [Syntax of Mini-Pascal](https://www.cs.helsinki.fi/u/vihavain/k06/okk/items/minipascalsyntax.html)
       - [Mini Pascal Compiler in Python](https://github.com/ULL-ESIT-PL-1819/mini-pascal-compiler)
       - [Gramática](https://github.com/ULL-ESIT-PL-1819/mini-pascal-compiler/blob/master/grammar)
+  * [Tiny Basic](https://en.wikipedia.org/wiki/Tiny_BASIC). Muy sencillo
 * Sencillos
   * Dos vídeos en YouTube implementando una sencilla calculadora en C usando la técnica PDR. Si estas empezando
     * [Let's write a recursive-descent parser in C (Part 1)](https://youtu.be/N55XNj8KjC4) YouTube
     * [Let's write a recursive-descent parser in C (Part 2)](https://youtu.be/NdW_ApiaivU) YouTube
-  * [Tiny Basic](https://en.wikipedia.org/wiki/Tiny_BASIC). Muy sencillo
-  * [Niklaus Wirth's PL/0](https://en.wikipedia.org/wiki/Recursive_descent_parser) in the Wikipedia.  Sencillo
 * Complicados pero posibles
   * ANSI C
     * Aqui tiene una gramática del lenguaje C escrita en Parse::Eyapp, una herramienta de generación de analizadores sintácticos para el lenguaje Perl que desarrollé hace muchos años. :
       - [The C Programing Language](https://fastapi.metacpan.org/source/CASIANO/Parse-Eyapp-1.142/examples/languages/C/ansic.eyp)
     * [Un compilador de ANSI C descendente recursivo](https://sites.google.com/site/lccretargetablecompiler/)
-  * [Irie Pascal Grammar](http://www.irietools.com/iriepascal/progref534.html)
+  * Pascal
+    * [Irie Pascal Grammar](http://www.irietools.com/iriepascal/progref534.html)
+    * [Pascal.js](https://github.com/kanaka/pascal.js?files=1)
 * Mucho trabajo. Complicados:
   * JS
     * Acorn un compilador de JS descendente recursivo:
