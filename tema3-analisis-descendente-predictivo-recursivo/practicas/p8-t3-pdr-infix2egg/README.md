@@ -45,6 +45,7 @@ una aproximación OOP.
   * [Syntax of Mini-Pascal](https://www.cs.helsinki.fi/u/vihavain/k06/okk/items/minipascalsyntax.html)
       - [Mini Pascal Compiler in Python](https://github.com/ULL-ESIT-PL-1819/mini-pascal-compiler)
       - [Gramática](https://github.com/ULL-ESIT-PL-1819/mini-pascal-compiler/blob/master/grammar)
+      - Un posible estrategia para esta práctica es empezar con PL/0 e ir haciendo crecer el lenguaje hasta convertirlo en Mini Pascal.
   * [Tiny Basic](https://en.wikipedia.org/wiki/Tiny_BASIC). Muy sencillo
 * Muy Sencillos
   * Dos vídeos en YouTube implementando una sencilla calculadora en C usando la técnica PDR. Si estas empezando
