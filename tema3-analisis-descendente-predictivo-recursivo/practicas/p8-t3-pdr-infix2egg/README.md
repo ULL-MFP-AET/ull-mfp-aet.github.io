@@ -75,7 +75,7 @@ Después puede usar las otras para responder a la pregunta ¿Como amplío el len
 
 ### Sugerencias
 
-1. A la hora de escribir el ejecutable se encontrará con el problema de parsear la línea de comandos.
+1. A la hora de escribir el ejecutable que hace la traducción se encontrará con el problema de parsear la línea de comandos.
 Puede usar el módulo [commander](https://www.npmjs.com/package/commander) para ello
 2. Dado que esta práctica esta en un repo y su intérprete de `egg` está en otro repo, tenemos que resolver el problema de las "dependecias externas". Podríamos usar submódulos git o simplemente publicar en npm nuestro intérprete egg y usarlo en nuestro compilador del lenguaje infijo que hemos diseñado
 
