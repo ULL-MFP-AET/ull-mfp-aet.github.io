@@ -29,6 +29,8 @@
 * [Repo ULL-ESIT-PL-1718/jison-aSb](https://github.com/ULL-ESIT-PL-1718/jison-aSb)
 * [Repo ULL-ESIT-PL-1718/ull-etsii-grado-pl-jisoncalc](https://github.com/ULL-ESIT-PL-1718/ull-etsii-grado-pl-jisoncalc)
 
+* [Descripción de la Práctica p10-t5-jison-infix2egg](practicas/p10-t5-jison-infix2egg)
+
 #### GLR: Generalized LR
 
 * [GLR Wikipedia](https://en.wikipedia.org/wiki/GLR_parser)
