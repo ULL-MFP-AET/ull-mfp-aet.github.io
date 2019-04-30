@@ -1,4 +1,4 @@
-## Práctica: Reescribir el Compilador de Infijo a Egg usando PEG.js (p9-t4-peg-infix2egg)
+## Escribir usando Jison un Traductor de un Lenguaje Infijo a Egg Virtual Machine
 
 ### Descripción
 
@@ -6,25 +6,23 @@ Re-escriba la fase de análisis sintáctico del lenguaje de infijo que diseñó 
 
 * [Analizador Descendente Predictivo Recursivo. Desde Lenguajes de Infijo a EGG Virtual Machine (p8-t3-pdr-infix2eg)](../../../tema3-analisis-descendente-predictivo-recursivo/practicas/p8-t3-pdr-infix2egg/)
 
-usando PEG.js para re-escribir el analizador sintáctico.
+usando [Jison](http://zaa.ch/jison/docs/) para re-escribir el analizador sintáctico.
 
-En su parser irá:
-
-* El análisis léxico y sintáctico del lenguaje. 
-* Conviene dividir el analizador en dos secciones bien diferenciadas con la parte de tokens en un lado y la gramática en el otro
 * Este es un buen momento para meditar su diseño del lenguaje de infijo e introducir modificaciones y extensiones
 * Las acciones semánticas a ejecutar dentro del analizador son las de construcción del AST 
 
-
 ### Recursos
 
-* [PEGs](https://casianorodriguezleon.gitbooks.io/ull-esit-1617/content/apuntes/pegjs/PEGS.html) Viejos apuntes del profesor
-* [PEG.js](https://pegjs.org/documentation) PEG.js Documentation
-* [El lenguaje egg: repo en GitHub](https://github.com/ULL-ESIT-PL-1617/egg)
-* [Eloquent JS: Chapter 11. Project: A Programming Language](http://eloquentjavascript.net/11_language.html)
-* [Repo interpreter-egg](https://github.com/ULL-ESIT-PL-1617/interpreter-egg)
-* [NodeJS Readline gist](https://gist.github.com/crguezl/430642e29a2b9293317320d0d1759387)
+* [Análisis Sintáctico Ascendente en JavaScript](http://crguezl.github.io/pl-html/node43.html)
+* [Jison Documentation](http://zaa.ch/jison/docs/)
+* [Folder jison/examples from the Jison distribution](https://github.com/zaach/jison/tree/master/examples)
+* [Repo ULL-ESIT-PL-1718/jison-aSb](https://github.com/ULL-ESIT-PL-1718/jison-aSb)
 * [Apuntes de PL: Análisis Sintáctico Predictivo Recursivo](http://crguezl.github.io/pl-html/node22.html)
+* [Repo con una solución a un lenguaje infijo](https://github.com/crguezl/prdcalc)
+  -  [Despliegue en Heroku](https://pl1718-prdcalc.herokuapp.com/)
+  - [Fichero main.js con un parser de expresiones en infijo](https://github.com/crguezl/prdcalc/blob/master/views/main.js)
+* [Repo de Ejemplo de lenguaje con expresiones infijas](https://github.com/ULL-ESIT-PL-1617/solution-evalua-pdr)
+* [Repo con una solución a Eloquent JS. Chapter 12 Project. A Programming Language](https://github.com/ULL-ESIT-PL-1617/egg)
 * [Mocha](https://casianorodriguezleon.gitbooks.io/ull-esit-1617/content/apuntes/pruebas/mocha.html)
 * [Chai](https://casianorodriguezleon.gitbooks.io/ull-esit-1617/content/apuntes/pruebas/chai.html)
 * [Covering](https://casianorodriguezleon.gitbooks.io/ull-esit-1617/content/apuntes/pruebas/covering.html)
