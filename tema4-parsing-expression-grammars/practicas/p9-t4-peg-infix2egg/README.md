@@ -3,7 +3,7 @@
 ### Descripción
 
 Re-escriba la fase de análisis sintáctico 
-[del lenguaje de infijo que diseñó en la práctica](../../../tema3-analisis-descendente-predictivo-recursivo/practicas/p8-t3-pdr-infix2egg/).
+[del lenguaje de infijo que diseñó en la práctica *Analizador Descendente Predictivo Recursivo. Desde Lenguajes de Infijo a EGG Virtual Machine (p8-t3-pdr-infix2eg)*](../../../tema3-analisis-descendente-predictivo-recursivo/practicas/p8-t3-pdr-infix2egg/).
 Básicamente ando PEG.js
 
 En su parser irá:
