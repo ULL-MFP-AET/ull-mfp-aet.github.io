@@ -1,6 +1,6 @@
 # Análisis Ascendente
 
-#### Análisis LR
+## Análisis LR
 
 * [Análisis Sintáctico Ascendente en JavaScript](http://crguezl.github.io/pl-html/node43.html)
 * [Precedencia y Asociatividad](http://crguezl.github.io/pl-html/node57.html)
@@ -22,22 +22,24 @@
           * [SemanticInfoInTokens.eyp](https://github.com/ULL-ESIT-PL/eyapp-debugging-tutorial/blob/master/SemanticInfoInTokens.eyp)
 
 
-#### Jison
+## Jison
 
 * [Jison Documentation](http://zaa.ch/jison/docs/)
 * [Folder jison/examples from the Jison distribution](https://github.com/zaach/jison/tree/master/examples)
 * [Repo ULL-ESIT-PL-1718/jison-aSb](https://github.com/ULL-ESIT-PL-1718/jison-aSb)
 * [Repo ULL-ESIT-PL-1718/ull-etsii-grado-pl-jisoncalc](https://github.com/ULL-ESIT-PL-1718/ull-etsii-grado-pl-jisoncalc)
 
-* [Descripción de la Práctica p10-t5-jison-infix2egg](practicas/p10-t5-jison-infix2egg)
+###  Práctica p10-t5-jison-infix2egg
 
-#### GLR: Generalized LR
+* [Descripción de la Práctica](practicas/p10-t5-jison-infix2egg)
+
+## GLR: Generalized LR
 
 * [GLR Wikipedia](https://en.wikipedia.org/wiki/GLR_parser)
 * [Maitreya](https://github.com/hackwaly/maitreya)
     - [fork en PL-1718](https://github.com/ULL-ESIT-PL-1718/maitreya)
 
-#### C-Like languages
+## C-Like languages
 
 * ANSI C y C++ Grammars
     * [ANSI C grammar in Eyapp](https://github.com/ULL-ESIT-PL/eyapp-language-examples/tree/master/C)
@@ -46,7 +48,7 @@
     * [Roskind C++ Grammar in yacc](https://github.com/ULL-ESIT-PL-1718/roskind-C-plusplus-grammar)
 * [Old examples of tiny C languages in Eyapp. PL de la Antigua Ingeniería Informática](https://github.com/ULL-ESIT-PL-1718/old-PL-compiler-in-eyapp)
 
-#### Historia
+## Historia
 
 * [Parsing: a timeline. by Jeffrey Kegler](https://jeffreykegler.github.io/personal/timeline_v3)
 * [Parse-Eyapp](http://search.cpan.org/~wbraswell/Parse-Eyapp-1.21/eyapp) un Parser LR para Perl
