@@ -38,6 +38,8 @@
 
 ## [Tema 4: Parsing Expression Grammars](tema4-parsing-expression-grammars)
 
+### [Práctica p9-t4-peg-infix2egg](tema4-parsing-expression-grammars/practicas/p9-t4-peg-infix2egg)
+
 ## [Tema 5: Análisis Ascendente](tema5-analisis-ascendente)
 
 ## [Tema 6: Análisis Dependiente del Contexto](tema6-analisis-dependiente-del-contexto)

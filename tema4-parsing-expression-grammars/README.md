@@ -29,4 +29,7 @@
 
 * [Traduciendo de Infijo a EggVM usando PEG.js](https://github.com/ULL-ESIT-PL-1718/pegjs-infix-2-egg)
 
+### Práctica p9-t4-peg-infix2egg
+
+* [Descripción de la Práctica](practicas/p9-t4-peg-infix2egg)
 
