@@ -59,19 +59,19 @@
 ### [Apuntes de PL de la II](http://nereida.deioc.ull.es/~pl/perlexamples/node88.html) (Perl)
 
 
-*   [Introducción](http://nereida.deioc.ull.es/~pl/perlexamples/node85.html)
-*   [Ejercicio: Recorrido del árbol en un ADPR](http://nereida.deioc.ull.es/~pl/perlexamples/node86.html)
-*   [Ejercicio: Factores Comunes](http://nereida.deioc.ull.es/~pl/perlexamples/node87.html)
-*   [Derivaciones a vacío](http://nereida.deioc.ull.es/~pl/perlexamples/node88.html)
-*   [Construcción de los conjuntos de Primeros y Siguientes](http://nereida.deioc.ull.es/~pl/perlexamples/node89.html)
-*   [Ejercicio: Construir los <span class="MATH">FIRST</span>](http://nereida.deioc.ull.es/~pl/perlexamples/node90.html) 
-*   [Ejercicio: Calcular los <span class="MATH">FOLLOW</span>](http://nereida.deioc.ull.es/~pl/perlexamples/node91.html) 
-*   [Práctica: Construcción de los FIRST y los FOLLOW](http://nereida.deioc.ull.es/~pl/perlexamples/node92.html)
-*   [Gramáticas LL(1)](http://nereida.deioc.ull.es/~pl/perlexamples/node93.html)
-*   [Ejercicio: Caracterización de una gramática LL(1)](http://nereida.deioc.ull.es/~pl/perlexamples/node94.html)
-*   [Ejercicio: Ambiguedad y LL(1)](http://nereida.deioc.ull.es/~pl/perlexamples/node95.html)
-*   [Práctica: Un analizador APDR](http://nereida.deioc.ull.es/~pl/perlexamples/node96.html)
-*   [Práctica: Generación Automática de Analizadores Predictivos](http://nereida.deioc.ull.es/~pl/perlexamples/node97.html)
+*   <a href="http://nereida.deioc.ull.es/~pl/perlexamples/node85.html" target="_blank">Introducción</a>
+*   <a href="http://nereida.deioc.ull.es/~pl/perlexamples/node86.html" target="_blank">Ejercicio: Recorrido del árbol en un ADPR</a>
+*   <a href="http://nereida.deioc.ull.es/~pl/perlexamples/node87.html" target="_blank">Ejercicio: Factores Comunes</a>
+*   <a href="http://nereida.deioc.ull.es/~pl/perlexamples/node88.html" target="_blank">Derivaciones a vacío</a>
+*   <a href="http://nereida.deioc.ull.es/~pl/perlexamples/node89.html" target="_blank">Construcción de los conjuntos de Primeros y Siguientes</a>
+*   <a href="http://nereida.deioc.ull.es/~pl/perlexamples/node90.html" target="_blank">Ejercicio: Construir los <span class="MATH">FIRST</span></a> 
+*   <a href="http://nereida.deioc.ull.es/~pl/perlexamples/node91.html" target="_blank">Ejercicio: Calcular los <span class="MATH">FOLLOW</span></a> 
+*   <a href="http://nereida.deioc.ull.es/~pl/perlexamples/node92.html" target="_blank">Práctica: Construcción de los FIRST y los FOLLOW</a>
+*   <a href="http://nereida.deioc.ull.es/~pl/perlexamples/node93.html" target="_blank">Gramáticas LL(1)</a>
+*   <a href="http://nereida.deioc.ull.es/~pl/perlexamples/node94.html" target="_blank">Ejercicio: Caracterización de una gramática LL(1)</a>
+*   <a href="http://nereida.deioc.ull.es/~pl/perlexamples/node95.html" target="_blank">Ejercicio: Ambiguedad y LL(1)</a>
+*   <a href="http://nereida.deioc.ull.es/~pl/perlexamples/node96.html" target="_blank">Práctica: Un analizador APDR</a>
+*   <a href="http://nereida.deioc.ull.es/~pl/perlexamples/node97.html" target="_blank">Práctica: Generación Automática de Analizadores Predictivos</a>
 
 ### Referencias
 
