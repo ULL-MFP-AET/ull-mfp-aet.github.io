@@ -30,4 +30,3 @@
 * [Traduciendo de Infijo a EggVM usando PEG.js](https://github.com/ULL-ESIT-PL-1718/pegjs-infix-2-egg)
 
 
-#### Tareas
