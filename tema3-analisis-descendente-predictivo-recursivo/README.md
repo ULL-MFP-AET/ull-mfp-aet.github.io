@@ -58,7 +58,6 @@
 
 ### [Apuntes de PL de la II](http://nereida.deioc.ull.es/~pl/perlexamples/node88.html) (Perl)
 
-* [Construcción de los FIRST y los FOLLOW](http://nereida.deioc.ull.es/~pl/perlexamples/node89.html)
 
 *   [Introducción](http://nereida.deioc.ull.es/~pl/perlexamples/node85.html)
 *   [Ejercicio: Recorrido del árbol en un ADPR](http://nereida.deioc.ull.es/~pl/perlexamples/node86.html)
