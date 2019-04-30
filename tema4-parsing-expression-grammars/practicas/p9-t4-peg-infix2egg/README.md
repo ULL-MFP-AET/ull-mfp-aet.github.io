@@ -2,14 +2,16 @@
 
 ### Descripción
 
-Re-escriba la fase de análisis sintáctico 
-[del lenguaje de infijo que diseñó en la práctica *Analizador Descendente Predictivo Recursivo. Desde Lenguajes de Infijo a EGG Virtual Machine (p8-t3-pdr-infix2eg)*](../../../tema3-analisis-descendente-predictivo-recursivo/practicas/p8-t3-pdr-infix2egg/).
-usando PEG.js para escribir el analizador sintáctico.
+Re-escriba la fase de análisis sintáctico del lenguaje de infijo que diseñó en la práctica 
+
+* [Analizador Descendente Predictivo Recursivo. Desde Lenguajes de Infijo a EGG Virtual Machine (p8-t3-pdr-infix2eg)](../../../tema3-analisis-descendente-predictivo-recursivo/practicas/p8-t3-pdr-infix2egg/)
+
+usando PEG.js para re-escribir el analizador sintáctico.
 
 En su parser irá:
   * El análisis léxico y sintáctico del lenguaje. 
-  * Conviene dividir el analizador en dos secciones con la parte de tokens en un lado y la gramática en el otro
-  * Este es un buen momento para meditar su diseño del lenguaje de infijo e introducir modificaciones
+  * Conviene dividir el analizador en dos secciones bien diferenciadas con la parte de tokens en un lado y la gramática en el otro
+  * Este es un buen momento para meditar su diseño del lenguaje de infijo e introducir modificaciones y extensiones
   * Las acciones semánticas a ejecutar dentro del analizador son las de construcción del AST 
 
 
