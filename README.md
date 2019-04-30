@@ -42,4 +42,7 @@
 
 ## [Tema 5: Análisis Ascendente](tema5-analisis-ascendente)
 
+### [Práctica p10-t5-jison-infix2egg](tema5-analisis-ascendente/practicas/p10-t5-jison-infix2egg)
+
+
 ## [Tema 6: Análisis Dependiente del Contexto](tema6-analisis-dependiente-del-contexto)
