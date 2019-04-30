@@ -40,21 +40,21 @@
 
 ###  [Apuntes de PL: Análisis Sintáctico Predictivo Recursivo](http://crguezl.github.io/pl-html/node20.html) (JavaScript/CoffeeScript)
 
-*   [Conceptos Básicos para el Análisis Sintáctico](http://crguezl.github.io/pl-html/node21.html)
-    *   [Ejercicio](http://crguezl.github.io/pl-html/node21.html#SECTION04211000000000000000)  
+*   <a href="http://crguezl.github.io/pl-html/node21.html" target="_blank">Conceptos Básicos para el Análisis Sintáctico</a>
+    *   <a href="http://crguezl.github.io/pl-html/node21.html#SECTION04211000000000000000" target="_blank">Ejercicio</a>  
 
-*   [Análisis Sintáctico Predictivo Recursivo](http://crguezl.github.io/pl-html/node22.html)
-    *   [Introducción](http://crguezl.github.io/pl-html/node22.html#SECTION04221000000000000000)
-        *   [Ejemplo](http://crguezl.github.io/pl-html/node22.html#SECTION04221010000000000000)
-        *   [Caracterización de las Gramáticas Analizables](http://crguezl.github.io/pl-html/node22.html#SECTION04221020000000000000)
-    *   [Ejercicio: Recorrido del árbol en un ADPR](http://crguezl.github.io/pl-html/node22.html#SECTION04222000000000000000)  
+*   <a href="http://crguezl.github.io/pl-html/node22.html" target="_blank">Análisis Sintáctico Predictivo Recursivo</a>
+    *   <a href="http://crguezl.github.io/pl-html/node22.html#SECTION04221000000000000000" target="_blank">Introducción</a>
+        *   <a href="http://crguezl.github.io/pl-html/node22.html#SECTION04221010000000000000" target="_blank">Ejemplo</a>
+        *   <a href="http://crguezl.github.io/pl-html/node22.html#SECTION04221020000000000000" target="_blank">Caracterización de las Gramáticas Analizables</a>
+    *   <a href="http://crguezl.github.io/pl-html/node22.html#SECTION04222000000000000000" target="_blank">Ejercicio: Recorrido del árbol en un ADPR</a>  
 
-*   [Recursión por la Izquierda](http://crguezl.github.io/pl-html/node23.html)
-*   [Esquemas de Traducción](http://crguezl.github.io/pl-html/node24.html)
-*   [Eliminación de la Recursión por la Izquierda en un Esquema de Traducción](http://crguezl.github.io/pl-html/node25.html)
-*   [Práctica: Analizador Descendente Predictivo Recursivo](http://crguezl.github.io/pl-html/node26.html)
-  * [Repo con un ADRP](https://github.com/ULL-ESIT-PL-1819/parser-pdr-example) (Node.js, Web app con ExpressJS, CoffeeScript)
-    - [Fichero main.coffee conteniendo un ADPR](https://github.com/ULL-ESIT-PL-1819/parser-pdr-example/blob/master/views/main.coffee)
+*   <a href="http://crguezl.github.io/pl-html/node23.html" target="_blank">Recursión por la Izquierda</a>
+*   <a href="http://crguezl.github.io/pl-html/node24.html" target="_blank">Esquemas de Traducción</a>
+*   <a href="http://crguezl.github.io/pl-html/node25.html" target="_blank">Eliminación de la Recursión por la Izquierda en un Esquema de Traducción</a>
+*   <a href="http://crguezl.github.io/pl-html/node26.html" target="_blank">Práctica: Analizador Descendente Predictivo Recursivo</a>
+  * <a href="https://github.com/ULL-ESIT-PL-1819/parser-pdr-example) (Node.js, Web app con ExpressJS, CoffeeScript" target="_blank">Repo con un ADRP</a>
+    - <a href="https://github.com/ULL-ESIT-PL-1819/parser-pdr-example/blob/master/views/main.coffee" target="_blank">Fichero main.coffee conteniendo un ADPR</a>
 
 ### [Apuntes de PL de la II](http://nereida.deioc.ull.es/~pl/perlexamples/node88.html) (Perl)
 
