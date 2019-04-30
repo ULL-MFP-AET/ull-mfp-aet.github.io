@@ -1,4 +1,4 @@
-## Escribir usando Jison un Traductor de un Lenguaje Infijo a Egg Virtual Machine
+## Re-escribir usando Jison el Traductor del Lenguaje Infijo (p10-t5-jison-infix2egg)
 
 ### Descripción
 
