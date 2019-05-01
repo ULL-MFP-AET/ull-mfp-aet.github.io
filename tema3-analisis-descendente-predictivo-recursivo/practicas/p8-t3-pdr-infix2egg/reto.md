@@ -12,8 +12,8 @@ Algo parecido a esto:
 
 ```js
 let a = [6,1,[2,3]];
-let b = a[2];
-a[1] = b[0];
+let b = a[2]; # [2,3]
+a[1] = b[0];  # 2
 ```
 
 ## Entrega
