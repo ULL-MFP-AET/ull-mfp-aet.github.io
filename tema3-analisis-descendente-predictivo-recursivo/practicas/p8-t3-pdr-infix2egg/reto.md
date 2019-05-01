@@ -2,7 +2,7 @@
 
 ## Descripción
 
-Añada a su [lenguaje de Infijo](index.html):
+Añada a su [Lenguaje de Infijo](index.html):
 
 1. Arrays, 
 2. Acceso a los elementos de un array y 
