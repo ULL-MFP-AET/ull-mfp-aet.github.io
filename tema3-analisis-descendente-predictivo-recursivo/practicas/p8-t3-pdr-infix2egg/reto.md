@@ -2,8 +2,13 @@
 
 ## Descripción
 
-Añada Arrays a su lenguaje, acceso a los elementos de un array y asignación a los elementos de un array.
-Algo parecid a esto:
+Añada a su lenguaje:
+
+1. Arrays, 
+2. Acceso a los elementos de un array y 
+3. Asignación a los elementos de un array.
+
+Algo parecido a esto:
 
 ```js
 let a = [6,1,[2,3]];
