@@ -18,6 +18,7 @@ En su parser irá:
 
 ### Recursos
 
+* [Un ejemplo breve de como hacer esta práctica: pegjs-infix-2-egg](https://github.com/ULL-ESIT-PL-1718/pegjs-infix-2-egg)
 * [PEGs](https://casianorodriguezleon.gitbooks.io/ull-esit-1617/content/apuntes/pegjs/PEGS.html) Viejos apuntes del profesor
 * [PEG.js](https://pegjs.org/documentation) PEG.js Documentation
 * [El lenguaje egg: repo en GitHub](https://github.com/ULL-ESIT-PL-1617/egg)
