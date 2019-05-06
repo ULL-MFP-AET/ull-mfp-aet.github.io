@@ -19,6 +19,7 @@
 ####  Gramáticas versus PEGs
 
 * [Grammars vs PEGs examples](https://github.com/ULL-ESIT-PL-1617/pegjs-examples/tree/master/grammarvspeg) GitHub repo
+* See paper [On the relation between context-free grammars and parsing expression grammars](https://www.sciencedirect.com/science/article/pii/S0167642314000276) FabioMascarenhas, SérgioMedeiros, Roberto Ierusalimschy. Elsevier
 
 #### Herramientas
 
