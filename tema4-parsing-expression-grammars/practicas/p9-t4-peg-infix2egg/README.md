@@ -30,6 +30,8 @@ En su parser irá:
     -h, --help           output usage information
   ```
 
+  - Buenos módulos para parsear la línea de comandos son [commander](https://www.npmjs.com/package/commander) y [yargs](https://www.npmjs.com/package/yargs)
+
 
 ### Recursos
 
