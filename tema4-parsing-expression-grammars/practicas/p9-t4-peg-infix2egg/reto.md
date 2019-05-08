@@ -5,7 +5,7 @@ Añada mapas/hashes y la notación `:` a su lenguaje de infijo:
 ```js
 begin
   d := map(a:4, b: 5);
-  print(d["a"])  # 4
+  print(d["a"])  // 4
 end
 ```
 
