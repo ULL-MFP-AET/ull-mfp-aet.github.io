@@ -1,6 +1,7 @@
 ## Reto: p9-t4-peg-infix2egg
 
-Añada mapas/hashes y la notación `:` a su lenguaje de infijo:
+Añada mapas/hashes y la notación `:` a su lenguaje de infijo. Algo similar 
+a esto:
 
 ```js
 begin
