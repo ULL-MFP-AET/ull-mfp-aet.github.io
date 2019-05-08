@@ -14,6 +14,21 @@ En su parser irá:
 * Conviene dividir el analizador en dos secciones bien diferenciadas con la parte de tokens en un lado y la gramática en el otro
 * Este es un buen momento para meditar su diseño del lenguaje de infijo e introducir modificaciones y extensiones
 * Las acciones semánticas a ejecutar dentro del analizador son las de construcción del AST 
+* Haga que el ejecutable admita opciones en línea de comandos. Algo parecido a esto:
+
+  ```
+  [~/.../pegjs-infix-2-egg(master)]$ ./i2e --help
+  Usage: i2e [options] <programPath>
+
+  Example of Infix to AST Egg translator using PEG.js
+
+  Options:
+    -V, --version        output the version number
+    -t, --tree           Show AST
+    -o, --output [file]  Output file
+    -r, --run            Run program
+    -h, --help           output usage information
+  ```
 
 
 ### Recursos
