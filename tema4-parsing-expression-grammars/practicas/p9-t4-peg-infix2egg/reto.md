@@ -1,15 +1,11 @@
 ## Reto: p9-t4-peg-infix2egg
 
-Añada expresiones regulares a su lenguaje infijo
+Añada mapas/hashes y la notación `:` a su lenguaje de infijo:
 
 ```js
 begin
-  d :=  /
-         (?<year>  \d{4} ) -?  # year
-         (?<month> \d{2} ) -?  # month
-         (?<day>   \d{2} )     # day
-        /x;
-  print(d.test("1987-07-14"))  # true
+  d := map(a:4, b: 5);
+  print(d["a"])  # 4
 end
 ```
 
