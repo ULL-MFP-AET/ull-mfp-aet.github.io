@@ -3,10 +3,16 @@
 Añada objetos y el punto/dot `.` a su lenguaje de infijo. Algo similar 
 a esto:
 
-```js
+```pascal
 begin
-  d := map(a:4, b: 5);
-  print(d["a"])  // 4
+  let a = {
+    c:1,
+    gc: function() { c },
+    sc: function(val) { c = val }
+  };
+  print(a.c); # 1
+  a.sc(4); 
+  print(a.c)  # 4
 end
 ```
 
