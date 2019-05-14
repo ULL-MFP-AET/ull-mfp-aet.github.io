@@ -8,11 +8,14 @@ begin
   let a = {
     c:1,
     gc: function() { c },
-    sc: function(val) { c = val }
+    sc: function(val) { c = val },
+    inc: function() { this.c = this.c+1 }
   };
   print(a.c); # 1
-  a.sc(4); 
-  print(a.c)  # 4
+  a.sc(4);
+  print(a.c); # 4
+  a.inc(); 
+  print(a.c)  # 5
 end
 ```
 
