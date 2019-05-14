@@ -7,7 +7,7 @@ a esto:
 begin
   let a = {
     c:1,
-    gc: function() { c },
+    gc: function() { this.c },
     sc: function(val) { c = val },
     inc: function() { this.c = this.c+1 }
   };
