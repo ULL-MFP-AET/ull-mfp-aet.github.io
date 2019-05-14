@@ -1,30 +1,21 @@
-## Reto: p9-t4-peg-infix2egg
+## Reto: p10-t5-jison-infix2egg
 
-Añada objetos y la notación `.` a su lenguaje de infijo. Algo similar 
+Añada objetos y el punto/dot `.` a su lenguaje de infijo. Algo similar 
 a esto:
 
 ```js
 begin
-  let x = { 
-    c:   0,
-    gc:  function() { c },
-    sc:  function(value) { c = value},
-    inc: function{ c =  c+1 }
-  };
-  print(x.c);     // 0
-  print(x.gc());  // 0
-  print(x.sc(5)); // 5
-  print(x.gc())   // 5
+  d := map(a:4, b: 5);
+  print(d["a"])  // 4
 end
-
 ```
 
 ### Recursos
 
-* [Jison Documentation](http://zaa.ch/jison/docs/)
-* [Folder jison/examples from the Jison distribution](https://github.com/zaach/jison/tree/master/examples)
-* [Repo ULL-ESIT-PL-1718/jison-aSb](https://github.com/ULL-ESIT-PL-1718/jison-aSb)
-* [Repo ULL-ESIT-PL-1718/ull-etsii-grado-pl-jisoncalc](https://github.com/ULL-ESIT-PL-1718/ull-etsii-grado-pl-jisoncalc)
+* [Práctica: Reescribir el Compilador de Infijo a Egg usando PEG.js (p9-t4-peg-infix2egg)](index.html)
+* [pegjs-infix-2-egg](https://github.com/ULL-ESIT-PL-1718/pegjs-infix-2-egg)
+* [PEGs](https://casianorodriguezleon.gitbooks.io/ull-esit-1617/content/apuntes/pegjs/PEGS.html) Viejos apuntes del profesor
+* [PEG.js](https://pegjs.org/documentation) PEG.js Documentation
 * [El lenguaje egg: repo en GitHub](https://github.com/ULL-ESIT-PL-1617/egg)
 * [Eloquent JS: Chapter 11. Project: A Programming Language](http://eloquentjavascript.net/11_language.html)
 * [Repo interpreter-egg](https://github.com/ULL-ESIT-PL-1617/interpreter-egg)
@@ -34,5 +25,6 @@ end
 * [Chai](https://casianorodriguezleon.gitbooks.io/ull-esit-1617/content/apuntes/pruebas/chai.html)
 * [Covering](https://casianorodriguezleon.gitbooks.io/ull-esit-1617/content/apuntes/pruebas/covering.html)
 * [Blanket](https://casianorodriguezleon.gitbooks.io/ull-esit-1617/content/apuntes/pruebas/blanket.html)
+
 
 
