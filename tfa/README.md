@@ -99,7 +99,7 @@ tasks {
 
 ### Ejemplo: Command line processing 
 
-La idea general es extender el lenguaje [Egg](https://github.com/ULL-ESIT-PL-1819/egg) con funcionalidades para procesar los argumentos dados en línea de comandos:
+La idea general es extender el lenguaje [Egg](https://github.com/ULL-ESIT-PL-1819/egg) con funcionalidades para procesar los argumentos dados en línea de comandos (similar a lo que es [commander](https://www.npmjs.com/package/commander) para Node.js):
 
 Por ejemplo para una ejecución como esta:
 ```
