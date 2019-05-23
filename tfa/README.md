@@ -35,7 +35,7 @@ La declaración `def(y, child(x))` hace que el objeto `y` herede las propiedades
 ### Extensión de Egg con `use`
 
 La idea es introducir una función `use` que es parecida a `require` 
-pero con la diferencia de que extiende el lenguaje `Egg`
+pero con la diferencia de que extiende el lenguaje `Egg-aluXX`
 mediante una librería escrita en JavaScript. 
 
 Esto es, alguien del mundo mundial, un programador llamado Y entusiasmado por tu lenguaje `Egg-aluXX` 
