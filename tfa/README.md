@@ -1,5 +1,18 @@
 # Trabajo Fin de Asignatura PL
 
+## Table of Contents
+
+- [Introducción](#introducci%C3%B3n)
+- [Ideas](#ideas)
+  - [Añadir Herencia entre objetos a Egg](#a%C3%B1adir-herencia-entre-objetos-a-egg)
+  - [Extensión de Egg con `use`](#extensi%C3%B3n-de-egg-con-use)
+  - [Ejemplo: Egg para facilitar el manejo de GitHub](#ejemplo-egg-para-facilitar-el-manejo-de-github)
+  - [Ejemplo: Egg para Calculo Científico](#ejemplo-egg-para-calculo-cient%C3%ADfico)
+  - [Ejemplo: Egg para Describir Tareas](#ejemplo-egg-para-describir-tareas)
+  - [Ejemplo: Command line processing](#ejemplo-command-line-processing)
+- [Entrega](#entrega)
+- [Recursos](#recursos)
+
 ## Introducción
 
 * Cualquier propuesta relacionada con lo visto en la asignatura es bienvenida.
@@ -143,4 +156,16 @@ para la realización de esta tarea
 * [Book *The Modern Javascript Tutorial*. Chapter Promises, async/await](https://javascript.info/async)
 * Vídeo [Cómo funciona Async/Await en menos de 15 minutos](https://youtu.be/u2axmPnxUoo) YouTube Vídeo por Appdelante
 
+## Table of Contents
+
+- [Introducción](#introducci%C3%B3n)
+- [Ideas](#ideas)
+  - [Añadir Herencia entre objetos a Egg](#a%C3%B1adir-herencia-entre-objetos-a-egg)
+  - [Extensión de Egg con `use`](#extensi%C3%B3n-de-egg-con-use)
+  - [Ejemplo: Egg para facilitar el manejo de GitHub](#ejemplo-egg-para-facilitar-el-manejo-de-github)
+  - [Ejemplo: Egg para Calculo Científico](#ejemplo-egg-para-calculo-cient%C3%ADfico)
+  - [Ejemplo: Egg para Describir Tareas](#ejemplo-egg-para-describir-tareas)
+  - [Ejemplo: Command line processing](#ejemplo-command-line-processing)
+- [Entrega](#entrega)
+- [Recursos](#recursos)
 
