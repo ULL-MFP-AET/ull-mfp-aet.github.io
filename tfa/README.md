@@ -10,7 +10,8 @@ pero puede proponer un TFA con otro tópico relacionado con PL.
 * Especial interés puede ser en extender Egg  con un DSL con funcionalidades para 
 facilitar la resolución de problemas en un contexto específico que sea del interés del alumno
 * En cada caso busque en npm librerías que le den apoyo para que la tarea resulte mas fácil
-* Estas extensiones debería estar en módulos separados que extienden Egg usando el patrón register-strategy
+* Estas extensiones debería estar en módulos separados que extienden Egg usando el patrón [registry-strategy](https://youtu.be/9nMK2yuln_I)
+*  Todo lo que se dice aquí sobre Egg se puede hacer con cualquiera de los lenguajes Infijo desarrollados en la asignatura
 
 ## Ideas
 
