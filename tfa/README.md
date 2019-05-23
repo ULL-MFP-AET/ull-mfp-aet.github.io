@@ -39,10 +39,10 @@ La idea es introducir una función `use` que es parecida a `require`
 pero con la diferencia de que extiende el lenguaje `Egg`
 mediante una librería escrita en JavaScript. 
 
-Esto es, alguien del mundo mundial, un programador llamado X entusiasmado por tu lenguaje extiende el lenguaje `egg` con una librería llamada `egg-tutu` que publica en [npm](http://npmjs.com).  
+Esto es, alguien del mundo mundial, un programador llamado X entusiasmado por tu lenguaje Egg-aluXX extiende el lenguaje `egg` con una librería llamada `egg-aluXX-tutu` que publica en [npm](http://npmjs.com).  
 X lo ha hecho añadiendo en `specialForms` y `topEnv` nuevas funcionalidades. Puede hacerlo porque importa tu móduo en el que exportas los hashes `specialForms` y `topEnv`.
 
-Una sentencia como `use('tutu')` hace que el intérprete `egg` haga un `require` de `egg-tutu` (que se supone ha sido previamente instalada en `node_modules/`) y que las funcionalidades exportadas por `egg-tutu` estén disponibles al programa Egg.
+Una sentencia como `use('tutu')` debe hacer que el intérprete `egg` haga un `require` de `egg-aluXX-tutu` (que se supone ha sido previamente instalada en `node_modules/`) y que las funcionalidades exportadas por `egg-aluXX-tutu` estén disponibles al programa Egg.
 
 Como ejemplos de uso, véanse las siguientes 
 secciones 
