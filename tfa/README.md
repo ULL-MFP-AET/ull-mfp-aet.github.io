@@ -132,6 +132,12 @@ do {
 }
 ```
 
+## Entrega
+
+Añada como submódulos del repo de entrega todos los repos adicionales que haya tenido que crear 
+para la realización de esta tarea
+
+
 ## Recursos
 
 * [Book *The Modern Javascript Tutorial*. Chapter Promises, async/await](https://javascript.info/async)
