@@ -31,12 +31,19 @@ do(
   print(y.c)
 )
 ```
+La declaración `def(y, child(x))` hace que el objeto `y` herede las propiedades y métodos del objeto `x`
 
 ### Extensión de Egg con `use`
 
 La idea es introducir una función `use` que es parecida a `require` 
 pero con la diferencia de que extiende el lenguaje `Egg`
-mediante una librería escrita en JavaScript. Como ejemplos de uso, véanse las siguientes 
+mediante una librería escrita en JavaScript. 
+
+Esto es, alguien extiende el lenguaje `egg` con una librería (`egg-tutu`) publicada en [npm](http://npmjs.com) añadiendo en `specialForms` y `topEnv` nuevas funcionalidades.
+
+Una sentencia como `use('tutu')` hace que el intérprete `egg` haga un `require` de `egg-tutu` (que se supone ha sido previamente instalada en `node_modules/`) y que las funcionalidades exportadas por `egg-tutu` estén disponibles al programa Egg.
+
+Como ejemplos de uso, véanse las siguientes 
 secciones 
 
 ### Ejemplo: Egg para facilitar el manejo de GitHub

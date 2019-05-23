@@ -2,6 +2,7 @@
 
 * [Eloquent JS 3rd Edition](https://eloquentjavascript.net/)
 * [Eloquent JS 2nd Edition](http://eloquentjavascript.net/2nd_edition/)
+* [UC Berkeley. CS294-113: Virtual Machines and Managed Runtimes](http://www.wolczko.com/CS294/index.html)a by [Mario Wolczko](http://www.wolczko.com/)
 * [A Practical Approach to Compiler Construction [3-319-52787-8; 3-319-52789-4] Watson
 Año:2017](http://sfx.greendata.es.accedys2.bbtk.ull.es/ull?ctx_ver=Z39.88-2004&ctx_enc=info:ofi/enc:UTF-8&ctx_tim=2019-01-29T11%3A44%3A47IST&url_ver=Z39.88-2004&url_ctx_fmt=infofi/fmt:kev:mtx:ctx&rfr_id=info:sid/primo.exlibrisgroup.com:primo3-Journal-ullsfx&rft_val_fmt=info:ofi/fmt:kev:mtx:book&rft.genre=book&rft.atitle=&rft.jtitle=&rft.btitle=A%20Practical%20Approach%20to%20Compiler%20Construction&rft.aulast=Watson&rft.auinit=&rft.auinit1=&rft.auinitm=&rft.ausuffix=&rft.au=Watson&rft.aucorp=&rft.volume=&rft.issue=&rft.part=&rft.quarter=&rft.ssn=&rft.spage=&rft.epage=&rft.pages=&rft.artnum=&rft.issn=&rft.eissn=&rft.isbn=3-319-52787-8&rft.sici=&rft.coden=&rft_id=info:doi/&rft.object_id=3710000001127445&svc_val_fmt=info:ofi/fmt:kev:mtx:sch_svc&svc.fulltext=yes&rft_dat=%3Cullsfx%3E3710000001127445%3C/ullsfx%3E%3Curl%3E%3C/url%3E&rft.eisbn=&rft_id=info:oai/&req.language=spa&rft_pqid=) (Debes estar autenticado via PuntoQ BULL)
 * [Node.js 8 the Right Way](https://proquest-safaribooksonline-com.accedys2.bbtk.ull.es/9781680505344). Jim Wilson. 2018 (Debes estar autenticado via PuntoQ BULL)
