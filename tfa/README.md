@@ -80,7 +80,6 @@ que va a usar, que casan mal con la naturaleza síncrona de Egg.
 
 Por ejemplo, para implementar la extensión `github` deberá de hacer uso de una librería asíncrona
 como [octokit.js](https://www.npmjs.com/package/octokit) o similar.
-Lo mejor es envolver las llamadas a las funciones de [octokit.js](https://www.npmjs.com/package/octokit) en un [async-await](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/async_function) para solucionar este problema.
 
 
 ### Ejemplo: Egg para Calculo Científico
