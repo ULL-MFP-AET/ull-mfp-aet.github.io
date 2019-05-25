@@ -23,6 +23,7 @@ pero puede proponer un TFA con otro tópico relacionado con PL.
   * En cada caso busque en npm librerías que le den apoyo para que la tarea resulte mas fácil
   * Estas extensiones debería estar en módulos separados que extienden Egg usando el patrón [registry-strategy](https://youtu.be/9nMK2yuln_I)
 *  Todo lo que se dice aquí sobre Egg se puede hacer con cualquiera de los lenguajes Infijo desarrollados en la asignatura
+* Si necesita publicar un módulo npm use el nuevo (Mayo 2019) [GitHub registry](https://help.github.com/en/articles/about-github-package-registry) en vez de npm.js y publique el paquete como privado. 
 
 ## Ideas
 
