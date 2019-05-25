@@ -52,9 +52,6 @@ tema3-analisis-descendente-predictivo-recursivo/practicas/p8-t3-pdr-infix2egg/pr
 tema3-analisis-descendente-predictivo-recursivo/practicas/p6-t3-egg-1/eval/
 tema3-analisis-descendente-predictivo-recursivo/practicas/p8-t3-pdr-infix2egg/eval/
 
-tfa/tfa-pl-1718
-
-
 tema4-parsing-expression-grammars/src/
 tema4-parsing-expression-grammars/practicas/p9-t4-peg-infix2egg/pegjs-examples
 tema4-parsing-expression-grammars/practicas/p9-t4-peg-infix2egg/pegjs-infix-2-egg
@@ -74,3 +71,6 @@ tema5-analisis-ascendente/practicas/p10-t5-jison-infix2egg/jisoninfix2postfix
 tema5-analisis-ascendente/practicas/p10-t5-jison-infix2egg/eval-p10-t5-jison-infix2egg/
 tema5-analisis-ascendente/practicas/p10-t5-jison-infix2egg/grammar-repository
 tema5-analisis-ascendente/practicas/p10-t5-jison-infix2egg/jison-decs-sts
+
+tfa/eval/
+tfa/tfa-pl-1718
