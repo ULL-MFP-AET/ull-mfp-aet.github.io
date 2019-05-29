@@ -1,12 +1,12 @@
 **Indice** 
 
-  - [Exámenes de convocatoria](#ex%C3%A1menes-de-convocatoria)
+- [Exámenes de convocatoria](#ex%C3%A1menes-de-convocatoria)
 - [Cierre de actas](#cierre-de-actas)
 - [Sobre las Calificaciones de Prácticas y entregas fuera de plazo](#sobre-las-calificaciones-de-pr%C3%A1cticas-y-entregas-fuera-de-plazo)
-  - [Instrucciones para los exámenes de Convocatoria](#instrucciones-para-los-ex%C3%A1menes-de-convocatoria)
+- [Instrucciones para los exámenes de Convocatoria](#instrucciones-para-los-ex%C3%A1menes-de-convocatoria)
 
 
-#### Exámenes de convocatoria
+### Exámenes de convocatoria
 
 * <a href="https://docs.google.com/document/d/1dv9Q6gEbs0a2YqlKlNUKG59SpQ3Bp1pH_UWqaTKUPyk/edit" target="_blank">Enlace al Calendario Oficial de exámenes de Tercer curso</a>
 
@@ -18,7 +18,7 @@
 
 ### Cierre de actas 
 
-* [en 2019 25 de Junio, 22 de Julio, 26 de Septiembre](https://drive.google.com/file/d/1YtPNm4vS73N21QHzstcYqEzPKJQHCKeD/view)
+* [En 2019 25 de Junio, 22 de Julio, 26 de Septiembre](https://drive.google.com/file/d/1YtPNm4vS73N21QHzstcYqEzPKJQHCKeD/view)
 
 ### Sobre las Calificaciones de Prácticas y entregas fuera de plazo
 
@@ -31,9 +31,7 @@ este estado puede cambiar si entregan posteriormente al examen de convocatoria a
 
 Los exámenes de convocatoria incluyen una serie de apartados especiales para los alumnos que no tienen las prácticas aptas en el momento de la convocatoria.
 
-Cierre de actas ([en 2019 25 de Junio, 22 de Julio, 26 de Septiembre](https://drive.google.com/file/d/1YtPNm4vS73N21QHzstcYqEzPKJQHCKeD/view)).
-
-#### Instrucciones para los exámenes de Convocatoria
+### Instrucciones para los exámenes de Convocatoria
 
 1. El examen de convocatoria consiste en una prueba escrita
 2. Deberán traer un bolígrafo con carga suficiente. El papel será proporcionado por el profesor. No se permite el uso de dispositivos móviles ni electrónicos, libros, apuntes, etc.  durante el examen
