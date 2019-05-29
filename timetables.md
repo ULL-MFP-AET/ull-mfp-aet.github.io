@@ -1,3 +1,12 @@
+**INDICE** 
+
+- [Calendario Académico](#calendario-acad%C3%A9mico)
+- [Horarios](#horarios)
+- [Exámenes de convocatoria](#ex%C3%A1menes-de-convocatoria)
+- [Cierre de actas](#cierre-de-actas)
+- [Sobre las Calificaciones de Prácticas](#sobre-las-calificaciones-de-pr%C3%A1cticas)
+- [Instrucciones para los exámenes de Convocatoria](#instrucciones-para-los-ex%C3%A1menes-de-convocatoria)
+
 # Calendarios, Horarios y Exámenes
 
 ## Calendario Académico
