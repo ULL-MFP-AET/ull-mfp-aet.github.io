@@ -1,13 +1,10 @@
-<!-- START doctoc generated TOC please keep comment here to allow auto update -->
-<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
-**Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
+**Indice** 
 
   - [Exámenes de convocatoria](#ex%C3%A1menes-de-convocatoria)
 - [Cierre de actas](#cierre-de-actas)
 - [Sobre las Calificaciones de Prácticas y entregas fuera de plazo](#sobre-las-calificaciones-de-pr%C3%A1cticas-y-entregas-fuera-de-plazo)
   - [Instrucciones para los exámenes de Convocatoria](#instrucciones-para-los-ex%C3%A1menes-de-convocatoria)
 
-<!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
 #### Exámenes de convocatoria
 
