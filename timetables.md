@@ -5,6 +5,7 @@
 - [Exámenes de convocatoria](#ex%C3%A1menes-de-convocatoria)
 - [Cierre de actas](#cierre-de-actas)
 - [Sobre las Calificaciones de Prácticas](#sobre-las-calificaciones-de-pr%C3%A1cticas)
+- [Q&A](#q&a)
 - [Instrucciones para los exámenes de Convocatoria](#instrucciones-para-los-ex%C3%A1menes-de-convocatoria)
 
 # Calendarios, Horarios y Exámenes
@@ -60,6 +61,22 @@ este estado puede cambiar si entregan posteriormente al examen de convocatoria a
 -->
 
 Los exámenes de convocatoria incluyen una serie de apartados especiales para los alumnos que no tienen las prácticas aptas en el momento de la convocatoria.
+
+## Q&A
+
+* He visto que las prácticas las tengo aptas y entonces me preguntaba si finalmente el TFA debo entregarlo o si las notas 
+de prácticas ya están cerradas. 
+
+	- Respuesta:
+		1. La nota del TFA es independiente de la de prácticas y hay que superar el TFA para aprobar la asignatura.
+		2. Las notas de practicas no están aún cerradas. Se pueden entregar y mejorar las prácticas para obtener una mejor calificación. La calificación de APTO significa que no es necesario hacer la parte práctica de los exámenes de convocatoria.
+
+* Puesto que tengo el primer y tercer examen aprobados y en el segundo suspendí . Y no sabía si finalmente se hacía media de los 3 o si al haber aprobado el último puesto que tenía parte del segundo examen se recuperaba o si tengo que ir directamente al examen a recuperar esa parte. 
+
+	- Respuesta:
+		1. No se hace media.
+		2. Es necesario aprobar todas las partes.
+		3. Se debe ir al examen a recuperar las partes que no se tienen aprobadas.
 
 ## Instrucciones para los exámenes de Convocatoria
 
