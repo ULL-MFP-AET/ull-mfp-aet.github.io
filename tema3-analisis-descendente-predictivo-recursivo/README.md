@@ -17,6 +17,7 @@
 ### Práctica p5-t3-egg-0
 
 * [Descripción de la Práctica](practicas/p5-t3-egg-0)
+* [Vim Syntax Higlighting for Egg](https://github.com/ULL-ESIT-PL-1819/.vim/tree/master/syntax) by David Afonso (dibad)
 
 ### Práctica p6-t3-egg-1
 
