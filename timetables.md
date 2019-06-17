@@ -1,12 +1,18 @@
-**INDICE** 
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+**ÍNDICE** 
 
-- [Calendario Académico](#calendario-acad%C3%A9mico)
-- [Horarios](#horarios)
-- [Exámenes de convocatoria](#ex%C3%A1menes-de-convocatoria)
-- [Cierre de actas](#cierre-de-actas)
-- [Sobre las Calificaciones de Prácticas](#sobre-las-calificaciones-de-pr%C3%A1cticas)
-- [Q&A](#qa)
-- [Instrucciones para los exámenes de Convocatoria](#instrucciones-para-los-ex%C3%A1menes-de-convocatoria)
+- [Calendarios, Horarios y Exámenes](#calendarios-horarios-y-ex%C3%A1menes)
+  - [Calendario Académico](#calendario-acad%C3%A9mico)
+  - [Horarios](#horarios)
+  - [Exámenes de convocatoria](#ex%C3%A1menes-de-convocatoria)
+  - [Cierre de actas](#cierre-de-actas)
+  - [Sobre las Calificaciones de Prácticas](#sobre-las-calificaciones-de-pr%C3%A1cticas)
+  - [Q&A](#qa)
+  - [Instrucciones para los exámenes de Convocatoria](#instrucciones-para-los-ex%C3%A1menes-de-convocatoria)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
 
 # Calendarios, Horarios y Exámenes
 
@@ -39,6 +45,7 @@ scrolling="yes">
 
 ## Exámenes de convocatoria
 
+* [Normativa](https://riull.ull.es/xmlui/bitstream/handle/915/4096/reglamento_evaluacion_calificacion.pdf)
 * <a href="https://docs.google.com/document/d/1dv9Q6gEbs0a2YqlKlNUKG59SpQ3Bp1pH_UWqaTKUPyk/edit" target="_blank">Enlace al Calendario Oficial de exámenes de Tercer curso</a>
 
 *  Exámenes 13926312 Procesadores de Lenguajes
