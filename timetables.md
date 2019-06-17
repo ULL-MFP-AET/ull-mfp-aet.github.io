@@ -5,7 +5,9 @@
 - [Calendarios, Horarios y Exámenes](#calendarios-horarios-y-ex%C3%A1menes)
   - [Calendario Académico](#calendario-acad%C3%A9mico)
   - [Horarios](#horarios)
+  - [Normativa de Evaluación](#normativa-de-evaluaci%C3%B3n)
   - [Exámenes de convocatoria](#ex%C3%A1menes-de-convocatoria)
+  - [Revisión de Exámenes](#revisi%C3%B3n-de-ex%C3%A1menes)
   - [Cierre de actas](#cierre-de-actas)
   - [Sobre las Calificaciones de Prácticas](#sobre-las-calificaciones-de-pr%C3%A1cticas)
   - [Q&A](#qa)
@@ -43,9 +45,12 @@ scrolling="yes">
 <hr>
 <br/>
 
-## Exámenes de convocatoria
+## Normativa de Evaluación
 
 * [Normativa](https://riull.ull.es/xmlui/bitstream/handle/915/4096/reglamento_evaluacion_calificacion.pdf)
+
+## Exámenes de convocatoria
+
 * <a href="https://docs.google.com/document/d/1dv9Q6gEbs0a2YqlKlNUKG59SpQ3Bp1pH_UWqaTKUPyk/edit" target="_blank">Enlace al Calendario Oficial de exámenes de Tercer curso</a>
 
 *  Exámenes 13926312 Procesadores de Lenguajes
@@ -53,8 +58,10 @@ scrolling="yes">
     - 12 de junio 9:00 Aula 2.2
     - 3 de julio 9:30 Aula 2.2
     - 10 de septiembre 9:30 Aula 2.2
-* Revisión de Exámenes: 
-  - Convocatoria de Junio y Evaluación Contínua: Lunes 24/06/2019 de 13 a 14 horas Sala de reuniones 4ª planta de Física y Matemáticas
+
+## Revisión de Exámenes
+
+- Convocatoria de Junio y Evaluación Contínua: Lunes 24/06/2019 de 13 a 14 horas Sala de reuniones 4ª planta de Física y Matemáticas
 
 ## Cierre de actas 
 
