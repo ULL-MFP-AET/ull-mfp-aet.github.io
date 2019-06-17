@@ -7,7 +7,7 @@
   - [Horarios](#horarios)
   - [Normativa de Evaluación](#normativa-de-evaluaci%C3%B3n)
   - [Exámenes de convocatoria](#ex%C3%A1menes-de-convocatoria)
-  - [Revisión de Exámenes](#revisi%C3%B3n-de-ex%C3%A1menes)
+  - [Revisión de Calificaciones](#revisi%C3%B3n-de-calificaciones)
   - [Cierre de actas](#cierre-de-actas)
   - [Sobre las Calificaciones de Prácticas](#sobre-las-calificaciones-de-pr%C3%A1cticas)
   - [Q&A](#qa)
@@ -60,7 +60,7 @@ scrolling="yes">
     - 3 de julio 9:30 Aula 2.2
     - 10 de septiembre 9:30 Aula 2.2
 
-## Revisión de Exámenes
+## Revisión de Calificaciones
 
 - Convocatoria de Junio y Evaluación Contínua: Lunes 24/06/2019 de 13 a 14 horas Sala de reuniones 4ª planta de Física y Matemáticas
 
