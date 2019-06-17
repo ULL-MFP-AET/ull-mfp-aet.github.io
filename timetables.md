@@ -46,6 +46,8 @@ scrolling="yes">
     - 12 de junio 9:00 Aula 2.2
     - 3 de julio 9:30 Aula 2.2
     - 10 de septiembre 9:30 Aula 2.2
+* Revisión de Exámenes: 
+  - Convocatoria de Junio y Evaluación Contínua: Lunes 24/06/2019 de 13 a 14 horas Sala de reuniones 4ª planta de Física y Matemáticas
 
 ## Cierre de actas 
 
