@@ -66,7 +66,7 @@ scrolling="yes">
 
 ## Cierre de actas 
 
-* [En 2019 25 de Junio, 22 de Julio, 26 de Septiembre](https://drive.google.com/file/d/1YtPNm4vS73N21QHzstcYqEzPKJQHCKeD/view)
+* [En 2019 18 de Junio, 15 de Julio, 19 de Septiembre](https://drive.google.com/file/d/1YtPNm4vS73N21QHzstcYqEzPKJQHCKeD/view)
 
 ## Sobre las Calificaciones de Prácticas 
 
