@@ -49,6 +49,7 @@ scrolling="yes">
 ## Normativa de Evaluación
 
 * [Normativa](https://riull.ull.es/xmlui/bitstream/handle/915/4096/reglamento_evaluacion_calificacion.pdf)
+* [Normativa de Compensación](https://riull.ull.es/xmlui/bitstream/handle/915/8580/acuerdo12.pdf?sequence=1&isAllowed=y)
 
 ## Exámenes de convocatoria
 
