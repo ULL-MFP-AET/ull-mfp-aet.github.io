@@ -33,6 +33,7 @@
 ### Incidencias
 
 - [Gestor de incidencias. RT para rt.stic.ull.es](https://usuarios.ull.es/rt/SelfService/)
+- [Tarjeta Universitaria](https://www.ull.es/tarjeta/)
 
 ### VPN
 
