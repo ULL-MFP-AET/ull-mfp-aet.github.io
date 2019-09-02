@@ -18,6 +18,8 @@
 * [Página Web de PL (github gitbook)](https://ull-esit-pl-1819.github.io/ull-esit-pl-1819.github.io/_book/)
 * [Organización ULL-ESIT-PL-1819](https://github.com/ULL-ESIT-PL-1819)
   - [Repo ull-esit-pl-1819.github.io](https://github.com/ULL-ESIT-PL-1819/ull-esit-pl-1819.github.io)
+* [Solicitar Free Plan para uso educativo](https://education.github.com/discount_requests/new)
+* [Actualizar tus organizaciones de acuerdo al Free Plan concedido](https://education.github.com/benefits)
 
 ## iaas.ull.es
 
