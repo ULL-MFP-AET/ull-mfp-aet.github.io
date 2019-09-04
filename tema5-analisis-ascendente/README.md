@@ -4,6 +4,7 @@
 
 * [Análisis Sintáctico Ascendente en JavaScript](http://crguezl.github.io/pl-html/node43.html)
 * [Precedencia y Asociatividad](http://crguezl.github.io/pl-html/node57.html)
+    - [Repo de ejemplo crguezl/jison-prec](https://github.com/crguezl/jison-prec)
 * [Construcción de las Tablas para el Análisis SLR](http://crguezl.github.io/pl-html/node49.html)
 * [Algoritmo de Análisis LR (yacc/bison/jison)](http://crguezl.github.io/pl-html/node55.html)
 * Learning to Manage Conflicts
