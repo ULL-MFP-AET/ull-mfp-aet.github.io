@@ -8,3 +8,11 @@ calendario_academico: https://www.ull.es/estudios-docencia/calendario-academico/
 horarios_examenes: https://www.ull.es/grados/ingenieria-informatica/informacion-academica/horarios-y-calendario-examenes/
 calendario_examenes: https://docs.google.com/document/d/1j5rJyULD1c42UV4o-g85puuPlbO-DNFmaobn_vnKgKw/edit#
 horarios_tutorias: https://docs.google.com/spreadsheets/d/1ZTGvLA70qCYEsBwcA8dCiUZby3ZOM9oHt8kmiNNKId0/edit#gid=0
+organization: 
+  url: https://github.com/ULL-ESIT-PL-1920
+  name: ULL-ESIT-PL-1920
+campus_virtual: https://campusvirtual.ull.es/1920/course/view.php?id=201911070
+profesor: https://www.ull.es/apps/guias/guias/view_teacher_niu/588/(%3FPcrguezl.*)/
+classroom: 
+  url: https://classroom.github.com/classrooms/53047670-ull-esit-pl-1920
+  name: ULL-ESIT-PL-1920
