@@ -37,13 +37,15 @@ scrolling="yes">
 
 ## Exámenes de convocatoria
 
-* <a href="https://docs.google.com/document/d/1dv9Q6gEbs0a2YqlKlNUKG59SpQ3Bp1pH_UWqaTKUPyk/edit" target="_blank">Enlace al Calendario Oficial de exámenes de Tercer curso</a>
+* <a href="https://docs.google.com/document/d/1j5rJyULD1c42UV4o-g85puuPlbO-DNFmaobn_vnKgKw/edit#" target="_blank">Enlace al Calendario Oficial de exámenes de Tercer curso</a>
 
 *  Exámenes 13926312 Procesadores de Lenguajes
-    - 5 de junio 9:00 Aula 2.2
-    - 12 de junio 9:00 Aula 2.2
-    - 3 de julio 9:30 Aula 2.2
-    - 10 de septiembre 9:30 Aula 2.2
+  
+- 5 de junio 9:00 Aula 2.2
+- 12 de junio 9:00 Aula 2.2
+- 6 de julio 9:30 Aula 2.2
+- 10 de septiembre 9:30 Aula 2.2
+
 
 ## Revisión de Calificaciones
 
