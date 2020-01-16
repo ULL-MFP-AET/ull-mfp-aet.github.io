@@ -4,3 +4,7 @@ theme: jekyll-theme-midnight
 description: '3º. 2 cuatrimestre. Itinerario de Computación. Grado en Ingeniería Informática. ULL. Curso 2018/2019'
 exclude: [ 'Arona-winter-course', 'dsi1819', 'dsi1819-introduccion', 'tema0-introduccion-a-pl/practicas/code']
 show_downloads: false
+calendario_academico: https://www.ull.es/estudios-docencia/calendario-academico/
+horarios_examenes: https://www.ull.es/grados/ingenieria-informatica/informacion-academica/horarios-y-calendario-examenes/
+calendario_examenes: https://docs.google.com/document/d/1j5rJyULD1c42UV4o-g85puuPlbO-DNFmaobn_vnKgKw/edit#
+horarios_tutorias: https://docs.google.com/spreadsheets/d/1ZTGvLA70qCYEsBwcA8dCiUZby3ZOM9oHt8kmiNNKId0/edit#gid=0

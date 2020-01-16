@@ -2,15 +2,12 @@
 
 ## Calendario Académico
 
-- <a href="https://www.ull.es/estudios-docencia/calendario-academico/" target="_blank">Calendario Académico 2019/2020</a>
-- <a href="https://drive.google.com/file/d/1YtPNm4vS73N21QHzstcYqEzPKJQHCKeD/view" target="_blank">Calendario Académico 2018/2019</a>
+- <a href="{{site.calendario_academico}}" target="_blank">Calendario Académico</a>
 
 ## Horarios
 
-- <a href="https://www.ull.es/grados/ingenieria-informatica/informacion-academica/horarios-y-calendario-examenes/" target="_blank">Horarios de Ingeniería Informática para el curso 19/20</a>
-- <a href="https://docs.google.com/spreadsheets/d/1ZTGvLA70qCYEsBwcA8dCiUZby3ZOM9oHt8kmiNNKId0/edit#gid=0" target="_blank">Horarios de tutorías del Departamento de Ingeniería Informática</a>
-
-- <a href="https://docs.google.com/document/d/1XHFUAiuECAEAPTZvdsn8aJTCAV3jRovC8Px24HgcfyQ/edit?usp=sharing" target="_blank">Horarios de 3º del grado de Ingeniería Informática para el curso 18/19</a>
+- <a href="{{site.horarios_examenes}}" target="_blank">Horarios de Ingeniería Informática para el curso 19/20</a>
+- <a href="{{site.horarios_tutorias}}" target="_blank">Horarios de tutorías del Departamento de Ingeniería Informática</a>
 
 
 <br/>
@@ -37,7 +34,7 @@ scrolling="yes">
 
 ## Exámenes de convocatoria
 
-* <a href="https://docs.google.com/document/d/1j5rJyULD1c42UV4o-g85puuPlbO-DNFmaobn_vnKgKw/edit#" target="_blank">Enlace al Calendario Oficial de exámenes de Tercer curso</a>
+* <a href="{{site.calendario_examenes}}" target="_blank">Enlace al Calendario Oficial de exámenes de Tercer curso</a>
 
 *  Exámenes 13926312 Procesadores de Lenguajes
   
@@ -49,11 +46,15 @@ scrolling="yes">
 
 ## Revisión de Calificaciones
 
-- Convocatoria de Junio y Evaluación Contínua: Lunes 24/06/2019 de 13 a 14 horas Sala de reuniones 4ª planta de Física y Matemáticas
+- Convocatoria de Junio y Evaluación Contínua: Fecha a anunciar. Sala de reuniones 4ª planta de Física y Matemáticas
 
 ## Cierre de actas 
 
-* [En 2019 18 de Junio, 15 de Julio, 19 de Septiembre](https://drive.google.com/file/d/1YtPNm4vS73N21QHzstcYqEzPKJQHCKeD/view)
+- Convocatoria de enero: 7 de febrero
+- Convocatoria de fin de carrera (marzo): 20 de marzo
+- Convocatoria de junio: 18 de junio
+- Convocatoria de julio: 15 de julio
+- Convocatoria de septiembre de 2020: 18 de septiembre
 
 ## Sobre las Calificaciones de Prácticas 
 
@@ -91,6 +92,6 @@ Los exámenes de convocatoria incluyen una serie de apartados especiales para lo
 7. El empleo por parte del alumnado de medios ilícitos o fraudulentos en la realización de la prueba conducirá a la calificación numérica de 0, debiendo abandonar el lugar de la prueba y quedando sujeto a las consecuencias disciplinarias que se pudieran derivar de su conducta.
 8. Iniciada la prueba no se permitirá al alumnado la entrada al lugar de realización, salvo por razones excepcionales que habrán de ser valoradas por el profesor. El alumnado solo podrá abandonarlo durante la realización de la misma, si está autorizado o acompañado por el profesorado responsable de la vigilancia. En otro caso, el abandono del recinto implicará la finalización del examen, que ha de ser entregado por el estudiante al profesorado.
 9. En el caso de que el alumnado que se presente a la realización de la prueba no conste en el acta en la asignatura, se le permitirá que la lleve a cabo, quedando pendiente su evaluación de la posible subsanación de su situación administrativa.
-* <a href="https://docs.google.com/document/d/1dv9Q6gEbs0a2YqlKlNUKG59SpQ3Bp1pH_UWqaTKUPyk/edit" target="_blank">Enlace al Calendario Oficial de exámenes de Tercer curso</a>
+
 
 
