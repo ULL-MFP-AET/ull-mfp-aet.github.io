@@ -1,7 +1,7 @@
 title: 'Procesadores de Lenguajes'
 subtitle: 'Itinerario de Computación. Grado en Ingeniería Informática. ULL. Curso 2018/2019'
 theme: jekyll-theme-midnight
-description: '3º. 2 cuatrimestre. Itinerario de Computación. Grado en Ingeniería Informática. ULL. Curso 2018/2019'
+description: '3º. 2 cuatrimestre. Itinerario de Computación. Grado en Ingeniería Informática. ULL'
 exclude: [ 'Arona-winter-course', 'dsi1819', 'dsi1819-introduccion', 'tema0-introduccion-a-pl/practicas/code']
 show_downloads: false
 calendario_academico: https://www.ull.es/estudios-docencia/calendario-academico/
