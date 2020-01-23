@@ -58,6 +58,14 @@
             </div>
 
             {{ content }}
+            <details>
+                <summary>
+                    <h2>Your Comments</h2>
+                </summary>
+                <div class="utterances utterances-frame">
+                  {% include utterances.html %}
+                </div>
+            </details>
 
         </section>
     </div>
