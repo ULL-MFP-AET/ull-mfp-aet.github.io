@@ -17,9 +17,9 @@ title: Search
   </ul>
 </form>
 
-<script type="text/javascript" src="{{site.apuntes_repo}}/assets/src/fetch.js"></script>
+<script type="text/javascript" src="{{site.url}}/assets/src/fetch.js"></script>
 
-<script type="text/javascript" src="{{site.apuntes_repo}}/assets/src/search.js"></script>
+<script type="text/javascript" src="{{site.url}}/assets/src/search.js"></script>
 
 <script type="text/javascript">
 
