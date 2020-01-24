@@ -18,6 +18,7 @@ title: Search
 </form>
 
 <script type="text/javascript" src="{{site.baseurl}}/assets/src/fetch.js"></script>
+
 <script type="text/javascript" src="{{site.baseurl}}/assets/src/search.js"></script>
 
 
