@@ -1,7 +1,7 @@
 title: 'Procesadores de Lenguajes'
 subtitle: 'Itinerario de Computación. Grado en Ingeniería Informática. ULL. Curso 2018/2019'
 theme: jekyll-theme-midnight
-description: '3º. 2 cuatrimestre. Itinerario de Computación. Grado en Ingeniería Informática. ULL'
+description: '3º. 2º cuatrimestre. Itinerario de Computación. Grado en Ingeniería Informática. ULL'
 exclude: [ 'Arona-winter-course', 'dsi1819', 'dsi1819-introduccion', 'tema0-introduccion-a-pl/practicas/code']
 url: https://ULL-ESIT-PL-1819.github.io/introduccion
 show_downloads: false
@@ -15,7 +15,23 @@ organization:
   master: https://github.com/ULL-ESIT-PL-1819/introduccion/tree/master/
 apuntes_repo: https://github.com/ULL-ESIT-PL-1819/introduccion/
 campus_virtual: https://campusvirtual.ull.es/1920/course/view.php?id=201911070
+calificador: https://campusvirtual.ull.es/1920/grade/report/grader/index.php?id=201911070
+tareas: https://campusvirtual.ull.es/1920/mod/assign/index.php?id=201911070
 profesor: https://www.ull.es/apps/guias/guias/view_teacher_niu/588/(%3FPcrguezl.*)/
 classroom: 
   url: https://classroom.github.com/classrooms/53047670-ull-esit-pl-1920
   name: ULL-ESIT-PL-1920
+temas:
+  - title: 'Tema 0: Introducción a la Asignatura'
+    url: /tema0-introduccion-a-pl/guia-docente.html
+    hover: 'Presentación'
+  - title: 'Tema 1: Introducción a JavaScript'
+    url: /tema1-introduccion-a-javascript/
+    hover: 'Intro-a-js'
+practicas:
+  - title: 01pb-gh-campus-expert
+    myurl: /tema0-introduccion-a-pl/practicas/pb-gh-campus-expert/
+    name: pb-gh-campus-expert
+  - title: 02p0-t0-esprima-logging
+    myurl: /tema0-introduccion-a-pl/practicas/p0-t0-esprima-logging
+    name: p0-t0-esprima-logging

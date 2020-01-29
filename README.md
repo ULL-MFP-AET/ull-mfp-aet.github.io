@@ -1,4 +1,18 @@
+## Temas
 
+{% for tema in site.temas %}
+* [{{tema.title}}]({{ tema.url }})
+{%- endfor %}
+
+## Clases 
+
+{% include clases-impartidas.md %}
+
+## Prácticas
+
+{% include practicas-publicadas.md  %}
+
+<!--
 ## [El Grado](degree.md)
 
 ## [Recursos](resources.md)
@@ -47,3 +61,4 @@
 
 
 ## [Tema 6: Análisis Dependiente del Contexto](tema6-analisis-dependiente-del-contexto)
+-->
