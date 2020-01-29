@@ -67,7 +67,9 @@
     - [Solicitud General](https://sede.ull.es/ecivilis-site/catalog/showProcedure/229)
     - [Mis trámites](https://sede.ull.es/ecivilis-site/records/myRecords)
     - [Portafirmas de la ULL](https://sede.ull.es/ecivilis-signature-inbox-application/inbox.html)
-
+    - [Certificado de Docencia Impartida](https://sede.ull.es/ecivilis-site/catalog/showProcedure/550?fbclid=IwAR27HUuu8SbYKpsnoR3RCPzHzCvaMpDqW1ZxB4jeljRLz1SreHgxv1aJqZc)
+* [Portal ull.es](portal.ull.es)
+  
 ## Google+
 
 * [Comunidad Google+ PL1819](https://plus.google.com/u/2/communities/101901734024125937720)

@@ -2,6 +2,7 @@ title: 'Procesadores de Lenguajes'
 subtitle: 'Itinerario de Computación. Grado en Ingeniería Informática. ULL. Curso 2018/2019'
 theme: jekyll-theme-midnight
 description: '3º. 2º cuatrimestre. Itinerario de Computación. Grado en Ingeniería Informática. ULL'
+acronym: PL
 exclude: [ 'Arona-winter-course', 'dsi1819', 'dsi1819-introduccion', 'tema0-introduccion-a-pl/practicas/code']
 url: https://ULL-ESIT-PL-1819.github.io/introduccion
 show_downloads: false
@@ -18,6 +19,9 @@ campus_virtual: https://campusvirtual.ull.es/1920/course/view.php?id=201911070
 calificador: https://campusvirtual.ull.es/1920/grade/report/grader/index.php?id=201911070
 tareas: https://campusvirtual.ull.es/1920/mod/assign/index.php?id=201911070
 profesor: https://www.ull.es/apps/guias/guias/view_teacher_niu/588/(%3FPcrguezl.*)/
+disqus: 
+  url: https://procesadores-de-lenguajes.disqus.com/embed.js
+  comments: true
 classroom: 
   url: https://classroom.github.com/classrooms/53047670-ull-esit-pl-1920
   name: ULL-ESIT-PL-1920
