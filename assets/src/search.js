@@ -23,14 +23,14 @@ class JekyllSearch {
 
   async displayResults() {
     const results = await this.findResults()
-    console.log(this.siteURL)
+    console.log('this.siteURL = ',this.siteURL)
     const html = results.map(item => {
       console.log(item)
       return `
         <li class="result">
             <article class="result__article  article">
                 <h4>
-                  <a href="${this.siteURL + item.url}">${item.title}</a>
+                  <a href="${item.url}">${item.title}</a>
                 </h4>
                 <p>${item.excerpt}</p>
             </article>
