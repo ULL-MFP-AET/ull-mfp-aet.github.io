@@ -24,6 +24,7 @@ class JekyllSearch {
   async displayResults() {
     const results = await this.findResults()
     console.log('this.siteURL = ',this.siteURL)
+    
     const html = results.map(item => {
       console.log(item)
       return `
