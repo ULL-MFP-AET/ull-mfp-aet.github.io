@@ -23,10 +23,10 @@ class JekyllSearch {
 
   async displayResults() {
     const results = await this.findResults()
-    console.log('this.siteURL = ',this.siteURL)
-    
+    //console.log('this.siteURL = ',this.siteURL)
+
     const html = results.map(item => {
-      console.log(item)
+      //console.log(item)
       return `
         <li class="result">
             <article class="result__article  article">
