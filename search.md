@@ -26,7 +26,7 @@ title: Search
     '{{site.url}}/assets/src/search.json',
     '#search',
     '#list',
-    '{{site.url}}'
+    '{{site.baseurl}}'
   );
   search.init(); 
   
