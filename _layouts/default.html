@@ -37,6 +37,12 @@
             <li><a href="{{site.baseurl}}{{tema.url}}" title={{ tema.hover }}>T{{ forloop.index0 }}</a></li>
             {% endfor %}
 
+            {% if page.previous %}
+              <li><a href="{{page.previous.url}}" title="Previous lesson">&#x2190;</a></li>
+            {% endif %}
+            {% if page.next %}
+              <li><a href="{{page.next.url}}" title="Next lesson">&#x2192;</a></li>
+            {% endif %}
             
 <!--
             <li><a href="{{site.baseurl}}/tema0-introduccion-a-pl/guia-docente.html" title="Tema 0: Presentación">T 0</a></li>
