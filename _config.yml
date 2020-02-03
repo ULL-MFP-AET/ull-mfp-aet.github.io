@@ -4,6 +4,7 @@ theme: jekyll-theme-midnight
 description: '3º. 2º cuatrimestre. Itinerario de Computación. Grado en Ingeniería Informática. ULL'
 acronym: PL
 exclude: [ 'Arona-winter-course', 'dsi1819', 'dsi1819-introduccion', 'tema0-introduccion-a-pl/practicas/code']
+baseurl: '/introduccion'
 url: https://ULL-ESIT-PL-1819.github.io/introduccion
 show_downloads: false
 calendario_academico: https://www.ull.es/estudios-docencia/calendario-academico/
