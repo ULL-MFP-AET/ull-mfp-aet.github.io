@@ -33,9 +33,15 @@ temas:
     url: /tema1-introduccion-a-javascript/
     hover: 'Intro-a-js'
 practicas:
-  - title: 01pb-gh-campus-expert
+  - title: 00cuestionarioghalu
+    myurl: https://campusvirtual.ull.es/1920/mod/assign/view.php?id=14658
+    name: Tarea Formulario Usuario de Github
+  - title: 01comunidadgpluspl
+    myurl: https://campusvirtual.ull.es/1920/mod/assign/view.php?id=14657
+    name: Tarea Comunidad G+ de PL
+  - title: 02pb-gh-campus-expert
     myurl: /tema0-introduccion-a-pl/practicas/pb-gh-campus-expert/
-    name: pb-gh-campus-expert
-  - title: 02p0-t0-esprima-logging
+    name: Práctica pb-gh-campus-expert
+  - title: 03p0-t0-esprima-logging
     myurl: /tema0-introduccion-a-pl/practicas/p0-t0-esprima-logging
-    name: p0-t0-esprima-logging
+    name: Práctica p0-t0-esprima-logging
