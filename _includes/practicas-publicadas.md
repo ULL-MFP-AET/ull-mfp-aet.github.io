@@ -3,6 +3,6 @@
 *  <a href="{{ practica.myurl }}">{{ practica.title | slice: 0, 2  }}:  {{ practica.name }}</a> 
 {%- else %}
 *  <a href="{{site.baseurl}}{{ practica.myurl }}">{{ practica.title | slice: 0, 2  }}:  {{ practica.name }}</a> 
-{% endif %}
+{%- endif %}
 {%- endfor %}
 
