@@ -80,12 +80,22 @@ Se pide:
 3. Acepte la invitación para pasar de *outside collaborator* a ser miembro de la organización [{{site.organization.name}}](https://github.com/{{site.organization.name}})
 4. En la tarea del Campus basta con entregar el enlace al repositorio
 5. Ejecute paso a paso el código de `logging.js` usando el debugger de chrome, intentando comprender el funcionamiento de la transformación realizada. Haga un resumen de lo que ha aprendido en el fichero Markdown: `README.md` ([Vídeo describiendo el proceso](https://youtu.be/5cju6jLmX88). Disculpen el ruido)
-6. Modifique el programa para que los `console.log` insertados informen de los valores de los parámetros pasados a la función como ocurre en el siguiente ejemplo:
+6. Modifique el programa para que los `console.log` insertados informen de los valores de los parámetros pasados a la función.
+   
+Vea el siguiente ejemplo:
+
+```
+[~/javascript-learning/esprima-pegjs-jsconfeu-talk(private)]$ ./p0-t0-esprima-logging-sol.js 
+Usage: p0-t0-esprima-logging-sol [options] <filename> [...]
+
+Options:
+  -V, --version            output the version number
+  -o, --output <filename>  
+  -h, --help               output usage information
+[~/javascript-learning/esprima-pegjs-jsconfeu-talk(private)]$ cat input.js 
+```
 
 ```js
-[~/local/src/javascript/learning/esprima-pegjs-jsconfeu-talk(private)]$ node logging.js
-input:
-
 function foo(a, b) {
   var x = 'blah';
   var y = (function (z) {
@@ -93,25 +103,39 @@ function foo(a, b) {
   })(2);
 }
 foo(1, 'wut', 3);
+```
 
----
-output:
+Cuando lo ejecutamos:
+
+```
+[~/javascript-learning/esprima-pegjs-jsconfeu-talk(private)]$ ./p0-t0-esprima-logging-sol.js -V
+0.1.0
+[~/javascript-learning/esprima-pegjs-jsconfeu-talk(private)]$ ./p0-t0-esprima-logging-sol.js -o input-log.js input.js 
+input:
+```
+```js
 function foo(a, b) {
-    console.log('Entering foo(' + a, b + ')');
+  var x = 'blah';
+  var y = (function (z) {
+    return z+3;
+  })(2);
+}
+foo(1, 'wut', 3);
+```
+```
+---
+Output in file 'input-log.js'
+[~/javascript-learning/esprima-pegjs-jsconfeu-talk(private)]$ cat input-log.js
+```
+```js
+function foo(a, b) {
+    console.log(`Entering foo(${ a },${ b })`);
     var x = 'blah';
     var y = function (z) {
-        console.log('Entering <anonymous function>(' + z + ')');
+        console.log(`Entering <anonymous function>(${ z })`);
         return z + 3;
     }(2);
 }
 foo(1, 'wut', 3);
 ---
-```
-Cuando se ejecuta la salida se obtiene:
-```
-[~/campus-virtual/1819/pl1819/introduccion/tema0-introduccion-a-pl/practicas/code(private)]$ node logging.js | sed -ne '/output:/,/---/p' | sed -e '/---/d' | sed -e '/output:/d' > out.js
-[~/campus-virtual/1819/pl1819/introduccion/tema0-introduccion-a-pl/practicas/code(private)]$ node out.js 
-Entering foo(1 wut)
-Entering <anonymous function>(2)
-foo(1, 'wut', 3);
 ```
