@@ -1,23 +1,28 @@
 # Práctica p0-t0-esprima-logging
 
-En clase hemos visto el programa `logging.js` que cuando se ejecuta modifica el código de entrada 
+El programa `logging-espree.js`  implementa una función `addLogging` que cuando se llama 
+modifica el código de entrada 
 produciendo como salida un código que inserta  mensajes de `console.log` a la entrada de cada 
-función:
+función. Por ejemplo, cuando se llama con esta entrada:
 
 ```js
-~/campus-virtual/1819/pl1819/introduccion/tema0-introduccion-a-pl/practicas/code(master)]$ node logging.js
-input:
-
-function foo(a, b) {
-  var x = 'blah';
+addLogging(`
+function foo(a, b) {   
+  var x = 'blah';   
   var y = (function () {
     return 3;
   })();
-}
+}     
 foo(1, 'wut', 3);
+`);
+```
 
----
-output:
+* [AST de la función de entrada usada como ejemplo](https://astexplorer.net/#/gist/b5826862c47dfb7dbb54cec15079b430/latest)
+
+produce una saldia como esta:
+
+```js
+[~/javascript-learning/esprima-pegjs-jsconfeu-talk(private)]$ node logging-espree.js 
 function foo(a, b) {
     console.log('Entering foo()');
     var x = 'blah';
@@ -27,18 +32,21 @@ function foo(a, b) {
     }();
 }
 foo(1, 'wut', 3);
----
 ```
 
-Este es el código de `logging.js`: 
+Este es el código de `logging-espree.js`: 
+
+```
+[~/javascript-learning/esprima-pegjs-jsconfeu-talk(private)]$ cat logging-espree.js 
+```
 
 ```js
-let escodegen = require('escodegen');
-let esprima = require('espree');
-let estraverse = require('estraverse');
+const escodegen = require('escodegen');
+const espree = require('espree');
+const estraverse = require('estraverse');
 
 function addLogging(code) {
-    let ast = esprima.parse(code);
+    const ast = espree.parse(code);
     estraverse.traverse(ast, {
         enter: function(node, parent) {
             if (node.type === 'FunctionDeclaration' ||
@@ -51,26 +59,21 @@ function addLogging(code) {
 }
 
 function addBeforeCode(node) {
-    let name = node.id ? node.id.name : '<anonymous function>';
-    let beforeCode = `console.log('Entering ${name}()');`;
-    let beforeNodes = esprima.parse(beforeCode).body; // Is an Array of ASTs
+    const name = node.id ? node.id.name : '<anonymous function>';
+    const beforeCode = "console.log('Entering " + name + "()');";
+    const beforeNodes = espree.parse(beforeCode).body;
     node.body.body = beforeNodes.concat(node.body.body);
 }
 
-const input = `
-function foo(a, b) {
-  var x = 'blah';
+console.log(addLogging(`
+function foo(a, b) {   
+  var x = 'blah';   
   var y = (function () {
     return 3;
   })();
 }
 foo(1, 'wut', 3);
-`;
-
-const output = addLogging(input);
-
-console.log(`input:\n${input}\n---`);
-console.log(`output:\n${output}\n---`);
+`));
 ```
 
 Se pide:
