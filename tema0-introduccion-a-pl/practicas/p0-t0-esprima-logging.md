@@ -19,7 +19,7 @@ foo(1, 'wut', 3);
 
 * [AST de la función de entrada usada como ejemplo](https://astexplorer.net/#/gist/b5826862c47dfb7dbb54cec15079b430/latest)
 
-produce una saldia como esta:
+produce una salida como esta:
 
 ```js
 [~/javascript-learning/esprima-pegjs-jsconfeu-talk(private)]$ node logging-espree.js 
@@ -75,6 +75,8 @@ function foo(a, b) {
 foo(1, 'wut', 3);
 `));
 ```
+
+[Trasparencias explicando este código](https://github.com/ULL-ESIT-GRADOII-PL/esprima-pegjs-jsconfeu-talk/blob/master/jsconfeu-logging.pdf)
 
 Se pide:
 
