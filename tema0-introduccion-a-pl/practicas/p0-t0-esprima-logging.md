@@ -23,6 +23,7 @@ produce una salida como esta:
 
 ```
 [~/javascript-learning/esprima-pegjs-jsconfeu-talk(private)]$ node logging-espree.js 
+
 ```
 ```js
 function foo(a, b) {
@@ -40,6 +41,7 @@ Este es el código de `logging-espree.js`:
 
 ```
 [~/javascript-learning/esprima-pegjs-jsconfeu-talk(private)]$ cat logging-espree.js 
+
 ```
 
 ```js
