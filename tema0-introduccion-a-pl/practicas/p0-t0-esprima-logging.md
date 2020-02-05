@@ -21,8 +21,10 @@ foo(1, 'wut', 3);
 
 produce una salida como esta:
 
-```js
+```
 [~/javascript-learning/esprima-pegjs-jsconfeu-talk(private)]$ node logging-espree.js 
+```
+```js
 function foo(a, b) {
     console.log('Entering foo()');
     var x = 'blah';
