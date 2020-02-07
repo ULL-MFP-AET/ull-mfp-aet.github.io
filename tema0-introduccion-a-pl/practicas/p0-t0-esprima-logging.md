@@ -96,7 +96,7 @@ Vea el siguiente ejemplo:
 ```
 [~/javascript-learning/esprima-pegjs-jsconfeu-talk(private)]$ ./p0-t0-esprima-logging-sol.js 
 Usage: p0-t0-esprima-logging-sol [options] <filename> [...]
-
+ 
 Options:
   -V, --version            output the version number
   -o, --output <filename>  
@@ -122,6 +122,7 @@ Cuando lo ejecutamos:
 [~/javascript-learning/esprima-pegjs-jsconfeu-talk(private)]$ ./p0-t0-esprima-logging-sol.js -o input-log.js input.js 
 input:
 ```
+
 ```js
 function foo(a, b) {
   var x = 'blah';
@@ -131,11 +132,13 @@ function foo(a, b) {
 }
 foo(1, 'wut', 3);
 ```
+
 ```
 ---
 Output in file 'input-log.js'
 [~/javascript-learning/esprima-pegjs-jsconfeu-talk(private)]$ cat input-log.js
 ```
+
 ```js
 function foo(a, b) {
     console.log(`Entering foo(${ a },${ b })`);
@@ -147,6 +150,14 @@ function foo(a, b) {
 }
 foo(1, 'wut', 3);
 ---
+```
+
+Si ejecutamos la salida obtenemos la traza esperada:
+
+```
+[~/javascript-learning/esprima-pegjs-jsconfeu-talk(private)]$ node input-log.js 
+Entering foo(1,wut)
+Entering <anonymous function>(2)
 ```
 
 * [Una Solución](https://github.com/ULL-ESIT-GRADOII-PL/esprima-pegjs-jsconfeu-talk-private/blob/private/p0-t0-esprima-logging-sol.js) (No disponible)
