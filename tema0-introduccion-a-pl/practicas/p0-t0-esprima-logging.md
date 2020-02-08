@@ -180,7 +180,7 @@ En concreto, el error que se obtiene es:
 SyntaxError: Unexpected character '`'.
 ```
 
-### Answer: Use option `{ecmaVersion:6})`
+### Answer: Use option `{ecmaVersion:6}`
 
 ```js
 
