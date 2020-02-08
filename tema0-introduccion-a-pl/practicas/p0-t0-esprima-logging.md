@@ -160,4 +160,54 @@ Entering foo(1,wut)
 Entering <anonymous function>(2)
 ```
 
+## Q & A
+
+### Question 
+
+> Trabajando y experimentando con el método `parse()` del compilador `espree`, he comprobado que es incapaz de procesar cadenas de caracteres que posean en su interior el signo  \`,  que es usado en JS para crear cadenas de caracteres que pueden aprovecharse de la interpolación de expresiones. 
+
+> En concreto, y a modo de ejemplo, el error me ha surgido al intentar ejecutar 
+`parse()` pasando como argumento:  
+
+```js
+"console.log(`prueba`)"
+```
+
+> Me preguntaba si el analizador léxico carece verdaderamente de la capacidad para interpretar dicho símbolo y, en caso afirmativo, cómo aprovechar la mecánica de interpolación de expresiones al utilizar el analizador.
+En concreto, el error que se obtiene es:  
+
+```
+SyntaxError: Unexpected character '`'.
+```
+
+### Answer
+
+```js
+
+[~/javascript-learning/esprima-pegjs-jsconfeu-talk(private)]$  node
+Welcome to Node.js v12.10.0.
+Type ".help" for more information.
+> code3 = "console.log(`prueba`)"
+'console.log(`prueba`)'
+> const { parse } = require('espree')
+undefined
+> parse(code3, {ecmaVersion:6})
+Node {
+  type: 'Program',
+  start: 0,
+  end: 21,
+  body: [
+    Node {
+      type: 'ExpressionStatement',
+      start: 0,
+      end: 21,
+      expression: [Node]
+    }
+  ],
+  sourceType: 'script'
+}
+```
+
+## Recursos
+
 * [Una Solución](https://github.com/ULL-ESIT-GRADOII-PL/esprima-pegjs-jsconfeu-talk-private/blob/private/p0-t0-esprima-logging-sol.js) (No disponible)
