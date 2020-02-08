@@ -42,9 +42,10 @@ practicas:
   - title: 01comunidadgpluspl
     myurl: https://campusvirtual.ull.es/1920/mod/assign/view.php?id=14657
     name: Tarea Comunidad G+ de PL
-  - title: 02pb-gh-campus-expert
-    myurl: /tema0-introduccion-a-pl/practicas/pb-gh-campus-expert/
-    name: Práctica pb-gh-campus-expert
   - title: 03p0-t0-esprima-logging
     myurl: /tema0-introduccion-a-pl/practicas/p0-t0-esprima-logging
     name: Práctica p0-t0-esprima-logging
+practicas_suprimidas:
+  - title: 02pb-gh-campus-expert
+    myurl: /tema0-introduccion-a-pl/practicas/pb-gh-campus-expert/
+    name: Práctica pb-gh-campus-expert
