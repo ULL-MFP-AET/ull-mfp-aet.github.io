@@ -42,7 +42,7 @@ practicas:
   - title: 01comunidadgpluspl
     myurl: https://campusvirtual.ull.es/1920/mod/assign/view.php?id=14657
     name: Tarea Comunidad G+ de PL
-  - title: 03p0-t0-esprima-logging
+  - title: 02p0-t0-esprima-logging
     myurl: /tema0-introduccion-a-pl/practicas/p0-t0-esprima-logging
     name: Práctica p0-t0-esprima-logging
 practicas_suprimidas:
