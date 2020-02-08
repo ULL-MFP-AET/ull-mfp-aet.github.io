@@ -162,7 +162,7 @@ Entering <anonymous function>(2)
 
 ## Q & A
 
-### Question 
+### Question: Backticks in espree
 
 > Trabajando y experimentando con el método `parse()` del compilador `espree`, he comprobado que es incapaz de procesar cadenas de caracteres que posean en su interior el signo  \`,  que es usado en JS para crear cadenas de caracteres que pueden aprovecharse de la interpolación de expresiones. 
 
@@ -180,7 +180,7 @@ En concreto, el error que se obtiene es:
 SyntaxError: Unexpected character '`'.
 ```
 
-### Answer
+### Answer: Use option `{ecmaVersion:6})`
 
 ```js
 
