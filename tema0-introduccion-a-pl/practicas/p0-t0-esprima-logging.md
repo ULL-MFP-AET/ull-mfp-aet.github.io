@@ -1,3 +1,14 @@
+---
+layout: default
+title: p0-t0-esprima-logging
+formulario: https://campusvirtual.ull.es/1920/mod/assign/view.php?id=187733
+permalink: /tema0-introduccion-a-pl/practicas/p0-t0-esprima-logging/
+next:
+  url: /tema1-introduccion-a-javascript/practicas/p1-t1-iaas/
+previous: 
+  url: https://campusvirtual.ull.es/1920/mod/assign/view.php?id=14657
+---
+
 # Práctica p0-t0-esprima-logging
 
 El programa `logging-espree.js`  implementa una función `addLogging` que cuando se llama 

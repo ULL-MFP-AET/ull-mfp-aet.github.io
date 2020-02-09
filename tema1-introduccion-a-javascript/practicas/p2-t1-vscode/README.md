@@ -1,3 +1,11 @@
+---
+layout: default
+title: p2-t1-vscode/
+permalink: /tema1-introduccion-a-javascript/practicas/p2-t1-vscode/
+previous:
+  url: /tema1-introduccion-a-javascript/practicas/p1-t1-iaas/
+---
+
 # Descripción de la Práctica p2-t1-vscode
 
 ## Objetivos

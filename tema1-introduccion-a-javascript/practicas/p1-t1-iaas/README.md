@@ -5,6 +5,8 @@ formulario: https://campusvirtual.ull.es/1920/mod/assign/view.php?id=187733
 permalink: /tema1-introduccion-a-javascript/practicas/p1-t1-iaas/index.html
 next:
   url: /tema1-introduccion-a-javascript/practicas/p2-t1-vscode/
+previous: 
+  url: /tema0-introduccion-a-pl/practicas/p0-t0-esprima-logging
 ---
 
 # Descripción de la Práctica p1-t1-iaas
