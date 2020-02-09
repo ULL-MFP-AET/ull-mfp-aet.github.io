@@ -1,5 +1,5 @@
   {% assign previousMonth = "0" %}
-  {% for post in site.posts %}
+  {% for post in site.posts reversed %}
      {% assign currentMonth = post.date | date: "%B" %}
       {% if currentMonth != previousMonth %}
 ### Classes during the month of {{ currentMonth }}
