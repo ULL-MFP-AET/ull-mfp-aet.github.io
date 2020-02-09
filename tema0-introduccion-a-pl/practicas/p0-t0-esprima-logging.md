@@ -9,7 +9,7 @@ previous:
   url: https://campusvirtual.ull.es/1920/mod/assign/view.php?id=14657
 ---
 
-# Práctica p0-t0-esprima-logging
+# Práctica {{ page.title }}
 
 El programa `logging-espree.js`  implementa una función `addLogging` que cuando se llama 
 modifica el código de entrada 
