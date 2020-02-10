@@ -96,16 +96,15 @@ foo(1, 'wut', 3);
 Se pide:
 
 1. Acepte la asignación Classroom de esta tarea
-2. Rellene su entrada en este formulario poniendo su código de github junto a su alu
-3. Acepte la invitación para pasar de *outside collaborator* a ser miembro de la organización [{{site.organization.name}}](https://github.com/{{site.organization.name}})
-4. En la tarea del Campus basta con entregar el enlace al repositorio
-5. Ejecute paso a paso el código de `logging.js` usando el debugger de chrome, intentando comprender el funcionamiento de la transformación realizada. Haga un resumen de lo que ha aprendido en el fichero Markdown: `README.md` ([Vídeo describiendo el proceso](https://youtu.be/5cju6jLmX88). Disculpen el ruido)
-6. Modifique el programa para que los `console.log` insertados informen de los valores de los parámetros pasados a la función.
+2. Rellene su entrada en este formulario poniendo su código de github junto a su alu 
+3. En la tarea del Campus basta con entregar el enlace al repositorio
+4. Ejecute paso a paso el código de `logging.js` usando el debugger de chrome, intentando comprender el funcionamiento de la transformación realizada. Haga un resumen de lo que ha aprendido en el fichero Markdown: `README.md` 
+5. Modifique el programa para que los `console.log` insertados informen de los valores de los parámetros pasados a la función.
    
-Vea el siguiente ejemplo:
+Vea el siguiente ejemplo de como debe funcionar una solución:
 
 ```
-[~/javascript-learning/esprima-pegjs-jsconfeu-talk(private)]$ ./p0-t0-esprima-logging-sol.js 
+$ ./p0-t0-esprima-logging-sol.js 
 Usage: p0-t0-esprima-logging-sol [options] <filename> [...]
  
 Options:
@@ -115,25 +114,24 @@ Options:
 [~/javascript-learning/esprima-pegjs-jsconfeu-talk(private)]$ cat input.js 
 ```
 
-```js
-function foo(a, b) {
-  var x = 'blah';
-  var y = (function (z) {
-    return z+3;
-  })(2);
-}
-foo(1, 'wut', 3);
-```
+El programa usado hace un parsing de la línea de comandos mediante el módulo npm [commander.js](https://www.npmjs.com/package/commander). Puede encontrar ejemplos en el directorio
+[examples](https://github.com/tj/commander.js/tree/master/examples) del repo del modulo
+[commander.js](https://www.npmjs.com/package/commander).
 
-Cuando lo ejecutamos:
+Cuando lo ejecutamos con la opción `-V` nos da la versión:
 
 ```
-[~/javascript-learning/esprima-pegjs-jsconfeu-talk(private)]$ ./p0-t0-esprima-logging-sol.js -V
+$ ./p0-t0-esprima-logging-sol.js -V
 0.1.0
-[~/javascript-learning/esprima-pegjs-jsconfeu-talk(private)]$ ./p0-t0-esprima-logging-sol.js -o input-log.js input.js 
+```
+
+Con la  opción `-o input-log.js` especificamos el fichero de salida. El programa 
+muestra los contenidos del fichero de entrada:
+
+```
+$ ./p0-t0-esprima-logging-sol.js -o input-log.js input.js 
 input:
 ```
-
 ```js
 function foo(a, b) {
   var x = 'blah';
@@ -143,13 +141,14 @@ function foo(a, b) {
 }
 foo(1, 'wut', 3);
 ```
+
+Al volcar la salida, vemos que el fichero de entrada ha sido transformado correctamente:
 
 ```
 ---
 Output in file 'input-log.js'
-[~/javascript-learning/esprima-pegjs-jsconfeu-talk(private)]$ cat input-log.js
+$ cat input-log.js
 ```
-
 ```js
 function foo(a, b) {
     console.log(`Entering foo(${ a },${ b })`);
@@ -166,7 +165,7 @@ foo(1, 'wut', 3);
 Si ejecutamos la salida obtenemos la traza esperada:
 
 ```
-[~/javascript-learning/esprima-pegjs-jsconfeu-talk(private)]$ node input-log.js 
+$ node input-log.js 
 Entering foo(1,wut)
 Entering <anonymous function>(2)
 ```
