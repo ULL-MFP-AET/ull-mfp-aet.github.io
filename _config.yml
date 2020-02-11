@@ -22,6 +22,8 @@ tareas: https://campusvirtual.ull.es/1920/mod/assign/index.php?id=201911070
 profesor: https://www.ull.es/apps/guias/guias/view_teacher_niu/588/(%3FPcrguezl.*)/
 profesor_github: crguezl
 bull_permanente: https://puntoq.ull.es/permalink/f
+dsi:
+  apuntes: https://ull-esit-dsi-1819.github.io/dsi-1819/
 disqus: 
   url: https://procesadores-de-lenguajes.disqus.com/embed.js
   comments: true
