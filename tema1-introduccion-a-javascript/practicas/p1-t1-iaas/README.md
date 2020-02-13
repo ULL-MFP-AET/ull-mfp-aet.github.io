@@ -36,7 +36,7 @@ previous:
   - [jshint](http://jshint.com/install/) y [jshint on vim](https://coderwall.com/p/zfhquw/jshint-in-vim)
   - Ideas opcionales:
     - Instale [hub](https://github.com/github/hub)
-    - [ghi](https://github.com/stephencelis/ghi)
+    - [ghi](https://github.com/stephencelis/ghi) o [gh](https://github.blog/2020-02-12-supercharge-your-command-line-experience-github-cli-is-now-in-beta/)
     - Instale un gestor de versiones de Ruby ([rvm](https://github.com/rvm/ubuntu_rvm) o rbenv)
     - Instale [NERDTree](https://github.com/scrooloose/nerdtree) para vim. The NERDTree is a file system explorer for the Vim editor. Using this plugin, users can visually browse complex directory hierarchies, quickly open files for reading or editing, and perform basic file system operations.
     - Instale [ctags](https://courses.cs.washington.edu/courses/cse451/10au/tutorials/tutorial_ctags.html)
@@ -47,7 +47,7 @@ previous:
 
 - Tutorial: [Express Web Framework (Node.js/JavaScript)](https://developer.mozilla.org/en-US/docs/Learn/Server-side/Express_Nodejs) (Mozilla)
 
-
+<!--
 ### GitHub Classroom: Outside Colaborators and members
 
 * Una vez acepte la tarea en GitHub Classroom, pasará a ser *outside collaborator* de la organización de la asignatura,
@@ -57,4 +57,6 @@ previous:
 
 ### Formulario
 
-Recuerde cumplimentar el [formulario solicitado]({{page.formulario}}) en la tarea en el Campus Virtual
+Si no la hecho ya, recuerde cumplimentar el [formulario solicitado]({{page.formulario}}) en la tarea en el Campus Virtual con sus usuarios de GitHub
+
+-->
