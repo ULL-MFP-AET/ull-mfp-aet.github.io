@@ -4,6 +4,8 @@
 
 ## [Editores. Entornos de Trabajo](editors)
 
+## [TypeScript](typescript)
+
 ## [Node.JS](node)
 
 ## [Pruebas, Integración y Calidad](pruebas)
