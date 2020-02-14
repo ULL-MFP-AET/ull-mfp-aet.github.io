@@ -56,6 +56,8 @@ function foo(a, b, c) {
 }
 ```
 
+Ejecución de la salida:
+
 ```
 foo(1, 'wut', 3);[~/.../eval/p0-t0-esprima-logging-CristoNavarro(master)]$ node output.js 
 Entering foo(1, wut, 3) at line 1
