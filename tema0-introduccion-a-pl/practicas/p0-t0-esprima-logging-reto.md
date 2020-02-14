@@ -36,6 +36,7 @@ function foo(a, b, c) {
 foo(1, 'wut', 3);
 ---
 ```
+
 ```
 [~/.../eval/p0-t0-esprima-logging(master)]$ cat output.js 
 ```
