@@ -13,10 +13,11 @@ previous:
 
 ## Reto 1: Funciones Flecha Gorda
 
-Añada la capacidad de procesar funciones con sintáxis ECMA6 *flecha gorda* como en este ejemplo:
+Añada la capacidad de procesar funciones con sintáxis ECMA6 *flecha gorda* con bloque 
+como en este ejemplo:
 
 ```js
-let z = (e => e +1)(4);
+let z = (e => { return e +1 })(4);
 ```
 
 Ejemplo de ejecución:
@@ -27,15 +28,36 @@ input:
 function foo(a, b, c) {
   let x = 'tutu';
   let y = (function (x) { return x*x })(2);
-  let z = (e => e +1)(4);
+  let z = (e => { return e +1 })(4);
   console.log(x,y,z);
 }
 foo(1, 'wut', 3);
 ---
-Output in file 'output.js'
-[~/.../eval/p0-t0-esprima-logging-CristoNavarro(master)]$ node output.js 
+```
+```
+[~/.../eval/p0-t0-esprima-logging(master)]$ cat output.js 
+```
+```js
+function foo(a, b, c) {
+    console.log(`Entering foo(${ a }, ${ b }, ${ c }) at line 1`);
+    let x = 'tutu';
+    let y = function (x) {
+        console.log(`Entering <anonymous function>(${ x }) at line 3`);
+        return x * x;
+    }(2);
+    let z = (e => {
+        console.log(`Entering <anonymous function>(${ e }) at line 4`);
+        return e + 1;
+    })(4);
+    console.log(x, y, z);
+}
+```
+
+```
+foo(1, 'wut', 3);[~/.../eval/p0-t0-esprima-logging-CristoNavarro(master)]$ node output.js 
 Entering foo(1, wut, 3) at line 1
 Entering <anonymous function>(2) at line 3
+Entering <anonymous function>(4) at line 4
 tutu 4 5
 ```
 
