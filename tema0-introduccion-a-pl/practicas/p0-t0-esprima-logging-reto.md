@@ -17,7 +17,9 @@ Añada la capacidad de procesar funciones con sintáxis ECMA6 *flecha gorda* con
 como en este ejemplo:
 
 ```js
-let z = (e => { return e +1 })(4);
+let z = (e => { 
+  return e +1 
+})(4);
 ```
 
 Ejemplo de ejecución:
