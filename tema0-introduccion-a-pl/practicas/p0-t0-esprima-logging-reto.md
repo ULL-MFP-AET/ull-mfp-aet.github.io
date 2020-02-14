@@ -13,7 +13,7 @@ previous:
 
 ## Reto 1: Funciones Flecha Gorda
 
-Añada la capacidad de procesar funciones con sintáxis ECMA6 *flecha gorda* como:
+Añada la capacidad de procesar funciones con sintáxis ECMA6 *flecha gorda* como en este ejemplo:
 
 ```js
 let z = (e => e +1)(4);
@@ -39,7 +39,7 @@ Entering <anonymous function>(2) at line 3
 tutu 4 5
 ```
 
-Vea aquí [El AST Espree de este ejemplo](https://astexplorer.net/#/gist/b5826862c47dfb7dbb54cec15079b430/latest). Use el parser de `espree` pasándole la opción `ecmaVersion`:
+Vea aquí [El AST Espree del ejemplo](https://astexplorer.net/#/gist/b5826862c47dfb7dbb54cec15079b430/latest) usado como entrada en la ejecución anterior. Use el parser de `espree` pasándole la opción `ecmaVersion`:
 
 ```js
 const ast = espree.parse(code, {ecmaVersion:6});
