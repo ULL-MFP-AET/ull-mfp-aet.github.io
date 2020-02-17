@@ -4,6 +4,12 @@
 
 ## [Editores. Entornos de Trabajo](editors)
 
+## [The Event Loop](event-loop)
+
+## [Promises](promises)
+
+### [Promise Examples](promise-examples)
+
 ## [TypeScript](typescript)
 
 ## [Node.JS](node)
