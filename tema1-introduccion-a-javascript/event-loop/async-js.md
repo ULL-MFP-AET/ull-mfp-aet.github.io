@@ -68,6 +68,8 @@ Ejecución:
 Output in file 'out'
 ```
 
+#### ¿Como lograría resolver este problema si no dispusiera de `async.js`?
+
 ## Filter
 
 ```js
