@@ -21,7 +21,7 @@ async.map(['file1','file2','file3'], fs.stat,  function(err, results)  {
 **`map(coll, iteratee, callbackopt)`**
 
 ```js
-    import map from 'async/map';
+    import map from 'async/map'; 
 ```
 
 1. Produces a new collection of values by mapping each value in `coll` through the `iteratee` function. 
@@ -30,7 +30,7 @@ async.map(['file1','file2','file3'], fs.stat,  function(err, results)  {
 4. If `iteratee` passes an error to its callback, the main `callback` (for the `map` function) is immediately called with the error.
 5. Note, that since this function applies the `iteratee` to each item in parallel, there is no guarantee that the `iteratee` functions will complete in order. However, the results array will be in the same order as the original `coll`.
 
-### Ejemplo
+### Ejemplo: Concatenación de ficheros
 
 El objetivo es escribir un programa que usando `fs.readFile` lea  un conjunto de ficheros pasados en vía de comandos y produzca como salida la concatenación de los mismos en el orden especificado, sin usar lecturas síncronas. 
 La escritura debe ocurrir después que hayan terminado todas las lecturas.
