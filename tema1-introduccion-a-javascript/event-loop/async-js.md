@@ -42,21 +42,21 @@ He aquí una solución:
 ```
 
 ```js
-'use strict';
+''use strict';
 
-let fs = require('fs'),
-    async = require('async'),
+const fs = require('fs'),
+    { map } = require('async'),
     inputs = ['in1', 'in2'],
     output = 'out';
 
-async.map(inputs, fs.readFile,
+map(inputs, fs.readFile,
    (err, contents) => {
-    if (err) console.log('Error: ' + error);
-    else {
-      const data = contents.reduce((a, b) => a + b);
-      fs.writeFile(output, data, () => console.log(`Output in file '${output}'`)
-      );
-    }
+      if (err) console.log('Error: ' + error);
+      else {
+        const data = contents.reduce((a, b) => a + b);
+        fs.writeFile(output, data, () => console.log(`Output in file '${output}'`)
+        );
+      }
    }
 );
 ```
