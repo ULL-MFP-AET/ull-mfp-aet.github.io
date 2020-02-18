@@ -291,7 +291,7 @@ count(chunk, stop);
 
 ## Async.js
 
-* [Introducción al Módulo Async]({{site.baseurl}}/tema1-introduccion-a-javascript/event-loop/async-js.md)
+* [Introducción al Módulo Async]({{site.baseurl}}/tema1-introduccion-a-javascript/event-loop/async-js)
 
 ## Race Condition
 
