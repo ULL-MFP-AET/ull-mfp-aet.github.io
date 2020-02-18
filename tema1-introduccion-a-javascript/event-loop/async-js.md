@@ -32,6 +32,11 @@ async.map(['file1','file2','file3'], fs.stat,  function(err, results)  {
 
 ### Ejemplo
 
+El objetivo es escribir un programa que usando `fs.readFile` lea  un conjunto de ficheros pasados en vía de comandos y produzca como salida la concatenación de los mismos en el orden especificado, sin usar lecturas síncronas. 
+La escritura debe ocurrir después que hayan terminado todas las lecturas.
+
+He aquí una solución:
+
 ```
 [~/.../ssh2-hello(master)]$ cat simp-reto-async-reading-multiple-files.js
 ```
@@ -47,12 +52,11 @@ let fs = require('fs'),
 async.map(inputs, fs.readFile,
    (err, contents) => {
     if (err) console.log('Error: ' + error);
-    else
-      fs.writeFile(
-        output,
-        contents.reduce((a, b) => a + b),
-        () => console.log(`Output in file '${output}'`)
+    else {
+      const data = contents.reduce((a, b) => a + b);
+      fs.writeFile(output, data, () => console.log(`Output in file '${output}'`)
       );
+    }
    }
 );
 ```
