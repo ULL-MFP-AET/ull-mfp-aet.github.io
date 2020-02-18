@@ -289,6 +289,10 @@ count(chunk, stop);
 * [Repo de ejemplo fibonacci-worker](https://github.com/ULL-MII-SYTWS-1920/fibonacci-worker)
 * [MDN Tutorial: Using Web Workers](https://developer.mozilla.org/en-US/docs/Web/API/Web_Workers_API/Using_web_workers)
 
+## Async.js
+
+* [Introducción al Módulo Async]({{site.baseurl}}/tema1-introduccion-a-javascript/event-loop/async-js.md)
+
 ## Race Condition
 
 ```
