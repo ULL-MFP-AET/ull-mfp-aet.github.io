@@ -66,6 +66,15 @@ Ejecución:
 ```
 [~/.../ssh2-hello(master)]$ node simp-reto-async-reading-multiple-files.js
 Output in file 'out'
+[~/.../ssh2-hello(master)]$ cat in1
+in1
+hi!
+[~/.../ssh2-hello(master)]$ cat in2
+in2
+[~/.../ssh2-hello(master)]$ cat out
+in1
+hi!
+in2
 ```
 
 #### ¿Como lograría resolver este problema si no dispusiera de `async.js`?
