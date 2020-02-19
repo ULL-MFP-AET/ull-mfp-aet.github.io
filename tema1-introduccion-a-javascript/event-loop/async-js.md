@@ -11,14 +11,14 @@ it can also be used directly in the browser.
 ## Map
 
 ```js
-async.map(['file1','file2','file3'], fs.stat,  function(err, results)  {
+async.map(['file1','file2','file3'], (file, cb) => fs.stat(file, cb),  function(err, results)  {
       // results is now an array of stats for each file
 }); 
 ```
 
 * [Documentation of Map](https://caolan.github.io/async/v3/docs.html#map)
 
-**`map(coll, (item, cb) => iteratee(item,cb), (err, result) => maincallback(err, result))`**
+**`map(coll, (item, cb) => iteratee(item,cb), (err, results) => maincallback(err, results))`**
 
 ```js
     import map from 'async/map';
