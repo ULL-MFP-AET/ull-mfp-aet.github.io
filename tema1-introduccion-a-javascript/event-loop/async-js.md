@@ -18,17 +18,18 @@ async.map(['file1','file2','file3'], fs.stat,  function(err, results)  {
 
 * [Documentation of Map](https://caolan.github.io/async/v3/docs.html#map)
 
-**`map(coll, iteratee, callbackopt)`**
+**`map(coll, (item, cb) => iteratee(item,cb), (err, result) => maincallback(err, result))`**
 
 ```js
-    import map from 'async/map'; 
+    import map from 'async/map';
 ```
 
 1. Produces a new collection of values by mapping each value in `coll` through the `iteratee` function. 
-2. The `iteratee` is called with an item from `coll` and a callback for when it has finished processing. 
-3. Each of these callback takes 2 arguments: an `error`, and the transformed item from `coll`. 
-4. If `iteratee` passes an error to its callback, the main `callback` (for the `map` function) is immediately called with the error.
-5. Note, that since this function applies the `iteratee` to each item in parallel, there is no guarantee that the `iteratee` functions will complete in order. However, the results array will be in the same order as the original `coll`.
+2. The `iteratee` is called with an `item` from `coll` and a callback `cb` for when it has finished processing. 
+3. Each of these callbacks `cb` take 2 arguments: an `error`, and the result of  `iteratee(item)`. 
+4. If `iteratee` passes an error to its callback `cb`, the `maincallback` (for the `map` function) is immediately called with the error.
+5. Note, that since this function applies the `iteratee` to each item in parallel, there is no guarantee that the `iteratee` functions will complete in order. However, **the `results` array will be in the same order as the original `coll`**.
+
 
 ### Ejemplo: Concatenación de ficheros
 
