@@ -33,7 +33,7 @@ $ node repeatable-option-commander.js -c a -c b -c c
 
 ## Observaciones 
 
-Si hace las pruebas de funcionamiento con ficheros de similar tamaño la probabilidad de que su algoritmo produzca una salida que respeta el orden especificado es alta incluso si su algoritmo ordena la salida de los ficheros según el criterio *El primero que termina es el primero que entra*. 
+Si hace las pruebas de funcionamiento con ficheros de similar tamaño la probabilidad de que su algoritmo produzca una salida que respeta el orden especificado es alta, incluso si su algoritmo es erróneo y ordena la salida de los ficheros según el criterio *El primero que termina es el primero que entra*.
 
 Puede simular que los ficheros son de distinto tamaño retrasando las lecturas con un `setTimeout` que espere por un número aleatorio de milisegundos:
 
