@@ -61,6 +61,8 @@ setTimeout(
 Ejecución:
 
 ```
+~/.../eval/p2-t1-c3-filesystem-reto-eduardobritosan(master)]$ cat estas
+estas
 ~/.../eval/p2-t1-c3-filesystem-reto-eduardobritosan(master)]$ node slowread.js 
 reading: 1251.443ms
 estas
