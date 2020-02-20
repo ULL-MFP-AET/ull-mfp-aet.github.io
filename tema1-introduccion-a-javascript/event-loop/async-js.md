@@ -51,7 +51,7 @@ He aquí una solución:
 ```
 
 ```js
-''use strict';
+'use strict';
 
 const fs = require('fs'),
     { map } = require('async'),
