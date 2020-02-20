@@ -73,3 +73,7 @@ estas
 reading: 779.224ms
 estas
 ```
+
+## Soluciones
+
+* [Al apartado 3](https://github.com/ULL-ESIT-PL-1920/reto-readfiles-and-concat/blob/master/concat-file-2.js)
