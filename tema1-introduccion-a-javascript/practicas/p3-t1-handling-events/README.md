@@ -8,7 +8,11 @@
 * [GitHub Pages](https://pages.github.com/). Sigue los tutoriales
 * [Jekyll]({{site.baseurl}}/tema1-introduccion-a-javascript/jekyll). Sigue los tutoriales
 * Elabora tu informe usando Jekyll y GH Pages
-* Instala Jekyll en tu máquina. En el informe inclue una sección acerca del uso de GHPages y Jekyll
+* Instala el generador estático Jekyll en tu máquina. En el informe incluye una sección acerca de tu experiencia del uso de GHPages y Jekyll
+* Haz el despliegue del site con el informe en GitHub usando la rama `gh-pages` y los contenidos en la rama `master`
+  * Puedes usar el módulo npm [gh-pages](https://www.npmjs.com/package/gh-pages) para simplificar el despliegue a GitHub: `gh-pages -d _site`
+* Usa [HTMLProofer](https://github.com/gjtorikian/html-proofer) para testear la salud de  tu website
+* Añade Integración Contínua con  [HTMLProofer y Travis CI](https://github.com/gjtorikian/html-proofer/wiki/Using-HTMLProofer-From-Ruby-and-Travis)
 
 ## Referencias
 

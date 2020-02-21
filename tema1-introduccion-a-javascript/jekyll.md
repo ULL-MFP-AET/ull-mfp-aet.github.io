@@ -179,7 +179,36 @@ When pushed on production, the <code>jekyll build</code> command will use the de
 
 ## Testing
 
+* [HTMLProofer](https://github.com/gjtorikian/html-proofer)
 * [Using HTMLProofer From Ruby and Travis](https://github.com/gjtorikian/html-proofer/wiki/Using-HTMLProofer-From-Ruby-and-Travis)
+
+Sigue un ejemplo de uso:
+
+```
+~/.../sytws1920/ull-mii-sytws-1920.github.io(master)]$ cat Rakefile 
+```
+
+```ruby
+desc "sytws: bundle exec jekyll serve --watch"
+task :serve do
+  sh "bundle exec jekyll serve --future --watch --port 8080 --host 10.6.128.216"
+end
+
+... # more tasks
+
+require 'html-proofer'
+desc "test links in the build web site"
+task :test do
+  sh "bundle exec jekyll build"
+  options = { 
+    :assume_extension => true, 
+    :disable_external => true, 
+    :empty_alt_ignore => true,
+    :file_ignore => [ %r{categories} ]
+  }
+  HTMLProofer.check_directory("./_site", options).run
+end
+```
 
 ## Jekyll as a Web Service
 
