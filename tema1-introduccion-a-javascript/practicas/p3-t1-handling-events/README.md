@@ -4,7 +4,7 @@
 * Realiza los ejercicios:
   * Censored Keyboard:  program a text field (an `input`  tag) where the letters Q, W, and X cannot be typed into
   * Mouse trail: a series of images that would follow the mouse pointer as you moved it across the page.
-  * Tabs:  A tabbed interface. It allows you to select an interface panel by choosing from a number of tabs “sticking out” above an element.
+  * Tabs:  A tabbed interface. It allows you to select an interface panel by choosing from a number of tabs *sticking out* above an element.
 * [GitHub Pages](https://pages.github.com/). Sigue los tutoriales
 * [Jekyll]({{site.baseurl}}/tema1-introduccion-a-javascript/jekyll). Sigue los tutoriales
 * Elabora tu informe usando Jekyll y GH Pages
@@ -17,4 +17,4 @@
   - [Repo de Ejemplo del Capítulo](https://github.com/ULL-ESIT-MII-CA-1718/ejs-chapter14-handling-events)
 * [GitHub Pages](https://pages.github.com/)
 * [Jekyll]({{site.baseurl}}/tema1-introduccion-a-javascript/jekyll)
-* Marijn Haverbeke (el autor de EJS) en su artículo [Flows of energy](http://marijnhaverbeke.nl/blog/eloquent-javascipts-build-system.html) indica que prefiere el formato [asciidoc](http://www.methods.co.nz/asciidoc/). 
+* Marijn Haverbeke (el autor de EJS) en su artículo [Flows of energy](http://marijnhaverbeke.nl/blog/eloquent-javascipts-build-system.html) indica que prefiere el formato [asciidoc](http://www.methods.co.nz/asciidoc/) 
