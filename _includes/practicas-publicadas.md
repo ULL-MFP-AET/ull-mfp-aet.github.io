@@ -1,8 +1,11 @@
 {%- for practica in site.practicas reversed %}
-{%- if practica.myurl contains "https:" %}
+  {%- if practica.myurl contains "https:" %} 
 *  <a href="{{ practica.myurl }}">{{ practica.title | slice: 0, 2  }}:  {{ practica.name }}</a> 
-{%- else %}
+  {%- else %}
 *  <a href="{{site.baseurl}}{{ practica.myurl }}">{{ practica.title | slice: 0, 2  }}:  {{ practica.name }}</a> 
-{%- endif %}
+    {%- if practica.reto %}
+    - <a href="{{site.baseurl}}{{practica.reto.url}}">{{practica.reto.title}}</a>
+    {%- endif %}
+  {%- endif %}
 {%- endfor %}
 

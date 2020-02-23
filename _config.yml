@@ -50,9 +50,15 @@ practicas:
   - title: 03p0-t0-esprima-logging
     myurl: /tema0-introduccion-a-pl/practicas/p0-t0-esprima-logging
     name: Práctica p0-t0-esprima-logging
+    reto:
+      title: Funciones Flecha Gorda
+      url: /tema0-introduccion-a-pl/practicas/p0-t0-esprima-logging-reto
   - title: 04p1-t1-iaas
     myurl: /tema1-introduccion-a-javascript/practicas/p1-t1-iaas/
     name: Práctica p1-t1-iaas
+    reto: 
+      url: /tema1-introduccion-a-javascript/practicas/p1-t1-iaas/reto-async
+      title: Reto Async
   - title: 05p2-t1-vscode
     myurl: /tema1-introduccion-a-javascript/practicas/p2-t1-vscode/
     name: Práctica p2-t1-vscode
