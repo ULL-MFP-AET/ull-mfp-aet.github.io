@@ -1,3 +1,11 @@
+---
+layout: default
+title: p3-t1-handling-events/
+permalink: /tema1-introduccion-a-javascript/practicas/p3-t1-handling-events/
+previous:
+  url: /tema1-introduccion-a-javascript/practicas/p2-t1-vscode/
+---
+
 # Práctica p3-t1-handling-events
 
 * Siguiendo el capítulo *[Handling Events](https://eloquentjavascript.net/15_event.html)*  de EJS escribe tus propios apuntes con ejemplos
