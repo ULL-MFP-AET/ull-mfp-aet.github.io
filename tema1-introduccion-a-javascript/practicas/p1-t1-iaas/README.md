@@ -3,9 +3,6 @@ layout: default
 title: p1-t1-iaas
 formulario: https://campusvirtual.ull.es/1920/mod/assign/view.php?id=187733
 permalink: /tema1-introduccion-a-javascript/practicas/p1-t1-iaas/index.html
-reto: 
-  url: /tema1-introduccion-a-javascript/practicas/p1-t1-iaas/reto-async
-  title: Reto Async
 next:
   url: /tema1-introduccion-a-javascript/practicas/p2-t1-vscode/
 previous: 
