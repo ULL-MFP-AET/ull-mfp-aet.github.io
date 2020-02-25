@@ -17,6 +17,7 @@ series(
 
 ## Referencias 
 
+* [Repo ULL-ESIT-PL/async-js-series-webpack](https://github.com/ULL-ESIT-PL/async-js-series-webpack)
 * [A pure ESM version of Async](https://www.npmjs.com/package/async-es)
 * [Webpack: Getting started](https://webpack.js.org/guides/getting-started/)
 * [Webpack devserver](https://webpack.js.org/configuration/dev-server/)
