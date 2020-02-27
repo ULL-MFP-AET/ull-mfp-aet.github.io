@@ -1,19 +1,100 @@
 # Reto Async Serialize
 
-Lea los contenidos del tutorial [https://github.com/ULL-ESIT-PL/async-js-series-webpack](https://github.com/ULL-ESIT-PL/async-js-series-webpack).
 
-Escriba su propia versión de la función `series` que resuelva el problema de la secuencialización de las callbacks:
+Se dispone de una función `loadScript` que permite la carga de un script:
 
 ```js
-series(
-  [
-     cb => loadScript('/script-1.js', cb),
-     cb => loadScript('/script-2.js', cb),
-     cb => loadScript('/script-3.js', cb)
-   ],
-   (err, results) => p.innerHTML = results.map(s => s.src).join("<br/>")
-);
+    function loadScript(src, callback) {
+        let script = document.createElement('script');
+        script.src = src;
+      
+        script.onload = () => callback(null, script);
+        script.onerror = () => callback(new Error(`Script load error for ${src}`));
+      
+        document.head.append(script);
+      }
 ```
+
+Que puede ser usada así:
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+  </head>
+  <body>
+    <p id="out"></p>
+    <script>
+      'use strict';
+      let out = document.querySelector('p');
+
+      function loadScript(src, callback) {
+        let script = document.createElement('script');
+        script.src = src;
+      
+        script.onload = () => callback(null, script);
+        script.onerror = () => callback(new Error(`Script load error for ${src}`));
+      
+        document.head.append(script);
+      }
+           
+      loadScript('script-1.js', (error, script) => {
+        if (error) {
+          console.error( error ); 
+        } else {
+          const message = `Cool!, the script '${script.src}' is loaded: "${hello()}"`;
+          out.innerHTML = message;
+          console.log(message);
+
+          loadScript('script-2.js', (error, script) => {
+            if (error) {
+              console.error( error ); 
+            } else {
+              const message = `Great!, the script '${script.src}' is loaded: "${world()}"`;
+              out.innerHTML += `<br/>${message}`;
+              console.log(message);
+              loadScript('script-3.js', (error, script) => {
+                if (error) {
+                  console.error( error );
+                } else {
+                  const message = `Unbelievable!, the script '${script.src}' is loaded: "${ull()}"`;
+                  out.innerHTML += `<br/>${message}`;
+                  console.log(message);
+                  // ...continue after all scripts are loaded 
+                }
+              });
+            }
+          })
+        }
+      });
+      </script>      
+  </body>  
+</html>
+```
+
+Puede encontrar mas detalles en el tutorial [https://github.com/ULL-ESIT-PL/async-js-series-webpack](https://github.com/ULL-ESIT-PL/async-js-series-webpack).
+
+1. Escriba una función 
+
+  `loadScripts(['urlscript0', 'urlscript1', ..., 'urlscriptN'], (err, results) => finalCallback)`
+
+  que carga los scripts especificados en el array en secuencia y llama a la callback pasada como último argumento bien con un error si lo hubo o con el array de resultados.
+
+2. Escriba su propia versión de la función `series` que resuelva el problema de la secuencialización de las callbacks:
+
+  ```js
+  series(
+    [
+        cb => loadScript('/script-1.js', cb),
+        cb => loadScript('/script-2.js', cb),
+        cb => loadScript('/script-3.js', cb)
+    ],
+    (err, results) => p.innerHTML = results.map(s => s.src).join("<br/>")
+   );
+   ```
 
 ## Referencias 
 
