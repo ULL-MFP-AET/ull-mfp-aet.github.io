@@ -90,9 +90,9 @@ Puede encontrar mas detalles en el tutorial [https://github.com/ULL-ESIT-PL/asyn
     ```js
     series(
         [
-            cb => loadScript('/script-1.js', cb),
-            cb => loadScript('/script-2.js', cb),
-            cb => loadScript('/script-3.js', cb)
+            cb => loadScript('script-1.js', cb),
+            cb => loadScript('script-2.js', cb),
+            cb => loadScript('script-3.js', cb)
         ],
         (err, results) => p.innerHTML = results.map(s => s.src).join("<br/>")
     );
