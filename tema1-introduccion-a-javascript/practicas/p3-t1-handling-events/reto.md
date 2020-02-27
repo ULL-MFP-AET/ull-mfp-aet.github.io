@@ -104,3 +104,4 @@ Puede encontrar mas detalles en el tutorial [https://github.com/ULL-ESIT-PL/asyn
 * [A pure ESM version of Async](https://www.npmjs.com/package/async-es)
 * [Webpack: Getting started](https://webpack.js.org/guides/getting-started/)
 * [Webpack devserver](https://webpack.js.org/configuration/dev-server/)
+* [Solución](https://github.com/ULL-ESIT-PL/async-js-series-webpack-private/blob/private/load-scripts.html)
