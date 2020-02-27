@@ -97,6 +97,7 @@ Puede encontrar mas detalles en el tutorial [https://github.com/ULL-ESIT-PL/asyn
         (err, results) => p.innerHTML = results.map(s => s.src).join("<br/>")
     );
     ```
+    
 ## Observaciones 
 
 Si hace las pruebas de funcionamiento con scripts de similar tamaño la probabilidad de que su algoritmo produzca una salida que respeta el orden especificado es alta, incluso si su algoritmo es erróneo.
