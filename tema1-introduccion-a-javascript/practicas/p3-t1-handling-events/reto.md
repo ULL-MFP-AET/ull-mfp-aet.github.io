@@ -1,6 +1,5 @@
 # Reto Async Serialize
 
-
 Se dispone de una función `loadScript` que permite la carga de un script:
 
 ```js
@@ -97,12 +96,12 @@ Puede encontrar mas detalles en el tutorial [https://github.com/ULL-ESIT-PL/asyn
         (err, results) => p.innerHTML = results.map(s => s.src).join("<br/>")
     );
     ```
-    
+
 ## Observaciones 
 
 Si hace las pruebas de funcionamiento con scripts de similar tamaño la probabilidad de que su algoritmo produzca una salida que respeta el orden especificado es alta, incluso si su algoritmo es erróneo.
 
-Puede simular que los scripts son de distinto tamaño retrasando lainiciación de las cargas con un `setTimeout` que espere por un número aleatorio de milisegundos:
+Puede simular que los scripts son de distinto tamaño retrasando la iniciación de las cargas con un `setTimeout` que espere por un número aleatorio de milisegundos:
 
 ```
   [~/.../load-script-seq(private)]$ pwd
@@ -126,10 +125,14 @@ Puede simular que los scripts son de distinto tamaño retrasando lainiciación d
 ```
 
 
-## Referencias 
+## Referencias
 
 * [Repo ULL-ESIT-PL/async-js-series-webpack](https://github.com/ULL-ESIT-PL/async-js-series-webpack)
 * [A pure ESM version of Async](https://www.npmjs.com/package/async-es)
 * [Webpack: Getting started](https://webpack.js.org/guides/getting-started/)
 * [Webpack devserver](https://webpack.js.org/configuration/dev-server/)
 * [Solución](https://github.com/ULL-ESIT-PL/async-js-series-webpack-private/blob/private/load-scripts.html)
+  * ```
+      [~/.../load-script-seq(private)]$ pwd -P
+      /Users/casiano/local/src/javascript/learning/async/load-script-seq
+    ```
