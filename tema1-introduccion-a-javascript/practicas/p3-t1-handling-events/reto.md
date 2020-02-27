@@ -79,22 +79,24 @@ Puede encontrar mas detalles en el tutorial [https://github.com/ULL-ESIT-PL/asyn
 
 1. Escriba una función 
 
-  `loadScripts(['urlscript0', 'urlscript1', ..., 'urlscriptN'], (err, results) => finalCallback)`
+    ```js
+    loadScripts(['urlscript0', 'urlscript1', ..., 'urlscriptN'], (err, results) => finalCallback)
+    ```
 
-  que carga los scripts especificados en el array en secuencia y llama a la callback pasada como último argumento bien con un error si lo hubo o con el array de resultados.
+    que carga los scripts especificados en el array en secuencia y llama a la callback pasada como último argumento bien con un error si lo hubo o con el array de resultados.
 
-2. Escriba su propia versión de la función `series` que resuelva el problema de la secuencialización de las callbacks:
+2. Escriba su propia versión de la función `series` (con la misma interfaz que su equivalente de Async.js) que resuelva el problema de la secuencialización de las callbacks:
 
-  ```js
-  series(
-    [
-        cb => loadScript('/script-1.js', cb),
-        cb => loadScript('/script-2.js', cb),
-        cb => loadScript('/script-3.js', cb)
-    ],
-    (err, results) => p.innerHTML = results.map(s => s.src).join("<br/>")
-   );
-   ```
+    ```js
+    series(
+        [
+            cb => loadScript('/script-1.js', cb),
+            cb => loadScript('/script-2.js', cb),
+            cb => loadScript('/script-3.js', cb)
+        ],
+        (err, results) => p.innerHTML = results.map(s => s.src).join("<br/>")
+    );
+    ```
 
 ## Referencias 
 
