@@ -77,13 +77,13 @@ Que puede ser usada así:
 
 Puede encontrar mas detalles en el tutorial [https://github.com/ULL-ESIT-PL/async-js-series-webpack](https://github.com/ULL-ESIT-PL/async-js-series-webpack).
 
-1. Escriba una función 
+1. Escriba una función `loadScripts` 
 
     ```js
-    loadScripts(['urlscript0', 'urlscript1', ..., 'urlscriptN'], (err, results) => finalCallback)
+    loadScripts(['script-1.js', 'script-2.js', 'script-3.js'], (err, results) => out.innerHTML = results.map(s => s.src).join("<br/>"))
     ```
 
-    que carga los scripts especificados en el array en secuencia y llama a la callback pasada como último argumento bien con un error si lo hubo o con el array de resultados.
+    que carga los scripts especificados en el array en secuencia y llama a la callback pasada como último argumento bien con un error si lo hubo o con el array de resultados (los scripts).
 
 2. Escriba su propia versión de la función `series` (con la misma interfaz que su equivalente de Async.js) que resuelva el problema de la secuencialización de las callbacks:
 
