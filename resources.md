@@ -40,6 +40,9 @@
 ### VPN
 
 - [Servicio de vpn: guías de configuración](https://www.ull.es/servicios/stic/2016/05/10/servicio-de-vpn-de-la-ull/)
+  *   [Guía de configuración del cliente VPN GlobalProtect. Sistema Operativo Windows](https://drive.google.com/open?id=0B3mzWpxzbJD1Zm9TdmpXSV9mdGs)
+  *   [Guía de configuración del cliente VPN GlobalProtect. Sistema Operativo Mac OSX](https://drive.google.com/file/d/0B3mzWpxzbJD1VTZhUkFVbUI2NWc/view?usp=sharing)
+  *   [Guía de configuración del cliente VPN para Linux, Android e IOS (Ipad, Iphone) con IPSEC](https://drive.google.com/open?id=0B3mzWpxzbJD1Z1p4OWtQSFFzOGs)
 
 ### Mapa de Recursos
 
