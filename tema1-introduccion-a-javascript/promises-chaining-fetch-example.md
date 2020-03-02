@@ -61,4 +61,4 @@ fetch('https://javascript.info/article/promise-chaining/user.json')
 
 HINT: To make the chain extendable, we need to return a promise that resolves when the avatar finishes showing.
 
-* [solution](solution.html)
+* [solution]({{site.sytws.url}}/tema2-async/exercises/promises/promise-chaining/solution.html)
