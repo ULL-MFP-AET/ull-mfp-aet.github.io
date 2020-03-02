@@ -42,7 +42,9 @@ if(window.Promise){
         console.log('Promise not available');
 ```
 
-### apuntes/tema1-introduccion/practicas/p2-t1-c3-file-system/event-loop/promise-ejemplo/promise-job-queue.js
+### Orden. Promises versus callbacks
+
+`/apuntes/tema1-introduccion/practicas/p2-t1-c3-file-system/event-loop/promise-ejemplo/promise-job-queue.js`
 
 Promises that resolve before the current function ends will be executed right after the current function.
 
@@ -67,7 +69,9 @@ promise.then(function(resolve) {console.log(3)});
 console.log('b');
 ```
 
-### unhandled-promise-rejection.js
+### Unhandled Promise Rejection
+
+`unhandled-promise-rejection.js`
 
 ```
 [~/.../uai2015/promise-ejemplo(master)]$ pwd -P
