@@ -59,6 +59,10 @@ fetch('https://javascript.info/article/promise-chaining/user.json')
 
 **How can we do something after the avatar has finished showing and gets removed?**
 
+How can we do something after the avatar has finished showing and gets removed? 
+
+For instance, we’d like to show a form for editing that user or something else. As of now, there’s no way.
+
 HINT: To make the chain extendable, we need to return a promise that resolves when the avatar finishes showing.
 
 * [solution]({{site.sytws.url}}/tema2-async/exercises/promises/promise-chaining/solution.html)
