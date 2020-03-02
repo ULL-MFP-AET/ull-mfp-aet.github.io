@@ -24,6 +24,8 @@ profesor_github: crguezl
 bull_permanente: https://puntoq.ull.es/permalink/f
 dsi:
   apuntes: https://ull-esit-dsi-1819.github.io/dsi-1819/
+sytws:
+  url: https://ull-mii-sytws-1920.github.io/
 disqus: 
   url: https://procesadores-de-lenguajes.disqus.com/embed.js
   comments: true

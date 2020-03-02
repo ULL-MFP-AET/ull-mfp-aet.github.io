@@ -13,7 +13,7 @@ The promise resolves with a `response` object when the remote server responds wi
 
 To read the full response, we should call a method `response.text()`: it returns a promise that **resolves when the full text downloaded from the remote server, with that text as a result**.
 
-* See code deployed: [simple-request.html](simple-request.html)
+* See code deployed: [simple-request.html]({{site.sytw.url}}/tema2-async/exercises/promises/promise-chaining/simple-request.html)
 
 ```js
 <!DOCTYPE html><script>
@@ -33,7 +33,7 @@ fetch('https://javascript.info/article/promise-chaining/user.json')
 ```
 Once we got the loaded user, we can make one more request to GitHub, load the user profile and show the avatar:
 
-* See code deployed: [github.html](github.html)
+* See code deployed: [github.html]({{site.sytw.url}}/tema2-async/exercises/promises/promise-chaining/github.html)
 
 ```js
 <!DOCTYPE html><script>
