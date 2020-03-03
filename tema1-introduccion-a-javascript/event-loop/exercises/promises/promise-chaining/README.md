@@ -56,9 +56,44 @@ fetch('https://javascript.info/article/promise-chaining/user.json')
   .then(githubUser => alert(`Finished showing ${githubUser.name}`));
 </script>
 ```
+Finally, we can split the code into reusable functions:
 
-**How can we do something after the avatar has finished showing and gets removed?**
+```js
+<!DOCTYPE html><script>
+    'use strict';
+    function loadJson(url) {
+      return fetch(url)
+        .then(response => response.json());
+    }
+    
+    function loadGithubUser(name) {
+      return fetch(`https://api.github.com/users/${name}`)
+        .then(response => response.json());
+    }
+    
+    function showAvatar(githubUser) {
+      return new Promise(function(resolve, reject) {
+        let img = document.createElement('img');
+        img.src = githubUser.avatar_url;
+        img.className = "promise-avatar-example";
+        document.body.append(img);
+    
+        setTimeout(() => {
+          img.remove();
+          resolve(githubUser);
+        }, 3000);
+      });
+    }
+    
+    // Use them:
+    loadJson('/article/promise-chaining/user.json')
+      .then(user => loadGithubUser(user.name))
+      .then(showAvatar)
+      .then(githubUser => alert(`Finished showing ${githubUser.name}`));
+      // ...
+    </script>
+```
 
-HINT: To make the chain extendable, we need to return a promise that resolves when the avatar finishes showing.
+See the file:
 
 * [solution](solution.html)
