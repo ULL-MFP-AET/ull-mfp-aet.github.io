@@ -1,6 +1,8 @@
 ## Examples of Promises
 
-### local/src/uai/uai2015/promise-ejemplo
+### Ejemplo Sencillo  (Chuck Norris jokes service)
+
+`local/src/uai/uai2015/promise-ejemplo`
 
 * [A Gist with a very Simple Example of How to make and use a Promise](https://gist.github.com/crguezl/f5c52c8b72b4722e374a8af10e9d2b5d) (Chuck Norris jokes service)
 * Also in `/Users/casiano/local/src/javascript/learning/promises/sitepoint-tutorial`
