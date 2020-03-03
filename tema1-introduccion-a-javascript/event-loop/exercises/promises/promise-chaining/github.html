@@ -16,5 +16,5 @@ fetch('https://javascript.info/article/promise-chaining/user.json')
     }, 3000);
   }))
   // triggers after 3 seconds
-  .then(githubUser => alert(`Finished showing ${githubUser.name}`));
+  .then(githubUser => console.log(`Finished showing ${githubUser.name}`));
 </script>

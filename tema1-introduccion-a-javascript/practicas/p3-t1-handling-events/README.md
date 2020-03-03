@@ -4,6 +4,8 @@ title: p3-t1-handling-events/
 permalink: /tema1-introduccion-a-javascript/practicas/p3-t1-handling-events/
 previous:
   url: /tema1-introduccion-a-javascript/practicas/p2-t1-vscode/
+next:
+  url: /tema1-introduccion-a-javascript/practicas/p2-t1-testing/
 ---
 
 # Práctica p3-t1-handling-events

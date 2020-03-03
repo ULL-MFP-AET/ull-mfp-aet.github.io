@@ -1,11 +1,19 @@
+---
+layout: default
+title: p2-t1-testing
+permalink: /tema1-introduccion-a-javascript/practicas/p2-t1-testing/
+previous:
+  url: /tema1-introduccion-a-javascript/practicas/p2-t1-handling-events/
+---
+
 # Práctica: Transforming Data and Testing Continuously (p2-t1-testing)
 
-* In this lab, you’ll learn how to use Node.js to transform XML data into JSON and line-delimited JSON (LDJ). 
-* Deberá primero estar autenticado en [BULL PuntoQ](https://www.ull.es/servicios/biblioteca/servicios/puntoq/), luego lea:
+In this lab, you’ll learn how to use Node.js to transform XML data into JSON and line-delimited JSON (LDJ). 
 
-    [Capítulo 5 "Transforming Data and Testing Continuously" de *Node.JS The Right Way*](https://proquest-safaribooksonline-com.accedys2.bbtk.ull.es/book/web-development/9781680505344/part-iidot-working-with-data/chp_databases_html#X2ludGVybmFsX0h0bWxWaWV3P3htbGlkPTk3ODE2ODA1MDUzNDQlMkZjaHBfdHJhbnNmb3JtaW5nX2RhdGFfaHRtbCZxdWVyeT0=)
-
-    en Safari y resuelva los problemas en la secciónes *Extracting Classification Codes* y *Extracting Sources*
+Deberá primero estar autenticado en [BULL PuntoQ](https://www.ull.es/servicios/biblioteca/servicios/puntoq/), luego lea:
+    
+El Capítulo 5 "Transforming Data and Testing Continuously" de [Node.js 8 the Right Way]({{site.bull_permanente}}/15vbjs7/ullsfx4340000000247287). Jim Wilson. 2018  
+y resuelva los problemas en la secciónes *Extracting Classification Codes* y *Extracting Sources*
 
 * En el repo creado al aceptar la assignación deberá dejar
   - Los códigos de los ejemplos realizados durante la lectura, 
@@ -255,10 +263,11 @@ Finally, extend the book object produced in `parse-rdf.js` to include this data 
 
 * [GitHub repo ULL-MII-CA-1819/nodejs-the-right-way](https://github.com/ULL-MII-CA-1819/nodejs-the-right-way)
 * [BULL PuntoQ](https://www.ull.es/servicios/biblioteca/servicios/puntoq/)
-* [Safari. Chapter 5
-Transforming Data and Testing Continuously](https://proquest-safaribooksonline-com.accedys2.bbtk.ull.es/book/web-development/9781680505344/part-iidot-working-with-data/chp_databases_html#X2ludGVybmFsX0h0bWxWaWV3P3htbGlkPTk3ODE2ODA1MDUzNDQlMkZjaHBfdHJhbnNmb3JtaW5nX2RhdGFfaHRtbCZxdWVyeT0=)
+* [Node.js 8 the Right Way]({{site.bull_permanente}}/15vbjs7/ullsfx4340000000247287)
 
+<!--
 ## Solución y Reto
 
 * [Una solución](https://github.com/ULL-ESIT-PL-1819/p2-t1-testing-crguezl) (No accesible en este momento)
 * Durante la hora de práctica, realice el [reto](reto) que le propone el profesor
+-->
