@@ -2,6 +2,8 @@
 
 ## Chapter Promises, async/await of the book The Modern JavaScript Tutorial. 
 
+### Callbacks Problems
+
 * [javascript.info: Introduction: callbacks](https://javascript.info/callbacks)
   *   [Callback in callback](https://javascript.info/callbacks#callback-in-callback)
   *   [Handling errors](https://javascript.info/callbacks#handling-errors)
@@ -11,11 +13,17 @@
   * Chuck Norris jokes example (UAI 2015):
     * [index.html](https://github.com/ULL-MII-SYTWS-1920/promise-example/blob/master/index.html)
     * [script.js](https://github.com/ULL-MII-SYTWS-1920/promise-example/blob/master/script.js)
+
+### Promise Chaining
+
 * [Promise Chaining](https://javascript.info/promise-chaining)
   * A call to `promise.then` returns a promise, so that we can call the next `.then` on it.
   * A handler, used in `.then(handler)` may create and return a promise. In that case further handlers wait until it settles, and then get its result.
   * [Promises Chaining fetch example]({{site.baseurl}}/tema1-introduccion-a-javascript/promises-chaining-fetch-example)
-  * [Ejercicio: How can we do something after the avatar has finished showing and gets removed?](https://github.com/ULL-MII-SYTWS-1920/ull-mii-sytws-1920.github.io/tree/master/tema2-async/exercises/promises/promise-chaining)
+  * [Repo ULL-MII-SYTWS-1920/ull-mii-sytws-1920.github.io: exercises/promises/promise-chaining](https://github.com/ULL-MII-SYTWS-1920/ull-mii-sytws-1920.github.io/tree/master/tema2-async/exercises/promises/promise-chaining)
+
+### Error Handling
+
 * [Error handling with promises](https://javascript.info/promise-error-handling)
   * [Exercises: Exceptions and Promises](https://github.com/ULL-MII-SYTWS-1920/ull-mii-sytws-1920.github.io/tree/master/tema2-async/exercises/promises/exception-inside-promise)
 * [Promise API](https://javascript.info/promise-api)

@@ -56,6 +56,7 @@ fetch('https://javascript.info/article/promise-chaining/user.json')
   .then(githubUser => alert(`Finished showing ${githubUser.name}`));
 </script>
 ```
+
 Finally, we can split the code into reusable functions:
 
 ```js
