@@ -40,9 +40,20 @@
 
 ### [Promise API](https://javascript.info/promise-api)
 
+<!-- RETO
+* [Promise.all exercise]({{site.baseurl}}/tema1-introduccion-a-javascript/event-loop/exercises/promises/promise-all)
+-->
+
+
 ### [Promisification](https://javascript.info/promisify)
 
+<!-- RETO
   * [Ejercicio](https://github.com/ULL-MII-SYTWS-1920/ull-mii-sytws-1920.github.io/tree/master/tema2-async/exercises/promises/promisify)
+
+[~/.../promises(master)]$ cd promisify/
+[~/.../promisify(master)]$ pwd -P
+/Users/casiano/campus-virtual/1920/pl1920/apuntes/tema1-introduccion-a-javascript/event-loop/exercises/promises/promisify
+-->
 
 
 ### [Microtasks](https://javascript.info/microtask-queue)
