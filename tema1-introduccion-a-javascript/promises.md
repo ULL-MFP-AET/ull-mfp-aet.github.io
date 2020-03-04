@@ -14,6 +14,9 @@
     * [index.html](https://github.com/ULL-MII-SYTWS-1920/promise-example/blob/master/index.html)
     * [script.js](https://github.com/ULL-MII-SYTWS-1920/promise-example/blob/master/script.js)
 
+* [Very Simple Examples of Promises](promise-examples) (uai2015)
+
+
 ### Promise Chaining
 
 * [Promise Chaining](https://javascript.info/promise-chaining)
@@ -25,15 +28,27 @@
 
 ### Error Handling
 
-* [Error handling with promises](https://javascript.info/promise-error-handling)
-  * [Exercises: Exceptions and Promises](https://github.com/ULL-MII-SYTWS-1920/ull-mii-sytws-1920.github.io/tree/master/tema2-async/exercises/promises/exception-inside-promise)
-* [Promise API](https://javascript.info/promise-api)
-* [Promisification](https://javascript.info/promisify)
-  * [Ejercicio](https://github.com/ULL-MII-SYTWS-1920/ull-mii-sytws-1920.github.io/tree/master/tema2-async/exercises/promises/promisify)
-* [Microtasks](https://javascript.info/microtask-queue)
-* [Async/await](https://javascript.info/async-await)
+[Error handling with promises](https://javascript.info/promise-error-handling)
 
-* [Very Simple Examples of Promises](promise-examples) (uai2015)
+```
+[~/.../exception-inside-promise(master)]$ pwd -P
+/Users/casiano/campus-virtual/1920/pl1920/apuntes/tema1-introduccion-a-javascript/event-loop/exercises/promises/exception-inside-promise
+```
+
+[Exercises: Exceptions and Promises](https://github.com/ULL-MII-SYTWS-1920/ull-mii-sytws-1920.github.io/tree/master/tema2-async/exercises/promises/exception-inside-promise)
+
+
+### [Promise API](https://javascript.info/promise-api)
+
+### [Promisification](https://javascript.info/promisify)
+
+  * [Ejercicio](https://github.com/ULL-MII-SYTWS-1920/ull-mii-sytws-1920.github.io/tree/master/tema2-async/exercises/promises/promisify)
+
+
+### [Microtasks](https://javascript.info/microtask-queue)
+
+### [Async/await](https://javascript.info/async-await)
+
 
 ## Ejercicios
 
