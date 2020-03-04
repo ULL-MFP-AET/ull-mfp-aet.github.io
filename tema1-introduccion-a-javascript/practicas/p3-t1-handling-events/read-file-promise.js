@@ -1,6 +1,7 @@
 const fs = require('fs');
 const path = require('path');
 const programName = path.basename(__filename);
+
 const getData = (fileName, type) =>
   new Promise((resolve, reject) =>
     fs.readFile(fileName, type, (err, data) => {
