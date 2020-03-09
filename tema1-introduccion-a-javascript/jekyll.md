@@ -31,13 +31,97 @@ Recuerda que GitHub provee un servicio de Hosting de páginas estáticas ([GitHu
 
 ## Tutorials
 
-*   [Tutorials](https://jekyllrb.com/tutorials/home/)
-*   [Video Walkthroughs](https://jekyllrb.com/tutorials/video-walkthroughs/)
-*   [Navigation](https://jekyllrb.com/tutorials/navigation/)
-*   [Order of interpretation](https://jekyllrb.com/tutorials/orderofinterpretation/)
-*   [Custom 404 Page](https://jekyllrb.com/tutorials/custom-404-page/)
-*   [Convert an HTML site to Jekyll](https://jekyllrb.com/tutorials/convert-site-to-jekyll/)
-*   [Using Jekyll with Bundler](https://jekyllrb.com/tutorials/using-jekyll-with-bundler/)
+###   [Tutorials](https://jekyllrb.com/tutorials/home/)
+###   [Video Walkthroughs](https://jekyllrb.com/tutorials/video-walkthroughs/)
+###  [Navigation](https://jekyllrb.com/tutorials/navigation/)
+###  [Order of interpretation](https://jekyllrb.com/tutorials/orderofinterpretation/)
+  
+### [Custom 404 Page](https://jekyllrb.com/tutorials/custom-404-page/)
+
+#### An Example of a 404 page
+
+```
+~/.../pl1920/apuntes(master)]$ cat 404.md 
+```
+
+```md
+---
+layout: error
+title: Error
+---
+# Error: ¡Ay Diós mío!
+
+## Aún no he escrito esta página. 
+
+
+<div>
+<style>
+img, #quote, #comment-cat {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+#author {
+  float: right;
+}
+</style>
+
+
+<div id="comment-cat"></div>
+<div id="cat"></div>
+<br/>
+<div id="quote"></div>
+<div id="author"></div>
+
+
+<script type="text/javascript">
+
+/*
+  https://docs.thecatapi.com/ 
+*/
+const URL = 'https://api.thecatapi.com/v1/images/search?size=full';
+
+(async function() {
+  try {
+    
+    // CAT 
+    let divTitle = document.getElementById("comment-cat");
+    
+    let divcat = document.getElementById("cat");
+    let response = await fetch(URL, {
+       headers: {
+       'x-api-key': "56a4f1cc-7f60-468d-9dba-e4b6f04b7c7d"
+       }
+    });
+    let cat = await response.json();
+    // console.log(cat);   
+    let img = document.createElement("img");
+    let title = document.createElement("h2");
+    title.innerText = "Consuélate con un gatito";   
+    divTitle.append(title);
+    img.src = cat[0].url;
+    divcat.appendChild(img);   
+
+    // QUOTE
+    const quoteDiv = document.getElementById("quote");
+    const authorDiv = document.getElementById("author");
+    
+    const quoteRes = await fetch('https://api.quotable.io/random');
+    const data = await quoteRes.json();
+    quoteDiv.innerHTML = `<h2>${data.content}</h2>`;
+    authorDiv.innerHTML = `<h3>—${data.author}</h3>`;
+  }
+  catch(e) { 
+    console.log(e);
+  }
+})();
+</script>
+
+</div>
+```
+
+### [Convert an HTML site to Jekyll](https://jekyllrb.com/tutorials/convert-site-to-jekyll/)
+### [Using Jekyll with Bundler](https://jekyllrb.com/tutorials/using-jekyll-with-bundler/)
 
 ## The Jekyll Conference
 
