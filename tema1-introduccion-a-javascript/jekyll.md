@@ -2,6 +2,8 @@
 
 A **static site generator (SSG)** (see [https://www.staticgen.com/](https://www.staticgen.com/) is a compromise between using a hand-coded static site and a full content management system (CMS). You generate an HTML-only website using raw data (such as Markdown files) and templates. The resulting build is transferred to your live server.
 
+![](https://d1qmdf3vop2l07.cloudfront.net/quiet-lily.cloudvent.net/compressed/_min_/ac88548cb0c955ba3f21d06b34647a83.png)
+
 Jekyll, [Elevently](https://www.11ty.dev/docs/) and [hexo](https://hexo.io/docs/) are examples of SSG.
 
 Recuerda que GitHub provee un servicio de Hosting de páginas estáticas ([GitHub Pages](https://pages.github.com/)) que se sirven mediante Jekyll.
