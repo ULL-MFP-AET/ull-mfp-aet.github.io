@@ -39,6 +39,9 @@ temas:
   - title: 'Tema 1: Introducción a JavaScript'
     url: /tema1-introduccion-a-javascript/
     hover: 'Intro-a-js'
+  - title: 'Tema 2: Expresiones Regulares y Análisis Léxico'
+    url: /tema2-expresiones-regulares-y-analisis-lexico/
+    hover: 'tema2-expresiones-regulares-y-analisis-lexico'
 practicas:
   - title: 00cuestionarioghalu
     myurl: https://campusvirtual.ull.es/1920/mod/assign/view.php?id=14658
