@@ -1,8 +1,8 @@
 ## Temas
 
 {% for tema in site.temas %}
-* [{{tema.title}}]({{ tema.url }})
-{%- endfor %}
+  <li><a href="{{site.baseurl}}{{tema.url}}" title="{{ tema.hover }}">{{ tema.title }}</a></li>
+{% endfor %}
 
 ## Clases 
 
