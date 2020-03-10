@@ -9,6 +9,8 @@ Jekyll, [Elevently](https://www.11ty.dev/docs/) and [hexo](https://hexo.io/docs/
 Recuerda que GitHub provee un servicio de Hosting de páginas estáticas ([GitHub Pages](https://pages.github.com/)) que se sirven mediante Jekyll.
 
 * [Jekyll docs](https://jekyllrb.com/docs/)
+* [Using Jekyll with Bundler](https://jekyllrb.com/tutorials/using-jekyll-with-bundler/)
+
 
 ## Content 
 
