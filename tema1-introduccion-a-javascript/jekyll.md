@@ -11,8 +11,12 @@ Recuerda que GitHub provee un servicio de Hosting de páginas estáticas ([GitHu
 * [Jekyll docs](https://jekyllrb.com/docs/)
 * [Using Jekyll with Bundler](https://jekyllrb.com/tutorials/using-jekyll-with-bundler/)
 
+## Jekyll: Como preparar un informe de Prácticas usando GitHub Pages
 
-## Content 
+* [Como preparar un informe de Prácticas usando Jekyll y GitHub Pages](preparar-informe-de-practicas-con-ghpages)
+
+
+## Jekyll Documentation and Tutorials 
 
 *   [Pages](https://jekyllrb.com/docs/pages/)
 *   [Posts](https://jekyllrb.com/docs/posts/)
