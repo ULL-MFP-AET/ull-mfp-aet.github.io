@@ -70,3 +70,6 @@ cumplen una determinada afirmación:
  expect(book.authors).to.all.have.property("name").and.all.have.a.property("webpages");
  ```
 
+# Solución 
+
+* [Una solución](https://github.com/ULL-ESIT-PL-1819/p2-t1-testing-crguezl) (privado)
