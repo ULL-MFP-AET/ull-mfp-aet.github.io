@@ -267,6 +267,8 @@ Finally, extend the book object produced in `parse-rdf.js` to include this data 
 * [Node.js 8 the Right Way]({{site.bull_permanente}}/15vbjs7/ullsfx4340000000247287)
 * [cheerio module](https://github.com/cheeriojs/cheerio#readme)
 
+
+
 <!--
 ## Solución y Reto
 
