@@ -19,7 +19,7 @@ y resuelva los problemas en la secciónes *Extracting Classification Codes* y *E
   - Los códigos de los ejemplos realizados durante la lectura, 
   - Capturas de ejecuciones
   - Las pruebas,
-  - Añada integración contínua con [Travis](https://crguezl.github.io/ull-esit-1617/_book/apuntes/pruebas/travis.html) (Haga un badge en su README.md)
+  - Añada integración contínua con [GitHub Actions]({{site.baseurl}}/tema1-introduccion-a-javascript/github-actions.html) o bien con [Travis](https://crguezl.github.io/ull-esit-1617/_book/apuntes/pruebas/travis.html) (Haga un badge en su README.md) 
   - Las soluciones a los problemas planteados 
   - Un `gulpfile.js` para la ejecución de las tareas
   - Un `README.md` con un tutorial explicando lo que ha aprendido. 
