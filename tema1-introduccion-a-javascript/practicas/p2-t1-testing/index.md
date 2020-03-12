@@ -266,7 +266,7 @@ Finally, extend the book object produced in `parse-rdf.js` to include this data 
 * [BULL PuntoQ](https://www.ull.es/servicios/biblioteca/servicios/puntoq/)
 * [Node.js 8 the Right Way]({{site.bull_permanente}}/15vbjs7/ullsfx4340000000247287)
 * [cheerio module](https://github.com/cheeriojs/cheerio#readme)
-* [Book 132 is *The Art of War*](pg132-rdf.html)
+* [Book 132 is *The Art of War*: pg132.rdf](pg132-rdf.html)
 
 
 
