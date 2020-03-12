@@ -261,7 +261,7 @@ Finally, extend the book object produced in `parse-rdf.js` to include this data 
 
 ## Recursos
 
-* [Apuntes. Sección Pruebas]({{site.baseurl}}/introduccion/tema1-introduccion-a-javascript/pruebas.html)
+* [Apuntes. Sección Pruebas]({{site.baseurl}}/tema1-introduccion-a-javascript/pruebas.html)
 * [GitHub repo ULL-MII-CA-1819/nodejs-the-right-way](https://github.com/ULL-MII-CA-1819/nodejs-the-right-way) (private)
 * [BULL PuntoQ](https://www.ull.es/servicios/biblioteca/servicios/puntoq/)
 * [Node.js 8 the Right Way]({{site.bull_permanente}}/15vbjs7/ullsfx4340000000247287)
