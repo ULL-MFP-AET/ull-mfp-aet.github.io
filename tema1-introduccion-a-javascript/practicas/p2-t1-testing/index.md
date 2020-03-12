@@ -128,7 +128,7 @@ total 24
 -rw-r--r--  1 casiano  staff  10868 25 oct 10:00 pg100.rdf
 ```  
 
-Book 132 is *The Art of War*:
+[Book 132 is *The Art of War*](pg132-rdf.html):
 
 ```xml
 [~/local/src/CA/sol-nodejs-the-right-way/transforming-data-and-testing-continuously-chapter-5(master)]$ head -20 data/cache/epub/132/pg132.rdf
