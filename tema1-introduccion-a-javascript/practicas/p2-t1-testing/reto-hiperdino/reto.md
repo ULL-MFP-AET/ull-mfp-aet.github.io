@@ -40,11 +40,11 @@ la ruta será `https://online.hiperdino.es/c9495/alimentacion/:categoria-de-alim
 
 Estas son algunas categorías de alimentos reconocidas por Hiperdino:
 
-* [arroz](https://online.hiperdino.es/c9495/alimentacion/arroz) 
-* [aceites](https://online.hiperdino.es/c9495/alimentacion/aceites) 
-* [azucar-y-edulcorantes](https://online.hiperdino.es/c9495/alimentacion/azucar-y-edulcorantes) 
-* [cacao-y-cafe](https://online.hiperdino.es/c9495/alimentacion/cacao-y-cafe) 
-* [conservas-fruta-y-dulces](https://online.hiperdino.es/c9495/alimentacion/conservas-fruta-y-dulces)
+* [arroz](https://online.hiperdino.es/c9495/alimentacion/arroz.html) 
+* [aceites](https://online.hiperdino.es/c9495/alimentacion/aceites.html) 
+* [azucar-y-edulcorantes](https://online.hiperdino.es/c9495/alimentacion/azucar-y-edulcorantes.html) 
+* [cacao-y-cafe](https://online.hiperdino.es/c9495/alimentacion/cacao-y-cafe.html) 
+* [conservas-fruta-y-dulces](https://online.hiperdino.es/c9495/alimentacion/conservas-fruta-y-dulces.html)
 
 En general, se puede saber que categorías de alimentos están disponibles visitando la página
 [https://www.hiperdino.es/](https://www.hiperdino.es/). En la izquierda aparece un menu navgable con los categorías de alimentos. Cuando visite esta página,
