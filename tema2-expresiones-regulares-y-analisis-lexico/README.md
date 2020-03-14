@@ -4,6 +4,9 @@
 
 ### El Constructor
 
+* [EJS: Creating a regular expression](https://eloquentjavascript.net/09_regexp.html#h_5w4yGFJRYl)
+
+
 The `RegExp` constructor creates a regular expression object for matching text with a pattern.
 
 Literal and constructor notations are possible:
