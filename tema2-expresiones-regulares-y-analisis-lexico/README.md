@@ -163,35 +163,40 @@ Ejecución:
 
 ## Unicode y  Extensiones
 
+### Unicode 
+
+[EloquentJS: International characters](https://eloquentjavascript.net/09_regexp.html#h_+y54//b0l+)
+
+```javascript
+> console.log("\u03A0")
+Π
+> console.log("\u03B1")
+α
+> "Πα".match(/\u03A0(\u03B1)/)
+[ 'Πα', 'α', index: 0, input: 'Πα' ]
+```
+
+
+> By a strange historical accident, `\s` (whitespace) does not have
+> this problem and matches all characters that the Unicode standard
+> considers whitespace, including things like the nonbreaking space
+> and the Mongolian vowel separator:
+
+`\s` casa con el carácter unicode Mongolian Vowel
+
+![](mongolianvowel.png)
+
+* [See What is the Mongolian vowel separator for?](https://linguistics.stackexchange.com/questions/12712/what-is-the-mongolian-vowel-separator-for/12722)
+
+* [Repo con Ejemplos de Unicode en JS](https://github.com/ULL-ESIT-PL/unicode-js)
+* [Ejemplo unicode.js usando XRegExp](https://github.com/ULL-ESIT-GRADOII-PL/xregexp-example/blob/gh-pages/unicode.js)
+* Read [JavaScript has a Unicode problem](https://mathiasbynens.be/notes/javascript-unicode) 2013
+
+
 * [Eloquent JS: International characters](https://eloquentjavascript.net/09_regexp.html#h_+y54//b0l+)
 * [JavaScript y Unicode](https://github.com/ULL-ESIT-PL/unicode-js) (Repo en GitHub unicode-js)
 * [Repositorio con ejemplos de uso de XRegExp](https://github.com/ULL-ESIT-GRADOII-PL/xregexp-example) 
 * [Ejemplos de extensiones de XRegExp para Unicode](https://github.com/ULL-ESIT-GRADOII-PL/xregexp-example/blob/gh-pages/unicode.js)
-* [Módulo @ull-esit-pl/uninums](https://www.npmjs.com/package/@ull-esit-pl/uninums)
-  ```js
-  > uninums = require("@ull-esit-pl/uninums")
-  { normalSpaces: [Function: normalSpaces],
-    normalDigits: [Function: normalDigits],
-    parseUniInt: [Function: parseUniInt],
-    parseUniFloat: [Function: parseUniFloat],
-    sortNumeric: [Function: sortNumeric] }
-  > uninums.parseUniInt('६.६')
-  6
-  > uninums.parseUniFloat('६.६')
-  6.6
-  > uninums.parseUniFloat('६.६e६')
-  6600000
-  > uninums.sortNumeric(['٣ dogs','١٠ cats','٢ mice']) 
-  [ '٢ mice', '٣ dogs', '١٠ cats' ]
-  > uninums.normalDigits('٢ mice')
-  '2 mice'
-  > uninums.normalDigits('٣ dog')
-  '3 dog'
-  > uninums.normalDigits('١٠ cats')
-  '10 cats'
-  > uninums.normalDigits('٠۴६')
-  '046'
-  ```
 
 
 ### XRegExp: Expresiones Regulares Extendidas (a la Perl)
@@ -232,37 +237,36 @@ Ejecución:
 *  [XRegExp Plugins](http://xregexp.com/plugins/)
 *  [Regular Expressions.info: Unicode Regular Expressions](https://www.regular-expressions.info/unicode.html)
 
+### [Módulo @ull-esit-pl/uninums](https://www.npmjs.com/package/@ull-esit-pl/uninums)
+
+```js
+> uninums = require("@ull-esit-pl/uninums")
+{ normalSpaces: [Function: normalSpaces],
+  normalDigits: [Function: normalDigits],
+  parseUniInt: [Function: parseUniInt],
+  parseUniFloat: [Function: parseUniFloat],
+  sortNumeric: [Function: sortNumeric] }
+> uninums.parseUniInt('६.६')
+6
+> uninums.parseUniFloat('६.६')
+6.6
+> uninums.parseUniFloat('६.६e६')
+6600000
+> uninums.sortNumeric(['٣ dogs','١٠ cats','٢ mice']) 
+[ '٢ mice', '٣ dogs', '١٠ cats' ]
+> uninums.normalDigits('٢ mice')
+'2 mice'
+> uninums.normalDigits('٣ dog')
+'3 dog'
+> uninums.normalDigits('١٠ cats')
+'10 cats'
+> uninums.normalDigits('٠۴६')
+'046'
+```
+
 ### Extensiones a las Expresiones Regulares en ECMA6
 
 * [New regular expression features in ECMAScript 6](http://www.2ality.com/2015/07/regexp-es6.html)
-
-### Unicode 
-
-```javascript
-> console.log("\u03A0")
-Π
-> console.log("\u03B1")
-α
-> "Πα".match(/\u03A0(\u03B1)/)
-[ 'Πα', 'α', index: 0, input: 'Πα' ]
-```
-
-De [EloquentJS](https://eloquentjavascript.net/09_regexp.html#h_+y54//b0l+):
-
-> By a strange historical accident, `\s` (whitespace) does not have
-> this problem and matches all characters that the Unicode standard
-> considers whitespace, including things like the nonbreaking space
-> and the Mongolian vowel separator:
-
-`\s` casa con el carácter unicode Mongolian Vowel
-
-![](mongolianvowel.png)
-
-* [See What is the Mongolian vowel separator for?](https://linguistics.stackexchange.com/questions/12712/what-is-the-mongolian-vowel-separator-for/12722)
-
-* [Repo con Ejemplos de Unicode en JS](https://github.com/ULL-ESIT-PL/unicode-js)
-* [Ejemplo unicode.js usando XRegExp](https://github.com/ULL-ESIT-GRADOII-PL/xregexp-example/blob/gh-pages/unicode.js)
-* Read [JavaScript has a Unicode problem](https://mathiasbynens.be/notes/javascript-unicode) 2013
 
 ### Ejercicios
 
@@ -295,9 +299,12 @@ Antiguos apuntes del profesor sobre el uso de RegExp en otros lenguajes:
 
 * [Expresiones Regulares en varios lenguajes](http://crguezl.github.io/ull-etsii-grado-pl-apuntes/node100.html)
 
-#### Python
+### Python
 
 * [Python](http://crguezl.github.io/ull-etsii-grado-pl-apuntes/node100.html#SECTION05440050000000000000)
+
+### Ruby
+
 * [Ruby](http://crguezl.github.io/ull-etsii-grado-pl-apuntes/node100.html#SECTION05440060000000000000)
 
 ### C
