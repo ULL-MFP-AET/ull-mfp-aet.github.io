@@ -139,8 +139,8 @@ Ejecución:
 * [Apuntes de Expresiones Regulares](https://casianorodriguezleon.gitbooks.io/ull-esit-1617/content/apuntes/regexp/) del profesor (gitbook)
   * [Eloquent JavaScript (2nd Edition): Regular Expressions](http://eloquentjavascript.net/09_regexp.html)
 
+### Ejemplo: Parsing Ficheros **ini**
 
-* Ejemplo: Parsing Ficheros **ini**
   - [Parsing de ficheros ini](http://crguezl.github.io/pl-grado-ini-files/): despliegue
   - [Repo con el código del parsing de ficheros ini](https://github.com/crguezl/pl-grado-ini-files)
 
