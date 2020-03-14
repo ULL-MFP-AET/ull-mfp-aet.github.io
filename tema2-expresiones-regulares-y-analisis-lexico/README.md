@@ -154,6 +154,7 @@ Ejecución:
 
 ### Backtracking en Expresiones Regulares
 
+- [EJS: Backtracking](https://eloquentjavascript.net/09_regexp.html#h_NFMtGK0tD3)
 - [Backtracking. Paréntesis dentro de una RegExp](regexpejercicios.html#backtracking)
 
 ### Funciones en el Argumento de Reemplazo
