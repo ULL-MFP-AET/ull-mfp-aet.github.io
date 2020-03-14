@@ -1,5 +1,6 @@
 # Tema 2: Expresiones Regulares y Análisis Léxico
 
+
 ## Expresiones Regulares
 
 ### El Constructor
@@ -165,6 +166,12 @@ Ejecución:
 - [Funciones en el Argumento de Reemplazo](regexpejercicios.html#reemplazofunciones)
 
 ## Unicode y  Extensiones
+
+### String Representation
+
+The way JavaScript models Strings is based on the **Unicode** standard. This standard assigns a number to virtually every character you would ever need, including characters from Greek, Arabic, Japanese, Armenian, and so on. If we have a number for every character, a string can be described by a sequence of numbers.
+
+JavaScript’s representation uses 16 bits per string element, which can describe up to $$2^16$$ different characters. But Unicode defines more characters than that: about twice as many. So some characters, such as many emoji, *take up two character positions* in JavaScript strings.
 
 ### Unicode 
 
