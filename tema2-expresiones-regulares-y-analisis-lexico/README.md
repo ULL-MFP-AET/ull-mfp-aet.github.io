@@ -260,16 +260,12 @@ De [EloquentJS](https://eloquentjavascript.net/09_regexp.html#h_+y54//b0l+):
 
 * [See What is the Mongolian vowel separator for?](https://linguistics.stackexchange.com/questions/12712/what-is-the-mongolian-vowel-separator-for/12722)
 
-
 * [Repo con Ejemplos de Unicode en JS](https://github.com/ULL-ESIT-PL/unicode-js)
 * [Ejemplo unicode.js usando XRegExp](https://github.com/ULL-ESIT-GRADOII-PL/xregexp-example/blob/gh-pages/unicode.js)
 * Read [JavaScript has a Unicode problem](https://mathiasbynens.be/notes/javascript-unicode) 2013
 
 ### Ejercicios
 
-* Ejercicio: [Usar new Regexp("string") versus slash literal](https://youtu.be/ASQ35gSjmeI). Similitudes y diferencias. Vídeo del profesor
-    - [![](http://i3.ytimg.com/vi/ASQ35gSjmeI/hqdefault.jpg)](https://youtu.be/ASQ35gSjmeI)
-    - Explique la diferencia observada entre las dos formas de construir una RegExp
 * [Ejercicios de Expresiones Regulares en los apuntes](regexpejercicios.html)
   - [lookahead](regexpejercicios.html#lookahead)
   - [lookbehind](regexpejercicios.html#lookbehind)
