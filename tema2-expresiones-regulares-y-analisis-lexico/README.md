@@ -155,7 +155,7 @@ Ejecución:
 
 - [Funciones en el Argumento de Reemplazo](regexpejercicios.html#reemplazofunciones)
 
-## Expresiones Regulares Extendidas y Unicode
+## Unicode y  Extensiones
 
 * [JavaScript y Unicode](https://github.com/ULL-ESIT-PL/unicode-js) (Repo en GitHub unicode-js)
 * [Repositorio con ejemplos de uso de XRegExp](https://github.com/ULL-ESIT-GRADOII-PL/xregexp-example) 
@@ -275,6 +275,26 @@ Resuelva los ejercicios de Expresiones Regulares propuestos por el profesor
 
 * [Práctica de Expresiones Regulares (p3-t2-regexp)](practicas/p3-t2-regexp/reto)
 
+## RegExps en Otros lenguajes
+
+Antiguos apuntes del profesor sobre el uso de RegExp en otros lenguajes:
+
+### Perl
+
+* [Expresiones Regulares en Perl](http://crguezl.github.io/ull-etsii-grado-pl-apuntes/node96.html)
+
+### Varios Lenguajes
+
+* [Expresiones Regulares en varios lenguajes](http://crguezl.github.io/ull-etsii-grado-pl-apuntes/node100.html)
+
+### C
+
+* [Expresiones Regulares en C](http://crguezl.github.io/ull-etsii-grado-pl-apuntes/node80.html)
+
+### sed
+
+* [Expresiones Regulares en sed](http://crguezl.github.io/ull-etsii-grado-pl-apuntes/node83.html)
+
 ## Análisis Léxico
 
 * [Example: using sticky matching for tokenizing](http://2ality.com/2015/07/regexp-es6.html#example-using-sticky-matching-for-tokenizing) inside 
@@ -293,11 +313,3 @@ the chapter [New regular expression features in ECMAScript 6](http://2ality.com/
 
 * [Práctica Escribir un Analizador Léxico para Javascript (p4-t2-lexer)](practicas/p4-t2-lexer/README.md)
 
-## Expresiones Regulares en otros lenguajes
-
-Antiguos apuntes del profesor sobre el uso de RegExp en otros lenguajes:
-
-* [Expresiones Regulares en Perl](http://crguezl.github.io/ull-etsii-grado-pl-apuntes/node96.html)
-* [Expresiones Regulares en varios lenguajes](http://crguezl.github.io/ull-etsii-grado-pl-apuntes/node100.html)
-* [Expresiones Regulares en C](http://crguezl.github.io/ull-etsii-grado-pl-apuntes/node80.html)
-* [Expresiones Regulares en sed](http://crguezl.github.io/ull-etsii-grado-pl-apuntes/node83.html)
