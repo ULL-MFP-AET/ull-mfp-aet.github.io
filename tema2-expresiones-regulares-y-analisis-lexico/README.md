@@ -18,11 +18,11 @@
 
 ### Backtracking en Expresiones Regulares
 
-- [Backtracking. Paréntesis dentro de una RegExp](https://casianorodriguezleon.gitbooks.io/ull-esit-1617/content/apuntes/regexp/regexpejercicios.html#backtracking)
+- [Backtracking. Paréntesis dentro de una RegExp](regexpejercicios.html#backtracking)
 
 ### Funciones en el Argumento de Reemplazo
 
-- [Funciones en el Argumento de Reemplazo](https://casianorodriguezleon.gitbooks.io/ull-esit-1617/content/apuntes/regexp/regexpejercicios.html#reemplazofunciones)
+- [Funciones en el Argumento de Reemplazo](regexpejercicios.html#reemplazofunciones)
 
 ### Expresiones Regulares Extendidas y Unicode
 
@@ -61,9 +61,9 @@
 * Ejercicio: [Usar new Regexp("string") versus slash literal](https://youtu.be/ASQ35gSjmeI). Similitudes y diferencias. Vídeo del profesor
     - [![](http://i3.ytimg.com/vi/ASQ35gSjmeI/hqdefault.jpg)](https://youtu.be/ASQ35gSjmeI)
     - Explique la diferencia observada entre las dos formas de construir una RegExp
-* [Ejercicios de Expresiones Regulares en los apuntes](https://casianorodriguezleon.gitbooks.io/ull-esit-1617/content/apuntes/regexp/regexpejercicios.html)
-  - [lookahead](https://casianorodriguezleon.gitbooks.io/ull-esit-1617/content/apuntes/regexp/regexpejercicios.html#lookahead)
-  - [lookbehind](https://casianorodriguezleon.gitbooks.io/ull-esit-1617/content/apuntes/regexp/regexpejercicios.html#lookbehind)
+* [Ejercicios de Expresiones Regulares en los apuntes](regexpejercicios.html)
+  - [lookahead](regexpejercicios.html#lookahead)
+  - [lookbehind](regexpejercicios.html#lookbehind)
 * [Ejercicio: Palabras repetidas](https://youtu.be/GfLkvLM7pA8) Vídeo del profesor
    * [Repo en GitHub](https://github.com/ULL-ESIT-PL/repeated-words-regexp)
    * [![](http://i3.ytimg.com/vi/GfLkvLM7pA8/hqdefault.jpg)](https://youtu.be/GfLkvLM7pA8)
