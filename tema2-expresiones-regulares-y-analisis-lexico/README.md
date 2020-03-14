@@ -1,13 +1,144 @@
 # Tema 2: Expresiones Regulares y Análisis Léxico
 
-## Capítulo 1. Introducción a las Expresiones Regulares
+## Expresiones Regulares
 
-* [Eloquent JavaScript (2nd Edition): Regular Expressions](http://eloquentjavascript.net/09_regexp.html)
+### El Constructor
+
+The `RegExp` constructor creates a regular expression object for matching text with a pattern.
+
+Literal and constructor notations are possible:
+
+```js
+/pattern/flags; 
+new RegExp(pattern [, flags]);
+```
+
+* The literal notation provides compilation of the regular expression
+when the expression is evaluated. 
+* Use literal notation when the regular
+expression will remain constant. 
+* For example, if you use literal notation
+to construct a regular expression used in a loop, the regular expression
+won't be recompiled on each iteration.
+* The constructor of the regular expression object, for example,
+`new RegExp("ab+c")`, provides runtime compilation of the regular
+expression. 
+* Use the constructor function when you know the regular
+expression pattern will be changing, or you don't know the pattern and
+are getting it from another source, such as user input.
+* When using the constructor function, the normal string escape rules
+(preceding special characters with `\` when included in a string) are
+necessary. For example, the following are equivalent:
+
+```js
+var re = /\w+/;
+var re = new RegExp("\\w+");
+```
+
+#### Ejercicio
+
+- Ejercicio: [Usar new Regexp("string") versus slash literal](https://youtu.be/ASQ35gSjmeI). Similitudes y diferencias. Vídeo del profesor
+- [![](http://i3.ytimg.com/vi/ASQ35gSjmeI/hqdefault.jpg)](https://youtu.be/ASQ35gSjmeI)
+- Explique la diferencia observada entre las dos formas de construir una RegExp
+
+
+### exec
+
+*  RegExp.prototype.[exec](https://developer.mozilla.org/en-US/docs/JavaScript/Reference/Global_Objects/RegExp/exec)
+
+The `exec()` method executes a search for a match in a specified string. Returns a result array, or `null`.
+
+If you are executing a match simply to find `true` or `false`, 
+use the `RegExp.prototype.test()` method or the `String.prototype.search()` method.
+
+### search
+
+*  String.prototype.[search](https://developer.mozilla.org/en-US/docs/JavaScript/Reference/Global_Objects/String/search)
+
+`str.search(regexp)`
+
+If successful, `search` returns the index of the regular expression inside
+the string. Otherwise, it returns `-1`.
+
+When you want to know whether a pattern is found in a string use `search`
+(similar to the regular expression `test` method); for more information
+(but slower execution) use `match` (similar to the regular expression
+`exec` method).
+
+### match
+*  String.prototype.[match](https://developer.mozilla.org/en-US/docs/JavaScript/Reference/Global_Objects/String/match)
+*  
+String.prototype.[replace](https://developer.mozilla.org/en-US/docs/JavaScript/Reference/Global_Objects/String/replace)
+
+### replace
+The `replace()` method returns a new string with some or all matches of
+a pattern replaced by a replacement.  
+The pattern can be a string or a `RegExp`, 
+and the replacement can be a string or a function to be called
+for each match.
+
+```js
+> re = /apples/gi
+/apples/gi
+> str = "Apples are round, and apples are juicy."
+'Apples are round, and apples are juicy.'
+> newstr = str.replace(re, "oranges")
+'oranges are round, and oranges are juicy.'
+```
+
+The replacement string can be a function to be invoked to create the
+new substring (to put in place of the substring received from parameter
+`#1`). The arguments supplied to this function are:
+
+| **Possible name** | **Supplied value** |
+| ----------------- | ------------------ |
+|match              | The matched substring. (Corresponds to `$&`.)|
+|`p1`, `p2`, ...    | The nth parenthesized submatch string, provided the first argument to replace was a RegExp object. (Corresponds to `$1`, `$2`, etc.) For example, if `/(\a+)(\b+)/`, was given, `p1` is the match for `\a+`, and `p2` for `\b+`.|
+|`offset`             | The `offset` of the matched substring within the total string being examined  (For example, if the total string was `"abcd"`, and the                  matched substring was `"bc"`, then this argument will be `1` |
+|string             |The total string being examined |
+
+#### Ejemplo de `replace`
+
+```
+[~/javascript/learning]$ pwd -P
+/Users/casiano/local/src/javascript/learning
+[~/javascript/learning]$ cat f2c.js 
+```
+
+```javascript
+#!/usr/bin/env node
+function f2c(x)
+{
+  function convert(str, p1, offset, s)
+  {
+    return ((p1-32) * 5/9) + "C";
+  }
+  var s = String(x);
+  var test = /(\d+(?:\.\d*)?)F\b/g;
+  return s.replace(test, convert);
+}
+
+var arg = process.argv[2] || "32F";
+console.log(f2c(arg));
+```
+Ejecución:
+
+```
+[~/javascript/learning]$ ./f2c.js 100F
+37.77777777777778C
+[~/javascript/learning]$ ./f2c.js 
+0C
+```
+
+
 * [Eloquent JavaScript (3d Edition): Regular Expressions](http://eloquentjavascript.net/3rd_edition/09_regexp.html)
   - Ejercicio: [Usar new Regexp("string") versus slash literal](https://youtu.be/ASQ35gSjmeI). Similitudes y diferencias. Vídeo del profesor
   - [![](http://i3.ytimg.com/vi/ASQ35gSjmeI/hqdefault.jpg)](https://youtu.be/ASQ35gSjmeI)
   - Explique la diferencia observada entre las dos formas de construir una RegExp
+* [Apuntes de Expresiones Regulares](regexp) del profesor
 * [Apuntes de Expresiones Regulares](https://casianorodriguezleon.gitbooks.io/ull-esit-1617/content/apuntes/regexp/) del profesor (gitbook)
+  * [Eloquent JavaScript (2nd Edition): Regular Expressions](http://eloquentjavascript.net/09_regexp.html)
+
 * [Expresiones Regulares y Análisis Léxico en JavaScript](http://crguezl.github.io/ull-etsii-grado-pl-apuntes/node70.html) Apuntes del profesor cursos 2012-2014. Latex2html, LateX, GitHub 
 * [Apuntes de la Asignatura Procesadores de Lenguajes](http://crguezl.github.io/pl-html/) GitHub Cursos 13-15 http://crguezl.github.io/pl-html
 * [Expresiones Regulares y Análisis Léxico en JavaScript](http://nereida.deioc.ull.es/~plgrado/javascriptexamples/node7.html) Latex2Html, LaTeX, nereida
@@ -24,7 +155,7 @@
 
 - [Funciones en el Argumento de Reemplazo](regexpejercicios.html#reemplazofunciones)
 
-### Expresiones Regulares Extendidas y Unicode
+## Expresiones Regulares Extendidas y Unicode
 
 * [JavaScript y Unicode](https://github.com/ULL-ESIT-PL/unicode-js) (Repo en GitHub unicode-js)
 * [Repositorio con ejemplos de uso de XRegExp](https://github.com/ULL-ESIT-GRADOII-PL/xregexp-example) 
@@ -56,6 +187,72 @@
   ```
 
 
+### XRegExp: Expresiones Regulares Extendidas (a la Perl)
+
+* [ GitHub repo ilustrando el uso de XRegExp URL](https://github.com/ULL-ESIT-GRADOII-PL/xregexp-example)
+* [xregexp repo en GitHub. Documentación](https://github.com/slevithan/xregexp)
+* [http://xregexp.com/ website](http://xregexp.com/): Documentación
+* [API de XRegExp](http://xregexp.com/api/)
+  - [XRegExp](http://xregexp.com/api/#XRegExp)
+  - [XRegExp.addToken](http://xregexp.com/api/#addToken)
+  - [XRegExp.build](http://xregexp.com/api/#build) (addon)
+  - [XRegExp.cache](http://xregexp.com/api/#cache)
+  - [XRegExp.escape](http://xregexp.com/api/#escape)
+  - [XRegExp.exec](http://xregexp.com/api/#exec)
+  - [XRegExp.forEach](http://xregexp.com/api/#forEach)
+  - [XRegExp.globalize](http://xregexp.com/api/#globalize)
+  - [XRegExp.install](http://xregexp.com/api/#install)
+  - [XRegExp.isInstalled](http://xregexp.com/api/#isInstalled)
+  - [XRegExp.isRegExp](http://xregexp.com/api/#isRegExp)
+  - [XRegExp.match](http://xregexp.com/api/#match)
+  - [XRegExp.matchChain](http://xregexp.com/api/#matchChain)
+  - [XRegExp.matchRecursive](http://xregexp.com/api/#matchRecursive) (addon)
+  - [XRegExp.replace](http://xregexp.com/api/#replace)
+  - [XRegExp.replaceEach](http://xregexp.com/api/#replaceEach)
+  - [XRegExp.split](http://xregexp.com/api/#split)
+  - [XRegExp.test](http://xregexp.com/api/#test)
+  - [XRegExp.uninstall](http://xregexp.com/api/#uninstall)
+  - [XRegExp.union](http://xregexp.com/api/#union)
+  - [XRegExp.version](http://xregexp.com/api/#version)
+
+#### XRegExp instance properties
+
+- [<regexp>.xregexp.source](http://xregexp.com/api/#dot-source) (The original pattern provided to the XRegExp constructor)
+- [<regexp>.xregexp.flags](http://xregexp.com/api/#dot-flags) (The original flags provided to the XRegExp constructor)
+
+#### XRegExp. Unicode
+
+*  [XRegExp Plugins](http://xregexp.com/plugins/)
+*  [Regular Expressions.info: Unicode Regular Expressions](https://www.regular-expressions.info/unicode.html)
+
+### Extensiones a las Expresiones Regulares en ECMA6
+
+* [New regular expression features in ECMAScript 6](http://www.2ality.com/2015/07/regexp-es6.html)
+
+### Unicode 
+
+```javascript
+> console.log("\u03A0")
+Π
+> console.log("\u03B1")
+α
+> "Πα".match(/\u03A0(\u03B1)/)
+[ 'Πα', 'α', index: 0, input: 'Πα' ]
+```
+
+De [EloquentJS](http://eloquentjavascript.net/09_regexp.html):
+
+> By a strange historical accident, `\s` (whitespace) does not have
+> this problem and matches all characters that the Unicode standard
+> considers whitespace, including things like the nonbreaking space
+> and the Mongolian vowel separator:
+
+`\s` casa con el carácter unicode Mongolian Vowel
+
+* [Repo con Ejemplos de Unicode en JS](https://github.com/ULL-ESIT-PL/unicode-js)
+* [Ejemplo unicode.js usando XRegExp](https://github.com/ULL-ESIT-GRADOII-PL/xregexp-example/blob/gh-pages/unicode.js)
+* Read [JavaScript has a Unicode problem](https://mathiasbynens.be/notes/javascript-unicode) 2013
+
 ### Ejercicios
 
 * Ejercicio: [Usar new Regexp("string") versus slash literal](https://youtu.be/ASQ35gSjmeI). Similitudes y diferencias. Vídeo del profesor
@@ -78,7 +275,7 @@ Resuelva los ejercicios de Expresiones Regulares propuestos por el profesor
 
 * [Práctica de Expresiones Regulares (p3-t2-regexp)](practicas/p3-t2-regexp/reto)
 
-## Capítulo 2: Análisis Léxico
+## Análisis Léxico
 
 * [Example: using sticky matching for tokenizing](http://2ality.com/2015/07/regexp-es6.html#example-using-sticky-matching-for-tokenizing) inside 
 the chapter [New regular expression features in ECMAScript 6](http://2ality.com/2015/07/regexp-es6.html#example-using-sticky-matching-for-tokenizing)
@@ -96,8 +293,11 @@ the chapter [New regular expression features in ECMAScript 6](http://2ality.com/
 
 * [Práctica Escribir un Analizador Léxico para Javascript (p4-t2-lexer)](practicas/p4-t2-lexer/README.md)
 
-## Capítulo 3: Expresiones Regulares en Perl y en otros lenguajes
+## Expresiones Regulares en otros lenguajes
 
-* [Expresiones Regulares en Perl](http://nereida.deioc.ull.es/~pl/perlexamples/node7.html)
-* [Expresiones Regulares en varios lenguajes](http://nereida.deioc.ull.es/~pl/perlexamples/node28.html)
+Antiguos apuntes del profesor sobre el uso de RegExp en otros lenguajes:
 
+* [Expresiones Regulares en Perl](http://crguezl.github.io/ull-etsii-grado-pl-apuntes/node96.html)
+* [Expresiones Regulares en varios lenguajes](http://crguezl.github.io/ull-etsii-grado-pl-apuntes/node100.html)
+* [Expresiones Regulares en C](http://crguezl.github.io/ull-etsii-grado-pl-apuntes/node80.html)
+* [Expresiones Regulares en sed](http://crguezl.github.io/ull-etsii-grado-pl-apuntes/node83.html)
