@@ -136,11 +136,15 @@ Ejecución:
 0C
 ```
 
+<!--
 
 * [Eloquent JavaScript (3d Edition): Regular Expressions](http://eloquentjavascript.net/3rd_edition/09_regexp.html)
   - Ejercicio: [Usar new Regexp("string") versus slash literal](https://youtu.be/ASQ35gSjmeI). Similitudes y diferencias. Vídeo del profesor
   - [![](http://i3.ytimg.com/vi/ASQ35gSjmeI/hqdefault.jpg)](https://youtu.be/ASQ35gSjmeI)
   - Explique la diferencia observada entre las dos formas de construir una RegExp
+
+-->
+
 * [Apuntes de Expresiones Regulares](regexp) del profesor
 
 ### Ejemplo: Parsing Ficheros **ini**
