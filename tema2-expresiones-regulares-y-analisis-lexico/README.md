@@ -145,7 +145,6 @@ Ejecución:
 
 -->
 
-* [Apuntes de Expresiones Regulares](regexp) del profesor
 
 ### Ejemplo: Parsing Ficheros **ini**
 
@@ -339,7 +338,9 @@ the chapter [New regular expression features in ECMAScript 6](http://2ality.com/
 
 ## Referencias
 
-* [Apuntes de Expresiones Regulares](https://casianorodriguezleon.gitbooks.io/ull-esit-1617/content/apuntes/regexp/) del profesor (gitbook)
+
+* [Apuntes de Expresiones Regulares](regexp) del profesor
+* [Apuntes 16/17 de Expresiones Regulares](https://casianorodriguezleon.gitbooks.io/ull-esit-1617/content/apuntes/regexp/) del profesor (gitbook)
 * [Eloquent JavaScript: Regular Expressions](http://eloquentjavascript.net/09_regexp.html)
 * [Expresiones Regulares y Análisis Léxico en JavaScript](http://crguezl.github.io/ull-etsii-grado-pl-apuntes/node70.html) Apuntes del profesor cursos 2012-2014. Latex2html, LateX, GitHub 
 * [Apuntes de la Asignatura Procesadores de Lenguajes](http://crguezl.github.io/pl-html/) GitHub Cursos 13-15 http://crguezl.github.io/pl-html
