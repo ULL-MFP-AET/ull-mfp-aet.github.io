@@ -156,6 +156,7 @@ Ejecución:
 
 ## Unicode y  Extensiones
 
+* [Eloquent JS: International characters](https://eloquentjavascript.net/09_regexp.htm#h_+y54//b0l+)
 * [JavaScript y Unicode](https://github.com/ULL-ESIT-PL/unicode-js) (Repo en GitHub unicode-js)
 * [Repositorio con ejemplos de uso de XRegExp](https://github.com/ULL-ESIT-GRADOII-PL/xregexp-example) 
 * [Ejemplos de extensiones de XRegExp para Unicode](https://github.com/ULL-ESIT-GRADOII-PL/xregexp-example/blob/gh-pages/unicode.js)
