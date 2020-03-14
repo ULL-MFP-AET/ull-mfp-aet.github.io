@@ -44,6 +44,9 @@ var re = new RegExp("\\w+");
 - [![](http://i3.ytimg.com/vi/ASQ35gSjmeI/hqdefault.jpg)](https://youtu.be/ASQ35gSjmeI)
 - Explique la diferencia observada entre las dos formas de construir una RegExp
 
+### Test
+
+* [EJS: test](https://eloquentjavascript.net/09_regexp.html#h_vPyyYjMEtz)
 
 ### exec
 
