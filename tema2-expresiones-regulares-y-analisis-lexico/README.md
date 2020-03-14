@@ -242,10 +242,9 @@ If you have a character (which will be a string of one or two code units), you c
 
 Because of JavaScript’s initial simplistic implementation and the fact that this simplistic approach was later set in stone as standard behavior, JavaScript’s regular expressions are rather dumb about characters that do not appear in the English language. For example, as far as JavaScript’s regular expressions are concerned, a **word character** is only one of the 26 characters in the Latin alphabet (uppercase or lowercase), decimal digits, and, for some reason, the underscore character. Things like _é_ or _β_, which most definitely are word characters, will not match `\w` (and _will_ match uppercase `\W`, the nonword category).
 
-> By a strange historical accident, `\s` (whitespace) does not have
-> this problem and matches all characters that the Unicode standard
-> considers whitespace, including things like the nonbreaking space
-> and the Mongolian vowel separator:
+By a strange historical accident, `\s` (whitespace) does not have this problem and matches all characters that the Unicode standard
+considers whitespace, including things like the nonbreaking space
+and the Mongolian vowel separator:
 
 `\s` casa con el carácter unicode Mongolian Vowel
 
