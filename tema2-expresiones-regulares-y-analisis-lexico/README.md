@@ -247,7 +247,7 @@ Ejecución:
 [ 'Πα', 'α', index: 0, input: 'Πα' ]
 ```
 
-De [EloquentJS](http://eloquentjavascript.net/09_regexp.html):
+De [EloquentJS](https://eloquentjavascript.net/09_regexp.html#h_+y54//b0l+):
 
 > By a strange historical accident, `\s` (whitespace) does not have
 > this problem and matches all characters that the Unicode standard
@@ -255,6 +255,11 @@ De [EloquentJS](http://eloquentjavascript.net/09_regexp.html):
 > and the Mongolian vowel separator:
 
 `\s` casa con el carácter unicode Mongolian Vowel
+
+![](mongolianvowel.png)
+
+* [See What is the Mongolian vowel separator for?](https://linguistics.stackexchange.com/questions/12712/what-is-the-mongolian-vowel-separator-for/12722)
+
 
 * [Repo con Ejemplos de Unicode en JS](https://github.com/ULL-ESIT-PL/unicode-js)
 * [Ejemplo unicode.js usando XRegExp](https://github.com/ULL-ESIT-GRADOII-PL/xregexp-example/blob/gh-pages/unicode.js)
