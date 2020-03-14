@@ -46,7 +46,7 @@ var re = new RegExp("\\w+");
 
 ### Test
 
-* [EJS: test](https://eloquentjavascript.net/09_regexp.html#h_vPyyYjMEtz)
+* [EJS: Testing for matches](https://eloquentjavascript.net/09_regexp.html#h_vPyyYjMEtz)
 
 ### exec
 
