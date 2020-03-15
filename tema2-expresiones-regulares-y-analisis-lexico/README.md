@@ -171,7 +171,7 @@ Ejecución:
 
 The way JavaScript models Strings is based on the **Unicode** standard. This standard assigns a number to virtually every character you would ever need, including characters from Greek, Arabic, Japanese, Armenian, and so on. If we have a number for every character, a string can be described by a sequence of numbers.
 
-JavaScript’s representation uses 16 bits per string element, which can describe up to $$2^16$$ different characters. But Unicode defines more characters than that: about twice as many. So some characters, such as many emoji, *take up two character positions* in JavaScript strings.
+JavaScript’s representation uses 16 bits per string element, which can describe up to $$2^{16}$$ different characters. But Unicode defines more characters than that: about twice as many. So some characters, such as many emoji, *take up two character positions* in JavaScript strings.
 
 When comparing strings, JavaScript goes over the characters from left to right, comparing the Unicode codes one by one.
 
@@ -227,7 +227,7 @@ for (let char of roseDragon) {
 
 If you have a character (which will be a string of one or two code units), you can use `codePointAt(0)` to get its code.
 
-### Unicode 
+### Unicode: International characters
 
 [EloquentJS: International characters](https://eloquentjavascript.net/09_regexp.html#h_+y54//b0l+)
 
@@ -250,7 +250,7 @@ and the Mongolian vowel separator:
 
 ![](mongolianvowel.png)
 
-* [See What is the Mongolian vowel separator for?](https://linguistics.stackexchange.com/questions/12712/what-is-the-mongolian-vowel-separator-for/12722)
+* [See: *What is the Mongolian vowel separator for?*](https://linguistics.stackexchange.com/questions/12712/what-is-the-mongolian-vowel-separator-for/12722)
 
 * [Repo con Ejemplos de Unicode en JS](https://github.com/ULL-ESIT-PL/unicode-js)
 * [Ejemplo unicode.js usando XRegExp](https://github.com/ULL-ESIT-GRADOII-PL/xregexp-example/blob/gh-pages/unicode.js)
