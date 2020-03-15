@@ -233,6 +233,7 @@ If you have a character (which will be a string of one or two code units), you c
 * En Vim:
   * `ga` shows the decimal, hexadecimal and octal value of the character under  the cursor.
   * Any utf character at all can be entered with a `Ctrl-V` prefix, either `<Ctrl-V> u aaaa` or `<Ctrl-V> U bbbbbbbb`, with `0 <= aaaa <= FFFF`, or `0 <= bbbbbbbb <= 7FFFFFFF`.
+  * Digraphs. `<Ctrl-K> a *` produces `α` `<Ctrl-K> b *` produces `β`
 
 ### Unicode: Regular Expressions and International characters
 
