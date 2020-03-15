@@ -227,7 +227,7 @@ for (let char of roseDragon) {
 
 If you have a character (which will be a string of one or two code units), you can use `codePointAt(0)` to get its code.
 
-### Unicode: International characters
+### Unicode: Regular Expressions and International characters
 
 [EloquentJS: International characters](https://eloquentjavascript.net/09_regexp.html#h_+y54//b0l+)
 
