@@ -301,10 +301,12 @@ and the Mongolian vowel separator:
 *  [XRegExp Plugins](http://xregexp.com/plugins/)
 *  [Regular Expressions.info: Unicode Regular Expressions](https://www.regular-expressions.info/unicode.html)
 
-### [Módulo @ull-esit-pl/uninums](https://www.npmjs.com/package/@ull-esit-pl/uninums)
+### Módulo @ull-esit-pl/uninums
 
 Javascript supports Unicode strings, but parsing such strings to numbers is unsupported (e.g., the user enters a phone number using Chinese numerals).  
 [uninums.js](https://raw.github.com/roysharon/uninums/master/uninums.js) is a small utility script that implements five methods for handling non-ASCII numerals in Javascript
+
+* [Módulo @ull-esit-pl/uninums](https://www.npmjs.com/package/@ull-esit-pl/uninums)
 
 ```js
 > uninums = require("@ull-esit-pl/uninums")
