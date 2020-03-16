@@ -139,6 +139,14 @@ console.log(
 //   John McCarthy
 //   Philip Wadler
 ```
+The `$1` and `$2` in the replacement string refer to the parenthesized groups in the pattern.
+
+```js
+let s = "the cia and fbi";
+console.log(s.replace(/\b(fbi|cia)\b/g,
+            str => str.toUpperCase()));
+// → the CIA and FBI
+```
 
 The replacement string can be a function to be invoked to create the
 new substring (to put in place of the substring received from parameter
