@@ -58,19 +58,7 @@ The `exec()` method executes a search for a match in a specified string. Returns
 If you are executing a match simply to find `true` or `false`, 
 use the `RegExp.prototype.test()` method or the `String.prototype.search()` method.
 
-### search
 
-*  String.prototype.[search](https://developer.mozilla.org/en-US/docs/JavaScript/Reference/Global_Objects/String/search)
-
-`str.search(regexp)`
-
-If successful, `search` returns the index of the regular expression inside
-the string. Otherwise, it returns `-1`.
-
-When you want to know whether a pattern is found in a string use `search`
-(similar to the regular expression `test` method); for more information
-(but slower execution) use `match` (similar to the regular expression
-`exec` method).
 
 ### match
 *  String.prototype.[match](https://developer.mozilla.org/en-US/docs/JavaScript/Reference/Global_Objects/String/match)
@@ -199,6 +187,70 @@ Ejecución:
 
 -->
 
+### Greed and Lazy Operators
+
+Write a function that removes all comments from a piece of JavaScript code. 
+
+* [EJS: Greed and Lazy Operators](https://eloquentjavascript.net/09_regexp.html#h_kiECehz+i+)
+
+### search
+
+*  String.prototype.[search](https://developer.mozilla.org/en-US/docs/JavaScript/Reference/Global_Objects/String/search)
+
+`str.search(regexp)`
+
+If successful, `search` returns the index of the regular expression inside
+the string. Otherwise, it returns `-1`.
+
+When you want to know whether a pattern is found in a string use `search`
+(similar to the regular expression `test` method); for more information
+(but slower execution) use `match` (similar to the regular expression
+`exec` method).
+
+
+### lastIndex
+
+* [EJS: The lastIndex property](https://eloquentjavascript.net/09_regexp.html#h_duFTd2hqd0)
+
+If your regular expression uses the `g` flag, you can use the `exec`
+method multiple times to find successive matches in the same string.
+When you do so, the search starts at the substring of str specified
+by the regular expression’s `lastIndex` property.
+  
+```js
+      > re = /d(b+)(d)/ig
+      /d(b+)(d)/gi
+      > z = "dBdxdbbdzdbd"
+      'dBdxdbbdzdbd'
+      > result = re.exec(z)
+      [ 'dBd', 'B', 'd', index: 0, input: 'dBdxdbbdzdbd' ]
+      > re.lastIndex
+      3
+      > result = re.exec(z)
+      [ 'dbbd', 'bb', 'd', index: 4, input: 'dBdxdbbdzdbd' ]
+      > re.lastIndex
+      8
+      > result = re.exec(z)
+      [ 'dbd', 'b', 'd', index: 9, input: 'dBdxdbbdzdbd' ]
+      > re.lastIndex
+      12
+      > z.length
+      12
+      > result = re.exec(z)
+      null
+```
+
+```js
+let input = "A string with 3 numbers in it... 42 and 88.";
+let number = /\b\d+\b/g;
+let match;
+while (match = number.exec(input)) {
+  console.log("Found", match[0], "at", match.index);
+}
+// → Found 3 at 14
+//   Found 42 at 33
+//   Found 88 at 40
+```
 
 ### Parsing Ficheros **ini**
 
