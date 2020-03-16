@@ -146,15 +146,47 @@ Ejecución:
 
 -->
 
+## Parenthesis
 
-### Ejemplo: Parsing Ficheros **ini**
+* [EJS: Matches and groups](https://eloquentjavascript.net/09_regexp.html#h_CV5XL/TADP)
+```js
+console.log(/bad(ly)?/.exec("bad"));
+// → ["bad", undefined]
+console.log(/(\d)+/.exec("123"));
+// → ["123", "3"]
+```
 
-- [Parsing an INI file](https://eloquentjavascript.net/09_regexp.html#ini) Eloquent JavaScript
+## The Date Class
 
-#### Otra Solución al Parsing de los Ficheros **ini**
+* [EJS: The Date Class](https://eloquentjavascript.net/09_regexp.html#h_8U7L7LCU27)
 
-- [Parsing de ficheros ini](http://crguezl.github.io/pl-grado-ini-files/): despliegue
-- [Repo con el código del parsing de ficheros ini](https://github.com/crguezl/pl-grado-ini-files)
+```js
+function getDate(string) {
+  let [_, month, day, year] =
+    /(\d{1,2})-(\d{1,2})-(\d{4})/.exec(string);
+  return new Date(year, month - 1, day);
+}
+console.log(getDate("1-30-2003"));
+// → Thu Jan 30 2003 00:00:00 GMT+0100 (CET)
+```
+
+### Word and string boundaries
+
+* [Word and string boundaries](https://eloquentjavascript.net/09_regexp.html#h_26ixny78VY)
+
+```js
+> /\d+/.exec('b45a')
+[ '45', index: 1, input: 'b45a' ]
+> /^\d+$/.exec('b45a')
+null
+```
+
+```js
+console.log(/cat/.test("concatenate"));
+// → true
+console.log(/\bcat\b/.test("concatenate"));
+// → false
+```
 
 ### Backtracking en Expresiones Regulares
 
@@ -164,6 +196,16 @@ Ejecución:
 ### Funciones en el Argumento de Reemplazo
 
 - [Funciones en el Argumento de Reemplazo](regexpejercicios.html#reemplazofunciones)
+
+
+### Parsing Ficheros **ini**
+
+- [Parsing an INI file](https://eloquentjavascript.net/09_regexp.html#ini) Eloquent JavaScript
+
+#### Otra Solución al Parsing de los Ficheros **ini**
+
+- [Parsing de ficheros ini](http://crguezl.github.io/pl-grado-ini-files/): despliegue
+- [Repo con el código del parsing de ficheros ini](https://github.com/crguezl/pl-grado-ini-files)
 
 ## Unicode y  Extensiones
 
