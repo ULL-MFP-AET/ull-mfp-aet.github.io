@@ -77,6 +77,54 @@ When you want to know whether a pattern is found in a string use `search`
 *  
 String.prototype.[replace](https://developer.mozilla.org/en-US/docs/JavaScript/Reference/Global_Objects/String/replace)
 
+
+### Parenthesis
+
+* [EJS: Matches and groups](https://eloquentjavascript.net/09_regexp.html#h_CV5XL/TADP)
+```js
+console.log(/bad(ly)?/.exec("bad"));
+// → ["bad", undefined]
+console.log(/(\d)+/.exec("123"));
+// → ["123", "3"]
+```
+
+### The Date Class
+
+* [EJS: The Date Class](https://eloquentjavascript.net/09_regexp.html#h_8U7L7LCU27)
+
+```js
+function getDate(string) {
+  let [_, month, day, year] =
+    /(\d{1,2})-(\d{1,2})-(\d{4})/.exec(string);
+  return new Date(year, month - 1, day);
+}
+console.log(getDate("1-30-2003"));
+// → Thu Jan 30 2003 00:00:00 GMT+0100 (CET)
+```
+
+### Word and string boundaries
+
+* [EJS: Word and string boundaries](https://eloquentjavascript.net/09_regexp.html#h_26ixny78VY)
+
+```js
+> /\d+/.exec('b45a')
+[ '45', index: 1, input: 'b45a' ]
+> /^\d+$/.exec('b45a')
+null
+```
+
+```js
+console.log(/cat/.test("concatenate"));
+// → true
+console.log(/\bcat\b/.test("concatenate"));
+// → false
+```
+
+### Backtracking en Expresiones Regulares
+
+- [EJS: Backtracking](https://eloquentjavascript.net/09_regexp.html#h_NFMtGK0tD3)
+- [Backtracking. Paréntesis dentro de una RegExp](regexpejercicios.html#backtracking)
+
 ### replace
 The `replace()` method returns a new string with some or all matches of
 a pattern replaced by a replacement.  
@@ -104,6 +152,11 @@ new substring (to put in place of the substring received from parameter
 |`offset`             | The `offset` of the matched substring within the total string being examined  (For example, if the total string was `"abcd"`, and the                  matched substring was `"bc"`, then this argument will be `1` |
 |string             |The total string being examined |
 
+#### Funciones en el Argumento de Reemplazo
+
+- [Funciones en el Argumento de Reemplazo](regexpejercicios.html#reemplazofunciones)
+
+
 #### Ejemplo de `replace`
 
 ```
@@ -118,7 +171,7 @@ function f2c(x)
 {
   function convert(str, p1, offset, s)
   {
-    return ((p1-32) * 5/9) + "C";
+    return ((parseFloat(p1)-32) * 5/9) + "C";
   }
   var s = String(x);
   var test = /(\d+(?:\.\d*)?)F\b/g;
@@ -145,57 +198,6 @@ Ejecución:
   - Explique la diferencia observada entre las dos formas de construir una RegExp
 
 -->
-
-## Parenthesis
-
-* [EJS: Matches and groups](https://eloquentjavascript.net/09_regexp.html#h_CV5XL/TADP)
-```js
-console.log(/bad(ly)?/.exec("bad"));
-// → ["bad", undefined]
-console.log(/(\d)+/.exec("123"));
-// → ["123", "3"]
-```
-
-## The Date Class
-
-* [EJS: The Date Class](https://eloquentjavascript.net/09_regexp.html#h_8U7L7LCU27)
-
-```js
-function getDate(string) {
-  let [_, month, day, year] =
-    /(\d{1,2})-(\d{1,2})-(\d{4})/.exec(string);
-  return new Date(year, month - 1, day);
-}
-console.log(getDate("1-30-2003"));
-// → Thu Jan 30 2003 00:00:00 GMT+0100 (CET)
-```
-
-### Word and string boundaries
-
-* [Word and string boundaries](https://eloquentjavascript.net/09_regexp.html#h_26ixny78VY)
-
-```js
-> /\d+/.exec('b45a')
-[ '45', index: 1, input: 'b45a' ]
-> /^\d+$/.exec('b45a')
-null
-```
-
-```js
-console.log(/cat/.test("concatenate"));
-// → true
-console.log(/\bcat\b/.test("concatenate"));
-// → false
-```
-
-### Backtracking en Expresiones Regulares
-
-- [EJS: Backtracking](https://eloquentjavascript.net/09_regexp.html#h_NFMtGK0tD3)
-- [Backtracking. Paréntesis dentro de una RegExp](regexpejercicios.html#backtracking)
-
-### Funciones en el Argumento de Reemplazo
-
-- [Funciones en el Argumento de Reemplazo](regexpejercicios.html#reemplazofunciones)
 
 
 ### Parsing Ficheros **ini**
