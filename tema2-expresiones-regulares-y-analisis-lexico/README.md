@@ -129,6 +129,17 @@ for each match.
 'oranges are round, and oranges are juicy.'
 ```
 
+We can refer to matched groups in the replacement string:
+
+```js
+console.log(
+  "Liskov, Barbara\nMcCarthy, John\nWadler, Philip"
+    .replace(/(\w+), (\w+)/g, "$2 $1"));
+// → Barbara Liskov
+//   John McCarthy
+//   Philip Wadler
+```
+
 The replacement string can be a function to be invoked to create the
 new substring (to put in place of the substring received from parameter
 `#1`). The arguments supplied to this function are:
@@ -211,6 +222,12 @@ When you want to know whether a pattern is found in a string use `search`
 ### lastIndex
 
 * [EJS: The lastIndex property](https://eloquentjavascript.net/09_regexp.html#h_duFTd2hqd0)
+
+Regular expression objects have properties. 
+
+One such property is `source`, which contains the string that expression was created from. 
+
+Another property is `lastIndex`, which controls, in some limited circumstances, where the next match will start.
 
 If your regular expression uses the `g` flag, you can use the `exec`
 method multiple times to find successive matches in the same string.
