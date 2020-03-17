@@ -112,6 +112,8 @@ console.log(/\bcat\b/.test("concatenate"));
 
 We can use the contents of capturing groups `(...)` not only in the result or in the replacement string, but also in the pattern itself.
 
+#### By Number
+
 A backreference `\n` inside a regexp, where `_n_` is a positive integer. A back reference to the last substring matching the `n` parenthetical in the regular expression (counting left parentheses).
 
 For example, `/apple(,)\sorange\1/` matches `'apple, orange,'` in `"apple, orange, cherry, peach."` 
@@ -138,6 +140,8 @@ null
 null
 ```
 
+#### By Name
+
 To reference a named group we can use <code class="pattern">\k&lt;name&gt;</code>
 
 ```js
@@ -161,10 +165,9 @@ Be sure to use a modern version of JS:
 ```js
 [~/javascript-learning/xregexpexample(gh-pages)]$ node --version
 v8.1.2
-> regexp = /(?<quote>['"])(.*?)\k<quote>/g;
+> regexp = /(?<quote>['"])([^'"]*)\k<quote>/;
 SyntaxError: Invalid regular expression: /(?<quote>['"])(.*?)\k<quote>/: Invalid group
 ```
-
 
 ### Backtracking en Expresiones Regulares
 
