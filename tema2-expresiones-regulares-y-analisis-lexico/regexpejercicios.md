@@ -154,7 +154,33 @@ JavaScript no tiene lookbehinds:
          => "l" 
 ```
 
-### Backtracking. Paréntesis **dentro de una RegExp** {#backtracking}
+### Backtracking. Referencias a Paréntesis **dentro de una RegExp** {#backtracking}
+
+A backreference `\n` inside a regexp, where `_n_` is a positive integer. A back reference to the last substring matching the `n` parenthetical in the regular expression (counting left parentheses).
+
+For example, `/apple(,)\sorange\1/` matches `'apple, orange,'` in `"apple, orange, cherry, peach."` 
+
+See [ackreferences in pattern: \N and \k&lt;name&gt;](https://javascript.info/regexp-backreferences)
+
+```js
+> chuchu = /^(a+)-\1$/
+/^(a+)-\1$/
+> chuchu.exec("aa-aa")
+[ 'aa-aa', 'aa', index: 0, input: 'aa-aa' ]
+> chuchu.exec("aa-a")
+null
+> chuchu.exec("a-a")
+[ 'a-a', 'a', index: 0, input: 'a-a' ]
+> chuchu.exec("a-ab")
+null
+```
+
+```js
+> chuchu = /^\1-(a+)$/
+/^\1-(a+)$/
+> chuchu.exec("a-a")
+null
+```
 
 ¿Con que cadenas casa la expresión regular `/^(11+)\1+$/`?
 
