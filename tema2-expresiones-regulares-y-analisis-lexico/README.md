@@ -369,6 +369,12 @@ while (match = number.exec(input)) {
 - [Parsing de ficheros ini](http://crguezl.github.io/pl-grado-ini-files/): despliegue
 - [Repo con el código del parsing de ficheros ini](https://github.com/crguezl/pl-grado-ini-files)
 
+
+### Sticky flag "y", searching at position
+
+* [Sticky flag "y", searching at position](https://javascript.info/regexp-sticky)
+
+
 ## Unicode y  Extensiones
 
 ### String Representation
