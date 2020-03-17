@@ -148,10 +148,16 @@ But it works in some languages as Ruby and Perl:
 
 ```ruby
 $ irb
-irb(main):001:0> regex = /(\2train|(choo))+/
+irb(main):052:0> regex = /(\2train|(choo))+/
 => /(\2train|(choo))+/
-irb(main):003:0> '1234chootrain' =~ regex
-=> 4
+irb(main):053:0> 'choochootrain' =~ regex
+=> 0
+irb(main):054:0> $&
+=> "choochootrain"
+irb(main):055:0> $1
+=> "chootrain"
+irb(main):056:0> $2
+=> "choo"
 ```
 
 #### By Name
