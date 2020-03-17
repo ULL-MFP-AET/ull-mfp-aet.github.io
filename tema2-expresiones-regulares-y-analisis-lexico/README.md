@@ -110,6 +110,8 @@ console.log(/\bcat\b/.test("concatenate"));
 
 ### Backreferences in pattern: \N and \k&lt;name&gt; {#backreferences}
 
+We can use the contents of capturing groups `(...)` not only in the result or in the replacement string, but also in the pattern itself.
+
 A backreference `\n` inside a regexp, where `_n_` is a positive integer. A back reference to the last substring matching the `n` parenthetical in the regular expression (counting left parentheses).
 
 For example, `/apple(,)\sorange\1/` matches `'apple, orange,'` in `"apple, orange, cherry, peach."` 
@@ -141,14 +143,28 @@ To reference a named group we can use <code class="pattern">\k&lt;name&gt;</code
 ```js
 [~/javascript-learning/xregexpexample(gh-pages)]$ nvm use v13
 Now using node v13.5.0 (npm v6.13.4)
-[~/javascript-learning/xregexpexample(gh-pages)]$ node
-Welcome to Node.js v13.5.0.
-Type ".help" for more information.
-> regexp = /(?<quote>['"])(.*?)\k<quote>/g;
-/(?<quote>['"])(.*?)\k<quote>/g
-> `He said: "She's the one!".`.match(regexp)
-[ `"She's the one!"` ]
+> regexp = /(?<quote>['"])([^'"]*)\k<quote>/;
+/(?<quote>['"])([^'"]*)\k<quote>/
+> `He said: "She is the one!".`.match(regexp)
+[
+  '"She is the one!"',
+  '"',
+  'She is the one!',
+  index: 9,
+  input: 'He said: "She is the one!".',
+  groups: [Object: null prototype] { quote: '"' }
+]
 ```
+
+Be sure to use a modern version of JS:
+
+```js
+[~/javascript-learning/xregexpexample(gh-pages)]$ node --version
+v8.1.2
+> regexp = /(?<quote>['"])(.*?)\k<quote>/g;
+SyntaxError: Invalid regular expression: /(?<quote>['"])(.*?)\k<quote>/: Invalid group
+```
+
 
 ### Backtracking en Expresiones Regulares
 
