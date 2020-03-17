@@ -108,6 +108,48 @@ console.log(/\bcat\b/.test("concatenate"));
 // → false
 ```
 
+### Backreferences in pattern: \N and \k&lt;name&gt; {#backreferences}
+
+A backreference `\n` inside a regexp, where `_n_` is a positive integer. A back reference to the last substring matching the `n` parenthetical in the regular expression (counting left parentheses).
+
+For example, `/apple(,)\sorange\1/` matches `'apple, orange,'` in `"apple, orange, cherry, peach."` 
+
+See section [Backreferences in pattern: \N and \k&lt;name&gt;](https://javascript.info/regexp-backreferences)
+
+```js
+> chuchu = /^(a+)-\1$/
+/^(a+)-\1$/
+> chuchu.exec("aa-aa")
+[ 'aa-aa', 'aa', index: 0, input: 'aa-aa' ]
+> chuchu.exec("aa-a")
+null
+> chuchu.exec("a-a")
+[ 'a-a', 'a', index: 0, input: 'a-a' ]
+> chuchu.exec("a-ab")
+null
+```
+
+```js
+> chuchu = /^\1-(a+)$/
+/^\1-(a+)$/
+> chuchu.exec("a-a")
+null
+```
+
+To reference a named group we can use <code class="pattern">\k&lt;name&gt;</code>
+
+```js
+[~/javascript-learning/xregexpexample(gh-pages)]$ nvm use v13
+Now using node v13.5.0 (npm v6.13.4)
+[~/javascript-learning/xregexpexample(gh-pages)]$ node
+Welcome to Node.js v13.5.0.
+Type ".help" for more information.
+> regexp = /(?<quote>['"])(.*?)\k<quote>/g;
+/(?<quote>['"])(.*?)\k<quote>/g
+> `He said: "She's the one!".`.match(regexp)
+[ `"She's the one!"` ]
+```
+
 ### Backtracking en Expresiones Regulares
 
 - [EJS: Backtracking](https://eloquentjavascript.net/09_regexp.html#h_NFMtGK0tD3)
