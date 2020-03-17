@@ -133,7 +133,7 @@ null
 null
 ```
 
-AS the name **backreference** implies, yo can't make forward references:
+In JavaScript you can't make forward references:
 
 ```js
 > chuchu = /^\1-(a+)$/
