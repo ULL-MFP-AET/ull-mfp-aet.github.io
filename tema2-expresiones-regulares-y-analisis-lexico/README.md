@@ -133,11 +133,15 @@ null
 null
 ```
 
+AS the name **backreference** implies, yo can't make forward references:
+
 ```js
 > chuchu = /^\1-(a+)$/
 /^\1-(a+)$/
 > chuchu.exec("a-a")
 null
+> chuchu.exec("-a")
+[ '-a', 'a', index: 0, input: '-a', groups: undefined ]
 ```
 
 #### By Name
