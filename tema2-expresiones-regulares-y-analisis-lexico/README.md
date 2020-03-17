@@ -208,6 +208,8 @@ Ejecución:
 
 ### Greed and Lazy Operators
 
+Exercise:
+
 Write a function that removes all comments from a piece of JavaScript code. 
 
 * [EJS: Greed and Lazy Operators](https://eloquentjavascript.net/09_regexp.html#h_kiECehz+i+)
