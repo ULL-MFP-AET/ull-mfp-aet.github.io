@@ -144,6 +144,16 @@ null
 [ '-a', 'a', index: 0, input: '-a', groups: undefined ]
 ```
 
+But it works in some languages as Ruby and Perl:
+
+```ruby
+$ irb
+irb(main):001:0> regex = /(\2train|(choo))+/
+=> /(\2train|(choo))+/
+irb(main):003:0> '1234chootrain' =~ regex
+=> 4
+```
+
 #### By Name
 
 To reference a named group we can use <code class="pattern">\k&lt;name&gt;</code>
