@@ -133,15 +133,25 @@ null
 null
 ```
 
-In JavaScript you can't make forward references:
+Forward references can also be used, but be sure the referenced parenthesis
+has matched when is going to be used. This usually means that the forward reference
+is inside some repetition group:
 
 ```js
-> chuchu = /^\1-(a+)$/
-/^\1-(a+)$/
-> chuchu.exec("a-a")
-null
-> chuchu.exec("-a")
-[ '-a', 'a', index: 0, input: '-a', groups: undefined ]
+[~/.../github-actions/225-github-actions-demo(master)]$ node
+Welcome to Node.js v13.5.0.
+Type ".help" for more information.
+> regex = /(\2train|(choo))+/
+/(\2train|(choo))+/
+> regex.exec('choochootrain')
+[
+  'choochootrain',
+  'train',
+  undefined,
+  index: 0,
+  input: 'choochootrain',
+  groups: undefined
+]
 ```
 
 But it works in some languages as Ruby and Perl:
