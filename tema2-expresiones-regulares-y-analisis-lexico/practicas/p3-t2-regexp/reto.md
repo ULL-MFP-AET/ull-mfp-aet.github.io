@@ -1,3 +1,11 @@
+---
+layout: default
+title: p2-t1-testing
+permalink: /tema2-expresiones-regulares-y-analisis-lexico/practicas/p3-t2-regexp
+previous:
+  url: /tema1-introduccion-a-javascript/practicas/p2-t1-testing/
+---
+
 # Descripción de la Práctica de Expresiones Regulares p3-t2-regexp
 
 ### Forma de trabajo

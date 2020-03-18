@@ -74,3 +74,6 @@ practicas:
   - title: 07p2-t1-testing
     myurl: /tema1-introduccion-a-javascript/practicas/p2-t1-testing/
     name: Práctica p2-t1-testing
+  - title: 08p3-t2-regexp
+    myurl: /tema2-expresiones-regulares-y-analisis-lexic/practicas/p3-t2-regexp/reto
+    name: Práctica p3-t2-regexp
