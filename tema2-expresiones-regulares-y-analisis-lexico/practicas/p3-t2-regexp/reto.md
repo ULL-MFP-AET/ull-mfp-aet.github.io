@@ -1,6 +1,17 @@
+---
+layout: default
+title: p2-t1-testing
+permalink: /tema2-expresiones-regulares-y-analisis-lexico/practicas/p3-t2-regexp/reto
+previous:
+  url: /tema1-introduccion-a-javascript/practicas/p2-t1-testing/
+---
+
+
 # Práctica: Manejo de Expresiones Regulares
 
 ## Introducción
+
+* [Repo de partida para los ejercicios: ULL-ESIT-PL-1819/regexp-exercises](https://github.com/ULL-ESIT-PL-1819/regexp-exercises)
 
 Esta práctica se divide en varios retos que se corresponden con distintos programas JavaScript:
  
