@@ -13,7 +13,7 @@ previous:
 
 * [Repo de partida para los ejercicios: ULL-ESIT-PL-1819/regexp-exercises](https://github.com/ULL-ESIT-PL-1819/regexp-exercises)
 
-Esta práctica se divide en varios retos que se corresponden con distintos programas JavaScript:
+Esta práctica se divide en varios apartados que se corresponden con distintos programas JavaScript:
  
 ```
 eloquentregexp.js
