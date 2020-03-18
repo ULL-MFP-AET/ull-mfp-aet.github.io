@@ -133,9 +133,12 @@ null
 null
 ```
 
+#### Forward References
+
 Forward references can also be used, but be sure the referenced parenthesis
 has matched when is going to be used. This usually means that the forward reference
-is inside some repetition group:
+is inside some repetition group. For example, this regexp matches with `train` only if 
+it is prefixed by at least one `choo`:
 
 ```js
 [~/.../github-actions/225-github-actions-demo(master)]$ node
