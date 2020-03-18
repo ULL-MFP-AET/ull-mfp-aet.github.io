@@ -154,7 +154,7 @@ Type ".help" for more information.
 ]
 ```
 
-But it works in some languages as Ruby and Perl:
+It works also in other languages as Ruby and Perl:
 
 ```ruby
 $ irb
