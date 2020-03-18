@@ -83,5 +83,5 @@ Aunque en cada uno de los problemas se ha proveído  algunos ejemplos de cadenas
 
 ## Recursos
 
-* [Apuntes: Expresiones Regulares](https://casianorodriguezleon.gitbooks.io/ull-esit-1617/content/apuntes/regexp/)
+* [Apuntes: Expresiones Regulares]({{site.baseurl}}/introduccion/tema2-expresiones-regulares-y-analisis-lexico/#diophantic-equations)
 * [Eloquent JavaScript: Capítulo Expresiones Regulares](http://eloquentjavascript.net/09_regexp.html)
