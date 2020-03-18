@@ -207,6 +207,21 @@ SyntaxError: Invalid regular expression: /(?<quote>['"])(.*?)\k<quote>/: Invalid
 - [EJS: Backtracking](https://eloquentjavascript.net/09_regexp.html#h_NFMtGK0tD3)
 - [Backtracking. Paréntesis dentro de una RegExp](regexpejercicios.html#backtracking)
 
+### Diophantic Equations
+
+On September 2009 [I](https://www.perlmonks.org/?node_id=626604) wrote a small piece in [Perl Monks](https://www.perlmonks.org) titled:
+
+* [The Oldest Plays the Piano](https://www.perlmonks.org/?node_id=796576)
+
+that illustrates (in Perl) how to solve a set of diophantic equations
+using Regular Expressions. 
+
+#### Exercise: 
+
+Write a program that using a regular expression computes a integer solution
+to the diophantine equation $$4x+5y=77$$
+
+
 ### replace
 The `replace()` method returns a new string with some or all matches of
 a pattern replaced by a replacement.  
