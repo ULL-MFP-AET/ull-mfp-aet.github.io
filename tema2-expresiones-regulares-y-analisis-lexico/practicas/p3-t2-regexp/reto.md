@@ -83,5 +83,6 @@ Aunque en cada uno de los problemas se ha proveído  algunos ejemplos de cadenas
 
 ## Recursos
 
+* [Repo de partida para los ejercicios: ULL-ESIT-PL-1819/regexp-exercises](https://github.com/ULL-ESIT-PL-1819/regexp-exercises)
 * [Apuntes: Expresiones Regulares]({{site.baseurl}}/introduccion/tema2-expresiones-regulares-y-analisis-lexico/#diophantic-equations)
 * [Eloquent JavaScript: Capítulo Expresiones Regulares](http://eloquentjavascript.net/09_regexp.html)
