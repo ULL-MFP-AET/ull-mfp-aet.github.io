@@ -214,7 +214,7 @@ On September 2009 [I](https://www.perlmonks.org/?node_id=626604) wrote a small p
 * [The Oldest Plays the Piano](https://www.perlmonks.org/?node_id=796576)
 
 that illustrates (in Perl) how to solve a set of diophantic equations
-using Regular Expressions. 
+using Perl Extended Regular Expressions. 
 
 #### Exercise: 
 
