@@ -402,6 +402,11 @@ while (match = number.exec(input)) {
 
 ### Sticky flag "y", searching at position
 
+Regular expressions can have options, which are written after the closing slash. 
+
+- The `g` option makes the expression _global_, which, among other things, causes the `replace` method to replace all instances instead of just the first. 
+- The `y` option makes it sticky, which means that it will not search ahead and skip part of the string when looking for a match. 
+  
 The difference between the global and the sticky options is that, when sticky is enabled, the match will succeed only if it starts directly at `lastIndex`, whereas with global, it will search ahead for a position where a match can start.
 
 ```js
