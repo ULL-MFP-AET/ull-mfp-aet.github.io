@@ -20,6 +20,7 @@ Esta práctica se divide en varios apartados que se corresponden con distintos p
 eloquentregexp.js
 boundaries.js
 diophantine3xplus2yequal14.js
+imperial2metric.md
 replaceexercises.js
 regexpexercises.js
 singlequotestodoublequotes.js
