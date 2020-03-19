@@ -4,6 +4,7 @@ title: p2-t1-testing
 permalink: /tema2-expresiones-regulares-y-analisis-lexico/practicas/p3-t2-regexp/reto
 previous:
   url: /tema1-introduccion-a-javascript/practicas/p2-t1-testing/
+repo: https://github.com/ULL-ESIT-PL-1819/regexp-exercises
 ---
 
 
@@ -73,11 +74,11 @@ El resto de ejercicios sigue un esquema similar al anterior.
 Para cada uno, lea las instrucciones
 en los comentarios:
 
-* [boundaries.js](boundaries.js)
-* Resuelva [diophantine3xplus2yequal14.js](diophantine3xplus2yequal14.js)
-* Resuelva los ejercicios en [singlequotestodoublequotes.js](singlequotestodoublequotes.js)
-* Resuelva los ejercicios en [replaceexercises.js](replaceexercises.js)
-* Resuelva los ejercicios en [regexpexercises.js](regexpexercises.js)
+* [boundaries.js]({{page.repo}}/boundaries.js)
+* Resuelva [diophantine3xplus2yequal14.js]({{page.repo}}/diophantine3xplus2yequal14.js)
+* Resuelva los ejercicios en [singlequotestodoublequotes.js]({{page.repo}}/singlequotestodoublequotes.js)
+* Resuelva los ejercicios en [replaceexercises.js]({{page.repo}}/replaceexercises.js)
+* Resuelva los ejercicios en [regexpexercises.js]({{page.repo}}/regexpexercises.js)
 
 Aunque en cada uno de los problemas se ha proveído  algunos ejemplos de cadenas con las que deberia casar o no casar, en general es conveniente que aumente el número de casos de prueba.
 
