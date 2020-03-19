@@ -402,6 +402,17 @@ while (match = number.exec(input)) {
 
 ### Sticky flag "y", searching at position
 
+The difference between the global and the sticky options is that, when sticky is enabled, the match will succeed only if it starts directly at `lastIndex`, whereas with global, it will search ahead for a position where a match can start.
+
+```js
+let global = /abc/g;
+console.log(global.exec("xyz abc"));
+// → ["abc"]
+let sticky = /abc/y;
+console.log(sticky.exec("xyz abc"));
+// → null
+```
+
 * [Sticky flag "y", searching at position](https://javascript.info/regexp-sticky)
 
 

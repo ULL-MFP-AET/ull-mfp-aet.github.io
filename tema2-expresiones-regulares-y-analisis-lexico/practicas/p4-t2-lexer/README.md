@@ -136,18 +136,20 @@ regulares. Reescriba el analizador léxico en [tokens.js](https://github.com/dou
 /Users/casiano/local/academica/centros/ETSII/GRADO/PL/campus-virtual/tema2-regexp-y-lexico/practica-analisis-lexico-tdop/solutions
 
 ```
+* sol-david dibad
+  * [sol-davafons](https://github.com/ULL-ESIT-PL-1819/p4-t2-lexer-Dibad)
 * sol-cas
   * [sol-cas](https://github.com/ULL-ESIT-PL-1819/analizador-lexico-para-js)
 * sol-ai
   * [sol-ai auth](https://github.com/ULL-ESIT-PL-1718/authentication-angeligareta)
-  * [sol-ai](https://github.com/ULL-ESIT-PL-1718/analizador-lexico-para-js-angeligareta)
-* sol-ca
+  * [sol-angeli](https://github.com/ULL-ESIT-PL-1718/analizador-lexico-para-js-angeligareta)
+* sol-carlos
   * [sol-ca-auth](https://github.com/ULL-ESIT-PL-1718/alu0100966589-AuthModule)
   * [sol-ca](https://github.com/ULL-ESIT-PL-1718/analizador-lexico-para-js-alu0100966589)
-* sol-da
+* sol-daute
   * [sol-da-auth](https://github.com/ULL-ESIT-PL-1718/auth-alu0100973914)
   * [sol-da](https://github.com/ULL-ESIT-PL-1718/analizador-lexico-para-js-alu0100973914)
-* sol-cri
+* sol-cristian
   * [sol-cri](https://github.com/ULL-ESIT-PL-1718/analizador-lexico-para-js-alu0100945850)
   * [sol-cri-auth](https://github.com/ULL-ESIT-PL-1718/auth-alu0100945850)
 
