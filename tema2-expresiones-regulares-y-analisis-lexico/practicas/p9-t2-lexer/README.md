@@ -8,7 +8,6 @@ repo: https://github.com/ULL-ESIT-PL-1819/regexp-exercises/blob/master/
 ---
 
 
-
 ## Práctica: Analizador Léxico para Un Subconjunto de JavaScript (p9-t2-lexer)
 
 
