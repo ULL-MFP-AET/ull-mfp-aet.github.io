@@ -64,16 +64,25 @@ practicas:
     name: Práctica p1-t1-iaas
     reto: 
       url: /tema1-introduccion-a-javascript/practicas/p1-t1-iaas/reto-async
-      title: Reto Async
+      title: Reto Async Map
   - title: 05p2-t1-vscode
     myurl: /tema1-introduccion-a-javascript/practicas/p2-t1-vscode/
     name: Práctica p2-t1-vscode
   - title: 06p3-t1-handling-events
     myurl: /tema1-introduccion-a-javascript/practicas/p3-t1-handling-events/
     name: Práctica p3-t1-handling-events
+    reto: 
+      url: /tema1-introduccion-a-javascript/practicas/p3-t1-handling-events/reto
+      title: Reto Async Serialize
   - title: 07p2-t1-testing
     myurl: /tema1-introduccion-a-javascript/practicas/p2-t1-testing/
     name: Práctica p2-t1-testing
+    reto: 
+      url: /tema1-introduccion-a-javascript/practicas/p2-t1-testing//reto
+      title: Reto Webpages for Authors
   - title: 08p3-t2-regexp
     myurl: /tema2-expresiones-regulares-y-analisis-lexico/practicas/p3-t2-regexp/reto
     name: Práctica p3-t2-regexp
+  - title: 09p9-t2-lexer
+    myurl: /tema2-expresiones-regulares-y-analisis-lexico/practicas/p9-t2-lexer/
+    name: Práctica p9-t2-lexer
