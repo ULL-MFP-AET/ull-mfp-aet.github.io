@@ -456,7 +456,7 @@ via el nombre:
 ```
 
 Puesto que la expresión regular es un OR excluyente, sólo una de las subexpresiones
-casa y elr esto está `undefined`. 
+casa y el resto está `undefined`. 
 Para detectar el token debemos recorrer el objeto buscando la clave cuyo valor no 
 está `undefined`:
 
