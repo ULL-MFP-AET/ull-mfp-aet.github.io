@@ -1,19 +1,27 @@
 ## Práctica: Analizador Léxico para Un Subconjunto de JavaScript (p9-t2-lexer)
 
-Vamos a trabajar a partir de este repo de Douglas Crockford:
+
+### Introducción
+
+Vamos a trabajar a partir de este repo de Douglas Crockford que contiene un analizador sintáctico de una versión antigua de JavaScript:
 
 -  [https://github.com/douglascrockford/TDOP](https://github.com/douglascrockford/TDOP)
 -  Autor: [Douglas Crockford](http://www.crockford.com/), [douglas@crockford.com en la Wikipedia](https://en.wikipedia.org/wiki/Douglas_Crockford)
 -  Fecha que figura en el repo: 2010-11-12
--  Vea una versión modificada en funcionamiento en [http://crguezl.github.io/ull-etsii-grado-pl-minijavascript/](http://crguezl.github.io/ull-etsii-grado-pl-minijavascript/). En esta versión el analizador léxico usa expresiones regulares.
+-  Vea una versión modificada en funcionamiento en [http://crguezl.github.io/ull-etsii-grado-pl-minijavascript/](http://crguezl.github.io/ull-etsii-grado-pl-minijavascript/). 
+  
 
-### Introducción
+The goal of this lab is to rewrite the lexical analyzer using regular expressions.
 
--   [tdop.html](http://crguezl.github.io/ull-etsii-grado-pl-minijavascript/tdop.html) contains a description of Vaughn Pratt’s Top Down Operator
-    Precedence, and describes the parser whose lexer we are going to
-    write in this lab. Is a simplified version of JavaScript.
--   The file [`index.html`](https://github.com/douglascrockford/TDOP/blob/master/index.html) parses [`parse.js`](https://github.com/douglascrockford/TDOP/blob/master/parse.js) and displays its AST.
--   The page depends on on [`parse.js`](https://github.com/douglascrockford/TDOP/blob/master/parse.js) and [`tokens.js`](https://github.com/douglascrockford/TDOP/blob/master/tokens.js).
+
+The file [tdop.html](http://crguezl.github.io/ull-etsii-grado-pl-minijavascript/tdop.html) contains a description of Vaughn Pratt’s Top Down Operator
+Precedence, and describes the parser.
+
+
+As soon as it loads, the file [`index.html`](https://github.com/douglascrockford/TDOP/blob/master/index.html) parses the javascript code inside [`parse.js`](https://github.com/douglascrockford/TDOP/blob/master/parse.js) and displays the corresponding AST.
+Then you can play with other examples introducing them inside the text area.
+
+The page depends on [`parse.js`](https://github.com/douglascrockford/TDOP/blob/master/parse.js) and [`tokens.js`](https://github.com/douglascrockford/TDOP/blob/master/tokens.js).
 -   The file [`parse.js`](https://github.com/douglascrockford/TDOP/blob/master/parse.js) contains the Simplified JavaScript parser.
 -   [tokens.js](https://github.com/douglascrockford/TDOP/blob/master/tokens.js) produces an array of token objects from a string. 
 
@@ -23,14 +31,11 @@ Vamos a trabajar a partir de este repo de Douglas Crockford:
 Douglas Crockford escribió este analizador léxico sin usar expresiones
 regulares. Reescriba el analizador léxico en [tokens.js](https://github.com/douglascrockford/TDOP/blob/master/tokens.js) usando expresiones regulares.
 
-
-Modifique la solución de Crockford usado regexps en [tokens.js](https://github.com/douglascrockford/TDOP/blob/master/tokens.js)
-
 ### Use Sticky Flags
 
 Evite que se hagan copias de la cadena siendo procesada. Muévase
 dentro de la misma cadena usando `lastIndex`. Quizá usar la opción sticky le ayude.
-Tiene una solución dada por el profesor en 
+Tiene una solución que puede consultar en: 
 
 - [/crguezl/ull-etsii-grado-pl-minijavascript/tokens.js](https://github.com/crguezl/ull-etsii-grado-pl-minijavascript/blob/gh-pages/tokens.js)
 
@@ -69,6 +74,8 @@ debería producir una salida parecida a esta:
 
 #### Letras y Números con XRegexp
 
+Recuerde como procesar letras y números Unicode usando XRegexp:
+
   ```js
   > [analizador-lexico(master)]$ node
   > XRegExp = require("xregexp")
@@ -80,6 +87,7 @@ debería producir una salida parecida a esta:
   [ '६६७', '६७', '2' ]
   > 
   ```
+
 #### El Módulo @ull-esit-pl/uninums
 
 El módulo [Módulo @ull-esit-pl/uninums](https://www.npmjs.com/package/@ull-esit-pl/uninums) les ayudará a obtener la representación interna de una cadena unicode que contenga un número:
@@ -126,16 +134,12 @@ total 56
 
 * Use este fichero en el cliente: [uninums.js](uninums.js)
 
-### Despliegue la Aplicación en GH-Pages
+### Despliegue la Aplicación en Github
 
-Despliegue la aplicación y el informe en gh-pages
+Despliegue la aplicación y el informe en GitHub. Use la rama `master`
+para simplificar el despliegue.
 
 ## Recursos
-
-
-* [Apuntes: Expresiones Regulares](../apuntes/regexp/README.md)
-* [Eloquent JS: Chapter 9: Regular Expressions](http://eloquentjavascript.net/09_regexp.html)
-
 
 ### XRegexp
 
@@ -160,8 +164,6 @@ Despliegue la aplicación y el informe en gh-pages
   * [Ejemplos de extensiones de XRegExp para Unicode](https://github.com/ULL-ESIT-GRADOII-PL/xregexp-example/blob/gh-pages/unicode.js)
 
 
-
-* [JavaScript y Unicode](https://github.com/ULL-ESIT-PL/unicode-js) (Repo en GitHub unicode-js)
 
 
 ### Módulo @ull-esit-pl/uninums
