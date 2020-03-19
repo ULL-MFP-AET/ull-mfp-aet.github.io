@@ -439,6 +439,22 @@ Véase también:
 Si combinamos la flag sticky con el uso de paréntesis con nombre 
 podemos construir un analizador léxico.
 
+Para ello usaremos el hecho de que podemos acceder al paréntesis que casa
+via el nombre:
+
+```js
+> RE = /(?<NUM>\d+)|(?<ID>[a-z]+)|(?<OP>[-+*=])/y;
+/(?<NUM>\d+)|(?<ID>[a-z]+)|(?<OP>[-+*=])/y
+> input = 'x=2+b'
+'x=2+b'
+> while (m = RE.exec(input)) { console.log(m.groups) }
+[Object: null prototype] { NUM: undefined, ID: 'x', OP: undefined }
+[Object: null prototype] { NUM: undefined, ID: undefined, OP: '=' }
+[Object: null prototype] { NUM: '2', ID: undefined, OP: undefined }
+[Object: null prototype] { NUM: undefined, ID: undefined, OP: '+' }
+[Object: null prototype] { NUM: undefined, ID: 'b', OP: undefined }
+```
+
 El siguiente ejemplo ilustra la técnica:
 
 ```
