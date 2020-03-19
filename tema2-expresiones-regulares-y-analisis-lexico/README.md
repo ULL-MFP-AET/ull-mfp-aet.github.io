@@ -455,6 +455,26 @@ via el nombre:
 [Object: null prototype] { NUM: undefined, ID: 'b', OP: undefined }
 ```
 
+Puesto que la expresión regular es un OR excluyente, sólo una de las subexpresiones
+casa y elr esto está `undefined`. 
+Para detectar el token debemos recorrer el objeto buscando la clave cuyo valor no 
+está `undefined`:
+
+```js
+> RE = /(?<NUM>\d+)|(?<ID>[a-z]+)|(?<OP>[-+*=])/y;
+/(?<NUM>\d+)|(?<ID>[a-z]+)|(?<OP>[-+*=])/y
+> input = 'x=2+b'
+'x=2+b'
+> names = ['NUM', 'ID', 'OP']
+[ 'NUM', 'ID', 'OP' ]
+> while (m = RE.exec(input)) { console.log(names.find(n => m.groups[n] !== undefined)) }
+ID
+OP
+NUM
+OP
+ID
+```
+
 El siguiente ejemplo ilustra la técnica:
 
 ```
