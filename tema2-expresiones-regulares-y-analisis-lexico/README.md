@@ -467,7 +467,8 @@ está `undefined`:
 'x=2+b'
 > names = ['NUM', 'ID', 'OP']
 [ 'NUM', 'ID', 'OP' ]
-> while (m = RE.exec(input)) { console.log(names.find(n => m.groups[n] !== undefined)) }
+> while (m = RE.exec(input)) { 
+  console.log(names.find(n => m.groups[n] !== undefined)) }
 ID
 OP
 NUM
