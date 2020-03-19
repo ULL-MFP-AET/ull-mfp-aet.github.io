@@ -76,8 +76,10 @@ en los comentarios:
 
 * [boundaries.js]({{page.repo}}/boundaries.js)
 * Resuelva [diophantine3xplus2yequal14.js]({{page.repo}}/diophantine3xplus2yequal14.js)
+  * [Diophantic Equations en los apuntes]({{site.baseurl}}/tema2-expresiones-regulares-y-analisis-lexico/#diophantic-equations)
 * Resuelva los ejercicios en [singlequotestodoublequotes.js]({{page.repo}}/singlequotestodoublequotes.js)
 * Resuelva los ejercicios en [replaceexercises.js]({{page.repo}}/replaceexercises.js)
+  * [Véase la sección replace en los apuntes]({{site.baseurl}}/tema2-expresiones-regulares-y-analisis-lexico/#replace)
 * Resuelva los ejercicios en [regexpexercises.js]({{page.repo}}/regexpexercises.js)
 
 Aunque en cada uno de los problemas se ha proveído  algunos ejemplos de cadenas con las que deberia casar o no casar, en general es conveniente que aumente el número de casos de prueba.

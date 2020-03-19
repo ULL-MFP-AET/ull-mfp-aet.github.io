@@ -209,11 +209,13 @@ SyntaxError: Invalid regular expression: /(?<quote>['"])(.*?)\k<quote>/: Invalid
 
 ### Diophantic Equations
 
+A Diophantine equation is an indeterminate polynomial equation that allows the variables to be integers only.
+
 On September 2009 [I](https://www.perlmonks.org/?node_id=626604) wrote a small piece in [Perl Monks](https://www.perlmonks.org) titled:
 
 * [The Oldest Plays the Piano](https://www.perlmonks.org/?node_id=796576)
 
-that illustrates (in Perl) how to solve a set of diophantic equations
+that illustrates (in Perl) how to solve a set of diophantine equations
 using Perl Extended Regular Expressions. 
 
 #### Exercise: 
