@@ -581,6 +581,8 @@ for (let char of roseDragon) {
 
 If you have a character (which will be a string of one or two code units), you can use `codePointAt(0)` to get its code.
 
+* Examples of [JavaScript y Unicode](https://github.com/ULL-ESIT-PL/unicode-js) (Repo en GitHub unicode-js)
+
 ### Unicode and Editors
 
 * [Visual Studio Code Extension: Insert Unicode](https://marketplace.visualstudio.com/items?itemName=brunnerh.insert-unicode)
@@ -588,6 +590,7 @@ If you have a character (which will be a string of one or two code units), you c
   * `ga` shows the decimal, hexadecimal and octal value of the character under  the cursor.
   * Any utf character at all can be entered with a `Ctrl-V` prefix, either `<Ctrl-V> u aaaa` or `<Ctrl-V> U bbbbbbbb`, with `0 <= aaaa <= FFFF`, or `0 <= bbbbbbbb <= 7FFFFFFF`.
   * Digraphs work by pressing CTRL-K and a two-letter combination while in insert mode. `<Ctrl-K> a *` produces `α` `<Ctrl-K> b *` produces `β`, `<Ctrl-k> d =` produces `д`, etc.
+
 
 ### Unicode: Regular Expressions and International characters
 
