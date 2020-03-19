@@ -3,7 +3,7 @@ layout: default
 title: p9-t2-lexer
 permalink: /tema2-expresiones-regulares-y-analisis-lexico/practicas/p9-t2-lexer
 previous: 
-  url: /tema2-expresiones-regulares-y-analisis-lexico/practicas/p3-t2-regexp/reto
+  url: /tema2-expresiones-regulares-y-analisis-lexico/practicas/p9-t2-lexer
 ---
 
 
