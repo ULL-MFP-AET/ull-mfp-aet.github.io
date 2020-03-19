@@ -79,6 +79,7 @@ en los comentarios:
   * [Diophantic Equations en los apuntes]({{site.baseurl}}/tema2-expresiones-regulares-y-analisis-lexico/#diophantic-equations)
 * Resuelva los ejercicios en [singlequotestodoublequotes.js]({{page.repo}}/singlequotestodoublequotes.js)
 * Resuelva los ejercicios en [replaceexercises.js]({{page.repo}}/replaceexercises.js)
+* [imperial2metric.md]({{page.repo}}/imperial2metric.md)
   * [Véase la sección replace en los apuntes]({{site.baseurl}}/tema2-expresiones-regulares-y-analisis-lexico/#replace)
 * Resuelva los ejercicios en [regexpexercises.js]({{page.repo}}/regexpexercises.js)
 
