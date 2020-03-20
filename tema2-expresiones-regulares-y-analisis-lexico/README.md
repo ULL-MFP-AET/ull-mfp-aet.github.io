@@ -59,33 +59,6 @@ If you are executing a match simply to find `true` or `false`,
 use the `RegExp.prototype.test()` method or the `String.prototype.search()` method.
 
 
-If your regular expression uses the `g` flag, you can use the `exec`
-method multiple times to find successive matches in the same string.
-When you do so, the search starts at the substring of str specified
-by the regular expression’s `lastIndex` property.
-  
-```js
-      > re = /d(b+)(d)/ig
-      /d(b+)(d)/gi
-      > z = "dBdxdbbdzdbd"
-      'dBdxdbbdzdbd'
-      > result = re.exec(z)
-      [ 'dBd', 'B', 'd', index: 0, input: 'dBdxdbbdzdbd' ]
-      > re.lastIndex
-      3
-      > result = re.exec(z)
-      [ 'dbbd', 'bb', 'd', index: 4, input: 'dBdxdbbdzdbd' ]
-      > re.lastIndex
-      8
-      > result = re.exec(z)
-      [ 'dbd', 'b', 'd', index: 9, input: 'dBdxdbbdzdbd' ]
-      > re.lastIndex
-      12
-      > z.length
-      12
-      > result = re.exec(z)
-      null
-```
 
 
 ### match
