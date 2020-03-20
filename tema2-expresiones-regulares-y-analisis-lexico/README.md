@@ -337,17 +337,17 @@ Write a function that removes all comments from a piece of JavaScript code.
 
 * [EJS: Greed and Lazy Operators](https://eloquentjavascript.net/09_regexp.html#h_kiECehz+i+)
 
-### Lookahead y lookbehind
+### Positive Lookahead
 
-When we look for `X(?=Y)`, the regular expression engine finds `X` 
-and then checks if there’s `Y` immediately after it. 
-If it’s not so, then the potential match is skipped, and the search continues
+A positive lookahead has the syntax `X(?=Y)`: 
+
+The regular expression engine finds `X` 
+and then matches only if there’s `Y` immediately after it and the search continues
 **inmediately after the `X`**.
 
-See section [Lookahead and lookbehind](https://javascript.info/regexp-lookahead-lookbehind) of the Modern JavaScript Tutorial.
+For more information, see section [Lookahead and lookbehind](https://javascript.info/regexp-lookahead-lookbehind) of the Modern JavaScript Tutorial.
 
-
-JavaScript tiene lookaheads:
+Example:
 
 ```js
         > x = "hello"
@@ -358,7 +358,7 @@ JavaScript tiene lookaheads:
         [ 'l', index: 3, input: 'hello' ]
 ```
 
-¿Cual es la salida?
+**Exercise:** What is the output?
 
 ```js
 > str = "1 turkey costs 30 €"
@@ -366,7 +366,26 @@ JavaScript tiene lookaheads:
 > str.match(/\d+(?=\s)(?=.*30)/)
 ```
 
-#### Paréntesis de lookbehind {#lookbehind}
+### Negative Lookahead
+
+A negative lookahead has the syntax `X(!=Y)`: 
+
+The regular expression engine finds `X` 
+and then matches only if there’s no `Y` immediately after the `X` and if so, 
+the search continues
+**inmediately after the `X`**.
+
+**Exercise:** What is the output? Whose of these twos is matched?
+
+```js
+> reg = /\d+(?!€)(?!\$)/
+/\d+(?!€)(?!\$)/
+> s = '2€ is more than 2$ and 2+2 is 4'
+'2€ is more than 2$ and 2+2 is 4'
+> reg.exec(s)
+```
+
+### Lookbehind {#lookbehind}
 
 JavaScript no tiene lookbehinds:
 
