@@ -260,6 +260,78 @@ Consider these questions:
 Once you have an idea of what data you’ll want to extract, try creating a JSON object by hand for this one download source. When you’re happy with your data representation, use your existing continuous testing infrastructure and add a test that checks for this new information.
 
 Finally, extend the book object produced in `parse-rdf.js` to include this data to make the test pass.
+## Example of Solution Output 
+```
+[~/.../ca1819-t1-p7-marreA/databases(master)]$ ./rdf-to-json.js  test/pg132.rdf
+```
+```js
+{
+ "id": 132,
+ "title": "The Art of War",
+ "authors": [
+  {
+   "name": "Giles, Lionel",
+   "webpages": [
+    "http://en.wikipedia.org/wiki/Lionel_Giles"
+   ]
+  },
+  {
+   "name": "Sunzi, active 6th century B.C.",
+   "webpages": [
+    "http://zh.wikipedia.org/wiki/%E5%AD%99%E6%AD%A6",
+    "http://en.wikipedia.org/wiki/Sun_Tzu"
+   ]
+  }
+ ],
+ "subjects": [
+  "Military art and science -- Early works to 1800",
+  "War -- Early works to 1800"
+ ],
+ "lcc": "U",
+ "links": [
+  {
+   "link": "http://www.gutenberg.org/ebooks/132.epub.images",
+   "type": "application/epub+zip"
+  },
+  {
+   "link": "http://www.gutenberg.org/files/132/132.zip",
+   "type": "application/ziptext/plain; charset=us-ascii"
+  },
+  {
+   "link": "http://www.gutenberg.org/ebooks/132.rdf",
+   "type": "application/rdf+xml"
+  },
+  {
+   "link": "http://www.gutenberg.org/ebooks/132.txt.utf-8",
+   "type": "text/plain"
+  },
+  {
+   "link": "http://www.gutenberg.org/ebooks/132.html.images",
+   "type": "text/html"
+  },
+  {
+   "link": "http://www.gutenberg.org/ebooks/132.kindle.images",
+   "type": "application/x-mobipocket-ebook"
+  },
+  {
+   "link": "http://www.gutenberg.org/ebooks/132.epub.noimages",
+   "type": "application/epub+zip"
+  },
+  {
+   "link": "http://www.gutenberg.org/files/132/132.txt",
+   "type": "text/plain; charset=us-ascii"
+  },
+  {
+   "link": "http://www.gutenberg.org/ebooks/132.html.noimages",
+   "type": "text/html"
+  },
+  {
+   "link": "http://www.gutenberg.org/ebooks/132.kindle.noimages",
+   "type": "application/x-mobipocket-ebook"
+  }
+ ]
+}
+```
 
 ## Recursos
 
