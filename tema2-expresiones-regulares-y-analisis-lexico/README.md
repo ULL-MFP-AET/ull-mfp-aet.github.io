@@ -218,11 +218,23 @@ On September 2009 [I](https://www.perlmonks.org/?node_id=626604) wrote a small p
 that illustrates (in Perl) how to solve a set of diophantine equations
 using Perl Extended Regular Expressions. 
 
-#### Exercise: 
+#### Exercise
 
 Write a program that using a regular expression computes a integer solution
 to the diophantine equation $$4x+5y=77$$
 
+Generalize the former solution and write a function:
+
+```js
+           diophantine(a, b, c)
+```
+
+that returns an array `[x, y]` containing a
+solution to the diophantine equation
+$$a \times x + b \times y = c$$
+or `null` if there is no such solution
+
+Since to solve this problem you have to dynamically create the regexp, review section [Dynamically creating RegExp objects](https://eloquentjavascript.net/09_regexp.html#h_Rhu25fogrG) of the Eloquent JS book.
 
 ### replace
 The `replace()` method returns a new string with some or all matches of
