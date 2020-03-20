@@ -385,31 +385,34 @@ the search continues
 > reg.exec(s)
 ```
 
-### Lookbehind {#lookbehind}
+### Positive Lookbehind 
 
-JavaScript no tiene lookbehinds:
+Positive lookbehind has the syntax `(?<=Y)X`, 
+it matches `X`, but only if there’s `Y` before it.
 
 ```js
-        > x = "hello"
-        'hello'
-        > r = /(?<=l)l/
-        SyntaxError: Invalid regular expression: /(?<=l)l/: Invalid group
-        > .exit
+> str = "1 turkey costs $30"
+'1 turkey costs $30'
+> str.match(/(?<=\$)\d+/)
+[ '30', index: 16, input: '1 turkey costs $30', groups: undefined ]
 ```
 
+### Negative Lookbehind
+
+Negative lookbehind ahs the syntax `(?<!Y)X`, it matches `X`, 
+but only if there’s no `Y` before it.
+
+```js
+> str = 'I bought 2Kg of rice by 3€ at the Orotavas\' country market'
+"I bought 2Kg of rice by 3€ at the Orotavas' country market"
+> str.match(/(?<!t )\d+/)
+[
+  '3',
+  index: 24,
+  input: "I bought 2Kg of rice by 3€ at the Orotavas' country market",
+  groups: undefined
+]
 ```
-        [~/Dropbox/src/javascript/PLgrado/csv(master)]$ irb
-```
-```ruby
-        ruby-1.9.2-head :001 > x = "hello"
-         => "hello" 
-        ruby-1.9.2-head :002 > r = /(?<=l)l/
-         => ll 
-        ruby-1.9.2-head :008 > x =~ r
-         => 3 
-        ruby-1.9.2-head :009 > $&
-         => "l" 
-``` 
 
 ### search
 
