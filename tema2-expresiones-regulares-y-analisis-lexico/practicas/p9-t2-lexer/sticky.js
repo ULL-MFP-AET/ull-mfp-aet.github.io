@@ -23,7 +23,7 @@ console.log(str);
 r = lexer(str);
 ins(r);
 
-str = 'let x = a + b';
+str = 'let x = a + \nb';
 console.log(str);
 r = lexer(str);
 ins(r);

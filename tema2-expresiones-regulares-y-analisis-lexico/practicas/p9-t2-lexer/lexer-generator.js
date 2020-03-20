@@ -1,3 +1,6 @@
+// Key 'SPACE' means white space
+// Key 'ERROR' is reserved
+
 function buildLexer(lexemes) {
   let tokens = lexemes.slice(0);
 
