@@ -728,6 +728,23 @@ See also:
 * [Example: using sticky matching for tokenizing](http://2ality.com/2015/07/regexp-es6.html#example-using-sticky-matching-for-tokenizing) inside 
 the chapter [New regular expression features in ECMAScript 6](http://2ality.com/2015/07/regexp-es6.html#example-using-sticky-matching-for-tokenizing)
 
+### Ejercicios
+
+* [Ejercicios de Expresiones Regulares en los apuntes](regexpejercicios.html)
+* [Ejercicio: Palabras repetidas](https://youtu.be/GfLkvLM7pA8) Vídeo del profesor
+   * [Repo en GitHub](https://github.com/ULL-ESIT-PL/repeated-words-regexp)
+   * [![](http://i3.ytimg.com/vi/GfLkvLM7pA8/hqdefault.jpg)](https://youtu.be/GfLkvLM7pA8)
+* [Ejercicio: Buscar las secuencias que empiezan por 12 en posiciones múltiplos de 6](https://youtu.be/A5JoNlTawFA) Vídeo del profesor
+  * [![](http://i3.ytimg.com/vi/A5JoNlTawFA/hqdefault.jpg)](https://youtu.be/A5JoNlTawFA)
+* Tarea. Haga los ejercicios en [https://regexone.com/](https://regexone.com/)
+* Tarea. Haga los ejercicios en [https://www.w3resource.com/javascript-exercises/javascript-regexp-exercises.php](https://www.w3resource.com/javascript-exercises/javascript-regexp-exercises.php)
+
+### Práctica p3-t2-regexp
+
+Resuelva los ejercicios de Expresiones Regulares propuestos por el profesor
+
+* [Práctica de Expresiones Regulares (p3-t2-regexp)](practicas/p3-t2-regexp/reto)
+
 
 ## Unicode y  Extensiones
 
@@ -912,24 +929,7 @@ Javascript supports Unicode strings, but parsing such strings to numbers is unsu
 
 * [New regular expression features in ECMAScript 6](http://www.2ality.com/2015/07/regexp-es6.html)
 
-### Ejercicios
 
-* [Ejercicios de Expresiones Regulares en los apuntes](regexpejercicios.html)
-  - [lookahead](regexpejercicios.html#lookahead)
-  - [lookbehind](regexpejercicios.html#lookbehind)
-* [Ejercicio: Palabras repetidas](https://youtu.be/GfLkvLM7pA8) Vídeo del profesor
-   * [Repo en GitHub](https://github.com/ULL-ESIT-PL/repeated-words-regexp)
-   * [![](http://i3.ytimg.com/vi/GfLkvLM7pA8/hqdefault.jpg)](https://youtu.be/GfLkvLM7pA8)
-* [Ejercicio: Buscar las secuencias que empiezan por 12 en posiciones múltiplos de 6](https://youtu.be/A5JoNlTawFA) Vídeo del profesor
-  * [![](http://i3.ytimg.com/vi/A5JoNlTawFA/hqdefault.jpg)](https://youtu.be/A5JoNlTawFA)
-* Tarea. Haga los ejercicios en [https://regexone.com/](https://regexone.com/)
-* Tarea. Haga los ejercicios en [https://www.w3resource.com/javascript-exercises/javascript-regexp-exercises.php](https://www.w3resource.com/javascript-exercises/javascript-regexp-exercises.php)
-
-### Práctica p3-t2-regexp
-
-Resuelva los ejercicios de Expresiones Regulares propuestos por el profesor
-
-* [Práctica de Expresiones Regulares (p3-t2-regexp)](practicas/p3-t2-regexp/reto)
 
 ## RegExps en Otros lenguajes
 
