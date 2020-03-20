@@ -337,6 +337,61 @@ Write a function that removes all comments from a piece of JavaScript code.
 
 * [EJS: Greed and Lazy Operators](https://eloquentjavascript.net/09_regexp.html#h_kiECehz+i+)
 
+### Lookahead y lookbehind
+
+When we look for `X(?=Y)`, the regular expression engine finds `X` 
+and then checks if there’s `Y` immediately after it. 
+If it’s not so, then the potential match is skipped, and the search continues
+**inmediately after the `X`**.
+
+See section [Lookahead and lookbehind](https://javascript.info/regexp-lookahead-lookbehind) of the Modern JavaScript Tutorial.
+
+
+JavaScript tiene lookaheads:
+
+```js
+        > x = "hello"
+        'hello'
+        > r = /l(?=o)/
+        /l(?=o)/
+        > z = r.exec(x)
+        [ 'l', index: 3, input: 'hello' ]
+```
+
+¿Cual es la salida?
+
+```js
+> str = "1 turkey costs 30 €"
+'1 turkey costs 30 €'
+> str.match(/\d+(?=\s)(?=.*30)/)
+```
+
+#### Paréntesis de lookbehind {#lookbehind}
+
+JavaScript no tiene lookbehinds:
+
+```js
+        > x = "hello"
+        'hello'
+        > r = /(?<=l)l/
+        SyntaxError: Invalid regular expression: /(?<=l)l/: Invalid group
+        > .exit
+```
+
+```
+        [~/Dropbox/src/javascript/PLgrado/csv(master)]$ irb
+```
+```ruby
+        ruby-1.9.2-head :001 > x = "hello"
+         => "hello" 
+        ruby-1.9.2-head :002 > r = /(?<=l)l/
+         => ll 
+        ruby-1.9.2-head :008 > x =~ r
+         => 3 
+        ruby-1.9.2-head :009 > $&
+         => "l" 
+``` 
+
 ### search
 
 *  String.prototype.[search](https://developer.mozilla.org/en-US/docs/JavaScript/Reference/Global_Objects/String/search)
@@ -446,7 +501,7 @@ Véase también:
 
 * [Sticky flag "y", searching at position](https://javascript.info/regexp-sticky)
 
-## Analizadores Léxicos usando la Sticky flag
+### Analizadores Léxicos usando la Sticky flag
 
 Si combinamos la flag sticky con el uso de paréntesis con nombre 
 podemos construir un analizador léxico.
@@ -530,6 +585,12 @@ while (match = regexp.exec(str)) {
   console.log(`Found token '${t}' with value '${match.groups[t]}'`);
 }
 ```
+
+See also:
+
+* [Example: using sticky matching for tokenizing](http://2ality.com/2015/07/regexp-es6.html#example-using-sticky-matching-for-tokenizing) inside 
+the chapter [New regular expression features in ECMAScript 6](http://2ality.com/2015/07/regexp-es6.html#example-using-sticky-matching-for-tokenizing)
+
 
 ## Unicode y  Extensiones
 
@@ -763,8 +824,6 @@ Antiguos apuntes del profesor sobre el uso de RegExp en otros lenguajes:
 
 ## Análisis Léxico
 
-* [Example: using sticky matching for tokenizing](http://2ality.com/2015/07/regexp-es6.html#example-using-sticky-matching-for-tokenizing) inside 
-the chapter [New regular expression features in ECMAScript 6](http://2ality.com/2015/07/regexp-es6.html#example-using-sticky-matching-for-tokenizing)
 * [Ejemplo de Analizador Léxico para JS](https://github.com/crguezl/ull-etsii-grado-pl-minijavascript/blob/gh-pages/tokens.js)
 * [Descripción de la Práctica: Analizador Léxico para Un Subconjunto de JavaScript](https://casianorodriguezleon.gitbooks.io/ull-esit-1617/content/practicas/practicaanalisislexicotdop2018.html)
 * [Compiler Construction by Wikipedians](https://books.google.es/books?id=nMZnyp_zW8AC&pg=PA570#v=onepage&q=Lexical&f=false). Chapter  Lexical Analysis
