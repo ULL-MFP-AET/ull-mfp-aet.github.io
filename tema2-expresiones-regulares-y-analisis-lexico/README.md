@@ -205,7 +205,33 @@ SyntaxError: Invalid regular expression: /(?<quote>['"])(.*?)\k<quote>/: Invalid
 ### Backtracking en Expresiones Regulares
 
 - [EJS: Backtracking](https://eloquentjavascript.net/09_regexp.html#h_NFMtGK0tD3)
-- [Backtracking. Paréntesis dentro de una RegExp](regexpejercicios.html#backtracking)
+
+¿Con que cadenas casa la expresión regular `/^(11+)\1+$/`?
+
+```js
+        > '1111'.match(/^(11+)\1+$/) # 4 unos
+        [ '1111',
+          '11',
+          index: 0,
+          input: '1111' ]
+        > '111'.match(/^(11+)\1+$/) # 3 unos
+        null
+        > '11111'.match(/^(11+)\1+$/) # 5 unos
+        null
+        > '111111'.match(/^(11+)\1+$/) # 6 unos
+        [ '111111',
+          '111',
+          index: 0,
+          input: '111111' ]
+        > '11111111'.match(/^(11+)\1+$/) # 8 unos
+        [ '11111111',
+          '1111',
+          index: 0,
+          input: '11111111' ]
+        > '1111111'.match(/^(11+)\1+$/)
+        null
+        > 
+```
 
 ### Diophantic Equations
 
@@ -282,12 +308,14 @@ new substring (to put in place of the substring received from parameter
 |`offset`             | The `offset` of the matched substring within the total string being examined  (For example, if the total string was `"abcd"`, and the                  matched substring was `"bc"`, then this argument will be `1` |
 |string             |The total string being examined |
 
-#### Funciones en el Argumento de Reemplazo
+####  Ejemplo: Fahrenheit a Celsius
 
-- [Funciones en el Argumento de Reemplazo](regexpejercicios.html#reemplazofunciones)
+El siguiente ejemplo reemplaza los grados Fahrenheit con su equivalente en grados Celsius. 
+Los grados Fahrenheit deberían ser un número acabado en `F`. 
+La función devuelve el número Celsius acabado en `C`. 
+Por ejemplo, si el número de entrada es `212F`, la función devuelve `100C`. Si el número es `0F`, la función devuelve `-17.77777777777778C`.
 
-
-#### Ejemplo de `replace`
+Véase solución en [codepen](https://codepen.io/crguezl/pen/xYevMY).
 
 ```
 [~/javascript/learning]$ pwd -P
@@ -413,6 +441,66 @@ but only if there’s no `Y` before it.
   groups: undefined
 ]
 ```
+
+### Ejercicio: Poner Blanco después de Coma
+
+Busque una solución al siguiente ejercicio (véase ’Regex to add space after punctuation sign’ en [PerlMonks](http://www.perlmonks.org/?node_id=319742)).
+Se quiere poner un espacio en blanco después de la aparición de cada coma:
+
+```js
+        > x = "a,b,c,1,2,d, e,f"
+        'a,b,c,1,2,d, e,f'
+        > x.replace(/,/g,", ")
+        'a, b, c, 1, 2, d,  e, f'
+```
+
+pero se quiere que 
+
+1. la sustitución no tenga lugar si la coma esta incrustada entre dos dígitos. 
+2. Además se pide que si hay ya un espacio después de la coma, no se duplique.
+
+-  La siguiente solución logra el segundo objetivo, pero estropea los números:
+
+```js
+        > x = "a,b,c,1,2,d, e,f"
+        'a,b,c,1,2,d, e,f'
+        > x.replace(/,(\S)/g,", $1")
+        'a, b, c, 1, 2, d, e, f'
+```
+
+-  Esta otra funciona bien con los números pero no con los espacios ya existentes:
+  
+```js
+      > x = "a,b,c,1,2,d, e,f"
+      'a,b,c,1,2,d, e,f'
+      > x.replace(/,(\D)/g,", $1")
+      'a, b, c,1,2, d,  e, f'
+```
+
+-  Explique cuando casa esta expresión regular:
+
+```js
+      > r = /(\d[,.]\d)|(,(?=\S))/g
+      /(\d[,.]\d)|(,(?=\S))/g
+```
+
+- Aproveche que el método `replace` puede recibir como segundo
+ argumento una función (vea
+ [replace](https://developer.mozilla.org/en-US/docs/JavaScript/Reference/Global~O~bjects/String/replace)):
+
+```js
+      > z = "a,b,1,2,d, 3,4,e"
+      'a,b,1,2,d, 3,4,e'
+      > r = /(\d[,.]\d)|(,(?=\S))/g
+      /(\d[,.]\d)|(,(?=\S))/g
+      > f = function(match, p1, p2, offset, string) { return (p1 || p2 + " "); }
+      [Function]
+      > z.replace(r, f)
+      'a, b, 1,2, d, 3,4, e'
+```
+      
+Véase en [codepen](https://codepen.io/crguezl/pen/mXYbVZ)
+
 
 ### search
 

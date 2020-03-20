@@ -128,32 +128,6 @@ JavaScript tiene lookaheads:
         [ 'l', index: 3, input: 'hello' ]
 ```
 
-### Paréntesis de lookbehind {#lookbehind}
-
-JavaScript no tiene lookbehinds:
-
-```js
-        > x = "hello"
-        'hello'
-        > r = /(?<=l)l/
-        SyntaxError: Invalid regular expression: /(?<=l)l/: Invalid group
-        > .exit
-```
-
-```
-        [~/Dropbox/src/javascript/PLgrado/csv(master)]$ irb
-```
-```ruby
-        ruby-1.9.2-head :001 > x = "hello"
-         => "hello" 
-        ruby-1.9.2-head :002 > r = /(?<=l)l/
-         => ll 
-        ruby-1.9.2-head :008 > x =~ r
-         => 3 
-        ruby-1.9.2-head :009 > $&
-         => "l" 
-```
-
 
 ### Backtracking {#backtracking}
 
