@@ -188,15 +188,15 @@ A way to transform all these XML files to equivalent JSON documents, suitable fo
 
 ## Extracting Classification Codes
 
-When extracting fields from the Project Gutenberg RDF (XML) files, in ​Traversing the Document​, we specifically selected the Library of Congress Subject Headings (LCSH) and stored them in an array called subjects. At that time, we carefully avoided the Library of Congress Classification (LCC) single-letter codes. Recall that the LCC portion of an RDF file looks like this:
+When extracting fields from the Project Gutenberg RDF (XML) files, in Traversing the Document, we specifically selected the Library of Congress Subject Headings (LCSH) and stored them in an array called subjects. At that time, we carefully avoided the Library of Congress Classification (LCC) single-letter codes. Recall that the LCC portion of an RDF file looks like this:
 
 ```xml
-​   <dcterms:subject>
-​     <rdf:Description rdf:nodeID=​"Nfb797557d91f44c9b0cb80a0d207eaa5"​>
-​       <dcam:memberOf rdf:resource=​"http://purl.org/dc/terms/LCC"​/>
-​       <rdf:value>U</rdf:value>
-​     </rdf:Description>
-​   </dcterms:subject>
+   <dcterms:subject>
+     <rdf:Description rdf:nodeID="Nfb797557d91f44c9b0cb80a0d207eaa5">
+       <dcam:memberOf rdf:resource="http://purl.org/dc/terms/LCC"/>
+       <rdf:value>U</rdf:value>
+     </rdf:Description>
+   </dcterms:subject>
 ```
 
 Using your BDD infrastructure built on Mocha and Chai, implement the following:
@@ -215,22 +215,22 @@ Add code to your exported module function in `parse-rdf.js` to make the tests pa
 Most of the metadata in the Project Gutenberg RDF files describes where each book can be downloaded in various formats. For example, here’s the part that shows where to download the plain text of *The Art of War*:
 
 ```xml
-​   <dcterms:hasFormat>
-  ​   <pgterms:file rdf:about=​"http://www.gutenberg.org/ebooks/132.txt.utf-8"​>
-    ​   <dcterms:isFormatOf rdf:resource=​"ebooks/132"​/>
-    ​   <dcterms:modified rdf:datatype=​"http://www.w3.org/2001/XMLSchema#dateTime"​>
-    ​   2016-09-01T01:20:00.437616</dcterms:modified>
-    ​   <dcterms:format>
-      ​   <rdf:Description rdf:nodeID=​"N2293d0caa918475e922a48041b06a3bd"​>
-        ​   <dcam:memberOf rdf:resource=​"http://purl.org/dc/terms/IMT"​/>
-        ​   <rdf:value
-        ​   rdf:datatype=​"http://purl.org/dc/terms/IMT"​>text/plain</rdf:value>
-      ​   </rdf:Description>
-    ​   </dcterms:format>
-    ​   <dcterms:extent rdf:datatype=​"http://www.w3.org/2001/XMLSchema#integer"​>
-    ​   343691</dcterms:extent>
-  ​   </pgterms:file>
-​   </dcterms:hasFormat>
+   <dcterms:hasFormat>
+     <pgterms:file rdf:about="http://www.gutenberg.org/ebooks/132.txt.utf-8">
+       <dcterms:isFormatOf rdf:resource="ebooks/132"/>
+       <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">
+       2016-09-01T01:20:00.437616</dcterms:modified>
+       <dcterms:format>
+         <rdf:Description rdf:nodeID="N2293d0caa918475e922a48041b06a3bd">
+           <dcam:memberOf rdf:resource="http://purl.org/dc/terms/IMT"/>
+           <rdf:value
+           rdf:datatype="http://purl.org/dc/terms/IMT">text/plain</rdf:value>
+         </rdf:Description>
+       </dcterms:format>
+       <dcterms:extent rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">
+       343691</dcterms:extent>
+     </pgterms:file>
+   </dcterms:hasFormat>
 
         ...
 
