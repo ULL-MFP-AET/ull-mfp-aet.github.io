@@ -10,7 +10,7 @@ repo: https://github.com/ULL-ESIT-PL-1819/regexp-exercises/blob/master/
 ---
 
 
-# Práctica: Manejo de Expresiones Regulares (p3-t2-regex)
+# Práctica: Manejo de Expresiones Regulares (p3-t2-regexp)
 
 ## Introducción
 
