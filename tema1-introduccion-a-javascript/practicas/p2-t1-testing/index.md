@@ -257,13 +257,18 @@ Consider these questions:
 * What structure would make the most sense for this data?
 * What information would you need to be able to produce a table that looked like the one on the Project Gutenberg site?
 
-Once you have an idea of what data you’ll want to extract, try creating a JSON object by hand for this one download source. When you’re happy with your data representation, use your existing continuous testing infrastructure and add a test that checks for this new information.
+Once you have an idea of what data you’ll want to extract, add to the JSON object 
+built in `parse-rdf.js` an attribute  whose value is a list of objects containing the URL and type. Use your existing continuous testing infrastructure and add a test that checks for this new information.
 
-Finally, extend the book object produced in `parse-rdf.js` to include this data to make the test pass.
-## Example of Solution Output 
+## Example of Output 
+
+When executing your solution:
 ```
 [~/.../ca1819-t1-p7-marreA/databases(master)]$ ./rdf-to-json.js  test/pg132.rdf
 ```
+
+You should have an output like this:
+
 ```js
 {
  "id": 132,
