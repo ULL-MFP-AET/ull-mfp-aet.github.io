@@ -1,11 +1,18 @@
 ## Capítulo. Módulos en NPM
 
-* [Creación de Paquetes NPM](https://casianorodriguezleon.gitbooks.io/ull-esit-1617/content/apuntes/npm/nodejspackages.html) (Apuntes)
+* [Creación de Paquetes NPM](nodejspackages.html) (Apuntes)
 * [Ejemplo en https://github.com/ULL-ESIT-DSI-1617/create-a-npm-module](https://github.com/ULL-ESIT-DSI-1617/create-a-npm-module)
   - [Submódulo https://github.com/ULL-ESIT-DSI-1617/scapegoat](https://github.com/ULL-ESIT-DSI-1617/scapegoat)
   - [Submódulo https://github.com/ULL-ESIT-DSI-1617/prueba-scapegoat](https://github.com/ULL-ESIT-DSI-1617/prueba-scapegoat)
+  
+## About GitHub Package Registry
+
 * [About GitHub Package Registry](https://help.github.com/en/articles/about-github-package-registry)
   - GitHub Package Registry is a software package hosting service, similar to npmjs.org, rubygems.org, or hub.docker.com, that allows you to host your packages and code in one place. You can host software packages privately or publicly and use them as dependencies in your projects.
+* [Veáse la sección *GitHub Package Registry* de estos apuntes]({{site.baseurl}}/tema4-devops/control-version#github-package-registry)
+
+## Best Practices
+
 * [Best practice: Specify global dependencies in your gulpfile](https://stackoverflow.com/questions/14657170/installing-global-npm-dependencies-via-package-json)
 * [Node.js — How to test your new NPM module without publishing it every 5 minutes](https://medium.com/@the1mills/how-to-test-your-npm-module-without-publishing-it-every-5-minutes-1c4cb4b369be)
 * [Best practice: Better local require() paths for Node.js](https://gist.github.com/branneman/8048520): 
@@ -14,7 +21,6 @@
      var Article = require('../../../models/article');
     ```
    Those suck for maintenance and they're ugly.
-* [Veáse la sección *GitHub Package Registry* de estos apuntes]({{site.baseurl}}/tema4-devops/control-version#github-package-registry)
 
 ## Capítulo. Módulos en ECMA6
 

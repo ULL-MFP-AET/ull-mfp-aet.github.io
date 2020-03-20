@@ -11,3 +11,31 @@ When you create a personal access token, you can assign the token different scop
 ## Configuring npm for use with GitHub Packages
 
 * [Configuring npm for use with GitHub Packages](https://help.github.com/en/packages/using-github-packages-with-your-projects-ecosystem/configuring-npm-for-use-with-github-packages)
+
+### Authenticating with a personal access token
+
+To authenticate by logging in to npm, use the `npm login` command, replacing _USERNAME_ with your GitHub username, _TOKEN_ with your personal access token, and _PUBLIC-EMAIL-ADDRESS_ with your email address.
+
+```
+$ npm login --registry=https://npm.pkg.github.com
+> Username: USERNAME
+> Password: TOKEN
+> Email: PUBLIC-EMAIL-ADDRESS
+```
+
+### Authenticating with the GITHUB_TOKEN
+
+GitHub provides a token that you can use to authenticate on behalf of GitHub Actions.
+
+* [Authenticating with the GITHUB_TOKEN](https://help.github.com/en/actions/configuring-and-managing-workflows/authenticating-with-the-github_token)
+
+### Publishing a Pckage
+
+By default, GitHub Packages publishes a package in the GitHub repository you specify in the name field of the _package.json_ file. For example, you would publish a package named `@my-org/test` to the `my-org/test` GitHub repository. You can add a summary for the package listing page by including a _README.md_ file in your package directory. 
+
+For more information, see 
+
+* "[Working with package.json](https://docs.npmjs.com/getting-started/using-a-package.json)" and 
+* "[How to create Node.js Modules](https://docs.npmjs.com/getting-started/creating-node-modules)" 
+  
+in the npm documentation.
