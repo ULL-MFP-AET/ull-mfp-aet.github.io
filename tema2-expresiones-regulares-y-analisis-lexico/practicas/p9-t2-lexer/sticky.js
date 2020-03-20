@@ -1,23 +1,25 @@
-function buildLexer(tokens) {
+function buildLexer(lexemes) {
+  let tokens = lexemes.slice(0);
 
   const buildOrRegexp = (regexps) => {
     const sources = regexps.map(r => r.source);
     const union = sources.join('|');
-    console.log(union);
+    //console.log(union);
     return new RegExp(union, 'y');
   };
 
+  tokens.push(['ERROR', /(?<ERROR>.|\n)/]);
+  const tokenNames = tokens.map(t => t[0]);
+  const tokenRegs  = tokens.map(t => t[1]);
+  const regexp = buildOrRegexp(tokenRegs);
+  //console.log(regexp);
+  const getToken = (m) => tokenNames.find(tn => typeof m[tn] !== 'undefined');
+
   return str => {
-    tokens.push(['ERROR', /(?<ERROR>.|\n)/])
-    const tokenNames = tokens.map(t => t[0]);
-    const tokenRegs  = tokens.map(t => t[1]);
-    const regexp = buildOrRegexp(tokenRegs);
-    console.log(regexp);
-    const getToken = (m) => tokenNames.find(tn => typeof m[tn] !== 'undefined');
     let result = [];
     let match;
     while (match = regexp.exec(str)) {
-      console.log(match.groups);
+      //console.log(match.groups);
       let t = getToken(match.groups);
       if (t === 'ERROR') throw `Unxpected token! '${str.substring(regexp.lastIndex)}'`;
       //console.log(`Found token '${t}' with value '${match.groups[t]}'`)
@@ -41,17 +43,14 @@ const myTokens = [
 ];
 
 let str, lexer, r;
+lexer = buildLexer(myTokens);
 
-/*
-let str = 'const varName = "value"';
+str = 'const varName = "value"';
 console.log(str);
-
-let lexer = buildLexer(myTokens);
-let r = lexer(str);
+r = lexer(str);
 r.forEach((t, i) => {
   console.log(`Found token '${t.type}' with value '${t.value}'`);
 });
-*/
 
 lexer = buildLexer(myTokens);
 str = 'let x = a + b';
@@ -60,4 +59,3 @@ r = lexer(str);
 r.forEach((t, i) => {
   console.log(`Found token '${t.type}' with value '${t.value}'`);
 });
-
