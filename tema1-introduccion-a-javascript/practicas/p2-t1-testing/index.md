@@ -234,19 +234,19 @@ Most of the metadata in the Project Gutenberg RDF files describes where each boo
 
      ...
 
- <dcterms:hasFormat>
-   <pgterms:file rdf:about="http://www.gutenberg.org/ebooks/132.kindle.noimages">
-     <dcterms:isFormatOf rdf:resource="ebooks/132"/>
-     <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2015-08-01T01:24:38.440052</dcterms:modified>
-     <dcterms:extent rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">598678</dcterms:extent>
-     <dcterms:format>
-       <rdf:Description rdf:nodeID="N90d807c6b2a042078ac4e05e8e265dd7">
-         <rdf:value rdf:datatype="http://purl.org/dc/terms/IMT">application/x-mobipocket-ebook</rdf:value>
-         <dcam:memberOf rdf:resource="http://purl.org/dc/terms/IMT"/>
-       </rdf:Description>
-     </dcterms:format>
-   </pgterms:file>
- </dcterms:hasFormat>
+<dcterms:hasFormat>
+  <pgterms:file rdf:about="http://www.gutenberg.org/ebooks/132.kindle.noimages">
+    <dcterms:isFormatOf rdf:resource="ebooks/132"/>
+    <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2015-08-01T01:24:38.440052</dcterms:modified>
+    <dcterms:extent rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">598678</dcterms:extent>
+    <dcterms:format>
+      <rdf:Description rdf:nodeID="N90d807c6b2a042078ac4e05e8e265dd7">
+        <rdf:value rdf:datatype="http://purl.org/dc/terms/IMT">application/x-mobipocket-ebook</rdf:value>
+        <dcam:memberOf rdf:resource="http://purl.org/dc/terms/IMT"/>
+      </rdf:Description>
+    </dcterms:format>
+  </pgterms:file>
+</dcterms:hasFormat>
 ```
 
 Suppose we wanted to include a list of download sources in each JSON object we create from an RDF file. To get an idea of what data you might want, take a look at the [Project Gutenberg page for The Art of War](http://www.gutenberg.org/ebooks/132).
