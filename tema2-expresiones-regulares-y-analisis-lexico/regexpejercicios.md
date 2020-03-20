@@ -155,7 +155,7 @@ JavaScript no tiene lookbehinds:
 ```
 
 
-## Backtracking {#backtracking}
+### Backtracking {#backtracking}
 
 ¿Con que cadenas casa la expresión regular `/^(11+)\1+$/`?
 
@@ -225,43 +225,43 @@ pero se quiere que
 1. la sustitución no tenga lugar si la coma esta incrustada entre dos dígitos. 
 2. Además se pide que si hay ya un espacio después de la coma, no se duplique.
 
-  -  La siguiente solución logra el segundo objetivo, pero estropea los números:
+-  La siguiente solución logra el segundo objetivo, pero estropea los números:
 
-    ```js
-            > x = "a,b,c,1,2,d, e,f"
-            'a,b,c,1,2,d, e,f'
-            > x.replace(/,(\S)/g,", $1")
-            'a, b, c, 1, 2, d, e, f'
-    ```
+```js
+        > x = "a,b,c,1,2,d, e,f"
+        'a,b,c,1,2,d, e,f'
+        > x.replace(/,(\S)/g,", $1")
+        'a, b, c, 1, 2, d, e, f'
+```
 
-  -  Esta otra funciona bien con los números pero no con los espacios ya existentes:
-  -  
-      ```js
-            > x = "a,b,c,1,2,d, e,f"
-            'a,b,c,1,2,d, e,f'
-            > x.replace(/,(\D)/g,", $1")
-            'a, b, c,1,2, d,  e, f'
-      ```
+-  Esta otra funciona bien con los números pero no con los espacios ya existentes:
+  
+```js
+      > x = "a,b,c,1,2,d, e,f"
+      'a,b,c,1,2,d, e,f'
+      > x.replace(/,(\D)/g,", $1")
+      'a, b, c,1,2, d,  e, f'
+```
 
-  -  Explique cuando casa esta expresión regular:
+-  Explique cuando casa esta expresión regular:
 
-      ```js
-            > r = /(\d[,.]\d)|(,(?=\S))/g
-            /(\d[,.]\d)|(,(?=\S))/g
-      ```
+```js
+      > r = /(\d[,.]\d)|(,(?=\S))/g
+      /(\d[,.]\d)|(,(?=\S))/g
+```
 
-  - Aproveche que el método `replace` puede recibir como segundo
-    argumento una función (vea
-    [replace](https://developer.mozilla.org/en-US/docs/JavaScript/Reference/Global~O~bjects/String/replace)):
+- Aproveche que el método `replace` puede recibir como segundo
+ argumento una función (vea
+ [replace](https://developer.mozilla.org/en-US/docs/JavaScript/Reference/Global~O~bjects/String/replace)):
 
-      ```js
-            > z = "a,b,1,2,d, 3,4,e"
-            'a,b,1,2,d, 3,4,e'
-            > f = function(match, p1, p2, offset, string) { return (p1 || p2 + " "); }
-            [Function]
-            > z.replace(r, f)
-            'a, b, 1,2, d, 3,4, e'
-      ```
+```js
+      > z = "a,b,1,2,d, 3,4,e"
+      'a,b,1,2,d, 3,4,e'
+      > f = function(match, p1, p2, offset, string) { return (p1 || p2 + " "); }
+      [Function]
+      > z.replace(r, f)
+      'a, b, 1,2, d, 3,4, e'
+```
       
 Véase en [codepen](https://codepen.io/crguezl/pen/mXYbVZ)
 
