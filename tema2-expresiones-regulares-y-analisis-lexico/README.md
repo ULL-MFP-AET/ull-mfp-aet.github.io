@@ -59,16 +59,66 @@ If you are executing a match simply to find `true` or `false`,
 use the `RegExp.prototype.test()` method or the `String.prototype.search()` method.
 
 
+If your regular expression uses the `g` flag, you can use the `exec`
+method multiple times to find successive matches in the same string.
+When you do so, the search starts at the substring of str specified
+by the regular expression’s `lastIndex` property.
+  
+```js
+      > re = /d(b+)(d)/ig
+      /d(b+)(d)/gi
+      > z = "dBdxdbbdzdbd"
+      'dBdxdbbdzdbd'
+      > result = re.exec(z)
+      [ 'dBd', 'B', 'd', index: 0, input: 'dBdxdbbdzdbd' ]
+      > re.lastIndex
+      3
+      > result = re.exec(z)
+      [ 'dbbd', 'bb', 'd', index: 4, input: 'dBdxdbbdzdbd' ]
+      > re.lastIndex
+      8
+      > result = re.exec(z)
+      [ 'dbd', 'b', 'd', index: 9, input: 'dBdxdbbdzdbd' ]
+      > re.lastIndex
+      12
+      > z.length
+      12
+      > result = re.exec(z)
+      null
+```
+
 
 ### match
 *  String.prototype.[match](https://developer.mozilla.org/en-US/docs/JavaScript/Reference/Global_Objects/String/match)
 *  
 String.prototype.[replace](https://developer.mozilla.org/en-US/docs/JavaScript/Reference/Global_Objects/String/replace)
 
+## El operador OR: Circuito Corto
+
+1.  ¿Cual es la salida? ¿Porqué?
+
+```js
+        > "bb".match(/b|bb/)
+
+        > "bb".match(/bb|b/)
+```
+
 
 ### Parenthesis
 
 * [EJS: Matches and groups](https://eloquentjavascript.net/09_regexp.html#h_CV5XL/TADP)
+
+
+¿Que casa con cada paréntesis en esta regexp para los  pares nombre-valor?
+
+```js
+            > x = "h     = 4"
+            > r = /([^=]*)(\s*)=(\s*)(.*)/
+            > r.exec(x)
+            >
+```
+
+
 ```js
 console.log(/bad(ly)?/.exec("bad"));
 // → ["bad", undefined]
@@ -263,6 +313,7 @@ or `null` if there is no such solution
 Since to solve this problem you have to dynamically create the regexp, review section [Dynamically creating RegExp objects](https://eloquentjavascript.net/09_regexp.html#h_Rhu25fogrG) of the Eloquent JS book.
 
 ### replace
+
 The `replace()` method returns a new string with some or all matches of
 a pattern replaced by a replacement.  
 The pattern can be a string or a `RegExp`, 
@@ -290,6 +341,11 @@ console.log(
 ```
 The `$1` and `$2` in the replacement string refer to the parenthesized groups in the pattern.
 
+### Using a function to compute the replacement string
+
+The replacement string can be a function to be invoked to create the
+new substring (to put in place of the substring received):
+
 ```js
 let s = "the cia and fbi";
 console.log(s.replace(/\b(fbi|cia)\b/g,
@@ -297,9 +353,7 @@ console.log(s.replace(/\b(fbi|cia)\b/g,
 // → the CIA and FBI
 ```
 
-The replacement string can be a function to be invoked to create the
-new substring (to put in place of the substring received from parameter
-`#1`). The arguments supplied to this function are:
+The arguments supplied to this function are:
 
 | **Possible name** | **Supplied value** |
 | ----------------- | ------------------ |
