@@ -399,7 +399,7 @@ it matches `X`, but only if there’s `Y` before it.
 
 ### Negative Lookbehind
 
-Negative lookbehind ahs the syntax `(?<!Y)X`, it matches `X`, 
+Negative lookbehind has the syntax `(?<!Y)X`, it matches `X`, 
 but only if there’s no `Y` before it.
 
 ```js
