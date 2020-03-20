@@ -258,7 +258,7 @@ Consider these questions:
 * What information would you need to be able to produce a table that looked like the one on the Project Gutenberg site?
 
 Once you have an idea of what data you’ll want to extract, add to the JSON object 
-built in `parse-rdf.js` an attribute  whose value is a list of objects containing the URL to download the book and the format type (see the text in  `rdf:value`inside the `rdf:Description`). Use your existing continuous testing infrastructure and add a test that checks for this new information.
+built in `parse-rdf.js` an attribute  whose value is a list of objects containing the URL to download the book and the format type (see the text in  `rdf:value` inside the `rdf:Description`). Use your existing continuous testing infrastructure and add a test that checks for this new information.
 
 ## Example of Output 
 
