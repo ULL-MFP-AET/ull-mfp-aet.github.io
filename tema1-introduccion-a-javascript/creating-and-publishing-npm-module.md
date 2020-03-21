@@ -789,6 +789,7 @@ You can see all the packages you've installed and search for a specific package 
 * [About GitHub Packages](https://help.github.com/en/packages/publishing-and-managing-packages/about-github-packages)
 * [Configuring npm for use with GitHub Packages](https://help.github.com/en/packages/using-github-packages-with-your-projects-ecosystem/configuring-npm-for-use-with-github-packages)
 * [Authenticating with the GITHUB_TOKEN](https://help.github.com/en/actions/configuring-and-managing-workflows/authenticating-with-the-github_token)
+* [Automatically Publish to npm using GitHub Actions](https://sergiodxa.com/articles/github-actions-npm-publish/)
 
 ### Scoped Packages
 
