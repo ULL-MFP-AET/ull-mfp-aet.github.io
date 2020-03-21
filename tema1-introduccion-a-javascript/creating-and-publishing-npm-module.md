@@ -539,7 +539,48 @@ Afterwards, you'll be able to install your package directly by name
 rather than having to point at the Github url.
 
     npm install scapegoat
-      
+
+### npm publish 
+
+```
+ npm publish [<tarball>|<folder>] [--tag <tag>] [--access <public|restricted>] [--otp otpcode]
+ [--dry-run]
+```
+
+Publishes  a  package to the registry so that it can be installed by name. 
+
+All files in the package directory are included if no  local  `.gitignore`  or  `.npmignore`  file exists.  
+
+If  both  files  exist  and  a  file  is  ignored  by `.gitignore` but not by
+`.npmignore` then it will be included. 
+
+By default npm will publish to the public registry. 
+This can be overridden **by specifying  a  different  default registry**
+or using a npm scope in the name.
+
+You can associate a scope with a registry at login, e.g.
+
+```
+  npm login --registry=https://npm.pkg.github.com --scope=@myco
+```
+
+Scopes have a **many-to-one** relationship with registries: 
+
+*One registry can host multiple scopes, but a scope only ever points to one registry*.
+
+**You can also associate a scope with a registry using npm config**:
+
+```
+  npm config set @myco:registry https://npm.pkg.github.com
+```
+
+Once a scope is associated with a registry, any `npm install` 
+for a package with  that
+scope  will request packages from that registry instead. 
+
+Any `npm publish` for a package name that contains the scope 
+will be published to that registry instead.
+
 ### Find your Module on the npm website
 
 Lastly, go find your module on the <http://npmjs.org> website and share
