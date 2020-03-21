@@ -730,8 +730,17 @@ You can see all the packages installed in an organization and search for a speci
 3. Under your organization name, click the Packages icon. 
 
    ![](organization-packages.png)
-   
+
 4. Click the name of the package that you want to view.
+
+
+#### Viewing your packages
+
+You can see all the packages you've installed and search for a specific package you've installed across all organizations and repositories.
+
+1. In the top right corner of GitHub, click your profile photo, then click Your profile.
+2. On the top of the profile page, in the main navigation, click Packages.
+3. Click the name of the package that you want to view.
 
 ## More information
 
