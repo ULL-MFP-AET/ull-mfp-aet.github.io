@@ -1,13 +1,10 @@
-::: {.post_body}
-Creating and publishing a node.js module
-========================================
+# Creating and publishing a node.js module
 
 Creating a node module and publishing it to npm is a fairly
 straightforward process. Haven't done it yet? Not sure what I'm talking
 about? Here's a quick tutorial to speed you along.
 
-What is npm?
-------------
+## What is npm?
 
 npm is an online registry for open-source node.js projects, modules,
 resources, etc. You can find it at <http://npmjs.org>.
@@ -20,8 +17,7 @@ your terminal.
 
 For you ruby devs, npm is akin to [rubygems](http://rubygems.org/).
 
-Don't have node.js installed?
------------------------------
+## Don't have node.js installed?
 
 You'll of course need to install node.js and npm in order to follow
 along. Try one of the following install options or just read along.
@@ -31,21 +27,19 @@ along. Try one of the following install options or just read along.
 -   Use [Node Version Manager (NVM)](https://github.com/creationix/nvm)
     -- *recommended*
 
-Configure npm
--------------
+
+## Configure npm
 
 Let's get started by configuring npm a little bit. Go ahead and enter
 these commands in a terminal, using your own information. This way, when
 we run some npm commands later, it will already know who we are and will
 be able to autocomplete some information for us.
 
-    npm set init.author.name "Brent Ertz"
-
-    npm set init.author.email "brent.ertz@gmail.com"
-
-    npm set init.author.url "http://brentertz.com"
-
-      
+```
+npm set init.author.name "Brent Ertz"
+npm set init.author.email "brent.ertz@gmail.com"
+npm set init.author.url "http://brentertz.com"
+```
 
 This next command will prompt you for an email and password, create or
 verify a user in the npm registry, and save the credentials to the
@@ -53,14 +47,76 @@ verify a user in the npm registry, and save the credentials to the
 
     npm adduser
 
+
+## Using the Github Registry
+
+
+Go to your GitHub user's settings, from there navigate to *Developer Settings*,
+then to *Personal access tokens*
+
+[https://github.com/settings/tokens](https://github.com/settings/tokens)
+
+Select *Generate new token* and give the token the appropriate permits:
+
+<table>
+<thead>
+<tr>
+<th>Scope</th>
+<th>Description</th>
+<th>Repository permissions</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>read:packages</code></td>
+<td>Download and install packages from GitHub Packages</td>
+<td>read</td>
+</tr>
+<tr>
+<td><code>write:packages</code></td>
+<td>Upload and publish packages to GitHub Packages</td>
+<td>write</td>
+</tr>
+<tr>
+<td><code>delete:packages</code></td>
+<td>Delete specified versions of private packages from GitHub Packages</td>
+<td>admin</td>
+</tr>
+<tr>
+<td><code>repo</code></td>
+<td>Install, upload, and delete certain packages in private repositories (along with <code>read:packages</code>, <code>write:packages</code>, or <code>delete:packages</code>)</td>
+<td>read, write, or admin</td>
+</tr>
+</tbody>
+</table>
+
+Once you get the token run `npm login`against the GitHub Registry:
+
+```
+$ npm login --registry=https://npm.pkg.github.com
+> Username: USERNAME
+> Password: TOKEN
+> Email: PUBLIC-EMAIL-ADDRESS
+```
+
+Write/paste the token in the password field:
+
+```
+[~/.../github-actions-learning/lexer-generator(master)]$ npm login --registry=https://npm.pkg.github.com
+Username: crguezl
+Password:
+Email: (this IS public) crguezl@ull.edu.es
+Logged in as crguezl on https://npm.pkg.github.com/.
+```
+
+      
       
 
-Create a node module
---------------------
+## Create a node module
 
 A Node/npm module is just an ordinary JavaScript file with the addition
-that it must follow the [CommonJS module
-spec](http://www.commonjs.org/specs/modules/1.0/). Luckily, this is
+that it must follow the 
+[CommonJS module spec](http://www.commonjs.org/specs/modules/1.0/). Luckily, this is
 really not as complex as it sounds. Node modules run in their own scope
 so that they do not conflict with other modules. Node relatedly provides
 access to some [globals](http://nodejs.org/api/globals.html) to help
@@ -69,35 +125,38 @@ concerned with here are `require` and `exports`. You `require` other
 modules that you wish to use in your code and your module `exports`
 anything that should be exposed publicly. For example:
 
+```js
     var other = require('other_module');
     module.exports = function() {
         console.log(other.doSomething());
     }
-      
+```      
 
 For our demo, we'll create an npm module consisting of a couple utility
 methods for escaping and unescaping HTML entities -- commonly needed
 utils to prevent
 [XSS](http://en.wikipedia.org/wiki/Cross-site_scripting) attacks when
-rendering user generated content. I'll call this project, 'Scapegoat',
+rendering user generated content. 
+I'll call this project, 'Scapegoat',
 because I like the sound of it and also because a quick search of the
-npm registry reveals that the name has not yet been taken. *Note that if
+npm registry reveals that the name has not yet been taken. 
+*Note that if
 you are coding along with me, and plan to publish your module to npm,
 you'll need to give your module a unique name.*
 
-To get started, I created a [new repository on my Github
-account](https://github.com/brentertz/scapegoat) and then cloned it
+To get started, I created a new repository on my Github
+account (or on a organization) and then cloned it
 locally.
 
     git clone git@github.com:brentertz/scapegoat.git
     cd scapegoat
       
 
-Executing the following command will ask you a bunch of questions, and
-then write out a `package.json` file. It is this file that effectively
-turns your code into a package.
+### package.json
 
-    npm init
+Executing the following command will create a `package.json` file:
+
+    npm init -f
 
       
 
@@ -107,6 +166,7 @@ can be found at <https://npmjs.org/doc/json.html>. Our initial version
 looks like the following, but we'll be updating this further as we go
 along.
 
+```js
     {
       "name": "scapegoat",
       "version": "0.0.0",
@@ -130,7 +190,8 @@ along.
         "url": "https://github.com/brentertz/scapegoat/issues"
       }
     }
-      
+```      
+### index.js: Write the code
 
 Now we can actually get on to the business of writing code. Create an
 `index.js` file to hold the primary module code. It'll look something
@@ -139,6 +200,7 @@ discussed previously, and is needed to make code available for use by
 other modules. Further, as our module is not reliant on any other
 modules, we did not need to `require` anything.*
 
+```js
     /**
      * Escape special characters in the given string of html.
      *
@@ -170,11 +232,13 @@ modules, we did not need to `require` anything.*
           .replace(/&gt;/g, '>');
       }
     };
-      
+```      
+
+### Tests
 
 Next, we'll surely want to write some tests. *Perhaps it would have been
 preferable to write them first.* Regardless, I prefer to use the
-[Mocha](http://visionmedia.github.io/mocha/) and
+[Mocha](https://mochajs.org/) and
 [Chai](http://chaijs.com/) frameworks, but you can use whatever you
 like. These can be installed and persisted to the `package.json` file
 with the following commands. *Note that they are added to the
@@ -185,7 +249,7 @@ and not at runtime.*
 
     npm install chai --save-dev
 
-      
+### .gitignore      
 
 The above commands will also create a `node_modules` folder in your
 project directory containing those dependencies. Following best
@@ -195,8 +259,6 @@ root, with the following contents.
 
     node_modules
 
-      
-
 Continuing on, let's create a `test` directory to hold our tests. As our
 primary module file is called `index.js`, within the `test` directory I
 will create a file by the same name -- a simple convention. Mocha will
@@ -205,6 +267,7 @@ something like the following. *Note that I am using the `should` syntax
 provided by the Chai framework. Also note the use of `require` to pull
 in our module code into the test.*
 
+```js
     var should = require('chai').should(),
         scapegoat = require('../index'),
         escape = scapegoat.escape,
@@ -253,89 +316,88 @@ in our module code into the test.*
         unescape('&gt;').should.equal('>');
       });
     });
-      
+```      
 
-But how do we actually run the tests? Following the Mocha docs and to
-keep things simple, we'll add a `Makefile` to the root of the project
-with an associated `test` target. Note that most projects seem to be
-using Grunt rather than Make these days. Regardless, our file should
-contain the following. *Note that the indentation after the test target
-must be a tab and not spaces.*
+### Running the tests
 
-    test:
-        ./node_modules/.bin/mocha --reporter spec
+But how do we actually run the tests?
 
-     .PHONY: test
-      
+```
+$ cat package.json 
+```
+
+```js
+{
+  "name": "@ull-esit-dsi-1617/scapegoat",
+  "version": "1.2.5",
+  "description": "A small library providing utility methods to escape and unescape HTML entities",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha --reporter spec",
+    "doc": "documentation build index.js -f html -o docs",
+    "serve-doc": "http-server docs/ -o",
+    "push": "npm run doc; git add docs; git ci -am no-message; git push"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ULL-ESIT-DSI-1617/scapegoat.git"
+  },
+  "keywords": [
+    "escape",
+    "unescape",
+    "html"
+  ],
+  "author": "Casiano Rodriguez <casiano.rodriguez.leon@gmail.com>",
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "https://github.com/ULL-ESIT-DSI-1617/scapegoat/blob/master/LICENSE-MIT"
+    }
+  ],
+  "bugs": {
+    "url": "https://github.com/ULL-ESIT-DSI-1617/scapegoat/issues"
+  },
+  "devDependencies": {
+    "mocha": "*",
+    "chai": "*",
+    "documentation": "*"
+  },
+  "dependencies": {
+  }
+}
+```      
 
 After doing so, we can then execute the tests by entering following
 command.
 
-    make test
+```
+[~/.../create-a-npm-module/scapegoat(master)]$ npm test
 
-      
+> @ull-esit-dsi-1617/scapegoat@1.2.5 test /Users/casiano/local/src/javascript/evalua-module/create-a-npm-module/scapegoat
+> mocha --reporter spec
 
-To improve upon this, we can now tell npm how to run our tests by simply
-adjusting the `scripts:test` section of our `package.json` file.
+  #escape
+    ✓ converts & into &amp;
+    ✓ converts " into &quot;
+    ✓ converts ' into &#39;
+    ✓ converts < into &lt;
+    ✓ converts > into &gt;
+    ✓ returns empty string if called with falsey value
 
-    "scripts": {
-
-      "test": "make test"
-
-    },
-
-      
-
-After doing so, we can then run the following command to run our tests.
-
-    npm test
-
-      
-
-The output should look something like the following.
-
-    npm test
-
-    > scapegoat@0.0.0 test /Users/brent/Development/scapegoat
-    > make test
-
-    ./node_modules/.bin/mocha --reporter spec
+  #unescape
+    ✓ converts &amp; into &
+    ✓ converts &quot; into "
+    ✓ converts &#39; into '
+    ✓ converts &lt; into <
+    ✓ converts &gt; into >
+    ✓ does not double unescape values
+    ✓ returns empty string if called with falsey value
 
 
-      #escape
-        ✓ converts & into &amp;
-        ✓ converts " into &quot;
-        ✓ converts ' into &#39;
-        ✓ converts < into &lt;
-        ✓ converts > into &gt;
+  13 passing (17ms)
+```
 
-      #unescape
-        ✓ converts &amp; into &
-        ✓ converts &quot; into "
-        ✓ converts &#39; into '
-        ✓ converts &lt; into <
-        ✓ converts &gt; into >
-
-
-      10 passing (7ms)
-      
-
-For fun, try changing the Mocha `reporter` setting in your `Makefile`
-from `spec` to `nyan`. Then rerun your tests.
-
-    npm test
-
-    > scapegoat@0.1.0 test /Users/brent/Development/scapegoat
-    > make test
-
-    ./node_modules/.bin/mocha --reporter nyan
-     10  -_-_-_-_-_-_,------,
-     0   -_-_-_-_-_-_|   /_/
-     0   -_-_-_-_-_-^|__( ^ .^)
-         -_-_-_-_-_-  ""  ""
-
-      10 passing (12ms)
-      
+### README.md
 
 Okay great, our tests are passing. Let's add a few items that will help
 to round out our project.
@@ -345,40 +407,43 @@ project, so I'll add a `README.md`, using markdown syntax. Using
 markdown is a good idea because it will be nicely displayed on both
 Github and npm.
 
-    Scapegoat
-    =========
+```
+  Scapegoat
+  =========
 
-    A small library providing utility methods to `escape` and `unescape` HTML entities
+  A small library providing utility methods to `escape` and `unescape` HTML entities
 
-    ## Installation
+  ## Installation
 
-      npm install scapegoat --save
+    npm install scapegoat --save
 
-    ## Usage
+  ## Usage
 
-      var scapegoat = require('scapegoat')
-          escape = scapegoat.escape,
-          unescape = scapegoat.unescape;
+    var scapegoat = require('scapegoat')
+        escape = scapegoat.escape,
+        unescape = scapegoat.unescape;
 
-      var html = '<h1>Hello World</h1>',
-          escaped = escape(html),
-          unescaped = unescape(escaped);
+    var html = '<h1>Hello World</h1>',
+        escaped = escape(html),
+        unescaped = unescape(escaped);
 
-      console.log('html', html, 'escaped', escaped, 'unescaped', unescaped);
+    console.log('html', html, 'escaped', escaped, 'unescaped', unescaped);
 
-    ## Tests
+  ## Tests
 
-      npm test
+    npm test
 
-    ## Contributing
+  ## Contributing
 
-    In lieu of a formal styleguide, take care to maintain the existing coding style.
-    Add unit tests for any new or changed functionality. Lint and test your code.
+  In lieu of a formal styleguide, take care to maintain the existing coding style.
+  Add unit tests for any new or changed functionality. Lint and test your code.
 
-    ## Release History
+  ## Release History
 
-    * 0.1.0 Initial release
-      
+  * 0.1.0 Initial release
+```      
+
+### Semantic Versioning
 
 As you may have noticed in the readme above, I referenced the version
 0.1.0 in the release history. We'll need to update that in our
@@ -387,7 +452,7 @@ SemVer](http://semver.org/), please add it to your reading list.
 
     "version": "0.1.0",
 
-      
+### License
 
 Further, it is generally a good idea to specify a license with your
 project. I'll choose an MIT license, add a LICENSE-MIT file to the
@@ -404,17 +469,20 @@ the package.json now looks like the following.
     ],
       
 
+### git tag
+
 Great, the module is complete. Prior to publishing to npm, let's first
 ensure that any changes have been committed to git and that everything
-has been pushed up to Github. It is also a good idea to create a version
-tag as well. Here's how to do just that.
+has been pushed up to Github. It is also a good idea to **create a version
+tag** as well. Here's how to do just that.
 
     git tag 0.1.0
     git push origin master --tags
       
 
-Publishing to npm?
-------------------
+## Publishing
+
+### GitHub can be used to install npm packages
 
 Note that for whatever reason if you decide not to publish your module
 on npm, the npm package format provides value in itself in both
@@ -424,7 +492,8 @@ you want.
 
     npm install git://github.com/brentertz/scapegoat.git
     npm install git://github.com/brentertz/scapegoat.git#0.1.0
-      
+
+### Test the Installation Process
 
 Before publishing, be sure to test that your package installs and works
 correctly. This does not mean running the tests as we did above, but
@@ -433,22 +502,14 @@ rather attempting an actual install.
 -   Verify that the package installs properly. From your package root
     directory, enter the following to install your package globally.
 
-<!-- -->
-
       npm install . -g
       
-
 -   Check to see if it exists.
 
-<!-- -->
-
       npm ls -g
-      
 
 -   To go one step further, switch to another directory, open the
     node-repl, `require` your module and try it out.
-
-<!-- -->
 
       node
       > var escape = require('scapegoat').escape;
@@ -456,7 +517,8 @@ rather attempting an actual install.
       > escape('<h1>Hello World!</h1>');
       '&lt;h1&gt;Hello World!&lt;/h1&gt;'
       >
-      
+
+### Publish it!
 
 Hopefully everything worked as expected and you can now move on to the
 publishing step. All of the meta information is contained in the
@@ -472,13 +534,12 @@ rather than having to point at the Github url.
 
     npm install scapegoat
       
+### Find your Module on the npm website
 
 Lastly, go find your module on the <http://npmjs.org> website and share
-it with friends. Here's [npm's Scapegoat
-page](https://npmjs.org/package/scapegoat).
+it with friends. Here's [npm's Scapegoat page](https://npmjs.org/package/scapegoat).
 
-What should you publish?
-------------------------
+## What should you publish?
 
 As shown in our demo, your contribution does not have to be crazy
 complex or particularly ground-breaking. If you have a bit of code that
@@ -490,10 +551,8 @@ Be sure to check out what is already available too. Chances are that you
 may either find what you need already exists, find a project to
 contribute to, or at least find some inspiration.
 
-More information
-----------------
+## More information
 
 -   [npm developer guide](https://npmjs.org/doc/developers.html)
 -   [Scapegoat on Github](https://github.com/brentertz/scapegoat)
 -   [Scapegoat on npm](https://npmjs.org/package/scapegoat)
-:::
