@@ -502,21 +502,27 @@ rather attempting an actual install.
 -   Verify that the package installs properly. From your package root
     directory, enter the following to install your package globally.
 
+```
       npm install . -g
-      
+```
+
 -   Check to see if it exists.
 
+```
       npm ls -g
+```
 
 -   To go one step further, switch to another directory, open the
     node-repl, `require` your module and try it out.
 
+```js
       node
       > var escape = require('scapegoat').escape;
       [Function]
       > escape('<h1>Hello World!</h1>');
       '&lt;h1&gt;Hello World!&lt;/h1&gt;'
       >
+```
 
 ### Publish it!
 
