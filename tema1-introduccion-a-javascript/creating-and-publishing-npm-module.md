@@ -586,8 +586,10 @@ will be published to that registry instead.
 
 In this example, the name of the package is `@ULL-ESIT-PL-1920/lexer-generator`:
 
-```js
+```
 [~/.../github-actions-learning/lexer-generator(master)]$ cat package.json
+```
+```js
 {
   "name": "@ULL-ESIT-PL-1920/lexer-generator",
   "version": "1.0.0",
@@ -632,7 +634,8 @@ npm notice
 + @ULL-ESIT-PL-1920/lexer-generator@1.0.0
 ```
 
-And now, since the repo is private, we have got a private module!
+And now, since the repo is private, we have got a private module that we
+can install and test assuming we have the permits!
 
 ```
 [~/.../github-actions-learning/test-lexer-generator]$ npm i \@ULL-ESIT-PL-1920/lexer-generator
