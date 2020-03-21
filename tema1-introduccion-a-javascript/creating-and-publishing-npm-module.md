@@ -749,8 +749,22 @@ You can see all the packages you've installed and search for a specific package 
 2. On the top of the profile page, in the main navigation, click Packages.
 3. Click the name of the package that you want to view.
 
-## More information
+## References
 
--   [npm developer guide](https://npmjs.org/doc/developers.html)
+### npm packages
+
+* [npm developer guide](https://npmjs.org/doc/developers.html)
+* [Working with package.json](https://docs.npmjs.com/getting-started/using-a-package.json) 
+* [How to create Node.js Modules](https://docs.npmjs.com/getting-started/creating-node-modules)
+  
+
+### GitHub packages
+
+* [About GitHub Packages](https://help.github.com/en/packages/publishing-and-managing-packages/about-github-packages)
+* [Configuring npm for use with GitHub Packages](https://help.github.com/en/packages/using-github-packages-with-your-projects-ecosystem/configuring-npm-for-use-with-github-packages)
+* [Authenticating with the GITHUB_TOKEN](https://help.github.com/en/actions/configuring-and-managing-workflows/authenticating-with-the-github_token)
+
+### Old References
+
 -   [Scapegoat on Github](https://github.com/brentertz/scapegoat)
 -   [Scapegoat on npm](https://npmjs.org/package/scapegoat)
