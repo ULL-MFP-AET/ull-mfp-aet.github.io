@@ -540,7 +540,9 @@ rather than having to point at the Github url.
 
     npm install scapegoat
 
-### npm publish 
+### Scopes and Registries
+
+The syntax of `npm publish` is:
 
 ```
  npm publish [<tarball>|<folder>] [--tag <tag>] [--access <public|restricted>] [--otp otpcode]
@@ -554,9 +556,10 @@ All files in the package directory are included if no  local  `.gitignore`  or  
 If  both  files  exist  and  a  file  is  ignored  by `.gitignore` but not by
 `.npmignore` then it will be included. 
 
-By default npm will publish to the public registry. 
+**By default npm will publish to the public registry**.
+
 This can be overridden **by specifying  a  different  default registry**
-or using a npm scope in the name.
+or using a [npm scope in the name]({{site.baseurl}}/tema1-introduccion-a-javascript/nodejspackages.html##scoped-packages).
 
 You can associate a scope with a registry at login, e.g.
 
