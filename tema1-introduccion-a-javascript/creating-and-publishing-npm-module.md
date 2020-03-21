@@ -634,6 +634,55 @@ npm notice
 
 And now, since the repo is private, we have got a private module!
 
+```
+[~/.../github-actions-learning/test-lexer-generator]$ npm i \@ULL-ESIT-PL-1920/lexer-generator
+npm WARN test-lexer-generator@1.0.0 No description
+npm WARN test-lexer-generator@1.0.0 No repository field.
+
++ @ULL-ESIT-PL-1920/lexer-generator@1.0.0
+updated 1 package and audited 1 package in 1.683s
+found 0 vulnerabilities
+[~/.../github-actions-learning/test-lexer-generator]$ tree
+.
+├── node_modules
+│   └── @ULL-ESIT-PL-1920
+│       └── lexer-generator
+│           ├── index.js
+│           ├── package.json
+│           └── sticky.js
+├── package-lock.json
+└── package.json
+```
+
+And now we can use the module:
+
+```
+[~/.../github-actions-learning/test-lexer-generator]$ node
+Welcome to Node.js v12.10.0.
+Type ".help" for more information.
+> bL = require('@ULL-ESIT-PL-1920/lexer-generator')
+[Function: buildLexer]
+> const SPACE = /(?<SPACE>\s+)/;
+> const RESERVEDWORD = /(?<RESERVEDWORD>\b(const|let)\b)/;
+> const ID = /(?<ID>\b([a-z_]\w*))\b/;
+> const STRING = /(?<STRING>"([^\\"]|\\.")*")/;
+> const OP = /(?<OP>[+*\/=-])/;
+> const myTokens = [
+...   ['SPACE', SPACE], ['RESERVEDWORD', RESERVEDWORD], ['ID', ID],
+...   ['STRING', STRING], ['OP', OP]
+... ];
+> lexer = bL(myTokens)
+> lexer('let x = a + \nb')
+[
+  { type: 'RESERVEDWORD', value: 'let' },
+  { type: 'ID', value: 'x' },
+  { type: 'OP', value: '=' },
+  { type: 'ID', value: 'a' },
+  { type: 'OP', value: '+' },
+  { type: 'ID', value: 'b' }
+]
+>
+```
 
 ### Find your Module on the npm website
 
