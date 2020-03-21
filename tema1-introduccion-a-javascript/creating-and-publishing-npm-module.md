@@ -36,9 +36,9 @@ we run some npm commands later, it will already know who we are and will
 be able to autocomplete some information for us.
 
 ```
-npm set init.author.name "Brent Ertz"
-npm set init.author.email "brent.ertz@gmail.com"
-npm set init.author.url "http://brentertz.com"
+npm set init.author.name "Casiano Rodriguez-Leon"
+npm set init.author.email "whatever@gmail.com"
+npm set init.author.url "https://github.com/crguezl"
 ```
 
 This next command will prompt you for an email and password, create or
@@ -47,7 +47,24 @@ verify a user in the npm registry, and save the credentials to the
 
     npm adduser
 
+## What are scopes? 
 
+Scopes are like namespaces for npm packages. Each npm user has their own scope.
+
+```
+@username/project-name
+```
+
+This means that you don’t have to worry about someone else taking your package name. Only you can add packages in your scope.
+
+Scoped modules also make it possible to put your private code on npm when you sign up for [private modules](https://www.npmjs.com/features). 
+With private modules, you have control over who can see and collaborate on any of the modules in your scope (but you have to paid for it. Public scoped packages are free).
+
+To create a scoped package, all you need to do is add your scope to the front of the name property in `package.json` and run `npm` with the access option:
+
+```
+npm publish --access=public
+```
 
 ## What is Github Registry?
 
@@ -542,6 +559,14 @@ publishing part is really easy.
     npm publish
       
 
+When you publish to npm using a scope, the first time you have to add the option
+`--access public`:
+
+```
+[/tmp/scapegoat(master)]$ npm publish --access public
++ @ull-esit-dsi-1617/scapegoat@1.0.2
+```	
+
 Afterwards, you'll be able to install your package directly by name
 rather than having to point at the Github url.
 
@@ -756,13 +781,27 @@ You can see all the packages you've installed and search for a specific package 
 * [npm developer guide](https://npmjs.org/doc/developers.html)
 * [Working with package.json](https://docs.npmjs.com/getting-started/using-a-package.json) 
 * [How to create Node.js Modules](https://docs.npmjs.com/getting-started/creating-node-modules)
-  
+* [How to install an npm package from GitHub directly?](https://stackoverflow.com/questions/17509669/how-to-install-an-npm-package-from-github-directly) in StackOverflow
+* [Package.json documentation en npm site](https://docs.npmjs.com/files/package.json)
 
 ### GitHub packages
 
 * [About GitHub Packages](https://help.github.com/en/packages/publishing-and-managing-packages/about-github-packages)
 * [Configuring npm for use with GitHub Packages](https://help.github.com/en/packages/using-github-packages-with-your-projects-ecosystem/configuring-npm-for-use-with-github-packages)
 * [Authenticating with the GITHUB_TOKEN](https://help.github.com/en/actions/configuring-and-managing-workflows/authenticating-with-the-github_token)
+
+### Scoped Packages
+
+* [Working with scoped packages](https://docs.npmjs.com/getting-started/scoped-packages)
+* [npm-scope manual: Scoped packages](https://docs.npmjs.com/misc/scope#publishing-public-scoped-packages-to-the-public-npm-registry)
+* [Working with npm private modules. YouTube Video](https://youtu.be/O6JoXGnHK_Y)
+
+### Semantic versioning and npm
+
+* [Semantic versioning and npm](https://docs.npmjs.com/getting-started/semantic-versioning)
+* [Semantic Versioning: Why You Should Be Using it](https://www.sitepoint.com/semantic-versioning-why-you-should-using/) SitePoint
+* [YouTube Video: Semantic versioning and npm](https://youtu.be/kK4Meix58R4)
+* [El comando npm version](https://docs.npmjs.com/cli/version)
 
 ### Old References
 
