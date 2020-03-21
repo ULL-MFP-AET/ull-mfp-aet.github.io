@@ -53,39 +53,6 @@ guardará el token en el fichero
 * El paquete de ejemplo usado en este tutorial [@ull-esit-dsi-1617/scapegoat](https://www.npmjs.com/package/@ull-esit-dsi-1617/scapegoat) en npm
 * El paquete de ejemplo usado en este tutorial [@ull-esit-dsi-1617/scapegoat](https://github.com/ULL-ESIT-DSI-1617/scapegoat) en GitHub
 
-# Documentación
-
-Para escribir documentación para una API 
-
-
-
-## Documentación.js
-
-- Véase [documentation.js](http://documentation.js.org/), 
-* [documentation.js: User's Guide](https://github.com/documentationjs/documentation#user-guide)
-* [documentation.js: Getting Started](https://github.com/documentationjs/documentation/blob/master/docs/GETTING_STARTED.md)
-
-## JSDoc
-
-- [jsdoc](https://www.npmjs.com/package/jsdoc), 
-* [JSDoc: Wikipedia](https://en.wikipedia.org/wiki/JSDoc)
-* [An introduction to JSDoc](http://2ality.com/2011/08/jsdoc-intro.html)
-* [Book *Speaking JavaScript: An In-Depth Guide for Programmers* by Dr. Axel Rauschmayer: Chapter 29. JSDoc: Generating API Documentation](http://speakingjs.com/es5/ch29.html)
-* [Getting Started with JSDoc 3](http://usejsdoc.org/about-getting-started.html)
-
-## Docco
-- [docco](http://jashkenas.github.io/docco/)
-
-## Ejemplo
-
-- [https://github.com/ULL-ESIT-DSI-1617/scapegoat](https://github.com/ULL-ESIT-DSI-1617/scapegoat)
-- [https://ull-esit-dsi-1617.github.io/scapegoat/](https://ull-esit-dsi-1617.github.io/scapegoat/)
-
-## Man pages
-
-* [Creating Man Pages in Markdown with Ronn](https://spin.atomicobject.com/2015/05/06/man-pages-in-markdown-ronn/)
-* [rtomayko/ronn](https://github.com/rtomayko/ronn)
-* [How to add man pages to your npm package](https://docs.npmjs.com/files/package.json#man)
 
 # Instalación desde GitHub
 
@@ -213,13 +180,13 @@ npm publish --access=public
 * [Node js Tutorial: How to create NPM package?](https://youtu.be/sELoj6e1ffM)
 
 
-# NPM Documentation: Getting Started 
+# Links to NPM docs: Getting Started 
 
 1.  [What is npm?](https://docs.npmjs.com/getting-started/what-is-npm)
 2.  [Installing Node.js and updating npm](https://docs.npmjs.com/getting-started/installing-node)
 3.  [Fixing npm permissions](https://docs.npmjs.com/getting-started/fixing-npm-permissions)
 4.  [Installing npm packages locally](https://docs.npmjs.com/getting-started/installing-npm-packages-locally)
-5.  [Using a \`package.json\`](https://docs.npmjs.com/getting-started/using-a-package.json)
+5.  [Using a package.json](https://docs.npmjs.com/getting-started/using-a-package.json)
 6.  [Updating local packages](https://docs.npmjs.com/getting-started/updating-local-packages)
 7.  [Uninstalling local packages](https://docs.npmjs.com/getting-started/uninstalling-local-packages)
 8.  [Installing npm packages globally](https://docs.npmjs.com/getting-started/installing-npm-packages-globally)
@@ -303,3 +270,5 @@ Members of an Organization are immediately added to a Developers team that autom
   - [Webpack Tutorial - Replace Gulp/Grunt plugins with a single tool. LearnCode.academy](https://youtu.be/9kJVYpOqcVU) YouTube
 * [bower](https://bower.io/)
 * [browserify](http://browserify.org/)
+
+# [Documentation](documentation)
