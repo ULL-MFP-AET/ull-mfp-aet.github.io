@@ -707,7 +707,11 @@ Here is a fragment of  a `package.json` using `publishConfig`:
 
 ### Find your Module 
 
+#### At npm
+
 If you publish it on the npm website, go find your module on the <http://npmjs.org> website and share it with your friends.
+
+#### At GitHub
 
 If you use GitHub Registry go to the github repo page:
 
@@ -717,19 +721,17 @@ and click on the package icon. You'll get s.t. like this:
 
 ![](view-package-lexer-generator.png)
 
+#### Viewing an organization's packages
 
+You can see all the packages installed in an organization and search for a specific package installed in an organization's repositories.
 
-## What should you publish?
+1. In the top right corner of GitHub, click your profile photo, then click Your profile.
+2. On the left side of your profile page, under "Organizations", click the icon for your organization.
+3. Under your organization name, click the Packages icon. 
 
-As shown in our demo, your contribution does not have to be crazy
-complex or particularly ground-breaking. If you have a bit of code that
-you find useful across multiple projects or believe that others might
-find useful as well, consider publishing it on npm. Others may feel the
-same.
-
-Be sure to check out what is already available too. Chances are that you
-may either find what you need already exists, find a project to
-contribute to, or at least find some inspiration.
+   ![](organization-packages.png)
+   
+4. Click the name of the package that you want to view.
 
 ## More information
 
