@@ -574,7 +574,7 @@ Scopes have a **many-to-one** relationship with registries:
 **You can also associate a scope with a registry using npm config**:
 
 ```
-  npm config set @myco:registry https://npm.pkg.github.com
+  npm config set @ULL-ESIT-PL-1920:registry https://npm.pkg.github.com
 ```
 
 Once a scope is associated with a registry, any `npm install` 
@@ -583,6 +583,57 @@ scope  will request packages from that registry instead.
 
 Any `npm publish` for a package name that contains the scope 
 will be published to that registry instead.
+
+In this example, the name of the package is `@ULL-ESIT-PL-1920/lexer-generator`:
+
+```js
+[~/.../github-actions-learning/lexer-generator(master)]$ cat package.json
+{
+  "name": "@ULL-ESIT-PL-1920/lexer-generator",
+  "version": "1.0.0",
+  "description": "A lab for PL: Building a lexer generator",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ULL-ESIT-PL-1920/lexer-generator.git"
+  },
+  "keywords": ["ULL", "compilers", "lexical analysis", "regexp"],
+  "author": "Casiano Rodriguez-Leon <crguezl@ull.edu.es> (https://github.com/crguezl)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ULL-ESIT-PL-1920/lexer-generator/issues"
+  },
+  "homepage": "https://github.com/ULL-ESIT-PL-1920/lexer-generator#readme"
+}
+```
+
+When  we run `npm publish` inside the package folder we get:
+
+```
+[~/.../github-actions-learning/lexer-generator(master)]$ npm publish
+npm notice
+npm notice 📦  @ULL-ESIT-PL-1920/lexer-generator@1.0.0
+npm notice === Tarball Contents ===
+npm notice 1.1kB index.js
+npm notice 760B  sticky.js
+npm notice 687B  package.json
+npm notice === Tarball Details ===
+npm notice name:          @ULL-ESIT-PL-1920/lexer-generator
+npm notice version:       1.0.0
+npm notice package size:  1.3 kB
+npm notice unpacked size: 2.5 kB
+npm notice shasum:        bc57a2710303351aba750589af2409e4f46b0148
+npm notice integrity:     sha512-neejvnZNk7ont[...]NgAI30R9/KmPQ==
+npm notice total files:   3
+npm notice
++ @ULL-ESIT-PL-1920/lexer-generator@1.0.0
+```
+
+And now, since the repo is private, we have got a private module!
+
 
 ### Find your Module on the npm website
 
