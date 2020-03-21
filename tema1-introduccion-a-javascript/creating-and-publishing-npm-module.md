@@ -687,10 +687,37 @@ Type ".help" for more information.
 >
 ```
 
-### Find your Module on the npm website
+#### Other ways to set the Scope
 
-Lastly, go find your module on the <http://npmjs.org> website and share
-it with friends. Here's [npm's Scapegoat page](https://npmjs.org/package/scapegoat).
+Alternatively, You can set up the scope
+mapping for your project using 
+
+1. Either a local `.npmrc` file in the project or 
+2. Using the `publishConfig` option in the `package.json`. 
+
+Here is a fragment of  a `package.json` using `publishConfig`:
+
+  ```js
+    "private": true,
+    "publishConfig": {
+      "registry":"http://my-internal-registry.local"
+    } 
+  ```
+
+
+### Find your Module 
+
+If you publish it on the npm website, go find your module on the <http://npmjs.org> website and share it with your friends.
+
+If you use GitHub Registry go to the github repo page:
+
+![](view-package-on-github.png)
+
+and click on the package icon. You'll get s.t. like this:
+
+![](view-package-lexer-generator.png)
+
+
 
 ## What should you publish?
 
