@@ -169,60 +169,6 @@ npm publish --access=public
 * [YouTube Video: Semantic versioning and npm](https://youtu.be/kK4Meix58R4)
 * [El comando npm version](https://docs.npmjs.com/cli/version)
 
-
-# NPM: Herramientas de ayuda: release-it
-
-* [release-it: Interactive release tool for Git repositories](https://github.com/webpro/release-it)
-* [release-it: GitHub Page](https://webpro.github.io/release-it/)
-
-Release a new patch (increments from e.g. `1.0.4` to `1.0.5`):
-
-```bash
-release-it
-```
-
-Release a patch, minor, major, or specific version:
-
-```bash
-release-it minor
-release-it 0.8.3
-```
-
-You can also do a "dry run", which won't write/touch anything, but does output the commands it would execute, and show the interactivity:
-
-```bash
-release-it --dry-run
-```
-
-## References: Tutorials
-
-* [Your first Node.js package  por Elijah Insua](https://nodesource.com/blog/your-first-nodejs-package/)
-
-## NPM: Video Tutoriales
-
-* [Creating NodeJS modules](https://youtu.be/3I78ELjTzlQ)
-* [Publishing npm Packages](https://youtu.be/BkotrAFtBM0)
-* [Node js Tutorial: How to create NPM package?](https://youtu.be/sELoj6e1ffM)
-
-## Links to NPM docs: Getting Started 
-
-1.  [What is npm?](https://docs.npmjs.com/getting-started/what-is-npm)
-2.  [Installing Node.js and updating npm](https://docs.npmjs.com/getting-started/installing-node)
-3.  [Fixing npm permissions](https://docs.npmjs.com/getting-started/fixing-npm-permissions)
-4.  [Installing npm packages locally](https://docs.npmjs.com/getting-started/installing-npm-packages-locally)
-5.  [Using a package.json](https://docs.npmjs.com/getting-started/using-a-package.json)
-6.  [Updating local packages](https://docs.npmjs.com/getting-started/updating-local-packages)
-7.  [Uninstalling local packages](https://docs.npmjs.com/getting-started/uninstalling-local-packages)
-8.  [Installing npm packages globally](https://docs.npmjs.com/getting-started/installing-npm-packages-globally)
-9.  [Updating global packages](https://docs.npmjs.com/getting-started/updating-global-packages)
-[Uninstalling global packages](https://docs.npmjs.com/getting-started/uninstalling-global-packages)11.  [Creating Node.js modules](https://docs.npmjs.com/getting-started/getting-started/creating-node-modules)
-12.  [Publishing npm packages](https://docs.npmjs.com/getting-started/publishing-npm-packages)
-13.  [Semantic versioning and npm](https://docs.npmjs.com/getting-started/semantic-versioning)
-14.  [Working with scoped packages](https://docs.npmjs.com/getting-started/scoped-packages)
-15.  [Using tags](https://docs.npmjs.com/getting-started/using-tags)
-
-<!-- * [Publishing npm packages tutorial](https://docs.npmjs.com/getting-started/publishing-npm-packages) * [npm documentation: Creating Node.js modules](https://docs.npmjs.com/getting-started/creating-node-modules) -->
-
 # npm Organizations /npm Organizaciones
 
 *   [Introduction](https://www.npmjs.com/docs/orgs/./)
@@ -258,6 +204,60 @@ Members of an Organization are immediately added to a Developers team that autom
     - If an Owner adds a new Member to an Organization and does not want that Member to be on the Developers team, an Owner can remove them. ([Learn more about managing teams](https://www.npmjs.com/docs/orgs/managing-teams.html)).
 * [npm-team: Manage organization teams and team memberships](https://docs.npmjs.com/cli/team)
 * [npm-access: Set access level on published packages](https://docs.npmjs.com/cli/access)
+
+# NPM: Herramientas de ayuda: release-it
+
+* [release-it: Interactive release tool for Git repositories](https://github.com/webpro/release-it)
+* [release-it: GitHub Page](https://webpro.github.io/release-it/)
+
+Release a new patch (increments from e.g. `1.0.4` to `1.0.5`):
+
+```bash
+release-it
+```
+
+Release a patch, minor, major, or specific version:
+
+```bash
+release-it minor
+release-it 0.8.3
+```
+
+You can also do a "dry run", which won't write/touch anything, but does output the commands it would execute, and show the interactivity:
+
+```bash
+release-it --dry-run
+```
+
+# References: Tutorials
+
+* [Your first Node.js package  por Elijah Insua](https://nodesource.com/blog/your-first-nodejs-package/)
+
+## NPM: Video Tutoriales
+
+* [Creating NodeJS modules](https://youtu.be/3I78ELjTzlQ)
+* [Publishing npm Packages](https://youtu.be/BkotrAFtBM0)
+* [Node js Tutorial: How to create NPM package?](https://youtu.be/sELoj6e1ffM)
+
+## Links to NPM docs: Getting Started 
+
+1.  [What is npm?](https://docs.npmjs.com/getting-started/what-is-npm)
+2.  [Installing Node.js and updating npm](https://docs.npmjs.com/getting-started/installing-node)
+3.  [Fixing npm permissions](https://docs.npmjs.com/getting-started/fixing-npm-permissions)
+4.  [Installing npm packages locally](https://docs.npmjs.com/getting-started/installing-npm-packages-locally)
+5.  [Using a package.json](https://docs.npmjs.com/getting-started/using-a-package.json)
+6.  [Updating local packages](https://docs.npmjs.com/getting-started/updating-local-packages)
+7.  [Uninstalling local packages](https://docs.npmjs.com/getting-started/uninstalling-local-packages)
+8.  [Installing npm packages globally](https://docs.npmjs.com/getting-started/installing-npm-packages-globally)
+9.  [Updating global packages](https://docs.npmjs.com/getting-started/updating-global-packages)
+[Uninstalling global packages](https://docs.npmjs.com/getting-started/uninstalling-global-packages)11.  [Creating Node.js modules](https://docs.npmjs.com/getting-started/getting-started/creating-node-modules)
+12.  [Publishing npm packages](https://docs.npmjs.com/getting-started/publishing-npm-packages)
+13.  [Semantic versioning and npm](https://docs.npmjs.com/getting-started/semantic-versioning)
+14.  [Working with scoped packages](https://docs.npmjs.com/getting-started/scoped-packages)
+15.  [Using tags](https://docs.npmjs.com/getting-started/using-tags)
+
+<!-- * [Publishing npm packages tutorial](https://docs.npmjs.com/getting-started/publishing-npm-packages) * [npm documentation: Creating Node.js modules](https://docs.npmjs.com/getting-started/creating-node-modules) -->
+
 
 # Yarn
 
