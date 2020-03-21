@@ -57,11 +57,31 @@ guardará el token en el fichero
 
 Para escribir documentación para una API 
 
+
+
+## Documentación.js
+
 - Véase [documentation.js](http://documentation.js.org/), 
+* [documentation.js: User's Guide](https://github.com/documentationjs/documentation#user-guide)
+* [documentation.js: Getting Started](https://github.com/documentationjs/documentation/blob/master/docs/GETTING_STARTED.md)
+
+## JSDoc
+
 - [jsdoc](https://www.npmjs.com/package/jsdoc), 
+* [JSDoc: Wikipedia](https://en.wikipedia.org/wiki/JSDoc)
+* [An introduction to JSDoc](http://2ality.com/2011/08/jsdoc-intro.html)
+* [Book *Speaking JavaScript: An In-Depth Guide for Programmers* by Dr. Axel Rauschmayer: Chapter 29. JSDoc: Generating API Documentation](http://speakingjs.com/es5/ch29.html)
+* [Getting Started with JSDoc 3](http://usejsdoc.org/about-getting-started.html)
+
+## Docco
 - [docco](http://jashkenas.github.io/docco/)
 
-# Man pages
+## Ejemplo
+
+- [https://github.com/ULL-ESIT-DSI-1617/scapegoat](https://github.com/ULL-ESIT-DSI-1617/scapegoat)
+- [https://ull-esit-dsi-1617.github.io/scapegoat/](https://ull-esit-dsi-1617.github.io/scapegoat/)
+
+## Man pages
 
 * [Creating Man Pages in Markdown with Ronn](https://spin.atomicobject.com/2015/05/06/man-pages-in-markdown-ronn/)
 * [rtomayko/ronn](https://github.com/rtomayko/ronn)
@@ -71,8 +91,10 @@ Para escribir documentación para una API
 
 You can install packages directly from Github, and even specify a tag, sha, or branch if you want.
 
-					npm install https://github.com/ULL-ESIT-DSI-1617/scapegoat.git
-					npm install https://github.com/ULL-ESIT-DSI-1617/scapegoat.git#branch
+```
+npm install https://github.com/ULL-ESIT-DSI-1617/scapegoat.git
+npm install https://github.com/ULL-ESIT-DSI-1617/scapegoat.git#branch
+```
 
 must be https or git+ssh. 
 
@@ -80,12 +102,49 @@ See [How to install an npm package from GitHub directly?](https://stackoverflow.
 
 # Publicación con ámbito en una organización:
 
-          [/tmp/scapegoat(master)]$ npm publish --access public
-          + @ull-esit-dsi-1617/scapegoat@1.0.2
+```
+[/tmp/scapegoat(master)]$ npm publish --access public
++ @ull-esit-dsi-1617/scapegoat@1.0.2
+```	
 
-# Ejemplo de package.json
+## Scoped Packages
 
-```bash
+> There are only two hard things in Computer Science: cache invalidation and naming things.
+
+> —Phil Karlton
+
+ Naming things is hard. It’s even harder when there are tens of thousands of other people who want to use the same names that you do. With hundred of thousands of modules on npm, it has been getting hard to find a name that isn’t taken.
+
+Naming things just got a little bit easier for npm users with the introduction of scopes. 
+
+What are scopes?: Scopes are like namespaces for npm packages. Each npm user has their own scope.
+
+```
+@username/project-name
+```
+This means that you don’t have to worry about someone else taking your package name. Only you can add packages in your scope.
+
+Scoped modules also make it possible to put your private code on npm when you sign up for [private modules](https://www.npmjs.com/features). With private modules, you have control over who can see and collaborate on any of the modules in your scope.
+
+
+Public scoped packages are free. To create a scoped package, all you need to do is add your scope to the front of the name property in `package.json` and run `npm` with the access option:
+
+```
+npm publish --access=public
+```
+
+* [Working with scoped packages](https://docs.npmjs.com/getting-started/scoped-packages)
+* [npm-scope manual: Scoped packages](https://docs.npmjs.com/misc/scope#publishing-public-scoped-packages-to-the-public-npm-registry)
+* [Working with npm private modules. YouTube Video](https://youtu.be/O6JoXGnHK_Y)
+
+
+# Package.json
+
+* [Package.json documentation en npm site](https://docs.npmjs.com/files/package.json)
+
+## Ejemplo de package.json
+
+```
 	[~/javascript/evalua-module/scapegoat(master)]$ pwd -P
 	/Users/casiano/local/src/javascript/evalua-module/scapegoat
 	[~/javascript/evalua-module/scapegoat(master)]$ tree -I 'node_modules|docs'
@@ -98,7 +157,9 @@ See [How to install an npm package from GitHub directly?](https://stackoverflow.
 			└── index.js
 
 	1 directory, 5 files
-	[~/javascript/evalua-module/scapegoat(master)]$ cat package.json 
+	[~/javascript/evalua-module/scapegoat(master)]$ cat package.json
+```
+```js 
 	{
 		"name": "@ull-esit-dsi-1617/scapegoat",
 		"version": "1.0.4",
@@ -152,41 +213,7 @@ See [How to install an npm package from GitHub directly?](https://stackoverflow.
 * [Node js Tutorial: How to create NPM package?](https://youtu.be/sELoj6e1ffM)
 
 
-### Package.json
-
-* [Package.json documentation en npm site](https://docs.npmjs.com/files/package.json)
-
-### Scoped Packages
-
-> There are only two hard things in Computer Science: cache invalidation and naming things.
-
-> —Phil Karlton
-
- Naming things is hard. It’s even harder when there are tens of thousands of other people who want to use the same names that you do. With hundred of thousands of modules on npm, it has been getting hard to find a name that isn’t taken.
-
-Naming things just got a little bit easier for npm users with the introduction of scopes. 
-
-What are scopes?: Scopes are like namespaces for npm packages. Each npm user has their own scope.
-
-```
-@username/project-name
-```
-This means that you don’t have to worry about someone else taking your package name. Only you can add packages in your scope.
-
-Scoped modules also make it possible to put your private code on npm when you sign up for [private modules](https://www.npmjs.com/features). With private modules, you have control over who can see and collaborate on any of the modules in your scope.
-
-
-Public scoped packages are free. To create a scoped package, all you need to do is add your scope to the front of the name property in `package.json` and run `npm` with the access option:
-
-```
-npm publish --access=public
-```
-
-* [Working with scoped packages](https://docs.npmjs.com/getting-started/scoped-packages)
-* [npm-scope manual: Scoped packages](https://docs.npmjs.com/misc/scope#publishing-public-scoped-packages-to-the-public-npm-registry)
-* [Working with npm private modules. YouTube Video](https://youtu.be/O6JoXGnHK_Y)
-
-### NPM Documentation: Getting Started 
+# NPM Documentation: Getting Started 
 
 1.  [What is npm?](https://docs.npmjs.com/getting-started/what-is-npm)
 2.  [Installing Node.js and updating npm](https://docs.npmjs.com/getting-started/installing-node)
@@ -205,7 +232,7 @@ npm publish --access=public
 
 <!-- * [Publishing npm packages tutorial](https://docs.npmjs.com/getting-started/publishing-npm-packages) * [npm documentation: Creating Node.js modules](https://docs.npmjs.com/getting-started/creating-node-modules) -->
 
-### NPM: Herramientas de ayuda
+# NPM: Herramientas de ayuda: release-it
 
 * [release-it: Interactive release tool for Git repositories](https://github.com/webpro/release-it)
 * [release-it: GitHub Page](https://webpro.github.io/release-it/)
@@ -229,8 +256,7 @@ You can also do a "dry run", which won't write/touch anything, but does output t
 release-it --dry-run
 ```
 
-
-### npm Organizations /npm Organizaciones
+# npm Organizations /npm Organizaciones
 
 *   [Introduction](https://www.npmjs.com/docs/orgs/./)
 *   [Getting Started](https://www.npmjs.com/docs/orgs/getting-started.html)
@@ -266,23 +292,14 @@ Members of an Organization are immediately added to a Developers team that autom
 * [npm-team: Manage organization teams and team memberships](https://docs.npmjs.com/cli/team)
 * [npm-access: Set access level on published packages](https://docs.npmjs.com/cli/access)
 
-### Documentación
+# Yarn
 
-* [documentation.js: User's Guide](https://github.com/documentationjs/documentation#user-guide)
-* [documentation.js: Getting Started](https://github.com/documentationjs/documentation/blob/master/docs/GETTING_STARTED.md)
-* [JSDoc: Wikipedia](https://en.wikipedia.org/wiki/JSDoc)
-* [An introduction to JSDoc](http://2ality.com/2011/08/jsdoc-intro.html)
-* [Book *Speaking JavaScript: An In-Depth Guide for Programmers* by Dr. Axel Rauschmayer: Chapter 29. JSDoc: Generating API Documentation](http://speakingjs.com/es5/ch29.html)
-* [Getting Started with JSDoc 3](http://usejsdoc.org/about-getting-started.html)
-* Ejemplo:
-  - [https://github.com/ULL-ESIT-DSI-1617/scapegoat](https://github.com/ULL-ESIT-DSI-1617/scapegoat)
-  - [https://ull-esit-dsi-1617.github.io/scapegoat/](https://ull-esit-dsi-1617.github.io/scapegoat/)
+* [yarn](https://code.facebook.com/posts/1840075619545360)
+
+# Creación de Paquetes en el Navegador/Cliente
 
 
-### Creación de Paquetes en el Cliente
-
-* [bower](https://bower.io/)
 * [webpack](http://webpack.github.io/docs/motivation.html)
   - [Webpack Tutorial - Replace Gulp/Grunt plugins with a single tool. LearnCode.academy](https://youtu.be/9kJVYpOqcVU) YouTube
-* [yarn](https://code.facebook.com/posts/1840075619545360)
+* [bower](https://bower.io/)
 * [browserify](http://browserify.org/)
