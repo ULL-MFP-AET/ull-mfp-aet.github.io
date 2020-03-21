@@ -1,4 +1,4 @@
-## Capítulo. Módulos en NPM
+## Módulos en NPM
 
 * [Creación de Paquetes NPM](nodejspackages.html) (Apuntes)
 * [Ejemplo en https://github.com/ULL-ESIT-DSI-1617/create-a-npm-module](https://github.com/ULL-ESIT-DSI-1617/create-a-npm-module)
@@ -7,9 +7,7 @@
   
 ## About GitHub Package Registry
 
-* [About GitHub Package Registry](https://help.github.com/en/articles/about-github-package-registry)
-  - GitHub Package Registry is a software package hosting service, similar to npmjs.org, rubygems.org, or hub.docker.com, that allows you to host your packages and code in one place. You can host software packages privately or publicly and use them as dependencies in your projects.
-* [Veáse la sección *GitHub Package Registry* de estos apuntes]({{site.baseurl}}/tema4-devops/control-version#github-package-registry)
+* [Veáse la sección *GitHub Package Registry* de estos apuntes](github-registry)
 
 ## Best Practices
 
@@ -22,7 +20,7 @@
     ```
    Those suck for maintenance and they're ugly.
 
-## Capítulo. Módulos en ECMA6
+## Módulos en ECMA6
 
 - [Eloquent JS](http://eloquentjavascript.net/index.html): [Modules](http://eloquentjavascript.net/10_modules.html)
 - [Book: Understanding ECMAScript 6. Chapter 13. Encapsulating Code With Modules](https://leanpub.com/understandinges6/read#leanpub-auto-encapsulating-code-with-modules)

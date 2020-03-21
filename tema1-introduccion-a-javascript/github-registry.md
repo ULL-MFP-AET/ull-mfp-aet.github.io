@@ -1,5 +1,8 @@
 # GitHub Packages
 
+GitHub Package Registry is a software package hosting service, similar to npmjs.org, rubygems.org, or hub.docker.com, that allows you to host your packages and code in one place. You can host software packages privately or publicly and use them as dependencies in your projects.
+
+
 ## About GitHub Packages
 
 * [About GitHub Packages](https://help.github.com/en/packages/publishing-and-managing-packages/about-github-packages)
@@ -29,7 +32,7 @@ GitHub provides a token that you can use to authenticate on behalf of GitHub Act
 
 * [Authenticating with the GITHUB_TOKEN](https://help.github.com/en/actions/configuring-and-managing-workflows/authenticating-with-the-github_token)
 
-### Publishing a Pckage
+### Publishing a Package
 
 By default, GitHub Packages publishes a package in the GitHub repository you specify in the name field of the _package.json_ file. For example, you would publish a package named `@my-org/test` to the `my-org/test` GitHub repository. You can add a summary for the package listing page by including a _README.md_ file in your package directory. 
 
