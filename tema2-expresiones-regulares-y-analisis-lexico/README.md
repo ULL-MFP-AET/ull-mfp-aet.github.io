@@ -287,7 +287,7 @@ Since to solve this problem you have to dynamically create the regexp, review se
 
 ### replace
 
-The `replace()` method returns a new string with some or all matches of
+The `replace()` method of the String objects returns a new string with some or all matches of
 a pattern replaced by a replacement.  
 The pattern can be a string or a `RegExp`, 
 and the replacement can be a string or a function to be called
@@ -326,7 +326,13 @@ console.log(s.replace(/\b(fbi|cia)\b/g,
 // → the CIA and FBI
 ```
 
-The arguments supplied to this function are:
+The arguments supplied to this function 
+
+```js
+(match, p1, p2, ..., pn, offset, string) => { ... }
+```
+
+are:
 
 | **Possible name** | **Supplied value** |
 | ----------------- | ------------------ |
@@ -386,11 +392,25 @@ Ejecución:
 
 ### Greed and Lazy Operators
 
-Exercise:
+#### Exercise:
 
 Write a function that removes all comments from a piece of JavaScript code. 
 
-* [EJS: Greed and Lazy Operators](https://eloquentjavascript.net/09_regexp.html#h_kiECehz+i+)
+* [EJS: Greed and Lazy Operators](https://eloquentjavascript.net/09_regexp.
+html#h_kiECehz+i+)
+
+#### Exercise:
+
+We have a text and need to replace all double quotes `"..."` with single quotes: '...'. (We are not considering escaped double quotes)
+
+```js
+let regexp = /".+"/g;
+let str = 'a "witch" and her "broom" is one';
+```
+
+See [Greedy and lazy quantifiers](https://javascript.info/regexp-greedy-and-lazy) at the Modern JavaScript book
+
+
 
 ### Positive Lookahead
 
@@ -527,7 +547,6 @@ pero se quiere que
 ```
       
 Véase en [codepen](https://codepen.io/crguezl/pen/mXYbVZ)
-
 
 ### search
 
