@@ -3,9 +3,6 @@
 * [Creación de Paquetes NPM](nodejspackages.html)
 * [Creating and Publishing a Node.js Module](creating-and-publishing-npm-module) 
 
-## About GitHub Package Registry
-
-* [Veáse la sección *GitHub Package Registry* de estos apuntes](github-registry)
 
 ## Best Practices
 
