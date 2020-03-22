@@ -128,7 +128,7 @@ $ npm login --registry=https://npm.pkg.github.com
 Write/paste the token in the password field:
 
 ```
-[~/.../github-actions-learning/lexer-generator(master)]$ npm login --registry=https://npm.pkg.github.com
+$ npm login --registry=https://npm.pkg.github.com
 Username: crguezl
 Password:
 Email: (this IS public) crguezl@ull.edu.es
@@ -550,17 +550,17 @@ you want.
     npm install git://github.com/brentertz/scapegoat.git
     npm install git://github.com/brentertz/scapegoat.git#0.1.0
 
-### CI with GitHub Actions
+### Continuous Integration (CI) with GitHub Actions
 
 ```
-[~/.../github-actions-learning/lexer-generator(master)]$ mkdir -p .github/workflows
-[~/.../github-actions-learning/lexer-generator(master)]$ touch .github/workflows/nodejs.yml
+$ mkdir -p .github/workflows
+$ touch .github/workflows/nodejs.yml
 ```
 
 We fill the contents of `nodejs.yml` with the description of our workflow:
 
 ```
-[~/.../github-actions-learning/lexer-generator(master)]$ cat .github/workflows/nodejs.yml
+$ cat .github/workflows/nodejs.yml
 ```
 ```yml
 # This workflow will do a clean install of node dependencies, build the source code and run tests across different versions of node
@@ -598,14 +598,14 @@ jobs:
 
 
 ```
-[~/.../github-actions-learning/lexer-generator(master)]$ git add .github/workflows/nodejs.yml
-[~/.../github-actions-learning/lexer-generator(master)]$ git ci -am .github/workflows/nodejs.yml
+$ git add .github/workflows/nodejs.yml
+$ git ci -am .github/workflows/nodejs.yml
 ```
 
  Now when we do a push:
 
 ```
-[~/.../github-actions-learning/lexer-generator(master)]$ git push
+$ git push
 Counting objects: 6, done.
 Delta compression using up to 4 threads.
 Compressing objects: 100% (3/3), done.
@@ -736,7 +736,7 @@ will be published to that registry instead.
 In the following example, the name of the package is `@ULL-ESIT-PL-1920/lexer-generator`:
 
 ```
-[~/.../github-actions-learning/lexer-generator(master)]$ cat package.json
+$ cat package.json
 ```
 ```js
 {
@@ -764,7 +764,7 @@ In the following example, the name of the package is `@ULL-ESIT-PL-1920/lexer-ge
 When  we run `npm publish` inside the package folder we get:
 
 ```
-[~/.../github-actions-learning/lexer-generator(master)]$ npm publish
+$ npm publish
 npm notice
 npm notice 📦  @ULL-ESIT-PL-1920/lexer-generator@1.0.0
 npm notice === Tarball Contents ===
