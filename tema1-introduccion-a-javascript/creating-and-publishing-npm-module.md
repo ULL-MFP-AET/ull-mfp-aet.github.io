@@ -141,35 +141,47 @@ Logged in as crguezl on https://npm.pkg.github.com/.
 
 A Node/npm module is just an ordinary JavaScript file with the addition
 that it must follow the 
-[CommonJS module spec](http://www.commonjs.org/specs/modules/1.0/). Luckily, this is
-really not as complex as it sounds. Node modules run in their own scope
-so that they do not conflict with other modules. Node relatedly provides
+[CommonJS module spec](http://www.commonjs.org/specs/modules/1.0/). 
+
+Node modules run in their own scope
+so that they do not conflict with other modules. 
+
+Node relatedly provides
 access to some [globals](http://nodejs.org/api/globals.html) to help
-facilitate module interoperability. The primary 2 items that we are
-concerned with here are `require` and `exports`. You `require` other
+facilitate module interoperability. 
+
+The primary two items that we are
+concerned with here are `require` and `exports`. 
+
+You `require` other
 modules that you wish to use in your code and your module `exports`
-anything that should be exposed publicly. For example:
+anything that should be exposed publicly. 
+
+For example:
 
 ```js
     var other = require('other_module');
     module.exports = function() {
         console.log(other.doSomething());
     }
-```      
+```
 
 For our demo, we'll create an npm module consisting of a couple utility
 methods for escaping and unescaping HTML entities -- commonly needed
-utils to prevent
-[XSS](http://en.wikipedia.org/wiki/Cross-site_scripting) attacks when
+utils to prevent cross site scripting
+([XSS](http://en.wikipedia.org/wiki/Cross-site_scripting)) 
+attacks when
 rendering user generated content. 
-I'll call this project, 'Scapegoat',
-because I like the sound of it and also because a quick search of the
+
+We'll call this project, 'Scapegoat',
+because a quick search of the
 npm registry reveals that the name has not yet been taken. 
+
 *Note that if
 you are coding along with me, and plan to publish your module to npm,
-you'll need to give your module a unique name.*
+without scope, you'll need to give your module a unique name.*
 
-To get started, I created a new repository on my Github
+To get started, We create a new repository on our Github
 account (or on a organization) and then cloned it
 locally.
 
@@ -184,8 +196,10 @@ Executing the following command will create a `package.json` file:
     npm init -f
 
 Have a look to see what the file contains; it is pretty human-readable.
-Further details and explanation of the contents of the package.json file
-can be found at <https://npmjs.org/doc/json.html>. Our initial version
+Further details and explanation of the contents of the `package.json` file
+can be found at <https://npmjs.org/doc/json.html>. 
+
+Our initial version
 looks like the following, but we'll be updating this further as we go
 along.
 
@@ -214,56 +228,61 @@ along.
       }
     }
 ```      
+
 ### index.js: Write the code
 
 Now we can actually get on to the business of writing code. Create an
 `index.js` file to hold the primary module code. It'll look something
-like the following. *Note the use of `module.exports`, which we
+like the following. 
+
+*Note the use of `module.exports`, which we
 discussed previously, and is needed to make code available for use by
 other modules. Further, as our module is not reliant on any other
 modules, we did not need to `require` anything.*
 
 ```js
-    /**
-     * Escape special characters in the given string of html.
-     *
-     * @param  {String} html
-     * @return {String}
-     */
-    module.exports = {
-      escape: function(html) {
-        return String(html)
-          .replace(/&/g, '&amp;')
-          .replace(/"/g, '&quot;')
-          .replace(/'/g, '&#39;')
-          .replace(/</g, '&lt;')
-          .replace(/>/g, '&gt;');
-      },
+/**
+ * Escape special characters in the given string of html.
+ *
+ * @param  {String} html
+ * @return {String}
+ */
+module.exports = {
+  escape: function(html) {
+    return String(html)
+      .replace(/&/g, '&amp;')
+      .replace(/"/g, '&quot;')
+      .replace(/'/g, '&#39;')
+      .replace(/</g, '&lt;')
+      .replace(/>/g, '&gt;');
+  },
 
-      /**
-       * Unescape special characters in the given string of html.
-       *
-       * @param  {String} html
-       * @return {String}
-       */
-      unescape: function(html) {
-        return String(html)
-          .replace(/&amp;/g, '&')
-          .replace(/&quot;/g, '"')
-          .replace(/&#39;/g, ''')
-          .replace(/&lt;/g, '<')
-          .replace(/&gt;/g, '>');
-      }
-    };
-```      
+  /**
+   * Unescape special characters in the given string of html.
+   *
+   * @param  {String} html
+   * @return {String}
+   */
+  unescape: function(html) {
+    return String(html)
+      .replace(/&amp;/g, '&')
+      .replace(/&quot;/g, '"')
+      .replace(/&#39;/g, ''')
+      .replace(/&lt;/g, '<')
+      .replace(/&gt;/g, '>');
+  }
+};
+```
 
-### Tests
+### Testing with Mocha and Chai
 
 Next, we'll surely want to write some tests. *Perhaps it would have been
 preferable to write them first.* Regardless, I prefer to use the
 [Mocha](https://mochajs.org/) and
 [Chai](http://chaijs.com/) frameworks, but you can use whatever you
-like. These can be installed and persisted to the `package.json` file
+like. 
+
+These can be installed and persisted to the `package.json` file
 with the following commands. *Note that they are added to the
 'devDependencies' section, as they are only required during development
 and not at runtime.*
@@ -272,21 +291,35 @@ and not at runtime.*
 
     npm install chai --save-dev
 
-### .gitignore      
+### .gitignore
 
 The above commands will also create a `node_modules` folder in your
 project directory containing those dependencies. Following best
 practices, we'll want to keep the `node_modules` folder out of the git
-repository. We can do that by adding a `.gitignore` file to our project
+repository. 
+
+We can do that by adding a `.gitignore` file to our project
 root, with the following contents.
 
     node_modules
 
-Continuing on, let's create a `test` directory to hold our tests. As our
+It also created `package-lock.json` containing a detailed description of all the dependences. We add this file to the control version:
+
+    git add package-lock.json
+
+### Writing the tests
+
+Continuing on, let's create a `test` directory to hold our tests.
+
+ As our
 primary module file is called `index.js`, within the `test` directory I
-will create a file by the same name -- a simple convention. Mocha will
+will create a file by the same name -- a simple convention. 
+
+Mocha will
 by default run all tests in this directory. Our test should look
-something like the following. *Note that I am using the `should` syntax
+something like the following. 
+
+*Note that I am using the `should` syntax
 provided by the Chai framework. Also note the use of `require` to pull
 in our module code into the test.*
 
@@ -609,21 +642,27 @@ Scopes have a **many-to-one** relationship with registries:
   npm config set @ULL-ESIT-PL-1920:registry https://npm.pkg.github.com
 ```
 
+In this example we associate the scope `@ULL-ESIT-PL-1920` with the GitHub registry
+`https://npm.pkg.github.com`. 
+
 Once a scope is associated with a registry, any `npm install` 
 for a package with  that
 scope  will request packages from that registry instead. 
 
-Any `npm publish` for a package name that contains the scope 
+Therefore any package with name `@ULL-ESIT-PL-1920/some-name` will be 
+published at `https://npm.pkg.github.com`.
+
+Lte us repeat it: Any `npm publish` for a package name that contains the scope 
 will be published to that registry instead.
 
-In this example, the name of the package is `@ULL-ESIT-PL-1920/lexer-generator`:
+In the following example, the name of the package is `@ULL-ESIT-PL-1920/lexer-generator`:
 
 ```
 [~/.../github-actions-learning/lexer-generator(master)]$ cat package.json
 ```
 ```js
 {
-  "name": "@ULL-ESIT-PL-1920/lexer-generator",
+  "name": "@ULL-ESIT-PL-1920/lexer-generator",     👈
   "version": "1.0.0",
   "description": "A lab for PL: Building a lexer generator",
   "main": "index.js",

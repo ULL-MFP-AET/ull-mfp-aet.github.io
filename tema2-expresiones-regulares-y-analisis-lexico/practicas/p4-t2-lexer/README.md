@@ -7,9 +7,9 @@ previous:
 repo: https://github.com/ULL-ESIT-PL-1819/regexp-exercises/blob/master/
 ---
 
-## Lexer Generator (p4-t2-lexer)
+# Lexer Generator (p4-t2-lexer)
 
-### Descripción
+## Descripción
 
 Generalizar este código:
 
@@ -55,9 +55,11 @@ escribiendo una función `makeLexer` que recibe como argumentos un array `tokens
 como en el ejemplo y retorna una función que hace el análisis léxico 
 correspondiente a esos tokens.
 
-### Pruebas
+## Pruebas
 
 ```
+[~/.../github-actions-learning/lexer-generator(master)]$ pwd -P
+/Users/casiano/local/src/github-actions-learning/lexer-generator
 [~/.../github-actions-learning/lexer-generator(master)]$ cat test.js
 ```
 ```js
@@ -149,3 +151,11 @@ Snapshots:   0 total
 Time:        1.126s
 Ran all test suites.
 ```
+
+## Publicar como paquete npm en GitHub Registry
+
+Publique el paquete dentro del repo de la organización de la asigntura con nombre `lexical-generator-aluXXXX-nombre-apellidos`
+* Sección [Creando y Publicando un módulo npm]({{site.baseurl}}/tema1-introduccion-a-javascript/creating-and-publishing-npm-module)
+* Sección [Módulos]({{site.baseurl}}/tema1-introduccion-a-javascript/modulos)
+* Sección [Node.js Packages]({{site.baseurl}}/tema1-introduccion-a-javascript/nodejspackages)
+* Sección [GitHub Registry]({{site.baseurl}}/tema1-introduccion-a-javascript/github-registry)
