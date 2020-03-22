@@ -12,7 +12,7 @@ repo: https://github.com/ULL-ESIT-PL-1819/regexp-exercises/blob/master/
 ## Objetivos
 
 Usando el repo de la asignación de esta tarea construya un paquete npm y 
-publíquelo como paquete privado en GitHub Registry con ámbito `@ULL-ESIT-PL-1920`  y nombre el nombre de su repo `p4-t2-lexer-aluAtGitHub`
+publíquelo como paquete privado en GitHub Registry con ámbito `@ULL-ESIT-PL-1920`  y con nombre el nombre de su repo `p4-t2-lexer-aluAtGitHub`
 
 El módulo deberá exportar una función que construye analizadores léxicos:
 
@@ -20,7 +20,7 @@ El módulo deberá exportar una función que construye analizadores léxicos:
 const buildLexer =require('@ULL-ESIT-PL-1920/p4-t2-lexer-aluAtGitHub');
 ```
 
-La función `buildLexer` se llamará con un objeto que describe el léxico y retornará una función `lexer` que es la que hace el análisis léxico:
+La función `buildLexer` se llamará con un objeto que describe el léxico del lenguaje y retornará una función `lexer` que es la que hace el análisis léxico:
 
 ```
 lexer = buildLexer(myTokens)
@@ -88,6 +88,8 @@ como en el ejemplo y retorna una función que hace el análisis léxico
 correspondiente a esos tokens.
 
 ## Pruebas
+
+Deberá añadir pruebas usando [Jest]({{site.baseurl}}/tema1-introduccion-a-javascript/jest}). Amplíe este ejemplo:
 
 ```
 [~/.../github-actions-learning/lexer-generator(master)]$ pwd -P
@@ -168,7 +170,7 @@ test(str, () => {
 [~/.../github-actions-learning/lexer-generator(master)]$ npm test
 
 > @ULL-ESIT-PL-1920/lexer-generator@1.0.0 test /Users/casiano/local/src/github-actions-learning/lexer-generator
-> jest
+> jest        👈 use jest!
 
  PASS  ./test.js
   ✓ const varName = "value" (4ms)
@@ -184,12 +186,18 @@ Time:        1.126s
 Ran all test suites.
 ```
 
+## Integración Contínua usando GitHub Actions
+
+Use [GitHub Actions]({{site.baseurl}}/tema1-introduccion-a-javascript/github-actions) para la ejecución de las pruebas
+
 ## Publicar como paquete npm en GitHub Registry
 
 Usando el repo de la asignación de esta tarea publique el paquete como paquete privado en GitHub Registry con ámbito `@ULL-ESIT-PL-1920`  y nombre el nombre de su repo `p4-t2-lexer-aluAtGitHub`
 
-Véase
-* Sección [CCreating and publishing a node.js module en GitHub y en NPM]({{site.baseurl}}/tema1-introduccion-a-javascript/creating-and-publishing-npm-module)
+## Referencias
+
+* Sección [Creating and publishing a node.js module en GitHub y en NPM]({{site.baseurl}}/tema1-introduccion-a-javascript/creating-and-publishing-npm-module)
+* [Jest]({{site.baseurl}}/tema1-introduccion-a-javascript/jest})
 * Sección [Módulos]({{site.baseurl}}/tema1-introduccion-a-javascript/modulos)
 * Sección [Node.js Packages]({{site.baseurl}}/tema1-introduccion-a-javascript/nodejspackages)
 * Sección [GitHub Registry]({{site.baseurl}}/tema1-introduccion-a-javascript/github-registry)
