@@ -9,6 +9,8 @@ repo: https://github.com/ULL-ESIT-PL-1819/regexp-exercises/blob/master/
 
 # Lexer Generator (p4-t2-lexer)
 
+## Objetivos
+
 Usando el repo de la asignación de esta tarea construya un paquete npm y 
 publíquelo como paquete privado en GitHub Registry con ámbito `@ULL-ESIT-PL-1920`  y nombre el nombre de su repo `p4-t2-lexer-aluAtGitHub`
 
@@ -36,9 +38,12 @@ cuando `lexer` es llamada con una cadena de entrada retorna la secuencia de toke
 ];
 ```
 
-## Descripción
+## Descripción del Lenguaje Léxico: parámetros de entrada de la función 
 
-Generalizar este código:
+
+## Sugerencias
+
+Puede partir de este código que hemos visto en clase en el que se combina el uso de sticky y los grupos con nombre
 
 
 ```js
