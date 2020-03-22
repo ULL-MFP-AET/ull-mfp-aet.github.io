@@ -101,7 +101,7 @@ Recuerde como procesar letras y números Unicode usando XRegexp:
 
 #### El Módulo @ull-esit-pl/uninums
 
-Para esta práctica escribí el módulo [Módulo @ull-esit-pl/uninums](https://www.npmjs.com/package/@ull-esit-pl/uninums), que les ayudará a obtener la representación interna de una cadena unicode que contenga un número:
+Para esta práctica escribí el módulo [@ull-esit-pl/uninums](https://www.npmjs.com/package/@ull-esit-pl/uninums), que les ayudará a obtener la representación interna de una cadena unicode que contenga un número:
 
 ```js
 > uninums = require("@ull-esit-pl/uninums")
