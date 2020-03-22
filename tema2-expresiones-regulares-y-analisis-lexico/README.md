@@ -1002,7 +1002,7 @@ Antiguos apuntes del profesor sobre el uso de RegExp en otros lenguajes:
 ## Análisis Léxico
 
 * [Ejemplo de Analizador Léxico para JS](https://github.com/crguezl/ull-etsii-grado-pl-minijavascript/blob/gh-pages/tokens.js)
-* [Descripción de la Práctica: Analizador Léxico para Un Subconjunto de JavaScript](https://casianorodriguezleon.gitbooks.io/ull-esit-1617/content/practicas/practicaanalisislexicotdop2018.html)
+* [Descripción de la Práctica: Analizador Léxico para Un Subconjunto de JavaScript](https://casianorodriguezleon.gitbooks.io/ull-esit-1617/content/practicas/practicaanalisislexicotdop2018.html) gitbooks.io
 * [Compiler Construction by Wikipedians](https://books.google.es/books?id=nMZnyp_zW8AC&pg=PA570#v=onepage&q=Lexical&f=false). Chapter  Lexical Analysis
 * [Un caso a estudiar: El módulo npm lexical-parser](https://github.com/Eitz/lexical-parser)
 * [Esprima. Chapter 3. Lexical Analysis (Tokenization)](http://esprima.readthedocs.io/en/latest/lexical-analysis.html)
@@ -1011,9 +1011,15 @@ Antiguos apuntes del profesor sobre el uso de RegExp en otros lenguajes:
 * [lexer](https://github.com/aaditmshah/lexer)
 * [Expresiones Regulares en Flex](https://ull-esit-pl-1617.github.io/apuntesingenieriainformaticaPL/node19.html)
 
-### Práctica p4-t2-lexer
+### Práctica p9-t2-lexer
 
-* [Práctica Escribir un Analizador Léxico para Javascript (p4-t2-lexer)](practicas/p4-t2-lexer/README.md)
+* [Práctica Escribir un Analizador Léxico para Javascript (p9-t2-lexer)](practicas/p9-t2-lexer/README.md)
+
+### Práctica p9-t2-lexer-with-server
+
+* [Práctica Autenticación y Analizador Léxico para Javascript  (p9-t2-lexer-with-server)](practicas/p9-t2-lexer/README-with-server-lab)
+
+
 
 ## Referencias
 

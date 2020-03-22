@@ -1,4 +1,4 @@
-## Práctica: Analizador Léxico para Un Subconjunto de JavaScript (p4-t2-lexer)
+## Práctica: Analizador Léxico para Un Subconjunto de JavaScript (antigua p4-t2-lexer)
 
 Vamos a trabajar a partir de este repo de Douglas Crockford:
 
