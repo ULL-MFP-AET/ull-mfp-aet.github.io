@@ -4,6 +4,10 @@
 
 * [Mocha](mocha)
 
+## Jest
+
+* [Jest](jest)
+  
 ## Travis
 
 * [Travis](travis)

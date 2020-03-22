@@ -26,7 +26,7 @@ mocha-chai-sinon--example) (2015 y 2016)
 * [Repo con el código para la sección *The Secret Life of Objects. Lying Out a Table*](https://github.com/ULL-ESIT-DSI-1617/oop-eloquentjs-example)
 * [Repo /crguezl/mocha-chai-sinon--example](https://github.com/crguezl/mocha-chai-sinon--example)
 
-## Introduction to Testing Node.js
+## Introduction to Testing Node.js (2015)
 
 * [Introduction to Testing Node.js](https://youtu.be/u2XCdkL4bWI) (2015)
   - [Slides](http://training.strongloop.com/testing-node#/)
