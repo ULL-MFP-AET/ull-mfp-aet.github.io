@@ -1,4 +1,4 @@
-# Creating and publishing a node.js module
+# Creating and publishing a node.js module en GitHub y en NPM
 
 Creating a node module and publishing it to npm is a fairly
 straightforward process. Haven't done it yet? Not sure what I'm talking
@@ -705,11 +705,11 @@ npm notice
 + @ULL-ESIT-PL-1920/lexer-generator@1.0.0
 ```
 
-And now, since the repo is private, we have got a private module that we
+And now, since our repo is private, we have got a private module that we
 can install and test assuming we have the permits!
 
 ```
-[~/.../github-actions-learning/test-lexer-generator]$ npm i \@ULL-ESIT-PL-1920/lexer-generator
+[~/.../github-actions-learning/test-lexer-generator]$ npm i \@ULL-ESIT-PL-1920/lexer-generator   👈 Escape the @ to avoid shell interpretation
 npm WARN test-lexer-generator@1.0.0 No description
 npm WARN test-lexer-generator@1.0.0 No repository field.
 

@@ -9,6 +9,32 @@ repo: https://github.com/ULL-ESIT-PL-1819/regexp-exercises/blob/master/
 
 # Lexer Generator (p4-t2-lexer)
 
+Usando el repo de la asignación de esta tarea publique el paquete como paquete privado en GitHub Registry con ámbito `@ULL-ESIT-PL-1920`  y nombre el nombre de su repo `p4-t2-lexer-aluAtGitHub`
+
+El módulo deberá exportar una función que construye analizadores léxicos:
+
+```js
+const buildLexer =require('@ULL-ESIT-PL-1920/p4-t2-lexer-aluAtGitHub');
+```
+
+La función `buildLexer` se llamará con una descripción del lenguaje léxico y retorna una función `lexer` que es la que hace el análisis léxico:
+
+```
+lexer = buildLexer(myTokens)
+```
+
+cuando `lexer` es llamada con una cadena de entrada retorna la secuencia de tokens:
+
+```js
+> lexer('const varName = "value"');
+[
+  { type: 'RESERVEDWORD', value: 'const' },
+  { type: 'ID', value: 'varName' },
+  { type: 'OP', value: '=' },
+  { type: 'STRING', value: '"value"' }
+];
+```
+
 ## Descripción
 
 Generalizar este código:
@@ -154,8 +180,10 @@ Ran all test suites.
 
 ## Publicar como paquete npm en GitHub Registry
 
-Publique el paquete dentro del repo de la organización de la asigntura con nombre `lexical-generator-aluXXXX-nombre-apellidos`
-* Sección [Creando y Publicando un módulo npm]({{site.baseurl}}/tema1-introduccion-a-javascript/creating-and-publishing-npm-module)
+Usando el repo de la asignación de esta tarea publique el paquete como paquete privado en GitHub Registry con ámbito `@ULL-ESIT-PL-1920`  y nombre el nombre de su repo `p4-t2-lexer-aluAtGitHub`
+
+Véase
+* Sección [CCreating and publishing a node.js module en GitHub y en NPM]({{site.baseurl}}/tema1-introduccion-a-javascript/creating-and-publishing-npm-module)
 * Sección [Módulos]({{site.baseurl}}/tema1-introduccion-a-javascript/modulos)
 * Sección [Node.js Packages]({{site.baseurl}}/tema1-introduccion-a-javascript/nodejspackages)
 * Sección [GitHub Registry]({{site.baseurl}}/tema1-introduccion-a-javascript/github-registry)
