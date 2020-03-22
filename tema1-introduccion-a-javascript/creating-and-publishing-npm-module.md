@@ -664,7 +664,7 @@ rather attempting an actual install.
       >
 ```
 
-#### npm link: Symlink Your Package
+#### Symlink Your Package with npm link
 
 Run `npm link` in the package directory:
 
