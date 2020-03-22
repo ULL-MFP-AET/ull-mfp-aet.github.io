@@ -190,6 +190,10 @@ Ran all test suites.
 
 Use [GitHub Actions]({{site.baseurl}}/tema1-introduccion-a-javascript/github-actions) para la ejecución de las pruebas
 
+## Documentación
+
+Documente el módulo tanto con un `README.md` como documentando la función usando su documentador favorito. Ponga las páginas de documentación generadas en la carpeta `docs`. Configure sus GitHub pages  para que las sirva desde la carpeta `docs`.
+
 ## Publicar como paquete npm en GitHub Registry
 
 Usando el repo de la asignación de esta tarea publique el paquete como paquete privado en GitHub Registry con ámbito `@ULL-ESIT-PL-1920`  y nombre el nombre de su repo `p4-t2-lexer-aluAtGitHub`
