@@ -7,7 +7,6 @@ previous:
 repo: https://github.com/ULL-ESIT-PL-1819/regexp-exercises/blob/master/
 ---
 
-
 ## Reto
 
 Generalizar este código:
