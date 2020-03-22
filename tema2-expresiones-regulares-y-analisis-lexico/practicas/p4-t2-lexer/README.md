@@ -9,7 +9,8 @@ repo: https://github.com/ULL-ESIT-PL-1819/regexp-exercises/blob/master/
 
 # Lexer Generator (p4-t2-lexer)
 
-Usando el repo de la asignación de esta tarea publique el paquete como paquete privado en GitHub Registry con ámbito `@ULL-ESIT-PL-1920`  y nombre el nombre de su repo `p4-t2-lexer-aluAtGitHub`
+Usando el repo de la asignación de esta tarea construya un paquete npm y 
+publíquelo como paquete privado en GitHub Registry con ámbito `@ULL-ESIT-PL-1920`  y nombre el nombre de su repo `p4-t2-lexer-aluAtGitHub`
 
 El módulo deberá exportar una función que construye analizadores léxicos:
 
@@ -17,13 +18,13 @@ El módulo deberá exportar una función que construye analizadores léxicos:
 const buildLexer =require('@ULL-ESIT-PL-1920/p4-t2-lexer-aluAtGitHub');
 ```
 
-La función `buildLexer` se llamará con una descripción del lenguaje léxico y retorna una función `lexer` que es la que hace el análisis léxico:
+La función `buildLexer` se llamará con una descripción del lenguaje léxico y retornará una función `lexer` que es la que hace el análisis léxico:
 
 ```
 lexer = buildLexer(myTokens)
 ```
 
-cuando `lexer` es llamada con una cadena de entrada retorna la secuencia de tokens:
+cuando `lexer` es llamada con una cadena de entrada retorna la secuencia de tokens de esa cadena conforme a la descripción léxica proveída:
 
 ```js
 > lexer('const varName = "value"');
