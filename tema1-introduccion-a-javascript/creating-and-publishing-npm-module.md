@@ -758,7 +758,7 @@ publishing part is really easy.
     npm publish
       
 
-When you publish to npm using a scope, the first time you have to add the option
+When you publish to npm a public package using a scope, the first time you have to add the option
 `--access public`:
 
 ```
