@@ -95,6 +95,7 @@ regulares. Reescriba el analizador léxico en [tokens.js](https://github.com/dou
     > uninums.normalDigits('٠۴६')
     '046'
     ```
+<!--
 * Diseño
   * [Apuntes: Code Smells](https://casianorodriguezleon.gitbooks.io/ull-esit-1617/content/apuntes/patterns/codesmell.html)
   * [Principios de Diseño](https://casianorodriguezleon.gitbooks.io/ull-esit-1617/content/apuntes/patterns/designprinciples.html)
@@ -120,7 +121,7 @@ regulares. Reescriba el analizador léxico en [tokens.js](https://github.com/dou
       ```
      Those suck for maintenance and they're ugly.
 
-
+-->
 
 
 ### Notas para el Profesor
