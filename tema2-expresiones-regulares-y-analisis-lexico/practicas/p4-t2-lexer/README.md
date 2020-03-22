@@ -197,7 +197,8 @@ Usando el repo de la asignación de esta tarea publique el paquete como paquete 
 ## Referencias
 
 * Sección [Creating and publishing a node.js module en GitHub y en NPM]({{site.baseurl}}/tema1-introduccion-a-javascript/creating-and-publishing-npm-module)
-* [Jest]({{site.baseurl}}/tema1-introduccion-a-javascript/jest})
+* [Jest]({{site.baseurl}}/tema1-introduccion-a-javascript/jest)
+* Sección [GitHub Registry]({{site.baseurl}}/tema1-introduccion-a-javascript/github-registry)
+* Sección [GitHub Actions]({{site.baseurl}}/tema1-introduccion-a-javascript/github-actions)
 * Sección [Módulos]({{site.baseurl}}/tema1-introduccion-a-javascript/modulos)
 * Sección [Node.js Packages]({{site.baseurl}}/tema1-introduccion-a-javascript/nodejspackages)
-* Sección [GitHub Registry]({{site.baseurl}}/tema1-introduccion-a-javascript/github-registry)
