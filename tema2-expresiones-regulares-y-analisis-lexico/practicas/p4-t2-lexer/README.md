@@ -20,7 +20,7 @@ El módulo deberá exportar una función que construye analizadores léxicos:
 const buildLexer =require('@ULL-ESIT-PL-1920/p4-t2-lexer-aluAtGitHub');
 ```
 
-La función `buildLexer` se llamará con una descripción del lenguaje léxico y retornará una función `lexer` que es la que hace el análisis léxico:
+La función `buildLexer` se llamará con un objeto que describe el léxico y retornará una función `lexer` que es la que hace el análisis léxico:
 
 ```
 lexer = buildLexer(myTokens)
