@@ -394,23 +394,44 @@ Ejecución:
 
 #### Exercise:
 
-Write a function that removes all comments from a piece of JavaScript code. 
+We have a text and need to replace all double quotes `"..."` with single quotes: `'...
+'`. (We are not considering escaped double quotes inside)
 
-* [EJS: Greed and Lazy Operators](https://eloquentjavascript.net/09_regexp.
-html#h_kiECehz+i+)
-
-#### Exercise:
-
-We have a text and need to replace all double quotes `"..."` with single quotes: '...'. (We are not considering escaped double quotes)
+What is the output for this regexp?:
 
 ```js
 let regexp = /".+"/g;
 let str = 'a "witch" and her "broom" is one';
+str.match(regexp);
 ```
 
-See [Greedy and lazy quantifiers](https://javascript.info/regexp-greedy-and-lazy) at the Modern JavaScript book
+See [Greedy and lazy quantifiers](https://javascript.info/regexp-greedy-and-lazy) at 
+the Modern JavaScript book
 
+#### Exercise:
 
+Write a function that removes all comments from a piece of JavaScript code. 
+
+What is the output?
+
+```js
+function stripComments(code) {
+  return code.replace(/\/\*[^]*\*\//g, "");
+}
+console.log(stripComments("1 + /* 2 */3"));
+console.log(stripComments("1 /* a */+/* b */ 1"));
+```
+
+* [EJS: Greed and Lazy Operators](https://eloquentjavascript.net/09_regexp.
+html#h_kiECehz+i+)
+
+#### Lazy Quantifiers
+
+The lazy mode of quantifiers is an opposite to the greedy mode. It means: *repeat minimal number of times*.
+
+We can enable it by putting a question mark `?` after the quantifier, so that it becomes `*?` or `+?` or even `??` for `?`.
+
+When a question mark `?` is added after another quantifier it switches the matching mode from greedy to lazy.
 
 ### Positive Lookahead
 
