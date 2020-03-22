@@ -16,9 +16,6 @@ See  *Node.js the RW: Chapter 5. Transforming Data and Testing Continuously*
 
 * [Travis](travis)
 
-* [Travis en los apuntes del curso 16/17](https://casianorodriguezleon.gitbooks.io/
-ull-esit-1617/content/apuntes/pruebas/travis.html)
-
 ### Apuntes del curso 16/17 sobre Herramientas para Pruebas
 
 * [Sección Pruebas en los Apuntes del curso 16/17](https://casianorodriguezleon.gitbooks.io/ull-esit-1617/content/apuntes/pruebas/)
@@ -32,6 +29,11 @@ ull-esit-1617/content/apuntes/pruebas/travis.html)
   * [Blanket](https://casianorodriguezleon.gitbooks.io/ull-esit-1617/content/apuntes/pruebas/blanket.html)
   * [Istanbul](https://casianorodriguezleon.gitbooks.io/ull-esit-1617/content/apuntes/pruebas/istanbul.html)
   * [BrowserSync](https://casianorodriguezleon.gitbooks.io/ull-esit-1617/content/apuntes/pruebas/browsersync.html)
+
+### Travis 16/17
+
+* [Travis en los apuntes del curso 16/17](https://casianorodriguezleon.gitbooks.io/
+ull-esit-1617/content/apuntes/pruebas/travis.html)
 
 ### Antiguos Apuntes sobre Pruebas en el Navegador/Browser
 
