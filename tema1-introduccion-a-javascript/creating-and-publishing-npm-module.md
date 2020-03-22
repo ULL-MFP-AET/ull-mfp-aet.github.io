@@ -741,6 +741,12 @@ const varName = "value"
 ...
 ```
 
+We can unlink at any time by running the following command in the package directory:
+
+```
+[~/.../github-actions-learning/lexer-generator(master)]$ npm unlink
+```
+
 ### Publish it!
 
 Hopefully everything worked as expected and you can now move on to the
