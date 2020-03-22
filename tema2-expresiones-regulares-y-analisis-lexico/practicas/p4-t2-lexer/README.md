@@ -40,6 +40,33 @@ cuando `lexer` es llamada con una cadena de entrada retorna la secuencia de toke
 
 ## Descripción del Lenguaje Léxico: parámetros de entrada de la función 
 
+El léxico del lenguaje se describe mediante un array de pares `[String, /regExp/]`:
+
+```js
+[[nombreDelToken1, /regExpDelToken1/] ... [nombreDelTokenN, /regExpDelTokenN/]
+```
+
+Sigue un ejemplo de descripción de un analizador léxico 
+para un pequeño lenguaje:
+
+```js
+const SPACE = /(?<SPACE>\s+)/;
+const RESERVEDWORD = /(?<RESERVEDWORD>\b(const|let)\b)/;
+const ID = /(?<ID>\b([a-z_]\w*))\b/;
+const STRING = /(?<STRING>"([^\\"]|\\.")*")/;
+const OP = /(?<OP>[+*\/=-])/;
+
+const myTokens = [
+  ['SPACE', SPACE], ['RESERVEDWORD', RESERVEDWORD], ['ID', ID],
+  ['STRING', STRING], ['OP', OP]
+];
+```
+
+Se establecen las siguientes consideraciones semánticas:
+
+* Si un token tiene de nombre `SPACE` sus matching serán ignorados y no se añadirán a la lista de tokens 
+* El nombre de token `ERROR` no puede ser usado por los clientes de la librería y es automáticamente generado por los analizadores léxicos producidos en caso de que se produzca un error. 
+* [Véase el último ejemplo con errores en la sección Pruebas](#pruebas)
 
 ## Sugerencias
 
@@ -192,7 +219,8 @@ Use [GitHub Actions]({{site.baseurl}}/tema1-introduccion-a-javascript/github-act
 
 ## Documentación
 
-Documente el módulo tanto con un `README.md` como documentando la función usando su documentador favorito. Ponga las páginas de documentación generadas en la carpeta `docs`. Configure sus GitHub pages  para que las sirva desde la carpeta `docs`.
+[Documente]({{site.baseurl}}/tema1-introduccion-a-javascript/documentation)
+el módulo incorporando un `README.md` y la documentación de la función exportada.
 
 ## Publicar como paquete npm en GitHub Registry
 
@@ -206,3 +234,4 @@ Usando el repo de la asignación de esta tarea publique el paquete como paquete 
 * Sección [GitHub Actions]({{site.baseurl}}/tema1-introduccion-a-javascript/github-actions)
 * Sección [Módulos]({{site.baseurl}}/tema1-introduccion-a-javascript/modulos)
 * Sección [Node.js Packages]({{site.baseurl}}/tema1-introduccion-a-javascript/nodejspackages)
+* Sección [Documentation]({{site.baseurl}}/tema1-introduccion-a-javascript/documentation)
