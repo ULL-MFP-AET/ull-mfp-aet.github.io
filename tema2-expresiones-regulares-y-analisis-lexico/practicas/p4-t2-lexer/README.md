@@ -43,6 +43,7 @@ regulares. Reescriba el analizador léxico en [tokens.js](https://github.com/dou
      - [https://github.com/crguezl/ull-etsii-grado-pl-minijavascript/tree/gh-pages](https://github.com/crguezl/ull-etsii-grado-pl-minijavascript/tree/gh-pages) en github.
      - Veala en funcionamiento en [http://crguezl.github.io/ull-etsii-grado-pl-minijavascript/](http://crguezl.github.io/ull-etsii-grado-pl-minijavascript/)
   * El método `tokens` retorna el array de tokens [https://github.com/crguezl/ull-etsii-grado-pl-minijavascript/blob/gh-pages/tokens.js](https://github.com/crguezl/ull-etsii-grado-pl-minijavascript/blob/gh-pages/tokens.js)
+<!--
 * Programación Web
   * [ejs](https://ejs.co/)
   * Cookies, Sessions, Authentication
@@ -57,6 +58,7 @@ regulares. Reescriba el analizador léxico en [tokens.js](https://github.com/dou
   * Webpack
     * [Webpack guide: "getting started"](https://webpack.js.org/guides/getting-started/)
     * [Youtube video Webpack 4 por Fatz](https://youtu.be/vF2emKbaP4M)
+-->
 * Expresiones Regulares
   * [Apuntes: Expresiones Regulares](../apuntes/regexp/README.md)
   * [Eloquent JS: Chapter 9: Regular Expressions](http://eloquentjavascript.net/09_regexp.html)
