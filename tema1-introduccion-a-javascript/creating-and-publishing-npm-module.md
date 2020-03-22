@@ -637,6 +637,8 @@ Before publishing, be sure to test that your package installs and works
 correctly. This does not mean running the tests as we did above, but
 rather attempting an actual install.
 
+#### First Approach
+
 -   Verify that the package installs properly. From your package root
     directory, enter the following to install your package globally.
 
@@ -660,6 +662,83 @@ rather attempting an actual install.
       > escape('<h1>Hello World!</h1>');
       '&lt;h1&gt;Hello World!&lt;/h1&gt;'
       >
+```
+
+#### npm link: Symlink Your Package
+
+Run `npm link` in the package directory:
+
+```
+[~/.../github-actions-learning/lexer-generator(master)]$ npm link
+audited 1310372 packages in 8.916s
+
+26 packages are looking for funding
+  run `npm fund` for details
+
+found 0 vulnerabilities
+
+/Users/casiano/.nvm/versions/node/v12.10.0/lib/node_modules/@ULL-ESIT-PL-1920/lexer-generator -> /Users/casiano/local/src/github-actions-learning/lexer-generator
+```
+
+This will create a symlink in the global `node_modules` folder that links to the package where the `npm link` command was executed:
+
+```
+[~/.../github-actions-learning/lexer-generator(master)]$ npm list -g | head -n 1
+/Users/casiano/.nvm/versions/node/v12.10.0/lib
+[~/.../github-actions-learning/lexer-generator(master)]$ ls -l ~/.nvm/versions/node/v12.10.0/lib/node_modules/\@ULL-ESIT-PL-1920/lexer-generator
+lrwxr-xr-x  1 casiano  staff  64 22 mar 22:21 /Users/casiano/.nvm/versions/node/v12.10.0/lib/node_modules/@ULL-ESIT-PL-1920/lexer-generator -> /Users/casiano/local/src/github-actions-learning/lexer-generator
+```
+
+Next, in the other location where we want to test our package, 
+we run the command 
+
+```
+[~/.../test-lexer-generator]$ npm link \@ULL-ESIT-PL-1920/lexer-generator
+/Users/casiano/local/src/github-actions-learning/test-lexer-generator/node_modules/@ULL-ESIT-PL-1920/lexer-generator -> /Users/casiano/.nvm/versions/node/v12.10.0/lib/node_modules/@ULL-ESIT-PL-1920/lexer-generator -> /Users/casiano/local/src/github-actions-learning/lexer-generator 
+[~/.../test-lexer-generator]$ ls -l node_modules/\@ULL-ESIT-PL-1920/lexer-generator
+lrwxr-xr-x  1 casiano  staff  96 22 mar 22:33 node_modules/@ULL-ESIT-PL-1920/lexer-generator -> ../../../../../../.nvm/versions/node/v12.10.0/lib/node_modules/@ULL-ESIT-PL-1920/lexer-generator
+```
+
+and you should be able to import or require the package as if it was an installed dependency.
+
+Note that the name of the package is taken from `package.json`, not from the directory name.
+
+Now we have created a `test-lexer-generator` directory to test our `test-generator`package.
+
+```
+[~/.../test-lexer-generator]$ ls -l
+total 16
+drwxr-xr-x  3 casiano  staff   96 22 mar 22:33 node_modules
+-rw-r--r--  1 casiano  staff  320 22 mar 22:32 package.json
+-rw-r--r--  1 casiano  staff  776 22 mar 22:39 sticky.js
+```
+
+It contains a simple program `sticky.js` that loads and tests our
+package:
+
+```
+[~/.../test-lexer-generator]$ head -n 5 sticky.js
+// main
+
+const buildLexer =require('@ULL-ESIT-PL-1920/lexer-generator');
+
+const SPACE = /(?<SPACE>\s+)/;
+```
+
+Observe the `require`: no path is specified like if it were in production mode.
+
+Now we can run the program:
+
+```
+[~/.../test-lexer-generator]$ node sticky.js
+const varName = "value"
+[
+  { type: 'RESERVEDWORD', value: 'const' },
+  { type: 'ID', value: 'varName' },
+  { type: 'OP', value: '=' },
+  { type: 'STRING', value: '"value"' }
+]
+...
 ```
 
 ### Publish it!
@@ -894,6 +973,39 @@ You can see all the packages you've installed and search for a specific package 
 2. On the top of the profile page, in the main navigation, click Packages.
 3. Click the name of the package that you want to view.
 
+## Publishing Again!
+
+The command `npm version` can be followed by one of the semantic versionin words 
+like `npm version minor -m "Upgrade to %s for reasons"`:
+
+```
+[~/.../github-actions-learning/lexer-generator(master)]$ npm version patch
+v1.0.1
+```
+
+This will update the `version` field in `package.json`:
+
+```
+[~/.../github-actions-learning/lexer-generator(master)]$ jq .version package.json
+"1.0.1"
+```
+
+Then again, make a tag:
+
+```
+[~/.../github-actions-learning/lexer-generator(master)]$ git tag 1.0.1
+```
+
+commit, push and publish it:
+
+```
+[~/.../github-actions-learning/lexer-generator(master)]$ npm publish
+npm notice
+npm notice 📦  @ULL-ESIT-PL-1920/lexer-generator@1.0.1
+...
++ @ULL-ESIT-PL-1920/lexer-generator@1.0.1
+```
+
 ## References
 
 ### npm packages
@@ -903,7 +1015,9 @@ You can see all the packages you've installed and search for a specific package 
 * [How to create Node.js Modules](https://docs.npmjs.com/getting-started/creating-node-modules)
 * [How to install an npm package from GitHub directly?](https://stackoverflow.com/questions/17509669/how-to-install-an-npm-package-from-github-directly) in StackOverflow
 * [Package.json documentation en npm site](https://docs.npmjs.com/files/package.json)
+* [A Simple Guide to Publishing an npm Package](https://medium.com/@TeeFouad/a-simple-guide-to-publishing-an-npm-package-506dd7f3c47a) by Mostafa Fouad
 
+)
 ### GitHub packages
 
 * [About GitHub Packages](https://help.github.com/en/packages/publishing-and-managing-packages/about-github-packages)
