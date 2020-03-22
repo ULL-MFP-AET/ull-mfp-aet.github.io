@@ -550,6 +550,84 @@ you want.
     npm install git://github.com/brentertz/scapegoat.git
     npm install git://github.com/brentertz/scapegoat.git#0.1.0
 
+### CI with GitHub Actions
+
+```
+[~/.../github-actions-learning/lexer-generator(master)]$ mkdir -p .github/workflows
+[~/.../github-actions-learning/lexer-generator(master)]$ touch .github/workflows/nodejs.yml
+```
+
+We fill the contents of `nodejs.yml` with the description of our workflow:
+
+```
+[~/.../github-actions-learning/lexer-generator(master)]$ cat .github/workflows/nodejs.yml
+```
+```yml
+# This workflow will do a clean install of node dependencies, build the source code and run tests across different versions of node
+# For more information see: https://help.github.com/actions/language-and-framework-guides/using-nodejs-with-github-actions
+
+name: Node.js CI
+
+on:
+  push:
+    branches: [ master ]
+  pull_request:
+    branches: [ master ]
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    strategy:
+      matrix:
+        node-version: [12.x]
+
+    steps:
+    - uses: actions/checkout@v2
+    - name: Use Node.js ${{ matrix.node-version }}
+      uses: actions/setup-node@v1
+      with:
+        node-version: ${{ matrix.node-version }}
+    - run: npm ci
+    - run: npm run build --if-present
+    - run: npm test
+      env:
+        CI: true
+```
+
+
+```
+[~/.../github-actions-learning/lexer-generator(master)]$ git add .github/workflows/nodejs.yml
+[~/.../github-actions-learning/lexer-generator(master)]$ git ci -am .github/workflows/nodejs.yml
+```
+
+ Now when we do a push:
+
+```
+[~/.../github-actions-learning/lexer-generator(master)]$ git push
+Counting objects: 6, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (6/6), 837 bytes | 279.00 KiB/s, done.
+Total 6 (delta 1), reused 0 (delta 0)
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To github.com:ULL-ESIT-PL-1920/lexer-generator.git
+   dc093a1..0747861  master -> master
+```
+
+The action is triggered. Let us go and click on the actions tab in our repo:
+
+![]({{site.baseurl}}/assets/images/github-actions-1-click.png)
+
+![]({{site.baseurl}}/assets/images/github-actions-2-processing.png)
+
+![]({{site.baseurl}}/assets/images/github-actions-3-completed.png)
+
+![]({{site.baseurl}}/assets/images/github-actions-4-complete-job.png)
+
+![]({{site.baseurl}}/assets/images/github-actions-5-completed.png)
+
 ### Test the Installation Process
 
 Before publishing, be sure to test that your package installs and works
@@ -605,7 +683,7 @@ rather than having to point at the Github url.
 
     npm install scapegoat
 
-### Scopes and Registries
+## Scopes and Registries
 
 The syntax of `npm publish` is:
 
@@ -758,7 +836,7 @@ Type ".help" for more information.
 >
 ```
 
-#### Other ways to set the Scope
+### Other ways to set the Scope
 
 Alternatively, You can set up the scope
 mapping for your project using 
