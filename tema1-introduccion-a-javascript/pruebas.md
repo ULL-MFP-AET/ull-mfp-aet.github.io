@@ -9,8 +9,7 @@
 See  *Node.js the RW: Chapter 5. Transforming Data and Testing Continuously*
 
 * [Node.js 8 the Right Way]({site.bull_permanente}}/15vbjs7/ullsfx4340000000247287). Jim Wilson. 2018 (Debes estar autenticado via PuntoQ BULL)
-  * [GitHub repo ULL-MII-CA-1819/nodejs-the-right-way. Chapter 5. Transforming Data and Testing Continuously](https://github.com/ULL-MII-CA-1819/nodejs-the-right-way/tree/
-master/transforming-data-and-testing-continuously-chapter-5)
+  * [GitHub repo ULL-MII-CA-1819/nodejs-the-right-way. Chapter 5. Transforming Data and Testing Continuously](https://github.com/ULL-MII-CA-1819/nodejs-the-right-way/tree/master/transforming-data-and-testing-continuously-chapter-5)
   * [BULL PuntoQ](https://www.ull.es/servicios/biblioteca/servicios/puntoq/)
 
 ## Travis
