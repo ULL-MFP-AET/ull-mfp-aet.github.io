@@ -531,13 +531,15 @@ The action is triggered. Let us go and click on the actions tab in our repo:
 
 ![]({{site.baseurl}}/assets/images/github-actions-5-completed.png)
 
-### README.md
+### Documentation and README.md
 
-Okay great, our tests are passing. Let's add a few items that will help
+Okay great, our tests are passing and we have CI. 
+
+Let's add a few items that will help
 to round out our project.
 
 It is always a good idea to include some documentation with your
-project, so I'll add a `README.md`, using markdown syntax. Using
+project, so we'll add a `README.md`, using markdown syntax. Using
 markdown is a good idea because it will be nicely displayed on both
 Github and npm.
 
