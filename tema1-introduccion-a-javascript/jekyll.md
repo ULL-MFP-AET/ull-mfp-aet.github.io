@@ -314,6 +314,9 @@ end
 
 * [Adding MathJax to a GitHub Pages Jekyll Blog](http://sgeos.github.io/github/jekyll/2016/08/21/adding_mathjax_to_a_jekyll_github_pages_blog.html)
 
+## Working with upcoming posts in Jekyll
+
+* [Working with upcoming posts in Jekyll](http://www.fizerkhan.com/blog/posts/Working-with-upcoming-posts-in-Jekyll.html)
 
 ## Cursos en YouTube de Jekyll and NetlifyCMS por Thomas Bradley
 
