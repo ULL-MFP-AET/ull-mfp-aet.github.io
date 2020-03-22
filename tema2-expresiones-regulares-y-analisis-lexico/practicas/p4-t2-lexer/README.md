@@ -27,9 +27,11 @@ regulares. Reescriba el analizador léxico en [tokens.js](https://github.com/dou
     Tiene una solución dada por el profesor en 
     - [https://github.com/crguezl/ull-etsii-grado-pl-minijavascript/blob/gh-pages/tokens.js](https://github.com/crguezl/ull-etsii-grado-pl-minijavascript/blob/gh-pages/tokens.js)
 3. Modifique la solución de Crockford usado regexps en [tokens.js](https://github.com/douglascrockford/TDOP/blob/master/tokens.js)
+
+
 <!--
-4.  Añada un server ([vea aquí un ejemplo](https://github.com/ULL-ESIT-PL-1617/evaluar-manejo-de-cookies-y-sessions-en-expressjs-alu0100825510)) para el HTML y haga el despliegue de su aplicación en la máquina virtual del [iaas](https://github.com/SYTW/iaas-ull-es) o en [Heroku](https://casianorodriguezleon.gitbooks.io/ull-esit-1617/content/recursos/heroku.html)
-5. Opcional: Use [sessions](https://casianorodriguezleon.gitbooks.io/ull-esit-1617/content/apuntes/cookies/) para controlar quien accede a la aplicación. Puede ver un ejemplo de como hacerlo en los ficheros:
+1.  Añada un server ([vea aquí un ejemplo](https://github.com/ULL-ESIT-PL-1617/evaluar-manejo-de-cookies-y-sessions-en-expressjs-alu0100825510)) para el HTML y haga el despliegue de su aplicación en la máquina virtual del [iaas](https://github.com/SYTW/iaas-ull-es) o en [Heroku](https://casianorodriguezleon.gitbooks.io/ull-esit-1617/content/recursos/heroku.html)
+2. Opcional: Use [sessions](https://casianorodriguezleon.gitbooks.io/ull-esit-1617/content/apuntes/cookies/) para controlar quien accede a la aplicación. Puede ver un ejemplo de como hacerlo en los ficheros:
   - [ULL-ESIT-PL-1617/evaluar-manejo-de-cookies-y-sessions-en-expressjs](https://github.com/ULL-ESIT-PL-1617/evaluar-manejo-de-cookies-y-sessions-en-expressjs-alu0100825510)
   - En el módulo npm [@ull-esit-pl/auth](https://www.npmjs.com/package/@ull-esit-pl/auth) encontrará la solución al problema explicada en clase
 7. En el `README.md` escriba un tutorial con lo que ha aprendido en esta práctica
@@ -61,6 +63,7 @@ regulares. Reescriba el analizador léxico en [tokens.js](https://github.com/dou
     * [Webpack guide: "getting started"](https://webpack.js.org/guides/getting-started/)
     * [Youtube video Webpack 4 por Fatz](https://youtu.be/vF2emKbaP4M)
 -->
+
 * Expresiones Regulares
   * [Apuntes: Expresiones Regulares](../apuntes/regexp/README.md)
   * [Eloquent JS: Chapter 9: Regular Expressions](http://eloquentjavascript.net/09_regexp.html)
@@ -97,6 +100,8 @@ regulares. Reescriba el analizador léxico en [tokens.js](https://github.com/dou
     > uninums.normalDigits('٠۴६')
     '046'
     ```
+
+
 <!--
 * Diseño
   * [Apuntes: Code Smells](https://casianorodriguezleon.gitbooks.io/ull-esit-1617/content/apuntes/patterns/codesmell.html)
