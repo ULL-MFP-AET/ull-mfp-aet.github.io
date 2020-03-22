@@ -127,7 +127,7 @@ El módulo [Módulo @ull-esit-pl/uninums](https://www.npmjs.com/package/@ull-esi
 '046'
 ```
 
-#### El Módulo @ull-esit-pl/uninums] en el Cliente
+#### El Módulo @ull-esit-pl/uninums en el Cliente
 
 Dado que [Módulo @ull-esit-pl/uninums](https://www.npmjs.com/package/@ull-esit-pl/uninums) se va a usar en el cliente necesitamos una versión para el mismo. Una vez instalado, use el fichero `node_modules/\@ull-esit-pl/uninums/uninums-web.js`:
 
