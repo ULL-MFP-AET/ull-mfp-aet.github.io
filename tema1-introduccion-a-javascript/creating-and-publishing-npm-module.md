@@ -714,7 +714,7 @@ drwxr-xr-x  3 casiano  staff   96 22 mar 22:33 node_modules
 ```
 
 It contains a simple program `sticky.js` that loads and tests our
-package:
+package. Here are the first 5 lines:
 
 ```
 [~/.../test-lexer-generator]$ head -n 5 sticky.js
@@ -725,7 +725,7 @@ const buildLexer =require('@ULL-ESIT-PL-1920/lexer-generator');
 const SPACE = /(?<SPACE>\s+)/;
 ```
 
-Observe the `require`: no path is specified like if it were in production mode.
+Observe that no path is specified in the `require`. Just like if it were in production mode.
 
 Now we can run the program:
 
