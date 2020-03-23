@@ -229,7 +229,7 @@ Usando el repo de la asignación de esta tarea publique el paquete como paquete 
 ## Semantic Versioning
 
 Publique una mejora en la funcionalidad del módulo. Por ejemplo añada la opción `/u`
-a la expresión regular creada para que Unicode sea soportado. ¿Como debe cambiar la versión?
+a la expresión regular creada para que Unicode sea soportado. ¿Como debe cambiar el nº de versión?
 
 ## Referencias
 
