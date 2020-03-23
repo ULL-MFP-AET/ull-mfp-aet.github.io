@@ -790,7 +790,14 @@ Resuelva los ejercicios de Expresiones Regulares propuestos por el profesor
 
 ### String Representation
 
-The way JavaScript models Strings is based on the **Unicode** standard. This standard assigns a number to virtually every character you would ever need, including characters from Greek, Arabic, Japanese, Armenian, and so on. If we have a number for every character, a string can be described by a sequence of numbers.
+The way JavaScript models Strings is based on the **Unicode** standard. This standard assigns a number called **code point** to virtually every character you would ever need, including characters from Greek, Arabic, Japanese, Armenian, and so on. If we have a number for every character, a string can be described by a sequence of numbers.
+
+One advantage of Unicode over other possible sets is that 
+
+1. The first 256 code points are identical to [ISO-8859-1](https://en.wikipedia.org/wiki/ISO/IEC_8859-1), and hence also ASCII. 
+2. In addition, the vast majority of commonly used characters are representable by only two bytes, in a region called the [Basic Multilingual Plane (BMP)](https://en.wikipedia.org/wiki/Plane_%28Unicode%29#Basic_Multilingual_Plane).
+
+In the [Unicode](https://en.wikipedia.org/wiki/Unicode "Unicode") standard, a **plane** is a continuous group of 65,536 (216) [code points](https://en.wikipedia.org/wiki/Code_point "Code point"). The Unicode code space is divided into seventeen planes.
 
 JavaScript’s representation uses 16 bits per string element, which can describe up to $$2^{16}$$ different characters. But Unicode defines more characters than that: about twice as many. So some characters, such as many emoji, *take up two character positions* in JavaScript strings.
 
@@ -806,7 +813,7 @@ JavaScript strings are encoded as a sequence of 16-bit numbers. These are called
 
 A Unicode character code was initially supposed to fit within such a unit (which gives you a little over 65,000 characters). When it became clear that wasn’t going to be enough, many people balked at the need to use more memory per character.
 
-To address these concerns, **UTF-16**, the format used by JavaScript strings, was invented. It describes most common characters using a single 16-bit code unit **but uses a pair of two such units for others**.
+To address these concerns, **UTF-16** (UCS Transformation Format for 16 Planes of Group 00), the format used by JavaScript strings, was invented. It describes most common characters using a single 16-bit code unit **but uses a pair of two such units for others**.
 
 UTF-16 is generally considered a bad idea today. It seems almost intentionally designed to invite mistakes. *It’s easy to write programs that pretend code units and characters are the same thing*. 
 
@@ -821,6 +828,12 @@ console.log(horseShoe.length);
 // → 4
 console.log(horseShoe[0]);
 // → (Invalid half-character)
+
+//  You can use the spread operator (...) to turn strings into arrays:
+console.log("[...'abc'] = "+inspect([...'abc'])); // [ 'a', 'b', 'c' ]
+console.log("[...'🐴👟'].length = "+[...'🐴👟'].length);
+// → 2
+
 console.log(horseShoe.charCodeAt(0));
 // → 55357 (Code of the half-character)
 console.log(horseShoe.codePointAt(0));
@@ -835,6 +848,7 @@ But the argument passed to `codePointAt` is still an index into the sequence of 
 So to run over all characters in a string, we’d still need to deal with the question of whether a character takes up one or two code units.
 
 A `for/of` loop can be used to iterate on strings. 
+
 Like `codePointAt`, this type of loop was introduced at a time where people were acutely aware of the problems with UTF-16. When you use it to loop over a string, it gives you real characters, not code units.
 
 ```js
@@ -849,6 +863,26 @@ for (let char of roseDragon) {
 If you have a character (which will be a string of one or two code units), you can use `codePointAt(0)` to get its code.
 
 * Examples of [JavaScript y Unicode](https://github.com/ULL-ESIT-PL/unicode-js) (Repo en GitHub unicode-js)
+
+The  `\p`  macro can be used in any regular expression using the `/u` option to match the characters to which the Unicode standard assigns the specified [Unicode property](https://en.wikipedia.org/wiki/Unicode_character_property).
+
+For example:
+
+```
+[~/.../src/unicode-js(master)]$ cat property.js
+```
+```js
+console.log(/\p{Script=Greek}/u.test("α"));
+// → true
+console.log(/\p{Script=Arabic}/u.test("α"));
+// → false
+console.log(/\p{Alphabetic}/u.test("α"));
+// → true
+console.log(/\p{Alphabetic}/u.test("!"));
+// → false
+console.log(/\p{Number}/u.test("६६७"));
+// → true
+```
 
 ### Unicode and Editors
 
@@ -884,7 +918,31 @@ and the Mongolian vowel separator:
 
 * [See: *What is the Mongolian vowel separator for?*](https://linguistics.stackexchange.com/questions/12712/what-is-the-mongolian-vowel-separator-for/12722)
 
-* [Repo con Ejemplos de Unicode en JS](https://github.com/ULL-ESIT-PL/unicode-js)
+
+By default, regular expressions work on code units:
+
+See this example in theis [repo ULL-ESIT-PL/unicode-js](https://github.com/ULL-ESIT-PL/unicode-js)
+
+```
+[~/.../src/unicode-js(master)]$ cat apple-regexp-test.js
+console.log(/🍎{3}/.test("🍎🍎🍎"));
+// → false
+console.log(/🍎{3}/u.test("🍎🍎🍎"));
+// → true
+console.log(/<.>/.test("<🌹>"));
+// → false
+console.log(/<.>/u.test("<🌹>"));
+// → true
+```
+
+The problem is that the code point  🍎 in the first line 
+is treated as two code units, 
+and the `/🍎{3}/` part is interpreted as *3 repetitions of the second code unit*. 
+
+Similarly, the dot matches a single code unit, not the two that make up the rose emoji.
+
+You must add a `u` option (for Unicode) to your regular expression to make it treat such characters properly. The wrong behavior remains the default, unfortunately, because changing that might cause problems for existing code that depends on it.
+
 * [Ejemplo unicode.js usando XRegExp](https://github.com/ULL-ESIT-GRADOII-PL/xregexp-example/blob/gh-pages/unicode.js)
 * Read [JavaScript has a Unicode problem](https://mathiasbynens.be/notes/javascript-unicode) 2013
 
