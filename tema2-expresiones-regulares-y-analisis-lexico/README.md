@@ -590,7 +590,16 @@ console.log("    ".search(/\S/));
 // → -1
 ```
 
-There is no way to indicate that the match should start at a given offset (like we can with the second argument to [indexOf](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/indexOf)).
+There is no way to indicate that the match should start at a given offset (like we can with the second argument to [indexOf](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/indexOf)). However, you can do something as convolute like this!:
+
+```js
+> z = "  word"
+'  word'
+> z.search(/(?<=^.{4})\S/)
+4
+> z[4]
+'r'
+```
 
 ### lastIndex
 
