@@ -820,7 +820,7 @@ The BMP is the first (code points from U+0000 to U+FFFF), the other 16 planes ar
 
 The code points contained in astral planes are called **astral code points**.
 
-Astral code points are all pointsgo from U+10000 to U+10FFFF.
+Astral code points are all points go from U+10000 to U+10FFFF.
 
 
 JavaScript’s representation uses 16 bits per string element, which can describe up to $$2^{16}$$ different characters. But Unicode defines more characters than that: about twice as many. So some characters, such as many emoji, *take up two character positions* in JavaScript strings.
