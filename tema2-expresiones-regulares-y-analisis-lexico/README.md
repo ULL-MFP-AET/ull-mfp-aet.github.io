@@ -857,6 +857,36 @@ console.log(horseShoe.codePointAt(0));
 // → 128052 (Actual code for horse emoji)
 ```
 
+Another example is reversing a string.Let us define the `reverse`function like this:
+
+```js
+> reverse = str => str.split('').reverse().join('')
+[Function: reverse]
+```
+
+It seems to work:
+
+```
+> reverse('mañana')
+'anañam'
+```
+
+However, it completely messes up strings that contain combining marks or astral symbols:
+
+```
+> reverse('💩🍎')
+'�🂩�'
+```
+
+To reverse astral symbols correctly we can use again the spread operator:
+
+```js
+> reverse = str => [...str].reverse().join('')
+[Function: reverse]
+> reverse('💩🍎')
+'🍎💩'
+```
+
 JavaScript’s `charCodeAt` method gives you a code unit, not a full character code. The `codePointAt` method, added later, does give a full Unicode character. 
 
 So we could use that to get characters from a string. 
@@ -980,43 +1010,48 @@ Here is a regexp that matches identifiers:
 [ 'Русский६', 'ab2', 'αβ६६७', '__', 'bⅫ' ]
 ```
 
-* [Ejemplo unicode.js usando XRegExp](https://github.com/ULL-ESIT-GRADOII-PL/xregexp-example/blob/gh-pages/unicode.js)
-* Read [JavaScript has a Unicode problem](https://mathiasbynens.be/notes/javascript-unicode) 2013
-
+#### Lea También
 
 * [Eloquent JS: International characters](https://eloquentjavascript.net/09_regexp.html#h_+y54//b0l+)
+* [JavaScript has a Unicode problem](https://mathiasbynens.be/notes/javascript-unicode) 2013
+
+
 * [JavaScript y Unicode](https://github.com/ULL-ESIT-PL/unicode-js) (Repo en GitHub unicode-js)
-* [Repositorio con ejemplos de uso de XRegExp](https://github.com/ULL-ESIT-GRADOII-PL/xregexp-example) 
-* [Ejemplos de extensiones de XRegExp para Unicode](https://github.com/ULL-ESIT-GRADOII-PL/xregexp-example/blob/gh-pages/unicode.js)
 
 
 ### XRegExp: Expresiones Regulares Extendidas (a la Perl)
 
 * [ GitHub repo ilustrando el uso de XRegExp URL](https://github.com/ULL-ESIT-GRADOII-PL/xregexp-example)
-* [xregexp repo en GitHub. Documentación](https://github.com/slevithan/xregexp)
+  * [Ejemplos de extensiones de XRegExp para Unicode](https://github.com/ULL-ESIT-GRADOII-PL/xregexp-example/blob/gh-pages/unicode.js)
+
+* Original [slevithan/xregexp repo en GitHub. Documentación](https://github.com/slevithan/xregexp)
+
 * [http://xregexp.com/ website](http://xregexp.com/): Documentación
-* [API de XRegExp](http://xregexp.com/api/)
-  - [XRegExp](http://xregexp.com/api/#XRegExp)
-  - [XRegExp.addToken](http://xregexp.com/api/#addToken)
-  - [XRegExp.build](http://xregexp.com/api/#build) (addon)
-  - [XRegExp.cache](http://xregexp.com/api/#cache)
-  - [XRegExp.escape](http://xregexp.com/api/#escape)
-  - [XRegExp.exec](http://xregexp.com/api/#exec)
-  - [XRegExp.forEach](http://xregexp.com/api/#forEach)
-  - [XRegExp.globalize](http://xregexp.com/api/#globalize)
-  - [XRegExp.install](http://xregexp.com/api/#install)
-  - [XRegExp.isInstalled](http://xregexp.com/api/#isInstalled)
-  - [XRegExp.isRegExp](http://xregexp.com/api/#isRegExp)
-  - [XRegExp.match](http://xregexp.com/api/#match)
-  - [XRegExp.matchChain](http://xregexp.com/api/#matchChain)
-  - [XRegExp.matchRecursive](http://xregexp.com/api/#matchRecursive) (addon)
-  - [XRegExp.replace](http://xregexp.com/api/#replace)
-  - [XRegExp.replaceEach](http://xregexp.com/api/#replaceEach)
-  - [XRegExp.split](http://xregexp.com/api/#split)
-  - [XRegExp.test](http://xregexp.com/api/#test)
-  - [XRegExp.uninstall](http://xregexp.com/api/#uninstall)
-  - [XRegExp.union](http://xregexp.com/api/#union)
-  - [XRegExp.version](http://xregexp.com/api/#version)
+
+
+#### [API de XRegExp](http://xregexp.com/api/)
+
+- [XRegExp](http://xregexp.com/api/#XRegExp)
+- [XRegExp.addToken](http://xregexp.com/api/#addToken)
+- [XRegExp.build](http://xregexp.com/api/#build) (addon)
+- [XRegExp.cache](http://xregexp.com/api/#cache)
+- [XRegExp.escape](http://xregexp.com/api/#escape)
+- [XRegExp.exec](http://xregexp.com/api/#exec)
+- [XRegExp.forEach](http://xregexp.com/api/#forEach)
+- [XRegExp.globalize](http://xregexp.com/api/#globalize)
+- [XRegExp.install](http://xregexp.com/api/#install)
+- [XRegExp.isInstalled](http://xregexp.com/api/#isInstalled)
+- [XRegExp.isRegExp](http://xregexp.com/api/#isRegExp)
+- [XRegExp.match](http://xregexp.com/api/#match)
+- [XRegExp.matchChain](http://xregexp.com/api/#matchChain)
+- [XRegExp.matchRecursive](http://xregexp.com/api/#matchRecursive) (addon)
+- [XRegExp.replace](http://xregexp.com/api/#replace)
+- [XRegExp.replaceEach](http://xregexp.com/api/#replaceEach)
+- [XRegExp.split](http://xregexp.com/api/#split)
+- [XRegExp.test](http://xregexp.com/api/#test)
+- [XRegExp.uninstall](http://xregexp.com/api/#uninstall)
+- [XRegExp.union](http://xregexp.com/api/#union)
+- [XRegExp.version](http://xregexp.com/api/#version)
 
 #### XRegExp instance properties
 
