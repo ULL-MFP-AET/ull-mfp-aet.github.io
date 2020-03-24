@@ -66,7 +66,7 @@ use the `RegExp.prototype.test()` method or the `String.prototype.search()` meth
 *  
 String.prototype.[replace](https://developer.mozilla.org/en-US/docs/JavaScript/Reference/Global_Objects/String/replace)
 
-## El operador OR: Circuito Corto
+### El operador OR: Circuito Corto
 
 1.  ¿Cual es la salida? ¿Porqué?
 
