@@ -864,6 +864,8 @@ console.log(horseShoe.codePointAt(0));
 // → 128052 (Actual code for horse emoji)
 ```
 
+See [this code](https://github.com/ULL-ESIT-PL/unicode-js/blob/master/length-cod-units.js) at repo ULL-ESIT-PL/unicode-js.
+
 Another example is reversing a string.Let us define the `reverse`function like this:
 
 ```js
