@@ -848,8 +848,9 @@ console.log("horseShoe.length ="+horseShoe.length);
 // → 4
 ```
 
+You can use the spread operator (`...`) to turn strings into arrays:
+
 ```js
-//  You can use the spread operator (...) to turn strings into arrays:
 console.log("[...'abc'] = "+inspect([...'abc'])); // [ 'a', 'b', 'c' ]
 console.log("[...'🐴👟'].length = "+[...'🐴👟'].length);
 // → 2
