@@ -584,9 +584,9 @@ When you want to know whether a pattern is found in a string use `search`
 `exec` method).
 
 ```js
-console.log("  word".search(/\S/));
+"  word".search(/\S/)
 // → 2
-console.log("    ".search(/\S/));
+"    ".search(/\S/)
 // → -1
 ```
 
