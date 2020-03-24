@@ -651,10 +651,6 @@ while (match = number.exec(input)) {
 //   Found 88 at 40
 ```
 
-### Parsing Ficheros **ini**
-
-- [Parsing an INI file](https://eloquentjavascript.net/09_regexp.html#ini) Eloquent JavaScript
-
 #### Otra Solución al Parsing de los Ficheros **ini**
 
 - [Parsing de ficheros ini](http://crguezl.github.io/pl-grado-ini-files/): despliegue
@@ -785,6 +781,10 @@ See also:
 * [Example: using sticky matching for tokenizing](http://2ality.com/2015/07/regexp-es6.html#example-using-sticky-matching-for-tokenizing) inside 
 the chapter [New regular expression features in ECMAScript 6](http://2ality.com/2015/07/regexp-es6.html#example-using-sticky-matching-for-tokenizing)
 
+### Parsing Ficheros **ini**
+
+- [Parsing an INI file](https://eloquentjavascript.net/09_regexp.html#ini) Eloquent JavaScript
+
 ### Ejercicios
 
 * [Ejercicios de Expresiones Regulares en los apuntes](regexpejercicios.html)
@@ -881,25 +881,6 @@ If you have a character (which will be a string of one or two code units), you c
 
 * Examples of [JavaScript y Unicode](https://github.com/ULL-ESIT-PL/unicode-js) (Repo en GitHub unicode-js)
 
-The  `\p`  macro can be used in any regular expression using the `/u` option to match the characters to which the Unicode standard assigns the specified [Unicode property](https://en.wikipedia.org/wiki/Unicode_character_property).
-
-For example:
-
-```
-[~/.../src/unicode-js(master)]$ cat property.js
-```
-```js
-console.log(/\p{Script=Greek}/u.test("α"));
-// → true
-console.log(/\p{Script=Arabic}/u.test("α"));
-// → false
-console.log(/\p{Alphabetic}/u.test("α"));
-// → true
-console.log(/\p{Alphabetic}/u.test("!"));
-// → false
-console.log(/\p{Number}/u.test("६६७"));
-// → true
-```
 
 ### Unicode and Editors
 
@@ -959,6 +940,26 @@ and the `/🍎{3}/` part is interpreted as *3 repetitions of the second code uni
 Similarly, the dot matches a single code unit, not the two that make up the rose emoji.
 
 You must add a `u` option (for Unicode) to your regular expression to make it treat such characters properly. The wrong behavior remains the default, unfortunately, because changing that might cause problems for existing code that depends on it.
+
+The  `\p`  macro can be used in any regular expression using the `/u` option to match the characters to which the Unicode standard assigns the specified [Unicode property](https://en.wikipedia.org/wiki/Unicode_character_property).
+
+For example:
+
+```
+[~/.../src/unicode-js(master)]$ cat property.js
+```
+```js
+console.log(/\p{Script=Greek}/u.test("α"));
+// → true
+console.log(/\p{Script=Arabic}/u.test("α"));
+// → false
+console.log(/\p{Alphabetic}/u.test("α"));
+// → true
+console.log(/\p{Alphabetic}/u.test("!"));
+// → false
+console.log(/\p{Number}/u.test("६६७"));
+// → true
+```
 
 * [Ejemplo unicode.js usando XRegExp](https://github.com/ULL-ESIT-GRADOII-PL/xregexp-example/blob/gh-pages/unicode.js)
 * Read [JavaScript has a Unicode problem](https://mathiasbynens.be/notes/javascript-unicode) 2013
