@@ -102,7 +102,7 @@ Recuerde como procesar letras y números Unicode usando XRegexp:
 Aunque hoy en día podemos hacer algo parecido con las expresiones
 convencionales:
 
-```
+```js
 > id = /\p{Alphabetic}[\p{Alphabetic}\p{Number}]*/ug
 /\p{Alphabetic}[\p{Alphabetic}\p{Number}]*/gu
 > 'Русский६ 45 ; ab2 ... αβ६६७ --'.match(id)
