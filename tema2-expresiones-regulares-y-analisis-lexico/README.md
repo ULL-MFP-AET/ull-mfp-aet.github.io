@@ -880,7 +880,7 @@ It seems to work:
 'anañam'
 ```
 
-However, it completely messes up strings that contain [combining marks](https://dmitripavlutin.com/what-every-javascript-developer-should-know-about-unicode/#25-combining-marks) or **astral** symbols:
+However, it messes up strings that contain [combining marks](https://dmitripavlutin.com/what-every-javascript-developer-should-know-about-unicode/#25-combining-marks) or **astral** symbols:
 
 ```
 > reverse('💩🍎')
