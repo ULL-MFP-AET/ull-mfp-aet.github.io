@@ -561,7 +561,7 @@ pero se quiere que
       'a,b,1,2,d, 3,4,e'
       > r = /(\d[,.]\d)|(,(?=\S))/g
       /(\d[,.]\d)|(,(?=\S))/g
-      > f = (match, p1, p2) => { return (p1 || p2 + " "); }
+      > f = (match, p1, p2) => (p1 || p2 + " ")
       [Function]
       > z.replace(r, f)
       'a, b, 1,2, d, 3,4, e'
