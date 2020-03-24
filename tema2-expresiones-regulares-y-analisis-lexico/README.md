@@ -988,7 +988,16 @@ You must add a `u` option (for Unicode) to your regular expression to make it tr
 
 #### \p macro: properties
 
+Every character in Unicode has a lot of properties. They describe what *category* the character belongs to, contain miscellaneous information about it.
+
+For instance, if a character has `Letter` property, it means that the character belongs to an alphabet (of any language). 
+
+And `Number` property means that it’s a digit: maybe Arabic or Chinese, and so on.
+
 The  `\p`  macro can be used in any regular expression using the `/u` option to match the characters to which the Unicode standard assigns the specified [Unicode property](https://en.wikipedia.org/wiki/Unicode_character_property).
+
+For instance, `\p{Letter}` denotes a letter in any of language. We can also use `\p{L}`, as `L` is an alias of Letter. 
+There are shorter aliases for almost every property.
 
 For example:
 
@@ -1008,6 +1017,8 @@ console.log(/\p{Number}/u.test("६६७"));
 // → true
 ```
 
+
+
 Here is a regexp that matches identifiers:
 
 ```js 
@@ -1018,14 +1029,18 @@ Here is a regexp that matches identifiers:
 > 'Русский६ 45 ; ab2 ... αβ६६७ -- __ b\u216B'.match(id)
 [ 'Русский६', 'ab2', 'αβ६६७', '__', 'bⅫ' ]
 ```
+Unicode supports many different properties, their full list would require more space than we have here. For more, see this references:
 
-See section [Unicode properties \p{...}](https://javascript.info/regexp-unicode#unicode-properties-p) of the Modern Javascript book for a list of properties and more examples about `\p`
+*   Properties by a character: [https://unicode.org/cldr/utility/character.jsp](https://unicode.org/cldr/utility/character.jsp).
+*   Characters by a property: [https://unicode.org/cldr/utility/list-unicodeset.jsp](https://unicode.org/cldr/utility/list-unicodeset.jsp).
+*   Short aliases for properties: [https://www.unicode.org/Public/UCD/latest/ucd/PropertyValueAliases.txt](https://www.unicode.org/Public/UCD/latest/ucd/PropertyValueAliases.txt).
+*   A full base of Unicode characters in text format, with all properties: [https://www.unicode.org/Public/UCD/latest/ucd/](https://www.unicode.org/Public/UCD/latest/ucd/).
 
+#### Read Also
 
-#### Lea También
-
-* [Eloquent JS: International characters](https://eloquentjavascript.net/09_regexp.html#h_+y54//b0l+)
+* See section [Unicode properties \p{...}](https://javascript.info/regexp-unicode#unicode-properties-p) of the Modern Javascript book for a list of properties and more examples about `\p`
 * [JavaScript has a Unicode problem](https://mathiasbynens.be/notes/javascript-unicode) 2013
+* [Eloquent JS: International characters](https://eloquentjavascript.net/09_regexp.html#h_+y54//b0l+)
 
 ### XRegExp: Expresiones Regulares Extendidas (a la Perl)
 
