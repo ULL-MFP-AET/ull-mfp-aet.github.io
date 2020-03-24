@@ -583,6 +583,14 @@ When you want to know whether a pattern is found in a string use `search`
 (but slower execution) use `match` (similar to the regular expression
 `exec` method).
 
+```js
+console.log("  word".search(/\S/));
+// → 2
+console.log("    ".search(/\S/));
+// → -1
+```
+
+There is no way to indicate that the match should start at a given offset (like we can with the second argument to [indexOf](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/indexOf)).
 
 ### lastIndex
 
