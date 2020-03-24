@@ -1017,14 +1017,13 @@ Here is a regexp that matches identifiers:
 [ 'Русский६', 'ab2', 'αβ६६७', '__', 'bⅫ' ]
 ```
 
+See section [Unicode properties \p{...}](https://javascript.info/regexp-unicode#unicode-properties-p) of the Modern Javascript book for a list of properties and more examples about `\p`
+
+
 #### Lea También
 
 * [Eloquent JS: International characters](https://eloquentjavascript.net/09_regexp.html#h_+y54//b0l+)
 * [JavaScript has a Unicode problem](https://mathiasbynens.be/notes/javascript-unicode) 2013
-
-
-* [JavaScript y Unicode](https://github.com/ULL-ESIT-PL/unicode-js) (Repo en GitHub unicode-js)
-
 
 ### XRegExp: Expresiones Regulares Extendidas (a la Perl)
 
