@@ -846,11 +846,7 @@ Unfortunately, obvious operations on JavaScript strings, such as getting their l
 let horseShoe = "🐴👟";
 console.log("horseShoe.length ="+horseShoe.length);
 // → 4
-
-for (let ch of "🐴👟") {
-  console.log(ch + " has " + ch.length + " units");  // 2 units
-}
-
+```
 //  You can use the spread operator (...) to turn strings into arrays:
 console.log("[...'abc'] = "+inspect([...'abc'])); // [ 'a', 'b', 'c' ]
 console.log("[...'🐴👟'].length = "+[...'🐴👟'].length);
@@ -859,23 +855,9 @@ console.log(horseShoe[0]);
 // → (Invalid half-character)
 console.log([...horseShoe][0]);
 // 🐴
-console.log("ABC".charCodeAt(0)); // returns 65
-console.log("ABC".charCodeAt(1)); // returns 66
-console.log(horseShoe.charCodeAt(0));
-// → 55357 (Code of the half-character)
-console.log(horseShoe.charCodeAt(1));
-// → 56372
-console.log(horseShoe.charCodeAt(2));
-// → 55357
-console.log(horseShoe.charCodeAt(3));
-// → 56415
-console.log(horseShoe.codePointAt(0));
-// → 128052 (Actual code for horse emoji)
-console.log(horseShoe.codePointAt(2));
-// → 128095 (Actual code for shoe emoji)
-
-console.log(String.fromCharCode(55357, 56372, 55357, 56415)); // → 🐴👟
 ```
+
+
 
 See [this code](https://github.com/ULL-ESIT-PL/unicode-js/blob/master/length-cod-units.js) at repo ULL-ESIT-PL/unicode-js.
 
@@ -918,6 +900,12 @@ So to run over all characters in a string, we’d still need to deal with the qu
 
 A `for/of` loop can be used to iterate on strings. 
 
+```js
+for (let ch of "🐴👟") {
+  console.log(ch + " has " + ch.length + " units");  // 2 units
+}
+```
+
 Like `codePointAt`, this type of loop was introduced at a time where people were acutely aware of the problems with UTF-16. When you use it to loop over a string, it gives you real characters, not code units.
 
 ```js
@@ -930,6 +918,26 @@ for (let char of roseDragon) {
 ```
 
 If you have a character (which will be a string of one or two code units), you can use `codePointAt(0)` to get its code.
+
+```js
+let horseShoe = "🐴👟";
+console.log("ABC".charCodeAt(0)); // returns 65
+console.log("ABC".charCodeAt(1)); // returns 66
+console.log(horseShoe.charCodeAt(0));
+// → 55357 (Code of the half-character)
+console.log(horseShoe.charCodeAt(1));
+// → 56372
+console.log(horseShoe.charCodeAt(2));
+// → 55357
+console.log(horseShoe.charCodeAt(3));
+// → 56415
+console.log(horseShoe.codePointAt(0));
+// → 128052 (Actual code for horse emoji)
+console.log(horseShoe.codePointAt(2));
+// → 128095 (Actual code for shoe emoji)
+
+console.log(String.fromCharCode(55357, 56372, 55357, 56415)); // → 🐴👟
+```
 
 * Examples of [JavaScript y Unicode](https://github.com/ULL-ESIT-PL/unicode-js) (Repo en GitHub unicode-js)
 
