@@ -807,7 +807,9 @@ Resuelva los ejercicios de Expresiones Regulares propuestos por el profesor
 
 ### String Representation
 
-The way JavaScript models Strings is based on the **Unicode** standard. This standard assigns a number called **code point** to virtually every character you would ever need, including characters from Greek, Arabic, Japanese, Armenian, and so on. If we have a number for every character, a string can be described by a sequence of numbers.
+The way JavaScript models Strings is based on the **Unicode** standard. 
+
+This standard assigns a number called **code point** to virtually every character you would ever need, including characters from Greek, Arabic, Japanese, Armenian, and so on. If we have a number for every character, a string can be described by a sequence of numbers.
 
 One advantage of Unicode over other possible sets is that 
 
@@ -827,12 +829,6 @@ JavaScript’s representation uses 16 bits per string element, which can describ
 
 When comparing strings, JavaScript goes over the characters from left to right, comparing the Unicode codes one by one.
 
-Most of the Unicode characters are associated with a specific **script**. The standard contains 140 different scripts — 81 are still in use today, and 59 are historic.
-
-People are writing texts in at least 80 other writing systems, many of which We wouldn’t even recognize. For example, here’s a sample of Tamil handwriting:
-
-![](https://eloquentjavascript.net/img/tamil.png)
-
 JavaScript strings are encoded as a sequence of 16-bit numbers. These are called **code units**. 
 
 A Unicode character code was initially supposed to fit within such a unit (which gives you a little over 65,000 characters). When it became clear that wasn’t going to be enough, many people balked at the need to use more memory per character.
@@ -841,32 +837,49 @@ To address these concerns, **UTF-16** (UCS Transformation Format for 16 Planes o
 
 UTF-16 is generally considered a bad idea today. It seems almost intentionally designed to invite mistakes. *It’s easy to write programs that pretend code units and characters are the same thing*. 
 
-And if your language doesn’t use two-unit characters, that will appear to work just fine. But as soon as someone tries to use such a program with some less common Chinese characters, it breaks. Fortunately, with the advent of emoji, everybody has started using two-unit characters, and the burden of dealing with such problems is more fairly distributed.
+If your language doesn’t use two-unit characters, that will appear to work just fine. But as soon as someone tries to use such a program with some less common Chinese characters, it breaks. Fortunately, with the advent of emoji, everybody has started using two-unit characters, and the burden of dealing with such problems is more fairly distributed.
 
 Unfortunately, obvious operations on JavaScript strings, such as getting their length through the length property and accessing their content using square brackets, deal only with code units.
 
 ```js
 // Two emoji characters, horse and shoe
 let horseShoe = "🐴👟";
-console.log(horseShoe.length);
+console.log("horseShoe.length ="+horseShoe.length);
 // → 4
-console.log(horseShoe[0]);
-// → (Invalid half-character)
+
+for (let ch of "🐴👟") {
+  console.log(ch + " has " + ch.length + " units");  // 2 units
+}
 
 //  You can use the spread operator (...) to turn strings into arrays:
 console.log("[...'abc'] = "+inspect([...'abc'])); // [ 'a', 'b', 'c' ]
 console.log("[...'🐴👟'].length = "+[...'🐴👟'].length);
 // → 2
-
+console.log(horseShoe[0]);
+// → (Invalid half-character)
+console.log([...horseShoe][0]);
+// 🐴
+console.log("ABC".charCodeAt(0)); // returns 65
+console.log("ABC".charCodeAt(1)); // returns 66
 console.log(horseShoe.charCodeAt(0));
 // → 55357 (Code of the half-character)
+console.log(horseShoe.charCodeAt(1));
+// → 56372
+console.log(horseShoe.charCodeAt(2));
+// → 55357
+console.log(horseShoe.charCodeAt(3));
+// → 56415
 console.log(horseShoe.codePointAt(0));
 // → 128052 (Actual code for horse emoji)
+console.log(horseShoe.codePointAt(2));
+// → 128095 (Actual code for shoe emoji)
+
+console.log(String.fromCharCode(55357, 56372, 55357, 56415)); // → 🐴👟
 ```
 
 See [this code](https://github.com/ULL-ESIT-PL/unicode-js/blob/master/length-cod-units.js) at repo ULL-ESIT-PL/unicode-js.
 
-Another example is reversing a string.Let us define the `reverse`function like this:
+Another example is reversing a string. Let us define the `reverse`function like this:
 
 ```js
 > reverse = str => str.split('').reverse().join('')
@@ -998,6 +1011,12 @@ The  `\p`  macro can be used in any regular expression using the `/u` option to 
 
 For instance, `\p{Letter}` denotes a letter in any of language. We can also use `\p{L}`, as `L` is an alias of Letter. 
 There are shorter aliases for almost every property.
+
+ost of the Unicode characters are associated with a specific **script**. The standard contains 140 different scripts — 81 are still in use today, and 59 are historic.
+
+People are writing texts in at least 80 other writing systems, many of which We wouldn’t even recognize. For example, here’s a sample of Tamil handwriting:
+
+![](https://eloquentjavascript.net/img/tamil.png)
 
 For example:
 
