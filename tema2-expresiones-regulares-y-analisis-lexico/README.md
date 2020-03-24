@@ -595,7 +595,7 @@ There is no way to indicate that the match should start at a given offset (like 
 ```js
 > z = "  word"
 '  word'
-> z.search(/(?<=^.{4})\S/)
+> z.search(/(?<=^.{4})\S/ // search will match after offset 5
 4
 > z[4]
 'r'
