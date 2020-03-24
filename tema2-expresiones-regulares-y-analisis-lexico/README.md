@@ -895,31 +895,25 @@ If you have a character (which will be a string of one or two code units), you c
 
 [EloquentJS: International characters](https://eloquentjavascript.net/09_regexp.html#h_+y54//b0l+)
 
-```javascript
-> console.log("\u03A0")
-Π
-> console.log("\u03B1")
-α
-> "Πα".match(/\u03A0(\u03B1)/)
-[ 'Πα', 'α', index: 0, input: 'Πα' ]
-```
 
 Because of JavaScript’s initial simplistic implementation and the fact that this simplistic approach was later set in stone as standard behavior, JavaScript’s regular expressions are rather dumb about characters that do not appear in the English language. For example, as far as JavaScript’s regular expressions are concerned, a **word character** is only one of the 26 characters in the Latin alphabet (uppercase or lowercase), decimal digits, and, for some reason, the underscore character. Things like _é_ or _β_, which most definitely are word characters, will not match `\w` (and _will_ match uppercase `\W`, the nonword category).
+
+#### \s: Strange behaviors
 
 By a strange historical accident, `\s` (whitespace) does not have this problem and matches all characters that the Unicode standard
 considers whitespace, including things like the nonbreaking space
 and the Mongolian vowel separator:
-
-`\s` casa con el carácter unicode Mongolian Vowel
 
 ![](mongolianvowel.png)
 
 * [See: *What is the Mongolian vowel separator for?*](https://linguistics.stackexchange.com/questions/12712/what-is-the-mongolian-vowel-separator-for/12722)
 
 
+#### Option \u
+
 By default, regular expressions work on code units:
 
-See this example in theis [repo ULL-ESIT-PL/unicode-js](https://github.com/ULL-ESIT-PL/unicode-js)
+See this example in this [repo ULL-ESIT-PL/unicode-js](https://github.com/ULL-ESIT-PL/unicode-js)
 
 ```
 [~/.../src/unicode-js(master)]$ cat apple-regexp-test.js
@@ -941,6 +935,20 @@ Similarly, the dot matches a single code unit, not the two that make up the rose
 
 You must add a `u` option (for Unicode) to your regular expression to make it treat such characters properly. The wrong behavior remains the default, unfortunately, because changing that might cause problems for existing code that depends on it.
 
+`\u` inside a string allow us to introduce unicode characters using 
+`\u#codepoint`:
+
+```javascript
+> console.log("\u03A0")
+Π
+> console.log("\u03B1")
+α
+> "Πα".match(/\u03A0(\u03B1)/u)
+[ 'Πα', 'α', index: 0, input: 'Πα' ]
+```
+
+#### \p macro: properties
+
 The  `\p`  macro can be used in any regular expression using the `/u` option to match the characters to which the Unicode standard assigns the specified [Unicode property](https://en.wikipedia.org/wiki/Unicode_character_property).
 
 For example:
@@ -959,6 +967,17 @@ console.log(/\p{Alphabetic}/u.test("!"));
 // → false
 console.log(/\p{Number}/u.test("६६७"));
 // → true
+```
+
+Here is a regexp that matches identifiers:
+
+```js 
+> "\u216B"
+'Ⅻ'
+> id = /[\p{L}_][\p{L}\p{N}_]*/ug
+/[\p{L}_][\p{L}\p{N}_]*/gu
+> 'Русский६ 45 ; ab2 ... αβ६६७ -- __ b\u216B'.match(id)
+[ 'Русский६', 'ab2', 'αβ६६७', '__', 'bⅫ' ]
 ```
 
 * [Ejemplo unicode.js usando XRegExp](https://github.com/ULL-ESIT-GRADOII-PL/xregexp-example/blob/gh-pages/unicode.js)
