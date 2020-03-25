@@ -1030,7 +1030,7 @@ See [BMP](https://en.wikipedia.org/wiki/Plane_(Unicode)#Basic_Multilingual_Plane
 
 
 See also [this page in Unicode.org](https://unicode.org/cldr/utility/character.jsp?a=%F0%A8%AD%8E&B1=Show)
-to see the properties of a given unicode character
+to see the properties of a given unicode character. Among the if the codepoint belongs to the BMP.
 
 ### Unicode and Editors
 
