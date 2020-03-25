@@ -72,5 +72,5 @@ configuration file. For example:
   })
   ```
 
-* Cree un web site usando GitHub pages y Jekyll en la rama `master` 
+* Make a web site with your report using GitHub pages and Jekyll (deploy in the `master` branch)
 
