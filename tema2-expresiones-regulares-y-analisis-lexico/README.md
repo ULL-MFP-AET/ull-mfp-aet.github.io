@@ -696,6 +696,25 @@ Véase también:
 Si combinamos la flag sticky con el uso de paréntesis con nombre 
 podemos construir un analizador léxico.
 
+Recuerda que la función de un analizador léxico es la de proporcionarnos
+un stream de tokens a partir de la cadena de entrada. 
+
+Por ejemplo, el tokenizer de `espree` funciona así:
+
+```js
+> const espree = require('espree')
+undefined
+> espree.tokenize('var a = "hello"')
+[
+  Token { type: 'Keyword', value: 'var', start: 0, end: 3 },
+  Token { type: 'Identifier', value: 'a', start: 4, end: 5 },
+  Token { type: 'Punctuator', value: '=', start: 6, end: 7 },
+  Token { type: 'String', value: '"hello"', start: 8, end: 15 }
+]
+```
+
+Queremos hacer algo parecido.
+
 Para ello usaremos el hecho de que podemos acceder al paréntesis que casa
 via el nombre:
 
@@ -880,7 +899,7 @@ It seems to work:
 'anañam'
 ```
 
-However, it messes up strings that contain [combining marks](https://dmitripavlutin.com/what-every-javascript-developer-should-know-about-unicode/#25-combining-marks) or **astral** symbols:
+However, it messes up strings that contain [combining marks](marks) or **astral** symbols:
 
 ```
 > reverse('💩🍎')
@@ -1070,6 +1089,8 @@ Unicode supports many different properties, their full list would require more s
 
 #### Read Also
 
+* [Unicode.org](https://home.unicode.org/)
+  * [Unicode 13.0.0](https://www.unicode.org/versions/Unicode13.0.0/)
 * See section [Unicode properties \p{...}](https://javascript.info/regexp-unicode#unicode-properties-p) of the Modern Javascript book for a list of properties and more examples about `\p`
 * [JavaScript has a Unicode problem](https://mathiasbynens.be/notes/javascript-unicode) 2013
 * [Eloquent JS: International characters](https://eloquentjavascript.net/09_regexp.html#h_+y54//b0l+)
