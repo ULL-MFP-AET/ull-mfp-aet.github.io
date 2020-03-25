@@ -36,8 +36,7 @@ That completely describes the language. Here is an example:
 
 ### Requirements
 
-* Our task is to write a node.JS module  
-exporting a function `parseINI` to convert a INI string into a JavaScript object reflecting the
+* Our task is to write a node.JS module exporting a function `parseINI` to convert a INI string into a JavaScript object reflecting the
 configuration file. For example:
 
   ```js
