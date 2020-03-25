@@ -968,7 +968,9 @@ console.log(String.fromCharCode(55357, 56372, 55357, 56415)); // → 🐴👟
 ### Checking if a Codepoint is in the Basic Multilingual Plane BMP
 
 How to know if a codepoint is inside the BMP or is astral?
-The following code seems to work:
+
+The following code seems to work. The last BMP Character seems to be 0xD7FF (55295):
+
 
 ```js
 [~/.../clases/20200325-miercoles(master)]$ cat is-bmp.js
@@ -1024,10 +1026,10 @@ A with codePoint 65 and charCodeAt(0) 65 isBMP(A)=true isInRange=true
 😂 with codePoint 128514 and charCodeAt(0) 55357 isBMP(😂)=false isInRange=false
 ```
 
-See https://en.wikipedia.org/wiki/Plane_(Unicode)#Basic_Multilingual_Plane
-The last BMP Character seems to be 0xD7FF (55295)
+See [BMP](https://en.wikipedia.org/wiki/Plane_(Unicode)#Basic_Multilingual_Plane) en la Wikipedia.
 
-See also: https://unicode.org/cldr/utility/character.jsp?a=%F0%A8%AD%8E&B1=Show
+
+See also [this page in Unicode.org](https://unicode.org/cldr/utility/character.jsp?a=%F0%A8%AD%8E&B1=Show)
 to see the properties of a given unicode character
 
 ### Unicode and Editors
