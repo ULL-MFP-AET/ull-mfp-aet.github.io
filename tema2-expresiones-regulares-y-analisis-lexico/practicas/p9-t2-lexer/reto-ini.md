@@ -36,12 +36,12 @@ That completely describes the language. Here is an example:
 
 ### Requirements
 
-* Our task is to write and **publish** a npm module (in your user scope) 
-providing a function `parseINI` to convert a INI string into a JavaScript object reflecting the
+* Our task is to write a node.JS module  
+exporting a function `parseINI` to convert a INI string into a JavaScript object reflecting the
 configuration file. For example:
 
   ```js
-      const parseINI = require('@aluXXXX/parse-ini');
+      const parseINI = require('./parse-ini.js');
       console.log(parseINI(`
       name=Torres Quevedo
       [address]
@@ -49,8 +49,10 @@ configuration file. For example:
       // → {name: "Torres Quevedo", address: {invention: "The chess player"}}
   ```
 
+* Documente la función `parseIni`
+  
 * Write several unit tests using [mocha](https://mochajs.org/#getting-started).
-  Here you have an initial template using [should](https://www.npmjs.com/package/should)
+  Here you have an initial template using [should](https://www.npmjs.com/package/should) but you can use [expect](https://www.chaijs.com/api/bdd/) if you prefer it.
 
   ```js
   var should = require("should");
@@ -70,5 +72,6 @@ configuration file. For example:
     })
   })
   ```
-* Añada a su `README-md` de esta práctica los enlaces al repo del reto y al módulo en npm
+
+* Cree un web site usando GitHub pages y Jekyll en la rama `master` 
 
