@@ -965,6 +965,70 @@ console.log(String.fromCharCode(55357, 56372, 55357, 56415)); // → 🐴👟
 
 * Examples of [JavaScript y Unicode](https://github.com/ULL-ESIT-PL/unicode-js) (Repo en GitHub unicode-js)
 
+### Checking if a Codepoint is in the Basic Multilingual Plane BMP
+
+How to know if a codepoint is inside the BMP or is astral?
+The following code seems to work:
+
+```js
+[~/.../clases/20200325-miercoles(master)]$ cat is-bmp.js
+console.log(
+const isInRange = (str) => /[\u0000-\ud7ff]/u.test(str);
+const isISO8859 = char => char.charCodeAt(0) < 255;
+const isBMP = char => char.charCodeAt(0) <= 0xD7FF;
+
+const checkIf = (condition, char)  => {
+  console.log(
+    `${char} with codePoint ${char.codePointAt(0)}`
+    + ` and charCodeAt(0) ${char.charCodeAt(0)}`
+    + ` ${condition.name}(${char})=${condition(char)}`
+    + ` isInRange=${isInRange(char)}`);
+};
+
+console.log("-----ISO8859-----")
+checkIf(isISO8859,"A");  // true
+checkIf(isISO8859,"ñ");  // true
+checkIf(isISO8859,"α");  // false
+checkIf(isISO8859,"п");  // false
+checkIf(isISO8859,"👟"); // false
+
+console.log("-----BMP-----")
+checkIf(isBMP,"A");  // true
+checkIf(isBMP,"ñ");  // true
+checkIf(isBMP,"α");  // true
+checkIf(isBMP,"п");  // true
+checkIf(isBMP,"𨭎");  // false
+checkIf(isBMP,"👟"); // false
+checkIf(isBMP,"🐴"); // false
+checkIf(isBMP,"😂"); // false
+```
+
+Execution:
+
+```
+[~/.../clases/20200325-miercoles(master)]$ node is-bmp.js
+-----ISO8859-----
+A with codePoint 65 and charCodeAt(0) 65 isISO8859(A)=true isInRange=true
+ñ with codePoint 241 and charCodeAt(0) 241 isISO8859(ñ)=true isInRange=true
+α with codePoint 945 and charCodeAt(0) 945 isISO8859(α)=false isInRange=true
+п with codePoint 1087 and charCodeAt(0) 1087 isISO8859(п)=false isInRange=true
+👟 with codePoint 128095 and charCodeAt(0) 55357 isISO8859(👟)=false isInRange=false
+-----BMP-----
+A with codePoint 65 and charCodeAt(0) 65 isBMP(A)=true isInRange=true
+ñ with codePoint 241 and charCodeAt(0) 241 isBMP(ñ)=true isInRange=true
+α with codePoint 945 and charCodeAt(0) 945 isBMP(α)=true isInRange=true
+п with codePoint 1087 and charCodeAt(0) 1087 isBMP(п)=true isInRange=true
+𨭎 with codePoint 166734 and charCodeAt(0) 55394 isBMP(𨭎)=false isInRange=false
+👟 with codePoint 128095 and charCodeAt(0) 55357 isBMP(👟)=false isInRange=false
+🐴 with codePoint 128052 and charCodeAt(0) 55357 isBMP(🐴)=false isInRange=false
+😂 with codePoint 128514 and charCodeAt(0) 55357 isBMP(😂)=false isInRange=false
+```
+
+See https://en.wikipedia.org/wiki/Plane_(Unicode)#Basic_Multilingual_Plane
+The last BMP Character seems to be 0xD7FF (55295)
+
+See also: https://unicode.org/cldr/utility/character.jsp?a=%F0%A8%AD%8E&B1=Show
+to see the properties of a given unicode character
 
 ### Unicode and Editors
 
