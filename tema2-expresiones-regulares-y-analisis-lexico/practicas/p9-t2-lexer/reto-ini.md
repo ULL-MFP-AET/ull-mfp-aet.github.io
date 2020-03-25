@@ -48,7 +48,7 @@ configuration file. For example:
       // → {name: "Torres Quevedo", address: {invention: "The chess player"}}
   ```
 
-* Documente la función `parseIni`
+* Document the  `parseIni` function
   
 * Write several unit tests using [mocha](https://mochajs.org/#getting-started).
   Here you have an initial template using [should](https://www.npmjs.com/package/should) but you can use [expect](https://www.chaijs.com/api/bdd/) if you prefer it.
