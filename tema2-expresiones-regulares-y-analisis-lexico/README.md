@@ -822,7 +822,7 @@ Resuelva los ejercicios de Expresiones Regulares propuestos por el profesor
 * [Práctica de Expresiones Regulares (p3-t2-regexp)](practicas/p3-t2-regexp/reto)
 
 
-## Unicode, UTF-16 y JavaScript
+## Unicode, UTF-16 and JavaScript
 
 ### String Representation
 
