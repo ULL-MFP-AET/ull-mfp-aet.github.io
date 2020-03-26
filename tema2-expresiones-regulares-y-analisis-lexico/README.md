@@ -824,7 +824,7 @@ Resuelva los ejercicios de Expresiones Regulares propuestos por el profesor
 
 ## Unicode, UTF-16 and JavaScript
 
-### String Representation
+### The Unicode Standard
 
 The way JavaScript models Strings is based on the **Unicode** standard. 
 
@@ -834,6 +834,8 @@ One advantage of Unicode over other possible sets is that
 
 1. The first 256 code points are identical to [ISO-8859-1](https://en.wikipedia.org/wiki/ISO/IEC_8859-1), and hence also ASCII. 
 2. In addition, the vast majority of commonly used characters are representable by only two bytes, in a region called the [Basic Multilingual Plane (BMP)](https://en.wikipedia.org/wiki/Plane_%28Unicode%29#Basic_Multilingual_Plane).
+
+#### Planes
 
 In the [Unicode](https://en.wikipedia.org/wiki/Unicode "Unicode") standard, a **plane** is a continuous group of 65,536 ($$2^{16}$$) [code points](https://en.wikipedia.org/wiki/Code_point "Code point"). The Unicode code space is divided into seventeen planes. 
 
@@ -848,7 +850,8 @@ JavaScript’s representation uses 16 bits per string element, which can describ
 
 When comparing strings, JavaScript goes over the characters from left to right, comparing the Unicode codes one by one.
 
-JavaScript strings are encoded as a sequence of 16-bit numbers. These are called **code units**. 
+
+#### Private Use Areas (PUA)
 
 In [Unicode](https://en.wikipedia.org/wiki/Unicode "Unicode"), a **Private Use Area** (**PUA**) is a range of [code points](https://en.wikipedia.org/wiki/Code_point "Code point") that, by definition, will not be assigned characters by the [Unicode Consortium](https://en.wikipedia.org/wiki/Unicode_Consortium "Unicode Consortium").
 
@@ -856,13 +859,19 @@ Three private use areas are defined: one in the [Basic Multilingual Plane](https
 
 The code points in these areas cannot be considered as standardized characters in Unicode itself. They are intentionally left undefined so that third parties may define their own characters without conflicting with Unicode Consortium assignments. The Private Use Areas will remain allocated for that purpose in all future Unicode versions.
 
+### UTF-16
+
+JavaScript strings are encoded as a sequence of 16-bit numbers. These are called **code units**. 
+
 A Unicode character code was initially supposed to fit within such a unit (which gives you a little over 65,000 characters). When it became clear that wasn’t going to be enough, many people balked at the need to use more memory per character.
 
 To address these concerns, **UTF-16** (UCS Transformation Format for 16 Planes of Group 00), the format used by JavaScript strings, was invented. It describes most common characters using a single 16-bit code unit **but uses a pair of two such units for others**.
 
-UTF-16 is generally considered a bad idea today. It seems almost intentionally designed to invite mistakes. *It’s easy to write programs that pretend code units and characters are the same thing*. 
+#### JS, UTF-16: Problems Processing Strings
 
-If your language doesn’t use two-unit characters, that will appear to work just fine. But as soon as someone tries to use such a program with some less common Chinese characters, it breaks. Fortunately, with the advent of emoji, everybody has started using two-unit characters, and the burden of dealing with such problems is more fairly distributed.
+Some people think UTF-16 is a bad idea: *It’s easy to write programs that pretend code units and characters are the same thing*. 
+
+> If your language doesn’t use two-unit characters, that will appear to work just fine. But as soon as someone tries to use such a program with some less common characters, it breaks. Fortunately, with the advent of emoji, everybody has started using two-unit characters, and the burden of dealing with such problems is more fairly distributed.
 
 Unfortunately, obvious operations on JavaScript strings, such as getting their length through the length property and accessing their content using square brackets, deal only with code units.
 
