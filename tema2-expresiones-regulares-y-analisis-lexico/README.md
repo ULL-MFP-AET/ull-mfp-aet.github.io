@@ -982,10 +982,11 @@ console.log(String.fromCharCode(55357, 56372, 55357, 56415)); // → 🐴👟
 
 ### Checking if a Codepoint is in the Basic Multilingual Plane BMP
 
-How to know if a codepoint is inside the BMP or is astral?
+A natural question seems to be:
+
+*How to know if a codepoint is inside the BMP or is astral?*
 
 The following code seems to work. The last BMP Character seems to be 0xD7FF (55295):
-
 
 ```js
 [~/.../clases/20200325-miercoles(master)]$ cat is-bmp.js
