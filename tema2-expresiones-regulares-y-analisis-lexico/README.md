@@ -999,7 +999,7 @@ A natural question seems to be:
 
 Did you realize in the former examples that all the first code units of all emojis were quite large?. They were larger than 55295?
 
-The following code seems to work. The last BMP Character seems to be [0xD7FF (55295)](https://unicode.org/cldr/utility/character.jsp?a=d7ff&B1=Show):
+The following code seems to work. The last BMP Character seems to be [0xD7FF (55295)](https://unicode.org/cldr/utility/character.jsp):
 
 ```js
 [~/.../clases/20200325-miercoles(master)]$ cat is-bmp.js
