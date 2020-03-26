@@ -967,7 +967,7 @@ Execution:
 57145 (55357, 56329) => 🐉
 ```
 
-If you have a character (which will be a string of one or two code units), you can use `codePointAt(0)` to get its code.
+If you have a character (which will be a string of one or two code units), you can use `codePointAt()` to get its code point and `charCodeAt` to get its code unit.
 
 ```js
 let horseShoe = "🐴👟";
@@ -997,7 +997,9 @@ A natural question seems to be:
 
 *How to know if a codepoint is inside the BMP or is astral?*
 
-The following code seems to work. The last BMP Character seems to be 0xD7FF (55295):
+Did you realize in the former examples that all the first code units of all emojis were quite large?. They were larger than 55295?
+
+The following code seems to work. The last BMP Character seems to be [0xD7FF (55295)](https://unicode.org/cldr/utility/character.jsp?a=d7ff&B1=Show):
 
 ```js
 [~/.../clases/20200325-miercoles(master)]$ cat is-bmp.js
