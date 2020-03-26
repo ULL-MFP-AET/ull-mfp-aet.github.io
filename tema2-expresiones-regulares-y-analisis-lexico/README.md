@@ -850,6 +850,12 @@ When comparing strings, JavaScript goes over the characters from left to right, 
 
 JavaScript strings are encoded as a sequence of 16-bit numbers. These are called **code units**. 
 
+In [Unicode](https://en.wikipedia.org/wiki/Unicode "Unicode"), a **Private Use Area** (**PUA**) is a range of [code points](https://en.wikipedia.org/wiki/Code_point "Code point") that, by definition, will not be assigned characters by the [Unicode Consortium](https://en.wikipedia.org/wiki/Unicode_Consortium "Unicode Consortium").
+
+Three private use areas are defined: one in the [Basic Multilingual Plane](https://en.wikipedia.org/wiki/Plane_(Unicode)#Basic_Multilingual_Plane "Plane (Unicode)") (`U+E000`–`U+F8FF`), and one each in, and nearly covering, [planes 15 and 16](https://en.wikipedia.org/wiki/Plane_(Unicode)#Private_Use_Area_planes "Plane (Unicode)") (`U+F0000`–`U+FFFFD`, `U+100000`–`U+10FFFD`). 
+
+The code points in these areas cannot be considered as standardized characters in Unicode itself. They are intentionally left undefined so that third parties may define their own characters without conflicting with Unicode Consortium assignments. The Private Use Areas will remain allocated for that purpose in all future Unicode versions.
+
 A Unicode character code was initially supposed to fit within such a unit (which gives you a little over 65,000 characters). When it became clear that wasn’t going to be enough, many people balked at the need to use more memory per character.
 
 To address these concerns, **UTF-16** (UCS Transformation Format for 16 Planes of Group 00), the format used by JavaScript strings, was invented. It describes most common characters using a single 16-bit code unit **but uses a pair of two such units for others**.
