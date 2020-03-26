@@ -867,7 +867,7 @@ A Unicode character code was initially supposed to fit within such a unit (which
 
 To address these concerns, **UTF-16** (UCS Transformation Format for 16 Planes of Group 00), the format used by JavaScript strings, was invented. It describes most common characters using a single 16-bit code unit **but uses a pair of two such units for others**.
 
-#### JS, UTF-16: Problems Processing Strings
+#### JS and UTF-16 and Problems Processing Strings
 
 Some people think UTF-16 is a bad idea: *It’s easy to write programs that pretend code units and characters are the same thing*. 
 
