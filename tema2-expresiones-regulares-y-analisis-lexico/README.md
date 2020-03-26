@@ -879,7 +879,7 @@ Unfortunately, obvious operations on JavaScript strings, such as getting their l
 // Two emoji characters, horse and shoe
 let horseShoe = "🐴👟";
 console.log("horseShoe.length ="+horseShoe.length);
-// → 4
+// → 4 four code units but two code points
 ```
 
 You can use the spread operator (`...`) to turn strings into arrays
