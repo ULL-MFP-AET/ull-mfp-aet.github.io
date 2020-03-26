@@ -835,7 +835,7 @@ One advantage of Unicode over other possible sets is that
 1. The first 256 code points are identical to [ISO-8859-1](https://en.wikipedia.org/wiki/ISO/IEC_8859-1), and hence also ASCII. 
 2. In addition, the vast majority of commonly used characters are representable by only two bytes, in a region called the [Basic Multilingual Plane (BMP)](https://en.wikipedia.org/wiki/Plane_%28Unicode%29#Basic_Multilingual_Plane).
 
-In the [Unicode](https://en.wikipedia.org/wiki/Unicode "Unicode") standard, a **plane** is a continuous group of 65,536 (216) [code points](https://en.wikipedia.org/wiki/Code_point "Code point"). The Unicode code space is divided into seventeen planes. 
+In the [Unicode](https://en.wikipedia.org/wiki/Unicode "Unicode") standard, a **plane** is a continuous group of 65,536 ($$2^{16}$$) [code points](https://en.wikipedia.org/wiki/Code_point "Code point"). The Unicode code space is divided into seventeen planes. 
 
 The BMP is the first (code points from U+0000 to U+FFFF), the other 16 planes are called **astral planes**. Worth noting that planes 3 to 13 are currently empty.
 
