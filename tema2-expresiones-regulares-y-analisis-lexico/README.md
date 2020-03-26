@@ -1003,7 +1003,6 @@ The following code seems to work. The last BMP Character seems to be [0xD7FF (55
 
 ```js
 [~/.../clases/20200325-miercoles(master)]$ cat is-bmp.js
-console.log(
 const isInRange = (str) => /[\u0000-\ud7ff]/u.test(str);
 const isISO8859 = char => char.charCodeAt(0) < 255;
 const isBMP = char => char.charCodeAt(0) <= 0xD7FF;
@@ -1032,6 +1031,7 @@ checkIf(isBMP,"𨭎");  // false
 checkIf(isBMP,"👟"); // false
 checkIf(isBMP,"🐴"); // false
 checkIf(isBMP,"😂"); // false
+checkIf(isBMP,'﷽  '); // The longest single character I ever seen!!
 ```
 
 Execution:
@@ -1053,6 +1053,7 @@ A with codePoint 65 and charCodeAt(0) 65 isBMP(A)=true isInRange=true
 👟 with codePoint 128095 and charCodeAt(0) 55357 isBMP(👟)=false isInRange=false
 🐴 with codePoint 128052 and charCodeAt(0) 55357 isBMP(🐴)=false isInRange=false
 😂 with codePoint 128514 and charCodeAt(0) 55357 isBMP(😂)=false isInRange=false
+﷽   with codePoint 65021 and charCodeAt(0) 65021 isBMP(﷽  )=false isInRange=true
 ```
 
 See [BMP](https://en.wikipedia.org/wiki/Plane_(Unicode)#Basic_Multilingual_Plane) en la Wikipedia.
