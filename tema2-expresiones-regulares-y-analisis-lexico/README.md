@@ -948,12 +948,23 @@ for (let ch of "🐴👟") {
 Like `codePointAt`, this type of loop was introduced at a time where people were acutely aware of the problems with UTF-16. When you use it to loop over a string, it gives you real characters, not code units.
 
 ```js
-let roseDragon = "🌹🐉";
-for (let char of roseDragon) {
-  console.log(char);
+[~/.../clases/20200325-miercoles(master)]$ cat stringTraversing.js
+const len = (x) => [...x].length;
+String.prototype.char = function(i) { return [...this][i]; }
+let str = "🌹🐉";
+for (let i=0; i<len(str); i++)  {
+  console.log(
+    `${str.codePointAt(i)} (${str.charCodeAt(2*i)}, ${str.charCodeAt(2*i+1)}) => ${str.char(i)}`
+  );
 }
-// → 🌹
-// → 🐉
+```
+
+Execution:
+
+```
+[~/.../clases/20200325-miercoles(master)]$ node stringTraversing.js
+127801 (55356, 57145) => 🌹
+57145 (55357, 56329) => 🐉
 ```
 
 If you have a character (which will be a string of one or two code units), you can use `codePointAt(0)` to get its code.
