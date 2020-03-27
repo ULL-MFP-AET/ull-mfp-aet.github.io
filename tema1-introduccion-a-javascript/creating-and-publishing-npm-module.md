@@ -1019,7 +1019,7 @@ npm notice 📦  @ULL-ESIT-PL-1920/lexer-generator@1.0.1
 ### Separated Test Repo
 
 Once more we have to test the publication, now in Production mode (In this section I am using a different example from the previous one, but the ideas apply).
-To make it automatic, we create a separated project:
+To automate the testing process, we create a separated project:
 
 ```
 [~/.../src/github-actions-learning]$ ls -l
