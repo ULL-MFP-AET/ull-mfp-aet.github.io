@@ -1083,7 +1083,7 @@ $ head -n 7 test.js | cat -n
      4	const { inspect } = require('util');
      5	const ins = (x) => { if (debug) console.log(inspect(x, {depth: null})) };
      6
-     7	const buildLexer =require('./index'); 👈
+     7	const buildLexer = require('./index'); 👈
 ```
 
 We edit the file `test.js` and change  line 7 from the relative 
@@ -1091,14 +1091,16 @@ path to a "production" `require`:
 
 ```
 $ sed -ne '7,7p' test.js
-const buildLexer =require('@ULL-ESIT-PL-1920/lexer-generator');
+const buildLexer = require('@ULL-ESIT-PL-1920/lexer-generator');
 ```
 
-And now we 
+And now we run `npm run cit` to 
 
 1. Clean the directory
 2. Install the dependencies
 3. Run the tests
+
+Here is the ouput:
 
 ```
 [~/.../github-actions-learning/test-lexer-generator(master)]$ npm run cit
