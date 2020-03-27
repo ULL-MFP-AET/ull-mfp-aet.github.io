@@ -1178,8 +1178,60 @@ Si hacemos click en los enlaces de los repos nos lleva al correspondiente repo d
 
 See the [Chacon's book on Git: Chapter 7.11 Git Tools - Submodules](https://git-scm.com/book/en/v2/Git-Tools-Submodules) for more information.
 
+Now, when someone clones the super-repo:
+
+```
+[/tmp]$ git clone git@github.com:ULL-ESIT-PL-1920/project-lexer-generator.git
+Clonando en 'project-lexer-generator'...
+remote: Enumerating objects: 3, done.
+remote: Counting objects: 100% (3/3), done.
+remote: Compressing objects: 100% (3/3), done.
+remote: Total 3 (delta 0), reused 3 (delta 0), pack-reused 0
+Recibiendo objetos: 100% (3/3), listo.
+[/tmp]$ cd project-lexer-generator/
+[/tmp/project-lexer-generator(master)]$ ls -la
+total 8
+drwxr-xr-x   6 casiano  wheel  192 27 mar 17:20 .
+drwxrwxrwt  13 root     wheel  416 27 mar 17:20 ..
+drwxr-xr-x  12 casiano  wheel  384 27 mar 17:20 .git
+-rw-r--r--   1 casiano  wheel  241 27 mar 17:20 .gitmodules
+drwxr-xr-x   2 casiano  wheel   64 27 mar 17:20 lexer-generator
+drwxr-xr-x   2 casiano  wheel   64 27 mar 17:20 test-lexer-generator
+[/tmp/project-lexer-generator(master)]$ tree
+.
+├── lexer-generator
+└── test-lexer-generator
+
+2 directories, 0 files
+[/tmp/project-lexer-generator(master)]$
+```
+
+You can see the folders for the subrepos are empty.
+To fill them:
+
+```
+[/tmp/project-lexer-generator(master)]$ git submodule init
+Submódulo 'lexer-generator' (git@github.com:ULL-ESIT-PL-1920/lexer-generator.git) registrado para ruta 'lexer-generator'
+Submódulo 'test-lexer-generator' (git@github.com:ULL-ESIT-PL-1920/test-lexer-generator.git) registrado para ruta 'test-lexer-generator'
+[/tmp/project-lexer-generator(master)]$ git submodule update
+Clonando en '/private/tmp/project-lexer-generator/lexer-generator'...
+Clonando en '/private/tmp/project-lexer-generator/test-lexer-generator'...
+Submodule path 'lexer-generator': checked out '54594a4b0febd5eb1de0cee8b8f6b45edafaf989'
+Submodule path 'test-lexer-generator': checked out 'b2f64a6dc2fe4145e268b6b63f8d03753b5eeff8'
+```
+Un cambio al directorio nos deja en el commit del super-repo, pero podemos posicionarnos en la rama `master`y hacer un `pull` si queremos actualizarla:
+
+```
+[/tmp/project-lexer-generator(master)]$ cd lexer-generator/
+[.../project-lexer-generator/lexer-generator((HEAD desacoplada en 54594a4))]$ git co master
+Cambiado a rama 'master'
+Tu rama está actualizada con 'origin/master'.
+[.../project-lexer-generator/lexer-generator(master)]$ git pull origin master
+...
+```
+
 Here are the two repos for the scapegoat example:
- 
+
 * [Example in ULL-ESIT-DSI-1617/create-a-npm-module](https://github.com/ULL-ESIT-DSI-1617/create-a-npm-module)
   - [Submodule ULL-ESIT-DSI-1617/scapegoat](https://github.com/ULL-ESIT-DSI-1617/scapegoat)
   - [Submodule ULL-ESIT-DSI-1617/prueba-scapegoat](https://github.com/ULL-ESIT-DSI-1617/prueba-scapegoat)
