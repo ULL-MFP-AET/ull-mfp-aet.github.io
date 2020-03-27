@@ -1139,20 +1139,12 @@ Git allows you to include other Git repositories called submodules into a reposi
 [~/.../project-lexer-generator]$ git init .
 Inicializado repositorio Git vacío en /Users/casiano/local/src/github-actions-learning/project-lexer-generator/.git/
 [~/.../project-lexer-generator]$ git submodule add git@github.com:ULL-ESIT-PL-1920/lexer-generator.gitClonando en '/Users/casiano/local/src/github-actions-learning/project-lexer-generator/lexer-generator'...
-remote: Enumerating objects: 52, done.
-remote: Counting objects: 100% (52/52), done.
-remote: Compressing objects: 100% (32/32), done.
-remote: Total 52 (delta 22), reused 44 (delta 14), pack-reused 0
-Recibiendo objetos: 100% (52/52), 66.46 KiB | 196.00 KiB/s, listo.
-Resolviendo deltas: 100% (22/22), listo.
 [~/.../project-lexer-generator]$ git submodule add git@github.com:ULL-ESIT-PL-1920/test-lexer-generator.git
-Clonando en '/Users/casiano/local/src/github-actions-learning/project-lexer-generator/test-lexer-generator'...
-remote: Enumerating objects: 25, done.
-remote: Counting objects: 100% (25/25), done.
-remote: Compressing objects: 100% (13/13), done.
-remote: Total 25 (delta 8), reused 24 (delta 7), pack-reused 0
-Recibiendo objetos: 100% (25/25), listo.
-Resolviendo deltas: 100% (8/8), listo.
+Clonando en '/Users/casiano/local/src/github-actions-learning/
+...
+```
+
+```
 [~/.../project-lexer-generator]$ ls -la
 total 8
 drwxr-xr-x   6 casiano  staff  192 27 mar 16:56 .
@@ -1170,11 +1162,11 @@ drwxr-xr-x   9 casiano  staff  288 27 mar 16:56 test-lexer-generator
 	url = git@github.com:ULL-ESIT-PL-1920/test-lexer-generator.git
 ```
 
-Si ahora hacemos un commit y un push esta es la imagen del repo en GitHub:
+After a commit and a push this is the image of the repo in GitHub:
 
 ![]({{site.baseurl}}/assets/images/git-submodulos.png)
 
-Si hacemos click en los enlaces de los repos nos lleva al correspondiente repo de GitHub **pero en el commit indicado en el super-repo**
+Clicking in the repo links will take us to the corresponding GitHub repo **but be aware that you are in the specific commit specified in the super-repo, not in the master branch**
 
 See the [Chacon's book on Git: Chapter 7.11 Git Tools - Submodules](https://git-scm.com/book/en/v2/Git-Tools-Submodules) for more information.
 
@@ -1183,20 +1175,10 @@ Now, when someone clones the super-repo:
 ```
 [/tmp]$ git clone git@github.com:ULL-ESIT-PL-1920/project-lexer-generator.git
 Clonando en 'project-lexer-generator'...
-remote: Enumerating objects: 3, done.
-remote: Counting objects: 100% (3/3), done.
-remote: Compressing objects: 100% (3/3), done.
-remote: Total 3 (delta 0), reused 3 (delta 0), pack-reused 0
-Recibiendo objetos: 100% (3/3), listo.
-[/tmp]$ cd project-lexer-generator/
-[/tmp/project-lexer-generator(master)]$ ls -la
-total 8
-drwxr-xr-x   6 casiano  wheel  192 27 mar 17:20 .
-drwxrwxrwt  13 root     wheel  416 27 mar 17:20 ..
-drwxr-xr-x  12 casiano  wheel  384 27 mar 17:20 .git
--rw-r--r--   1 casiano  wheel  241 27 mar 17:20 .gitmodules
-drwxr-xr-x   2 casiano  wheel   64 27 mar 17:20 lexer-generator
-drwxr-xr-x   2 casiano  wheel   64 27 mar 17:20 test-lexer-generator
+...
+```
+
+```
 [/tmp/project-lexer-generator(master)]$ tree
 .
 ├── lexer-generator
@@ -1213,13 +1195,17 @@ To fill them:
 [/tmp/project-lexer-generator(master)]$ git submodule init
 Submódulo 'lexer-generator' (git@github.com:ULL-ESIT-PL-1920/lexer-generator.git) registrado para ruta 'lexer-generator'
 Submódulo 'test-lexer-generator' (git@github.com:ULL-ESIT-PL-1920/test-lexer-generator.git) registrado para ruta 'test-lexer-generator'
+```
+
+```
 [/tmp/project-lexer-generator(master)]$ git submodule update
 Clonando en '/private/tmp/project-lexer-generator/lexer-generator'...
 Clonando en '/private/tmp/project-lexer-generator/test-lexer-generator'...
 Submodule path 'lexer-generator': checked out '54594a4b0febd5eb1de0cee8b8f6b45edafaf989'
 Submodule path 'test-lexer-generator': checked out 'b2f64a6dc2fe4145e268b6b63f8d03753b5eeff8'
 ```
-Un cambio al directorio nos deja en el commit del super-repo, pero podemos posicionarnos en la rama `master`y hacer un `pull` si queremos actualizarla:
+
+A `cd` to the sub-repo folder will leave us in the commit specified in the super-repo, but we can of course checkout the `master` branch nad make a `pull` if we think an update is needed.
 
 ```
 [/tmp/project-lexer-generator(master)]$ cd lexer-generator/
