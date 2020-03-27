@@ -5,5 +5,8 @@
 ### Classes during the month of {{ currentMonth }}
       {% endif %}
 * [{{ post.title }}]({{site.baseurl}}{{ post.url }}) ([Clase en el repo]({{site.organization.master}}/{{post.path}}))
+         {%- if post.video %}
+          (<a href="{{post.video}}" target="_blank">Vídeo</a>)
+         {%- endif %}
       {% assign previousMonth = currentMonth %}
   {% endfor %}
