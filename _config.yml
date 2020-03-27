@@ -86,3 +86,9 @@ practicas:
   - title: 09p9-t2-lexer
     myurl: /tema2-expresiones-regulares-y-analisis-lexico/practicas/p9-t2-lexer/
     name: Práctica p9-t2-lexer
+    reto: 
+      url: /tema2-expresiones-regulares-y-analisis-lexico/practicas/p9-t2-lexer/reto-ini
+      title: Reto Parse INI Files
+  - title: 10p10-t2-lexer-generator
+    myurl: /tema2-expresiones-regulares-y-analisis-lexico/practicas/p10-t2-lexer-generator/
+    name: Práctica p10-t2-lexer-generator

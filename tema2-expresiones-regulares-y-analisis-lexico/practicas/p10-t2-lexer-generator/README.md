@@ -1,23 +1,22 @@
 ---
 layout: default
-title: p4-t2-lexer
-permalink: /tema2-expresiones-regulares-y-analisis-lexico/practicas/p4-t2-lexer/
+title: p10-t2-lexer-generator
+permalink: /tema2-expresiones-regulares-y-analisis-lexico/practicas/p10-t2-lexer-generator/
 previous: 
   url: /tema2-expresiones-regulares-y-analisis-lexico/practicas/p9-t2-lexer/
-repo: https://github.com/ULL-ESIT-PL-1819/regexp-exercises/blob/master/
 ---
 
-# Lexer Generator (p4-t2-lexer)
+# Lexer Generator (p10-t2-lexer-generator)
 
 ## Objetivos
 
 Usando el repo de la asignación de esta tarea construya un paquete npm y 
-publíquelo como paquete privado en GitHub Registry con ámbito `@ULL-ESIT-PL-1920`  y con nombre el nombre de su repo `p4-t2-lexer-aluAtGitHub`
+publíquelo como paquete privado en GitHub Registry con ámbito `@ULL-ESIT-PL-1920`  y con nombre el nombre de su repo `p10-t2-lexer-generator-aluAtGitHub`
 
 El módulo deberá exportar una función que construye analizadores léxicos:
 
 ```js
-const buildLexer =require('@ULL-ESIT-PL-1920/p4-t2-lexer-aluAtGitHub');
+const buildLexer =require('@ULL-ESIT-PL-1920/p10-t2-lexer-generator-aluAtGitHub');
 ```
 
 La función `buildLexer` se llamará con un objeto que describe el léxico del lenguaje y retornará una función `lexer` que es la que hace el análisis léxico:
@@ -224,7 +223,7 @@ el módulo incorporando un `README.md` y la documentación de la función export
 
 ## Publicar como paquete npm en GitHub Registry
 
-Usando el repo de la asignación de esta tarea publique el paquete como paquete privado en GitHub Registry con ámbito `@ULL-ESIT-PL-1920`  y nombre el nombre de su repo `p4-t2-lexer-aluAtGitHub`
+Usando el repo de la asignación de esta tarea publique el paquete como paquete privado en GitHub Registry con ámbito `@ULL-ESIT-PL-1920`  y nombre el nombre de su repo `p10-t2-lexer-generator-aluAtGitHub`
 
 ## Pruebas de Producción
 
