@@ -1132,17 +1132,25 @@ In some occasions, like in this one, it is convenient to have different repos to
 
 Git allows you to include other Git repositories called submodules into a repository. You can commit, pull and push to these repositories independently. Submodules allow you to keep projects in separate repositories but still be able to reference them as folders in the working directory of other repositories.
 
+Let us make the new project:
 
 ```
 [~/.../github-actions-learning]$ mkdir project-lexer-generator
 [~/.../github-actions-learning]$ cd project-lexer-generator/
 [~/.../project-lexer-generator]$ git init .
 Inicializado repositorio Git vacío en /Users/casiano/local/src/github-actions-learning/project-lexer-generator/.git/
+```
+
+To add the other repos to this one we use `git sumodule add <url>`:
+
+```
 [~/.../project-lexer-generator]$ git submodule add git@github.com:ULL-ESIT-PL-1920/lexer-generator.gitClonando en '/Users/casiano/local/src/github-actions-learning/project-lexer-generator/lexer-generator'...
 [~/.../project-lexer-generator]$ git submodule add git@github.com:ULL-ESIT-PL-1920/test-lexer-generator.git
 Clonando en '/Users/casiano/local/src/github-actions-learning/
 ...
 ```
+
+This clones the repos and creates a file `.gitmodules`:
 
 ```
 [~/.../project-lexer-generator]$ ls -la
@@ -1153,6 +1161,11 @@ drwxr-xr-x  11 casiano  staff  352 27 mar 16:56 .git
 -rw-r--r--   1 casiano  staff  241 27 mar 16:56 .gitmodules
 drwxr-xr-x  12 casiano  staff  384 27 mar 16:55 lexer-generator
 drwxr-xr-x   9 casiano  staff  288 27 mar 16:56 test-lexer-generator
+```
+
+The `.gitmodules` file it is an INI file containing the relation between the local path and the remote url for each sub-repo:
+
+```
 [~/.../project-lexer-generator]$ cat .gitmodules
 [submodule "lexer-generator"]
 	path = lexer-generator
@@ -1178,6 +1191,8 @@ Clonando en 'project-lexer-generator'...
 ...
 ```
 
+You can see the folders for the subrepos are empty:
+
 ```
 [/tmp/project-lexer-generator(master)]$ tree
 .
@@ -1188,14 +1203,44 @@ Clonando en 'project-lexer-generator'...
 [/tmp/project-lexer-generator(master)]$
 ```
 
-You can see the folders for the subrepos are empty.
-To fill them:
-
+Now we issue the `git submodule init` command:
+           
 ```
 [/tmp/project-lexer-generator(master)]$ git submodule init
 Submódulo 'lexer-generator' (git@github.com:ULL-ESIT-PL-1920/lexer-generator.git) registrado para ruta 'lexer-generator'
 Submódulo 'test-lexer-generator' (git@github.com:ULL-ESIT-PL-1920/test-lexer-generator.git) registrado para ruta 'test-lexer-generator'
 ```
+
+The command `git submodule init` initialize the submodules recorded in the index by setting
+`submodule.$name.url` in `.git/config`. It uses the same setting from `.gitmodules` as a template:
+
+```
+[~/.../project-lexer-generator(master)]$ cat .git/config
+[core]
+	repositoryformatversion = 0
+	filemode = true
+	bare = false
+	logallrefupdates = true
+	ignorecase = true
+	precomposeunicode = true
+[submodule "lexer-generator"]
+	url = git@github.com:ULL-ESIT-PL-1920/lexer-generator.git
+	active = true
+[submodule "test-lexer-generator"]
+	url = git@github.com:ULL-ESIT-PL-1920/test-lexer-generator.git
+	active = true
+[remote "origin"]
+	url = git@github.com:ULL-ESIT-PL-1920/project-lexer-generator.git
+	fetch = +refs/heads/*:refs/remotes/origin/*
+[branch "master"]
+	remote = origin
+	merge = refs/heads/master
+```
+
+The command `git submodule update`
+updates the registered submodules to match what the superproject expects by
+cloning missing submodules, fetching missing commits in submodules and updating
+the working tree of the submodules:
 
 ```
 [/tmp/project-lexer-generator(master)]$ git submodule update
