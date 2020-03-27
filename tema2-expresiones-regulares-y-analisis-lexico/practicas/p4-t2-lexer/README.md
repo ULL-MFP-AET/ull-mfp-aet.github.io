@@ -226,6 +226,15 @@ el módulo incorporando un `README.md` y la documentación de la función export
 
 Usando el repo de la asignación de esta tarea publique el paquete como paquete privado en GitHub Registry con ámbito `@ULL-ESIT-PL-1920`  y nombre el nombre de su repo `p4-t2-lexer-aluAtGitHub`
 
+## Pruebas de Producción
+
+En nuevo repo añada las pruebas
+para comprobar que el paquete publicado 
+se instala y puede ser usado correctamente.
+
+Usando `git submodule` configure un super-repo para que contenga
+a mabos repos: el del módulo y el repo de pruebas de producción.
+
 ## Semantic Versioning
 
 Publique una mejora en la funcionalidad del módulo. Por ejemplo añada la opción `/u`
