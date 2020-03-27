@@ -1123,7 +1123,7 @@ Ran all test suites.  👈
 ```
 
 From now on, each time we publish a new version of the module
-we have to change to this directory and run `npm i && npm test`
+we have to change to this directory and run `npm run cit`
 
 ## References
 
