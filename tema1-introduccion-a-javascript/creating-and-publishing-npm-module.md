@@ -1126,7 +1126,7 @@ Ran all test suites.  👈
 From now on, each time we publish a new version of the module
 we have to change to this directory and run `npm run cit`
 
-### Un repo que los contiene a los dos repos
+### Making a Project with the two repos
 
 In some occasions, like in this one, it is convenient to have different repos together.
 
