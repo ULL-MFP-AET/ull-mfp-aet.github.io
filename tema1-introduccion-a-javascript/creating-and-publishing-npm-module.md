@@ -1035,7 +1035,7 @@ and move to it:
 ```
 
 The idea is to set things in a way the by simply running s.t. like
-`npm test` we can check that our npm module works in production.
+`npm run cit` we can check that our npm module works in production.
 
 For that we can create a `package.json` similar to this one:
 
