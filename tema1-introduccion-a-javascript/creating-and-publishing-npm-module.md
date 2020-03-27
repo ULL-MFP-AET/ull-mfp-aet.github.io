@@ -1060,7 +1060,7 @@ For that we can create a `package.json` similar to this one:
 }
 ```
 
-Install the dependencies (our module and the test framework we are using):
+Install the dependencies (that is, our module and the test framework we are using):
 
 ```
 [~/.../github-actions-learning/test-lexer-generator(master)]$ npm install
