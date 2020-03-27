@@ -1070,10 +1070,10 @@ Now we have to write our tests. We recycle the tests of our module
 by copying them to our project root directory:
 
 ```
-[~/.../github-actions-learning$ cp node_modules/\@ULL-ESIT-PL-1920/lexer-generator/test.js .
+$ cp node_modules/\@ULL-ESIT-PL-1920/lexer-generator/test.js .
 ```
 
-Of course, this file `test.js` loads the module using  a *psth thst is relative*:
+Of course, this file `test.js` loads the module using  a *path that is relative*:
 
 ```
 [~/.../github-actions-learning/test-lexer-generator(master)]$ head -n 7 test.js | cat -n
