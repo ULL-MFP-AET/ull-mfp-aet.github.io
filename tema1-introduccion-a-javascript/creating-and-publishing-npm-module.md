@@ -1033,7 +1033,7 @@ and move to it:
 ```
 
 The idea is to set things in a way the by simply running s.t. like
-`npm run cit` we can check that our npm module works in production.
+`npm test` we can check that our npm module works in production.
 
 For that we can create a `package.json` similar to this one:
 
@@ -1044,8 +1044,7 @@ For that we can create a `package.json` similar to this one:
   "description": "test @ULL-ESIT-PL-1920/lexer-generator in production mode",
   "main": "index.js",
   "scripts": {
-    "test": "jest",
-    "cit": "npm run clean; npm i --no-save && jest", 👈
+    "test": "npm run clean; npm i --no-save && jest",
     "clean": "rm -fR node_modules package-lock.json"
   },
   "keywords": ["PL"],
@@ -1092,7 +1091,7 @@ $ sed -ne '7,7p' test.js
 const buildLexer = require('@ULL-ESIT-PL-1920/lexer-generator');
 ```
 
-And now we run `npm run cit` to 
+And now we run `npm run test` to 
 
 1. Clean the directory
 2. Install the dependencies
@@ -1101,7 +1100,7 @@ And now we run `npm run cit` to
 Here is the ouput:
 
 ```
-[~/.../github-actions-learning/test-lexer-generator(master)]$ npm run cit
+[~/.../github-actions-learning/test-lexer-generator(master)]$ npm run test
 
 > test-lexer-generator@1.0.0 cit /Users/casiano/local/src/github-actions-learning/test-lexer-generator
 > npm run clean; npm i --no-save && jest
