@@ -1076,7 +1076,7 @@ $ cp node_modules/\@ULL-ESIT-PL-1920/lexer-generator/test.js .
 Of course, this file `test.js` loads the module using  a *path that is relative*:
 
 ```
-[~/.../github-actions-learning/test-lexer-generator(master)]$ head -n 7 test.js | cat -n
+$ head -n 7 test.js | cat -n
      1	// If you want debugging output run it this way:
      2	// DEBUG=1 npm test
      3	const debug = process.env["DEBUG"];
@@ -1090,7 +1090,7 @@ We edit the file `test.js` and change  line 7 from the relative
 path to a "production" `require`:
 
 ```
-[~/.../github-actions-learning/test-lexer-generator(master)]$ sed -ne '7,7p' test.js
+$ sed -ne '7,7p' test.js
 const buildLexer =require('@ULL-ESIT-PL-1920/lexer-generator');
 ```
 
