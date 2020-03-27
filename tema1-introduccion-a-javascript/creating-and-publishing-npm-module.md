@@ -637,7 +637,7 @@ Before publishing, be sure to test that your package installs and works
 correctly. This does not mean running the tests as we did above, but
 rather attempting an actual install.
 
-#### First Approach
+#### Test Installation from the Working Directory
 
 -   Verify that the package installs properly. From your package root
     directory, enter the following to install your package globally.
@@ -651,6 +651,8 @@ rather attempting an actual install.
 ```
       npm ls -g
 ```
+
+#### Test Installation from Another Directory
 
 -   To go one step further, switch to another directory, open the
     node-repl, `require` your module and try it out.
@@ -1011,6 +1013,117 @@ npm notice 📦  @ULL-ESIT-PL-1920/lexer-generator@1.0.1
 ...
 + @ULL-ESIT-PL-1920/lexer-generator@1.0.1
 ```
+
+## Test in Production Mode
+
+Once more we have to test the publication, now in Production mode (In this section I am using a different example from the previous one, but the iedas apply).
+To make it automatic, we create a separated project:
+
+```
+[~/.../src/github-actions-learning]$ ls -l
+drwxr-xr-x  16 casiano  staff  512 27 mar 11:47 lexer-generator
+[~/.../src/github-actions-learning]$ mkdir test-lexer-generator
+```
+
+and move to it:
+
+```
+[~/.../src/github-actions-learning]$ cd test-lexer-generator/
+[~/.../github-actions-learning/test-lexer-generator(master)]$ cat package.json
+```
+
+The idea is to set things in a way the by simply running s.t. like
+`npm test` we can check that our npm module works in production.
+
+For that we can create a `package.json` similar to this one:
+
+```js
+{
+  "name": "test-lexer-generator",
+  "version": "1.0.0",
+  "description": "test @ULL-ESIT-PL-1920/lexer-generator in production mode",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest",
+    "cit": "npm run clean; npm i --no-save && jest", 👈
+    "clean": "rm -fR node_modules package-lock.json"
+  },
+  "keywords": ["PL"],
+  "author": "Casiano Rodriguez-Leon <casiano.rodriguez.leon@gmail.com> (https://github.com/crguezl)",
+  "license": "ISC",
+  "dependencies": {
+    "@ULL-ESIT-PL-1920/lexer-generator": "latest",
+    "jest": "^25.2.3"
+  }
+}
+```
+
+Install the dependencies (our module and the test framework we are using):
+
+```
+[~/.../github-actions-learning/test-lexer-generator(master)]$ npm install
+```
+
+Now we have to write our tests. We recycle the tests of our module
+by copying them to our project root directory:
+
+```
+[~/.../github-actions-learning/test-lexer-generator(master)]$ cp node_modules/\@ULL-ESIT-PL-1920/lexer-generator/test.js .
+```
+
+Of course, this file `test.js` loads the module using  a *psth thst is relative*:
+
+```
+[~/.../github-actions-learning/test-lexer-generator(master)]$ head -n 7 test.js | cat -n
+     1	// If you want debugging output run it this way:
+     2	// DEBUG=1 npm test
+     3	const debug = process.env["DEBUG"];
+     4	const { inspect } = require('util');
+     5	const ins = (x) => { if (debug) console.log(inspect(x, {depth: null})) };
+     6
+     7	const buildLexer =require('./index'); 👈
+```
+
+We edit the file `test.js` and change  line 7 from the relative 
+path to a "production" `require`:
+
+```
+[~/.../github-actions-learning/test-lexer-generator(master)]$ sed -ne '7,7p' test.js
+const buildLexer =require('@ULL-ESIT-PL-1920/lexer-generator');
+```
+
+And now we 
+
+1. Clean the directory
+2. Install the dependencies
+3. Run the tests
+
+```
+[~/.../github-actions-learning/test-lexer-generator(master)]$ npm run cit
+
+> test-lexer-generator@1.0.0 cit /Users/casiano/local/src/github-actions-learning/test-lexer-generator
+> npm run clean; npm i --no-save && jest
+
+> rm -fR node_modules package-lock.json 👈
+
+added 476 packages from 287 contributors and audited 1095502 packages in 20.627s 👈
+
+ PASS  ./test.js
+  ✓ const varName = "value" (7ms)
+  ✓ let x = a +
+β (1ms)
+  ✓  // Entrada con errores
+let x = 42*c
+
+Test Suites: 1 passed, 1 total
+Tests:       3 passed, 3 total
+Snapshots:   0 total
+Time:        2.494s
+Ran all test suites.  👈
+```
+
+From now on, each time we publish a new version of the module
+we have to change to this directory and run `npm i && npm test`
 
 ## References
 

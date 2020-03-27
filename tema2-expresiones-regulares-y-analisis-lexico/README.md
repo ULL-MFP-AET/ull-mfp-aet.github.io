@@ -1001,8 +1001,11 @@ Did you realize in the former examples that all the first code units of all emoj
 
 The following code seems to work. The last BMP Character seems to be [0xD7FF (55295)](https://unicode.org/cldr/utility/character.jsp):
 
-```js
+```
 [~/.../clases/20200325-miercoles(master)]$ cat is-bmp.js
+```
+
+```js
 const isInRange = (str) => /[\u0000-\ud7ff]/u.test(str);
 const isISO8859 = char => char.charCodeAt(0) < 255;
 const isBMP = char => char.charCodeAt(0) <= 0xD7FF;
