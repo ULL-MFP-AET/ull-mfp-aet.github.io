@@ -1126,6 +1126,64 @@ Ran all test suites.  👈
 From now on, each time we publish a new version of the module
 we have to change to this directory and run `npm run cit`
 
+### Un repo que los contiene a los dos repos
+
+I not few occasions, like in this one, it is convenient to have different repos together.
+
+Git allows you to include other Git repositories called submodules into a repository. You can commit, pull and push to these repositories independently. Submodules allow you to keep projects in separate repositories but still be able to reference them as folders in the working directory of other repositories.
+
+
+```
+[~/.../github-actions-learning]$ mkdir project-lexer-generator
+[~/.../github-actions-learning]$ cd project-lexer-generator/
+[~/.../project-lexer-generator]$ git init .
+Inicializado repositorio Git vacío en /Users/casiano/local/src/github-actions-learning/project-lexer-generator/.git/
+[~/.../project-lexer-generator]$ git submodule add git@github.com:ULL-ESIT-PL-1920/lexer-generator.gitClonando en '/Users/casiano/local/src/github-actions-learning/project-lexer-generator/lexer-generator'...
+remote: Enumerating objects: 52, done.
+remote: Counting objects: 100% (52/52), done.
+remote: Compressing objects: 100% (32/32), done.
+remote: Total 52 (delta 22), reused 44 (delta 14), pack-reused 0
+Recibiendo objetos: 100% (52/52), 66.46 KiB | 196.00 KiB/s, listo.
+Resolviendo deltas: 100% (22/22), listo.
+[~/.../project-lexer-generator]$ git submodule add git@github.com:ULL-ESIT-PL-1920/test-lexer-generator.git
+Clonando en '/Users/casiano/local/src/github-actions-learning/project-lexer-generator/test-lexer-generator'...
+remote: Enumerating objects: 25, done.
+remote: Counting objects: 100% (25/25), done.
+remote: Compressing objects: 100% (13/13), done.
+remote: Total 25 (delta 8), reused 24 (delta 7), pack-reused 0
+Recibiendo objetos: 100% (25/25), listo.
+Resolviendo deltas: 100% (8/8), listo.
+[~/.../project-lexer-generator]$ ls -la
+total 8
+drwxr-xr-x   6 casiano  staff  192 27 mar 16:56 .
+drwxr-xr-x   9 casiano  staff  288 27 mar 16:53 ..
+drwxr-xr-x  11 casiano  staff  352 27 mar 16:56 .git
+-rw-r--r--   1 casiano  staff  241 27 mar 16:56 .gitmodules
+drwxr-xr-x  12 casiano  staff  384 27 mar 16:55 lexer-generator
+drwxr-xr-x   9 casiano  staff  288 27 mar 16:56 test-lexer-generator
+[~/.../project-lexer-generator]$ cat .gitmodules
+[submodule "lexer-generator"]
+	path = lexer-generator
+	url = git@github.com:ULL-ESIT-PL-1920/lexer-generator.git
+[submodule "test-lexer-generator"]
+	path = test-lexer-generator
+	url = git@github.com:ULL-ESIT-PL-1920/test-lexer-generator.git
+```
+
+Si ahora hacemos un commit y un push esta es la imagen del repo en GitHub:
+
+![]({{site.baseurl}}/assets/images/git-submodulos.png)
+
+Si hacemos click en los enlaces de los repos nos lleva al correspondiente repo de GitHub **pero en el commit indicado en el super-repo**
+
+See the [Chacon's book on Git: Chapter 7.11 Git Tools - Submodules](https://git-scm.com/book/en/v2/Git-Tools-Submodules) for more information.
+
+Here are the two repos for the scapegoat example:
+ 
+* [Example in ULL-ESIT-DSI-1617/create-a-npm-module](https://github.com/ULL-ESIT-DSI-1617/create-a-npm-module)
+  - [Submodule ULL-ESIT-DSI-1617/scapegoat](https://github.com/ULL-ESIT-DSI-1617/scapegoat)
+  - [Submodule ULL-ESIT-DSI-1617/prueba-scapegoat](https://github.com/ULL-ESIT-DSI-1617/prueba-scapegoat)
+
 ## References
 
 ### npm packages
