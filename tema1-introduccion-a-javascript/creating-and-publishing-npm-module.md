@@ -1128,7 +1128,7 @@ we have to change to this directory and run `npm run cit`
 
 ### Un repo que los contiene a los dos repos
 
-I not few occasions, like in this one, it is convenient to have different repos together.
+In some occasions, like in this one, it is convenient to have different repos together.
 
 Git allows you to include other Git repositories called submodules into a repository. You can commit, pull and push to these repositories independently. Submodules allow you to keep projects in separate repositories but still be able to reference them as folders in the working directory of other repositories.
 
