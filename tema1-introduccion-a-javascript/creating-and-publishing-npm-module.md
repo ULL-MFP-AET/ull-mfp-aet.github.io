@@ -1014,7 +1014,7 @@ npm notice 📦  @ULL-ESIT-PL-1920/lexer-generator@1.0.1
 + @ULL-ESIT-PL-1920/lexer-generator@1.0.1
 ```
 
-## Test in Production Mode
+## Testing in Production
 
 Once more we have to test the publication, now in Production mode (In this section I am using a different example from the previous one, but the ideas apply).
 To automate the testing process, we create a separated project:
