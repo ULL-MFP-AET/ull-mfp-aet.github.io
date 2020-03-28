@@ -1074,7 +1074,7 @@ Now we have to write our tests. We recycle the tests of our module
 by copying them to our project root directory:
 
 ```
-[~/.../prueba-scapegoat(master)]$ cp node_modules/\@ull-esit-dsi-1617/scapegoat/test/index.js test.js
+$ cp node_modules/\@ull-esit-dsi-1617/scapegoat/test/index.js test.js
 ```
 
 Of course, this file `test.js` loads the module using  a *path that is relative*:
