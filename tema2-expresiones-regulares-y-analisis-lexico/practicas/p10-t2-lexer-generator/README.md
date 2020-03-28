@@ -229,7 +229,7 @@ Usando el repo de la asignación de esta tarea publique el paquete como paquete 
 
 ## Pruebas de Producción
 
-En nuevo repo añada las pruebas
+En un nuevo repo `p10-t2-lexgen-testing-aluGitHub` añada las pruebas
 para comprobar que el paquete publicado 
 se instala y puede ser usado correctamente.
 
