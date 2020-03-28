@@ -223,7 +223,7 @@ el módulo incorporando un `README.md` y la documentación de la función export
 
 ## Publicar como paquete npm en GitHub Registry
 
-Usando el repo de la asignación de esta tarea publique el paquete como paquete privado en GitHub Registry con ámbito `@ULL-ESIT-PL-1920`  y nombre el nombre de su repo `p10-t2-lexer-generator-aluAtGitHub`
+Usando el repo de la asignación de esta tarea publique el paquete como paquete privado en GitHub Registry con ámbito `@ULL-ESIT-PL-1920`  y nombre el nombre de su repo `p10-t2-lexgen-aluAtGitHub`
 
 ## Pruebas de Producción
 
