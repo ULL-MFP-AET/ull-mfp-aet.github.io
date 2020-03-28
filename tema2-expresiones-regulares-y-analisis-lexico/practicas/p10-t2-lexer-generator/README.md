@@ -234,7 +234,7 @@ para comprobar que el paquete publicado
 se instala y puede ser usado correctamente.
 
 Usando `git submodule` configure un super-repo para que contenga
-a mabos repos: el del módulo y el repo de pruebas de producción.
+a ambos repos: el del módulo y el repo de pruebas de producción.
 
 ## Semantic Versioning
 
