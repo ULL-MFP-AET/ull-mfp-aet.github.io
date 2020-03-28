@@ -1029,7 +1029,6 @@ and move to it:
 
 ```
 $ cd prueba-scapegoat/
-$ cat package.json
 ```
 
 The idea is to set things in a way the by simply running s.t. like
@@ -1037,8 +1036,10 @@ The idea is to set things in a way the by simply running s.t. like
 
 For that we can create a `package.json` similar to this one:
 
-```js
+```
 [~/.../prueba-scapegoat(master)]$ cat package.json
+```
+```js
 {
   "name": "prueba-scapegoat",
   "version": "1.0.0",
