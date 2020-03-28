@@ -18,7 +18,7 @@ La mayor parte de los conceptos y habilidades a adquirir con esta práctica se e
 El módulo deberá exportar una función que construye analizadores léxicos:
 
 ```js
-const buildLexer =require('@ULL-ESIT-PL-1920/p10-t2-lexer-generator-aluAtGitHub');
+const buildLexer =require('@ULL-ESIT-PL-1920/p10-t2-lexgen-code-aluAtGitHub');
 ```
 
 La función `buildLexer` se llamará con un objeto que describe el léxico del lenguaje y retornará una función `lexer` que es la que hace el análisis léxico:
