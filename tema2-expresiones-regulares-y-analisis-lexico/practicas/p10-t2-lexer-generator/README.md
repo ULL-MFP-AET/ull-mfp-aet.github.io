@@ -11,7 +11,7 @@ previous:
 ## Objetivos
 
 Usando el repo de la asignación de esta tarea construya un paquete npm y 
-publíquelo como paquete privado en GitHub Registry con ámbito `@ULL-ESIT-PL-1920`  y con nombre el nombre de su repo `p10-t2-lexer-generator-aluAtGitHub`
+publíquelo como paquete privado en GitHub Registry con ámbito `@ULL-ESIT-PL-1920`  y con nombre el nombre de su repo `p10-t2-lexgen-code-aluAtGitHub`
 
 La mayor parte de los conceptos y habilidades a adquirir con esta práctica se explican en la sección [Creating and publishing a node.js module en GitHub y en NPM]({{site.baseurl}}/tema1-introduccion-a-javascript/creating-and-publishing-npm-module). 
 
@@ -234,7 +234,7 @@ para comprobar que el paquete publicado
 se instala y puede ser usado correctamente.
 
 Usando `git submodule` configure un super-repo para que contenga
-a ambos repos: el del módulo y el repo de pruebas de producción.
+a ambos repos: el del módulo `p10-t2-lexgen-code-aluAtGitHub` y el repo de pruebas de producción `p10-t2-lexgen-testing-aluGitHub`.
 
 ## Semantic Versioning
 
