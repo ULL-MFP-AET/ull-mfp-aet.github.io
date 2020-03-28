@@ -1016,19 +1016,19 @@ npm notice 📦  @ULL-ESIT-PL-1920/lexer-generator@1.0.1
 
 ## Testing in Production
 
-Once more we have to test the publication, now in Production mode (In this section I am using a different example from the previous one, but the ideas apply).
+Once more we have to test the publication, now in Production mode 
 To automate the testing process, we create a separated project:
 
 ```
-[~/.../src/github-actions-learning]$ ls -l
-drwxr-xr-x  16 casiano  staff  512 27 mar 11:47 lexer-generator
-[~/.../src/github-actions-learning]$ mkdir test-lexer-generator
+[~/.../creating-and-publishing-a-node-js-module-not-submodule]$ ls -l
+drwxr-xr-x  13 casiano  wheel    416 26 sep  2017 scapegoat
+~/.../src/github-actions-learning]$ mkdir prueba-scapegoat
 ```
 
 and move to it:
 
 ```
-[~/.../src/github-actions-learning]$ cd test-lexer-generator/
+[~/.../src/github-actions-learning]$ cd prueba-scapegoat/
 [~/.../github-actions-learning/test-lexer-generator(master)]$ cat package.json
 ```
 
@@ -1038,21 +1038,27 @@ The idea is to set things in a way the by simply running s.t. like
 For that we can create a `package.json` similar to this one:
 
 ```js
+[~/.../prueba-scapegoat(master)]$ cat package.json
 {
-  "name": "test-lexer-generator",
+  "name": "prueba-scapegoat",
   "version": "1.0.0",
-  "description": "test @ULL-ESIT-PL-1920/lexer-generator in production mode",
+  "description": "Testing a published module",
   "main": "index.js",
   "scripts": {
-    "test": "npm run clean; npm i --no-save && jest",
-    "clean": "rm -fR node_modules package-lock.json"
+    "test": "npm run clean:update:install && npm run version && mocha",
+    "clean:update:install": "npm run clean:update && npm i --no-save",
+    "clean:update": "npm run clean && npm run update",
+    "clean": "rm -fR node_modules package-lock.json",
+    "update": "npm i --no-save @ull-esit-dsi-1617/scapegoat@latest",
+    "version": "npm list --depth=0"
   },
-  "keywords": ["PL"],
+  "keywords": [ "ULL", "npm", "packages", "test", "git-submodules" ],
   "author": "Casiano Rodriguez-Leon <casiano.rodriguez.leon@gmail.com> (https://github.com/crguezl)",
   "license": "ISC",
   "dependencies": {
-    "@ULL-ESIT-PL-1920/lexer-generator": "latest",
-    "jest": "^25.2.3"
+    "@ull-esit-dsi-1617/scapegoat": "*",
+    "chai": "*",
+    "mocha": "*"
   }
 }
 ```
@@ -1060,38 +1066,33 @@ For that we can create a `package.json` similar to this one:
 Install the dependencies (that is, our module and the test framework we are using):
 
 ```
-[~/.../github-actions-learning/test-lexer-generator(master)]$ npm install
+[~/.../prueba-scapegoat(master)]$ npm i
 ```
 
 Now we have to write our tests. We recycle the tests of our module
 by copying them to our project root directory:
 
 ```
-$ cp node_modules/\@ULL-ESIT-PL-1920/lexer-generator/test.js .
+[~/.../prueba-scapegoat(master)]$ cp node_modules/\@ull-esit-dsi-1617/scapegoat/test/index.js test.js
 ```
 
 Of course, this file `test.js` loads the module using  a *path that is relative*:
 
 ```
-$ head -n 7 test.js | cat -n
-     1	// If you want debugging output run it this way:
-     2	// DEBUG=1 npm test
-     3	const debug = process.env["DEBUG"];
-     4	const { inspect } = require('util');
-     5	const ins = (x) => { if (debug) console.log(inspect(x, {depth: null})) };
-     6
-     7	const buildLexer = require('./index'); 👈
+[~/.../prueba-scapegoat(master)]$ sed -ne '/require.*ind/p' test.js
+    scapegoat = require('../index'), 👈
 ```
 
 We edit the file `test.js` and change  line 7 from the relative 
 path to a "production" `require`:
 
 ```
-$ sed -ne '7,7p' test.js
-const buildLexer = require('@ULL-ESIT-PL-1920/lexer-generator');
+[~/.../prueba-scapegoat(master)]$ sed -ne '/require/p' test.js
+var should = require('chai').should(),
+    scapegoat = require("@ull-esit-dsi-1617/scapegoat"),
 ```
 
-And now we run `npm run test` to 
+And now we run `npm test` to 
 
 1. Clean the directory
 2. Install the dependencies
@@ -1100,31 +1101,67 @@ And now we run `npm run test` to
 Here is the ouput:
 
 ```
-[~/.../github-actions-learning/test-lexer-generator(master)]$ npm run test
+[~/.../prueba-scapegoat(master)]$ npm test
 
-> test-lexer-generator@1.0.0 cit /Users/casiano/local/src/github-actions-learning/test-lexer-generator
-> npm run clean; npm i --no-save && jest
+> prueba-scapegoat@1.0.0 test /Users/casiano/local/src/javascript/evalua-module/create-a-npm-module/prueba-scapegoat
+> npm run clean:update:install && npm run version && mocha
 
-> rm -fR node_modules package-lock.json 👈
+> prueba-scapegoat@1.0.0 clean:update:install /Users/casiano/local/src/javascript/evalua-module/create-a-npm-module/prueba-scapegoat
+> npm run clean:update && npm i --no-save
 
-added 476 packages from 287 contributors and audited 1095502 packages in 20.627s 👈
+> prueba-scapegoat@1.0.0 clean:update /Users/casiano/local/src/javascript/evalua-module/create-a-npm-module/prueba-scapegoat
+> npm run clean && npm run update
 
- PASS  ./test.js
-  ✓ const varName = "value" (7ms)
-  ✓ let x = a +
-β (1ms)
-  ✓  // Entrada con errores
-let x = 42*c
+> prueba-scapegoat@1.0.0 clean /Users/casiano/local/src/javascript/evalua-module/create-a-npm-module/prueba-scapegoat
+> rm -fR node_modules package-lock.json
 
-Test Suites: 1 passed, 1 total
-Tests:       3 passed, 3 total
-Snapshots:   0 total
-Time:        2.494s
-Ran all test suites.  👈
+> prueba-scapegoat@1.0.0 update /Users/casiano/local/src/javascript/evalua-module/create-a-npm-module/prueba-scapegoat
+> npm i --no-save @ull-esit-dsi-1617/scapegoat@latest
+added 114 packages from 83 contributors and audited 214 packages in 6.21s
+...
+> npm list --depth=0
+
+prueba-scapegoat@1.0.0 /Users/casiano/local/src/javascript/evalua-module/create-a-npm-module/prueba-scapegoat
+├── @ull-esit-dsi-1617/scapegoat@1.3.1
+├── chai@4.2.0
+└── mocha@7.1.1
+
+  #escape
+    ✓ converts & into &amp;
+    ...   
+  #unescape
+    ✓ converts &amp; into &
+    ...
+
+  13 passing (12ms)
 ```
 
 From now on, each time we publish a new version of the module
-we have to change to this directory and run `npm run cit`
+
+```
+[~/.../scapegoat(master)]$ jq .version package.json
+"1.3.1"
+[~/.../scapegoat(master)]$ npm version patch
+v1.3.2
+[~/.../scapegoat(master)]$ git tag 1.3.2
+[~/.../scapegoat(master)]$ npm publish
+npm notice 📦  @ull-esit-dsi-1617/scapegoat@1.3.2
+...
++ @ull-esit-dsi-1617/scapegoat@1.3.2
+```
+
+we have to change to the `prueba-scapegoat` directory and run `npm test`
+
+```
+[~/.../prueba-scapegoat(master)]$ npm test
+...
+> npm list --depth=0
+
+prueba-scapegoat@1.0.0 /Users/casiano/local/src/javascript/evalua-module/create-a-npm-module/prueba-scapegoat
+├── @ull-esit-dsi-1617/scapegoat@1.3.2
+├── chai@4.2.0
+└── mocha@7.1.1
+```
 
 ### Making a Project with the two repos
 
