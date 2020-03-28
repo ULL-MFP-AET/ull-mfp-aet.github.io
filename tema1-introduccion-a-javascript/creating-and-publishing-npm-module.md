@@ -1093,12 +1093,13 @@ var should = require('chai').should(),
     scapegoat = require("@ull-esit-dsi-1617/scapegoat"),
 ```
 
-And now we run `npm test` to 
+And now we run `npm test`. Let us explain the meaning of the scripts in our  `package.json`:
 
-1. Clean the directory
-2. Install the dependencies
-3. Run the tests
-
+1. `"version": "npm list --depth=0"`: shows the versions of the installed dependencies. We want to check we are using the latest version of our just published module
+2. `"update": "npm i --no-save @ull-esit-dsi-1617/scapegoat@latest"`: installs the latest version of our module. The `-no-save` option prevent savings to depedencies
+3. `"clean": "rm -fR node_modules package-lock.json"`: remove all the remainings of previous installations
+4. `"test": "npm run clean:update:install && npm run version && mocha"`: we clean it, update our module, install the remaining dependencies show the versions and run the tests
+    
 Here is the ouput:
 
 ```
