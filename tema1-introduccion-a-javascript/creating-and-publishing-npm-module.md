@@ -1020,7 +1020,7 @@ Once more we have to test the publication, now in Production mode
 To automate the testing process, we create a separated project:
 
 ```
-[~/.../creating-and-publishing-a-node-js-module-not-submodule]$ ls -l
+$ ls -l
 drwxr-xr-x  13 casiano  wheel    416 26 sep  2017 scapegoat
 ~/.../src/github-actions-learning]$ mkdir prueba-scapegoat
 ```
@@ -1028,8 +1028,8 @@ drwxr-xr-x  13 casiano  wheel    416 26 sep  2017 scapegoat
 and move to it:
 
 ```
-[~/.../src/github-actions-learning]$ cd prueba-scapegoat/
-[~/.../github-actions-learning/test-lexer-generator(master)]$ cat package.json
+$ cd prueba-scapegoat/
+$ cat package.json
 ```
 
 The idea is to set things in a way the by simply running s.t. like
