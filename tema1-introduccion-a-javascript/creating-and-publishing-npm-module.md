@@ -1161,6 +1161,7 @@ prueba-scapegoat@1.0.0 /Users/casiano/local/src/javascript/evalua-module/create-
 ├── @ull-esit-dsi-1617/scapegoat@1.3.2
 ├── chai@4.2.0
 └── mocha@7.1.1
+...
 ```
 
 ### Making a Project with the two repos
