@@ -194,6 +194,8 @@ test(str, () => {
 });
 ```
 
+Ejemplo de ejecución:
+
 ```
 [~/.../github-actions-learning/lexer-generator(master)]$ npm test
 
