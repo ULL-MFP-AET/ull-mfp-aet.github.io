@@ -1166,6 +1166,63 @@ prueba-scapegoat@1.0.0 /Users/casiano/local/src/javascript/evalua-module/create-
 ...
 ```
 
+### Automating the Production Testing with GitHub Actions
+
+We can automate the previous workflow adding a GitHub action:
+
+```
+[~/.../prueba-scapegoat(master)]$ tree .github/
+.github/
+└── workflows
+    └── nodejs.yml
+
+1 directory, 1 file
+```
+
+```
+[~/.../prueba-scapegoat(master)]$ cat .github/workflows/nodejs.yml
+```
+
+```yml
+# This workflow will do a clean install of node dependencies, build the source code and run tests across different versions of node
+# For more information see: https://help.github.com/actions/language-and-framework-guides/using-nodejs-with-github-actions
+
+name: Node.js CI
+
+on:
+  push:
+    branches: [ master ]
+  pull_request:
+    branches: [ master ]
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    strategy:
+      matrix:
+        node-version: [12.x]
+
+    steps:
+    - uses: actions/checkout@v2
+    - name: Use Node.js ${{ matrix.node-version }}
+      uses: actions/setup-node@v1
+      with:
+        node-version: ${{ matrix.node-version }}
+    - run: npm test
+      env:
+        CI: true
+``` 
+
+```
+[~/.../prueba-scapegoat(master)]$ npm version 1.3.3
+v1.3.3
+[~/.../prueba-scapegoat(master)]$ git push origin master
+```
+
+![]({{site.baseurl}}/assets/images/github-actions-testing-in-production.png)
+
 ### Making a Project with the two repos
 
 In some occasions, like in this one, it is convenient to have different repos together.
