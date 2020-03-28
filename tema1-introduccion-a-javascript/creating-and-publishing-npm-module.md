@@ -1179,14 +1179,13 @@ We can automate the previous workflow adding a GitHub action:
 1 directory, 1 file
 ```
 
+The action simply run the tests each time a `push` happens
+
 ```
 [~/.../prueba-scapegoat(master)]$ cat .github/workflows/nodejs.yml
 ```
 
 ```yml
-# This workflow will do a clean install of node dependencies, build the source code and run tests across different versions of node
-# For more information see: https://help.github.com/actions/language-and-framework-guides/using-nodejs-with-github-actions
-
 name: Node.js CI
 
 on:
@@ -1215,13 +1214,23 @@ jobs:
         CI: true
 ``` 
 
+Let us keep synchronized the version of the test repo with the 
+module repo and push it to github:
+
 ```
 [~/.../prueba-scapegoat(master)]$ npm version 1.3.3
 v1.3.3
 [~/.../prueba-scapegoat(master)]$ git push origin master
 ```
 
+Now the action runs:
+
 ![]({{site.baseurl}}/assets/images/github-actions-testing-in-production.png)
+
+#### Related References
+
+* [Triggering GitHub Actions across different repositories](https://blog.marcnuri.com/triggering-github-actions-across-different-repositories/)
+* [Triggering by other repository](https://github.community/t5/GitHub-Actions/Triggering-by-other-repository/td-p/30668)
 
 ### Making a Project with the two repos
 
