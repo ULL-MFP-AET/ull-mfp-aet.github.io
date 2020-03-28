@@ -13,6 +13,8 @@ previous:
 Usando el repo de la asignación de esta tarea construya un paquete npm y 
 publíquelo como paquete privado en GitHub Registry con ámbito `@ULL-ESIT-PL-1920`  y con nombre el nombre de su repo `p10-t2-lexer-generator-aluAtGitHub`
 
+La mayor parte de los conceptos y habilidades a adquirir con esta práctica se explican en la sección [Creating and publishing a node.js module en GitHub y en NPM]({{site.baseurl}}/tema1-introduccion-a-javascript/creating-and-publishing-npm-module). 
+
 El módulo deberá exportar una función que construye analizadores léxicos:
 
 ```js
