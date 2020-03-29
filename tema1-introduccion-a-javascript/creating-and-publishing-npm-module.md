@@ -1217,8 +1217,8 @@ Inside the `scapegoat` directory we add a new task `production:test` to the  `pa
 We also added:
 
 1. `"patch": "npm version patch"`: To change the `patch` number. (If run in a git repo, it will also create a version commit and tag)
-2. `"patch:publish": "npm run patch; git push; npm publish"`
-3. `"patch:publish:production:test": "npm run patch:publish; npm run production:test"`
+2. `"patch:publish": "npm run patch; git push; npm publish"` to change the patch number, push the changes to GitHub and publish the repo 
+3. `"patch:publish:production:test": "npm run patch:publish; npm run production:test"` to publish the module and run the tests in production mode
 
 ### Automating the Production Testing with GitHub Actions
 
