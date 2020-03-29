@@ -1062,18 +1062,23 @@ For that we can create a `package.json` similar to this one:
 ```js
 {
   "name": "prueba-scapegoat",
-  "version": "1.0.0",
+  "version": "1.3.4",
   "description": "Testing a published module",
   "main": "index.js",
   "scripts": {
-    "test": "npm run clean:update:install && npm run version && mocha",
+    "test": "npm run clean:update:install && npm run versions && mocha",
     "clean:update:install": "npm run clean:update && npm i --no-save",
     "clean:update": "npm run clean && npm run update",
     "clean": "rm -fR node_modules package-lock.json",
+    "module-version": "jq .version ../scapegoat/package.json",
     "update": "npm i --no-save @ull-esit-dsi-1617/scapegoat@latest",
-    "version": "npm list --depth=0"
+    "versions": "npm list --depth=0"
   },
   "keywords": [ "ULL", "npm", "packages", "test", "git-submodules" ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ULL-ESIT-DSI-1617/prueba-scapegoat.git"
+  },
   "author": "Casiano Rodriguez-Leon <casiano.rodriguez.leon@gmail.com> (https://github.com/crguezl)",
   "license": "ISC",
   "dependencies": {
@@ -1115,7 +1120,7 @@ var should = require('chai').should(),
 
 And now we run `npm test`. Let us explain the meaning of the scripts in our  `package.json`:
 
-1. `"version": "npm list --depth=0"`: shows the versions of the installed dependencies. We want to check we are using the latest version of our just published module
+1. `"versions": "npm list --depth=0"`: shows the versions of the installed dependencies. We want to check we are using the latest version of our just published module
 2. `"update": "npm i --no-save @ull-esit-dsi-1617/scapegoat@latest"`: installs the latest version of our module. The `-no-save` option prevent savings to depedencies
 3. `"clean": "rm -fR node_modules package-lock.json"`: remove all the remainings of previous installations
 4. `"test": "npm run clean:update:install && npm run version && mocha"`: we clean it, update our module, install the remaining dependencies show the versions and run the tests
@@ -1125,35 +1130,38 @@ Here is the ouput:
 ```
 [~/.../prueba-scapegoat(master)]$ npm test
 
-> prueba-scapegoat@1.0.0 test /Users/casiano/local/src/javascript/evalua-module/create-a-npm-module/prueba-scapegoat
-> npm run clean:update:install && npm run version && mocha
-
-> prueba-scapegoat@1.0.0 clean:update:install /Users/casiano/local/src/javascript/evalua-module/create-a-npm-module/prueba-scapegoat
+> prueba-scapegoat@1.3.4 test /Users/casiano/local/src/javascript/evalua-module/create-a-npm-module/prueba-scapegoat
+> npm run clean:update:install && npm run versions && mocha
 > npm run clean:update && npm i --no-save
-
-> prueba-scapegoat@1.0.0 clean:update /Users/casiano/local/src/javascript/evalua-module/create-a-npm-module/prueba-scapegoat
 > npm run clean && npm run update
-
-> prueba-scapegoat@1.0.0 clean /Users/casiano/local/src/javascript/evalua-module/create-a-npm-module/prueba-scapegoat
 > rm -fR node_modules package-lock.json
-
-> prueba-scapegoat@1.0.0 update /Users/casiano/local/src/javascript/evalua-module/create-a-npm-module/prueba-scapegoat
 > npm i --no-save @ull-esit-dsi-1617/scapegoat@latest
-added 114 packages from 83 contributors and audited 214 packages in 6.21s
-...
++ @ull-esit-dsi-1617/scapegoat@1.3.5
+added 114 packages from 83 contributors and audited 214 packages in 6.763s
+
 > npm list --depth=0
 
-prueba-scapegoat@1.0.0 /Users/casiano/local/src/javascript/evalua-module/create-a-npm-module/prueba-scapegoat
-├── @ull-esit-dsi-1617/scapegoat@1.3.1
+├── @ull-esit-dsi-1617/scapegoat@1.3.5
 ├── chai@4.2.0
 └── mocha@7.1.1
 
   #escape
     ✓ converts & into &amp;
-    ...   
+    ✓ converts " into &quot;
+    ✓ converts ' into &#39;
+    ✓ converts < into &lt;
+    ✓ converts > into &gt;
+    ✓ returns empty string if called with falsey value
+
   #unescape
     ✓ converts &amp; into &
-    ...
+    ✓ converts &quot; into "
+    ✓ converts &#39; into '
+    ✓ converts &lt; into <
+    ✓ converts &gt; into >
+    ✓ does not double unescape values
+    ✓ returns empty string if called with falsey value
+
 
   13 passing (12ms)
 ```
