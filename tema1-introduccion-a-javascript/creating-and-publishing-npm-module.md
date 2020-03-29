@@ -1240,10 +1240,6 @@ The action simply run the production tests each time a `push` happens
 ```
 
 ```yml
-[~/.../prueba-scapegoat(master)]$ cat .github/workflows/nodejs.yml
-# This workflow will do a clean install of node dependencies, build the source code and run tests across different versions of node
-# For more information see: https://help.github.com/actions/language-and-framework-guides/using-nodejs-with-github-actions
-
 name: Test scapegoat in production
 
 on: # when this action should be triggered?
