@@ -495,7 +495,12 @@ A **step** is a set of tasks that can be executed by a job. Steps can run comman
 
 A **Workflow** is an automated process that is made up of one or multiple jobs and can be triggered by an event. Workflows are defined using a YAML file in the `.github/workflows` directory.
 
-#### Syntax
+Workflows can be created inside the `.github/workflows` directory by adding a `.yml` workflow file. Here we do:
+
+```
+$ mkdir -p .github/workflows
+$ touch .github/workflows/nodejs.yml
+```
 
 Github Actions files are written using YAML syntax and have eighter a `.yml` or `.yaml` file extension. Here are the most important concepts for the workflow file.
 
@@ -556,10 +561,6 @@ Github Actions files are written using YAML syntax and have eighter a `.yml` or 
     CI: true
   ```
 
-```
-$ mkdir -p .github/workflows
-$ touch .github/workflows/nodejs.yml
-```
 
 We fill the contents of `nodejs.yml` with the description of our workflow:
 
