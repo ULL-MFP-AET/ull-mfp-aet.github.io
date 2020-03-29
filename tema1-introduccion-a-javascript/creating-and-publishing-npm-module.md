@@ -561,6 +561,10 @@ The action is triggered. Let us go and click on the **actions tab** in our repo:
 
 Observe that by clicking on the dots on the right side you can view the raw logs
 
+#### References
+
+* [An Introduction to Github Actions](https://gabrieltanner.org/blog/an-introduction-to-github-actions)
+
 ### Documentation and README.md
 
 Okay great, our tests are passing and we have CI. 
