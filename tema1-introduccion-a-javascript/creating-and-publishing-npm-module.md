@@ -1210,15 +1210,15 @@ Inside the `scapegoat` directory we add a new task `production:test` to the  `pa
   "production:test": "cd ../prueba-scapegoat && npm test",
   "patch": "npm run commit; npm version patch",
   "patch:publish": "npm run patch; git push; npm publish",
-  "patch:publish:test": "npm run patch:publish; npm run production:test"
+  "patch:publish:production:test": "npm run patch:publish; npm run production:test"
 }
 ```
 
 We also added:
 
 1. `"patch": "npm version patch"`: To change the `patch` number. (If run in a git repo, it will also create a version commit and tag)
-2. `"patch:publish": "npm run patch && npm publish"`
-3. `"patch:publish:test": "npm run patch:publish && npm run production:test"`
+2. `"patch:publish": "npm run patch; git push; npm publish"`
+3. `"patch:publish:production:test": "npm run patch:publish; npm run production:test"`
 
 ### Automating the Production Testing with GitHub Actions
 
