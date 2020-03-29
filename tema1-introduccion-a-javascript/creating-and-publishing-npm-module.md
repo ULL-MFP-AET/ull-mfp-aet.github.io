@@ -423,6 +423,8 @@ $ cat package.json
 }
 ```      
 
+(NOTE: `git ci` is an alias I have of `git commit`)
+
 After doing so, we can then execute the tests by entering following
 command.
 
@@ -506,7 +508,7 @@ $ git add .github/workflows/nodejs.yml
 $ git ci -am .github/workflows/nodejs.yml
 ```
 
- Now when we do a push:
+Now when we do a push:
 
 ```
 $ git push
@@ -523,6 +525,8 @@ The action is triggered. Let us go and click on the **actions tab** in our repo:
 ![]({{site.baseurl}}/assets/images/github-actions-4-complete-job.png)
 
 ![]({{site.baseurl}}/assets/images/github-actions-5-completed.png)
+
+Observe that by clicking on the dots on the right side you can view the raw logs
 
 ### Documentation and README.md
 
