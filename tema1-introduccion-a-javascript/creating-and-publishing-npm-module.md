@@ -644,7 +644,7 @@ steps:
     with: # Set the secret as an input
       super_secret: {{ "${{ secrets.SuperSecret" }} }}
     env: # Or as an environment variable
-      super_secret: {{ "${{ secrets.SuperSecret }} }}
+      super_secret: {{ "${{ secrets.SuperSecret" }} }}
 ```
 
 The **strategy context** enables access to the configured strategy parameters and information about the current job.
