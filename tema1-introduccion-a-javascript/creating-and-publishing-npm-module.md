@@ -476,7 +476,7 @@ $ cat .github/workflows/nodejs.yml
 ```
 ```yml
 [~/.../create-a-npm-module/scapegoat(master)]$ cat .github/workflows/nodejs.yml
-name: CI fro scapegoat module
+name: CI for scapegoat module
 
 on: # when this action should be triggered?
   push:
