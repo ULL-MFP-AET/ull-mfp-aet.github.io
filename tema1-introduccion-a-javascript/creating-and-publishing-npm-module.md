@@ -1428,7 +1428,13 @@ Here are the two repos for the scapegoat example:
 * [YouTube Video: Semantic versioning and npm](https://youtu.be/kK4Meix58R4)
 * [El comando npm version](https://docs.npmjs.com/cli/version)
 
-### Old References
+### Text Processing 
+
+* [jq](https://stedolan.github.io/jq/tutorial/) is a DSL to query JSON data 
+* Unix [sed](https://www.gnu.org/software/sed/manual/sed.html)
+
+### Original Scapegoat
 
 -   [Scapegoat on Github](https://github.com/brentertz/scapegoat)
 -   [Scapegoat on npm](https://npmjs.org/package/scapegoat)
+
