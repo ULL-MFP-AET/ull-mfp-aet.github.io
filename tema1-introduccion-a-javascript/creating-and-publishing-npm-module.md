@@ -304,6 +304,8 @@ It also created `package-lock.json` containing a detailed description of all the
 
     git add package-lock.json
 
+See also [http://gitignore.io/](http://gitignore.io/).
+
 ### Writing the tests
 
 Continuing on, let's create a `test` directory to hold our tests.
