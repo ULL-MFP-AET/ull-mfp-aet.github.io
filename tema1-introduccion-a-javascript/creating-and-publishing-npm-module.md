@@ -1063,12 +1063,8 @@ For that we can create a `package.json` similar to this one:
   "description": "Testing a published module",
   "main": "index.js",
   "scripts": {
-    "test": "npm run clean:update:install && npm run versions && mocha",
-    "clean:update:install": "npm run clean:update && npm i --no-save",
-    "clean:update": "npm run clean && npm run update",
-    "clean": "rm -fR node_modules package-lock.json",
+    "test": "npm update && npm run versions && mocha",
     "module-version": "jq .version ../scapegoat/package.json",
-    "update": "npm i --no-save @ull-esit-dsi-1617/scapegoat@latest",
     "versions": "npm list --depth=0"
   },
   "keywords": [ "ULL", "npm", "packages", "test", "git-submodules" ],
@@ -1126,21 +1122,19 @@ Here is the ouput:
 
 ```
 [~/.../prueba-scapegoat(master)]$ npm test
-
 > prueba-scapegoat@1.3.4 test /Users/casiano/local/src/javascript/evalua-module/create-a-npm-module/prueba-scapegoat
-> npm run clean:update:install && npm run versions && mocha
-> npm run clean:update && npm i --no-save
-> npm run clean && npm run update
-> rm -fR node_modules package-lock.json
-> npm i --no-save @ull-esit-dsi-1617/scapegoat@latest
-+ @ull-esit-dsi-1617/scapegoat@1.3.5
-added 114 packages from 83 contributors and audited 214 packages in 6.763s
+> npm update && npm run versions && mocha
 
+
+> prueba-scapegoat@1.3.4 versions /Users/casiano/local/src/javascript/evalua-module/create-a-npm-module/prueba-scapegoat
 > npm list --depth=0
 
-├── @ull-esit-dsi-1617/scapegoat@1.3.5
+prueba-scapegoat@1.3.4 /Users/casiano/local/src/javascript/evalua-module/create-a-npm-module/prueba-scapegoat
+├── @ull-esit-dsi-1617/scapegoat@1.3.11
 ├── chai@4.2.0
 └── mocha@7.1.1
+
+
 
   #escape
     ✓ converts & into &amp;
@@ -1159,7 +1153,7 @@ added 114 packages from 83 contributors and audited 214 packages in 6.763s
     ✓ does not double unescape values
     ✓ returns empty string if called with falsey value
 
-  13 passing (12ms)
+  13 passing (11ms)
 ```
 
 From now on, each time we publish a new version of the module
@@ -1269,8 +1263,7 @@ jobs: # jobs are made of steps
         CI: true
 ``` 
 
-Let us keep synchronized the version of the test repo with the 
-module repo and push it to github:
+Let us change the version of the test repo and push it to github:
 
 ```
 [~/.../prueba-scapegoat(master)]$ npm version 1.3.3
@@ -1286,6 +1279,7 @@ Now the action runs:
 
 * [actions/checkout](https://github.com/actions/checkout)
 * [actions/setup-node](https://github.com/actions/setup-node)
+* [Installing private npm packages from GitHub Package Registry](https://github.community/t5/GitHub-Actions/Installing-private-npm-packages-from-GitHub-Package-Registry/td-p/38392)
 * [Triggering GitHub Actions across different repositories](https://blog.marcnuri.com/triggering-github-actions-across-different-repositories/)
 * [Triggering by other repository](https://github.community/t5/GitHub-Actions/Triggering-by-other-repository/td-p/30668)
 
