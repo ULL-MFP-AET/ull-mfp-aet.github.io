@@ -998,6 +998,8 @@ This will update the `version` field in `package.json`:
 "1.0.1"
 ```
 
+([jq](https://stedolan.github.io/jq/tutorial/) is a DSL to query JSON data. It is like unix [sed](https://www.gnu.org/software/sed/manual/sed.html) but for JSON)
+
 Then again, make a tag:
 
 ```
