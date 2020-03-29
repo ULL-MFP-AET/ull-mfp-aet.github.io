@@ -511,27 +511,27 @@ jobs: # jobs are made of steps
 
 Here is a brief glossary of terms:
 
-#### Actions:
+#### Actions
 
 **Actions** are the smallest portable building block of a workflow and can be combined as **steps** to create a **job**. You can create your own Actions or use publicly shared Actions from the Marketplace.
 
-#### Event:
+#### Event
 
 **Events** are specific activities that trigger a workflow run. For example, a workflow is triggered when somebody pushes to the repository or when a pull request is created. Events can also be configured to listen to external events using Webhooks.
 
-#### Runner:
+#### Runner
 
 A **runner** is a machine with the Github Actions `runner` application installed. Then `runner` waits for available **jobs** it can then execute. After picking up a job they run the job's **actions** and report the progress and results back to Github. Runners can be hosted on Github or self-hosted on your own machines/servers.
 
-#### Job:
+#### Job
 
 A **job** is made up of multiple steps and runs in an instance of the virtual environment. Jobs can run independently of each other or sequential if the current job depends on the previous job to be successful.
 
-#### Step:
+#### Step
 
 A **step** is a set of tasks that can be executed by a job. Steps can run commands or actions.
 
-#### Workflow:
+#### Workflow
 
 A **Workflow** is an automated process that is made up of one or multiple jobs and can be triggered by an event. Workflows are defined using a YAML file in the `.github/workflows` directory.
 
