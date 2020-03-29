@@ -466,35 +466,36 @@ We fill the contents of `nodejs.yml` with the description of our workflow:
 $ cat .github/workflows/nodejs.yml
 ```
 ```yml
-# This workflow will do a clean install of node dependencies, build the source code and run tests across different versions of node
-# For more information see: https://help.github.com/actions/language-and-framework-guides/using-nodejs-with-github-actions
+[~/.../create-a-npm-module/scapegoat(master)]$ cat .github/workflows/nodejs.yml
+name: CI fro scapegoat module
 
-name: Node.js CI
-
-on:
+on: # when this action should be triggered?
   push:
     branches: [ master ]
   pull_request:
     branches: [ master ]
 
-jobs:
+jobs: # jobs are made of steps
   build:
-
+    # Define the OS our workflow should run on
     runs-on: ubuntu-latest
 
     strategy:
+      # To test across multiple language versions
       matrix:
         node-version: [12.x]
 
-    steps:
+    steps: # Clone the repo. See https://github.com/actions/checkout
     - uses: actions/checkout@v2
-    - name: Use Node.js ${{ "{{ matrix.node-version" }} }}
-      uses: actions/setup-node@v1
+    # Example of using an environment variable
+    - name: Use Node.js ${{ matrix.node-version }} # Will be: "Use Node.js 12.x"
+      uses: actions/setup-node@v1 # Install node. See https://github.com/actions/setup-node
       with:
-        node-version: ${{ "{{ matrix.node-version" }} }}
+        node-version: ${{ matrix.node-version }}
+    # Install a project with a clean slate
     - run: npm ci
-    - run: npm run build --if-present
     - run: npm test
+      # Environment variables
       env:
         CI: true
 ```
@@ -509,14 +510,6 @@ $ git ci -am .github/workflows/nodejs.yml
 
 ```
 $ git push
-Counting objects: 6, done.
-Delta compression using up to 4 threads.
-Compressing objects: 100% (3/3), done.
-Writing objects: 100% (6/6), 837 bytes | 279.00 KiB/s, done.
-Total 6 (delta 1), reused 0 (delta 0)
-remote: Resolving deltas: 100% (1/1), completed with 1 local object.
-To github.com:ULL-ESIT-PL-1920/lexer-generator.git
-   dc093a1..0747861  master -> master
 ```
 
 The action is triggered. Let us go and click on the actions tab in our repo:
@@ -1453,6 +1446,10 @@ Here are the two repos for the scapegoat example:
 * [Configuring npm for use with GitHub Packages](https://help.github.com/en/packages/using-github-packages-with-your-projects-ecosystem/configuring-npm-for-use-with-github-packages)
 * [Authenticating with the GITHUB_TOKEN](https://help.github.com/en/actions/configuring-and-managing-workflows/authenticating-with-the-github_token)
 * [Automatically Publish to npm using GitHub Actions](https://sergiodxa.com/articles/github-actions-npm-publish/)
+
+### GitHub Actions
+
+* [Using Node.js with GitHub Actions](https://help.github.com/actions/language-and-framework-guides/using-nodejs-with-github-actions)
 
 ### Scoped Packages
 
