@@ -468,6 +468,94 @@ Github Actions enables you to create custom software development lifecycle workf
 
 This enables you to include Continues Integration (CI) and continuous deployment (CD) capabilities and many other features directly in your repository.
 
+
+Here is a brief glossary of terms:
+
+#### Actions
+
+**Actions** are the smallest portable building block of a workflow and can be combined as **steps** to create a **job**. You can create your own Actions or use publicly shared Actions from the Marketplace.
+
+#### Event
+
+**Events** are specific activities that trigger a workflow run. For example, a workflow is triggered when somebody pushes to the repository or when a pull request is created. Events can also be configured to listen to external events using Webhooks.
+
+#### Runner
+
+A **runner** is a machine with the Github Actions `runner` application installed. Then `runner` waits for available **jobs** it can then execute. After picking up a job they run the job's **actions** and report the progress and results back to Github. Runners can be hosted on Github or self-hosted on your own machines/servers.
+
+#### Job
+
+A **job** is made up of multiple steps and runs in an instance of the virtual environment. Jobs can run independently of each other or sequential if the current job depends on the previous job to be successful.
+
+#### Step
+
+A **step** is a set of tasks that can be executed by a job. Steps can run commands or actions.
+
+#### Workflow
+
+A **Workflow** is an automated process that is made up of one or multiple jobs and can be triggered by an event. Workflows are defined using a YAML file in the `.github/workflows` directory.
+
+#### Syntax
+
+Github Actions files are written using YAML syntax and have eighter a `.yml` or `.yaml` file extension. Here are the most important concepts for the workflow file.
+
+- Name:
+  - The name of your workflow that is displayed on the Github actions page. If you omit this field, it is set to the file name.
+
+    ```
+    name: CI for scapegoat module
+    ```
+
+- On:
+  - The on keyword defines the Github events that trigger the workflow. You can provide a single event, array or events or a configuration map that schedules a workflow.
+
+    ```
+    on: push
+    ```
+
+    or
+
+    ```
+    on: [pull_request, issues]
+    ```
+
+- Jobs:
+  - A workflow run is made up of one or more jobs. Jobs define the functionality that will be run in the workflow and run in parallel by default.  
+
+    ```yml
+    jobs: 
+      ci-scapegoat:
+        # Define the OS our workflow should run on
+        runs-on: ubuntu-latest
+
+        strategy:
+          # To test across multiple language versions
+          matrix:
+            node-version: [12.x]
+
+        steps: # Clone the repo. See https://github.com/actions/checkout
+        - uses: actions/checkout@v2
+        # Example of using an environment variable
+        - name: Use Node.js ${{ "{{ matrix.node-version" }} }} # Will be: "Use Node.js 12.x"
+          uses: actions/setup-node@v1 # Install node. See https://github.com/actions/setup-node
+          with:
+            node-version: ${{ "{{ matrix.node-version" }} }}
+        # Install a project with a clean slate
+        - run: npm ci
+        - run: npm test
+          # Environment variables
+          env:
+            CI: true
+    ```
+
+- Env:
+  - **Env** defines a map of environment variables that are available to all jobs and steps in the workflow. You can also set environment variables that are only available to a job or step.
+
+  ```
+  env:
+    CI: true
+  ```
+
 ```
 $ mkdir -p .github/workflows
 $ touch .github/workflows/nodejs.yml
@@ -512,33 +600,6 @@ jobs: # jobs are made of steps
       env:
         CI: true
 ```
-
-Here is a brief glossary of terms:
-
-#### Actions
-
-**Actions** are the smallest portable building block of a workflow and can be combined as **steps** to create a **job**. You can create your own Actions or use publicly shared Actions from the Marketplace.
-
-#### Event
-
-**Events** are specific activities that trigger a workflow run. For example, a workflow is triggered when somebody pushes to the repository or when a pull request is created. Events can also be configured to listen to external events using Webhooks.
-
-#### Runner
-
-A **runner** is a machine with the Github Actions `runner` application installed. Then `runner` waits for available **jobs** it can then execute. After picking up a job they run the job's **actions** and report the progress and results back to Github. Runners can be hosted on Github or self-hosted on your own machines/servers.
-
-#### Job
-
-A **job** is made up of multiple steps and runs in an instance of the virtual environment. Jobs can run independently of each other or sequential if the current job depends on the previous job to be successful.
-
-#### Step
-
-A **step** is a set of tasks that can be executed by a job. Steps can run commands or actions.
-
-#### Workflow
-
-A **Workflow** is an automated process that is made up of one or multiple jobs and can be triggered by an event. Workflows are defined using a YAML file in the `.github/workflows` directory.
-
 
 ```
 $ git add .github/workflows/nodejs.yml
