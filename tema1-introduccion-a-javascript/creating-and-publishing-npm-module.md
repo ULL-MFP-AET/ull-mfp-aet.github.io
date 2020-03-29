@@ -1224,7 +1224,7 @@ We also added:
 
 ### Automating the Production Testing with GitHub Actions
 
-We can automate the previous workflow adding a GitHub action:
+We can automate the previous workflow adding a GitHub action inside the `prueba-scapegoat` folder:
 
 ```
 [~/.../prueba-scapegoat(master)]$ tree .github/
@@ -1287,6 +1287,8 @@ Now the action runs:
 
 #### Related References
 
+* [actions/checkout](https://github.com/actions/checkout)
+* [actions/setup-node](https://github.com/actions/setup-node)
 * [Triggering GitHub Actions across different repositories](https://blog.marcnuri.com/triggering-github-actions-across-different-repositories/)
 * [Triggering by other repository](https://github.community/t5/GitHub-Actions/Triggering-by-other-repository/td-p/30668)
 
