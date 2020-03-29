@@ -469,7 +469,7 @@ Github Actions enables you to create custom software development lifecycle workf
 This enables you to include Continues Integration (CI) and continuous deployment (CD) capabilities and many other features directly in your repository.
 
 
-Here is a brief glossary of terms:
+Here is a brief glossary of terms (for more see [Core concepts for GitHub Actions](https://help.github.com/en/actions/getting-started-with-github-actions/core-concepts-for-github-actions)):
 
 #### Actions
 
@@ -618,7 +618,7 @@ The **steps context** contains information about the steps in the current job th
 
 The **runner context** contains information about the runner that is executing the current job.
 
-The **secrets context** access to secrets set in a repository.
+The **secrets context** access to secrets set in a repository. See [Creating and storing encrypted secrets](https://help.github.com/en/actions/configuring-and-managing-workflows/creating-and-storing-encrypted-secrets)
 
 The **strategy context** enables access to the configured strategy parameters and information about the current job.
 
