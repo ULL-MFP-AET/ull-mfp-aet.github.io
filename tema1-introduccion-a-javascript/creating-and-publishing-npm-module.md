@@ -602,6 +602,26 @@ jobs: # jobs are made of steps
         CI: true
 ```
 
+**Contexts** are a way to access information about workflow runs, runner environments, jobs, and steps. Contexts use the expression syntax. See [Context and expression syntax for GitHub Actions](https://help.github.com/en/actions/reference/context-and-expression-syntax-for-github-actions#contexts) at the GitHub Actions Reference.
+
+```
+{{"${{ <context>" }}
+```
+
+The **matrix context** enables access to the matrix parameters you configured for the current job. For example, if you configure a matrix build with the os and node versions, the matrix context object includes the os and node versions of the current job.
+
+The **github context**  contains information about the workflow run and the event that triggered the run. You can read most of the github context data in environment variables.
+
+The **env context** contains environment variables that have been set in a workflow, job, or step. 
+
+The **steps context** contains information about the steps in the current job that have already run.
+
+The **runner context** contains information about the runner that is executing the current job.
+
+The **secretes context** access to secrets set in a repository.
+
+The **strategy context** enables access to the configured strategy parameters and information about the current job.
+
 ```
 $ git add .github/workflows/nodejs.yml
 $ git ci -am .github/workflows/nodejs.yml
