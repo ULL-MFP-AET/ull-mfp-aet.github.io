@@ -1017,7 +1017,8 @@ npm notice 📦  @ULL-ESIT-PL-1920/lexer-generator@1.0.1
 ## Testing in Production
 
 Once more we have to test the publication, now in Production mode 
-To automate the testing process, we create a separated project:
+To automate the testing process, we create a separated project 
+in a sibling folder of the folder containing the module repo:
 
 ```
 $ ls -l
@@ -1166,6 +1167,24 @@ prueba-scapegoat@1.0.0 /Users/casiano/local/src/javascript/evalua-module/create-
 ...
 ```
 
+### Set production:test Script on the Module Folder
+
+Now that the directory hierarchy has been settled, each time we want to test our module in production we have to `cd ../prueba-scapegoat; npm test`. 
+
+Inside the `scapegoat` directory we add a new task `production:test` to the  `package.json` for this:
+
+```
+[~/.../create-a-npm-module/scapegoat(master)]$ jq .scripts package.json
+{
+  "test": "mocha --reporter spec",
+  "doc": "documentation build index.js -f html -o docs",
+  "serve:doc": "http-server docs/ -o",
+  "commit": "npm run doc; git add docs; git ci -am `jq .version package.json`",
+  "push": "npm run commit; git push",
+  "production:test": "cd ../prueba-scapegoat && npm test"
+}
+```
+
 ### Automating the Production Testing with GitHub Actions
 
 We can automate the previous workflow adding a GitHub action:
@@ -1232,7 +1251,7 @@ Now the action runs:
 * [Triggering GitHub Actions across different repositories](https://blog.marcnuri.com/triggering-github-actions-across-different-repositories/)
 * [Triggering by other repository](https://github.community/t5/GitHub-Actions/Triggering-by-other-repository/td-p/30668)
 
-### Making a Project with the two repos
+### Making a Project with the two repos: git submodule
 
 In some occasions, like in this one, it is convenient to have different repos together.
 
@@ -1372,6 +1391,8 @@ Here are the two repos for the scapegoat example:
 * [Example in ULL-ESIT-DSI-1617/create-a-npm-module](https://github.com/ULL-ESIT-DSI-1617/create-a-npm-module)
   - [Submodule ULL-ESIT-DSI-1617/scapegoat](https://github.com/ULL-ESIT-DSI-1617/scapegoat)
   - [Submodule ULL-ESIT-DSI-1617/prueba-scapegoat](https://github.com/ULL-ESIT-DSI-1617/prueba-scapegoat)
+
+
 
 ## References
 
