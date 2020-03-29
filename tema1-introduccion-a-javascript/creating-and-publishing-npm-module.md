@@ -135,6 +135,13 @@ Email: (this IS public) crguezl@ull.edu.es
 Logged in as crguezl on https://npm.pkg.github.com/.
 ```
       
+This will save it in your `~/.npmrc` configuration file:
+
+```
+@ULL-ESIT-PL-1920:registry=https://npm.pkg.github.com
+//npm.pkg.github.com/:_authToken=<your-token>
+```
+
  * [Veáse la sección *GitHub Package Registry* de estos apuntes](github-registry)
 
 ## Create a node module
