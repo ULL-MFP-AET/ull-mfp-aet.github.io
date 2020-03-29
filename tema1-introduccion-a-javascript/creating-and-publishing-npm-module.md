@@ -605,7 +605,7 @@ jobs: # jobs are made of steps
 **Contexts** are a way to access information about workflow runs, runner environments, jobs, and steps. Contexts use the expression syntax. See [Context and expression syntax for GitHub Actions](https://help.github.com/en/actions/reference/context-and-expression-syntax-for-github-actions#contexts) at the GitHub Actions Reference.
 
 ```
-{{ $"{{ <context>" }} }}
+${{ "{{ <context>" }} }}
 ```
 
 The **matrix context** enables access to the matrix parameters you configured for the current job. For example, if you configure a matrix build with the os and node versions, the matrix context object includes the os and node versions of the current job.
