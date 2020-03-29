@@ -488,10 +488,10 @@ jobs: # jobs are made of steps
     steps: # Clone the repo. See https://github.com/actions/checkout
     - uses: actions/checkout@v2
     # Example of using an environment variable
-    - name: Use Node.js ${{ matrix.node-version }} # Will be: "Use Node.js 12.x"
+    - name: Use Node.js {{ "${{ matrix.node-version" }} }} # Will be: "Use Node.js 12.x"
       uses: actions/setup-node@v1 # Install node. See https://github.com/actions/setup-node
       with:
-        node-version: ${{ matrix.node-version }}
+        node-version: {{ "${{ matrix.node-version" }} }}
     # Install a project with a clean slate
     - run: npm ci
     - run: npm test
