@@ -1201,6 +1201,8 @@ Inside the `scapegoat` directory we add a new task `production:test` to the  `pa
 
 ```
 [~/.../create-a-npm-module/scapegoat(master)]$ jq .scripts package.json
+```
+```js
 {
   "test": "mocha --reporter spec",
   "doc": "documentation build index.js -f html -o docs",
