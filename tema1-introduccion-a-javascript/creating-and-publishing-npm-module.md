@@ -277,10 +277,9 @@ module.exports = {
 ### Testing with Mocha and Chai
 
 Next, we'll surely want to write some tests. *Perhaps it would have been
-preferable to write them first.* Regardless, I prefer to use the
+preferable to write them first.* Here we are going to use the
 [Mocha](https://mochajs.org/) and
-[Chai](http://chaijs.com/) frameworks, but you can use whatever you
-like. 
+[Chai](http://chaijs.com/) frameworks. 
 
 These can be installed and persisted to the `package.json` file
 with the following commands. *Note that they are added to the
