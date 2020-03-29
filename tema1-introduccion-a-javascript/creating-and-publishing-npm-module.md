@@ -488,10 +488,10 @@ jobs: # jobs are made of steps
     steps: # Clone the repo. See https://github.com/actions/checkout
     - uses: actions/checkout@v2
     # Example of using an environment variable
-    - name: Use Node.js {{ "${{ matrix.node-version" }} }} # Will be: "Use Node.js 12.x"
+    - name: Use Node.js ${{ "{{ matrix.node-version" }} }} # Will be: "Use Node.js 12.x"
       uses: actions/setup-node@v1 # Install node. See https://github.com/actions/setup-node
       with:
-        node-version: {{ "${{ matrix.node-version" }} }}
+        node-version: ${{ "{{ matrix.node-version" }} }}
     # Install a project with a clean slate
     - run: npm ci
     - run: npm test
@@ -512,7 +512,7 @@ $ git ci -am .github/workflows/nodejs.yml
 $ git push
 ```
 
-The action is triggered. Let us go and click on the actions tab in our repo:
+The action is triggered. Let us go and click on the **actions tab** in our repo:
 
 ![]({{site.baseurl}}/assets/images/github-actions-1-click.png)
 
@@ -1215,7 +1215,7 @@ We also added:
 2. `"patch:publish": "npm run patch; git push; npm publish"` to change the patch number, push the changes to GitHub and publish the repo 
 3. `"patch:publish:production:test": "npm run patch:publish; npm run production:test"` to publish the module and run the tests in production mode
 
-### Automating the Production Testing with GitHub Actions
+### CI the Production Testing with GitHub Actions
 
 We can automate the previous workflow adding a GitHub action inside the `prueba-scapegoat` folder:
 
@@ -1256,10 +1256,10 @@ jobs: # jobs are made of steps
     steps: # See https://github.com/actions/checkout
     - uses: actions/checkout@v2
     # Example of using an environment variable
-    - name: Use Node.js ${{ matrix.node-version }} # Will be: "Use Node.js 12.x"
+    - name: Use Node.js ${{ "{{ matrix.node-version" }} }} # Will be: "Use Node.js 12.x"
       uses: actions/setup-node@v1 # See https://github.com/actions/setup-node
       with:
-        node-version: ${{ matrix.node-version }}
+        node-version: ${{ "{{ matrix.node-version" }} }}
     - run: npm test
       env:
         CI: true
