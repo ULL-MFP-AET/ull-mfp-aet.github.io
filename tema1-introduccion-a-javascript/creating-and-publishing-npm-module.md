@@ -618,7 +618,7 @@ The **steps context** contains information about the steps in the current job th
 
 The **runner context** contains information about the runner that is executing the current job.
 
-The **secretes context** access to secrets set in a repository.
+The **secrets context** access to secrets set in a repository.
 
 The **strategy context** enables access to the configured strategy parameters and information about the current job.
 
