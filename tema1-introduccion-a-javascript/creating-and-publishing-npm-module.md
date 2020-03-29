@@ -636,8 +636,6 @@ To create a secret:
     
 *   Click **Add secret**.
 
-The **strategy context** enables access to the configured strategy parameters and information about the current job.
-
 To use a secret:
 
 ```
@@ -648,6 +646,9 @@ steps:
     env: # Or as an environment variable
       super_secret: ${{ secrets.SuperSecret }}
 ```
+
+The **strategy context** enables access to the configured strategy parameters and information about the current job.
+
 
 Let us continue adding our action to the control version:
 
