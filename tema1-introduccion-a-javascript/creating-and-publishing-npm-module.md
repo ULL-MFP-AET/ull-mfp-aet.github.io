@@ -618,9 +618,38 @@ The **steps context** contains information about the steps in the current job th
 
 The **runner context** contains information about the runner that is executing the current job.
 
-The **secrets context** access to secrets set in a repository. See [Creating and storing encrypted secrets](https://help.github.com/en/actions/configuring-and-managing-workflows/creating-and-storing-encrypted-secrets)
+The **secrets context** access to secrets set in a repository. See [Creating and storing encrypted secrets](https://help.github.com/en/actions/configuring-and-managing-workflows/creating-and-storing-encrypted-secrets). 
+
+To create a secret:
+
+*   On GitHub, navigate to the main page of the repository.
+    
+*   Under your repository name, click **Settings**.
+    
+    ![Repository settings button](https://help.github.com/assets/images/help/repository/repo-actions-settings.png)
+    
+*   In the left sidebar, click **Secrets**.
+    
+*   Type a name for your secret in the "Name" input box.
+    
+*   Type the value for your secret.
+    
+*   Click **Add secret**.
 
 The **strategy context** enables access to the configured strategy parameters and information about the current job.
+
+To use a secret:
+
+```
+steps:
+  - name: Hello world action
+    with: # Set the secret as an input
+      super_secret: ${{ secrets.SuperSecret }}
+    env: # Or as an environment variable
+      super_secret: ${{ secrets.SuperSecret }}
+```
+
+Let us continue adding our action to the control version:
 
 ```
 $ git add .github/workflows/nodejs.yml
