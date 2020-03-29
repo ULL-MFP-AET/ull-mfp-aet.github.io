@@ -1208,9 +1208,9 @@ Inside the `scapegoat` directory we add a new task `production:test` to the  `pa
   "commit": "npm run doc; git add docs; git ci -am `jq .version package.json`",
   "push": "npm run commit; git push",
   "production:test": "cd ../prueba-scapegoat && npm test",
-  "patch": "npm version patch",
-  "patch:publish": "npm run patch && npm publish",
-  "patch:publish:test": "npm run patch:publish && npm run production:test"
+  "patch": "npm run commit; npm version patch",
+  "patch:publish": "npm run patch; git push; npm publish",
+  "patch:publish:test": "npm run patch:publish; npm run production:test"
 }
 ```
 
