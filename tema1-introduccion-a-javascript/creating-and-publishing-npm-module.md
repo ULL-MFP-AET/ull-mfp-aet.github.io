@@ -502,6 +502,8 @@ $ mkdir -p .github/workflows
 $ touch .github/workflows/nodejs.yml
 ```
 
+#### Syntax of the .yml File
+
 Github Actions files are written using YAML syntax and have either a `.yml` or `.yaml` file extension. Here are the most important concepts for the workflow file.
 
 - Name:
@@ -561,6 +563,7 @@ Github Actions files are written using YAML syntax and have either a `.yml` or `
     CI: true
   ```
 
+#### Our CI Action
 
 We fill the contents of `nodejs.yml` with the description of our workflow:
 
@@ -602,6 +605,8 @@ jobs: # jobs are made of steps
         CI: true
 ```
 
+#### Contexts
+
 **Contexts** are a way to access information about workflow runs, runner environments, jobs, and steps. Contexts use the expression syntax. See [Context and expression syntax for GitHub Actions](https://help.github.com/en/actions/reference/context-and-expression-syntax-for-github-actions#contexts) at the GitHub Actions Reference.
 
 ```
@@ -617,6 +622,10 @@ The **env context** contains environment variables that have been set in a workf
 The **steps context** contains information about the steps in the current job that have already run.
 
 The **runner context** contains information about the runner that is executing the current job.
+
+The **strategy context** enables access to the configured strategy parameters and information about the current job.
+
+#### The Secrets Context
 
 The **secrets context** access to secrets set in a repository. See [Creating and storing encrypted secrets](https://help.github.com/en/actions/configuring-and-managing-workflows/creating-and-storing-encrypted-secrets). 
 
@@ -647,12 +656,14 @@ steps:
       super_secret: {{ "${{ secrets.SuperSecret" }} }}
 ```
 
-The **strategy context** enables access to the configured strategy parameters and information about the current job.
+#### GITHUB_TOKEN
 
 GitHub automatically creates a **GITHUB_TOKEN** secret to use in your workflow. You can use the `GITHUB_TOKEN` to authenticate in a workflow run.
 
 When you enable GitHub Actions, GitHub installs a GitHub App on your repository. The `GITHUB_TOKEN` secret is a GitHub App installation access token. You can use the installation access token to authenticate on behalf of the GitHub App installed on your repository. **The token's permissions are limited to the repository that contains your workflow**.
 For more see [Authenticating with the GITHUB_TOKEN](https://help.github.com/en/actions/configuring-and-managing-workflows/authenticating-with-the-github_token)
+
+#### Example: Setting CI for our npm Module
 
 Let us continue adding our action to the control version:
 
