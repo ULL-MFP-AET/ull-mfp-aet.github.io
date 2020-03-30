@@ -516,7 +516,7 @@ The Github Actions Editor is quite clever:  Auto-complete can be triggered with 
 
 Auto-complete works even inside [expressions](https://help.github.com/en/articles/contexts-and-expression-syntax-for-github-actions)
 
-![](https://i2.wp.com/user-images.githubusercontent.com/50486/65709573-66239b00-e091-11e9-8d8b-339e30b85072.gif?resize=623%2C430&ssl=1)
+![](https://i1.wp.com/user-images.githubusercontent.com/50486/65709600-76d41100-e091-11e9-9396-d75e08d6744e.png?resize=1028%2C510&ssl=1)
 
 #### Syntax of the .yml File
 
@@ -710,10 +710,12 @@ Observe that by clicking on the dots on the right side you can view the raw logs
 
 #### References
 
+* Section [GitHub Actions to build, package, and publish Node.js modules to the NPM and GitHub package registries](github-action-npm-publish) of this notes
 * [An Introduction to Github Actions](https://gabrieltanner.org/blog/an-introduction-to-github-actions)
 * [Using GitHub Actions](/https://youtu.be/9O2sLm1Boxc) Youtube video explainig how to test and publish an npm module to both GH Registry and npm Registry
 * [About the editor for GitHub Actions](https://github.blog/2019-10-01-new-workflow-editor-for-github-actions/)
-
+* Install [VSCode extension providing Github Actions YAML support](https://github.com/Lona/vscode-github-actions)
+* [Getting Started with GitHub Actions in Visual Studio](https://devblogs.microsoft.com/visualstudio/getting-started-with-github-actions-in-visual-studio/)
 
 ### Documentation and README.md
 

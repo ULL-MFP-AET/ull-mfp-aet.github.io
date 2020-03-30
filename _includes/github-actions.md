@@ -1,5 +1,4 @@
 
-
 GitHub Actions enables you to create custom software development life cycle (SDLC) workflows directly in your GitHub repository.
 
 With GitHub Actions you can build end-to-end continuous integration (CI) and continuous deployment (CD) capabilities directly in your repository. GitHub Actions powers GitHub's built-in continuous integration service. 
