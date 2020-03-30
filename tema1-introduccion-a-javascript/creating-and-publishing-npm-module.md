@@ -499,12 +499,24 @@ A **step** is a set of tasks that can be executed by a job. Steps can run comman
 
 A **Workflow** is an automated process that is made up of one or multiple jobs and can be triggered by an event. Workflows are defined using a YAML file in the `.github/workflows` directory.
 
-Workflows can be created inside the `.github/workflows` directory by adding a `.yml` workflow file. Here we do:
+Workflows can be created inside the `.github/workflows` directory by adding a `.yml` workflow file. Here in the terminal we do:
 
 ```
 $ mkdir -p .github/workflows
 $ touch .github/workflows/nodejs.yml
 ```
+
+and use our favourite editor.
+
+But we can also use the GitHub Interface. 
+
+The Github Actions Editor is quite clever:  Auto-complete can be triggered with **Ctrl+Space** almost anywhere. 
+
+![](https://i2.wp.com/user-images.githubusercontent.com/50486/65709573-66239b00-e091-11e9-8d8b-339e30b85072.gif?resize=623%2C430&ssl=1)
+
+Auto-complete works even inside [expressions](https://help.github.com/en/articles/contexts-and-expression-syntax-for-github-actions)
+
+![](https://i2.wp.com/user-images.githubusercontent.com/50486/65709573-66239b00-e091-11e9-8d8b-339e30b85072.gif?resize=623%2C430&ssl=1)
 
 #### Syntax of the .yml File
 
