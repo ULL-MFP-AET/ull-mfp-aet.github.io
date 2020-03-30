@@ -7,6 +7,7 @@ Workflows run in Linux, macOS, Windows, and containers on GitHub-hosted servers.
 
 * Section [GitHub Actions to build, package, and publish Node.js modules to the NPM and GitHub package registries]({{site.baseurl}}/tema1-introduccion-a-javascript/github-action-npm-publish) of this notes
 
+* [GitHub Actions for JavaScript and TypeScript](https://help.github.com/en/actions/language-and-framework-guides/github-actions-for-javascript-and-typescript)
 
 *   [About GitHub Actions](https://help.github.com/en/github/automating-your-workflow-with-github-actions/#about-github-actions)
 

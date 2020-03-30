@@ -672,6 +672,49 @@ steps:
       super_secret: {{ "${{ secrets.SuperSecret" }} }}
 ```
 
+For example, to write a github action to publish a npm package in the npm registry
+I surely need to give GitHub a token so that it can work on my name and publish 
+the package. Thus, the procedure will be:
+
+1. You create a token for [npm](https://docs.npmjs.com/creating-and-viewing-authentication-tokens) with read and publish permits:
+   
+   ```
+    [~/.../lexer-generator(master)]$ npm token create
+    npm password:
+    ┌────────────────┬──────────────────────────────────────┐
+    │ token          │ blah-blah-blah-blah-blahblahblah     │
+    ├────────────────┼──────────────────────────────────────┤
+    │ cidr_whitelist │                                      │
+    ├────────────────┼──────────────────────────────────────┤
+    │ readonly       │ false                                │
+    ├────────────────┼──────────────────────────────────────┤
+    │ created        │ 2020-03-30T15:39:01.799Z             │
+    │ created        │ 2020-03-30T15:39:01.799Z             │
+    └────────────────┴──────────────────────────────────────┘
+  ```
+
+3. Set the secret in the secrets section of our repo
+4. Make the secret accesible to the action via the secrets context
+
+```yml
+jobs:
+  build:
+    ...
+  publish-npm:
+    needs: build
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions/setup-node@v1
+        with:
+          node-version: 12
+          registry-url: https://registry.npmjs.org/
+      - run: npm ci
+      - run: npm publish
+        env:
+          NODE_AUTH_TOKEN: ${{secrets.npm_token}}
+```
+
 #### GITHUB_TOKEN
 
 GitHub automatically creates a **GITHUB_TOKEN** secret to use in your workflow. You can use the `GITHUB_TOKEN` to authenticate in a workflow run.
@@ -1614,7 +1657,6 @@ Here are the two repos for the scapegoat example:
   - [Submodule ULL-ESIT-DSI-1617/prueba-scapegoat](https://github.com/ULL-ESIT-DSI-1617/prueba-scapegoat)
 
 
-
 ## References
 
 ### npm packages
@@ -1626,7 +1668,8 @@ Here are the two repos for the scapegoat example:
 * [Package.json documentation en npm site](https://docs.npmjs.com/files/package.json)
 * [A Simple Guide to Publishing an npm Package](https://medium.com/@TeeFouad/a-simple-guide-to-publishing-an-npm-package-506dd7f3c47a) by Mostafa Fouad
 
-)
+
+
 ### GitHub packages
 
 * [About GitHub Packages](https://help.github.com/en/packages/publishing-and-managing-packages/about-github-packages)

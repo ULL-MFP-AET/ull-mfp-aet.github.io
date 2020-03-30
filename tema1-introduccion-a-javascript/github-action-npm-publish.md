@@ -91,3 +91,15 @@ Runs your workflow anytime the `release` event occurs. More than one activity ty
 </tr>
 </tbody>
 </table>
+
+For example, you can run a workflow when a release has been published.
+
+```yml
+on:
+  release:
+    types: [published]
+```
+
+## npm tokens
+
+* [Creating and viewing authentication tokens](https://docs.npmjs.com/creating-and-viewing-authentication-tokens)
