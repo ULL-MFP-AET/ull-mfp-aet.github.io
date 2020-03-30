@@ -466,7 +466,7 @@ command.
   13 passing (17ms)
 ```
 
-### Continuous Integration (CI) with GitHub Actions
+### GitHub Actions: An Introduction
 
 Github Actions enables you to create custom software development lifecycle workflows directly in your Github repository. These workflows are made out of different tasks so-called actions that can be run automatically on certain events.
 
@@ -579,47 +579,6 @@ Github Actions files are written using YAML syntax and have either a `.yml` or `
     CI: true
   ```
 
-#### Our CI Action
-
-We fill the contents of `nodejs.yml` with the description of our workflow:
-
-```
-$ cat .github/workflows/nodejs.yml
-```
-```yml
-[~/.../create-a-npm-module/scapegoat(master)]$ cat .github/workflows/nodejs.yml
-name: CI for scapegoat module
-
-on: # when this action should be triggered?
-  push:
-    branches: [ master ]
-  pull_request:
-    branches: [ master ]
-
-jobs: # jobs are made of steps
-  build:
-    # Define the OS our workflow should run on
-    runs-on: ubuntu-latest
-
-    strategy:
-      # To test across multiple language versions
-      matrix:
-        node-version: [12.x]
-
-    steps: # Clone the repo. See https://github.com/actions/checkout
-    - uses: actions/checkout@v2
-    # Example of using an environment variable
-    - name: Use Node.js ${{ "{{ matrix.node-version" }} }} # Will be: "Use Node.js 12.x"
-      uses: actions/setup-node@v1 # Install node. See https://github.com/actions/setup-node
-      with:
-        node-version: ${{ "{{ matrix.node-version" }} }}
-    # Install a project with a clean slate
-    - run: npm ci
-    - run: npm test
-      # Environment variables
-      env:
-        CI: true
-```
 
 #### Contexts
 
@@ -693,10 +652,14 @@ the package. Thus, the procedure will be:
     └────────────────┴──────────────────────────────────────┘
   ```
 
-3. Set the secret in the secrets section of your repo
+3. Set the secret token in the secrets section of your repo with name for example `npm_token`
 4. Make the secret accesible to the GitHub Action via the `secrets` context
 
 ```yml
+name: Node.js Package
+on:
+  release:
+    types: [created]
 jobs:
   build:
     ...
@@ -712,7 +675,7 @@ jobs:
       - run: npm ci
       - run: npm publish
         env:
-          NODE_AUTH_TOKEN: ${{secrets.npm_token}}
+          NODE_AUTH_TOKEN: ${{ "{{secrets.npm_token" }} }}
 ```
 
 #### GITHUB_TOKEN
@@ -746,10 +709,59 @@ jobs:
       - run: npm ci
       - run: npm publish
         env:
-          NODE_AUTH_TOKEN: ${{secrets.GITHUB_TOKEN}}
+          NODE_AUTH_TOKEN: ${{ "{{secrets.GITHUB_TOKEN" }} }}
 ```
 
-#### Example: Setting CI for our npm Module
+#### References
+
+* Section [GitHub Actions to build, package, and publish Node.js modules to the NPM and GitHub package registries](github-action-npm-publish) of this notes
+* [An Introduction to Github Actions](https://gabrieltanner.org/blog/an-introduction-to-github-actions)
+* [Using GitHub Actions](/https://youtu.be/9O2sLm1Boxc) Youtube video explainig how to test and publish an npm module to both GH Registry and npm Registry
+* [About the editor for GitHub Actions](https://github.blog/2019-10-01-new-workflow-editor-for-github-actions/)
+* Install [VSCode extension providing Github Actions YAML support](https://github.com/Lona/vscode-github-actions)
+* [Getting Started with GitHub Actions in Visual Studio](https://devblogs.microsoft.com/visualstudio/getting-started-with-github-actions-in-visual-studio/)
+
+### Example: Setting CI for our npm Module
+
+We fill the contents of `nodejs.yml` with the description of our workflow:
+
+```
+$ cat .github/workflows/nodejs.yml
+```
+```yml
+[~/.../create-a-npm-module/scapegoat(master)]$ cat .github/workflows/nodejs.yml
+name: CI for scapegoat module
+
+on: # when this action should be triggered?
+  push:
+    branches: [ master ]
+  pull_request:
+    branches: [ master ]
+
+jobs: # jobs are made of steps
+  build:
+    # Define the OS our workflow should run on
+    runs-on: ubuntu-latest
+
+    strategy:
+      # To test across multiple language versions
+      matrix:
+        node-version: [12.x]
+
+    steps: # Clone the repo. See https://github.com/actions/checkout
+    - uses: actions/checkout@v2
+    # Example of using an environment variable
+    - name: Use Node.js ${{ "{{ matrix.node-version" }} }} # Will be: "Use Node.js 12.x"
+      uses: actions/setup-node@v1 # Install node. See https://github.com/actions/setup-node
+      with:
+        node-version: ${{ "{{ matrix.node-version" }} }}
+    # Install a project with a clean slate
+    - run: npm ci
+    - run: npm test
+      # Environment variables
+      env:
+        CI: true
+```
 
 Let us continue adding our action to the control version:
 
@@ -778,14 +790,6 @@ The action is triggered. Let us go and click on the **actions tab** in our repo:
 
 Observe that by clicking on the dots on the right side you can view the raw logs
 
-#### References
-
-* Section [GitHub Actions to build, package, and publish Node.js modules to the NPM and GitHub package registries](github-action-npm-publish) of this notes
-* [An Introduction to Github Actions](https://gabrieltanner.org/blog/an-introduction-to-github-actions)
-* [Using GitHub Actions](/https://youtu.be/9O2sLm1Boxc) Youtube video explainig how to test and publish an npm module to both GH Registry and npm Registry
-* [About the editor for GitHub Actions](https://github.blog/2019-10-01-new-workflow-editor-for-github-actions/)
-* Install [VSCode extension providing Github Actions YAML support](https://github.com/Lona/vscode-github-actions)
-* [Getting Started with GitHub Actions in Visual Studio](https://devblogs.microsoft.com/visualstudio/getting-started-with-github-actions-in-visual-studio/)
 
 ### Documentation and README.md
 
