@@ -204,7 +204,7 @@ Executing the following command will create a `package.json` file:
 
 Have a look to see what the file contains; it is pretty human-readable.
 Further details and explanation of the contents of the `package.json` file
-can be found at <https://npmjs.org/doc/json.html>. 
+can be found at <https://docs.npmjs.com/files/package.json>. 
 
 Our initial version
 looks like the following, but we'll be updating this further as we go
