@@ -171,63 +171,94 @@ A **runner** is a machine with the Github Actions `runner` application installed
 
 Github Actions files are written using YAML syntax and have either a `.yml` or `.yaml` file extension. Here are the most important concepts for the workflow file.
 
-- Name:
-  - The name of your workflow that is displayed on the Github actions page. If you omit this field, it is set to the file name.
+### Name:
+
+The name of your workflow that is displayed on the Github actions page. If you omit this field, it is set to the file name.
 
     ```
     name: CI for scapegoat module
     ```
 
-- On:
-  - The on keyword defines the Github events that trigger the workflow. You can provide a single event, array or events or a configuration map that schedules a workflow.
+### On:
 
-    ```
-    on: push
-    ```
+The `on` keyword defines the Github events that trigger the workflow. You can provide a single event, array or events or a configuration map that schedules a workflow.
 
-    or
+```
+on: push
+```
 
-    ```
-    on: [pull_request, issues]
-    ```
+or
 
-- Jobs:
-  - A workflow run is made up of one or more jobs. Jobs define the functionality that will be run in the workflow and run in parallel by default.  
+```
+on: [pull_request, issues]
+```
 
-    ```yml
-    jobs: 
-      ci-scapegoat:
-        # Define the OS our workflow should run on
-        runs-on: ubuntu-latest
+### Jobs:
 
-        strategy:
-          # To test across multiple language versions
-          matrix:
-            node-version: [12.x]
+A workflow run is made up of one or more jobs. Jobs define the functionality that will be run in the workflow and run in parallel by default.  
 
-        steps: # Clone the repo. See https://github.com/actions/checkout
-        - uses: actions/checkout@v2
-        # Example of using an environment variable
-        - name: Use Node.js ${{ "{{ matrix.node-version" }} }} # Will be: "Use Node.js 12.x"
-          uses: actions/setup-node@v1 # Install node. See https://github.com/actions/setup-node
-          with:
-            node-version: ${{ "{{ matrix.node-version" }} }}
-        # Install a project with a clean slate
-        - run: npm ci
-        - run: npm test
-          # Environment variables
-          env:
-            CI: true
-    ```
+```yml
+jobs: 
+    ci-scapegoat:
+    # Define the OS our workflow should run on
+    runs-on: ubuntu-latest
 
-- Env:
-  - **Env** defines a map of environment variables that are available to all jobs and steps in the workflow. You can also set environment variables that are only available to a job or step.
+    strategy:
+        # To test across multiple language versions
+        matrix:
+        node-version: [12.x]
 
-  ```
-  env:
-    CI: true
-  ```
+    steps: # Clone the repo. See https://github.com/actions/checkout
+    - uses: actions/checkout@v2
+    # Example of using an environment variable
+    - name: Use Node.js ${{ "{{ matrix.node-version" }} }} # Will be: "Use Node.js 12.x"
+        uses: actions/setup-node@v1 # Install node. See https://github.com/actions/setup-node
+        with:
+        node-version: ${{ "{{ matrix.node-version" }} }}
+    # Install a project with a clean slate
+    - run: npm ci
+    - run: npm test
+        # Environment variables
+        env:
+        CI: true
+```
 
+###Env:
+
+**Env** defines a map of environment variables that are available to all jobs and steps in the workflow. You can also set environment variables that are only available to a job or step.
+
+```
+env:
+CI: true
+```
+
+### steps.with
+
+A map of the `input` parameters defined by the action. 
+Each `input` parameter is a `key/value` pair. 
+
+Input parameters are set as environment variables. 
+
+The variable is prefixed with `INPUT_` and converted to upper case.
+
+**Example**
+
+Defines the three input parameters (`first_name`, `middle_name`, and `last_name`) 
+defined by the `hello_world` action. 
+
+These input variables will be accessible to the `hello-world` action as `INPUT_FIRST_NAME`, `INPUT_MIDDLE_NAME`, and `INPUT_LAST_NAME` environment variables.
+
+```yml
+jobs:
+  my_first_job:
+    steps:
+      - name: My first step
+        uses: actions/hello_world@master
+        with:
+          first_name: Mona
+          middle_name: The
+          last_name: Octocat    
+```
 
 ## Contexts
 
