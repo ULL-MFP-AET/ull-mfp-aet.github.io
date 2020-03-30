@@ -154,11 +154,13 @@ The metadata filename must be either `action.yml` or `action.yaml`.
 </tr>
 </tbody>
 </table>
+
+
+Here you can find instructions [if you want to develop an action for other people to use](https://help.github.com/en/actions/building-actions/about-actions)
+
 ## Event
 
 **Events** are specific activities that trigger a workflow run. For example, a workflow is triggered when somebody pushes to the repository or when a pull request is created. Events can also be configured to listen to external events using Webhooks.
-
-Here you can find instructions [if you want to develop an action for other people to use](https://help.github.com/en/actions/building-actions/about-actions)
 
 ## Runner
 
