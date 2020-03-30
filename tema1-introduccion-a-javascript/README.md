@@ -12,8 +12,6 @@
 
 ## [Jekyll](jekyll)
 
-## [Travis](travis)
-
 ## [JAM](jam)
 
 ## [TypeScript](typescript)
