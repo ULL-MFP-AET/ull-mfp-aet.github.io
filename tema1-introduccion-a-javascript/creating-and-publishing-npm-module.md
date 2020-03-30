@@ -695,7 +695,7 @@ Observe that by clicking on the dots on the right side you can view the raw logs
 #### References
 
 * [An Introduction to Github Actions](https://gabrieltanner.org/blog/an-introduction-to-github-actions)
-* [Using GitHub Actions](/https://youtu.be/9O2sLm1Boxc) Youtube video explainig how to test and publish an npm module
+* [Using GitHub Actions](/https://youtu.be/9O2sLm1Boxc) Youtube video explainig how to test and publish an npm module to both GH Registry and npm Registry
 
 ### Documentation and README.md
 
