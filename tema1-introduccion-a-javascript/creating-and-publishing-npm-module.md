@@ -1,4 +1,4 @@
-# Creating and publishing a node.js module en GitHub y en NPM
+# Creating and publishing a node.js module in GitHub and NPM Registries
 
 Creating a node module and publishing it to npm is a fairly
 straightforward process. Haven't done it yet? Not sure what I'm talking
@@ -304,15 +304,19 @@ practices, we'll want to keep the `node_modules` folder out of the git
 repository. 
 
 We can do that by adding a `.gitignore` file to our project
-root, with the following contents.
+root, with the following contents:
 
     node_modules
 
-It also created `package-lock.json` containing a detailed description of all the dependences. We add this file to the control version:
+To build a `.gitignore` see also [http://gitignore.io/](http://gitignore.io/).
+
+The `npm install` command also created `package-lock.json` containing a detailed description of all the dependences. We add this file to the control version:
 
     git add package-lock.json
 
-See also [http://gitignore.io/](http://gitignore.io/).
+[package-lock.json](https://docs.npmjs.com/configuring-npm/package-lock-json.html)
+describes the exact tree that was generated, such that subsequent installs are able to generate identical trees, regardless of intermediate dependency updates.
+
 
 ### Writing the tests
 
