@@ -700,6 +700,8 @@ Observe that by clicking on the dots on the right side you can view the raw logs
 
 * [An Introduction to Github Actions](https://gabrieltanner.org/blog/an-introduction-to-github-actions)
 * [Using GitHub Actions](/https://youtu.be/9O2sLm1Boxc) Youtube video explainig how to test and publish an npm module to both GH Registry and npm Registry
+* [About the editor for GitHub Actions](https://github.blog/2019-10-01-new-workflow-editor-for-github-actions/)
+
 
 ### Documentation and README.md
 
