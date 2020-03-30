@@ -693,8 +693,8 @@ the package. Thus, the procedure will be:
     └────────────────┴──────────────────────────────────────┘
   ```
 
-3. Set the secret in the secrets section of our repo
-4. Make the secret accesible to the action via the secrets context
+3. Set the secret in the secrets section of your repo
+4. Make the secret accesible to the GitHub Action via the `secrets` context
 
 ```yml
 jobs:
@@ -721,6 +721,33 @@ GitHub automatically creates a **GITHUB_TOKEN** secret to use in your workflow. 
 
 When you enable GitHub Actions, GitHub installs a GitHub App on your repository. The `GITHUB_TOKEN` secret is a GitHub App installation access token. You can use the installation access token to authenticate on behalf of the GitHub App installed on your repository. **The token's permissions are limited to the repository that contains your workflow**.
 For more see [Authenticating with the GITHUB_TOKEN](https://help.github.com/en/actions/configuring-and-managing-workflows/authenticating-with-the-github_token)
+
+For example, when the repo contains and npm module and 
+we want to write a github action to publish the npm package in the GitHub Package Registry
+it is enough to use the `GITHUB_TOKEN` secret. 
+
+Thus, this is enough to do the job:
+
+```
+jobs:
+  build:
+    ...
+  publish-npm:
+    ...
+  publish-gpr:
+    needs: build
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions/setup-node@v1
+        with:
+          node-version: 12
+          registry-url: https://npm.pkg.github.com/
+      - run: npm ci
+      - run: npm publish
+        env:
+          NODE_AUTH_TOKEN: ${{secrets.GITHUB_TOKEN}}
+```
 
 #### Example: Setting CI for our npm Module
 
