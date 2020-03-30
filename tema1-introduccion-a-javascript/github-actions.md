@@ -126,6 +126,16 @@ There are two types of actions:
 1. Docker container and 
 2. JavaScript actions
 
+Actions require a metadata file to define the 
+
+1. inputs, 
+2. outputs and 
+3. main entrypoint 
+
+for your action. 
+
+The metadata filename must be either `action.yml` or `action.yaml`.
+
 <table>
 <thead>
 <tr>
@@ -147,6 +157,8 @@ There are two types of actions:
 ## Event
 
 **Events** are specific activities that trigger a workflow run. For example, a workflow is triggered when somebody pushes to the repository or when a pull request is created. Events can also be configured to listen to external events using Webhooks.
+
+Here you can find instructions [if you want to develop an action for other people to use](https://help.github.com/en/actions/building-actions/about-actions)
 
 ## Runner
 
