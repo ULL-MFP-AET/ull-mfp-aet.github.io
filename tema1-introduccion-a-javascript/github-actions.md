@@ -119,7 +119,7 @@ jobs:
 **Actions** are the smallest portable building block of a workflow and can be combined as **steps** to create a **job**. 
 
 - You can create your own Actions 
-- or use publicly shared Actions from the Marketplace.
+- or use publicly [shared Actions from the Marketplace](https://github.com/marketplace?type=actions).
 
 There are two types of actions:
 
