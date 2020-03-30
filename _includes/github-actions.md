@@ -5,6 +5,7 @@ With GitHub Actions you can build end-to-end continuous integration (CI) and con
 
 Workflows run in Linux, macOS, Windows, and containers on GitHub-hosted servers. You can create workflows using actions defined in your repository, open source actions in a public repository on GitHub, or a published Docker container image. Workflows in forked repositories don't run by default.
 
+* Section [GitHub Actions to build, package, and publish Node.js modules to the NPM and GitHub package registries]({{site.baseurl}}/tema1-introduccion-a-javascript/github-action-npm-publish) of this notes
 *   [About GitHub Actions](https://help.github.com/en/github/automating-your-workflow-with-github-actions/#about-github-actions)
 *   [Core concepts for GitHub Actions](https://help.github.com/en/github/automating-your-workflow-with-github-actions/about-github-actions#core-concepts-for-github-actions)
 *   [Notifications for workflow runs](https://help.github.com/en/github/automating-your-workflow-with-github-actions/about-github-actions#notifications-for-workflow-runs)
