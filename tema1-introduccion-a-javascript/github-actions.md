@@ -663,10 +663,12 @@ jobs:
 * Install [VSCode extension providing Github Actions YAML support](https://github.com/Lona/vscode-github-actions)
 * [Getting Started with GitHub Actions in Visual Studio](https://devblogs.microsoft.com/visualstudio/getting-started-with-github-actions-in-visual-studio/)
 
-
-
-
-
+* [Advanced GitHub Actions: workflows for production grade CI/CD - GitHub Universe 2019](https://youtu.be/0ahRkhrOePo)
+  -  A short primer on advanced features, 
+  -  How to deploy to GitHub Packages, 
+  -  Auto-merge dependabot pull requests, and 
+  -  Deploy a web service 
+  
 ## Videos about GitHub Actions
 
 * [A quick demo showing how to use GitHub Actions to build, package, and publish Node.js modules to the NPM and GitHub package registries](https://www.youtube.com/watch?v=9O2sLm1Boxc) by Brian Cross
