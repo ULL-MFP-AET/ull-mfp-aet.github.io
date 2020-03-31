@@ -156,7 +156,9 @@ The metadata filename must be either `action.yml` or `action.yaml`.
 </table>
 
 
-Here you can find instructions [if you want to develop an action for other people to use](https://help.github.com/en/actions/building-actions/about-actions)
+* Here you can find instructions [if you want to develop an action for other people to use](https://help.github.com/en/actions/building-actions/about-actions)
+
+* Here is an example of an action: [actions/create-release](https://github.com/actions/create-release)
 
 ## Event
 
