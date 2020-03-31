@@ -360,7 +360,7 @@ format('Hello {0} {1} {2}', 'Mona', 'the', 'Octocat')
 
 Returns `'Hello Mona the Octocat'`
 
-### if and Job status check functions
+### The if Keyword and Functions to Check Job Status
 
 Expressions are commonly used with the conditional **if** keyword 
 in a workflow file to determine whether a step should run. 
@@ -394,6 +394,8 @@ steps:
     if: success()
     uses: ./.github/actions/run-audit
 ```
+
+`success()` returns `true` when none of the previous steps have failed or been canceled.
 
 See [Job status check functions](https://help.github.com/en/actions/reference/context-and-expression-syntax-for-github-actions#job-status-check-functions)
 
