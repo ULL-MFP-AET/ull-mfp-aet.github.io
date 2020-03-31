@@ -177,9 +177,9 @@ Github Actions files are written using YAML syntax and have either a `.yml` or `
 
 The name of your workflow that is displayed on the Github actions page. If you omit this field, it is set to the file name.
 
-    ```
-    name: CI for scapegoat module
-    ```
+```
+name: CI for scapegoat module
+```
 
 ### On:
 
