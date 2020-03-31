@@ -649,6 +649,10 @@ jobs:
           NODE_AUTH_TOKEN: ${{ "{{secrets.GITHUB_TOKEN" }} }}
 ```
 
+## Hello Actions World!
+
+* [Creating a JavaScript action](https://help.github.com/en/actions/building-actions/creating-a-javascript-action)
+
 ## References
 
 * [A quick demo showing how to use GitHub Actions to build, package, and publish Node.js modules to the NPM and GitHub package registries]({{site.baseurl}}/tema1-introduccion-a-javascript/github-action-npm-publish) 
