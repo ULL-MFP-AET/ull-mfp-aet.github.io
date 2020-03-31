@@ -649,9 +649,9 @@ jobs:
           NODE_AUTH_TOKEN: ${{ "{{secrets.GITHUB_TOKEN" }} }}
 ```
 
-## Hello Actions World!
 
-* [Creating a JavaScript action](https://help.github.com/en/actions/building-actions/creating-a-javascript-action)
+## Creating a Packagd JavaScript Action
+
 
 ## References
 
