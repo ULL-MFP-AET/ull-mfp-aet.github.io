@@ -185,7 +185,47 @@ try {
 }
 ```
 
-If an error is thrown in the above `index.js` example, `core.setFailed(error.message);` uses the actions toolkit [@actions/core](https://github.com/actions/toolkit/tree/master/packages/core) package to log a message and set a failing exit code. For more information, see "[Setting exit codes for actions](https://help.github.com/en/actions/building-actions/setting-exit-codes-for-actions)."
+If an error is thrown in the above `index.js` example, `core.setFailed(error.message);` uses the actions toolkit [@actions/core](https://github.com/actions/toolkit/tree/master/packages/core) package to log a message and set a failing exit code.
+
+For more information, see "[Setting exit codes for actions](https://help.github.com/en/actions/building-actions/setting-exit-codes-for-actions)."
+
+## Create a README
+
+To let people know how to use your action, you can create a README file. A README is most helpful when you plan to share your action publicly, but is also a great way to remind you or your team how to use the action.
+
+In your `hello-world-javascript-action` directory, create a `README.md` file that specifies the following information:
+
+1. A detailed description of what the action does.
+2. Required input and output arguments.
+3. Optional input and output arguments.
+4. Secrets the action uses.
+5. Environment variables the action uses.
+6. An example of how to use your action in a workflow.
+
+```
+[~/.../hello-world-javascript-action(master)]$ cat README.md
+# Hello world javascript action
+
+This action prints "Hello World" or "Hello" + the name of a person to greet to the log.
+
+## Inputs
+
+### `who-to-greet`
+
+**Required** The name of the person to greet. Default `"World"`.
+
+## Outputs
+
+### `time`
+
+The time we greeted you.
+
+## Example usage
+
+uses: actions/hello-world-javascript-action@v1
+with:
+  who-to-greet: 'Mona the Octocat'
+```
 
 ## References
 
