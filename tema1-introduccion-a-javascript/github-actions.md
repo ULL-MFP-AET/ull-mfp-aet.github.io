@@ -317,8 +317,8 @@ Here is a more complex [example using step information and functions](https://gi
 - name: save vsix
       uses: actions/upload-artifact@master
       with:
-        name: ${{ format('vscode-hugo-{0}-{1}.vsix', steps.build_package.outputs.version, github.sha) }}
-        path: ${{ format('vscode-hugo-{0}.vsix', steps.build_package.outputs.version) }}
+        name: ${ { format('vscode-hugo-{0}-{1}.vsix', steps.build_package.outputs.version, github.sha) }}
+        path: ${ { format('vscode-hugo-{0}.vsix', steps.build_package.outputs.version) }}
 ```
 
 ### The Runner Context
