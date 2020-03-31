@@ -262,9 +262,160 @@ jobs:
           last_name: Octocat    
 ```
 
-## Contexts
+## Expression Syntax
 
-**Contexts** are a way to access information about workflow runs, runner environments, jobs, and steps. Contexts use the expression syntax. See [Context and expression syntax for GitHub Actions](https://help.github.com/en/actions/reference/context-and-expression-syntax-for-github-actions#contexts) at the GitHub Actions Reference.
+You can use expressions to programmatically set variables in workflow files and access contexts. 
+
+```
+${{ "{{ <expression>" }} }}
+```
+You can combine literals, context references, and functions using **operators**.
+
+An expression can be any combination of 
+
+### literal values, 
+
+```
+env:
+    myNull: ${ { null }}
+    myBoolean: ${ { false }}
+    myIntegerNumber: ${ { 711 }}
+    myFloatNumber: ${ { -9.2 }}
+    myHexNumber: ${ { 0xff }}
+    myExponentialNumber: ${ { -2.99-e2 }}
+    myString: ${ { 'Mona the Octocat' }}
+    myEscapedString: ${ { 'It''s open source!' }}
+```
+
+### Operators
+
+<table>
+    <thead>
+    <tr>
+    <th>Operator</th>
+    <th>Description</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+    <td><code>( )</code></td>
+    <td>Logical grouping</td>
+    </tr>
+    <tr>
+    <td><code>[ ]</code></td>
+    <td>Index</td>
+    </tr>
+    <tr>
+    <td><code>.</code></td>
+    <td>Property dereference</td>
+    </tr>
+    <tr>
+    <td><code>!</code></td>
+    <td>Not</td>
+    </tr>
+    <tr>
+    <td><code>&lt;</code></td>
+    <td>Less than</td>
+    </tr>
+    <tr>
+    <td><code>&lt;=</code></td>
+    <td>Less than or equal</td>
+    </tr>
+    <tr>
+    <td><code>&gt;</code></td>
+    <td>Greater than</td>
+    </tr>
+    <tr>
+    <td><code>&gt;=</code></td>
+    <td>Greater than or equal</td>
+    </tr>
+    <tr>
+    <td><code>==</code></td>
+    <td>Equal</td>
+    </tr>
+    <tr>
+    <td><code>!=</code></td>
+    <td>Not equal</td>
+    </tr>
+    <tr>
+    <td><code>&amp;&amp;</code></td>
+    <td>And</td>
+    </tr>
+    <tr>
+    <td><code>||</code></td>
+    <td>Or</td>
+    </tr>
+    </tbody>
+</table>
+
+### functions 
+
+[GitHub offers a set of built-in functions](https://help.github.com/en/actions/reference/context-and-expression-syntax-for-github-actions#functions)
+
+Example:
+
+```
+format('Hello {0} {1} {2}', 'Mona', 'the', 'Octocat')
+```
+
+Returns `'Hello Mona the Octocat'`
+
+### if and Job status check functions
+
+Expressions are commonly used with the conditional **if** keyword 
+in a workflow file to determine whether a step should run. 
+
+
+When you use expressions in an `if` conditional, 
+you do not need to use the expression syntax (`${ { }}`) 
+because GitHub automatically evaluates the `if` conditional as an expression.
+ 
+For more information about if conditionals, see "[Workflow syntax for GitHub Actions](https://help.github.com/en/articles/workflow-syntax-for-github-actions/#jobsjob_idif)."
+
+Example expression in an `if` conditional
+
+```yml
+steps:
+  - name: Git checkout
+    if: github.event.check_suite.app.name == 'Netlify' && github.event.check_suite.conclusion == 'success'
+    uses: actions/checkout@master
+
+  - name: Install Node
+    if: success()
+    uses: actions/setup-node@v1
+    with:
+      node-version: 10.x
+
+  - name: Install npm dependencies
+    if: success()
+    run: npm install
+
+  - name: Run Audit
+    if: success()
+    uses: ./.github/actions/run-audit
+```
+
+See [Job status check functions](https://help.github.com/en/actions/reference/context-and-expression-syntax-for-github-actions#job-status-check-functions)
+
+### Object Filters
+
+You can use the `*` syntax to apply a filter and select matching items in a collection:
+
+
+```js
+[
+  { "name": "apple", "quantity": 1 },
+  { "name": "orange", "quantity": 2 },
+  { "name": "pear", "quantity": 1 }
+]
+```
+
+The filter `fruits.*.name` returns the array `[ "apple", "orange", "pear" ]`
+
+
+## Contexts 
+
+**Contexts** are a way to access information about workflow runs, runner environments, jobs, and steps. Contexts use the **expression syntax**. See [Context and expression syntax for GitHub Actions](https://help.github.com/en/actions/reference/context-and-expression-syntax-for-github-actions#contexts) at the GitHub Actions Reference.
 
 ```
 ${{ "{{ <context>" }} }}
@@ -291,20 +442,9 @@ for example, `github.ref`contains the branch or tag ref that triggered the workf
 
 The **env context** contains environment variables that have been set in a workflow, job, or step. 
 
-Example:
+This context changes for each step in a job. 
+You can access this context from any step in a job.
 
-```yml
-steps:
-      - uses: actions/checkout@v2
-      - uses: actions/setup-node@v1
-        with:
-          node-version: 12
-          registry-url: https://registry.npmjs.org/
-      - run: npm ci
-      - run: npm publish --access public
-        env:
-          NODE_AUTH_TOKEN: ${{secrets.npm_token }}
-```
 
 ### Steps Context
 
@@ -331,6 +471,7 @@ Examples are `runner.os` for the Operating System or `runner.temp` for the path 
 
 The **strategy context** enables access to the configured strategy parameters and information about the current job.
 
+Here is an [example](https://github.community/t5/GitHub-Actions/Create-matrix-with-multiple-OS-and-env-for-each-one/td-p/38339) of use of the strategy context.
 
 ### The Secrets Context
 
@@ -354,7 +495,7 @@ To create a secret:
 
 To use a secret:
 
-```
+```yml
 steps:
   - name: Hello world action
     with: # Set the secret as an input
@@ -415,9 +556,11 @@ jobs:
 
 To inspect the information that is accessible in each context, you can use this workflow file example.
 
-**`github/workflows/main.yml`**
-
 ```
+[~/.../scapegoat(master)]$ cat .github/workflows/debug.yml
+```
+```yml
+name: Debugging contexts
 on: push
 
 jobs:
@@ -426,40 +569,49 @@ jobs:
     steps:
       - name: Dump GitHub context
         env:
-          GITHUB_CONTEXT: ${{ toJson(github) }}
+          GITHUB_CONTEXT: ${ { toJson(github) }}
         run: echo "$GITHUB_CONTEXT"
       - name: Dump job context
         env:
-          JOB_CONTEXT: ${{ toJson(job) }}
+          JOB_CONTEXT: ${ { toJson(job) }}
         run: echo "$JOB_CONTEXT"
       - name: Dump steps context
         env:
-          STEPS_CONTEXT: ${{ toJson(steps) }}
+          STEPS_CONTEXT: ${ { toJson(steps) }}
         run: echo "$STEPS_CONTEXT"
       - name: Dump runner context
         env:
-          RUNNER_CONTEXT: ${{ toJson(runner) }}
+          RUNNER_CONTEXT: ${ { toJson(runner) }}
         run: echo "$RUNNER_CONTEXT"
       - name: Dump strategy context
         env:
-          STRATEGY_CONTEXT: ${{ toJson(strategy) }}
+          STRATEGY_CONTEXT: ${ { toJson(strategy) }}
         run: echo "$STRATEGY_CONTEXT"
       - name: Dump matrix context
         env:
-          MATRIX_CONTEXT: ${{ toJson(matrix) }}
+          MATRIX_CONTEXT: ${ { toJson(matrix) }}
         run: echo "$MATRIX_CONTEXT"
 ```
+
+Here is [an example of output](https://github.com/ULL-ESIT-DSI-1617/scapegoat/runs/548538435?check_suite_focus=true)
 
 ## GITHUB_TOKEN
 
 GitHub automatically creates a **GITHUB_TOKEN** secret to use in your workflow. You can use the `GITHUB_TOKEN` to authenticate in a workflow run.
 
-When you enable GitHub Actions, GitHub installs a GitHub App on your repository. The `GITHUB_TOKEN` secret is a GitHub App installation access token. You can use the installation access token to authenticate on behalf of the GitHub App installed on your repository. **The token's permissions are limited to the repository that contains your workflow**.
+When you enable GitHub Actions, GitHub installs a GitHub App on your repository. 
+
+The `GITHUB_TOKEN` secret is a GitHub App installation access token. 
+
+You can use the installation access token to authenticate on behalf of the GitHub App installed on your repository. 
+
+**The token's permissions are limited to the repository that contains your workflow**.
+
 For more see [Authenticating with the GITHUB_TOKEN](https://help.github.com/en/actions/configuring-and-managing-workflows/authenticating-with-the-github_token)
 
 For example, when the repo contains and npm module and 
 we want to write a github action to publish the npm package in the GitHub Package Registry
-it is enough to use the `GITHUB_TOKEN` secret. 
+it is enough to use the `GITHUB_TOKEN`. 
 
 Thus, this is enough to do the job:
 
