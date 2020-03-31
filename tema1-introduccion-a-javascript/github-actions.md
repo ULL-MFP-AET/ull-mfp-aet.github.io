@@ -310,6 +310,17 @@ steps:
 
 The **steps context** contains information about the steps in the current job that have already run.
 
+Here is a more complex [example using step information and functions](https://github.com/rusnasonov/vscode-hugo/blob/master/.github/workflows/build.yml)
+
+```yml
+...
+- name: save vsix
+      uses: actions/upload-artifact@master
+      with:
+        name: ${{ format('vscode-hugo-{0}-{1}.vsix', steps.build_package.outputs.version, github.sha) }}
+        path: ${{ format('vscode-hugo-{0}.vsix', steps.build_package.outputs.version) }}
+```
+
 ### The Runner Context
 
 The **runner context** contains information about the runner that is executing the current job.
