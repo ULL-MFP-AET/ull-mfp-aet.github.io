@@ -650,8 +650,9 @@ jobs:
 ```
 
 
-## Creating a Packagd JavaScript Action
+## Creating a Packaged JavaScript Action
 
+* [Writing a "Hello World!" JavaScript Action](creating-javascript-action)
 
 ## References
 
