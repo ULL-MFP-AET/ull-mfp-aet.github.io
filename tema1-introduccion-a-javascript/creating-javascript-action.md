@@ -227,6 +227,102 @@ with:
   who-to-greet: 'Mona the Octocat'
 ```
 
+## Commit, tag, and push your action to GitHub
+
+GitHub downloads each action run in a workflow during runtime and executes it as a complete package of code before you can use workflow commands like run to interact with the runner machine. 
+
+This means you must include any package dependencies required to run the JavaScript code. You'll need to check in the toolkit core and github packages to your action's repository.
+
+From your terminal, commit 
+
+1. your `action.yml`, 
+2. `index.js`, 
+3. `node_modules`, 
+4. `package.json`, 
+5. `package-lock.json`, and 
+6. `README.md` files. 
+   
+If you added a `.gitignore` file that lists `node_modules`, you'll need to remove that line to commit the `node_modules` directory.
+
+It's best practice to also add a `version` tag for releases of your action. For more information on versioning your action, see "[About actions](https://help.github.com/en/actions/automating-your-workflow-with-github-actions/about-actions#versioning-your-action)."
+
+```
+git add action.yml index.js node_modules/* package.json package-lock.json README.md
+git commit -m "My first action is ready"
+git tag -a -m "My first action release" v1
+git push --follow-tags
+```
+
+As an alternative to checking in your `node_modules` directory you can use a tool called [zeit/ncc](https://github.com/zeit/ncc) to compile your code and modules into one file used for distribution.
+
+1. Install [zeit/ncc](https://github.com/zeit/ncc) by running this command in your terminal: `npm i -g @zeit/ncc`
+2. Compile your `index.js` file. `ncc build index.js`
+   You'll see a new `dist/index.js` file with your code and the compiled modules.
+3. Change the `main` keyword in your `action.yml` file to use the new `dist/index.js` file. main: `'dist/index.js'`
+4. If you already checked in your `node_modules` directory, remove it. `rm -rf node_modules/*`
+5. From your terminal, commit the updates to your `action.yml`, `dist/index.js`, and `node_modules` files.
+
+    ```
+    git add action.yml dist/index.js node_modules/*
+    git commit -m "Use zeit/ncc"
+    git tag -a -m "My first action release" v1
+    git push --follow-tags
+    ```
+
+## Testing out your action in a workflow
+
+Now you're ready to test your action out in a workflow. 
+
+When an action is in a private repository, the action can only be used in workflows in the same repository.
+
+Public actions can be used by workflows in any repository.
+
+Let us create  a new repo in GitHub and also set it in your machine:
+
+```
+$ git remote add origin git@github.com:ULL-ESIT-PL-1920/use-hello-world-javascript-action.git
+```
+
+The following workflow code uses the completed hello world action in the `ULL-ESIT-PL-1920/hello-world-javascript-action` repository. 
+
+Copy the workflow code into a `.github/workflows/main.yml` file, but replace the `ULL-ESIT-PL-1920/hello-world-javascript-action` repository with the repository you created. You can also replace the `who-to-greet` input with your name.
+
+
+```
+$ cat .github/workflows/main.yml
+```
+
+```yml
+name: Using hello world
+on: [push]
+
+jobs:
+  hello_world_job:
+    runs-on: ubuntu-latest
+    name: A job to say hello
+    steps:
+      # To use this repository's private action, you must check out the repository
+      - name: Checkout
+        uses: actions/checkout@v2
+      - name: Hello world action step
+        uses: ULL-ESIT-PL-1920/hello-world-javascript-action@v1
+        id: hello
+        with:
+          who-to-greet: 'Procesadores de Lenguajes at ULL'
+      # Use the output from the `hello` step
+      - name: Get the output time
+        run: echo "The time was ${{ steps.hello.outputs.time }}"
+```
+After adding and commiting the files, we push the changes to the remote 
+
+```
+[~/.../use-hello-world-javascript-action(master)]$ git push -u origin master
+```
+
+the action is triggered
+
+![]({{site.baseurl}}/assets/images/hello-world-js-action.png)
+
 ## References
 
 * [Creating a JavaScript action](https://help.github.com/en/actions/building-actions/creating-a-javascript-action)
