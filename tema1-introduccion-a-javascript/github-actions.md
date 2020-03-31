@@ -353,7 +353,7 @@ jobs:
           node-version: 12
           registry-url: https://registry.npmjs.org/
       - run: npm ci
-      - run: npm publish
+      - run: npm publish --access public
         env:
           NODE_AUTH_TOKEN: ${{ "{{secrets.npm_token" }} }}
 ```
@@ -388,7 +388,7 @@ jobs:
           registry-url: https://npm.pkg.github.com/
           scope: @ULL-ESIT-PL1920
       - run: npm ci
-      - run: npm publish --access public
+      - run: npm publish
         env:
           NODE_AUTH_TOKEN: ${{ "{{secrets.GITHUB_TOKEN" }} }}
 ```
