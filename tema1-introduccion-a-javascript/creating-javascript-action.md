@@ -8,11 +8,21 @@ packaged JavaScript action.
 To focus this guide on the components needed to package the action,
 the functionality of the action's code is minimal. 
 
-The action prints "`Hello World`" in the logs or 
-"`Hello [who-to-greet]`" 
+The action prints 
+
+```
+Hello World
+```
+
+in the logs or 
+
+```
+Hello [who-to-greet]
+``` 
+
 if you provide a custom name.
 
-This guide uses the GitHub Actions Toolkit Node.js module to speed up development. 
+This guide uses the [GitHub Actions Toolkit](https://github.com/actions/toolkit) Node.js module to speed up development. 
 
 For more information, see the [actions/toolkit](https://github.com/actions/toolkit) repository.
 
@@ -25,22 +35,22 @@ JavaScript actions run directly on the runner and use binaries that already exis
 Create a new empty repository on GitHub. You can choose any repository name or use `hello-world-javascript-action`. Then on your terminal:
 
 ```
-[~/.../github-actions-learning]$ mkdir hello-world-javascript-action
-[~/.../github-actions-learning]$ cd hello-world-javascript-action/
-[~/.../hello-world-javascript-action]$ echo "# hello-world-javascript-action" >> README.md
-[~/.../hello-world-javascript-action]$ git init
-[~/.../hello-world-javascript-action]$ git add README.md
-[~/.../hello-world-javascript-action]$ git commit -m "first commit"
-[~/.../hello-world-javascript-action(master)]$ git remote add origin git@github.com:ULL-ESIT-PL-1920/hello-world-javascript-action.git
-[~/.../hello-world-javascript-action(master)]$ git push -u origin master
+$ mkdir hello-world-javascript-action
+$ cd hello-world-javascript-action/
+$ echo "# hello-world-javascript-action" >> README.md
+$ git init
+$ git add README.md
+$ git commit -m "first commit"
+$ git remote add origin git@github.com:ULL-ESIT-PL-1920/hello-world-javascript-action.git
+$ git push -u origin master
 ```
 
 Create a `package.json`
 
 ```
 [~/.../hello-world-javascript-action(master)]$ npm init -y
-Wrote to /Users/casiano/local/src/github-actions-learning/hello-world-javascript-action/package.json:
-
+```
+```js
 {
   "name": "hello-world-javascript-action",
   "version": "1.0.0",
@@ -86,7 +96,10 @@ runs:
   main: 'index.js'
 ```
 
-This file defines the `who-to-greet` input and `time` output. 
+This file defines 
+
+- the `who-to-greet` input and 
+- `time` output. 
 
 It also tells the action runner how to start: running `index.js`.
 
@@ -94,11 +107,18 @@ It also tells the action runner how to start: running `index.js`.
 
 The actions toolkit is a collection of Node.js packages that allow you to quickly build JavaScript actions with more consistency.
 
-The toolkit `@actions/core` package provides an interface to the workflow commands, input and output variables, exit statuses, and debug messages.
+The toolkit `@actions/core` package provides an interface to 
 
-The toolkit also offers a `@actions/github` package that returns an authenticated Octokit REST client and access to GitHub Actions contexts.
+- the workflow commands, 
+- input and output variables, 
+- exit statuses, and 
+- debug messages.
 
-The toolkit offers more than the core and github packages. For more information, see the <a href="https://github.com/actions/toolkit" target="_blank">actions/toolkit</a> repository.
+The toolkit also offers a `@actions/github` package that returns an authenticated **Octokit REST client** and access to GitHub Actions **contexts**.
+
+The toolkit offers more than the **core** and **github** packages. 
+
+For more information, see the <a href="https://github.com/actions/toolkit" target="_blank">actions/toolkit</a> repository.
 
 At your terminal, install the actions toolkit core and github packages.
 
@@ -326,3 +346,5 @@ the action is triggered
 ## References
 
 * [Creating a JavaScript action](https://help.github.com/en/actions/building-actions/creating-a-javascript-action)
+* Repo [ULL-ESIT-PL-1920/hello-world-javascript-action](https://github.com/ULL-ESIT-PL-1920/hello-world-javascript-action)
+* [Repo ULL-ESIT-PL-1920/use-hello-world-javascript-action](https://github.com/ULL-ESIT-PL-1920/use-hello-world-javascript-action)
