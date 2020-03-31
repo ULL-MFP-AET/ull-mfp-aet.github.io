@@ -270,19 +270,58 @@ jobs:
 ${{ "{{ <context>" }} }}
 ```
 
-The **matrix context** enables access to the matrix parameters you configured for the current job. For example, if you configure a matrix build with the os and node versions, the matrix context object includes the os and node versions of the current job.
+### Matrix Context
 
-The **github context**  contains information about the workflow run and the event that triggered the run. You can read most of the github context data in environment variables.
+The **matrix context** enables access to the matrix parameters you configured for the current job. 
+
+For example, if you configure a matrix build with the os and node versions, the matrix context object includes the os and node versions of the current job.
+
+### GitHub Context
+
+The **github context**  contains information about 
+
+* the workflow run and 
+* the event that triggered the run. 
+
+You can read most of the github context data in environment variables.
+
+for example, `github.ref`contains the branch or tag ref that triggered the workflow run
+
+### Env Context
 
 The **env context** contains environment variables that have been set in a workflow, job, or step. 
 
+Example:
+
+```yml
+steps:
+      - uses: actions/checkout@v2
+      - uses: actions/setup-node@v1
+        with:
+          node-version: 12
+          registry-url: https://registry.npmjs.org/
+      - run: npm ci
+      - run: npm publish --access public
+        env:
+          NODE_AUTH_TOKEN: ${{secrets.npm_token }}
+```
+
+### Steps Context
+
 The **steps context** contains information about the steps in the current job that have already run.
+
+### The Runner Context
 
 The **runner context** contains information about the runner that is executing the current job.
 
+Examples are `runner.os` for the Operating System or `runner.temp` for the path of the temporary directory for the runner. This directory is guaranteed to be empty at the start of each job, even on self-hosted runners.
+
+### The Strategy Context
+
 The **strategy context** enables access to the configured strategy parameters and information about the current job.
 
-## The Secrets Context
+
+### The Secrets Context
 
 The **secrets context** access to secrets set in a repository. See [Creating and storing encrypted secrets](https://help.github.com/en/actions/configuring-and-managing-workflows/creating-and-storing-encrypted-secrets). 
 
@@ -358,6 +397,46 @@ jobs:
       - run: npm publish --access public
         env:
           NODE_AUTH_TOKEN: ${{ "{{secrets.npm_token" }} }}
+```
+
+
+### Example printing context information to the log file
+
+To inspect the information that is accessible in each context, you can use this workflow file example.
+
+**`github/workflows/main.yml`**
+
+```
+on: push
+
+jobs:
+  one:
+    runs-on: ubuntu-16.04
+    steps:
+      - name: Dump GitHub context
+        env:
+          GITHUB_CONTEXT: ${{ toJson(github) }}
+        run: echo "$GITHUB_CONTEXT"
+      - name: Dump job context
+        env:
+          JOB_CONTEXT: ${{ toJson(job) }}
+        run: echo "$JOB_CONTEXT"
+      - name: Dump steps context
+        env:
+          STEPS_CONTEXT: ${{ toJson(steps) }}
+        run: echo "$STEPS_CONTEXT"
+      - name: Dump runner context
+        env:
+          RUNNER_CONTEXT: ${{ toJson(runner) }}
+        run: echo "$RUNNER_CONTEXT"
+      - name: Dump strategy context
+        env:
+          STRATEGY_CONTEXT: ${{ toJson(strategy) }}
+        run: echo "$STRATEGY_CONTEXT"
+      - name: Dump matrix context
+        env:
+          MATRIX_CONTEXT: ${{ toJson(matrix) }}
+        run: echo "$MATRIX_CONTEXT"
 ```
 
 ## GITHUB_TOKEN
