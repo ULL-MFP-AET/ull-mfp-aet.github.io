@@ -957,8 +957,8 @@ Type ".help" for more information.
 Alternatively, You can set up the scope
 mapping for your project using 
 
-1. Either a local `.npmrc` file in the project or 
-2. Using the `publishConfig` option in the `package.json`. 
+1. Either a local `.npmrc` file in the project (See [Publishing a package using a local .npmrc file]/https://help.github.com/en/packages/using-github-packages-with-your-projects-ecosystem/configuring-npm-for-use-with-github-packages#publishing-a-package-using-a-local-npmrc-file) or 
+2. Using the `publishConfig` option in the `package.json` (See [Publishing a package using publishConfig in the package.json file](https://help.github.com/en/packages/using-github-packages-with-your-projects-ecosystem/configuring-npm-for-use-with-github-packages#publishing-a-package-using-publishconfig-in-the-packagejson-file)). 
 
 Here is a fragment of  a `package.json` using `publishConfig`:
 
