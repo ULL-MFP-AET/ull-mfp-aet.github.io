@@ -360,6 +360,8 @@ format('Hello {0} {1} {2}', 'Mona', 'the', 'Octocat')
 
 Returns `'Hello Mona the Octocat'`
 
+`contains('Hello world', 'llo')` returns `true`
+
 ### The if Keyword and Functions to Check Job Status
 
 Expressions are commonly used with the conditional **if** keyword 
@@ -414,6 +416,14 @@ You can use the `*` syntax to apply a filter and select matching items in a coll
 
 The filter `fruits.*.name` returns the array `[ "apple", "orange", "pear" ]`
 
+Here is another example:
+
+```
+contains(github.event.issue.labels.*.name, 'bug')
+```
+
+will be `true` if the attribute `name` of one of the labels of the issue that 
+has triggered the event is `'bug'`
 
 ## Contexts 
 
