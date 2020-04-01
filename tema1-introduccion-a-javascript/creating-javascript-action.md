@@ -350,3 +350,7 @@ From our repository, We click the Actions tab, and select the latest workflow ru
 * [Creating a JavaScript action](https://help.github.com/en/actions/building-actions/creating-a-javascript-action)
 * Repo [ULL-ESIT-PL-1920/hello-world-javascript-action](https://github.com/ULL-ESIT-PL-1920/hello-world-javascript-action)
 * [Repo ULL-ESIT-PL-1920/use-hello-world-javascript-action](https://github.com/ULL-ESIT-PL-1920/use-hello-world-javascript-action)
+* [About Actions](https://help.github.com/en/actions/building-actions/about-actions)
+* [Building actions](https://help.github.com/en/actions/building-actions)
+* [Metadata syntax for GitHub Actions](https://help.github.com/en/actions/building-actions/metadata-syntax-for-github-actions) (The syntax of the action.yml file)
+* [Setting exit codes for actions](https://help.github.com/en/actions/building-actions/setting-exit-codes-for-actions)
