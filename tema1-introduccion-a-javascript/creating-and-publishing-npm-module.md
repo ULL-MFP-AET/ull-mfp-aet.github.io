@@ -630,9 +630,9 @@ Don't forget to push your tags:
 
     git push origin master --tags
 
-    ![]({{site.baseurl}}/assets/images/push-tags.png)
+![]({{site.baseurl}}/assets/images/push-tags.png)
 
-Better: use `npm version`. The syntax is:
+Better yet: use `npm version`. The syntax is:
 
 ```
 npm version [<newversion> | major | minor | patch | premajor | preminor | prepatch | prerelease [--preid=<prerelease-id>] | from-git]
