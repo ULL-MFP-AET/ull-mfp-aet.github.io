@@ -6,7 +6,7 @@ at section [Hello Actions World!]({{site.baseurl}}//tema1-introduccion-a-javascr
 1. Save the action code in repo `hello-js-action-aluXXX`, 
 2. Inside repo `use-hello-js-action-aluXXX` save the project using the action and  
 3. In repo `hello-js-action-super` build a  repo having the former two as submodules
-4. Write your report in the super-repo
+4. Write your `README.md` report in the super-repo. Set `master` branch for GitHub pages and choose one of the available Jekyll styles. Set the URL in the *description* section
 
 ## Optional Step
 
