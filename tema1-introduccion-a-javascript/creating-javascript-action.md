@@ -334,9 +334,35 @@ jobs:
         run: echo "The time was ${ { steps.hello.outputs.time }}"
 ```
 
-Observe the `id` attribute in the `Hello world action step`. We use it 
-in the next step `Get the output time` and refer to its `output`using 
-the expression `steps.hello.outputs`.
+Observe the `id` attribute in the `Hello world action step`. 
+
+We use the `id` `hello` to refer to this step
+in the next step `Get the output time` and to refer to its `output` using 
+the expression `steps.hello.outputs`. 
+
+Since in our `action.yml` file we set the name
+of the output to `time` we can refer to it with the expression `${ { steps.hello.outputs.time }}`
+
+```yml
+name: 'Hello World'
+description: 'Greet someone and record the time'
+inputs:
+  who-to-greet:  # id of input
+    ...
+outputs:
+  time: # id of output
+    description: 'The time we greeted you'
+runs:
+  ...
+```
+
+The setting of the output was achieved inside the `index.js` file by calling the 
+`setOutput` method of the `core` module:
+
+```js
+  const time = (new Date()).toTimeString();
+  core.setOutput("time", time);
+```
 
 After adding and commiting the files, we push the changes to the remote 
 
