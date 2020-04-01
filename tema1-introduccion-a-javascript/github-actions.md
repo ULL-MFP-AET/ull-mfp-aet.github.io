@@ -22,7 +22,7 @@ and use our favourite editor.
 
 Ejemplo:
 
-```
+```yml
 name: Node.js Package
 on:
   release:
@@ -89,7 +89,7 @@ jobs:
 ```
 
 The `needs` attribute inside the `publish-npm` job tell us that this job 
-an not start until the `build` step has finished
+can not start until the `build` step has finished
 
 ## Step
 
