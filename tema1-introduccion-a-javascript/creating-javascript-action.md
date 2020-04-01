@@ -354,3 +354,4 @@ From our repository, We click the Actions tab, and select the latest workflow ru
 * [Building actions](https://help.github.com/en/actions/building-actions)
 * [Metadata syntax for GitHub Actions](https://help.github.com/en/actions/building-actions/metadata-syntax-for-github-actions) (The syntax of the action.yml file)
 * [Setting exit codes for actions](https://help.github.com/en/actions/building-actions/setting-exit-codes-for-actions)
+* [Publishing actions in GitHub Marketplace](https://help.github.com/en/actions/building-actions/publishing-actions-in-github-marketplace)
