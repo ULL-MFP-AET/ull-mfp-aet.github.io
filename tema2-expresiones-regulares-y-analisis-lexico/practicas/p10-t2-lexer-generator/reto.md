@@ -1,4 +1,4 @@
-# Challeng for the programming lab p10-t2-lexer-generator
+# Challenge for the programming lab p10-t2-lexer-generator
 
 Write a GitHub Action *Hello World* following the tutorial 
 at section [Hello Actions World!]({{site.baseurl}}//tema1-introduccion-a-javascript/creating-javascript-action).
