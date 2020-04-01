@@ -383,6 +383,12 @@ and the timestamp printed in the log:
 
 ![]({{site.baseurl}}/assets/images/hello-world-js-action-output-time.png)
 
+## Next Step
+
+Use the repo [actions/javascript-action](https://github.com/actions/javascript-action)
+as a template and follow the instructions. 
+
+
 ## References
 
 * [Creating a JavaScript action](https://help.github.com/en/actions/building-actions/creating-a-javascript-action)
