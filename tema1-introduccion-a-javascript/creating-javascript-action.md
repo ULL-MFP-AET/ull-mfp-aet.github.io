@@ -375,7 +375,7 @@ After adding and commiting the files, we push the changes to the remote
 
 the action is triggered.
 
-From our repository, We click the Actions tab, and select the latest workflow run. YoWe can see `Hello Procesadores de Lenguajes at ULL` or the name we use for the `who-to-greet` input and the timestamp printed in the log.
+From our repository, We click the Actions tab, and select the latest workflow run. We can see `Hello Procesadores de Lenguajes at ULL` or the name we use for the `who-to-greet` input and the timestamp printed in the log.
 
 ![]({{site.baseurl}}/assets/images/hello-world-js-action.png)
 
