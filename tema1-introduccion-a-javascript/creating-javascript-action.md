@@ -331,7 +331,7 @@ jobs:
           who-to-greet: 'Procesadores de Lenguajes at ULL'
       # Use the output from the `hello` step
       - name: Get the output time
-        run: echo "The time was ${{ steps.hello.outputs.time }}"
+        run: echo "The time was ${ { steps.hello.outputs.time }}"
 ```
 After adding and commiting the files, we push the changes to the remote 
 
