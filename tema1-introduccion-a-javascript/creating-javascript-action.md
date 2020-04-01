@@ -333,6 +333,11 @@ jobs:
       - name: Get the output time
         run: echo "The time was ${ { steps.hello.outputs.time }}"
 ```
+
+Observe the `id` attribute in the `Hello world action step`. We use it 
+in the next step `Get the output time` and refer to its `output`using 
+the expression `steps.hello.outputs`.
+
 After adding and commiting the files, we push the changes to the remote 
 
 ```
