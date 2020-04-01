@@ -625,8 +625,13 @@ has been pushed up to Github. It is also a good idea to **create a version
 tag** as well. Here's how to do just that.
 
     git tag 0.1.0
+
+Don't forget to push your tags:
+
     git push origin master --tags
-      
+
+    ![]({{site.baseurl}}/assets/images/push-tags.png)
+
 Better: use `npm version`. The syntax is:
 
 ```
