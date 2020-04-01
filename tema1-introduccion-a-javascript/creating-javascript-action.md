@@ -391,11 +391,4 @@ as a template and follow the instructions.
 
 ## References
 
-* [Creating a JavaScript action](https://help.github.com/en/actions/building-actions/creating-a-javascript-action)
-* Repo [ULL-ESIT-PL-1920/hello-world-javascript-action](https://github.com/ULL-ESIT-PL-1920/hello-world-javascript-action)
-* [Repo ULL-ESIT-PL-1920/use-hello-world-javascript-action](https://github.com/ULL-ESIT-PL-1920/use-hello-world-javascript-action)
-* [About Actions](https://help.github.com/en/actions/building-actions/about-actions)
-* [Building actions](https://help.github.com/en/actions/building-actions)
-* [Metadata syntax for GitHub Actions](https://help.github.com/en/actions/building-actions/metadata-syntax-for-github-actions) (The syntax of the action.yml file)
-* [Setting exit codes for actions](https://help.github.com/en/actions/building-actions/setting-exit-codes-for-actions)
-* [Publishing actions in GitHub Marketplace](https://help.github.com/en/actions/building-actions/publishing-actions-in-github-marketplace)
+{% include github-js-actions-references.md %}

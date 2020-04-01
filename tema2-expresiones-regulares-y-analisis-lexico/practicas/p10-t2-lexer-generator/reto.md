@@ -26,3 +26,4 @@ Pay special attention to how the tests were written in this example.
 
 ## References
 
+{% include github-js-actions-references.md %}
