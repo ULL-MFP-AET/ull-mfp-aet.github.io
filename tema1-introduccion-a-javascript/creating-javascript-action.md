@@ -341,7 +341,7 @@ in the next step `Get the output time` and to refer to its `output` using
 the expression `steps.hello.outputs`. 
 
 Since in our `action.yml` file we set the name
-of the output to `time` we can refer to it with the expression `${ { steps.hello.outputs.time }}`
+of the output to `time` 
 
 ```yml
 name: 'Hello World'
@@ -355,6 +355,9 @@ outputs:
 runs:
   ...
 ```
+
+we can refer to it with the expression `${ { steps.hello.outputs.time }}`
+
 
 The setting of the output was achieved inside the `index.js` file by calling the 
 `setOutput` method of the `core` module:
