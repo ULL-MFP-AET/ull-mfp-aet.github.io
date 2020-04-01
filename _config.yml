@@ -43,6 +43,9 @@ temas:
   - title: 'Tema 2: Expresiones Regulares y Análisis Léxico'
     url: /tema2-expresiones-regulares-y-analisis-lexico/
     hover: 'tema2-expresiones-regulares-y-analisis-lexico'
+  - title: 'Análisis Sintactico Descendente Recursivo Predictivo'
+    url: /tema3-analisis-descendente-predictivo-recursivo/
+    hover: 'tema3-pdr'
 practicas:
   - title: 00cuestionarioghalu
     myurl: https://campusvirtual.ull.es/1920/mod/assign/view.php?id=14658
