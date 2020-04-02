@@ -95,3 +95,6 @@ practicas:
   - title: 10p10-t2-lexer-generator
     myurl: /tema2-expresiones-regulares-y-analisis-lexico/practicas/p10-t2-lexer-generator/
     name: Práctica p10-t2-lexer-generator
+    reto:
+      myurl: /tema2-expresiones-regulares-y-analisis-lexico/practicas/p10-t2-lexer-generator/reto
+      name: Reto Hello Actions!
