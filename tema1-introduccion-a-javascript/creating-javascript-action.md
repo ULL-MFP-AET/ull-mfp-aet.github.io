@@ -331,7 +331,7 @@ jobs:
           who-to-greet: 'Procesadores de Lenguajes at ULL'
       # Use the output from the `hello` step
       - name: Get the output time
-        run: echo "The time was ${ { steps.hello.outputs.time }}"
+        run: echo "The time was ${{"{{ steps.hello.outputs.time"}} }}"
 ```
 
 Observe the `id` attribute in the `Hello world action step`. 
@@ -356,7 +356,7 @@ runs:
   ...
 ```
 
-we can refer to it with the expression `${ { steps.hello.outputs.time }}`
+we can refer to it with the expression `${{ "{{ steps.hello.outputs.time" }} }}`
 
 
 The setting of the output was achieved inside the `index.js` file by calling the 
