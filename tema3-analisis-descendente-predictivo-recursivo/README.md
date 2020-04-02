@@ -17,7 +17,7 @@ Vamos a realizar múltiples prácticas sobre el lenguaje descrito en [Eloquent J
 
 Esta es la primera práctica
 
-* [Descripción de la Práctica](practicas/p5-t3-egg-0)
+* [Descripción de la Práctica p5-t3-egg-0](practicas/p5-t3-egg-0)
  
 *  [Vídeo del profesor: *Programando un bucle REPL para el lenguaje Egg*](https://youtu.be/5gIlt6r29lw)
 
