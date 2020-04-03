@@ -55,7 +55,6 @@ lib
     parseApply,
     parseExpression,
     parseFromFile,
-    setProgram,
   };
   ```
 
