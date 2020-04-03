@@ -274,9 +274,8 @@ Se usará una variable compartida que se debe llamar `lookahead` para guardar el
 
 ```js
 function parseExpression() {
-  var expr;
+  let expr;
 
-  debugger;
   if (lookahead.type == "STRING") {
     expr = {type: "value", value: lookahead.value};
     lex();
