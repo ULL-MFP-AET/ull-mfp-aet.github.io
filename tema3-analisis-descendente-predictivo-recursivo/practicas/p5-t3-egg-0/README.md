@@ -9,7 +9,8 @@ En esta primera práctica deberá leer el capítulo 12 *A Programming Language* 
 Se presenta un lenguaje llamado **Egg** (de tipo "Lisp") y se describe como procesarlo
 e interpretarlo.
 
-Lea cuidadosamente el capítulo intentando comprender como funciona el traductor y la interpretación del árbol.
+Lea cuidadosamente el capítulo intentando comprender como funcionan las dos fases: la primera con el análisis sintáctico que produce el AST y la segunda 
+en la que se ejecuta el AST.
 
 ## Fixing Scope
 
@@ -131,55 +132,202 @@ examples/
 ├── array.egg
 ├── greater-x-5.egg
 ├── if.egg
-├── main.js
-├── one-err.egg
-├── one.egg
-├── scope.egg
-├── string.egg
-├── sum.egg
+├── ...
 └── two.egg
 ```
 
 Cada vez que introduzca una nueva funcionalidad cree uno o varios ejemplos que sirvan para ilustrarla y comprobar el buen funcionamiento.
 
-Un objetivo es reciclar esos ejemplos en las pruebas y en la documentación.
+Por ejemplo, cuando trabajemos en la tarea  `Fixing Scope` podemos añadir a nuestro 
+directorio `examples` un par de ejemplos que ilustran como debería funcionar.
+
+Uno que produzca una excepción:
+
+```
+[~/.../crguezl-egg(private2019)]$ cat examples/scope-err.egg
+do(
+  set(x,9),
+  print(x) # ReferenceError: Tried setting an undefined variable: x
+)
+```
+
+y otro que muestre como unas variables ocultan a otras:
+
+```
+[~/.../crguezl-egg(private2019)]$ cat examples/scope.egg
+do(
+  def(x,9),
+  /* def crea una nueva variable local */
+  def(f, fun{
+    do{
+      def(x, 4),
+      print(x) # 4
+    }
+  }),
+  /* set no crea una nueva variable local */
+  def(g, fun{set(x, 8)}),
+  f(),
+  print(x), # 9
+  g(),
+  print(x) # 8
+)
+```
+
+Conforme programamos, vamos ejecutando nuestra solución contra estos programas. 
+Cuando tengamos la solución correcta la salida debería ser algo así:
+
+```
+[~/.../crguezl-egg(private2019)]$ bin/egg.js examples/scope-err.egg
+ReferenceError: Tried setting an undefined variable: x
+```
+
+```
+[~/.../crguezl-egg(private2019)]$ bin/egg.js examples/scope.egg
+4
+9
+8
+```
+
+Uno de nuestros objetivos es reciclar esos ejemplos en las pruebas y en la documentación.
 
 ### Test Folder
 
-Añada un fichero `test/test.js` y escriba las pruebas (Mocha o Jest)
+Añadimos una carpeta `test` y en ella los 
+programas de prueba `test/test.js` (Mocha o Jest). 
 
+Creamos tabién un subdirectorio `test/examples` en el que copiamos nuestro ejemplo de prueba, por ejemplo `scope.egg` y junto a el un fichero con la salida esperada `scope.egg.expected`:
+
+```
+test/
+├── examples
+│   ├── scope.egg
+│   └── scope.egg.expected
+└── test.js
+```
   
-Cada vez que logramos un nuevo objetivo añadimos en el directorio `examples` un programa `examples/objetivo.egg` cuya ejecución muestra el buen funcionamiento de nuestro código. 
+Cada vez que logramos implementar una nueva funcionalidad o un nuevo objetivo añadimos en el directorio `examples` uno o varios  programas `examples/objetivo.egg` cuya ejecución muestra el buen funcionamiento de nuestro código. También lo añadimos a `test/examples/objetivo.egg` así como la salida esperada `test/examples/objetivo.egg.expected`. 
 
-A continuación añadimos una prueba en el directorio `test/` que ejecuta el correspondiente programa y verifica que la salida es la esperada.
+De esta forma la prueba se reduce a comprobar que la salida de la ejecución del programa `test/examples/objetivo.egg` es igual a los contenidos de `test/examples/objetivo.egg.expected`.
 
-- Puede usar el módulo [@ull-esit-pl/example2test](https://www.npmjs.com/package/@ull-esit-pl/example2test) para simplificar esta metodología
-- Ejecutamos **todas** las pruebas `npm test` cada vez que resolvemos un nuevo objetivo
+Puede usar el módulo [@ull-esit-pl/example2test](https://www.npmjs.com/package/@ull-esit-pl/example2test) para simplificar esta metodología
+
+```
+[~/.../test(private2019)]$ cat scopes.js
+```
+```js
+let fs = require('fs');
+let should = require("should");
+let e2t = require('@ull-esit-pl/example2test');
+let eggvm = require('../lib/eggvm.js');
+
+describe("Testing scopes", function() {
+  let runTest = (programName, done) => {
+    e2t({
+      exampleInput: programName+'.egg',
+      executable: 'bin/egg.js',
+      assertion: (result, expected) => result.trim().should.eql(expected.trim()),
+      done: done,
+    });
+  };
+
+  it("should  not allow the use of non declared variables", function() {
+    let program = fs.readFileSync('examples/scope-err.egg', 'utf8');
+    (() => { eggvm.run(program); }).should.throw(/setting.+undefined.+variable/i);
+  });
+
+  it("testing scope.egg", function(done) {
+    runTest('scope', done);
+  });
+});
+```
+
+Como se puede apreciar, el objeto `eggvm` exportado por el módulo `lib/eggvm.j`
+dispone de un método `run` que ejecuta la cadena que se le pasa como entrada.
+
+No olvides ejecutar **todas** las pruebas `npm test` cada vez que resuelves un nuevo objetivo
+
+```
+[~/.../crguezl-egg(private2019)]$ npx mocha test/scopes.js
+  Testing scopes
+    ✓ should  not allow the use of non declared variables
+    ✓ testing scope.egg (138ms)
+  2 passing (151ms)
+```
+
+## Continuous Integration
+
+Use GitHub Actions para añadir CI al proyecto
+
+## GitHub Registry
+
+Publique el compilador como módulo en GH Registry
 
 ## Analizador Léxico Separado
 
 Intente ahora separar la fase de análisis sintáctico de la fase de análisis léxico
-escribiendo una función `lex` que cada vez que es llamada por las funciones  `parseExpression` y `parseApply` que retorna
-el siguiente token.
+en una función separada `lex` que cada vez que es llamada por las funciones  `parseExpression` y `parseApply` retorna
+el siguiente token. 
+
+Esto es, a diferencia de en los ejemplos previos el analizador léxico no analiza todos los tokens en una pasada guardándolos en un arraysino que tan pronto como detecta un token lo devuelve a la rutina de  análisis sintáctico que le ha llamado.
+
+Se usará una variable compartida que se debe llamar `lookahead` para guardar el token actual. Esta variable `lookahead` sirve para la comunicación entre las funciones de análisis sintactico y el analizador léxico. Algo como esto:
+
+```js
+function parseExpression() {
+  var expr;
+
+  debugger;
+  if (lookahead.type == "STRING") {
+    expr = {type: "value", value: lookahead.value};
+    lex();
+    return expr;
+  } else if (lookahead.type == "NUMBER") {
+    expr = {type: "value", value: lookahead.value};
+    lex();
+    return expr;
+  } else if (lookahead.type == "WORD") {
+    expr = {type: "word", name: lookahead.value};
+    lex();
+    return parseApply(expr);
+  } else {
+    throw new SyntaxError(`Unexpected syntax line ${lineno}: ${program.slice(0,10)}`);
+  }
+}
+```
 
 Si logra resolver estos objetivos ¡Enhorabuena!.
 
-Si no, puede encontrar una solución a estos tres problemas en este repo [ULL-ESIT-PL-1617/egg](https://github.com/ULL-ESIT-PL-1617/egg)
-
-El repo ha sido publicado como módulo en npm [@crguezl/eloquentjsegg](https://www.npmjs.com/package/@crguezl/eloquentjsegg)
-
-
-
+Puede encontrar una solución a los problemas planteados en este repo [ULL-ESIT-PL-1617/egg](https://github.com/ULL-ESIT-PL-1617/egg). Asegúrese que entiende como funciona.
+También puede encontrarlo como módulo en npm [@crguezl/eloquentjsegg](https://www.npmjs.com/package/@crguezl/eloquentjsegg) 
 
 
 A continuación mejore el analizador léxico que encuentra en este repo 
-para que:
+como sigue:
 
-1. Puede opcionalmente usar la opción `x` de  [XRegExp](http://xregexp.com/) para sangrar y comentar las expresiones regulares
-2. Guarde en el objeto token el `offset` de comienzo, la línea de comienzo, etc
-3. Mejore los mensajes de error usando esta información
-4. El analizador léxico actual destruye la cadena conteniendo el programa conforme la analiza.  Es posible  escribir una analizador léxico que recorra la cadena conteniendo el programa sin destruirla usando la opción `sticky`. Estudie esta mejora
-5. Mejore las pruebas, especialmente con programas que contienen errores
+1. Guarde en el objeto token el `offset` de comienzo, la línea de comienzo, etc
+2. Mejore los mensajes de error usando esta información
+3. El analizador léxico actual destruye la cadena conteniendo el programa conforme la analiza.  Es posible  escribir una analizador léxico que recorra la cadena conteniendo el programa sin destruirla usando la opción `sticky`. Estudie esta mejora
+4. Mejore las pruebas, especialmente con programas que contienen errores
+
+## Bucle REPLpara egg (Repeat Evaluate Print Loop)
+
+
+Haga que el ejecutable `egg` funcione como un bucle REPL cuando no se le proporciona un fichero de entrada.
+
+En este [Vídeo *Programando un bucle REPL para el lenguaje Egg*](https://youtu.be/5gIlt6r29lw) explicamos como hacerlo
+
+```lisp
+[~/ull-pl1718-campus-virtual/tema3-analisis-sintactico/src/egg/crguezl-egg(private)]$ bin/egg.js
+> def(x, array(1,2,array(3,4))) # x = [1,2,[3,4]]
+[ 1, 2, [ 3, 4 ] ]
+> <-(x,2) # 3d element
+[ 3, 4 ]
+> <-(x,0) # 1st element
+1
+> # Pulsamos CTRL-D
+> goodbye!
+```
+
 
 
 ## Recursos
