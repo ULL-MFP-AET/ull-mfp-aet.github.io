@@ -14,7 +14,7 @@
   
 </ol>
 
-I have created a room <code>ULL-ESIT-PL-1920</code> to  use for tutoring, solving doubts and labs. 
+I have created a room <code>ULL-ESIT-PL-1920</code> to  use for tutoring, solving doubts and labs. Feel free to send me messages trough this channel.
 
 
 <p>You can also download native apps for Hangouts Chat on <a href="https://dl.google.com/chat/latest/InstallHangoutsChat.msi" target="_blank" rel="noopener">Windows</a> and <a href="https://dl.google.com/chat/latest/InstallHangoutsChat.dmg" target="_blank" rel="noopener">macOS</a>.</p>
