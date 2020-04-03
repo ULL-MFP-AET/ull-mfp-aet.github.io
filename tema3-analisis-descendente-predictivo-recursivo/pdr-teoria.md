@@ -38,6 +38,21 @@ la variable $$A \in V$$.
 
 La función de `parseA()` es reconocer el lenguaje $$L(A)$$ generado por $$A$$.
 
+Por ejemplo, en Egg esta es la gramática:
+
+```yacc
+expression: STRING
+          | NUMBER
+          | WORD apply
+
+apply: /* vacio */
+     | '(' (expression ',')* expression? ')' apply
+```
+
+Para hacer el parser escribimos dos funciones `parseExpression`y `parseApply`.
+La función `parseExpression` reconoce el lenguaje $$L(expression)$$ y la función  `parseApply` reconoce el lenguaje $$L(apply)$$. 
+
+
 La estrategia general que sigue la rutina `parseA` para reconocer $$L(A)$$ es
 decidir en términos del terminal `a` en la entrada cual de las partes derechas de las reglas de $$A$$
 
@@ -49,8 +64,17 @@ $$ \ldots $$
 
 $$A \rightarrow \alpha_n$$ 
 
-
 se aplica para a continuación comprobar que la entrada que sigue pertenece al lenguaje generado por $$\alpha$$. 
+
+Por ejemplo, en la gramática de Egg estas son las reglas para `expression`:
+
+```yacc
+expression: STRING
+          | NUMBER
+          | WORD apply
+```
+
+Vemos que las tres reglas empiezan por un token distinto. Si sabemos que el token actual es `WORD` estamos seguros que la regla que se aplica es la tercera.
 
 En un analizador predictivo descendente recursivo (APDR) se
 asume que el símbolo que actualmente esta siendo observado (que a partir de ahora denominaré `lookahead`) permite determinar unívocamente que producción de $$A$$ hay
@@ -66,7 +90,6 @@ Para ello se procede así. Si $$\alpha = X_1 \ldots X_n$$,
 $$\alpha$$ son emparejadas con los terminales en la entrada avanzando en el flujo de tokens, mientras que
 - las apariciones de variables sintácticas $$X_i = B \in V$$ en $$\alpha$$ se traducen en
 llamadas a la correspondiente subrutina asociada con `parseB`.
-
 
 La secuencia de llamadas cuando se procesa la entrada mediante el
 siguiente programa construye "implícitamente" el árbol de análisis
@@ -103,3 +126,29 @@ una secuencia $$i = 1 \ldots k$$ de llamadas de uno de estos dos tipos:
 
 -   Hacer una llamada al analizador léxico  avanzando sobre el token `lexer()` si $$X_i$$ es el terminal actual
 
+Si aplicamos esta teoría a la variable sintáctica `expression` cuyas reglas eran:
+
+```yacc
+expression: STRING
+          | NUMBER
+          | WORD apply
+```
+
+nos produce este código:
+
+```js
+function parseExpression() {
+  if (lookahead.type == "STRING") { // STRING es el FIRST de la primera regla 
+    lex();
+    return expr;
+  } else if (lookahead.type == "NUMBER") { // NUMBER es el FIRST de la segunda regla
+     lex();
+    return expr;
+  } else if (lookahead.type == "WORD") { // Es WORD Apply
+    lex(); // Consumimos  WORD
+    return parseApply(expr); // ... y llamamos a parseApply
+  } else {
+    throw new SyntaxError(`Unexpected syntax line ${lineno}: ${program.slice(0,10)}`);
+  }
+}
+```
