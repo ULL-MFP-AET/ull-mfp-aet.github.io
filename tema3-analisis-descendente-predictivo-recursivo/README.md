@@ -1,6 +1,6 @@
 # Análisis Sintactico Descendente Recursivo Predictivo (e Interpretación de Código)
 
-## Conceptos Teóricos para los Analizadores Descendentes Recursivos Predictivos
+## Los Analizadores Descendentes Recursivos Predictivos
 
 ###  [Apuntes de PL: Análisis Sintáctico Predictivo Recursivo](http://crguezl.github.io/pl-html/node20.html) (JavaScript/CoffeeScript)
 
