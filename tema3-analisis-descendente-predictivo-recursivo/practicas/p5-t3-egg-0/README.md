@@ -310,7 +310,7 @@ Use GitHub Actions para añadir CI al proyecto
 
 ## GitHub Registry
 
-Publique el compilador como módulo en GH Registry
+Publique el compilador como módulo en GH Registry en el ámbito `@ULL-ESIT-PL-1920`
 
 ## Analizador Léxico Separado
 
