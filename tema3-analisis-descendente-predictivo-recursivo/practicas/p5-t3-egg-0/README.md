@@ -268,7 +268,7 @@ Intente ahora separar la fase de análisis sintáctico de la fase de análisis l
 en una función separada `lex` que cada vez que es llamada por las funciones  `parseExpression` y `parseApply` retorna
 el siguiente token. 
 
-Esto es, a diferencia de en los ejemplos previos el analizador léxico no analiza todos los tokens en una pasada guardándolos en un arraysino que tan pronto como detecta un token lo devuelve a la rutina de  análisis sintáctico que le ha llamado.
+Esto es, a diferencia de en los ejemplos vistos en las clases anteriores, el analizador léxico no analiza todos los tokens en una pasada guardándolos en un arraysino que tan pronto como detecta un token lo devuelve a la rutina de  análisis sintáctico que le ha llamado.
 
 Se usará una variable compartida que se debe llamar `lookahead` para guardar el token actual. Esta variable `lookahead` sirve para la comunicación entre las funciones de análisis sintactico y el analizador léxico. Algo como esto:
 
