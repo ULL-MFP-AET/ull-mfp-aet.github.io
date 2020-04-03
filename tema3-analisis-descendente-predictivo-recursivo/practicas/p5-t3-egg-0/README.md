@@ -229,7 +229,15 @@ Uno de nuestros objetivos es reciclar esos ejemplos en las pruebas y en la docum
 Añadimos una carpeta `test` y en ella los 
 programas de prueba `test/test.js` (Mocha o Jest, use lo que prefiera. Los ejemplos que siguen están en Mocha). 
 
-Creamos tabién un subdirectorio `test/examples` en el que copiamos nuestro ejemplo de prueba, por ejemplo `scope.egg` y junto a el un fichero con la salida esperada `scope.egg.expected`:
+Creamos tabién un subdirectorio `test/examples` en el que copiamos nuestro ejemplo de prueba:
+  
+```
+cp examples/scope.egg test/examples/
+``` 
+
+y junto a el escribimos un fichero con la salida esperada `test/examples/scope.egg.expected`.
+
+Una estructura como esta:
 
 ```
 test/
