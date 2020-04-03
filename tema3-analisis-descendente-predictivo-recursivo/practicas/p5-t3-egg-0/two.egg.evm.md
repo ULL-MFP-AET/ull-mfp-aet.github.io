@@ -21,7 +21,7 @@
           "type": "apply",
           "operator": {
             "type": "word",
-            "name": "function"
+            "name": "fun"
           },
           "args": [
             {
@@ -152,7 +152,7 @@
                                   "type": "apply",
                                   "operator": {
                                     "type": "word",
-                                    "name": "[]"
+                                    "name": "element"
                                   },
                                   "args": [
                                     {

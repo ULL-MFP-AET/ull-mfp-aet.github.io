@@ -75,17 +75,19 @@ Compiles the input program to produce a JSON containing the tree: `eggc examples
 
 Por ejemplo, si le damos como entrada este programa:
 
-```lisp
+```
 [~/.../crguezl-egg(master)]$ cat examples/two.egg
+```
+```lisp
 do(
   define(sum,  # function
-    ->(nums, other,
+    fun(nums, other,
       do(
          print(other),
          define(i, 0),
          define(sum, 0),
          while(<(i, length(nums)),
-           do(define(sum, +(sum, [](nums, i))),
+           do(define(sum, +(sum, element(nums, i))),
               define(i, +(i, 1))
            )
          ),
@@ -96,7 +98,7 @@ do(
  print(sum(array(1, 2, 3), 4))
 )
 ```
-Si ejecutamos `bin/eggc.js  examples/two.egg` produce como salida un fichero con el mismo nombre y extensión ` examples/two.egg.evm` (por Egg Virtual Machine) que no es otra cosa que el AST generado por el parser guardado como un objeto JSON.
+Si ejecutamos `bin/eggc.js  examples/two.egg` produce como salida un fichero con el mismo nombre y extensión `.evm` (por Egg Virtual Machine) que no es otra cosa que el AST generado por el parser guardado como un objeto JSON.
 
 ```
 [~/.../crguezl-egg(master)]$ bin/eggc.js examples/two.egg
@@ -104,271 +106,56 @@ Si ejecutamos `bin/eggc.js  examples/two.egg` produce como salida un fichero con
 -rw-r--r--  1 casiano  staff  7466  2 abr 11:03 examples/two.egg.evm
 ```
 
-[`[~/.../crguezl-egg(master)]$ cat examples/two.egg.evm`](two.egg.evm.md)
-{
-  "type": "apply",
-  "operator": {
-    "type": "word",
-    "name": "do"
-  },
-  "args": [
-    {
-      "type": "apply",
-      "operator": {
-        "type": "word",
-        "name": "define"
-      },
-      "args": [
-        {
-          "type": "word",
-          "name": "sum"
-        },
-        {
-          "type": "apply",
-          "operator": {
-            "type": "word",
-            "name": "function"
-          },
-          "args": [
-            {
-              "type": "word",
-              "name": "nums"
-            },
-            {
-              "type": "word",
-              "name": "other"
-            },
-            {
-              "type": "apply",
-              "operator": {
-                "type": "word",
-                "name": "do"
-              },
-              "args": [
-                {
-                  "type": "apply",
-                  "operator": {
-                    "type": "word",
-                    "name": "print"
-                  },
-                  "args": [
-                    {
-                      "type": "word",
-                      "name": "other"
-                    }
-                  ]
-                },
-                {
-                  "type": "apply",
-                  "operator": {
-                    "type": "word",
-                    "name": "define"
-                  },
-                  "args": [
-                    {
-                      "type": "word",
-                      "name": "i"
-                    },
-                    {
-                      "type": "value",
-                      "value": 0
-                    }
-                  ]
-                },
-                {
-                  "type": "apply",
-                  "operator": {
-                    "type": "word",
-                    "name": "define"
-                  },
-                  "args": [
-                    {
-                      "type": "word",
-                      "name": "sum"
-                    },
-                    {
-                      "type": "value",
-                      "value": 0
-                    }
-                  ]
-                },
-                {
-                  "type": "apply",
-                  "operator": {
-                    "type": "word",
-                    "name": "while"
-                  },
-                  "args": [
-                    {
-                      "type": "apply",
-                      "operator": {
-                        "type": "word",
-                        "name": "<"
-                      },
-                      "args": [
-                        {
-                          "type": "word",
-                          "name": "i"
-                        },
-                        {
-                          "type": "apply",
-                          "operator": {
-                            "type": "word",
-                            "name": "length"
-                          },
-                          "args": [
-                            {
-                              "type": "word",
-                              "name": "nums"
-                            }
-                          ]
-                        }
-                      ]
-                    },
-                    {
-                      "type": "apply",
-                      "operator": {
-                        "type": "word",
-                        "name": "do"
-                      },
-                      "args": [
-                        {
-                          "type": "apply",
-                          "operator": {
-                            "type": "word",
-                            "name": "define"
-                          },
-                          "args": [
-                            {
-                              "type": "word",
-                              "name": "sum"
-                            },
-                            {
-                              "type": "apply",
-                              "operator": {
-                                "type": "word",
-                                "name": "+"
-                              },
-                              "args": [
-                                {
-                                  "type": "word",
-                                  "name": "sum"
-                                },
-                                {
-                                  "type": "apply",
-                                  "operator": {
-                                    "type": "word",
-                                    "name": "[]"
-                                  },
-                                  "args": [
-                                    {
-                                      "type": "word",
-                                      "name": "nums"
-                                    },
-                                    {
-                                      "type": "word",
-                                      "name": "i"
-                                    }
-                                  ]
-                                }
-                              ]
-                            }
-                          ]
-                        },
-                        {
-                          "type": "apply",
-                          "operator": {
-                            "type": "word",
-                            "name": "define"
-                          },
-                          "args": [
-                            {
-                              "type": "word",
-                              "name": "i"
-                            },
-                            {
-                              "type": "apply",
-                              "operator": {
-                                "type": "word",
-                                "name": "+"
-                              },
-                              "args": [
-                                {
-                                  "type": "word",
-                                  "name": "i"
-                                },
-                                {
-                                  "type": "value",
-                                  "value": 1
-                                }
-                              ]
-                            }
-                          ]
-                        }
-                      ]
-                    }
-                  ]
-                },
-                {
-                  "type": "word",
-                  "name": "sum"
-                }
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "type": "apply",
-      "operator": {
-        "type": "word",
-        "name": "print"
-      },
-      "args": [
-        {
-          "type": "apply",
-          "operator": {
-            "type": "word",
-            "name": "sum"
-          },
-          "args": [
-            {
-              "type": "apply",
-              "operator": {
-                "type": "word",
-                "name": "array"
-              },
-              "args": [
-                {
-                  "type": "value",
-                  "value": 1
-                },
-                {
-                  "type": "value",
-                  "value": 2
-                },
-                {
-                  "type": "value",
-                  "value": 3
-                }
-              ]
-            },
-            {
-              "type": "value",
-              "value": 4
-            }
-          ]
-        }
-      ]
-    }
-  ]
-}
+Puede ver los contenidos del JSON generado en la ejecución de ejemplo en este enlace:
+
+* [examples/two.egg.evm](two.egg.evm)
+
+### evm 
+
+El intérprete `evm` ejecuta los ficheros en formato *Egg Virtual Machine*. 
+
+```
+[~/.../crguezl-egg(master)]$ bin/evm.js examples/two.egg.evm
+4
+6
 ```
 
-### `evm` 
+### Examples folder
 
-- Egg Virtual Machine. Runs the tree: `evm examples/two.egg.evm`
+Añada una carpeta `examples` en la que guardará los ejemplos con los que va comprobando la funcionalidad de su compilador:
+
+```
+[~/.../crguezl-egg(master)]$ tree examples/ -I '*evm'
+examples/
+├── array.egg
+├── greater-x-5.egg
+├── if.egg
+├── main.js
+├── one-err.egg
+├── one.egg
+├── scope.egg
+├── string.egg
+├── sum.egg
+└── two.egg
+```
+
+Cada vez que introduzca una nueva funcionalidad cree uno o varios ejemplos que sirvan para ilustrarla y comprobar el buen funcionamiento.
+
+Un objetivo es reciclar esos ejemplos en las pruebas y en la documentación.
+
+### Test Folder
+
+Añada un fichero `test/test.js` y escriba las pruebas (Mocha o Jest)
+
+  
+Cada vez que logramos un nuevo objetivo añadimos en el directorio `examples` un programa `examples/objetivo.egg` cuya ejecución muestra el buen funcionamiento de nuestro código. 
+
+A continuación añadimos una prueba en el directorio `test/` que ejecuta el correspondiente programa y verifica que la salida es la esperada.
+
+- Puede usar el módulo [@ull-esit-pl/example2test](https://www.npmjs.com/package/@ull-esit-pl/example2test) para simplificar esta metodología
+- Ejecutamos **todas** las pruebas `npm test` cada vez que resolvemos un nuevo objetivo
+
+## Analizador Léxico Separado
 
 Intente ahora separar la fase de análisis sintáctico de la fase de análisis léxico
 escribiendo una función `lex` que cada vez que es llamada por las funciones  `parseExpression` y `parseApply` que retorna

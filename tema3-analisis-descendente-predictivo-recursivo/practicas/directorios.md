@@ -64,3 +64,17 @@ private-egg-1819	git@github.com:ULL-ESIT-PL-1819/private-egg.git (push)
   remotes/private-egg-1819/private2019
   remotes/private-egg/private
 ```
+
+```
+[~/.../crguezl-egg(master)]$ git remote -v
+gist	git@gist.github.com:2ec9aeb4e3fa512eec26.git (fetch)
+gist	git@gist.github.com:2ec9aeb4e3fa512eec26.git (push)
+pl1617	git@github.com:ULL-ESIT-PL-1617/egg.git (fetch)
+pl1617	git@github.com:ULL-ESIT-PL-1617/egg.git (push)
+pl1819	git@github.com:ULL-ESIT-PL-1819/egg.git (fetch)
+pl1819	git@github.com:ULL-ESIT-PL-1819/egg.git (push)
+private-egg	git@github.com:ULL-ESIT-PL-1718/egg.git (fetch)
+private-egg	git@github.com:ULL-ESIT-PL-1718/egg.git (push)
+private-egg-1819	git@github.com:ULL-ESIT-PL-1819/private-egg.git (fetch)
+private-egg-1819	git@github.com:ULL-ESIT-PL-1819/private-egg.git (push)
+```
