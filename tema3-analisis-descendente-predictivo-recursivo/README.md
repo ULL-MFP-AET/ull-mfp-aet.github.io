@@ -31,11 +31,11 @@ Esta referencia puede ayudar sobre este tema:
 
 ### Metodología  de Trabajo
 
-* [Metodología](../metodologia-para-las-practicas)
+* [Metodología](practicas/metodologia-para-las-practicas)
 
 ### Recursos para el Profesor
 
-* [Directorios y Ramas](../directorios)
+* [Directorios y Ramas](practicas/directorios)
 
 
 ### Práctica p6-t3-egg-1
