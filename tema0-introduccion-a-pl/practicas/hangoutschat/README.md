@@ -1,15 +1,10 @@
+
+<h2>Sign in to Hangouts Chat</h2>
+
 <p>Hangouts Chat is a powerful way to communicate with people at ULL. Start a message with one or more coworkers, create a room for ongoing conversations with groups of people, and use bots to help automate your work.</p>
 
 <p>Chat works in your computer browser and in mobile apps for Android and iOS. Chat keeps all your messages in sync no matter which devices you use, even if you switch between them.</p>
 
-<h2>Communicate in two ways</h2>
-
-<ul>
-  <li><strong>Have a private conversation–</strong>Use a direct message to communicate with a colleague or small group of people.</li>
-  <li><strong>Create a room</strong>—Use a room to have an ongoing conversation with a group of people that can change over time. All members can view the conversation history so they won't miss what was already discussed. Rooms can have multiple threads, called <em>conversations</em>, for different topics within the same room.</li>
-</ul>
-
-<h2>Sign in to Hangouts Chat</h2>
 
 <p>Sign in to Hangouts Chat to send and receive messages with your coworkers.</p>
 
@@ -23,8 +18,15 @@
 
 <p><strong>Trouble signing in with the native apps?</strong> <a href="https://support.google.com/hangoutschat/answer/7666814" target="_blank" rel="noopener">Learn more</a>.</p>
 
+<h2>Communicate in two ways</h2>
+
+<ul>
+  <li><strong>Have a private conversation–</strong>Use a direct message to communicate with a colleague or small group of people.</li>
+  <li><strong>Create a room</strong>—Use a room to have an ongoing conversation with a group of people that can change over time. All members can view the conversation history so they won't miss what was already discussed. Rooms can have multiple threads, called <em>conversations</em>, for different topics within the same room.</li>
+</ul>
+
 <h2>Work with Hangouts Chat</h2>
-<img src="//lh3.googleusercontent.com/UF8BeIK3puBenwwX1u6ckCiFJ7s1lrbTPEN8vgB-zUocStTK7qPpjjqrInx5K0sz2xY=w403" width="403" height="159" alt="">
+<img src="https://lh3.googleusercontent.com/BTjWqpGvgb5iWdOQmTEyQkwK7m049hp2TbmU5k-BIIco1PFvg4cxZ8BFCGmaM-vDRE8=w223" width="180" height="179" alt="">
 
 <p>&nbsp;</p>
 
