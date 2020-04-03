@@ -30,7 +30,7 @@ Tiene una solución [aquí](https://github.com/ULL-ESIT-PL-1617/egg/blob/master/
 
 Lea esta breve introducción a como se escribe un analizador  Sintáctico Predictivo Recursivo como el que se construye en el capítulo 12 *A Programming Language* de EJS:
 
-[Análisis Sintáctico Predictivo Recursivo](pdr-teoria)
+[Análisis Sintáctico Predictivo Recursivo]({{site.baseurl}}/ema3-analisis-descendente-predictivo-recursivo/pdr-teoria)
 
 ## Fixing Scope
 
