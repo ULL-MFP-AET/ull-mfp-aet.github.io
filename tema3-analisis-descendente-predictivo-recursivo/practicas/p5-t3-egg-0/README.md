@@ -283,7 +283,7 @@ describe("Testing scopes", function() {
 });
 ```
 
-Como se puede apreciar, el objeto `eggvm` exportado por el módulo `lib/eggvm.j`
+Como se puede apreciar, el objeto `eggvm` exportado por el módulo `lib/eggvm.js`
 dispone de un método `run` que ejecuta la cadena que se le pasa como entrada.
 
 No olvides ejecutar **todas** las pruebas `npm test` cada vez que resuelves un nuevo objetivo
@@ -353,9 +353,7 @@ como sigue:
 ## Bucle REPLpara egg (Repeat Evaluate Print Loop)
 
 
-Haga que el ejecutable `egg` funcione como un bucle REPL cuando no se le proporciona un fichero de entrada.
-
-En este [Vídeo *Programando un bucle REPL para el lenguaje Egg*](https://youtu.be/5gIlt6r29lw) explicamos como hacerlo
+Haga que el ejecutable `egg` funcione como un bucle REPL cuando no se le proporciona un fichero de entrada. En este [Vídeo *Programando un bucle REPL para el lenguaje Egg*](https://youtu.be/5gIlt6r29lw) explicamos como hacerlo
 
 ```lisp
 [~/ull-pl1718-campus-virtual/tema3-analisis-sintactico/src/egg/crguezl-egg(private)]$ bin/egg.js
@@ -378,6 +376,7 @@ En este [Vídeo *Programando un bucle REPL para el lenguaje Egg*](https://youtu.
 * [Repo interpreter-egg](https://github.com/ULL-ESIT-PL-1617/interpreter-egg)
 * [NodeJS Readline gist](https://gist.github.com/crguezl/430642e29a2b9293317320d0d1759387)
 * En el repo [ULL-ESIT-PL-1617/interpreter-egg](https://github.com/ULL-ESIT-PL-1617/interpreter-egg) se muestra como hacer un bucle REPL
+* [Vídeo *Programando un bucle REPL para el lenguaje Egg*](https://youtu.be/5gIlt6r29lw)
 * [XRegExp](http://xregexp.com/)
 * El módulo [@ull-esit-pl/example2test](https://www.npmjs.com/package/@ull-esit-pl/example2test)
 * Tests. Mocking and Stubbing
