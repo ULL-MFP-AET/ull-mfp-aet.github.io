@@ -26,6 +26,11 @@ Escriba en su `README.md` las reglas de producción de la gramática que reconoc
 
 Tiene una solución [aquí](https://github.com/ULL-ESIT-PL-1617/egg/blob/master/README.md#grammar)
 
+## Análisis Sintáctico Predictivo Recursivo 
+
+Lea esta breve introducción a como se escribe un analizador  Sintáctico Predictivo Recursivo como el que se construye en el capítulo 12 *A Programming Language* de EJS:
+
+[Análisis Sintáctico Predictivo Recursivo](pdr-teoria)
 
 ## Fixing Scope
 
