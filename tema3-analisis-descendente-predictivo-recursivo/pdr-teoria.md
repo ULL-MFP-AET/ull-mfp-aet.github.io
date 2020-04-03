@@ -139,10 +139,10 @@ nos produce este código:
 ```js
 function parseExpression() {
   if (lookahead.type == "STRING") { // STRING es el FIRST de la primera regla 
-    lex();
+    lex(); // Saltamos el token STRING
     return expr;
   } else if (lookahead.type == "NUMBER") { // NUMBER es el FIRST de la segunda regla
-     lex();
+     lex();  // Saltemos el token NUMBER
     return expr;
   } else if (lookahead.type == "WORD") { // Es WORD Apply
     lex(); // Consumimos  WORD

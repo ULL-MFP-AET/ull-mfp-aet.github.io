@@ -24,7 +24,7 @@ en la que se ejecuta el AST.
 
 Escriba en su `README.md` las reglas de producción de la gramática que reconoce el traductor
 
-Tiene una solución [aquí](https://github.com/ULL-ESIT-PL-1617/egg/blob/master/README.md#grammar)
+Tiene una solución [aquí]({{site.baseurl}}/tema3-analisis-descendente-predictivo-recursivo/egg-grammar)
 
 ## Análisis Sintáctico Predictivo Recursivo 
 
