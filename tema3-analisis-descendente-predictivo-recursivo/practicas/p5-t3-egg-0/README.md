@@ -13,7 +13,7 @@ Lea cuidadosamente el capítulo intentando comprender como funciona el traductor
 
 ## Fixing Scope
 
-Resuelva por su cuenta los dos ejercicios propuestos en el capítulo:
+Resuelva los dos ejercicios propuestos en el capítulo:
 
 1. [Comments](https://eloquentjavascript.net/12_language.html#i_/OBuIOX390) y 
 2. [Fixing Scope](https://eloquentjavascript.net/12_language.html#i_Y9ZDMshYCQ)
@@ -38,7 +38,7 @@ lib
 ```
 
 - `parse.js` debe contener las funciones del análisis léxico y sintáctico
-- `eggvm.js`debe contener todo el códigorelativo al entorno de ejecución
+- `eggvm.js`debe contener todo el código relativo al entorno de ejecución
   
 Añada también tres ejecutables que usan los módulos anteriores:
 
@@ -98,6 +98,7 @@ do(
  print(sum(array(1, 2, 3), 4))
 )
 ```
+
 Si ejecutamos `bin/eggc.js  examples/two.egg` produce como salida un fichero con el mismo nombre y extensión `.evm` (por Egg Virtual Machine) que no es otra cosa que el AST generado por el parser guardado como un objeto JSON.
 
 ```
