@@ -12,15 +12,6 @@ e interpretarlo.
 Lea cuidadosamente el capítulo intentando comprender como funcionan las dos fases: la primera con el análisis sintáctico que produce el AST y la segunda 
 en la que se ejecuta el AST.
 
-## Fixing Scope
-
-Resuelva los dos ejercicios propuestos en el capítulo:
-
-1. [Comments](https://eloquentjavascript.net/12_language.html#i_/OBuIOX390) y 
-2. [Fixing Scope](https://eloquentjavascript.net/12_language.html#i_Y9ZDMshYCQ)
-
-Si no se le ocurre como resolver el segundo apartado, *Fixing Scope*, puede encontrar una solución al problema en la rama [Inicial de este repo ULL-ESIT-PL-1617/egg/](https://github.com/ULL-ESIT-PL-1617/egg/tree/inicial). 
-
 ## Escriba la Gramática
 
 Escriba en su `README.md` las reglas de producción de la gramática que reconoce el traductor
@@ -28,9 +19,23 @@ Escriba en su `README.md` las reglas de producción de la gramática que reconoc
 Tiene una solución [aquí](https://github.com/ULL-ESIT-PL-1617/egg/blob/master/README.md#grammar)
 
 
+## Fixing Scope
+
+Resuelva los dos ejercicios propuestos en el capítulo:
+
+1. [Comments](https://eloquentjavascript.net/12_language.html#i_/OBuIOX390) y 
+2. [Fixing Scope](https://eloquentjavascript.net/12_language.html#i_Y9ZDMshYCQ)
+
+Si no se le ocurre como resolver el segundo apartado, *Fixing Scope*, no desespere. Es un ejercicio muy difícil. Inténtelo mas de una vez.
+
+Puede encontrar una solución al problema en la rama [Inicial de este repo ULL-ESIT-PL-1617/egg/](https://github.com/ULL-ESIT-PL-1617/egg/tree/inicial). 
+Si no se le ocurre una solución acuda a este enlace. 
+Y si se le ocurrió  también. Contraste las soluciones y quédese con la que le parezca mejor.
+
+
 ## Separe en Módulos el Programa
 
-Separe el código en dos módulos node:
+Separe el código en dos módulos Node.js:
 
 ```
 lib
@@ -38,8 +43,27 @@ lib
 └── parse.js
 ```
 
-- `parse.js` debe contener las funciones del análisis léxico y sintáctico
-- `eggvm.js`debe contener todo el código relativo al entorno de ejecución
+- `parse.js` debe contener las funciones del análisis léxico y sintáctico y exportarlas
+
+  ```js
+  [~/.../crguezl-egg(master)]$ tail -n 9 lib/parse.js
+  module.exports = {
+    getProgram,
+    lex,
+    parse,
+    parseApply,
+    parseExpression,
+    parseFromFile,
+    setProgram,
+  };
+  ```
+
+- `eggvm.js`debe contener todo el código relativo al entorno de ejecución. Este módulo debería exportar funciones para la ejecución del árbol generado en la primera fase como `run`, `runFromFile`, `runFromEVM`:
+
+  ```
+  [~/.../crguezl-egg(master)]$ tail -n 1 lib/eggvm.js
+  module.exports = {run, runFromFile, runFromEVM, topEnv, specialForms, parser, evaluate};
+  ```
   
 Añada también tres ejecutables que usan los módulos anteriores:
 
