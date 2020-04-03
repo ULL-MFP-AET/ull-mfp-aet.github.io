@@ -87,7 +87,7 @@ bin
 
 ### egg
 
-El programa `egg`  deberá ejecutar el programa `.egg` que se le pasa por línea de comandos y lo interpretará:
+El programa `egg`  deberá ejecutar el programa `.egg` que se le pasa por línea de comandos:
 
 ```lisp
 $ cat one.egg
@@ -185,7 +185,7 @@ do(
 )
 ```
 
-y otro que muestre como unas variables ocultan a otras:
+y al menos otro que muestre como unas variables ocultan a otras:
 
 ```
 [~/.../crguezl-egg(private2019)]$ cat examples/scope.egg
