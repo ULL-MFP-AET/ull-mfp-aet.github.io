@@ -45,11 +45,12 @@ lib
 
 - `parse.js` debe contener las funciones del análisis léxico y sintáctico y exportarlas
 
-  ```js
+  ```
   [~/.../crguezl-egg(master)]$ tail -n 9 lib/parse.js
+  ```
+  ```js
   module.exports = {
-    getProgram,
-    lex,
+    ...
     parse,
     parseApply,
     parseExpression,
@@ -62,7 +63,17 @@ lib
 
   ```
   [~/.../crguezl-egg(master)]$ tail -n 1 lib/eggvm.js
-  module.exports = {run, runFromFile, runFromEVM, topEnv, specialForms, parser, evaluate};
+  ```
+  ```js
+  module.exports = {
+    run, 
+    runFromFile, 
+    runFromEVM, 
+    topEnv, 
+    specialForms, 
+    parser, 
+    evaluate
+  };
   ```
   
 Añada también tres ejecutables que usan los módulos anteriores:
