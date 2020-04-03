@@ -4,6 +4,8 @@ title: p10-t2-lexer-generator
 permalink: /tema2-expresiones-regulares-y-analisis-lexico/practicas/p10-t2-lexer-generator/
 previous: 
   url: /tema2-expresiones-regulares-y-analisis-lexico/practicas/p9-t2-lexer/
+next:
+  url: /tema3-analisis-descendente-predictivo-recursivo/practicas/p5-t3-egg-0/
 ---
 
 # Lexer Generator (p10-t2-lexer-generator)
