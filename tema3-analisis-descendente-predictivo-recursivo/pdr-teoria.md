@@ -120,8 +120,8 @@ sintáctico concreto.
 El análisis predictivo confía en que, si
 estamos ejecutando la entrada del procedimiento `parseA`, el cuál está
 asociado con la variable $$A \in V$$, el símbolo terminal que esta en la
-entrada $$a$$ determine de manera unívoca cual de las regla de producción
-$$A \rightarrow a \alpha$$ debe ser procesada.
+entrada $$a$$ determine de manera unívoca cual de las reglas de producción
+$$A \rightarrow a \alpha_i$$ debe ser procesada.
 
 Si se piensa, esta condición requiere que todas las partes derechas
 $$\alpha$$ de las reglas $$A \rightarrow \alpha$$ de $$A$$ "comiencen" por
