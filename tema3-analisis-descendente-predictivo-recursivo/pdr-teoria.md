@@ -252,7 +252,7 @@ apply: /* vacio */
 Parece que si el `lookahead`es un `'('`  la regla que se aplica
 es la segunda.
 
-Mas difícil es determinar que tokens pueden aparecer cuando se aplica la primera regla.
+Mas difícil es determinar que tokens pueden aparecer cuando en la derivación se aplica la regla `apply: /* vacio */`.
 
 Para poder responder a esta pregunta consideremos una derivación en la que intervenga la regla `apply: /* vacio */`
 
