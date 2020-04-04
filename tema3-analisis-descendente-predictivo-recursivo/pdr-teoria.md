@@ -125,7 +125,9 @@ $$A \rightarrow a \alpha_i$$ debe ser procesada.
 
 Si se piensa, esta condición requiere que todas las partes derechas
 $$\alpha_i$$ de las reglas $$A \rightarrow \alpha_i$$ de $$A$$ "comiencen" por
-diferentes símbolos. Si denotamos por  $$FIRST(\alpha)$$ al conjunto de terminales que aparecen en una derivación desde $$\alpha$$ al principio:
+diferentes símbolos. 
+
+denotamos por  $$FIRST(\alpha)$$ al conjunto de terminales que pueden aparecer al "comienzo" de una derivación desde $$\alpha$$:
 
 $$FIRST(\alpha) = \left \{ b \in \Sigma :  \alpha  \stackrel{*}{\Longrightarrow}  b \beta \right \}$$
 
