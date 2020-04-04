@@ -212,3 +212,41 @@ Si hacemos una derivación a derechas en la que esta es la última regla que se 
 
 $$ expression \stackrel{*}{\Longrightarrow} \beta \, apply \, a_1\, a_2\, \ldots \, a_n \Rightarrow \beta \, a_1 \ldots \, a_n $$
 
+Se sigue de la fórmula que cuando se aplica la regla `apply: /* vacio */`
+el token $$a_1$$ es un token que puede aparecer en alguna derivación 
+**inmediatamente a continuación de `apply`**. 
+
+Esta derivación:
+
+$$ expression \Rightarrow WORD \, apply \stackrel{*}{\Longrightarrow} WORD \, ( \,expression \, WORD \, apply \, )$$
+
+muestra que uno de esos tokens es `')`. También si nos fijamos en la primera sustitución 
+
+$$ expression \Rightarrow WORD \, apply $$
+
+vemos que `apply ` aparece al final de la regla. 
+
+Así pues, puede ocurrir que cuando se aplique la regla el token sea el final de la entrada.
+
+Asumiremos que el analizador léxico retorna un `null`cuando encuentra el final de la entrada. Entonces el código queda como sigue:
+
+```js
+function parseApply() {
+  if (!lookahead) return;      // token final de la entrada apply: /* vacio */
+  if (lookahead.type === "RP") // apply: /* vacio */
+    return;
+  if (lookahead.type !== "LP") throw new SyntaxError(`Error`);
+  lex();                // apply: '(' (expression ',')* expression? ')' apply
+  while (lookahead && lookahead.type !== "RP") {
+    parseExpression();
+    if (lookahead && lookahead.type == "COMMA") lex(); 
+    else if (!lookahead || lookahead.type !== "RP") {
+      throw new SyntaxError(`Error`);
+    }
+  }
+  lex();
+  if (!lookahead) return; 
+  return parseApply();
+}
+```
+
