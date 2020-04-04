@@ -138,16 +138,18 @@ Supongamos que $$\alpha \in (V \cup \Sigma)*$$ es una frase de variables y termi
 $$FIRST(\alpha) = \left \{ b \in \Sigma :  \alpha  \stackrel{*}{\Longrightarrow}  b \beta \right \}$$
 
 Podemos reformular ahora nuestra afirmación anterior en estos términos:
-Si $$A \rightarrow \gamma_1 \mid \ldots \mid \gamma_n$$ y los conjuntos
-$$FIRST(\gamma_i)$$ son disjuntos podemos construir el procedimiento para
-la variable $$A$$ siguiendo este seudocódigo:
+Si $$A \rightarrow \gamma_1 \mid \ldots \mid \gamma_n$$ son las reglas de producción de la variable $$A$$ y los conjuntos
+$$FIRST(\gamma_i)$$ son disjuntos, entonces podemos construir la función 
+`parseA` para reconocer el lenguaje generado por la variable $$A$$ siguiendo este seudocódigo:
 
+```js
     function parseA() {
       if (lookahead in FIRST(gamma_1)) { imitar gamma_1 }
       else if (lookahead in FIRST(gamma_2)) { imitar gamma_2 }
       ...
       else (lookahead in FIRST(gamma_n)) { imitar gamma_n }
     }
+```
 
 Donde si $$\gamma_j$$ es $$X_1 \ldots X_k$$ el código `gamma_j` consiste en
 una secuencia $$i = 1 \ldots k$$ de llamadas de uno de estos dos tipos:
