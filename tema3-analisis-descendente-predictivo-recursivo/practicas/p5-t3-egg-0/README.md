@@ -32,7 +32,7 @@ Si tal cosa ocurre puede que le ayude dejar por un momento la lectura y pasar a 
 2. Introducción al [Análisis Sintáctico Predictivo Recursivo]({{site.baseurl}}/tema3-analisis-descendente-predictivo-recursivo/pdr-teoria)
  
 Después de estas dos lecturas vuelva otroa vez a la lectura del capítulo [Chapter 12. Project: A Programming Language](http://eloquentjavascript.net/12_language.html).
-No haga los ejercicios.
+No haga todavía los ejercicios del libro.
 
 ## Escriba la Gramática {#gramatica}
 
