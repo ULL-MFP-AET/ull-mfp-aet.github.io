@@ -208,7 +208,7 @@ Mas difícil es determinar que tokens pueden aparecer cuando se aplica la primer
 
 Para poder responder a esta pregunta consideremos una derivación en la que intervenga la regla `apply: /* vacio */`
 
-Tendría que ocurrir algo como esto:
+Si hacemos una derivación a derechas en la que esta es la última regla que se aplica, tendría que ocurrir algo como esto:
 
-$$ expression \stackrel{*}{\Longrightarrow} \beta \, apply \, a_1\, a_2\, a_n$$
+$$ expression \stackrel{*}{\Longrightarrow} \beta \, apply \, a_1\, a_2\, \ldots \, a_n \Rightarrow \beta \, a_1 \ldots \, a_n $$
 
