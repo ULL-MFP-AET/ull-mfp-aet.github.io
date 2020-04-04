@@ -7,6 +7,7 @@
 * [Calificaciones](https://campusvirtual.ull.es/1819/grade/report/grader/index.php?id=1110)
 * [Tareas](https://campusvirtual.ull.es/1819/mod/assign/index.php?id=1110)
 * [Foros](https://campusvirtual.ull.es/1819/mod/forum/index.php?id=1110)
+* Aula de [Recursos Disponibles para Realizar ACTIVIDAD DOCENTE NO PRESENCIAL](https://campusvirtual.ull.es/1920/course/view.php?id=201913946 )
 
 ## BULL
 
