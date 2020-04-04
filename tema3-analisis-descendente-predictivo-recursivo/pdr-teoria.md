@@ -213,23 +213,23 @@ expression: STRING
 
 tenemos tres partes derechas $$\gamma_1$$ = `STRING`,  $$\gamma_2$$ = `NUMBER` y $$\gamma_3$$ = `WORD apply`. Si computamos los $$FIRST(\gamma_i)$$ obtenemos:
 
-$$FIRST(STRING) = \left \{ STRING \right \}$$
-
-$$FIRST(NUMBER) = \left \{ NUMBER \right \}$$
-
-$$FIRST(WORD \, apply) = \left \{ WORD \right \}$$
+```
+FIRST(STRING)     = { STRING }
+FIRST(NUMBER)     = { NUMBER }
+FIRST(WORD apply) = { WORD }
+```
 
 nos produce este código:
 
 ```js
 function parseExpression() {
-  if (lookahead.type == "STRING") { // Imitar STRING 
+  if (lookahead.type == "STRING") {
     lex(); // Saltamos el token STRING
     return expr;
-  } else if (lookahead.type == "NUMBER") { // Imitar NUMBER
+  } else if (lookahead.type == "NUMBER") {
      lex();  // Saltemos el token NUMBER
     return expr;
-  } else if (lookahead.type == "WORD") { // Imitar WORD Apply
+  } else if (lookahead.type == "WORD") {
     lex(); // Consumimos  WORD
     return parseApply(expr); // ... y llamamos a parseApply
   } else {
