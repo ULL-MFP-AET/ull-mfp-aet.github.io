@@ -344,6 +344,18 @@ el siguiente token.
 
 Esto es, a diferencia de en los ejemplos vistos en las clases anteriores, el analizador léxico no analiza todos los tokens en una pasada guardándolos en un array, sino que tan pronto como detecta el siguiente token lo devuelve a la rutina de  análisis sintáctico que le ha llamado.
 
+```js
+let lookahead;
+let lineno = 1; // Save token line numbers
+let offset = 0; // Save token offset
+...
+function lex() {
+  let match;
+  ... // Find the next token and save it in lookahead 
+  return lookahead;
+}
+```
+
 Se usará una variable compartida que se debe llamar `lookahead` para guardar el token actual. Esta variable `lookahead` sirve para la comunicación entre las funciones de análisis sintactico y el analizador léxico. Algo como esto:
 
 ```js
