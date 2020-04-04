@@ -130,8 +130,10 @@ asociado con la variable $$A \in V$$, el símbolo terminal que esta en la
 entrada $$a$$ determine de manera unívoca cual de las reglas de producción
 $$A \rightarrow \alpha_i$$ debe ser procesada.
 
-Si se piensa, esta condición se puede satisfacer si se cumple que las derivaciones de las partes derechas
-$$\alpha_i$$ de las reglas $$A \rightarrow \alpha_i$$ de la misma variable $$A$$ "*comiencen*" por diferentes tokens. 
+Si se piensa, esta condición se puede satisfacer si se cumple que:
+
+Para toda variable $$A$$, las derivaciones de las partes derechas
+$$\alpha_i$$ de sus reglas $$A \rightarrow \alpha_i$$  "*comienzan*" por diferentes tokens. 
 
 Supongamos que $$\alpha \in (V \cup \Sigma)*$$ es una frase de variables y terminales. Denotaremos por  $$FIRST(\alpha)$$ al conjunto de terminales que pueden aparecer al "comienzo" de una derivación desde $$\alpha$$:
 
