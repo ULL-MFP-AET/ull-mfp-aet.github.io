@@ -110,16 +110,15 @@ $$L_{\alpha}(G) = \{ x \in \Sigma^* : \alpha \stackrel{*}{\Longrightarrow} x \}$
 
 Para ello se procede así. Supongamos que $$\alpha = X_1 \ldots X_n$$, donde $$X_i$$ es o bien un token $$X_i \in \Sigma$$ o bien una variable $$X_i \in V$$.
 
-- las apariciones de terminales $$X_i$$ en
-$$\alpha$$ son emparejadas con los terminales en la entrada avanzando en el flujo de tokens, 
+- las apariciones de terminales $$X_i$$ en $$\alpha$$ son emparejadas con los terminales en la entrada avanzando en el flujo de tokens, 
 
-```js
-lookahead = lex();
-```
+  ```js
+  lookahead = lex();
+  ```
 
 mientras que
-- las apariciones de variables sintácticas $$X_i = B \in V$$ en $$\alpha$$ se traducen en
-llamadas a la correspondiente subrutina asociada con `parseB`.
+
+- las apariciones de variables sintácticas $$X_i = B \in V$$ en $$\alpha$$ se traducen en llamadas a la correspondiente subrutina asociada con `parseB`.
 
 La secuencia de llamadas cuando se procesa la entrada mediante el
 siguiente programa construye "implícitamente" el árbol de análisis
@@ -178,13 +177,13 @@ nos produce este código:
 
 ```js
 function parseExpression() {
-  if (lookahead.type == "STRING") { // STRING es el FIRST de la primera regla 
+  if (lookahead.type == "STRING") { // Imitar STRING 
     lex(); // Saltamos el token STRING
     return expr;
-  } else if (lookahead.type == "NUMBER") { // NUMBER es el FIRST de la segunda regla
+  } else if (lookahead.type == "NUMBER") { // Imitar NUMBER
      lex();  // Saltemos el token NUMBER
     return expr;
-  } else if (lookahead.type == "WORD") { // Es WORD Apply
+  } else if (lookahead.type == "WORD") { // Imitar WORD Apply
     lex(); // Consumimos  WORD
     return parseApply(expr); // ... y llamamos a parseApply
   } else {
