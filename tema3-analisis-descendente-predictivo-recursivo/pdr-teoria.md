@@ -232,7 +232,7 @@ Asumiremos que el analizador léxico retorna un `null`cuando encuentra el final 
 
 ```js
 function parseApply() {
-  if (!lookahead) return;      // token final de la entrada apply: /* vacio */
+  if (!lookahead) return;      // token "final de la entrada" apply: /* vacio */
   if (lookahead.type === "RP") // apply: /* vacio */
     return;
   if (lookahead.type !== "LP") throw new SyntaxError(`Error`);
