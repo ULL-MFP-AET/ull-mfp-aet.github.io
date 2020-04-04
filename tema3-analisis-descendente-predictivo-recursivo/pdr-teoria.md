@@ -260,8 +260,10 @@ Si hacemos una derivación a derechas en la que esta es la última regla que se 
 
 $$ expression \stackrel{*}{\Longrightarrow} \beta \, apply \, a_1\, a_2\, \ldots \, a_n \Rightarrow \beta \, a_1 \ldots \, a_n $$
 
-Se sigue de la fórmula que cuando se aplica la regla `apply: /* vacio */`
-el token $$a_1$$ es un token que puede aparecer en alguna derivación 
+Donde $$\beta$$ es una cadena arbitraria de variables y terminales y los $a_i$ son teerminales. 
+
+Se sigue de la derivación anterior que cuando se aplica la regla `apply: /* vacio */`
+el token $$a_1$$ que está siendo procesado en ese momento en `parseApply()` es un token que puede aparecer en alguna derivación 
 **inmediatamente a continuación de `apply`**. 
 
 Esta derivación:
