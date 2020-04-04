@@ -228,7 +228,16 @@ vemos que `apply ` aparece al final de la regla.
 
 Así pues, puede ocurrir que cuando se aplique la regla el token sea el final de la entrada.
 
-Asumiremos que el analizador léxico retorna un `null`cuando encuentra el final de la entrada. Entonces el código queda como sigue:
+Asumiremos que el analizador léxico retorna un `null` cuando encuentra el final de la entrada. 
+
+Puesto que la segunda regla tiene un `*` indicando la repetición 0 o mas veces de la expresión entre paréntesis:
+
+```
+apply: '(' (expression ',')* expression? ')' apply
+```
+necesitaremos un bucle para ir procesando la expresión interior. El bucle se termina cuando vemos el paréntesis de cierre o bien si se produce el final de la entrada.
+
+Entonces el código queda como sigue:
 
 ```js
 function parseApply() {
@@ -240,10 +249,10 @@ function parseApply() {
   while (lookahead && lookahead.type !== "RP") {
     parseExpression();
     if (lookahead && lookahead.type == "COMMA") lex(); 
-    else if (!lookahead || lookahead.type !== "RP") {
+    else if (!lookahead || lookahead.type !== "RP") 
       throw new SyntaxError(`Error`);
-    }
   }
+  if (!lookahead) throw new SyntaxError(`Error`);
   lex();
   if (!lookahead) return; 
   return parseApply();
