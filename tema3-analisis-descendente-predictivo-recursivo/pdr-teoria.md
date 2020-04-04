@@ -104,7 +104,10 @@ que aplicar.
 
 Una vez que dentro del cuerpo de  `parseA` se ha determinado que la regla concreta por la que 
 continuar la derivación es la regla $$A \rightarrow \alpha$$, el algoritmo procede a reconocer
-$$L_{\alpha}(G)$$, el lenguaje generado por la parte derecha de la regla: $$\alpha$$. 
+$$L_{\alpha}(G)$$, el lenguaje generado por la parte derecha de la regla: $$\alpha$$:
+
+$$L_{\alpha}(G) = \{ x \in \Sigma^* : \alpha \stackrel{*}{\Longrightarrow} x \}$$
+
 
 Para ello se procede así. Supongamos que $$\alpha = X_1 \ldots X_n$$, donde $$X_i$$ es o bien un token o bien una variable.
 
