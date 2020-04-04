@@ -2,7 +2,11 @@
 
 ## Los Analizadores Descendentes Recursivos Predictivos
 
-###  [Apuntes de PL: Análisis Sintáctico Predictivo Recursivo](http://crguezl.github.io/pl-html/node20.html) (JavaScript/CoffeeScript)
+[Análisis Sintáctico Predictivo Recursivo]({{site.baseurl}}/tema3-analisis-descendente-predictivo-recursivo/pdr-teoria)
+
+###  Apuntes sobre PDR de cursos Anteriores
+
+####  [Apuntes de PL: Análisis Sintáctico Predictivo Recursivo](http://crguezl.github.io/pl-html/node20.html) (JavaScript/CoffeeScript)
 
 *   <a href="http://crguezl.github.io/pl-html/node21.html" target="_blank">Conceptos Básicos para el Análisis Sintáctico</a>
     *   <a href="http://crguezl.github.io/pl-html/node21.html#SECTION04211000000000000000" target="_blank">Ejercicio</a>  
@@ -20,7 +24,7 @@
   * <a href="https://github.com/ULL-ESIT-PL-1819/parser-pdr-example) (Node.js, Web app con ExpressJS, CoffeeScript" target="_blank">Repo con un ADRP</a>
     - <a href="https://github.com/ULL-ESIT-PL-1819/parser-pdr-example/blob/master/views/main.coffee" target="_blank">Fichero main.coffee conteniendo un ADPR</a>
 
-### [Apuntes de PL de la II](http://nereida.deioc.ull.es/~pl/perlexamples/node88.html) (Perl)
+#### [Apuntes de PL de la II](http://nereida.deioc.ull.es/~pl/perlexamples/node88.html) (Perl)
 
 
 *   <a href="http://nereida.deioc.ull.es/~pl/perlexamples/node85.html" target="_blank">Introducción</a>
@@ -37,13 +41,14 @@
 *   <a href="http://nereida.deioc.ull.es/~pl/perlexamples/node96.html" target="_blank">Práctica: Un analizador APDR</a>
 *   <a href="http://nereida.deioc.ull.es/~pl/perlexamples/node97.html" target="_blank">Práctica: Generación Automática de Analizadores Predictivos</a>
 
-### Referencias
-
-* [Apuntes de Top Down parsing de David Martins de Matos](https://www.l2f.inesc-id.pt/~david/w/pt/Top-Down_Parsing) del Departamento de Engenharia Informática do Instituto Superior Técnico de Lisboa.  Laboratório de Sistemas de Língua Falada do INESC ID Lisboa .
-  - [Eliminating Left Recursion](https://www.l2f.inesc-id.pt/~david/w3/pt/index.php/Top-Down_Parsing?rdfrom=https%3A%2F%2Fwww.l2f.inesc-id.pt%2F~david%2Fwiki%2Fpt%2Findex.php%3Ftitle%3DTop-Down_Parsing%26redirect%3Dno#Step_3:_Eliminating_Left_Recursion)
 * [Apuntes de Analizadores Descendentes Recursivos](https://casianorodriguezleon.gitbooks.io/ull-esit-1617/content/apuntes/parsing/recursivodescendente/) GitBook 1617
 * [Repo con un ADRP](https://github.com/crguezl/prdcalc) (Ruby, Web app con Sinatra, CoffeeScript y JS en el cliente)
   - [Fichero main.js conteniendo un ADPR](https://github.com/crguezl/prdcalc/blob/master/views/main.js)
+
+### Referencias de Otros Autores
+
+* [Apuntes de Top Down parsing de David Martins de Matos](https://www.l2f.inesc-id.pt/~david/w/pt/Top-Down_Parsing) del Departamento de Engenharia Informática do Instituto Superior Técnico de Lisboa.  Laboratório de Sistemas de Língua Falada do INESC ID Lisboa .
+  - [Eliminating Left Recursion](https://www.l2f.inesc-id.pt/~david/w3/pt/index.php/Top-Down_Parsing?rdfrom=https%3A%2F%2Fwww.l2f.inesc-id.pt%2F~david%2Fwiki%2Fpt%2Findex.php%3Ftitle%3DTop-Down_Parsing%26redirect%3Dno#Step_3:_Eliminating_Left_Recursion)
 
 
 
