@@ -81,9 +81,14 @@ La función de dicha subrutina (que de ahora en adelante llamaremos `parseA()`) 
 
 ## Una función por Variable Sintáctica {#funpervar}
 
-- Cuando construimos un PDR se escribe una rutina `parseA` por cada variable sintáctica en la gramática $$A \in V$$. Se le suele dar a la rutina asociada un nombre relacionado con la variable sintáctica asociada, por ejemplo `parseA` será la función asociada con la variable $$A \in V$$.
+Repetimos: Cuando construimos un PDR 
 
-La función de `parseA()` es reconocer las frases $$x \in L(A)$$ en el lenguaje generado por $$A$$ y construir el Arbol de Análisis de dichas frases $$x$$.
+1. Se escribe una rutina `parseA` por cada variable sintáctica en la gramática $$A \in V$$
+2. La función de `parseA()` es reconocer las frases $$x \in L(A)$$ en el lenguaje generado por $$A$$ y construir el Arbol de Análisis de dichas frases $$x$$.
+
+La idea es bien simple: Si, por ejemplo $$A$$ tiene una sola regla $$A \Rightarrow B \, C$$ 
+entonces el código de `parseA()` sería tan simple como llamar primero a `parseB()`
+y luego a `parseC()`.
 
 Por ejemplo, en Egg, para hacer el parser escribimos dos funciones 
 
@@ -121,7 +126,8 @@ expression: STRING
           | WORD apply
 ```
 
-Vemos que las tres reglas empiezan por un token distinto. Si sabemos que el token actual es `WORD` estamos seguros que la regla que se aplica es la tercera.
+Vemos que las tres reglas empiezan por un token distinto. Si sabemos que el token actual es `STRING` la regla para seguir será la primera y si es 
+`WORD` estamos seguros que la regla que se aplica es la tercera.
 
 ## Calculando por donde empiezan las derivaciones
 
@@ -143,7 +149,7 @@ Para ello se procede así. Supongamos que $$\alpha = X_1 \ldots X_n$$, donde $$X
   lookahead = lex();
   ```
 
-mientras que
+ mientras que
 
 - las apariciones de variables sintácticas $$X_i = B \in V$$ en $$\alpha$$ se traducen en llamadas a la correspondiente subrutina asociada con `parseB`.
 
