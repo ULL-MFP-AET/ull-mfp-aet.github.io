@@ -11,6 +11,23 @@ El árbol de análisis sintáctico abstracto es una representación
 compactada del árbol de análisis sintáctico concreto que contiene la
 misma información que éste.
 
+Por ejemplo, para una gramática que acepta expresiones como:
+
+```js
+x=1
+y=2
+3*(x+y)
+```
+
+este es un ejemplo de árbol sintáctico concreto:
+
+![]({{site.baseurl}}/assets/images/concrete-syntax-tree.png)
+
+y este un posible árbol sintáctico abstracto con la misma información que el anterior:
+
+
+![]({{site.baseurl}}/assets/images/ast.png)
+
 Existen diferentes métodos de análisis sintáctico. La mayoría caen en
 una de dos categorías: 
 
@@ -49,14 +66,18 @@ $$\Sigma = \{ STRING,\, NUMBER,\, WORD,\, '(',\, ')',\, ','  \}$$
 
 ## Lenguaje Generado por Una Gramática {#lenguaje}
 
-En los métodos de Análisis Sintáctico Descendente Recursivo (PDR) se asocia una subrutina con cada variable sintáctica
-$$A \in V$$. Dicha subrutina (que llamaremos `parseA()`) reconocerá el lenguaje
-generado desde la variable $$A$$:
+Para cada variable sintáctica
+$$A \in V$$ el lenguaje
+generado desde la variable $$A$$ se define como:
 
 $$L_A(G) = \{ x \in \Sigma^* : A \stackrel{*}{\Longrightarrow} x \}$$
 
-Esto es, $$L_A(G)$$ es el conjunto de frases del alfabeto que **derivan** en varias substituciones
-desde la variable $$A$$.
+Esto es, $$L_A(G)$$ es el conjunto de frases del alfabeto que **derivan** en varias substituciones desde la variable $$A$$.
+
+En los métodos de Análisis Sintáctico Descendente Recursivo (PDR) se asocia una subrutina con cada variable sintáctica
+$$A \in V$$. 
+
+La función de dicha subrutina (que de ahora en adelante llamaremos `parseA()`) es reconocer $$L_A(G)$$.
 
 ## Una función por Variable Sintáctica {#funpervar}
 
