@@ -10,7 +10,12 @@ previous:
 
 ## Introducción
 
-En esta primera práctica deberá leer el capítulo 12 *A Programming Language* de EJS:
+Esta es la primera práctica de una serie de prácticas sobre las fases de análisis sintáctico, el análisis de ámbito y la interpretación del codigo. Las siguientes prácticas irán ampliando el lenguaje con nuevas capacidades: expresiones regulares, hashes, arrays multidimensionales, módulos, objetos, clases, ... y se construyen sobre esta.
+
+Es por tanto fundamental que llegue a dominar las bases que se asientan en esta práctica. Son un montón de conceptos. No desespere si al principio todo es un poco confuso. El momento Eureka acabará llegando si persevera.
+
+
+Primero: Deberá leer el capítulo 12 *A Programming Language* de EJS:
 
 * [Eloquent JS. Chapter 12. Project: A Programming Language](http://eloquentjavascript.net/12_language.html)
 
