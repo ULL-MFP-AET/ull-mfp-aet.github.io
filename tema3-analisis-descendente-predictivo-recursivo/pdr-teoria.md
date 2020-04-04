@@ -1,5 +1,8 @@
 # Análisis Sintáctico Predictivo Recursivo {#section:predictivo}
 
+
+## Introducción A los Analizadores Sintácticos {#subsection:introduccion}
+
 La siguiente fase en la construcción del analizador es la fase de
 análisis sintáctico. Esta toma como entrada el flujo de terminales y
 construye como salida el árbol de análisis sintáctico abstracto.
@@ -22,7 +25,7 @@ hacen en modo inverso.
 
 El que describiremos aquí es un descendente: se denomina **método de análisis predictivo descendente recursivo**.
 
-## Introducción {#subsection:introduccion}
+## Gramáticas Independientes del Contexto {#gramaticas}
 
 Supongamos una gramática $$G = (\Sigma, V, P, S)$$ con alfabeto $$\Sigma$$, conjunto de variables sintácticas (o no terminales) $$V$$, reglas de producción $$P$$ y símbolo de arranque $$S$$.
 
@@ -44,6 +47,8 @@ El conjunto de tokens es:
 
 $$\Sigma = \{ STRING,\, NUMBER,\, WORD,\, '(',\, ')',\, ','  \}$$
 
+## Lenguaje Generado por Una Gramática {#lenguaje}
+
 En los métodos de Análisis Sintáctico Descendente Recursivo (PDR) se asocia una subrutina con cada variable sintáctica
 $$A \in V$$. Dicha subrutina (que llamaremos `parseA()`) reconocerá el lenguaje
 generado desde la variable $$A$$:
@@ -53,15 +58,13 @@ $$L_A(G) = \{ x \in \Sigma^* : A \stackrel{*}{\Longrightarrow} x \}$$
 Esto es, $$L_A(G)$$ es el conjunto de frases del alfabeto que **derivan** en varias substituciones
 desde la variable $$A$$.
 
-Resumiendo: 
+## Una función por Variable Sintáctica {#funpervar}
 
-- Cuando construimos un PDR se escribe una rutina `parseA` por cada variable sintáctica en la gramática $$A \in V$$. 
-- Una vez mas: Se le suele dar a la rutina asociada un nombre relacionado con la
-variable sintáctica asociada, por ejemplo `parseA` será la función asociada con
-la variable $$A \in V$$.
-- La función de `parseA()` es reconocer el lenguaje $$L(A)$$ generado por $$A$$.
+- Cuando construimos un PDR se escribe una rutina `parseA` por cada variable sintáctica en la gramática $$A \in V$$. Se le suele dar a la rutina asociada un nombre relacionado con la variable sintáctica asociada, por ejemplo `parseA` será la función asociada con la variable $$A \in V$$.
 
-En Egg, para hacer el parser escribimos dos funciones 
+La función de `parseA()` es reconocer las frases $$x \in L(A)$$ en el lenguaje generado por $$A$$ y construir el Arbol de Análisis de dichas frases $$x$$.
+
+Por ejemplo, en Egg, para hacer el parser escribimos dos funciones 
 
 - `parseExpression` y 
 - `parseApply`.
@@ -74,6 +77,7 @@ y la función  `parseApply` reconoce el lenguaje
 
 $$L(apply) = \{ x \in \Sigma^* : apply \stackrel{*}{\Longrightarrow} x \}$$
 
+## El Token de Predicción {#lookahead}
 
 En un PDR, la estrategia general que sigue la rutina `parseA` para reconocer $$L(A)$$ es
 decidir en términos del terminal `a` por el que vamos en la entrada cual de las partes derechas $$\alpha_i$$ de las reglas de $$A$$
@@ -97,6 +101,8 @@ expression: STRING
 ```
 
 Vemos que las tres reglas empiezan por un token distinto. Si sabemos que el token actual es `WORD` estamos seguros que la regla que se aplica es la tercera.
+
+## Calculando por donde empiezan las derivaciones
 
 En un analizador predictivo descendente recursivo (PDR o APDR) se
 asume que el terminal/token que actualmente esta siendo observado (que a partir de ahora denominaré `lookahead`) permite determinar unívocamente que producción de $$A$$ hay
@@ -138,6 +144,8 @@ $$\alpha_i$$ de sus reglas $$A \rightarrow \alpha_i$$  "*comienzan*" por diferen
 Supongamos que $$\alpha \in (V \cup \Sigma)*$$ es una frase de variables y terminales. Denotaremos por  $$FIRST(\alpha)$$ al conjunto de terminales que pueden aparecer al "comienzo" de una derivación desde $$\alpha$$:
 
 $$FIRST(\alpha) = \left \{ b \in \Sigma :  \alpha  \stackrel{*}{\Longrightarrow}  b \beta \right \}$$
+
+## Pseudocódigo de la Función de Parsing 
 
 Podemos reformular ahora nuestra afirmación anterior en estos términos:
 Si $$A \rightarrow \gamma_1 \mid \ldots \mid \gamma_n$$ son las reglas de producción de la variable $$A$$ y los conjuntos
@@ -194,6 +202,8 @@ function parseExpression() {
   }
 }
 ```
+
+## Que hacer cuando aparecen reglas vacías
 
 Aplicar el algoritmo PDR a las dos reglas de `apply` requiere añadir algunas extensiones al método. 
 
