@@ -124,7 +124,7 @@ entrada $$a$$ determine de manera unívoca cual de las reglas de producción
 $$A \rightarrow a \alpha_i$$ debe ser procesada.
 
 Si se piensa, esta condición requiere que todas las partes derechas
-$$\alpha$$ de las reglas $$A \rightarrow \alpha$$ de $$A$$ "comiencen" por
+$$\alpha_i$$ de las reglas $$A \rightarrow \alpha_i$$ de $$A$$ "comiencen" por
 diferentes símbolos. Si denotamos por  $$FIRST(\alpha)$$ al conjunto de terminales que aparecen en una derivación desde $$\alpha$$ al principio:
 
 $$FIRST(\alpha) = \left \{ b \in \Sigma :  \alpha  \stackrel{*}{\Longrightarrow}  b \beta \right \}$$
