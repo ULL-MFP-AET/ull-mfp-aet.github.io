@@ -1,4 +1,4 @@
-# Egg Syntax
+# Egg Initial Syntax
 ```
 expression: STRING
           | NUMBER
@@ -11,8 +11,8 @@ apply: /* vacio */
 # Token definitions
 
 ```
-WHITES = /^(\s|[#;].*|\/\*(.|\n)*?\*\/)*/;
-STRING = /^"((?:[^"\\]|\\.)*)"/;
-NUMBER = /^([-+]?\d*\.?\d+([eE][-+]?\d+)?)/;
-WORD   = /^([^\s(),"]+)/;
+WHITES = /(\s|[#;].*|\/\*(.|\n)*?\*\/)*/;
+STRING = /"((?:[^"\\]|\\.)*)"/;
+NUMBER = /([-+]?\d*\.?\d+([eE][-+]?\d+)?)/;
+WORD   = /([^\s(),"]+)/;
 ```
