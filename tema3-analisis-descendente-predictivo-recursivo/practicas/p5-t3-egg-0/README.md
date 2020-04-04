@@ -320,7 +320,21 @@ Use GitHub Actions para añadir CI al proyecto
 
 ## GitHub Registry
 
-Publique el compilador como módulo en GH Registry en el ámbito `@ULL-ESIT-PL-1920`
+Publique el compilador como módulo en GH Registry en el ámbito `@ULL-ESIT-PL-1920`.
+
+Puesto que este paquete contiene ejecutables es conveniente que lea la sección
+[bin](https://docs.npmjs.com/files/package.json#bin) de la documentación de npm.js sobre package.json:
+
+```
+[~/.../crguezl-egg(master)]$ jq .bin package.json
+```
+```js
+{
+  "egg": "./bin/egg.js",
+  "eggc": "./bin/eggc.js",
+  "evm": "./bin/evm.js"
+}
+```
 
 ## Analizador Léxico Separado
 
