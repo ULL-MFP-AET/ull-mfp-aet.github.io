@@ -249,7 +249,7 @@ apply: /* vacio */
      | '(' (expression ',')* expression? ')' apply
 ```
 
-En primer lugar queda claro que si el `lookahead`es un `'('`  la regla que se aplica
+Parece que si el `lookahead`es un `'('`  la regla que se aplica
 es la segunda.
 
 Mas difícil es determinar que tokens pueden aparecer cuando se aplica la primera regla.
