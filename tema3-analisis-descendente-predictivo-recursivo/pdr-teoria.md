@@ -263,10 +263,14 @@ $$ expression \stackrel{*}{\Longrightarrow} \beta \, apply \, a_1\, a_2\, \ldots
 Donde $$\beta$$ es una cadena arbitraria de variables y terminales y los $a_i$ son teerminales. 
 
 Se sigue de la derivación anterior que cuando se aplica la regla `apply: /* vacio */`
-el token $$a_1$$ que está siendo procesado en ese momento en `parseApply()` es un token que puede aparecer en alguna derivación 
-**inmediatamente a continuación de `apply`**. 
+cualquier token que, omo es el caso del token $$a_1$$, pueda aparecer en alguna derivación **inmediatamente a continuación de `apply`** 
+es un posible `lookahead` en la ejecución de  `parseApply()`.
 
-Esta derivación:
+## Calculando los Tokens que Pueden Seguir a una Variable en Alguna Derivación
+
+Tenemos entonces que computar el conjunto de tokens `FOLLOW(apply)`  que pueden aparecer a continuación de la variable`apply` en alguna derivación desde `expression`.
+
+Consideremos el siguiente fragmento derivación:
 
 $$ expression \Rightarrow WORD \, apply \stackrel{*}{\Longrightarrow} WORD \, ( \,expression \, WORD \, apply \, )$$
 
