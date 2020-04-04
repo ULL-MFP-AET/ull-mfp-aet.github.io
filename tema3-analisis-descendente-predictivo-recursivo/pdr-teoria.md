@@ -157,10 +157,12 @@ La secuencia de llamadas cuando se procesa la entrada mediante el
 siguiente programa construye "implícitamente" el árbol de análisis
 sintáctico concreto.
 
+## Los Conjuntos FIRST {#first}
+
 El análisis predictivo confía en que, si
 estamos ejecutando la entrada del procedimiento `parseA`, el cuál está
-asociado con la variable $$A \in V$$, el símbolo terminal que esta en la
-entrada $$a$$ determine de manera unívoca cual de las reglas de producción
+asociado con la variable $$A \in V$$, el símbolo terminal `a` que esta en la
+entrada  determine de manera unívoca cual de las reglas de producción
 $$A \rightarrow \alpha_i$$ debe ser procesada.
 
 Si se piensa, esta condición se puede satisfacer si se cumple que:
@@ -175,21 +177,27 @@ $$FIRST(\alpha) = \left \{ b \in \Sigma :  \alpha  \stackrel{*}{\Longrightarrow}
 ## Pseudocódigo de la Función de Parsing 
 
 Podemos reformular ahora nuestra afirmación anterior en estos términos:
-Si $$A \rightarrow \gamma_1 \mid \ldots \mid \gamma_n$$ son las reglas de producción de la variable $$A$$ y los conjuntos
-$$FIRST(\gamma_i)$$ son disjuntos, entonces podemos construir la función 
+
+Si 
+
+1. $$A \rightarrow \gamma_1 \mid \ldots \mid \gamma_n$$ 
+son todas las reglas de producción de la variable $$A$$ y 
+2. los conjuntos $$FIRST(\gamma_i)$$ son disjuntos, 
+
+entonces podemos construir la función 
 `parseA` para reconocer el lenguaje generado por la variable $$A$$ siguiendo este seudocódigo:
 
 ```js
     function parseA() {
-      if (lookahead in FIRST(gamma_1)) { imitar gamma_1 }
-      else if (lookahead in FIRST(gamma_2)) { imitar gamma_2 }
+      if (lookahead in FIRST(gamma_1)) { codigo gamma_1 }
+      else if (lookahead in FIRST(gamma_2)) { codigo gamma_2 }
       ...
-      else (lookahead in FIRST(gamma_n)) { imitar gamma_n }
+      else (lookahead in FIRST(gamma_n)) { codigo gamma_n }
     }
 ```
 
 Donde si $$\gamma_j$$ es $$X_1 \ldots X_k$$ el código `gamma_j` consiste en
-una secuencia $$i = 1 \ldots k$$ de llamadas de uno de estos dos tipos:
+una secuencia $$i = 1 \ldots k$$ de uno de estos dos tipos de código:
 
 -   Llamar a la subrutina `parseX_i()` si $$X_i$$ es una variable sintáctica
 
