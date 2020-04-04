@@ -108,8 +108,7 @@ $$L_{\alpha}(G)$$, el lenguaje generado por la parte derecha de la regla: $$\alp
 
 $$L_{\alpha}(G) = \{ x \in \Sigma^* : \alpha \stackrel{*}{\Longrightarrow} x \}$$
 
-
-Para ello se procede así. Supongamos que $$\alpha = X_1 \ldots X_n$$, donde $$X_i$$ es o bien un token o bien una variable.
+Para ello se procede así. Supongamos que $$\alpha = X_1 \ldots X_n$$, donde $$X_i$$ es o bien un token $$X_i \in \Sigma$$ o bien una variable $$X_i \in V$$.
 
 - las apariciones de terminales $$X_i$$ en
 $$\alpha$$ son emparejadas con los terminales en la entrada avanzando en el flujo de tokens, mientras que
