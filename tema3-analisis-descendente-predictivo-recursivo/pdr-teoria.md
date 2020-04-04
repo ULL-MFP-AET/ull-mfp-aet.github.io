@@ -217,7 +217,7 @@ $$FIRST(STRING) = \left \{ STRING \right \}$$
 
 $$FIRST(NUMBER) = \left \{ NUMBER \right \}$$
 
-$$FIRST(WORD \! apply) = \left \{ WORD \right \}$$
+$$FIRST(WORD \, apply) = \left \{ WORD \right \}$$
 
 nos produce este código:
 
