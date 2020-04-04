@@ -191,3 +191,24 @@ function parseExpression() {
   }
 }
 ```
+
+Aplicar el algoritmo PDR a las dos reglas de `apply` requiere añadir algunas extensiones al método. 
+
+Recordemos las reglas de `apply`:
+
+```yacc
+apply: /* vacio */
+     | '(' (expression ',')* expression? ')' apply
+```
+
+En primer lugar queda claro que si el `lookahead`es un `'('`  la regla que se aplica
+es la segunda.
+
+Mas difícil es determinar que tokens pueden aparecer cuando se aplica la primera regla.
+
+Para poder responder a esta pregunta consideremos una derivación en la que intervenga la regla `apply: /* vacio */`
+
+Tendría que ocurrir algo como esto:
+
+$$ expression \stackrel{*}{\Longrightarrow} \beta \, apply \, a_1\, a_2\, a_n$$
+
