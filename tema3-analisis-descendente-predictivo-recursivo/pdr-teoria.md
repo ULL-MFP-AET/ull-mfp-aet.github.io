@@ -111,7 +111,13 @@ $$L_{\alpha}(G) = \{ x \in \Sigma^* : \alpha \stackrel{*}{\Longrightarrow} x \}$
 Para ello se procede así. Supongamos que $$\alpha = X_1 \ldots X_n$$, donde $$X_i$$ es o bien un token $$X_i \in \Sigma$$ o bien una variable $$X_i \in V$$.
 
 - las apariciones de terminales $$X_i$$ en
-$$\alpha$$ son emparejadas con los terminales en la entrada avanzando en el flujo de tokens, mientras que
+$$\alpha$$ son emparejadas con los terminales en la entrada avanzando en el flujo de tokens, 
+
+```js
+lookahead = lex();
+```
+
+mientras que
 - las apariciones de variables sintácticas $$X_i = B \in V$$ en $$\alpha$$ se traducen en
 llamadas a la correspondiente subrutina asociada con `parseB`.
 
@@ -150,7 +156,7 @@ una secuencia $$i = 1 \ldots k$$ de llamadas de uno de estos dos tipos:
 
 -   Llamar a la subrutina `parseX_i()` si $$X_i$$ es una variable sintáctica
 
--   Hacer una llamada al analizador léxico  avanzando sobre el token `lexer()` si $$X_i$$ es el terminal actual
+-   Hacer una llamada al analizador léxico  avanzando sobre el token `lex()` si $$X_i$$ es el terminal actual
 
 Si aplicamos esta teoría a la variable sintáctica `expression` cuyas reglas eran:
 
