@@ -24,21 +24,10 @@ El que describiremos aquí es un descendente: se denomina **método de análisis
 
 ## Introducción {#subsection:introduccion}
 
-En este método se asocia una subrutina con cada variable sintáctica
-$$A \in V$$. Dicha subrutina (que llamaremos `parseA()`) reconocerá el lenguaje
-generado desde la variable $$A$$:
+Supongamos una gramática $$G = (\Sigma, V, P, S)$$ con alfabeto $$\Sigma$$, conjunto de variables sintácticas (o no terminales) $$V$$, reglas de producción $$P$$ y símbolo de arranque $$S$$.
 
-$$L_A(G) = \{ x \in \Sigma^* : A \stackrel{*}{\Longrightarrow} x \}$$
 
-En este método se escribe una rutina `parseA` por cada variable sintáctica en la gramática $$A \in V$$. 
-
-Se le suele dar a la rutina asociada un nombre relacionado con la
-variable sintáctica asociada, por ejemplo `parseA` será la función asociada con
-la variable $$A \in V$$.
-
-La función de `parseA()` es reconocer el lenguaje $$L(A)$$ generado por $$A$$.
-
-Por ejemplo, en Egg esta es la gramática:
+Por ejemplo, en la gramática de Egg este es el conjunto $$P$$ de reglas de producción:
 
 ```yacc
 expression: STRING
@@ -49,11 +38,44 @@ apply: /* vacio */
      | '(' (expression ',')* expression? ')' apply
 ```
 
-Para hacer el parser escribimos dos funciones `parseExpression`y `parseApply`.
-La función `parseExpression` reconoce el lenguaje $$L(expression)$$ y la función  `parseApply` reconoce el lenguaje $$L(apply)$$. 
+Sólo hay dos variables sintácticas $$V = \{ expression, \, apply \}$$. El símbolo de arranque $$S$$ es $$expression$$.
+
+El conjunto de tokens es:
+
+$$\Sigma = \{ STRING,\, NUMBER,\, WORD,\, '(',\, ')',\, ','  \}$$
+
+En los métodos de Análisis Sintáctico Descendente Recursivo (PDR) se asocia una subrutina con cada variable sintáctica
+$$A \in V$$. Dicha subrutina (que llamaremos `parseA()`) reconocerá el lenguaje
+generado desde la variable $$A$$:
+
+$$L_A(G) = \{ x \in \Sigma^* : A \stackrel{*}{\Longrightarrow} x \}$$
+
+Esto es, $$L_A(G)$$ es el conjunto de frases del alfabeto que **derivan** en varias substituciones
+desde la variable $$A$$.
+
+Resumiendo: 
+
+- Cuando construimos un PDR se escribe una rutina `parseA` por cada variable sintáctica en la gramática $$A \in V$$. 
+- Una vez mas: Se le suele dar a la rutina asociada un nombre relacionado con la
+variable sintáctica asociada, por ejemplo `parseA` será la función asociada con
+la variable $$A \in V$$.
+- La función de `parseA()` es reconocer el lenguaje $$L(A)$$ generado por $$A$$.
+
+En Egg, para hacer el parser escribimos dos funciones 
+
+- `parseExpression` y 
+- `parseApply`.
+
+La función `parseExpression` reconoce el lenguaje 
+
+$$L(expression) = \{ x \in \Sigma^* : expression \stackrel{*}{\Longrightarrow} x \}$$ 
+
+y la función  `parseApply` reconoce el lenguaje 
+
+$$L(apply) = \{ x \in \Sigma^* : apply \stackrel{*}{\Longrightarrow} x \}$$. 
 
 
-La estrategia general que sigue la rutina `parseA` para reconocer $$L(A)$$ es
+En un PDR, la estrategia general que sigue la rutina `parseA` para reconocer $$L(A)$$ es
 decidir en términos del terminal `a` en la entrada cual de las partes derechas de las reglas de $$A$$
 
 $$A \rightarrow \alpha_1$$ 
@@ -76,15 +98,15 @@ expression: STRING
 
 Vemos que las tres reglas empiezan por un token distinto. Si sabemos que el token actual es `WORD` estamos seguros que la regla que se aplica es la tercera.
 
-En un analizador predictivo descendente recursivo (APDR) se
-asume que el símbolo que actualmente esta siendo observado (que a partir de ahora denominaré `lookahead`) permite determinar unívocamente que producción de $$A$$ hay
+En un analizador predictivo descendente recursivo (PDR o APDR) se
+asume que el terminal/token que actualmente esta siendo observado (que a partir de ahora denominaré `lookahead`) permite determinar unívocamente que producción de $$A$$ hay
 que aplicar. 
 
 Una vez que dentro del cuerpo de  `parseA` se ha determinado que la regla concreta por la que 
 continuar la derivación es la regla $$A \rightarrow \alpha$$, el algoritmo procede a reconocer
-$$L_{\alpha}(G)$$, el lenguaje generado por la parte derecha de la regla $$\alpha$$. 
+$$L_{\alpha}(G)$$, el lenguaje generado por la parte derecha de la regla: $$\alpha$$. 
 
-Para ello se procede así. Si $$\alpha = X_1 \ldots X_n$$, 
+Para ello se procede así. Supongamos que $$\alpha = X_1 \ldots X_n$$, donde $$X_i$$ es o bien un token o bien una variable.
 
 - las apariciones de terminales $$X_i$$ en
 $$\alpha$$ son emparejadas con los terminales en la entrada avanzando en el flujo de tokens, mientras que
@@ -133,6 +155,14 @@ expression: STRING
           | NUMBER
           | WORD apply
 ```
+
+tenemos tres partes derechas $$\gamma_1$$ = `STRING`,  $$\gamma_2$$ = `NUMBER` y $$\gamma_3$$ = `WORD apply`. Si computamos los $$FIRST(\gamma_i)$$ obtenemos:
+
+$$FIRST(STRING) = \left \{ STRING \right \}$$
+
+$$FIRST(NUMBER) = \left \{ NUMBER \right \}$$
+
+$$FIRST(WORD \! apply) = \left \{ WORD \right \}$$
 
 nos produce este código:
 
