@@ -12,8 +12,6 @@ previous:
 
 Esta es la primera práctica de una serie de prácticas sobre las fases de análisis sintáctico, el análisis de ámbito y la interpretación del codigo. Las siguientes prácticas irán ampliando el lenguaje con nuevas capacidades: expresiones regulares, hashes, arrays multidimensionales, módulos, objetos, clases, ... y se construyen sobre esta.
 
-Es por tanto fundamental que llegue a dominar las bases que se asientan en esta práctica. Son un montón de conceptos. No desespere si al principio todo es un poco confuso. El momento Eureka acabará llegando si persevera.
-
 
 Primero: Deberá leer el capítulo 12 *A Programming Language* de EJS:
 
@@ -25,7 +23,17 @@ e interpretarlo.
 Lea cuidadosamente el capítulo intentando comprender como funcionan las dos fases: la primera con el análisis sintáctico que produce el AST y la segunda 
 en la que se ejecuta el AST.
 
-## Escriba la Gramática
+Es fundamental que llegue a dominar las bases que se asientan en esta capítulo. 
+Son un montón de conceptos. 
+No desespere si al principio todo es un poco confuso. 
+Si tal cosa ocurre puede que le ayude dejar por un momento la lectura y pasar a leer primero las secciones
+
+1. [Escriba la gramática](#gramatica) y 
+2. Introducción al [Análisis Sintáctico Predictivo Recursivo]({{site.baseurl}}/tema3-analisis-descendente-predictivo-recursivo/pdr-teoria)
+ 
+Después de estas dos lecturas vuelva a la lectura del capítulo [Chapter 12. Project: A Programming Language](http://eloquentjavascript.net/12_language.html).
+
+## Escriba la Gramática {#gramatica}
 
 Escriba en su `README.md` las reglas de producción de la gramática que reconoce el traductor
 
