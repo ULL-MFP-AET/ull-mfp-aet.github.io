@@ -72,11 +72,11 @@ $$L(expression) = \{ x \in \Sigma^* : expression \stackrel{*}{\Longrightarrow} x
 
 y la función  `parseApply` reconoce el lenguaje 
 
-$$L(apply) = \{ x \in \Sigma^* : apply \stackrel{*}{\Longrightarrow} x \}$$. 
+$$L(apply) = \{ x \in \Sigma^* : apply \stackrel{*}{\Longrightarrow} x \}$$
 
 
 En un PDR, la estrategia general que sigue la rutina `parseA` para reconocer $$L(A)$$ es
-decidir en términos del terminal `a` en la entrada cual de las partes derechas de las reglas de $$A$$
+decidir en términos del terminal `a` por el que vamos en la entrada cual de las partes derechas $$\alpha_i$$ de las reglas de $$A$$
 
 $$A \rightarrow \alpha_1$$ 
 
@@ -86,7 +86,7 @@ $$ \ldots $$
 
 $$A \rightarrow \alpha_n$$ 
 
-se aplica para a continuación comprobar que la entrada que sigue pertenece al lenguaje generado por $$\alpha$$. 
+se aplica para construir el árbol. Si es así, a continuación se pasa a comprobar que la entrada que sigue a continuación de `a...` pertenece al lenguaje generado por $$\alpha_i$$. 
 
 Por ejemplo, en la gramática de Egg estas son las reglas para `expression`:
 
