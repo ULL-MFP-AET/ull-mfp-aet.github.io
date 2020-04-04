@@ -133,7 +133,7 @@ $$A \rightarrow \alpha_i$$ debe ser procesada.
 Si se piensa, esta condición se puede satisfacer si se cumple que las derivaciones de las partes derechas
 $$\alpha_i$$ de las reglas $$A \rightarrow \alpha_i$$ de la misma variable $$A$$ "*comiencen*" por diferentes tokens. 
 
-denotamos por  $$FIRST(\alpha)$$ al conjunto de terminales que pueden aparecer al "comienzo" de una derivación desde $$\alpha$$:
+Supongamos que $$\alpha \in (V \cup \Sigma)*$$ es una frase de variables y terminales. Denotaremos por  $$FIRST(\alpha)$$ al conjunto de terminales que pueden aparecer al "comienzo" de una derivación desde $$\alpha$$:
 
 $$FIRST(\alpha) = \left \{ b \in \Sigma :  \alpha  \stackrel{*}{\Longrightarrow}  b \beta \right \}$$
 
