@@ -48,7 +48,7 @@ Lea esta breve introducción a como se escribe un analizador  Sintáctico Predic
 
 ## Fixing Scope
 
-Resuelva los dos ejercicios propuestos en el capítulo:
+Resuelva ahora los dos ejercicios propuestos en el capítulo:
 
 1. [Comments](https://eloquentjavascript.net/12_language.html#i_/OBuIOX390) y 
 2. [Fixing Scope](https://eloquentjavascript.net/12_language.html#i_Y9ZDMshYCQ)
