@@ -1,4 +1,4 @@
-# GitHub Releases <sup>[1](#myfootnote1)</sup>
+# GitHub Releases
 
 GitHub Releases is a way to create a release to package software, along with release notes and links to binary files, for other people to use.
 
