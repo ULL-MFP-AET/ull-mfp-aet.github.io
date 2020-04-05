@@ -9,6 +9,8 @@ Releases are ordered by a tag's date in the following way:
 * If it's an <a href="https://git-scm.com/book/en/v2/Git-Basics-Tagging#_annotated_tags" target="_blank">annotated tag, the tag object's date is used</a>.
 * If it's a <a href="https://git-scm.com/book/en/v2/Git-Basics-Tagging#_lightweight_tags" target="_blank">lightweight tag</a>, then the commit object's date is used.
 
+## The release Event
+
 A GitHub event with the name **release** is triggered when a release is 
 
 * published, 
@@ -19,6 +21,8 @@ A GitHub event with the name **release** is triggered when a release is
 * prereleased.
 
 See [GitHub Webhooks](https://developer.github.com/webhooks/).
+
+## Creating Releases Using the GitHub Web App
 
 You can create releases on GitHub Web:
 
@@ -56,10 +60,8 @@ You can create releases on GitHub Web:
     
     ![Publish release and Draft release buttons](https://help.github.com/assets/images/help/releases/release_buttons.png)
 
-See more at [Managing releases in a repository](https://help.github.com/en/github/administering-a-repository/managing-releases-in-a-repository#creating-a-release)
-
-
-
 ## References
 
-See also <a name="myfootnote1">1</a>: (Paragraph borrowed from [What exactly is a Release in GitHub?](https://stackoverflow.com/questions/33551505/what-exactly-is-a-release-in-github))
+* See more at [Managing releases in a repository](https://help.github.com/en/github/administering-a-repository/managing-releases-in-a-repository#creating-a-release)
+* See also <a name="myfootnote1">1</a>: (Paragraph borrowed from [What exactly is a Release in GitHub?](https://stackoverflow.com/questions/33551505/what-exactly-is-a-release-in-github))
+* See [GitHub Webhooks](https://developer.github.com/webhooks/).
