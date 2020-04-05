@@ -37,6 +37,7 @@ jobs:
     ...
 ```
 
+
 ## The Editor of Github Actions
 
 We can also use the GitHub Interface. 
@@ -163,6 +164,10 @@ The metadata filename must be either `action.yml` or `action.yaml`.
 ## Event
 
 **Events** are specific activities that trigger a workflow run. For example, a workflow is triggered when somebody pushes to the repository or when a pull request is created. Events can also be configured to listen to external events using Webhooks.
+
+### The `release` event
+
+* See [GitHub Releases]({{site.baseurl}}/tema1-introduccion-a-javascript/releases.html)
 
 ## Runner
 
