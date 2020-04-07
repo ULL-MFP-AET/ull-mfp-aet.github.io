@@ -392,6 +392,20 @@ and the timestamp printed in the log:
 ![]({{site.baseurl}}/assets/images/hello-world-js-action-output-time.png)
 
 
+## Publishing your action
+
+When a repository contains an action metadata file (`action.yml` or `action.yaml`), you'll see a banner to publish the action to GitHub Marketplace. Click **Draft a release**.
+
+![Publish this action to markeplace button](https://help.github.com//assets/images/help/repository/publish-github-action-to-markeplace-button.png)
+
+The whole process requires a few steps, among them you have to **tag** your Action with a version. People will see the version in the action's dedicated GitHub Marketplace page.
+
+![](https://help.github.com/assets/images/help/repository/marketplace_actions_version.png)
+
+
+See [Publishing actions in GitHub Marketplace](https://help.github.com/en/actions/building-actions/publishing-actions-in-github-marketplace) for more information
+
+
 ## Versioning
 
 Inside the action client, We specified the version to use with the line:
@@ -421,14 +435,6 @@ but you should not break existing input compatibility or break existing workflow
 Here is an example of versioning workflow:
 
 <img src="{{site.baseurl}}/assets/images/action-releases.png" style='background-color: white'/>
-
-## Publishing your action
-
-When a repository contains an action metadata file (`action.yml` or `action.yaml`), you'll see a banner to publish the action to GitHub Marketplace. Click **Draft a release**.
-
-![Publish this action to markeplace button](https://help.github.com//assets/images/help/repository/publish-github-action-to-markeplace-button.png)
-
-See [Publishing actions in GitHub Marketplace](https://help.github.com/en/actions/building-actions/publishing-actions-in-github-marketplace) for more information
 
 
 ## Next Step
