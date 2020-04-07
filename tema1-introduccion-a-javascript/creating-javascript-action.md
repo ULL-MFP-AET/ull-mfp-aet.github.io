@@ -413,7 +413,7 @@ steps:
 
 Binding to a major version is the **latest** of that major version.
 
-That is, to say `v1` is the same as saying `"1.*"`.
+That is, to say `v8` is the same as saying `"8.*"`.
 
 Therefore, you can add net new capabilities to a release, 
 but you should not break existing input compatibility or break existing workflows. 
