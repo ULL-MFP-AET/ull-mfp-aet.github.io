@@ -34,6 +34,11 @@ Si tal cosa ocurre puede que le ayude dejar por un momento la lectura y pasar a 
 Después de estas dos lecturas vuelva otroa vez a la lectura del capítulo [Chapter 12. Project: A Programming Language](http://eloquentjavascript.net/12_language.html).
 No haga todavía los ejercicios del libro.
 
+### NOTA
+
+En algunos de los ejemplos, vídeos, etc. que acompañan esta práctica puede notar algunas 
+inconsistencias en el lenguaje debidas a que casi en cada curso hemos ido haciendo alias de algunos de los nombres de los constructos. Por ejemplo en el vídeo en vez de `fun` usamos `->` y en algún ejemplo en los apuntes en vez de `element` se usa `<-`, etc. Son cambios triviales que no afectan al núcleo de lo que se dice.
+
 ## Escriba la Gramática {#gramatica}
 
 Escriba en su `README.md` las reglas de producción de la gramática que reconoce el traductor
@@ -423,7 +428,12 @@ Haga que el ejecutable `egg` funcione como un bucle REPL cuando no se le proporc
 
 En este [Vídeo *Programando un bucle REPL para el lenguaje Egg*](https://youtu.be/5gIlt6r29lw) explicamos como hacerlo
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/5gIlt6r29lw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe 
+width="560" 
+height="315" 
+src="https://www.youtube.com/embed/5gIlt6r29lw" 
+frameborder="0" 
+allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ## Recursos
 
