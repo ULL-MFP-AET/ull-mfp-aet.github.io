@@ -64,8 +64,51 @@ Puede encontrar una solución al problema en la rama [Inicial de este repo ULL-E
 Si no se le ocurre una solución acuda a este enlace. 
 Y si se le ocurrió  también. Contraste las soluciones y quédese con la que le parezca mejor.
 
+## Analizador Léxico Separado {#lexsep}
 
-## Separe en Módulos el Programa
+Intente ahora separar la fase de análisis sintáctico de la fase de análisis léxico
+en una función separada `lex` que cada vez que es llamada por las funciones  `parseExpression` y `parseApply` retorna
+el siguiente token. 
+
+Esto es, a diferencia de en los ejemplos vistos en las clases anteriores, el analizador léxico no analiza todos los tokens en una pasada guardándolos en un array, sino que tan pronto como detecta el siguiente token lo devuelve a la rutina de  análisis sintáctico que le ha llamado.
+
+```js
+let lookahead;
+let lineno = 1; // Save token line numbers
+let offset = 0; // Save token offset
+...
+function lex() {
+  let match;
+  ... // Find the next token and save it in lookahead 
+  return lookahead;
+}
+```
+
+Se usará una variable compartida que se debe llamar `lookahead` para guardar el token actual. Esta variable `lookahead` sirve para la comunicación entre las funciones de análisis sintactico y el analizador léxico. El código de `parseExpression`debería quedar  parecido a esto:
+
+```js
+function parseExpression() {
+  let expr;
+
+  if (lookahead.type == "STRING") {
+    expr = {type: "value", value: lookahead.value};
+    lex();
+    return expr;
+  } else if (lookahead.type == "NUMBER") {
+    expr = {type: "value", value: lookahead.value};
+    lex();
+    return expr;
+  } else if (lookahead.type == "WORD") {
+    expr = {type: "word", name: lookahead.value};
+    lex();
+    return parseApply(expr);
+  } else {
+    throw new SyntaxError(`Unexpected syntax line ${lineno}: ${program.slice(0,10)}`);
+  }
+}
+```
+
+## Separe en Módulos el Programa {#separe}
 
 Separe el código en dos módulos Node.js:
 
@@ -350,49 +393,6 @@ Puesto que este paquete contiene ejecutables es conveniente que lea la sección
 }
 ```
 
-## Analizador Léxico Separado
-
-Intente ahora separar la fase de análisis sintáctico de la fase de análisis léxico
-en una función separada `lex` que cada vez que es llamada por las funciones  `parseExpression` y `parseApply` retorna
-el siguiente token. 
-
-Esto es, a diferencia de en los ejemplos vistos en las clases anteriores, el analizador léxico no analiza todos los tokens en una pasada guardándolos en un array, sino que tan pronto como detecta el siguiente token lo devuelve a la rutina de  análisis sintáctico que le ha llamado.
-
-```js
-let lookahead;
-let lineno = 1; // Save token line numbers
-let offset = 0; // Save token offset
-...
-function lex() {
-  let match;
-  ... // Find the next token and save it in lookahead 
-  return lookahead;
-}
-```
-
-Se usará una variable compartida que se debe llamar `lookahead` para guardar el token actual. Esta variable `lookahead` sirve para la comunicación entre las funciones de análisis sintactico y el analizador léxico. Algo como esto:
-
-```js
-function parseExpression() {
-  let expr;
-
-  if (lookahead.type == "STRING") {
-    expr = {type: "value", value: lookahead.value};
-    lex();
-    return expr;
-  } else if (lookahead.type == "NUMBER") {
-    expr = {type: "value", value: lookahead.value};
-    lex();
-    return expr;
-  } else if (lookahead.type == "WORD") {
-    expr = {type: "word", name: lookahead.value};
-    lex();
-    return parseApply(expr);
-  } else {
-    throw new SyntaxError(`Unexpected syntax line ${lineno}: ${program.slice(0,10)}`);
-  }
-}
-```
 
 Si logra resolver estos objetivos ¡Enhorabuena!.
 
@@ -408,7 +408,7 @@ como sigue:
 3. El analizador léxico actual destruye la cadena conteniendo el programa conforme la analiza.  Es posible  escribir una analizador léxico que recorra la cadena conteniendo el programa sin destruirla usando la opción `sticky`. Estudie esta mejora
 4. Mejore las pruebas, especialmente con programas que contienen errores
 
-## Bucle REPLpara egg (Repeat Evaluate Print Loop)
+## Bucle REPLpara egg (Repeat Evaluate Print Loop) {#repl}
 
 
 Haga que el ejecutable `egg` funcione como un bucle REPL cuando no se le proporciona un fichero de entrada. 
@@ -438,9 +438,8 @@ allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 
 ## Recursos
 
 * [Eloquent JS: Chapter 11. Project: A Programming Language](http://eloquentjavascript.net/11_language.html)
-* [El lenguaje egg: repo en GitHub](https://github.com/ULL-ESIT-PL-1617/egg)
-* [Repo interpreter-egg](https://github.com/ULL-ESIT-PL-1617/interpreter-egg)
-* [NodeJS Readline gist](https://gist.github.com/crguezl/430642e29a2b9293317320d0d1759387)
+* [El lenguaje egg: repo en GitHub](https://github.com/ULL-ESIT-PL-1617/egg). Contiene una solución a los  [problemas de separar el analizador léxico del sintáctico](#lexsep) así como al de [separar los códigos y los tres ejecutables](#separe). También tiene ejemplos de pruebas en Mocha y Chai
+* [NodeJS Readline gist](https://gist.github.com/crguezl/430642e29a2b9293317320d0d1759387): un sencillo gist que te enseña a usar `readline` para hacer un bucle interactivo. Quizá conviene que lo leas cuando llegues a la sección del [problema del REPL](#repl)
 * En el repo [ULL-ESIT-PL-1617/interpreter-egg](https://github.com/ULL-ESIT-PL-1617/interpreter-egg) se muestra como hacer un bucle REPL
 * [Vídeo *Programando un bucle REPL para el lenguaje Egg*](https://youtu.be/5gIlt6r29lw)
 * [XRegExp](http://xregexp.com/)
