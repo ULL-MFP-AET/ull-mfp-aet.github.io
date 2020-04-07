@@ -408,11 +408,11 @@ See [Publishing actions in GitHub Marketplace](https://help.github.com/en/action
 
 ## Versioning
 
-GitHub recommends using semantic versioning when creating actions to provide people with a stable experience.
+GitHub recommends using [semantic versioning](http://semver.org/) when creating actions to provide people with a stable experience.
 
-*   Create a GitHub **release** using semantic versioning (v1.0.9). For more information, see "[Creating releases](https://help.github.com/en/articles/creating-releases)."
-*   Move the major version tag (v1, v2, etc.) to point to the Git ref of the current release. For more information, see "[Git basics - tagging](https://git-scm.com/book/en/v2/Git-Basics-Tagging)."
-*   Introduce a new major version tag (v2) for breaking changes that will break existing workflows. For example, changing an action's inputs would be a breaking change.
+*   Create a GitHub **release** using semantic versioning (`v1.0.9`). For more information, see "[Creating releases](https://help.github.com/en/articles/creating-releases)."
+*   Move the major version tag (`v1`, `v2`, etc.) to point to the Git ref of the current release. For more information, see "[Git basics - tagging](https://git-scm.com/book/en/v2/Git-Basics-Tagging)."
+*   Introduce a new major version tag (`v2`) for breaking changes that will break existing workflows. For example, changing an action's inputs would be a breaking change.
 
 
 Inside the action client, We specified the version to use with the line:
@@ -432,11 +432,11 @@ steps:
     - uses: actions/javascript-action@41775a4da8ffae865553a738ab8ac1cd5a3c0044 # sha
 ```
 
-Binding to a major version is the **latest** of that major version.
+The idea is that with releases, binding to a major version is the **latest** of that major version.
 
 That is, to say `v8` is the same as saying `"8.*"`.
 
-Therefore, you can add new capabilities to a release, 
+Therefore, as an action developer, you can add new capabilities to a release, 
 but **you should not break existing input compatibility or break existing workflows**. 
 
 Here is an example of versioning workflow:
@@ -444,7 +444,7 @@ Here is an example of versioning workflow:
 <img src="{{site.baseurl}}/assets/images/action-releases.png" style='background-color: white'/>
 
 
-## Next Step
+## Next Steps on Learning GitHub Actions {#next-step}
 
 Use the repo [actions/javascript-action](https://github.com/actions/javascript-action)
 as a template and follow the instructions. 
