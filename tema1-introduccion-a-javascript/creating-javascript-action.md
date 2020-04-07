@@ -392,7 +392,7 @@ and the timestamp printed in the log:
 ![]({{site.baseurl}}/assets/images/hello-world-js-action-output-time.png)
 
 
-## Publishing your action
+## Publishing your action to GitHub Marketplace
 
 When a repository contains an action metadata file (`action.yml` or `action.yaml`), you'll see a banner to publish the action to GitHub Marketplace. Click **Draft a release**.
 
