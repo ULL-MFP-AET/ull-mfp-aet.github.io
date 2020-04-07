@@ -37,7 +37,7 @@ No haga todavía los ejercicios del libro.
 ### NOTA
 
 En algunos de los ejemplos, vídeos, etc. que acompañan esta práctica puede notar algunas 
-inconsistencias en el lenguaje debidas a que casi en cada curso hemos ido haciendo alias de algunos de los nombres de los constructos. Por ejemplo en el vídeo en vez de `fun` usamos `->` y en algún ejemplo en los apuntes en vez de `element` se usa `<-`, etc. Son cambios triviales que no afectan al núcleo de lo que se dice.
+inconsistencias en el lenguaje Egg debidas a que casi en cada curso hemos ido haciendo alias de algunos de los nombres de los constructos. Por ejemplo en el vídeo en vez de `fun` usamos `->` y en algún ejemplo en los apuntes en vez de `element` se usa `<-`, etc. Son cambios triviales que no afectan al núcleo de lo que se dice.
 
 ## Escriba la Gramática {#gramatica}
 
