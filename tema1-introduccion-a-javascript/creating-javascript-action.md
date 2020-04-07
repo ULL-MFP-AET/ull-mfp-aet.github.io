@@ -266,7 +266,7 @@ If you added a `.gitignore` file that lists `node_modules`, you'll need to remov
 
 It's best practice to also add a `version` tag for releases of your action. For more information on versioning your action, see [
   
-* About actions](https://help.github.com/en/actions/automating-your-workflow-with-github-actions/about-actions#versioning-your-action).
+* [About actions](https://help.github.com/en/actions/automating-your-workflow-with-github-actions/about-actions#versioning-your-action).
 * [Versioning Actions](https://github.com/actions/toolkit/blob/master/docs/action-versioning.md)
 
 ```
@@ -389,10 +389,34 @@ and the timestamp printed in the log:
 
 ## Versioning
 
+We specified the version to use in the former example with the line:
+
+```yml
+uses: ULL-ESIT-PL-1920/hello-world-javascript-action@v1
+```
+
+The workflow references an action using a ref.
+Hare a re some more examples:
+
+```yaml
+steps:
+    - uses: actions/javascript-action@v1        # recommended. starter workflows use this
+    - uses: actions/javascript-action@v1.0.0    # if an action offers specific releases 
+    - uses: actions/javascript-action@41775a4da8ffae865553a738ab8ac1cd5a3c0044 # sha
+```
+
+Binding to a major version is the **latest** of that major version.
+
+That is, to say `v1` is the same as saying `"1.*"`.
+
+Therefore, you can add net new capabilities to a release, 
+but you should not break existing input compatibility or break existing workflows. 
+
 Here is an example of versioning workflow:
 
 
-![](* [Versioning Actions](https://github.com/actions/toolkit/blob/master/docs/action-versioning.md))
+<img src="{{site.baseurl}}/assets/images/action-releases.png" style='background-color: white'/>
+
 
 ## Next Step
 
