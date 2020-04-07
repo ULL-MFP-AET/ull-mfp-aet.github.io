@@ -406,7 +406,8 @@ como sigue:
 ## Bucle REPLpara egg (Repeat Evaluate Print Loop)
 
 
-Haga que el ejecutable `egg` funcione como un bucle REPL cuando no se le proporciona un fichero de entrada. En este [Vídeo *Programando un bucle REPL para el lenguaje Egg*](https://youtu.be/5gIlt6r29lw) explicamos como hacerlo
+Haga que el ejecutable `egg` funcione como un bucle REPL cuando no se le proporciona un fichero de entrada. 
+
 
 ```lisp
 [~/ull-pl1718-campus-virtual/tema3-analisis-sintactico/src/egg/crguezl-egg(private)]$ bin/egg.js
@@ -420,7 +421,9 @@ Haga que el ejecutable `egg` funcione como un bucle REPL cuando no se le proporc
 > goodbye!
 ```
 
+En este [Vídeo *Programando un bucle REPL para el lenguaje Egg*](https://youtu.be/5gIlt6r29lw) explicamos como hacerlo
 
+<iframe width="560" height="315" src="https://www.youtube.com/embed/5gIlt6r29lw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ## Recursos
 
