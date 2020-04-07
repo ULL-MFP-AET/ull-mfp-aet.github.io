@@ -413,15 +413,22 @@ steps:
 
 Binding to a major version is the **latest** of that major version.
 
-That is, to say `v8` is the same as saying `"8.*"`.
+That is, in the abscense of tag `v8`, to say `v8` is the same as saying `"8.*"`.
 
 Therefore, you can add net new capabilities to a release, 
 but you should not break existing input compatibility or break existing workflows. 
 
 Here is an example of versioning workflow:
 
-
 <img src="{{site.baseurl}}/assets/images/action-releases.png" style='background-color: white'/>
+
+## Publishing your action
+
+When a repository contains an action metadata file (`action.yml` or `action.yaml`), you'll see a banner to publish the action to GitHub Marketplace. Click **Draft a release**.
+
+![Publish this action to markeplace button](https://help.github.com//assets/images/help/repository/publish-github-action-to-markeplace-button.png)
+
+See [Publishing actions in GitHub Marketplace](https://help.github.com/en/actions/building-actions/publishing-actions-in-github-marketplace) for more information
 
 
 ## Next Step
