@@ -408,7 +408,7 @@ See [Publishing actions in GitHub Marketplace](https://help.github.com/en/action
 
 ## Versioning
 
-GitHub recommends using [semantic versioning](http://semver.org/) when creating actions to provide people with a stable experience.
+GitHub recommends using [semantic versioning](http://semver.org/) when creating actions.
 
 *   Create a GitHub **release** using semantic versioning (`v1.0.9`). For more information, see "[Creating releases](https://help.github.com/en/articles/creating-releases)."
 *   Move the major version tag (`v1`, `v2`, etc.) to point to the Git ref of the current release. For more information, see "[Git basics - tagging](https://git-scm.com/book/en/v2/Git-Basics-Tagging)."
