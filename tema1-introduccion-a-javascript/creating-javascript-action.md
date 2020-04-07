@@ -251,7 +251,7 @@ with:
 
 GitHub downloads each action run in a workflow during runtime and executes it as a complete package of code before you can use workflow commands like run to interact with the runner machine. 
 
-This means you must include any package dependencies required to run the JavaScript code. You'll need to check in the toolkit core and github packages to your action's repository.
+This means **you must include any package dependencies required to run the JavaScript code**. You'll need to check in the toolkit core and github packages to your action's repository.
 
 From your terminal, commit 
 
@@ -264,7 +264,7 @@ From your terminal, commit
    
 If you added a `.gitignore` file that lists `node_modules`, you'll need to remove that line to commit the `node_modules` directory.
 
-It's best practice to also add a `version` tag for releases of your action. For more information on versioning your action, see [
+It's best practice to also add a `version` tag for releases of your action. For more information on versioning your action, see 
   
 * [About actions](https://help.github.com/en/actions/automating-your-workflow-with-github-actions/about-actions#versioning-your-action).
 * [Versioning Actions](https://github.com/actions/toolkit/blob/master/docs/action-versioning.md)
