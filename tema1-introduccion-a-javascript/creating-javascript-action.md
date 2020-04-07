@@ -408,6 +408,13 @@ See [Publishing actions in GitHub Marketplace](https://help.github.com/en/action
 
 ## Versioning
 
+GitHub recommends using semantic versioning when creating actions to provide people with a stable experience.
+
+*   Create a GitHub **release** using semantic versioning (v1.0.9). For more information, see "[Creating releases](https://help.github.com/en/articles/creating-releases)."
+*   Move the major version tag (v1, v2, etc.) to point to the Git ref of the current release. For more information, see "[Git basics - tagging](https://git-scm.com/book/en/v2/Git-Basics-Tagging)."
+*   Introduce a new major version tag (v2) for breaking changes that will break existing workflows. For example, changing an action's inputs would be a breaking change.
+
+
 Inside the action client, We specified the version to use with the line:
 
 ```yml
@@ -427,9 +434,9 @@ steps:
 
 Binding to a major version is the **latest** of that major version.
 
-That is, in the abscense of tag `v8`, to say `v8` is the same as saying `"8.*"`.
+That is, to say `v8` is the same as saying `"8.*"`.
 
-Therefore, you can add net new capabilities to a release, 
+Therefore, you can add new capabilities to a release, 
 but **you should not break existing input compatibility or break existing workflows**. 
 
 Here is an example of versioning workflow:
