@@ -127,6 +127,10 @@ There are two types of actions:
 1. Docker container and 
 2. JavaScript actions
 
+Docker **container actions** allow the environment to be packaged with the GitHub Actions code and can only execute in the GitHub-Hosted Linux environment.
+
+**JavaScript actions** decouple the GitHub Actions code from the environment allowing faster execution but accepting greater dependency management responsibility.
+
 Actions require a metadata file to define the 
 
 1. inputs, 
