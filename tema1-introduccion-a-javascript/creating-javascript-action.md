@@ -396,7 +396,7 @@ and the timestamp printed in the log:
 
 When a repository contains an action metadata file (`action.yml` or `action.yaml`), you'll see a banner to publish the action to GitHub Marketplace. Click **Draft a release**.
 
-![Publish this action to markeplace button](https://help.github.com//assets/images/help/repository/publish-github-action-to-markeplace-button.png)
+![Publish this action to markeplace button](https://help.github.com/assets/images/help/repository/publish-github-action-to-markeplace-button.png)
 
 The whole process requires a few steps, among them you have to **tag** your Action with a version. People will see the version in the action's dedicated GitHub Marketplace page.
 
@@ -430,7 +430,7 @@ Binding to a major version is the **latest** of that major version.
 That is, in the abscense of tag `v8`, to say `v8` is the same as saying `"8.*"`.
 
 Therefore, you can add net new capabilities to a release, 
-but you should not break existing input compatibility or break existing workflows. 
+but **you should not break existing input compatibility or break existing workflows**. 
 
 Here is an example of versioning workflow:
 
