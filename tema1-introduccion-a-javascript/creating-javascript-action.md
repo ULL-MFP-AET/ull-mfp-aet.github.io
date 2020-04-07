@@ -264,17 +264,22 @@ From your terminal, commit
    
 If you added a `.gitignore` file that lists `node_modules`, you'll need to remove that line to commit the `node_modules` directory.
 
-It's best practice to also add a `version` tag for releases of your action. For more information on versioning your action, see 
-  
-* [About actions](https://help.github.com/en/actions/automating-your-workflow-with-github-actions/about-actions#versioning-your-action).
-* [Versioning Actions](https://github.com/actions/toolkit/blob/master/docs/action-versioning.md)
-
 ```
 git add action.yml index.js node_modules/* package.json package-lock.json README.md
 git commit -m "My first action is ready"
+```
+
+It's best practice to also add a `version` tag for releases of your action. 
+
+```
 git tag -a -m "My first action release" v1
 git push --follow-tags
 ```
+
+For more information on versioning your action, see 
+  
+* [About actions](https://help.github.com/en/actions/automating-your-workflow-with-github-actions/about-actions#versioning-your-action).
+* [Versioning Actions](https://github.com/actions/toolkit/blob/master/docs/action-versioning.md)
 
 As an alternative to checking in your `node_modules` directory you can use a tool called [zeit/ncc](https://github.com/zeit/ncc) to compile your code and modules into one file used for distribution.
 
@@ -389,14 +394,15 @@ and the timestamp printed in the log:
 
 ## Versioning
 
-We specified the version to use in the former example with the line:
+Inside the action client, We specified the version to use with the line:
 
 ```yml
 uses: ULL-ESIT-PL-1920/hello-world-javascript-action@v1
 ```
 
-The workflow references an action using a ref.
-Hare a re some more examples:
+The workflow references an action using a [git ref](https://git-scm.com/book/en/v2/Git-Internals-Git-References).
+
+Hare are some more examples:
 
 ```yaml
 steps:
