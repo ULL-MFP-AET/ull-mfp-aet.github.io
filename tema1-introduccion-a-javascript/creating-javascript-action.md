@@ -264,7 +264,10 @@ From your terminal, commit
    
 If you added a `.gitignore` file that lists `node_modules`, you'll need to remove that line to commit the `node_modules` directory.
 
-It's best practice to also add a `version` tag for releases of your action. For more information on versioning your action, see "[About actions](https://help.github.com/en/actions/automating-your-workflow-with-github-actions/about-actions#versioning-your-action)."
+It's best practice to also add a `version` tag for releases of your action. For more information on versioning your action, see [
+  
+* About actions](https://help.github.com/en/actions/automating-your-workflow-with-github-actions/about-actions#versioning-your-action).
+* [Versioning Actions](https://github.com/actions/toolkit/blob/master/docs/action-versioning.md)
 
 ```
 git add action.yml index.js node_modules/* package.json package-lock.json README.md
@@ -382,6 +385,14 @@ From our repository, We click the Actions tab, and select the latest workflow ru
 and the timestamp printed in the log:
 
 ![]({{site.baseurl}}/assets/images/hello-world-js-action-output-time.png)
+
+
+## Versioning
+
+Here is an example of versioning workflow:
+
+
+![](* [Versioning Actions](https://github.com/actions/toolkit/blob/master/docs/action-versioning.md))
 
 ## Next Step
 
