@@ -17,6 +17,7 @@ next:
 2. Instale el plugin SSH FS y aprenda a usarlo con el sistema de archivo de una máquina remota via SSH
 3. Use Live Share para colaborar con un compañero
 4. Elabore un informe con la experiencia adquirida
+5. Siga el curso [GitHub Pages](https://lab.github.com/githubtraining/github-pages) de GitHub Learning Lab. Usa lo aprendido para elaborar el informe de esta práctica
 
 ## Tutoriales
 

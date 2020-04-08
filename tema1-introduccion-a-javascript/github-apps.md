@@ -94,3 +94,4 @@ module.exports = app => {
 ## References
 
 * [Repo crguezl/getting-started-github-app](https://github.com/crguezl/getting-started-github-apps)
+* [Build a GitHub App that can automate workflow and deploy to AWS Lambda](https://youtu.be/7JZLipM8bT0) YouTube
