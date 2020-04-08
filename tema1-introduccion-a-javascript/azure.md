@@ -11,4 +11,7 @@
 *   [Herramientas de Docker / Docker Tools](https://marketplace.visualstudio.com/items?itemName=PeterJausovec.vscode-docker)
 *   [Herramientas de la CLI de Azure / Azure CLI Tools](https://marketplace.visualstudio.com/items?itemName=ms-vscode.azurecli)
 *   [Herramientas de Azure Resource / Manager Azure Resource Manager Tools](https://marketplace.visualstudio.com/items?itemName=msazurermtools.azurerm-vscode-tools)
-"
+
+## Azure Cloud Shell
+
+* [Azure Cloud Shell](https://shell.azure.com/)
