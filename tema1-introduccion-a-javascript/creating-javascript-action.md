@@ -451,8 +451,9 @@ as a template and follow the instructions.
 
 ## Learning to use GitHub Actions at GitHub Learning Lab
 
-* [Search at GitHub Learning Lab for GitHub Action courses](https://lab.github.com/search?q=actions)
+{% include github-learning-lab.md %}
 
+* [Search at GitHub Learning Lab for GitHub Action courses](https://lab.github.com/search?q=actions)
 
 ## References
 
