@@ -22,6 +22,8 @@
 
 ## [Build Tools](build-tools)
 
+## [GitHub Apps](github-apps)
+
 ## [GitHub Actions](github-actions)
 
 ## [Object Oriented Programming: OOP](oop)
