@@ -11,7 +11,57 @@ If your application needs to respond to webhooks, you'll need some way to expose
 
 * [smee.io](https://smee.io/)
 
+### Use the CLI
 
+
+                 $ npm install --global smee-client
+
+Then the `smee` command will forward webhooks from `smee.io` to your local development environment.
+
+```
+$ smee -u https://smee.io/WJgXrPCZYXL5qvLz
+```
+
+For usage info:
+
+```
+$ smee --help
+```
+
+Use the Node.js client
+
+```
+$ npm install --save smee-client
+```
+
+Then:
+
+```js
+const SmeeClient = require('smee-client')
+
+const smee = new SmeeClient({
+  source: 'https://smee.io/WJgXrPCZYXL5qvLz',
+  target: 'http://localhost:3000/events',
+  logger: console
+})
+
+const events = smee.start()
+
+// Stop forwarding events
+events.close()
+```
+
+### Using Probot's built-in support
+
+```
+$ npm install --save smee-client
+```
+
+Then set the environment variable:
+
+```
+WEBHOOK_PROXY_URL=https://smee.io/WJgXrPCZYXL5qvLz
+```
 
 ## Probot
 
