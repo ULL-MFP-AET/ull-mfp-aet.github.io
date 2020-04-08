@@ -11,6 +11,10 @@ If your application needs to respond to webhooks, you'll need some way to expose
 
 * [smee.io](https://smee.io/)
 
+Can you tell which type of event was sent back to the application when you changed the pull request header?
+
+![]({{site.baseurl}}/assets/images/smee-io.png)
+
 ### Use the CLI
 
 
