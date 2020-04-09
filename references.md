@@ -8,7 +8,7 @@
   - Disponible en: Matemáticas y Física	B.Mát. y Física	Sala de Lectura	Préstamo exterior	I*D.3.4 AHO com
 * [A Practical Approach to Compiler Construction. Watson. Año:2017]({{site.bull_permanente}}/15vbjs7/ullsfx3710000001127445) (Debes estar autenticado via PuntoQ BULL)
 * [The Modern JavaScript Tutorial. https://javascript.info/](https://javascript.info/)
-* [Node.js 8 the Right Way]({site.bull_permanente}}/15vbjs7/ullsfx4340000000247287). Jim Wilson. 2018 (Debes estar autenticado via PuntoQ BULL)
+* [GitHub Learning Lab Courses](https://lab.github.com/)
   
 <!--
 * [Node.js 8 the Right Way](https://books.google.es/books?id=oA9QDwAAQBAJ&lpg=PT96&ots=-mLQPlvsSj&dq=should%20ldjclient%20emit%20a%20close%20event&hl=es&pg=PP1#v=onepage&q=should%20ldjclient%20emit%20a%20close%20event&f=false) Google Book
