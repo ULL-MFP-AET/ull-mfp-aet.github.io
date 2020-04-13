@@ -289,15 +289,16 @@ Tenemos entonces que computar el conjunto de tokens `FOLLOW(apply)`  que pueden 
 
 $$FOLLOW(apply) = \left \{ T \in \Sigma :  expression  \stackrel{*}{\Longrightarrow}  \beta \, apply \, T \, \alpha  \right \}$$ where $$\alpha \in (V \cup \Sigma)^*$$
 
-Consideremos la siguiente sinopsis de  derivación de una cadena como `print("hi", a)`:
+Consideremos la siguiente sinopsis de  derivación de una cadena como `print("hi", a)` en 
+la que el símbolo $$\bullet$$ denota el final de la cadena de entrada:
 
-$$ expression \Rightarrow WORD \, apply \stackrel{*}{\Longrightarrow} WORD \, ( \,expression \, , \, WORD \, apply \, )$$
+$$ expression \bullet \Rightarrow WORD \, apply \bullet \stackrel{*}{\Longrightarrow} WORD \, ( \,expression \, , \, WORD \, apply \, ) \bullet $$
 
-$$ \ldots \stackrel{*}{\Longrightarrow} WORD \, ( \, STRING \, , \, WORD)$$
+$$ \Longrightarrow WORD \, ( \, STRING \, , \, WORD \, apply \, ) \bullet  \stackrel{*}{\Longrightarrow} WORD \, ( \, STRING \, , \, WORD) \bullet$$
 
 muestra que uno de esos tokens es `')`. También si nos fijamos en la primera sustitución 
 
-$$ expression \Rightarrow WORD \, apply $$
+$$ expression \Rightarrow WORD \, apply \, \bullet  $$
 
 vemos que `apply ` aparece al final de la frase. 
 
