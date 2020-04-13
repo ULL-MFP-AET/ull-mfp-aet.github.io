@@ -1,4 +1,4 @@
-# Análisis Sintactico Descendente Recursivo Predictivo (e Interpretación de Código)
+# Análisis Sintactico Descendente Recursivo Predictivo, Análisis de ámbito e Interpretación de Código
 
 ## Los Analizadores Descendentes Recursivos Predictivos
 
