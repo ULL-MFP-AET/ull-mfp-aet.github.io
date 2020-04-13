@@ -10,15 +10,15 @@ previous:
 
 ## Introducción
 
-Esta es la primera práctica de una serie de prácticas sobre las fases de análisis sintáctico, el análisis de ámbito y la interpretación del codigo. Las siguientes prácticas irán ampliando el lenguaje con nuevas capacidades: expresiones regulares, hashes, arrays multidimensionales, módulos, objetos, clases, ... y se construyen sobre esta.
+Esta es la primera práctica de una serie de prácticas sobre las fases de análisis sintáctico, el análisis de ámbito y la interpretación del codigo. 
+Se presenta un lenguaje llamado **Egg** (de tipo "Lisp") y se describe como procesarlo
+e interpretarlo.
+Las siguientes prácticas irán ampliando el lenguaje con nuevas capacidades: expresiones regulares, hashes, arrays multidimensionales, módulos, objetos, clases, ... y se construyen sobre esta.
 
 
 Primero: Deberá leer el capítulo 12 *A Programming Language* de EJS:
 
 * [Eloquent JS. Chapter 12. Project: A Programming Language](http://eloquentjavascript.net/12_language.html)
-
-Se presenta un lenguaje llamado **Egg** (de tipo "Lisp") y se describe como procesarlo
-e interpretarlo.
 
 Lea cuidadosamente el capítulo intentando comprender como funcionan las dos fases: la primera con el análisis sintáctico que produce el AST y la segunda 
 en la que se ejecuta el AST.
