@@ -108,7 +108,8 @@ Otro ejemplo, el AST para `+(a,*(4,5))` sería
 
 ## Gramática Árbol
 
-Una es una cuadrupla $$((\Sigma, \rho), N, P, S)$$, donde:
+Una Gramática Árbol en nuestra definición 
+es una cuadrupla $$((\Sigma, \rho), N, P, S)$$, donde:
 
 -   $$(\Sigma, \rho)$$ es un alfabeto con aridad
     $$\rho: \Sigma \rightarrow ℕ \cup \{ * \}$$
@@ -119,6 +120,12 @@ Una es una cuadrupla $$((\Sigma, \rho), N, P, S)$$, donde:
     $$A \rightarrow s$$ con $$A \in N$$ y $$s \in B(\Sigma \cup N)$$
 
 -   $$S \in N$$ es la variable o símbolo de arranque
+
+NOTA: [Esta definición difiere de la habitual](https://en.wikipedia.org/wiki/Regular_tree_grammar)
+
+### Ejemplo
+
+En nuestro intérprete de Egg usaremos los árboles generados por esta gramática:
 
 ```
 ast: VALUE
