@@ -16,7 +16,7 @@ $$\rho$$ es una función
 
 $$\rho: \Sigma \rightarrow ℕ_0 \cup \{ * \}$$,
 
-denominada **función de aridad**.
+denominada **función de aridad**. Aquí $$ℕ_0$$ denota al conjunto de los números naturales incluyendo el cero.
 
 Denotamos por $$\Sigma_k$$ los elementos del alfabeto con aridad *k*:
 
@@ -55,10 +55,10 @@ Los AST con los que trabajamos en nuestro parser son de tres tipos
 
 $$\Sigma = \{ VALUE, \, WORD, \, APPLY \}$$
 
-y 
+con aridad:
 
-* $$\rho(VALUE) = 0$$, 
-* $$\rho(WORD) = 0$$ y 
+* $$\rho(VALUE) = 0$$
+* $$\rho(WORD) = 0$$
 * $$\rho(APPLY) = *$$
 
 Al igual que con los tokens, los nodos son objetos y tienen propiedades.
@@ -68,12 +68,13 @@ Todos los nodos tiene una propiedad `type` que determina que tipo de nodo es y p
   - Their `value` property contains the string or number value that they represent.
 * Nodes of type `WORD` are used for identifiers (names). 
   - Such objects have a `name` property that holds the identifier’s name as a string. 
-* Finally, `APPLY` nodes represent applications. 
-  - They have an `operator` property that refers to the expression that is being applied, and 
-  - an `args` property that holds the children: an array of ASTs for the argument expressions.
+* Finally, `APPLY` nodes represent applications. They have an 
+  - `operator` property that refers to the expression that is being applied, and an
+  - `args` property that holds the children: an array of ASTs for the argument expressions.
 
 For example, The AST resulting from parsing the input `>(x, 5)` 
-would be represented like this term: `APPLY(WORD VALUE)`. 
+would be represented like this term: `APPLY(WORD, VALUE)` or 
+if we want to explicit the attributes: `APPLY{operator:>}(WORD{name:x} VALUE{value:5})`. 
 
 More precisely, describing its actual implementation attributes:
 
@@ -103,8 +104,9 @@ $ cat greater-x-5.egg.evm
 }
 ```
 
-Otro ejemplo, el AST para `+(a,*(4,5))` sería 
-`APPLY(WORD{+} APPLY(WORD{*}(VALUE{4} VALUE{5})))`
+Otro ejemplo, el AST para `+(a,*(4,5))` sería `APPLY(WORD, APPLY(VALUE,VALUE))` 
+o bien explicitando los valores de los atributos:
+`APPLY{operator:+}(WORD{a} APPLY{operator:*}(VALUE{4} VALUE{5}))`
 
 ## Gramática Árbol
 
@@ -112,7 +114,7 @@ Una Gramática Árbol en nuestra definición
 es una cuadrupla $$((\Sigma, \rho), N, P, S)$$, donde:
 
 -   $$(\Sigma, \rho)$$ es un alfabeto con aridad
-    $$\rho: \Sigma \rightarrow ℕ \cup \{ * \}$$
+    $$\rho: \Sigma \rightarrow ℕ_0 \cup \{ * \}$$
 
 -   $$N$$ es un conjunto finito de variables sintácticas o no terminales
 
@@ -135,6 +137,12 @@ astlist: ast  astlist
    | /* vacío */
 ```
 
+Una derivación para el término `APPLY{operator:>}(WORD{name:x} VALUE{value:5})` asociado a una entrada como 
+`>(x, 5)` sería:
+
+```
+ast => APPLY(astlist) => APPLY(ast astlist) => APPLY(WORD astlist) =>
+```
 
 ## Notación de Dewey o Coordenadas de un Árbol
 
