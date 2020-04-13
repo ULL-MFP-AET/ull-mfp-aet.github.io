@@ -289,9 +289,11 @@ Tenemos entonces que computar el conjunto de tokens `FOLLOW(apply)`  que pueden 
 
 $$FOLLOW(apply) = \left \{ T \in \Sigma :  expression  \stackrel{*}{\Longrightarrow}  \beta \, apply \, T \, \alpha  \right \}$$ where $$\alpha \in (V \cup \Sigma)^*$$
 
-Consideremos el siguiente fragmento derivación:
+Consideremos la siguiente sinopsis de  derivación de una cadena como `print("hi", a)`:
 
 $$ expression \Rightarrow WORD \, apply \stackrel{*}{\Longrightarrow} WORD \, ( \,expression \, , \, WORD \, apply \, )$$
+
+$$ \ldots \stackrel{*}{\Longrightarrow} WORD \, ( \, STRING \, , \, WORD)$$
 
 muestra que uno de esos tokens es `')`. También si nos fijamos en la primera sustitución 
 
