@@ -297,7 +297,7 @@ muestra que uno de esos tokens es `')`. También si nos fijamos en la primera su
 
 $$ expression \Rightarrow WORD \, apply $$
 
-vemos que `apply ` aparece al final de la regla. 
+vemos que `apply ` aparece al final de la frase. 
 
 Así pues, puede ocurrir que cuando se aplique la regla el token sea el final de la entrada.
 
@@ -308,6 +308,7 @@ Puesto que la segunda regla tiene un `*` indicando la repetición 0 o mas veces 
 ```
 apply: '(' (expression ',')* expression? ')' apply
 ```
+
 necesitaremos un bucle para ir procesando la expresión interior. El bucle se termina cuando vemos el paréntesis de cierre o bien si se produce el final de la entrada.
 
 Entonces el código queda como sigue:
