@@ -277,7 +277,7 @@ Si hacemos una derivación a derechas en la que esta es la última regla que se 
 
 $$ expression \stackrel{*}{\Longrightarrow} \beta \, apply \, a_1\, a_2\, \ldots \, a_n \Rightarrow \beta \, a_1 \ldots \, a_n $$
 
-Donde $$\beta$$ es una cadena arbitraria de variables y terminales y los $a_i$ son teerminales. 
+Donde $$\beta$$ es una cadena arbitraria de variables y terminales y los $$a_i$$ son terminales. 
 
 Se sigue de la derivación anterior que cuando se aplica la regla `apply: /* vacio */`
 cualquier token que, omo es el caso del token $$a_1$$, pueda aparecer en alguna derivación **inmediatamente a continuación de `apply`** 
