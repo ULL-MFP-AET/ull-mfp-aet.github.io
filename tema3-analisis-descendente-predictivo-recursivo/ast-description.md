@@ -33,13 +33,13 @@ etc.
 
 Definimos el $$B(\Sigma)$$ sobre $$\Sigma$$ inductivamente:
 
--   Todos los elementos de aridad 0  e aridad variable están en $$B(\Sigma)$$:
-    $$a \in  \Sigma_0$$ implica $$a \in B(\Sigma)$$
-
+-   Todos los elementos de aridad 0  así como los de aridad variable $$\Sigma_*$$ están en $$B(\Sigma)$$:
+    -   $$a \in  \Sigma_0$$ implica $$a \in B(\Sigma)$$
+    -   $$a \in  \Sigma_*$$ implica $$a \in B(\Sigma)$$
 -   Si $$b_1, \ldots , b_k \in B(\Sigma)$$ y $$f \in \Sigma_k$$ es un
-    elemento $$k$$-ario o de aridad variable, entonces $$f(b_1, \ldots , b_k) \in B(\Sigma)$$
+    elemento $$k$$-ario o bien es de aridad variable, entonces $$f(b_1, \ldots , b_k) \in B(\Sigma)$$
 
-Los elementos de $$B(\Sigma)$$ se llaman *árboles* o *términos*.
+Los elementos de $$B(\Sigma)$$ se llaman **árboles** o **términos**.
 
 $$B(\Sigma)$$ es el conjunto de todos los árboles posibles.
 
@@ -47,7 +47,7 @@ Al igual que cuando parseamos las cadenas hablamos de **tokens** para hablar de 
 ocurrencia en la cadena de un elemento del alfabeto aquí hablamos de **nodos** para 
 hablar de la ocurrencia de un elemento $$f \in \Sigma_k$$ dentro de un árbol.
 
-$$B(\Sigma)$$ es a los *árboles* lo  que $$\Sigma*$$ es a las cadenas.
+$$B(\Sigma)$$ es a los *nodos* lo  que $$\Sigma*$$ es a las cadenas.
 
 
 ## Ejemplo en Egg
