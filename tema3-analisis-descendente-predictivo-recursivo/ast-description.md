@@ -47,16 +47,20 @@ Al igual que cuando parseamos las cadenas hablamos de **tokens** para hablar de 
 ocurrencia en la cadena de un elemento del alfabeto aquí hablamos de **nodos** para 
 hablar de la ocurrencia de un elemento $$f \in \Sigma_k$$ dentro de un árbol.
 
-$$B(\Sigma)$$ es a los *nodos* lo  que $$\Sigma*$$ es a las cadenas.
+$$B(\Sigma)$$ es a los *nodos* (árboles) lo  que $$\Sigma*$$ es a las tokens (strings).
 
 
 ## Ejemplo en Egg
 
 Los AST con los que trabajamos en nuestro parser son de tres tipos
 
-$$\Sigma = \{ VALUE, WORD, APPLY \}$$
+$$\Sigma = \{ VALUE, \, WORD, \, APPLY \}$$
 
-y $$\rho(VALUE) = 0$$, $$\rho(WORD) = 0$$ y $$\rho(APPLY) = *$$
+y 
+
+* $$\rho(VALUE) = 0$$, 
+* $$\rho(WORD) = 0$$ y 
+* $$\rho(APPLY) = *$$
 
 * Los nodos del tipo `VALUE` representan constantes (literals) STRINGS o NUMBERS.
   - Al igual que con los tokens, los nodos son objetos y tienen propiedades.
