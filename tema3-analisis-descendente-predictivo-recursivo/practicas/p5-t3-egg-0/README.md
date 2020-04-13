@@ -36,7 +36,7 @@ No haga todavía los ejercicios del libro.
 ### NOTA
 
 En algunos de los ejemplos, vídeos, etc. que acompañan esta práctica puede notar algunas 
-inconsistencias en el lenguaje Egg debidas a que casi en cada curso hemos ido haciendo alias de algunos de los nombres de los constructos. Por ejemplo en el vídeo en vez de `fun` usamos `->` y en algún ejemplo en los apuntes en vez de `element` se usa `<-`, etc. También en algún ejemplo aparecen llavitas `{` y `}` en vez de paréntesis (de nuevo una llave aquí es un alias del correspondiente paréntesis). Son cambios triviales que no deberían afectan a la comprensión del texto.
+inconsistencias en el lenguaje Egg debidas a que casi en cada curso hemos ido haciendo alias de algunos de los nombres de los constructos. Por ejemplo, a veces  en un vídeo en vez de `fun` usamos `->` y en algún ejemplo en los apuntes en vez de `element` se usa `<-`, etc. También en algún ejemplo aparecen llavitas `{` y `}` en vez de paréntesis (de nuevo una llave aquí es un alias del correspondiente paréntesis). Son cambios triviales que no deberían afectan a la comprensión del texto.
 
 ## Escriba la Gramática {#gramatica}
 
