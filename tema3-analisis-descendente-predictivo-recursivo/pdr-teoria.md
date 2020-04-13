@@ -280,7 +280,7 @@ $$ expression \stackrel{*}{\Longrightarrow} \beta \, apply \, a_1\, a_2\, \ldots
 Donde $$\beta$$ es una cadena arbitraria de variables y terminales y los $$a_i$$ son terminales. 
 
 Se sigue de la derivación anterior que cuando se aplica la regla `apply: /* vacio */`
-cualquier token que, omo es el caso del token $$a_1$$, pueda aparecer en alguna derivación **inmediatamente a continuación de `apply`** 
+cualquier token que, como es el caso del token $$a_1$$, pueda aparecer en alguna derivación **inmediatamente a continuación de `apply`** 
 es un posible `lookahead` en la ejecución de  `parseApply()`.
 
 ## Calculando los Tokens que Pueden Seguir a una Variable en Alguna Derivación
