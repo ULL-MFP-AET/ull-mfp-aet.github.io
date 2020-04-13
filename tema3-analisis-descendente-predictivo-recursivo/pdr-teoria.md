@@ -296,7 +296,7 @@ $$ expression \bullet \Rightarrow WORD \, apply \bullet \stackrel{*}{\Longrighta
 
 $$ \Longrightarrow WORD \, ( \, STRING \, , \, WORD \, apply \, ) \bullet  \stackrel{*}{\Longrightarrow} WORD \, ( \, STRING \, , \, WORD) \bullet$$
 
-muestra claramente que uno de esos tokens es `')`. 
+muestra claramente que uno de esos tokens es `')'`. 
 
 También si nos fijamos en esta otra derivación para una frase como `x`: 
 
