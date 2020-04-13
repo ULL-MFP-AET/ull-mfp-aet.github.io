@@ -65,10 +65,15 @@ El conjunto de tokens es:
 $$\Sigma = \{ STRING,\, NUMBER,\, WORD,\, '(',\, ')',\, ','  \}$$
 
 Observe que algunos de los tokens son a su vez lenguajes de cierta complejidad, cuya definición está en otro nivel de abstracción, **el nivel léxico** y que se pueden definir mediante un mecanismo 
-mas secillo como son las expresiones regulares. Por ejemplo, en una definición de Egg inicial podríamos definir así lo que entendemos por espacios y los tokens mas complejos:
+mas secillo como son las expresiones regulares. Por ejemplo, en una definición de Egg inicial podríamos definir así lo que entendemos por espacios
 
 ```js
 WHITES = /(\s|[#;].*|\/\*(.|\n)*?\*\/)*/
+```
+
+así como los tokens mas complejos:
+
+```js
 STRING = /"((?:[^"\\]|\\.)*)"/
 NUMBER = /([-+]?\d*\.?\d+([eE][-+]?\d+)?)/
 WORD   = /([^\s(),"]+)/
