@@ -64,6 +64,17 @@ El conjunto de tokens es:
 
 $$\Sigma = \{ STRING,\, NUMBER,\, WORD,\, '(',\, ')',\, ','  \}$$
 
+Observe que los tokens son a su vez lenguajes, cuya definición está en otro nivel de abstracción, **el nivel léxico** y que se pueden definir mediante un mecanismo 
+mas secillo como son las expresiones regulares. Por ejemplo:
+
+```js
+WHITES = /(\s|[#;].*|\/\*(.|\n)*?\*\/)*/
+STRING = /"((?:[^"\\]|\\.)*)"/
+NUMBER = /([-+]?\d*\.?\d+([eE][-+]?\d+)?)/
+WORD   = /([^\s(),"]+)/
+DOT    = /[.]/
+```
+
 ## Lenguaje Generado por Una Gramática {#lenguaje}
 
 Para cada variable sintáctica
