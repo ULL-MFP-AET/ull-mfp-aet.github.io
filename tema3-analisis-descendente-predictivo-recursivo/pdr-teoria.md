@@ -296,11 +296,15 @@ $$ expression \bullet \Rightarrow WORD \, apply \bullet \stackrel{*}{\Longrighta
 
 $$ \Longrightarrow WORD \, ( \, STRING \, , \, WORD \, apply \, ) \bullet  \stackrel{*}{\Longrightarrow} WORD \, ( \, STRING \, , \, WORD) \bullet$$
 
-muestra que uno de esos tokens es `')`. También si nos fijamos en la primera sustitución 
+muestra claramente que uno de esos tokens es `')`. 
 
-$$ expression \Rightarrow WORD \, apply \, \bullet  $$
+También si nos fijamos en esta otra derivación para una frase como `x`: 
 
-vemos que `apply ` aparece al final de la frase. 
+$$ expression \bullet \Rightarrow WORD \, apply \bullet \Longrightarrow WORD \, \bullet $$
+
+vemos que `apply ` aparece al final de la frase cuando se aplicó la regla de producción 
+$$apply \longrightarrow \epsilon$$. 
+
 
 Así pues, puede ocurrir que cuando se aplique la regla el token sea el final de la entrada.
 
