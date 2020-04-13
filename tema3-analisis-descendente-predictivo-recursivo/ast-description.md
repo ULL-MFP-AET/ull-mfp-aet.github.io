@@ -62,8 +62,10 @@ y
 * $$\rho(WORD) = 0$$ y 
 * $$\rho(APPLY) = *$$
 
+Al igual que con los tokens, los nodos son objetos y tienen propiedades.
+Todos los nodos tiene una propiedad `type` que determina que tipo de nodo es y por tanto su aridad.
+
 * Los nodos del tipo `VALUE` representan constantes (literals) STRINGS o NUMBERS.
-  - Al igual que con los tokens, los nodos son objetos y tienen propiedades.
   - Their `value` property contains the string or number value that they represent.
 * Nodes of type `WORD` are used for identifiers (names). 
   - Such objects have a `name` property that holds the identifier’s name as a string. 
@@ -71,19 +73,18 @@ y
   - They have an `operator` property that refers to the expression that is being applied, and 
   - an `args` property that holds the children: an array of ASTs for the argument expressions.
 
-```
-ast: VALUE{value: String | Number}
-   | WORD{name: String}
-   | APPLY{operator: ast, args: [ ast ...]}
-```
+For example, The AST resulting from parsing the input `>(x, 5)` 
+would be represented like this term: `APPLY(WORD, VALUE)`. 
 
-The `>(x, 5)` would be represented like this:
+More precisely, describing its actual implementation attributes:
 
-```bash
+```
 $ cat greater-x-5.egg 
 >(x,5)
 $ ./eggc.js greater-x-5.egg 
-$ cat greater-x-5.egg.evm 
+$ cat greater-x-5.egg.evm
+```
+```js
 {
   "type": "apply",
   "operator": {
@@ -104,17 +105,24 @@ $ cat greater-x-5.egg.evm
 ```
 
 ## Gramática Árbol
+
 Una es una cuadrupla $$((\Sigma, \rho), N, P, S)$$, donde:
 
--   $$(\Sigma, \rho)$$ es un alfabeto con aricidad
-    $$\rho: \Sigma \rightarrow ℕ$$
+-   $$(\Sigma, \rho)$$ es un alfabeto con aridad
+    $$\rho: \Sigma \rightarrow ℕ \cup \{ * \}$$
 
 -   $$N$$ es un conjunto finito de variables sintácticas o no terminales
 
 -   $$P$$ es un conjunto finito de reglas de producción de la forma
-    $$X \rightarrow s$$ con $$X \in N$$ y $$s \in B(\Sigma \cup N)$$
+    $$A \rightarrow s$$ con $$A \in N$$ y $$s \in B(\Sigma \cup N \cup \{ * \})$$
 
 -   $$S \in N$$ es la variable o símbolo de arranque
+
+```
+ast: VALUE
+   | WORD
+   | APPLY( ast *)
+```
 
 ## Notación de Dewey o Coordenadas de un Árbol
 
