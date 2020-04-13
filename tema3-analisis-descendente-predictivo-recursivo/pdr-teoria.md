@@ -306,7 +306,7 @@ vemos que `apply ` aparece al final de la frase cuando se aplicó la regla de pr
 $$apply \longrightarrow \epsilon$$. 
 
 
-Así pues, puede ocurrir que cuando se aplique la regla el token sea el final de la entrada.
+Así pues, puede ocurrir que cuando se aplique la regla el token sea el final de la entrada $$\bullet$$.
 
 Asumiremos que el analizador léxico retorna un `null` cuando encuentra el final de la entrada. 
 
