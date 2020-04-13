@@ -72,7 +72,6 @@ WHITES = /(\s|[#;].*|\/\*(.|\n)*?\*\/)*/
 STRING = /"((?:[^"\\]|\\.)*)"/
 NUMBER = /([-+]?\d*\.?\d+([eE][-+]?\d+)?)/
 WORD   = /([^\s(),"]+)/
-DOT    = /[.]/
 ```
 
 ## Lenguaje Generado por Una Gramática {#lenguaje}
