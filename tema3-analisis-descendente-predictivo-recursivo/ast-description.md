@@ -73,8 +73,12 @@ Todos los nodos tiene una propiedad `type` que determina que tipo de nodo es y p
   - `args` property that holds the children: an array of ASTs for the argument expressions.
 
 For example, The AST resulting from parsing the input `>(x, 5)` 
-would be represented like this term: `APPLY(WORD, VALUE)` or 
-if we want to explicit the attributes: `APPLY{operator:>}(WORD{name:x} VALUE{value:5})`. 
+would be represented like this term: `APPLY(WORD, [WORD, VALUE])` or 
+if we want to explicit the attributes: 
+
+```
+APPLY(operator:WORD{name:>}, args:[WORD{name:x} VALUE{value:5}])
+``` 
 
 More precisely, describing its actual implementation attributes:
 
@@ -104,9 +108,20 @@ $ cat greater-x-5.egg.evm
 }
 ```
 
-Otro ejemplo, el AST para `+(a,*(4,5))` sería `APPLY(WORD, APPLY(VALUE,VALUE))` 
-o bien explicitando los valores de los atributos:
-`APPLY{operator:+}(WORD{a} APPLY{operator:*}(VALUE{4} VALUE{5}))`
+Otro ejemplo, el AST para `+(a,*(4,5))` sería 
+
+```
+APPLY(
+  WORD{name:+}, 
+  args: [
+      WORD{name:a}, 
+      APPLY(
+        WORD{name:*}, 
+        args:[VALUE{value:4},VALUE{value:5}]
+      )
+  ]
+)
+``` 
 
 ## Gramática Árbol
 
@@ -130,18 +145,19 @@ NOTA: [Esta definición difiere de la habitual](https://en.wikipedia.org/wiki/Re
 En nuestro intérprete de Egg usaremos los árboles generados por esta gramática:
 
 ```
-ast: VALUE
-   | WORD
-   | APPLY( astlist )
+ast: VALUE{value}
+   | WORD{name}
+   | APPLY( WORD [ astlist ] )
 astlist: ast  astlist
    | /* vacío */
 ```
 
-Una derivación para el término `APPLY{operator:>}(WORD{name:x} VALUE{value:5})` asociado a una entrada como 
+Una derivación para el término `APPLY(WORD, [WORD VALUE])` asociado a una entrada como 
 `>(x, 5)` sería:
 
 ```
-ast => APPLY(astlist) => APPLY(ast astlist) => APPLY(WORD astlist) =>
+ast => APPLY(WORD astlist) => APPLY(WORD ast astlist) 
+=> APPLY(WORD WORD astlist) =>
 ```
 
 ## Notación de Dewey o Coordenadas de un Árbol
