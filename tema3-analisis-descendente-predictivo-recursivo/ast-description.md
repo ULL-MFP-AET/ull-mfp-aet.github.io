@@ -5,32 +5,97 @@ terminales y producciones que no aportan información.
 
 ## Alfabeto con Aridad o Alfabeto Árbol
 
+No deja de ser curioso que es posible definir un equivalente del cierre de Kleene $$\Sigma*$$ de un alfabeto $$\Sigma$$ para modelizar matemáticamente los árboles.
+
+Para ello se empieza definiendo lo que es un *alfabeto con función de aridad*:
+
+### Definición
+
 Un *alfabeto con función de aridad* es un par $$(\Sigma, \rho)$$ donde $$\Sigma$$ es un conjunto finito y
-$$\rho$$ es una función $$\rho: \Sigma \rightarrow ℕ_0$$,
-denominada . Denotamos por
+$$\rho$$ es una función $$\rho: \Sigma \rightarrow ℕ_0 \cup {*}$$,
+
+denominada función de aridad.
+
+### Definición
+
+Denotamos por $$\Sigma_k$$ los elementos del alfabeto con aridad *k*:
+
 $$\Sigma_k = \{ a \in \Sigma :\ \rho(a) = k \}$$.
 
+$$\Sigma_0$$ son las hojas, $$\Sigma_1$$ son los elementos con un solo hijo,
+$$\Sigma_2$$ los nodos binarios, 
+$$\Sigma_*$$ son los nodos con aridad variable, 
+etc.
+
 ## Lenguaje de los Arboles
+
 Definimos el $$B(\Sigma)$$ sobre $$\Sigma$$ inductivamente:
 
--   Todos los elementos de aridad 0 están en $$B(\Sigma)$$:
+-   Todos los elementos de aridad 0  e aridad variable están en $$B(\Sigma)$$:
     $$a \in  \Sigma_0$$ implica $$a \in B(\Sigma)$$
 
 -   Si $$b_1, \ldots , b_k \in B(\Sigma)$$ y $$f \in \Sigma_k$$ es un
-    elemento $$k$$-ario, entonces $$f(b_1, \ldots , b_k) \in B(\Sigma)$$
-
+    elemento $$k$$-ario o de aridad variable, entonces $$f(b_1, \ldots , b_k) \in B(\Sigma)$$
 
 Los elementos de $$B(\Sigma)$$ se llaman *árboles* o *términos*.
 
-## Ejemplo
+$$B(\Sigma)$$ es el conjunto de todos los árboles posibles.
 
-Sea $$\Sigma = \{A, CONS, NIL \}$$ con
-$$\rho(A) = \rho(NIL) = 0,\ \rho(CONS) = 2$$. Entonces
+Al igual que cuando parseamos las cadenas hablamos de **tokens** para hablar de la 
+ocurrencia en la cadena de un elemento del alfabeto aquí hablamos de **nodos** para 
+hablar de la ocurrencia de un elemento $$f \in \Sigma_k$$ dentro de un árbol.
 
-$$B(\Sigma) = \{ A, NIL, CONS(A,NIL), CONS(NIL, A), CONS(A, A), CONS(NIL,NIL), \ldots \}$$
+$$B(\Sigma)$$ es a los *árboles* lo  que $$\Sigma*$$ es a las cadenas.
 
-Observe que los elementos en $$B(\Sigma)$$ no necesariamente son árboles
-*correctos*
+
+## Ejemplo en Egg
+
+Los AST con los que trabajamos en nuestro parser son de tres tipos
+
+$$\Sigma = \{ VALUE, WORD, APPLY \}$$
+
+y $$\rho(VALUE) = 0$$, $$\rho(WORD) = 0$$ y $$\rho(APPLY) = *$$
+
+* Los nodos del tipo `VALUE` representan constantes (literals) STRINGS o NUMBERS.
+  - Al igual que con los tokens, los nodos son objetos y tienen propiedades.
+  - Their `value` property contains the string or number value that they represent.
+* Nodes of type `WORD` are used for identifiers (names). 
+  - Such objects have a `name` property that holds the identifier’s name as a string. 
+* Finally, `APPLY` nodes represent applications. 
+  - They have an `operator` property that refers to the expression that is being applied, and 
+  - an `args` property that holds the children: an array of ASTs for the argument expressions.
+
+```
+ast: VALUE{value: String | Number}
+   | WORD{name: String}
+   | APPLY{operator: ast, args: [ ast ...]}
+```
+
+The `>(x, 5)` would be represented like this:
+
+```bash
+$ cat greater-x-5.egg 
+>(x,5)
+$ ./eggc.js greater-x-5.egg 
+$ cat greater-x-5.egg.evm 
+{
+  "type": "apply",
+  "operator": {
+    "type": "word",
+    "name": ">"
+  },
+  "args": [
+    {
+      "type": "word",
+      "name": "x"
+    },
+    {
+      "type": "value",
+      "value": 5
+    }
+  ]
+}
+```
 
 ## Gramática Árbol
 Una es una cuadrupla $$((\Sigma, \rho), N, P, S)$$, donde:
