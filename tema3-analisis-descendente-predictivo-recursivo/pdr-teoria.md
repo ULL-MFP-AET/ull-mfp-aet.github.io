@@ -287,7 +287,7 @@ es un posible `lookahead` en la ejecución de  `parseApply()`.
 
 Tenemos entonces que computar el conjunto de tokens `FOLLOW(apply)`  que pueden aparecer a continuación de la variable`apply` en alguna derivación desde `expression`.
 
-$$FOLLOW(apply) = \left \{ Token \in \Sigma :  expression  \stackrel{*}{\Longrightarrow}  \beta apply \, Token \, rest \right \}$$
+$$FOLLOW(apply) = \left \{ T \in \Sigma :  expression  \stackrel{*}{\Longrightarrow}  \beta \, apply \, T \, z \right \; z \in \(V \cup \Sigma)^* \}$$
 
 Consideremos el siguiente fragmento derivación:
 
