@@ -7,14 +7,16 @@ terminales y producciones que no aportan información.
 
 No deja de ser curioso que es posible definir un equivalente del cierre de Kleene $$\Sigma*$$ de un alfabeto $$\Sigma$$ para modelizar matemáticamente los árboles.
 
-Para ello se empieza definiendo lo que es un *alfabeto con función de aridad*:
+Para ello se empieza definiendo lo que es un **alfabeto con función de aridad**:
 
 ### Definición
 
-Un *alfabeto con función de aridad* es un par $$(\Sigma, \rho)$$ donde $$\Sigma$$ es un conjunto finito y
-$$\rho$$ es una función $$\rho: \Sigma \rightarrow ℕ_0 \cup {*}$$,
+Un **alfabeto con función de aridad** es un par $$(\Sigma, \rho)$$ donde $$\Sigma$$ es un conjunto finito y
+$$\rho$$ es una función 
 
-denominada función de aridad.
+$$\rho: \Sigma \rightarrow ℕ_0 \cup \{ * \}$$,
+
+denominada **función de aridad**.
 
 ### Definición
 
