@@ -291,7 +291,7 @@ $$FOLLOW(apply) = \left \{ T \in \Sigma :  expression  \stackrel{*}{\Longrightar
 
 Consideremos el siguiente fragmento derivación:
 
-$$ expression \Rightarrow WORD \, apply \stackrel{*}{\Longrightarrow} WORD \, ( \,expression \, WORD \, apply \, )$$
+$$ expression \Rightarrow WORD \, apply \stackrel{*}{\Longrightarrow} WORD \, ( \,expression \, , \, WORD \, apply \, )$$
 
 muestra que uno de esos tokens es `')`. También si nos fijamos en la primera sustitución 
 
