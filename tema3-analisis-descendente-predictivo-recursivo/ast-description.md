@@ -33,11 +33,12 @@ etc.
 
 Definimos el $$B(\Sigma)$$ sobre $$\Sigma$$ inductivamente:
 
--   Todos los elementos de aridad 0  así como los de aridad variable $$\Sigma_*$$ están en $$B(\Sigma)$$:
+-  El árbol vacío está en $$B(\Sigma)$$
+- Todos los elementos de aridad 0  así como los de aridad variable $$\Sigma_*$$ están en $$B(\Sigma)$$:
     -   $$a \in  \Sigma_0$$ implica $$a \in B(\Sigma)$$
     -   $$a \in  \Sigma_*$$ implica $$a \in B(\Sigma)$$
 -   Si $$b_1, \ldots , b_k \in B(\Sigma)$$ y $$f \in \Sigma_k$$ es un
-    elemento $$k$$-ario o bien es de aridad variable, entonces $$f(b_1, \ldots , b_k) \in B(\Sigma)$$
+    elemento $$k$$-ario o bien es de aridad variable, entonces $$f(b_1 \ldots  b_k) \in B(\Sigma)$$
 
 Los elementos de $$B(\Sigma)$$ se llaman **árboles** o **términos**.
 
@@ -74,7 +75,7 @@ Todos los nodos tiene una propiedad `type` que determina que tipo de nodo es y p
   - an `args` property that holds the children: an array of ASTs for the argument expressions.
 
 For example, The AST resulting from parsing the input `>(x, 5)` 
-would be represented like this term: `APPLY(WORD, VALUE)`. 
+would be represented like this term: `APPLY(WORD VALUE)`. 
 
 More precisely, describing its actual implementation attributes:
 
@@ -104,6 +105,9 @@ $ cat greater-x-5.egg.evm
 }
 ```
 
+Otro ejemplo, el AST para `+(a,*(4,5))` sería 
+`APPLY(WORD{+} APPLY(WORD{*}(VALUE{4} VALUE{5})))`
+
 ## Gramática Árbol
 
 Una es una cuadrupla $$((\Sigma, \rho), N, P, S)$$, donde:
@@ -114,15 +118,18 @@ Una es una cuadrupla $$((\Sigma, \rho), N, P, S)$$, donde:
 -   $$N$$ es un conjunto finito de variables sintácticas o no terminales
 
 -   $$P$$ es un conjunto finito de reglas de producción de la forma
-    $$A \rightarrow s$$ con $$A \in N$$ y $$s \in B(\Sigma \cup N \cup \{ * \})$$
+    $$A \rightarrow s$$ con $$A \in N$$ y $$s \in B(\Sigma \cup N)$$
 
 -   $$S \in N$$ es la variable o símbolo de arranque
 
 ```
 ast: VALUE
    | WORD
-   | APPLY( ast *)
+   | APPLY( astlist )
+astlist: ast  astlist
+   | /* vacío */
 ```
+
 
 ## Notación de Dewey o Coordenadas de un Árbol
 
