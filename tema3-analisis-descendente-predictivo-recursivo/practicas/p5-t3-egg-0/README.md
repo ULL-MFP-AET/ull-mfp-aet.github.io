@@ -15,7 +15,6 @@ Se presenta un lenguaje llamado **Egg** (de tipo "Lisp") y se describe como proc
 e interpretarlo.
 Las siguientes prácticas irán ampliando el lenguaje con nuevas capacidades: expresiones regulares, hashes, arrays multidimensionales, módulos, objetos, clases, ... y se construyen sobre esta.
 
-
 Primero: Deberá leer el capítulo 12 *A Programming Language* de EJS:
 
 * [Eloquent JS. Chapter 12. Project: A Programming Language](http://eloquentjavascript.net/12_language.html)
@@ -31,7 +30,7 @@ Si tal cosa ocurre puede que le ayude dejar por un momento la lectura y pasar a 
 1. [Escriba la gramática](#gramatica) y 
 2. Introducción al [Análisis Sintáctico Predictivo Recursivo]({{site.baseurl}}/tema3-analisis-descendente-predictivo-recursivo/pdr-teoria)
  
-Después de estas dos lecturas vuelva otroa vez a la lectura del capítulo [Chapter 12. Project: A Programming Language](http://eloquentjavascript.net/12_language.html).
+Después de estas dos lecturas vuelva otra vez a la lectura del capítulo [Chapter 12. Project: A Programming Language](http://eloquentjavascript.net/12_language.html).
 No haga todavía los ejercicios del libro.
 
 ### NOTA
