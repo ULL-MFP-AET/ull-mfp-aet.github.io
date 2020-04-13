@@ -65,7 +65,7 @@ El conjunto de tokens es:
 $$\Sigma = \{ STRING,\, NUMBER,\, WORD,\, '(',\, ')',\, ','  \}$$
 
 Observe que los tokens son a su vez lenguajes, cuya definición está en otro nivel de abstracción, **el nivel léxico** y que se pueden definir mediante un mecanismo 
-mas secillo como son las expresiones regulares. Por ejemplo:
+mas secillo como son las expresiones regulares. Por ejemplo, en una definición de Egg inicial podríamos definir así los tokens:
 
 ```js
 WHITES = /(\s|[#;].*|\/\*(.|\n)*?\*\/)*/
