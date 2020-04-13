@@ -9,7 +9,7 @@ No deja de ser curioso que es posible definir un equivalente del cierre de Kleen
 
 Para ello se empieza definiendo lo que es un **alfabeto con función de aridad**:
 
-### Definición
+### Alfabeto con Función de Aridad
 
 Un **alfabeto con función de aridad** es un par $$(\Sigma, \rho)$$ donde $$\Sigma$$ es un conjunto finito y
 $$\rho$$ es una función 
@@ -17,8 +17,6 @@ $$\rho$$ es una función
 $$\rho: \Sigma \rightarrow ℕ_0 \cup \{ * \}$$,
 
 denominada **función de aridad**.
-
-### Definición
 
 Denotamos por $$\Sigma_k$$ los elementos del alfabeto con aridad *k*:
 
@@ -29,9 +27,9 @@ $$\Sigma_2$$ los nodos binarios,
 $$\Sigma_*$$ son los nodos con aridad variable, 
 etc.
 
-## Lenguaje de los Arboles
+## Lenguaje de los Arboles o Términos
 
-Definimos el $$B(\Sigma)$$ sobre $$\Sigma$$ inductivamente:
+Definimos el conjunto de los árboles $$B(\Sigma)$$ con alfabeto $$\Sigma$$ inductivamente:
 
 -  El árbol vacío está en $$B(\Sigma)$$
 - Todos los elementos de aridad 0  así como los de aridad variable $$\Sigma_*$$ están en $$B(\Sigma)$$:
