@@ -82,7 +82,7 @@ con aridad:
 * $$\rho(VALUE) = 0$$
 * $$\rho(WORD) = 0$$
 * $$\rho(APPLY) = 2$$
-* $$\rho(ARRAY) 0 *$$
+* $$\rho(ARRAY) = *$$
 
 Al igual que con los tokens, los nodos son objetos y tienen propiedades.
 Todos los nodos tiene una propiedad `type` que determina que tipo de nodo es y por tanto su aridad.
