@@ -320,12 +320,15 @@ apply: '(' (expression ',')* expression? ')' apply
 
 necesitaremos un bucle para ir procesando la expresión interior. El bucle se termina cuando vemos el paréntesis de cierre o bien si se produce el final de la entrada.
 
+Otro token que puede seguir a  `apply` es la coma.
+
+
 Entonces el código queda como sigue:
 
 ```js
 function parseApply() {
   if (!lookahead) return;      // token "final de la entrada" apply: /* vacio */
-  if (lookahead.type === "RP") // apply: /* vacio */
+  if ((lookahead.type === "RP")|| (lookahead.type === ',')) // apply: /* vacio */
     return;
   if (lookahead.type !== "LP") throw new SyntaxError(`Error`);
   lex();                // apply: '(' (expression ',')* expression? ')' apply
