@@ -97,7 +97,7 @@ Todos los nodos tiene una propiedad `type` que determina que tipo de nodo es y p
 * `ARRAY` is in fact an *anonymous node* of ASTs that holds the arguments of the application
 
 For example, The AST resulting from parsing the input `>(x, 5)` 
-would be represented like this term: `APPLY(WORD, ARRAY(WORD, VALUE))` or 
+would be represented like this term: `APPLY(WORD, ARRAY[WORD, VALUE])` or 
 if we want to explicit the attributes we can extend the notation: 
 
 ```
