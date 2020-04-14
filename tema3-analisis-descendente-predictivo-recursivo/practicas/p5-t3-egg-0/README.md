@@ -52,7 +52,7 @@ Lea esta breve introducción a como se escribe un analizador  Sintáctico Predic
 
 ## Árboles de Análisis Abstracto
 
-[Árboles de Análisis Abstracto]({{site.baseurl}}tema3-analisis-descendente-predictivo-recursivo/ast-description)
+[Árboles de Análisis Abstracto]({{site.baseurl}}/tema3-analisis-descendente-predictivo-recursivo/ast-description)
 
 
 ## Fixing Scope
