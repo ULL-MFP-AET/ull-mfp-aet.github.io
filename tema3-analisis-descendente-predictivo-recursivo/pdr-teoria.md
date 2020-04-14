@@ -307,6 +307,9 @@ $$apply \longrightarrow \epsilon$$.
 
 Así pues, puede ocurrir que cuando se aplique la regla el *token* sea el final de la entrada $$\bullet$$.
 
+![]({{site.baseurl}}assets/images/pdr-egg-apply-empty-end-of-input-follow.png)
+
+
 Asumiremos que el analizador léxico retorna un `null` cuando encuentra el final de la entrada. 
 
 Puesto que la segunda regla tiene un `*` indicando la repetición 0 o mas veces de la expresión entre paréntesis:
