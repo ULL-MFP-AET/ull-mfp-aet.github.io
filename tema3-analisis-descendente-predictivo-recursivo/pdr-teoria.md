@@ -75,6 +75,15 @@ $$A \in V$$.
 
 La función de dicha subrutina (que de ahora en adelante llamaremos `parseA()`) es reconocer $$L_A(G)$$.
 
+Siguiendo con el ejemplo de Egg, en $$L_{apply}(EggGrammar)$$ tenemos frases como 
+`()`, `(4,b)`, `(4, (+(5,c))`, etc. 
+
+$$L_{apply}(EggGrammar) = \{ x \in \Sigma^* : apply \stackrel{*}{\Longrightarrow} x \}$$
+
+Escribiremos una función `parseApply`que se deberá encargar de reconocer las frases de $$L_{apply}(EggGrammar)$$
+
+
+
 ## Una función por Variable Sintáctica {#funpervar}
 
 Repetimos: Cuando construimos un PDR 
