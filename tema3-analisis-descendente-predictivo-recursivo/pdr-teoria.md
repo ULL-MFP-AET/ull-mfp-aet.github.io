@@ -307,7 +307,7 @@ $$apply \longrightarrow \epsilon$$.
 
 Así pues, puede ocurrir que cuando se aplique la regla el *token* sea el final de la entrada $$\bullet$$.
 
-![]({{site.baseurl}}assets/images/pdr-egg-apply-empty-end-of-input-follow.png)
+![]({{site.baseurl}}/assets/images/pdr-egg-apply-empty-end-of-input-follow.png)
 
 
 Asumiremos que el analizador léxico retorna un `null` cuando encuentra el final de la entrada. 
