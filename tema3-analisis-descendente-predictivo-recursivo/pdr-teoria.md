@@ -305,7 +305,7 @@ vemos que `apply ` aparece al final de la frase cuando se aplicó la regla de pr
 $$apply \longrightarrow \epsilon$$. 
 
 
-Así pues en el instante de la ejecución del análisis correspondiente a ese punto de la derivación se llamará  a `parseApply()` y el valor de *lookahead* será el final de la entrada que hemos denotado como $$\bullet$$ (y que en el analizador léxico se retorna como `null`).
+Así pues en el instante de la ejecución del análisis correspondiente a ese punto de esta derivación se llamará  a `parseApply()` y el valor de *lookahead* será el final de la entrada, que hemos denotado como $$\bullet$$ (y que en el analizador léxico se retorna como `null`).
 
 ![]({{site.baseurl}}/assets/images/pdr-egg-apply-empty-end-of-input-follow.png)
 
