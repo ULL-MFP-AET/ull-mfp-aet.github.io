@@ -345,8 +345,8 @@ function parseApply() {
 
 Sin embargo, el código queda mas simple si seguimos
 la estrategia de si el token `lookahead` es el paréntesis izquierdo 
-entonces se trata de la regla de producción del paréntesis
-sino es la regla $$apply \longroghtarrow \epsilon$$:
+entonces se trata de la regla de producción del paréntesis y en caso 
+contrario es la regla $$apply \longrightarrow \epsilon$$:
 
 ```js
 function parseApply(tree) {
