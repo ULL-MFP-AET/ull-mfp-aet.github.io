@@ -2,7 +2,7 @@
 
 En este ejercicio te propongo un proceso inverso.
 Partiendo del [código](https://github.com/ULL-ESIT-PL-1617/egg/tree/inicial)
-que está en la rama `inicial` de este [repo]([código](https://github.com/ULL-ESIT-PL-1617/egg/),
+que está en la rama `inicial` de este [repo](https://github.com/ULL-ESIT-PL-1617/egg/),
 sabiendo que el algoritmo de análisis es un PDR,
 intenta describir formalmente la gramática
 que acepta.
