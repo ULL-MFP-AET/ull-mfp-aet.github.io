@@ -165,7 +165,7 @@ es una cuadrupla $$((\Sigma, \rho), N, P, S)$$, donde:
 
 -   $$S \in N$$ es la variable o símbolo de arranque
 
-NOTA: [Regular Tree Grammar](https://en.wikipedia.org/wiki/Regular_tree_grammar)
+NOTA: [Regular Tree Grammar](https://en.wikipedia.org/wiki/Regular_tree_grammar) en la Wikipedia
 
 ### Ejemplo
 
