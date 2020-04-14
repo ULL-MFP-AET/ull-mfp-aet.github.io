@@ -91,9 +91,10 @@ Todos los nodos tiene una propiedad `type` que determina que tipo de nodo es y p
   - Their `value` property contains the string or number value that they represent.
 * Nodes of type `WORD` are used for identifiers (names). 
   - Such objects have a `name` property that holds the identifier’s name as a string. 
-* Finally, `APPLY` nodes represent applications. They have an 
+* `APPLY` nodes represent applications. They have an 
   - `operator` property that refers to the expression that is being applied, and an
-  - `args` property that holds the children: a node `ARRAY` of ASTs for the argument expressions.
+  - `args` property that is an *anonymous* node: `ARRAY` 
+* `ARRAY` is in fact an *anonymous node* of ASTs that holds the arguments of the application
 
 For example, The AST resulting from parsing the input `>(x, 5)` 
 would be represented like this term: `APPLY(WORD, ARRAY(WORD, VALUE))` or 
