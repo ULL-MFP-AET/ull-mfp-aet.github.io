@@ -241,13 +241,13 @@ nos produce este código:
 function parseExpression() {
   if (lookahead.type == "STRING") {
     lex(); // Saltamos el token STRING
-    return expr;
+    return;
   } else if (lookahead.type == "NUMBER") {
      lex();  // Saltemos el token NUMBER
-    return expr;
+    return;
   } else if (lookahead.type == "WORD") {
     lex(); // Consumimos  WORD
-    return parseApply(expr); // ... y llamamos a parseApply
+    return parseApply(); // ... y llamamos a parseApply
   } else {
     throw new SyntaxError(`Unexpected syntax line ${lineno}: ${program.slice(0,10)}`);
   }
@@ -320,8 +320,7 @@ apply: '(' (expression ',')* expression? ')' apply
 
 necesitaremos un bucle para ir procesando la expresión interior. El bucle se termina cuando vemos el paréntesis de cierre o bien si se produce el final de la entrada.
 
-Otro token que puede seguir a  `apply` es la coma.
-
+Otro token que es fácil ver que puede seguir a  `apply` es la coma.
 
 Entonces el código queda como sigue:
 
@@ -340,8 +339,37 @@ function parseApply() {
   }
   if (!lookahead) throw new SyntaxError(`Error`);
   lex();
-  if (!lookahead) return; 
   return parseApply();
+}
+```
+
+Sin embargo, el código queda mas simple si seguimos
+la estrategia de si el token es el paréntesis izquierdo 
+entonces se trata de la regla de producción del paréntesis
+sino es la regla $$apply \longroghtarrow \epsilon$$:
+
+```js
+function parseApply(tree) {
+  if (!lookahead) return tree;   // apply: /* vacio */
+  if (lookahead.type !== "LP") return tree; // apply: /* vacio */
+
+  lex();
+
+  tree = {type: 'apply', operator: tree, args: []};
+  while (lookahead && lookahead.type !== "RP") {
+    let arg = parseExpression();
+    tree.args.push(arg);
+
+    if (lookahead && lookahead.type == "COMMA") {
+      lex();
+    } else if (!lookahead || lookahead.type !== "RP") {
+      throw new SyntaxError(`Expected ',' or ')'  at line ${lineno}: ... ${program.slice(0,20)}`);
+    }
+  }
+  if (!lookahead)  throw new SyntaxError(`Expected ')'  at line ${lineno}: ... ${program.slice(0,20)}`);
+  lex();
+
+  return parseApply(tree);
 }
 ```
 
