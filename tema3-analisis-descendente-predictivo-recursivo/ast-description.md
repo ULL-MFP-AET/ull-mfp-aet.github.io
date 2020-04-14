@@ -1,7 +1,9 @@
-# Árbol de Análisis Abstracto {#section:eyapaat}
+# Árboles de Análisis Abstracto {#section:eyapaat}
 
 Un Árbol de Análisis Abstracto (denotado *AAA*, en inglés *AST*) porta la misma información que el árbol de análisis sintáctico concreto pero de forma mas condensada, eliminándose
 terminales y producciones que no aportan información.
+
+*The data structure that the parser will use to describe a program consists of node objects, each of which has a **type** property indicating the kind of expression it is and other properties to describe its content.*
 
 ## Alfabeto con Aridad o Alfabeto Árbol
 
@@ -74,7 +76,7 @@ Todos los nodos tiene una propiedad `type` que determina que tipo de nodo es y p
 
 For example, The AST resulting from parsing the input `>(x, 5)` 
 would be represented like this term: `APPLY(WORD, WORD, VALUE)` or 
-if we want to explicit the attributes: 
+if we want to explicit the attributes we can extend the notation: 
 
 ```
 APPLY(operator:WORD{name:>}, args:[WORD{name:x} VALUE{value:5}])
@@ -88,6 +90,9 @@ $ cat greater-x-5.egg
 $ ./eggc.js greater-x-5.egg 
 $ cat greater-x-5.egg.evm
 ```
+
+Here is the JSON:
+
 ```js
 {
   "type": "apply",
@@ -109,12 +114,13 @@ $ cat greater-x-5.egg.evm
 ```
 
 Otro ejemplo, el AST para `+(a,*(4,5))` sería 
+
 ```
 APPLY(
   WORD,
     WORD, 
     APPLY(
-      WORD, 
+        WORD, 
         VALUE,VALUE
     )
 )
@@ -148,27 +154,18 @@ es una cuadrupla $$((\Sigma, \rho), N, P, S)$$, donde:
 
 -   $$S \in N$$ es la variable o símbolo de arranque
 
-NOTA: [Esta definición difiere de la habitual](https://en.wikipedia.org/wiki/Regular_tree_grammar)
+NOTA: [Regular Tree Grammar](https://en.wikipedia.org/wiki/Regular_tree_grammar)
 
 ### Ejemplo
 
 En nuestro intérprete de Egg usaremos los árboles generados por esta gramática:
 
 ```
-ast: VALUE{value}
-   | WORD{name}
-   | APPLY( WORD astlist )
+ast: VALUE {value}
+   | WORD {name}
+   | APPLY( WORD [ astlist ] )
 astlist: ast  astlist
    | /* vacío */
-```
-
-Una derivación para el término `APPLY(WORD, WORD VALUE)` asociado a una entrada como 
-`>(x, 5)` sería:
-
-```
-ast => APPLY(WORD astlist) => APPLY(WORD ast astlist) 
-=> APPLY(WORD WORD astlist) => APPLY(WORD WORD ast astlist)
-APPLY(WORD WORD NUMBER astlist) => APPLY(WORD WORD NUMBER)
 ```
 
 ## Notación de Dewey o Coordenadas de un Árbol
@@ -189,3 +186,21 @@ definición formal sería:
     Esto es: $$t/j.n = t_j/n$$
 
 
+```
+t =  
+APPLY(
+  operator: WORD{name:+}, 
+  args: [
+      WORD{name:a}, 
+      APPLY(
+        operator: WORD{name:*}, 
+        args: [VALUE{value:4},VALUE{value:5}]
+      )
+  ]
+)
+``` 
+Podríamos construir expresiones como:
+
+```
+t.operator, t.operator.name, t.args.0.name, t.args.1.args.0.value
+```
