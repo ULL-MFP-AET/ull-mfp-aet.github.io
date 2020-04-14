@@ -93,8 +93,8 @@ Todos los nodos tiene una propiedad `type` que determina que tipo de nodo es y p
   - Such objects have a `name` property that holds the identifier’s name as a string. 
 * `APPLY` nodes represent applications. They have an 
   - `operator` property that refers to the expression that is being applied, and an
-  - `args` property that is an *anonymous* node: `ARRAY` 
-* `ARRAY` is in fact an *anonymous node* of ASTs that holds the arguments of the application
+  - `args` property that is an *special* node: `ARRAY` 
+* `ARRAY` is in fact an *special node* of ASTs that holds the arguments of the application
 
 For example, The AST resulting from parsing the input `>(x, 5)` 
 would be represented like this term: `APPLY(WORD, ARRAY[WORD, VALUE])` or 
