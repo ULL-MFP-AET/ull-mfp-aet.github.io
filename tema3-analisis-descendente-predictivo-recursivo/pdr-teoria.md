@@ -75,8 +75,13 @@ $$A \in V$$.
 
 La función de dicha subrutina (que de ahora en adelante llamaremos `parseA()`) es reconocer $$L_A(G)$$.
 
-Siguiendo con el ejemplo de Egg, en $$L_{apply}(EggGrammar)$$ tenemos frases como 
-`()`, `(4,b)`, `(4, (+(5,c))`, etc. 
+Siguiendo con el ejemplo de Egg, en $$L_{apply}(EggGrammar)$$ tenemos frases como:
+
+* `()`, 
+* `(4,b)`, 
+* `(4, (+(5,c))`, etc. 
+
+Recuerda que:
 
 $$L_{apply}(EggGrammar) = \{ x \in \Sigma^* : apply \stackrel{*}{\Longrightarrow} x \}$$
 
