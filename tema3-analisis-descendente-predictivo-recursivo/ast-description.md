@@ -196,6 +196,7 @@ definición formal sería:
     $$t/j.n$$ como el subárbol $$n$$-ésimo del $$j$$-ésimo subárbol de $$t$$.
     Esto es: $$t/j.n = t_j/n$$
 
+Ejemplo generalizado:
 
 ```
 t =  
@@ -210,6 +211,7 @@ APPLY(
   ]
 )
 ``` 
+
 Podríamos construir expresiones como:
 
 ```
