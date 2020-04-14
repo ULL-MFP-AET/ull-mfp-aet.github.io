@@ -7,7 +7,7 @@ sabiendo que el algoritmo de análisis es un PDR,
 intenta describir formalmente la gramática
 que acepta.
 
-Este es el código implicado:
+Este es el código inicial implicado:
 
 ```js
 function parseExpression(program) {
@@ -57,6 +57,8 @@ function parseApply(expr, program) {
 }
 ```
 
+## ¿Que resultados dan estas ejecuciones?
+
 Ejecútalo con las entradas que te propongo abajo.
 Para cada una de las ejecuciones ten en cuenta estos puntos:
 
@@ -67,5 +69,16 @@ Para cada una de las ejecuciones ten en cuenta estos puntos:
   *  Si da error mira en que función ocurre. ¿Es un error sintáctico o semántico? ¿Es lo que esperabas?
   * Si no se produce error y crees que debería producirse ¿Que código es el que tienes que modificar?
 
-* [solucion](solucion-ejercicio-gramar-egg-inicial)
+Entradas:
+
+* `$ node egg.js 'print(+)'`
+* `$ node egg.js 'print(4,)'`
+* `$ node egg.js '8()'`
+* `$ node egg.js '"hello"(2,3)'`
+* `$ node egg.js '+()'`
+* `$ node egg.js '+(2,)'`
+
+## Gramática
+
+* [Solucion](solucion-ejercicio-gramar-egg-inicial)
   
