@@ -344,7 +344,7 @@ function parseApply() {
 ```
 
 Sin embargo, el código queda mas simple si seguimos
-la estrategia de si el token es el paréntesis izquierdo 
+la estrategia de si el token `lookahead` es el paréntesis izquierdo 
 entonces se trata de la regla de producción del paréntesis
 sino es la regla $$apply \longroghtarrow \epsilon$$:
 
