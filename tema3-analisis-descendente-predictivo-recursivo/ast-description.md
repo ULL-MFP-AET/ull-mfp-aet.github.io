@@ -212,7 +212,7 @@ APPLY(
 )
 ``` 
 
-Podríamos construir expresiones como:
+En realidad, la notación de Dewey es equivalente al operador `.` que usamos en los lenguajes de programación. Con el `.` a partir de `t` podemos construir expresiones como:
 
 ```
 t.operator, t.operator.name, t.args.0.name, t.args.1.args.0.value
