@@ -55,8 +55,9 @@ function parseApply(expr, program) {
 }
 ```
 
-Ejecútanlo con las entradas que te propongo abajo.
-Para cada una de las ejecuciones ten en cuenta estos puntos: 
+Ejecútalo con las entradas que te propongo abajo.
+Para cada una de las ejecuciones ten en cuenta estos puntos:
+
 * Antes de hacer la ejecución  decide si la entrada es sintácticamente correcta,
 * Si es semánticamente correcta
 * Cual será la salida
