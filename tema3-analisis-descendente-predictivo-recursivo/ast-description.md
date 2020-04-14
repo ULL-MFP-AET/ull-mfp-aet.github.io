@@ -36,13 +36,13 @@ Para ello se empieza definiendo lo que es un **alfabeto con función de aridad**
 Un **alfabeto con función de aridad** es un par $$(\Sigma, \rho)$$ donde $$\Sigma$$ es un conjunto finito y
 $$\rho$$ es una función 
 
-$$\rho: \Sigma \rightarrow ℕ_0 \cup \{ * \}$$,
+$$\rho: \Sigma \rightarrow ℕ_0 \cup \{ * \}$$
 
 denominada **función de aridad**. Aquí $$ℕ_0$$ denota al conjunto de los números naturales incluyendo el cero.
 
 Denotamos por $$\Sigma_k$$ los elementos del alfabeto con aridad *k*:
 
-$$\Sigma_k = \{ a \in \Sigma :\ \rho(a) = k \}$$.
+$$\Sigma_k = \{ a \in \Sigma :\ \rho(a) = k \}$$
 
 $$\Sigma_0$$ son las hojas, $$\Sigma_1$$ son los elementos con un solo hijo,
 $$\Sigma_2$$ los nodos binarios, 
