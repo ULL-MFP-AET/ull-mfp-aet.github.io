@@ -5,28 +5,7 @@
 
 Después de la fase de análisis léxico la siguiente fase en la construcción del analizador es la fase de
 análisis sintáctico. Esta toma como entrada el flujo de terminales y
-construye como salida el árbol de análisis sintáctico abstracto.
-
-El árbol de análisis sintáctico abstracto es una representación
-compactada del árbol de análisis sintáctico concreto que contiene la
-misma información que éste.
-
-Por ejemplo, para una gramática que acepta expresiones como:
-
-```js
-x=1
-y=2
-3*(x+y)
-```
-
-este es un ejemplo de árbol sintáctico concreto:
-
-![]({{site.baseurl}}/assets/images/concrete-syntax-tree.png)
-
-y este un posible árbol sintáctico abstracto con la misma información que el anterior:
-
-
-![]({{site.baseurl}}/assets/images/ast.png)
+construye como salida el [árbol de análisis sintáctico abstracto](ast-description).
 
 Existen diferentes métodos de análisis sintáctico. La mayoría caen en
 una de dos categorías: 

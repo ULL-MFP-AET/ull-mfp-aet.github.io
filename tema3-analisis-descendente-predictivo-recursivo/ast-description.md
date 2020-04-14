@@ -5,6 +5,26 @@ terminales y producciones que no aportan información.
 
 *The data structure that the parser will use to describe a program consists of node objects, each of which has a **type** property indicating the kind of expression it is and other properties to describe its content.*
 
+El árbol de análisis sintáctico abstracto es una representación
+compactada del árbol de análisis sintáctico concreto que contiene la
+misma información que éste.
+
+Por ejemplo, para una gramática que acepta expresiones como:
+
+```js
+x=1
+y=2
+3*(x+y)
+```
+
+este es un ejemplo de árbol sintáctico concreto:
+
+![]({{site.baseurl}}/assets/images/concrete-syntax-tree.png)
+
+y este un posible árbol sintáctico abstracto con la misma información que el anterior:
+
+![]({{site.baseurl}}/assets/images/ast.png)
+
 ## Alfabeto con Aridad o Alfabeto Árbol
 
 No deja de ser curioso que es posible definir un equivalente del cierre de Kleene $$\Sigma*$$ de un alfabeto $$\Sigma$$ para modelizar matemáticamente los árboles.
