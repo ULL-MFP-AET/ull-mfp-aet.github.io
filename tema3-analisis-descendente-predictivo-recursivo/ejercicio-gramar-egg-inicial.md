@@ -55,5 +55,14 @@ function parseApply(expr, program) {
 }
 ```
 
+Ejecútanlo con las entradas que te propongo abajo.
+Para cada una de las ejecuciones ten en cuenta estos puntos: 
+* Antes de hacer la ejecución  decide si la entrada es sintácticamente correcta,
+* Si es semánticamente correcta
+* Cual será la salida
+* Una vez que se ha ejecutado:
+  *  Si da error mira en que función ocurre. ¿Es un error sintáctico o semántico? ¿Es lo que esperabas?
+  * Si no se produce error y crees que debería producirse ¿Que código es el que tienes que modificar?
+
 * [solucion](solucion-ejercicio-gramar-egg-inicial)
   
