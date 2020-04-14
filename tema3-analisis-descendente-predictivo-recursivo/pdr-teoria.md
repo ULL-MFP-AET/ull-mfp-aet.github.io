@@ -77,9 +77,10 @@ La función de dicha subrutina (que de ahora en adelante llamaremos `parseA()`) 
 
 Siguiendo con el ejemplo de Egg, en $$L_{apply}(EggGrammar)$$ tenemos frases como:
 
-* `()`, 
-* `(4,b)`, 
-* `(4, +(5,c))`, etc. 
+* `()`
+* `(4,b)` 
+* `(4, +(5,c))`
+* `(4,)`
 
 Recuerda que:
 
