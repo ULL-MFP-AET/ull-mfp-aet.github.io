@@ -50,6 +50,11 @@ Lea esta breve introducción a como se escribe un analizador  Sintáctico Predic
 
 [Análisis Sintáctico Predictivo Recursivo]({{site.baseurl}}/tema3-analisis-descendente-predictivo-recursivo/pdr-teoria)
 
+## Árboles de Análisis Abstracto
+
+[Árboles de Análisis Abstracto]({{site.baseurl}}tema3-analisis-descendente-predictivo-recursivo/ast-description)
+
+
 ## Fixing Scope
 
 Resuelva ahora los dos ejercicios propuestos en el capítulo:
