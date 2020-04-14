@@ -87,11 +87,11 @@ Recuerda que:
 
 $$L_{apply}(EggGrammar) = \{ x \in \Sigma^* : apply \stackrel{*}{\Longrightarrow} x \}$$
 
+`apply: /* vacio */ | '(' (expression ',')* expression? ')' apply`
+
 Escribiremos una función `parseApply`que se deberá encargar de reconocer las frases de $$L_{apply}(EggGrammar)$$. 
 
 Por supuesto también escribiremos una función `parseExpression`que se deberá encargar de reconocer las frases de $$L_{expression}(EggGrammar)$$. 
-
-
 
 ## Una función por Variable Sintáctica {#funpervar}
 
