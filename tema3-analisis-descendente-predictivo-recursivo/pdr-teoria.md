@@ -85,9 +85,11 @@ Siguiendo con el ejemplo de Egg, en $$L_{apply}(EggGrammar)$$ tenemos frases com
 
 Recuerda que:
 
-$$L_{apply}(EggGrammar) = \{ x \in \Sigma^* : apply \stackrel{*}{\Longrightarrow} x \}$$
-
 `apply: /* vacio */ | '(' (expression ',')* expression? ')' apply`
+
+y que:
+
+$$L_{apply}(EggGrammar) = \{ x \in \Sigma^* : apply \stackrel{*}{\Longrightarrow} x \}$$
 
 Escribiremos una función `parseApply`que se deberá encargar de reconocer las frases de $$L_{apply}(EggGrammar)$$. 
 
