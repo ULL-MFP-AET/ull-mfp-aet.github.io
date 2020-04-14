@@ -75,13 +75,14 @@ $$B(\Sigma)$$ es a los *nodos* (árboles) lo  que $$\Sigma*$$ es a las tokens (s
 
 Los AST con los que trabajamos en nuestro parser son de tres tipos
 
-$$\Sigma = \{ VALUE, \, WORD, \, APPLY \}$$
+$$\Sigma = \{ VALUE, \, WORD, \, APPLY, \, ARRAY \}$$
 
 con aridad:
 
 * $$\rho(VALUE) = 0$$
 * $$\rho(WORD) = 0$$
-* $$\rho(APPLY) = *$$
+* $$\rho(APPLY) = 2$$
+* $$\rho(ARRAY) 0 *$$
 
 Al igual que con los tokens, los nodos son objetos y tienen propiedades.
 Todos los nodos tiene una propiedad `type` que determina que tipo de nodo es y por tanto su aridad.
@@ -92,14 +93,14 @@ Todos los nodos tiene una propiedad `type` que determina que tipo de nodo es y p
   - Such objects have a `name` property that holds the identifier’s name as a string. 
 * Finally, `APPLY` nodes represent applications. They have an 
   - `operator` property that refers to the expression that is being applied, and an
-  - `args` property that holds the children: an array of ASTs for the argument expressions.
+  - `args` property that holds the children: a node `ARRAY` of ASTs for the argument expressions.
 
 For example, The AST resulting from parsing the input `>(x, 5)` 
-would be represented like this term: `APPLY(WORD, WORD, VALUE)` or 
+would be represented like this term: `APPLY(WORD, ARRAY(WORD, VALUE))` or 
 if we want to explicit the attributes we can extend the notation: 
 
 ```
-APPLY(operator:WORD{name:>}, args:[WORD{name:x} VALUE{value:5}])
+APPLY(operator:WORD{name:>}, args:ARRAY[WORD{name:x} VALUE{value:5}])
 ``` 
 
 More precisely, describing its actual implementation attributes:
@@ -138,24 +139,13 @@ Otro ejemplo, el AST para `+(a,*(4,5))` sería
 ```
 APPLY(
   WORD,
+  ARRAY[
     WORD, 
     APPLY(
-        WORD, 
-        VALUE,VALUE
+      WORD, 
+      ARRAY[VALUE, VALUE]
     )
-)
-``` 
-
-```
-APPLY(
-  operator: WORD{name:+}, 
-  args: [
-      WORD{name:a}, 
-      APPLY(
-        operator: WORD{name:*}, 
-        args: [VALUE{value:4},VALUE{value:5}]
-      )
-  ]
+   ]
 )
 ``` 
 
@@ -183,7 +173,7 @@ En nuestro intérprete de Egg usaremos los árboles generados por esta gramátic
 ```
 ast: VALUE {value}
    | WORD {name}
-   | APPLY( WORD [ astlist ] )
+   | APPLY( WORD ARRAY( astlist ))
 astlist: ast  astlist
    | /* vacío */
 ```
