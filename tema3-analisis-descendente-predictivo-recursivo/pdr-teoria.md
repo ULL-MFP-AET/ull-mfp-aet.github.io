@@ -79,7 +79,7 @@ Siguiendo con el ejemplo de Egg, en $$L_{apply}(EggGrammar)$$ tenemos frases com
 
 * `()`, 
 * `(4,b)`, 
-* `(4, (+(5,c))`, etc. 
+* `(4, +(5,c))`, etc. 
 
 Recuerda que:
 
