@@ -1,4 +1,4 @@
-# Egg Initial Syntax
+# Egg Proposed Syntax
 ```
 expression: STRING
           | NUMBER

@@ -342,3 +342,6 @@ function parseApply() {
 }
 ```
 
+# Ejercicios
+
+* [Ejercicios](ejercicio-gramar-egg-inicial)

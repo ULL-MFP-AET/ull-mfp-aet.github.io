@@ -42,7 +42,7 @@ inconsistencias en el lenguaje Egg debidas a que casi en cada curso hemos ido ha
 
 Escriba en su `README.md` las reglas de producción de la gramática que reconoce el traductor
 
-Tiene una solución [aquí]({{site.baseurl}}/tema3-analisis-descendente-predictivo-recursivo/egg-grammar)
+Tiene una posible solución [aquí]({{site.baseurl}}/tema3-analisis-descendente-predictivo-recursivo/solucion-ejercicio-gramar-egg-inicial)
 
 ## Análisis Sintáctico Predictivo Recursivo 
 
