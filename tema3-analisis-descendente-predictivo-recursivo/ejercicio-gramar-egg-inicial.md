@@ -7,6 +7,8 @@ sabiendo que el algoritmo de análisis es un PDR,
 intenta describir formalmente la gramática
 que acepta.
 
+Este es el código implicado:
+
 ```js
 function parseExpression(program) {
   program = skipSpace(program);
