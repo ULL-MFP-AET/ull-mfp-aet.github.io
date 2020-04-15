@@ -78,8 +78,6 @@
   ```
   Si quiere saber mas sobre stubbing estudie la librería [sinon](http://sinonjs.org/)
 
-5. Aquí esta el [repo](https://github.com/ULL-ESIT-PL-1617/egg) con la versión pública de nuestr versión del lenguaje `egg`
-
 ### Recursos
 
 <!--
@@ -88,13 +86,14 @@ Ahora mismo Abril 2020 igual que la 1617. No pienso tocarla. No me atrevo a borr
 -->
 
 * [Rama `reto` del repo ULL-ESIT-PL-1617/egg](https://github.com/ULL-ESIT-PL-1617/egg/tree/reto)
+* Aquí esta el [repo](https://github.com/ULL-ESIT-PL-1617/egg) con la versión pública de nuestra versión del lenguaje `egg`
 * [Eloquent JS: Chapter 11. Project: A Programming Language](http://eloquentjavascript.net/11_language.html)
 * [El lenguaje egg: repo en GitHub](https://github.com/ULL-ESIT-PL-1617/egg)
 * [Repo interpreter-egg](https://github.com/ULL-ESIT-PL-1617/interpreter-egg)
 * [NodeJS Readline gist](https://gist.github.com/crguezl/430642e29a2b9293317320d0d1759387)
 * En el repo [ULL-ESIT-PL-1617/interpreter-egg](https://github.com/ULL-ESIT-PL-1617/interpreter-egg) se muestra como hacer un bucle REPL
 * [XRegExp](http://xregexp.com/)
-* [As an npm module](https://www.npmjs.com/package/@crguezl/eloquentjsegg)
+* Egg [as an npm module](https://www.npmjs.com/package/@crguezl/eloquentjsegg)
 * [gist to check the npm module](https://gist.github.com/crguezl/8dfcaa01a0377dead374bc35c462c29d)
 
 ## Notas para el profesor
