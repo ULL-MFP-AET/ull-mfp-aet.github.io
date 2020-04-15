@@ -42,7 +42,7 @@ inconsistencias en el lenguaje Egg debidas a que casi en cada curso hemos ido ha
 
 Haga este ejercicio para determinar la gramática del lenguaje Egg:
 
-* [Ejercicio](ejercicio-gramar-egg-inicial)
+* [Ejercicio]({{site.baseurl}}/tema3-analisis-descendente-predictivo-recursivo//ejercicio-gramar-egg-inicial)
 
 Escriba en su `README.md` las reglas de producción de la gramática que reconoce el traductor
 
