@@ -316,7 +316,7 @@ Otro token que es fácil ver que puede seguir a  `apply` es la coma.
 
 **Ejercicio**: Busque una derivación en la que la coma aparezca siguiendo a `apply`
 
-$$FOLLOW(apply) = $$\{ ')', \,\bullet \, , \}$$
+$$FOLLOW(apply)\, = \, $$\{ ')', \,\bullet \, ',' \}$$
 
 Puesto que la segunda regla tiene un `*` indicando la repetición 0 o mas veces de la expresión entre paréntesis:
 
