@@ -99,4 +99,9 @@ Ahora mismo Abril 2020 igual que la 1617. No pienso tocarla. No me atrevo a borr
 
 ## Notas para el profesor
 
+Locally at branch `private2019` at `/Users/casiano/local/src/javascript/PLgrado/eloquentjsegg`:
+
+* [Redefining parenthesis to use `{`and `}`](https://github.com/ULL-ESIT-PL-1819/private-egg/blob/private2019/lib/parse.js#L55-L65) branch `private2019` at `/Users/casiano/local/src/javascript/PLgrado/eloquentjsegg`
+* [Aliasing 'fun'](https://github.com/ULL-ESIT-PL-1819/private-egg/blob/private2019/lib/eggvm.js#L91-L94)
+* [](branch `private2019` at `/Users/casiano/local/src/javascript/PLgrado/eloquentjsegg`)
 * [Stubbing console.log example](https://github.com/ULL-ESIT-PL-1819/private-egg/blob/private2019/test/test.js#L65-L134) branch `private2019` at `/Users/casiano/local/src/javascript/PLgrado/eloquentjsegg`
