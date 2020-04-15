@@ -297,7 +297,7 @@ $$ \Longrightarrow WORD \, ( \, STRING \, , \, WORD \, apply \, ) \bullet  \stac
 
 muestra claramente que uno de esos tokens es `')'`. 
 
-También si nos fijamos en esta otra derivación para una frase como `x`: 
+También si nos fijamos en esta otra derivación para una frase como `'x'`: 
 
 $$ expression \bullet \Rightarrow WORD \, apply \bullet \Longrightarrow WORD \, \bullet $$
 
