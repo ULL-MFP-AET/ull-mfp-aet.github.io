@@ -74,7 +74,7 @@
     it("testing one.egg with mocking of console.log", function() {
       ...
     }
-    }
+  }
   ```
   Si quiere saber mas sobre stubbing estudie la librería [sinon](http://sinonjs.org/)
 
@@ -97,3 +97,6 @@ Ahora mismo Abril 2020 igual que la 1617. No pienso tocarla. No me atrevo a borr
 * [As an npm module](https://www.npmjs.com/package/@crguezl/eloquentjsegg)
 * [gist to check the npm module](https://gist.github.com/crguezl/8dfcaa01a0377dead374bc35c462c29d)
 
+## Notas para el profesor
+
+* [Stubbing console.log example](https://github.com/ULL-ESIT-PL-1819/private-egg/blob/private2019/test/test.js#L65-L134) branch `private2019` at `/Users/casiano/local/src/javascript/PLgrado/eloquentjsegg`
