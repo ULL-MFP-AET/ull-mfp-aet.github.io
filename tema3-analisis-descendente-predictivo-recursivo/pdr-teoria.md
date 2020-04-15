@@ -312,6 +312,10 @@ Así pues en el instante de la ejecución del análisis que se corresponde con e
 
 Asumiremos que el analizador léxico retorna un `null` cuando encuentra el final de la entrada. 
 
+Otro token que es fácil ver que puede seguir a  `apply` es la coma. 
+
+**Ejercicio**: Busque una derivación en la que la coma aparezca siguiendo a `apply`
+
 Puesto que la segunda regla tiene un `*` indicando la repetición 0 o mas veces de la expresión entre paréntesis:
 
 ```
@@ -319,8 +323,6 @@ apply: '(' (expression ',')* expression? ')' apply
 ```
 
 necesitaremos un bucle para ir procesando la expresión interior. El bucle se termina cuando vemos el paréntesis de cierre o bien si se produce el final de la entrada.
-
-Otro token que es fácil ver que puede seguir a  `apply` es la coma.
 
 Entonces el código queda como sigue:
 
