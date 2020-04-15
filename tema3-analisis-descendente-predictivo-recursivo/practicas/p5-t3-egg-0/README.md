@@ -406,12 +406,17 @@ Puesto que este paquete contiene ejecutables es conveniente que lea la sección
 }
 ```
 
+## Solución Parcial 
 
 Si logra resolver estos objetivos ¡Enhorabuena!.
 
-Puede encontrar una solución a los problemas planteados en este repo [ULL-ESIT-PL-1617/egg](https://github.com/ULL-ESIT-PL-1617/egg). Asegúrese que entiende como funciona.
+Puede encontrar una solución a algunos de los problemas planteados en este repo [ULL-ESIT-PL-1617/egg](https://github.com/ULL-ESIT-PL-1617/egg). 
+
+Asegúrese que entiende como funciona.
+
 También puede encontrarlo como módulo en npm [@crguezl/eloquentjsegg](https://www.npmjs.com/package/@crguezl/eloquentjsegg) 
 
+## Mejoras en el Analizador Léxico
 
 A continuación mejore el analizador léxico que encuentra en este repo 
 como sigue:
