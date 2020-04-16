@@ -244,7 +244,7 @@ El intérprete `evm` ejecuta los ficheros en formato *Egg Virtual Machine*.
 6
 ```
 
-### Examples folder
+## Examples folder
 
 Añada una carpeta `examples` en la que guardará los ejemplos con los que va comprobando la funcionalidad de su compilador:
 
@@ -312,7 +312,7 @@ ReferenceError: Tried setting an undefined variable: x
 
 Uno de nuestros objetivos es reciclar esos ejemplos en las pruebas y en la documentación.
 
-### Test Folder
+## Test Folder
 
 Añadimos una carpeta `test` y en ella los 
 programas de prueba `test/test.js` (Mocha o Jest, use lo que prefiera. Los ejemplos que siguen están en Mocha). 
@@ -353,9 +353,9 @@ let eggvm = require('../lib/eggvm.js');
 describe("Testing scopes", function() {
   let runTest = (programName, done) => {
     e2t({
-      exampleInput: programName+'.egg',
-      executable: 'bin/egg.js',
-      assertion: (result, expected) => result.trim().should.eql(expected.trim()),
+      exampleInput: programName + '.egg',
+      executable: 'node bin/egg.js',
+      assertion: (result, expected) => result.replace(/\s+/g,'').should.eql(expected.replace(/\s+/g,'')),
       done: done,
     });
   };
