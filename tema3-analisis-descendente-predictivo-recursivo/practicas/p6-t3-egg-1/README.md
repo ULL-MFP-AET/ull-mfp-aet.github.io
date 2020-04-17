@@ -89,7 +89,7 @@ print("hello"("length"))
 
 Una `String` o un `Number` cuando es llamada recibe como argumento el nombre de una cadena con el nombre de una propiedad JS y retorna su valor.
 
-De esta manera, si el objeto JavaScript  `obj` tiene un método con nombre `"meth"`, este  podrá ser llamado usando la sintáxis: 
+Mas en general, si el objeto JavaScript  `obj` resultado de la llamada a una función tiene un método con nombre `"meth"`, este  podrá ser llamado usando la sintáxis: 
 
   ```js 
   obj("meth")(args)
