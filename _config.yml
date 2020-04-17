@@ -101,3 +101,6 @@ practicas:
   - title: 11p5-t1-egg-0
     myurl: /tema3-analisis-descendente-predictivo-recursivo/practicas/p5-t3-egg-0/
     name: Práctica p5-t1-egg-0
+    reto:
+      url: /tema3-analisis-descendente-predictivo-recursivo/practicas/p5-t3-egg-0/retos
+      title: Reto Parenthesis, Mocking and Stubbing
