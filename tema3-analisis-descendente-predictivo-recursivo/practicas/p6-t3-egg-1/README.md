@@ -101,9 +101,9 @@ Que cuando se ejecuta debería dar una salida como esta:
   4.00
 ```
 
-Una `String` o un `Number` cuando es llamada recibe con argumento un string con el nombre de una propiedad JS y retorna su valor.
+Un `String` o un `Number` o cualquier objeto resultante de una llamada a una *application* puede ser llamado con argumento un string con el nombre de una propiedad JS del objeto y retorna el valor de esa propiedad .
 
-Mas en general, si el objeto JavaScript  `obj` resultado de la llamada a una función tiene un método con nombre `"meth"`, este  podrá ser llamado usando la sintáxis: 
+Se sigue que, en particular, si el objeto JavaScript  `obj` resultado de la llamada a una función tiene una propiedad con nombre `"meth"` que es el nombre de un método, este  podrá ser llamado usando la sintáxis: 
 
 ```js 
   obj("meth")(args)
