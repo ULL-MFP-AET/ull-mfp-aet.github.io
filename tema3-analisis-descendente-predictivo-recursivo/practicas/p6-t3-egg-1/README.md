@@ -83,35 +83,125 @@ La función `evaluate` con el `switch` que estaba en `lib/eggvm.js` desaparece e
 
 Modifique la gramática de Egg para que las `String` y los `Number` puedan hacer llamadas como si fuera *applications*:
 
-```lisp
-print("hello"("length"))
 ```
-
-Una `String` o un `Number` cuando es llamada recibe como argumento el nombre de una cadena con el nombre de una propiedad JS y retorna su valor.
-
-Mas en general, si el objeto JavaScript  `obj` resultado de la llamada a una función tiene un método con nombre `"meth"`, este  podrá ser llamado usando la sintáxis: 
-
-  ```js 
-  obj("meth")(args)
-  ```
-del objeto JavaSCript:
-
-  **[~/.../crguezl-egg(private2019)]$ cat examples/string-apply.egg**
-
-  ```js
+[~/.../crguezl-egg(private2019)]$ cat examples/string-apply.egg
+```
+```js
   do {
     print("hello"("length")),
     print(4("toFixed")(2))
   }
-  ```
+```
 
-  Que cuando se ejecuta debería dar una salida como esta:
+Que cuando se ejecuta debería dar una salida como esta:
 
-  ```
+```
   [~/.../crguezl-egg(private2019)]$ bin/egg.js  examples/string-apply.egg 
   5
   4.00
+```
+
+Una `String` o un `Number` cuando es llamada recibe con argumento un string con el nombre de una propiedad JS y retorna su valor.
+
+Mas en general, si el objeto JavaScript  `obj` resultado de la llamada a una función tiene un método con nombre `"meth"`, este  podrá ser llamado usando la sintáxis: 
+
+```js 
+  obj("meth")(args)
+```
+
+[~/.../crguezl-egg(develop-oop-idea)]$ cat examples/array-properties.egg
+
+```js
+  do(
+    def(x, array[1, 4, array[5, 3]]),
+    print(x(0)),   # 1
+    print(x(2)),   # [5, 3]
+    print(x(2)(1)) # 3
+  )
+```
+
+Este es el resultado de la ejecución:
+
+```
+  [~/.../crguezl-egg(develop-oop-idea)]$ bin/egg.js examples/array-properties.egg 
+  1
+  [ 5, 3 ]
+  3
+```
+
+Otro ejemplo:
+
+[~/campus-virtual/1819/pl1819/introduccion/tema3-analisis-descendente-predictivo-recursivo/practicas/p5-t3-egg-0/egg(private2019)]$ cat examples/method.egg
+
+```js
+  do(
+    def(x, array[1,4,5]),
+    print(x("join")("-"))
+  )
+```
+
+que cuando se ejecuta da:
+
+```
+  [~/campus-virtual/1819/pl1819/introduccion/tema3-analisis-descendente-predictivo-recursivo/practicas/p5-t3-egg-0/egg/crguezl-egg(private2019)]$ bin/egg.js examples/method.egg 
+  1-4-5
+```
+
+Otro ejemplo:
+
+[~/campus-virtual/1819/pl1819/introduccion/tema3-analisis-descendente-predictivo-recursivo/practicas/p5-t3-egg-0/egg/crguezl-egg(private2019)]$ cat examples/method2.egg
+
+```js
+  do(
+    def(x, "hello"),
+    print(x("toUpperCase")())
+  )
+```
+
+que cuando se ejecuta da:
+
+```
+  [~/campus-virtual/1819/pl1819/introduccion/tema3-analisis-descendente-predictivo-recursivo/practicas/p5-t3-egg-0/egg/crguezl-egg(private2019)]$ bin/egg.js examples/method2.egg 
+  HELLO
+```
+
+Se debería poder concatenar las llamadas de métodos:
+
+```
+[~/campus-virtual/1819/pl1819/introduccion/tema3-analisis-descendente-predictivo-recursivo/practicas/p5-t3-egg-0/egg/crguezl-egg(private2019)]$ cat examples/method3.egg
+```
+```
+  do(
+    def(x, array["a","b","c"]),
+    print(x("join")("-")("toUpperCase")())
+  )
+```
+
+que cuando se ejecuta da:
+
+```
+  [~/campus-virtual/1819/pl1819/introduccion/tema3-analisis-descendente-predictivo-recursivo/practicas/p5-t3-egg-0/egg/crguezl-egg(private2019)]$ bin/egg.js examples/method3.egg 
+  A-B-C
+```
+
+la concatenación puede ser larga
+
+```
+[~/.../crguezl-egg(private2019)]$ cat examples/method-concatenation.egg
+```  
+```js
+  do(
+    print(array[1,4,5]("join", "-")("substring",0,2)("concat", "hello egg"))
+  )
+```
+
+  cuya ejecución resulta en:
+
   ```
+  [~/.../crguezl-egg(private2019)]$ bin/egg.js  examples/method-concatenation.egg 
+  1-hello egg
+  ```
+
 
 ## Monkey Patching Objetos JS
 
@@ -133,97 +223,6 @@ del objeto JavaSCript:
   [~/campus-virtual/1819/pl1819/introduccion/tema3-analisis-descendente-predictivo-recursivo/practicas/p5-t3-egg-0/egg/crguezl-egg(private2019)]$ bin/egg.js examples/property.egg 
   2
   3
-  ```
-
-  **[~/.../crguezl-egg(develop-oop-idea)]$ cat examples/array-properties.egg**
-
-  ```js
-  do(
-    def(x, array[1, 4, array[5, 3]]),
-    print(x(0)),   # 1
-    print(x(2)),   # [5, 3]
-    print(x(2)(1)) # 3
-  )
-  ```
-
-  Este es el resultado de la ejecución:
-
-  ```
-  [~/.../crguezl-egg(develop-oop-idea)]$ bin/egg.js examples/array-properties.egg 
-  1
-  [ 5, 3 ]
-  3
-  ```
-
-  Otro ejemplo:
-
-  **[~/campus-virtual/1819/pl1819/introduccion/tema3-analisis-descendente-predictivo-recursivo/practicas/p5-t3-egg-0/egg(private2019)]$ cat examples/method.egg**
-
-  ```js
-  do(
-    def(x, array[1,4,5]),
-    print(x("join")("-"))
-  )
-  ```
-
-  que cuando se ejecuta da:
-
-  ```
-  [~/campus-virtual/1819/pl1819/introduccion/tema3-analisis-descendente-predictivo-recursivo/practicas/p5-t3-egg-0/egg/crguezl-egg(private2019)]$ bin/egg.js examples/method.egg 
-  1-4-5
-  ```
-
-  Otro ejemplo:
-
-  **[~/campus-virtual/1819/pl1819/introduccion/tema3-analisis-descendente-predictivo-recursivo/practicas/p5-t3-egg-0/egg/crguezl-egg(private2019)]$ cat examples/method2.egg**
-
-  ```js
-  do(
-    def(x, "hello"),
-    print(x("toUpperCase")())
-  )
-  ```
-
-  que cuando se ejecuta da:
-
-  ```
-  [~/campus-virtual/1819/pl1819/introduccion/tema3-analisis-descendente-predictivo-recursivo/practicas/p5-t3-egg-0/egg/crguezl-egg(private2019)]$ bin/egg.js examples/method2.egg 
-  HELLO
-  ```
-
-  Se debería poder concatenar las llamadas de métodos:
-
-  **[~/campus-virtual/1819/pl1819/introduccion/tema3-analisis-descendente-predictivo-recursivo/practicas/p5-t3-egg-0/egg/crguezl-egg(private2019)]$ cat examples/method3.egg**
-
-  ```js
-  do(
-    def(x, array["a","b","c"]),
-    print(x("join")("-")("toUpperCase")())
-  )
-  ```
-
-  que cuando se ejecuta da:
-
-  ```
-  [~/campus-virtual/1819/pl1819/introduccion/tema3-analisis-descendente-predictivo-recursivo/practicas/p5-t3-egg-0/egg/crguezl-egg(private2019)]$ bin/egg.js examples/method3.egg 
-  A-B-C
-  ```
-
-  la concatenación puede ser larga
-
-  **[~/.../crguezl-egg(private2019)]$ cat examples/method-concatenation.egg**
-  
-  ```js
-  do(
-    print(array[1,4,5]("join", "-")("substring",0,2)("concat", "hello egg"))
-  )
-  ```
-
-  cuya ejecución resulta en:
-
-  ```
-  [~/.../crguezl-egg(private2019)]$ bin/egg.js  examples/method-concatenation.egg 
-  1-hello egg
   ```
 
 ## Recursos
