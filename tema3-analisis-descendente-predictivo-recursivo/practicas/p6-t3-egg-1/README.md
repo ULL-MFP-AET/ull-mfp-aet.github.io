@@ -109,8 +109,11 @@ Se sigue que, en particular, si el objeto JavaScript  `obj` resultado de la llam
   obj("meth")(args)
 ```
 
-[~/.../crguezl-egg(develop-oop-idea)]$ cat examples/array-properties.egg
+Por ejemplo:
 
+```
+[~/.../crguezl-egg(develop-oop-idea)]$ cat examples/array-properties.egg
+```
 ```js
   do(
     def(x, array[1, 4, array[5, 3]]),
@@ -131,8 +134,9 @@ Este es el resultado de la ejecución:
 
 Otro ejemplo:
 
+```
 [~/campus-virtual/1819/pl1819/introduccion/tema3-analisis-descendente-predictivo-recursivo/practicas/p5-t3-egg-0/egg(private2019)]$ cat examples/method.egg
-
+```
 ```js
   do(
     def(x, array[1,4,5]),
@@ -149,8 +153,9 @@ que cuando se ejecuta da:
 
 Otro ejemplo:
 
+```
 [~/campus-virtual/1819/pl1819/introduccion/tema3-analisis-descendente-predictivo-recursivo/practicas/p5-t3-egg-0/egg/crguezl-egg(private2019)]$ cat examples/method2.egg
-
+```
 ```js
   do(
     def(x, "hello"),
