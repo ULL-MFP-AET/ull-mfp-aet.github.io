@@ -4,7 +4,8 @@ title: p5-t3-egg-0
 permalink: /tema3-analisis-descendente-predictivo-recursivo/practicas/p5-t3-egg-0/
 previous: 
   url: /tema2-expresiones-regulares-y-analisis-lexico/practicas/p10-t2-lexer-generator/
-  next: /tema3-analisis-descendente-predictivo-recursivo/practicas/p6-t3-egg-1/
+next: 
+  url: /tema3-analisis-descendente-predictivo-recursivo/practicas/p6-t3-egg-1/
 ---
 
 # Práctica: Egg. A Programming Language (p5-t1-egg-0)
