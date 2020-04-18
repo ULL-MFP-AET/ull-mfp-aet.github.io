@@ -10,9 +10,9 @@
 
 Modifique el AST para dar una solución OOP con clases: 
 
-- una clase `Value`, 
-- una clase `Word`, 
-- una clase `Apply`, ...
+- una clase `Value`
+- una clase `Word`
+- una clase `Apply`
   
 de manera que cada clase de objeto dispone de un método `evaluate`. 
 
