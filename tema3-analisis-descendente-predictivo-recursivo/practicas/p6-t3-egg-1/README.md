@@ -214,7 +214,7 @@ cuya ejecución resulta en:
 
 ## Monkey Patching Objetos JS
 
-* Utilizando lo anterior y haciendo Monkey patching de las clases principales de JS, podemos añadir propiedades y métodos a los objetos JavaScript, de manera que programas como este funcionen:
+Utilizando las extensiones anteriores y haciendo Monkey patching de las clases principales de JS, podemos añadir propiedades y métodos a los objetos JavaScript, de manera que programas como este funcionen:
 
 ```
 [.../p6-t3-egg-1-04-16-2020-03-13-25/davafons(casiano)]$ cat examples/setmultiarray.egg
