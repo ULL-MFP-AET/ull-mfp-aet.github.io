@@ -139,6 +139,8 @@ Este es el resultado de la ejecución:
 3
 ```
 
+Este ejemplo funciona en parte porque en JS los índices son propiedades del array.
+
 Otro ejemplo:
 
 ```
@@ -210,28 +212,32 @@ cuya ejecución resulta en:
 1-hello egg
 ```
 
-
 ## Monkey Patching Objetos JS
 
-* Utilizando lo anterior y JS Monkey patching, añada propiedades a los objetos JavaScript, de manera que programas como este funcionen:
+* Utilizando lo anterior y haciendo Monkey patching de las clases principales de JS, podemos añadir propiedades y métodos a los objetos JavaScript, de manera que programas como este funcionen:
 
-  **[~/campus-virtual/1819/pl1819/introduccion/tema3-analisis-descendente-predictivo-recursivo/practicas/p5-t3-egg-0/egg/crguezl-egg(private2019)]$ cat examples/property.egg**
+```
+[.../p6-t3-egg-1-04-16-2020-03-13-25/davafons(casiano)]$ cat examples/setmultiarray.egg
+```
+```js
+do{
+  :=(w, array[array[1,2], array[3,4]]),
+  w[":="](5, 0, 1),
+  print(w),
+  w[":="](-9, 1,0),
+  print(w)
+}
+```
 
-  ```js
-  do( # test properties in egg
-    def(x, array[1,array[3,2,5]]),
-    print(x("length")),          # 2
-    print(x["sub"][1]("length")) # 3
-  )
-  ```
+En este ejemplo hemos añadido el método `:=` a la clase JS `Array` que asigna el primer argumento al elemento del array indexado por los subsiguientes argumentos. 
 
-  En este ejemplo hemos añadido el método `sub` a la clase JS `Array`. Cuando se ejecuta da:
+Cuando se ejecuta da:
 
-  ```
-  [~/campus-virtual/1819/pl1819/introduccion/tema3-analisis-descendente-predictivo-recursivo/practicas/p5-t3-egg-0/egg/crguezl-egg(private2019)]$ bin/egg.js examples/property.egg 
-  2
-  3
-  ```
+```
+[.../p6-t3-egg-1-04-16-2020-03-13-25/davafons(casiano)]$ bin/egg.js examples/setmultiarray.egg 
+[ [ 1, 5 ], [ 3, 4 ] ]
+[ [ 1, 5 ], [ -9, 4 ] ]
+```
 
 ## Recursos
 
