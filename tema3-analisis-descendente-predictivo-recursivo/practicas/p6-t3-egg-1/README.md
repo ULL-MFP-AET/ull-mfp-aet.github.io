@@ -14,7 +14,7 @@ procurando entender los principios SOLID, el problema del Switch Smell y el
 ## AST con Clases: evaluate como método del nodo
 
 Aplique el Strategy Pattern para eliminar el Switch Smell en el código de evaluación del 
-árbol.
+AST.
 
 Modifique el AST para dar una solución OOP con clases: 
 
