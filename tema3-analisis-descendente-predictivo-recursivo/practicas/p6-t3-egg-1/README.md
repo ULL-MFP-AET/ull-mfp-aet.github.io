@@ -229,7 +229,7 @@ do{
 }
 ```
 
-En este ejemplo hemos añadido el método `:=` a la clase JS `Array` que asigna el primer argumento al elemento del array indexado por los subsiguientes argumentos. 
+En este ejemplo hemos añadido el método `:=` a la clase JS `Object` que asigna el primer argumento al elemento del array indexado por los subsiguientes argumentos. 
 
 Cuando se ejecuta da:
 
@@ -237,6 +237,17 @@ Cuando se ejecuta da:
 [.../p6-t3-egg-1-04-16-2020-03-13-25/davafons(casiano)]$ bin/egg.js examples/setmultiarray.egg 
 [ [ 1, 5 ], [ 3, 4 ] ]
 [ [ 1, 5 ], [ -9, 4 ] ]
+```
+
+**A monkey patch** is a way for a program to extend or modify supporting system software locally (affecting only the running instance of the program).
+
+```js
+.../p6-t3-egg-1-04-16-2020-03-13-25/davafons(casiano)]$ cat lib/monkey-patching.js //  SUB
+Object.prototype[":="] = function(value, ...indices) {
+  ...
+};
+
+...
 ```
 
 ## Recursos
