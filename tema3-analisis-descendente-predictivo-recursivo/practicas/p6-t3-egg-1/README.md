@@ -4,9 +4,17 @@
 
 ## Design: Smells, The Switch Smell, The Open Closed Principle and the Strategy Pattern
 
+Lea esta sección:
+
 * [Design: Smells, The Switch Smell, The Open Closed Principle and the Strategy Pattern]({{site.baseurl}}/tema1-introduccion-a-javascript/design)
 
+procurando entender los principios SOLID, el problema del Switch Smell y el patrón 
+*Strategy Pattern*. Vea el vídeo de Elijah Manor.
+
 ## AST con Clases: evaluate como método del nodo
+
+Aplique el Strategy Pattern para eliminar el Switch Smell en el código de evaluación del 
+árbol.
 
 Modifique el AST para dar una solución OOP con clases: 
 
