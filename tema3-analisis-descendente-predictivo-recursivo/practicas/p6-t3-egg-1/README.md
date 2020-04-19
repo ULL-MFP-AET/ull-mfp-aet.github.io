@@ -306,3 +306,32 @@ Object.prototype[":="] = function(value, ...indices) {
 * [Apuntes del curso 16/17: Práctica: Evaluar Strategy Pattern](https://casianorodriguezleon.gitbooks.io/ull-esit-1617/content/practicas/practicaevaluastrategypattern.html)
 * [Apuntes del curso 16/17: Práctica: Creación de Paquetes NPM y Strategy Pattern](https://casianorodriguezleon.gitbooks.io/ull-esit-1617/content/practicas/practicamodulestrategypattern.html)
 * [JSHint](http://jshint.com/)
+
+## Recursos del Profesor
+
+* Repo [ULL-ESIT-PL-1819/private-egg](https://github.com/ULL-ESIT-PL-1819/private-egg)
+* Paths:
+
+```
+[~/.../egg/crguezl-egg(json2ast)]$ pwd -P
+/Users/casiano/local/src/javascript/PLgrado/eloquentjsegg
+```
+* Remotes:
+
+```
+[~/.../egg/crguezl-egg(json2ast)]$ git remote -v
+gist	git@gist.github.com:2ec9aeb4e3fa512eec26.git (fetch)
+
+pl1617	git@github.com:ULL-ESIT-PL-1617/egg.git (fetch)
+
+pl1819	git@github.com:ULL-ESIT-PL-1819/egg.git (fetch)
+
+private-egg	git@github.com:ULL-ESIT-PL-1718/egg.git (fetch)
+
+private-egg-1819	git@github.com:ULL-ESIT-PL-1819/private-egg.git (fetch)
+```
+
+* [Repo TFA-davafons](https://github.com/ULL-ESIT-PL-1920/TFA-davafons)
+  * `/Volumes/2020/pl/pl1819/practicas/TFA-04-16-2020-03-22-00/davafons`
+* [Repo p6-t3-egg-1-davafons](https://github.com/ULL-ESIT-PL-1920/p6-t3-egg-1-davafons)
+  * `/Volumes/2020/pl/pl1819/practicas/p6-t3-egg-1-04-16-2020-03-13-25/davafons`
