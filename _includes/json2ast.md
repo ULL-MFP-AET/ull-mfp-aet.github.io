@@ -12,4 +12,6 @@ Escriba una función `json2AST` que convierta la estructura de datos
 plana en un AST en los que cada nodo pertenece a la clase correspondiente.
 Modifique la función `runFromEVM` que ejecuta el código de la máquina virtual para que siga funcionando. 
 
+**Una Solucion:** (repo privado)
 
+* [json2AST.js](https://github.com/ULL-ESIT-PL-1920/TFA-davafons/blob/casiano/lib/parser/json2AST.js) 
