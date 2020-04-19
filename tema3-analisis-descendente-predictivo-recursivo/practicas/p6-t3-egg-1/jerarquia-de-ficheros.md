@@ -35,8 +35,7 @@ Este es un ejemplo de como organizar su jerarquía de ficheros de una forma esca
 │   │   ├── registry.js   // Exporta los mapas para exensión SpecialForms,  TopEnv, ...  
 │   │   └── require.js    // Soporte para módulos en Egg
 │   ├── parser
-│   │   ├── index.js      // main de Parser: exporta todas las clases públicas: Eggvm,
-  Value, Word, Apply, Regex, TopEnv, SpecialForms ...
+│   │   ├── index.js      // main de Parser: exporta todas las clases públicas: Eggvm,Value, Word, Apply, Regex, TopEnv, SpecialForms ...
 │   │   ├── json2AST.js   //  Desde el JSON construimos el AST con clases
 │   │   ├── lexer.js      // Exporta Clase Analizador Léxico. Usa tokenRe
 │   │   ├── optimizer.js  // Optimizaciones (constant folding)
