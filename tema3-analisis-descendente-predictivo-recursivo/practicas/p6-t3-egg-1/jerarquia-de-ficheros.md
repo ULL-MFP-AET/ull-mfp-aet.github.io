@@ -1,35 +1,10 @@
 # Posibles Organizaciones del Proyecto
 
-Este es un ejemplo de como organizar su jerarquía de ficheros:
-
-```
-[~/ull-pl1718-campus-virtual/tema3-analisis-sintactico/src/egg/crguezl-egg(private)]$ tree -I 'node_modules|examples|egg-*'
-  .
-  ├── README.md
-  ├── bin
-  │   ├── egg.js
-  │   ├── eggc.js
-  │   └── evm.js
-  ├── gulpfile.js
-  ├── lib
-  │   ├── ast.js            # Clases para los nodos del AST
-  │   ├── eggvm.js
-  │   ├── environment.js    # specialForms and topEnv initialization
-  │   ├── parse.js
-  │   └── registry.js       # specialForms and topEnv maps
-  ├── package-lock.json
-  ├── package.json
-  └── test
-      └── test.js
-
-  3 directories, 14 files
-```
-
-La función `evaluate` con el `switch` que estaba en `lib/eggvm.js` desaparece en esta versión
-
 La jerarquía de ficheros presentada es orientativa.
-Puede resultar conveniente aislar también en clases y en módulos 
-el analizador léxico, el sintáctico y el runner.
+Resultar conveniente aislar en clases y en módulos 
+el analizador léxico, el sintáctico, el runner, etc.
+
+Este es un ejemplo de como organizar su jerarquía de ficheros de una forma escalable:
 
 ```
 [.../TFA-04-16-2020-03-22-00/davafons(master)]$ tree -I 'node_modules|docs'
