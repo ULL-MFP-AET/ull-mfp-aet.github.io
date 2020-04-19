@@ -74,8 +74,8 @@ available via `npm run-script`:
     pre-commit install
 ```
 
-- `coverage` tests y cubrimiento usando [Istanbul command line interface](https://github.com/istanbuljs/nyc)
-- `esdoc`: [esdoc usage](https://esdoc.org/manual/usage.html)
+- `coverage`: tests y cubrimiento usando [Istanbul command line interface](https://github.com/istanbuljs/nyc)
+- `docs`: [esdoc usage](https://esdoc.org/manual/usage.html)
 
 ## pre-commit-install
 
