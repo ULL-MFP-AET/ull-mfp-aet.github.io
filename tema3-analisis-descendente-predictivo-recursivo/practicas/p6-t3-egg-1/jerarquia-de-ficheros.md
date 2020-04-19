@@ -50,7 +50,7 @@ Este es un ejemplo de como organizar su jerarquía de ficheros de una forma esca
 ├── package-lock.json  // bajo control de versiones
 ├── package.json // configurado para publicar como módulo en GitHub registry
 └── test
-    ├── examples-test.js // Ejemplos contra salida
+    ├── examples-test.js // Ejecución de ejemplos contra salida esperada
     ├── ...   
     └── tokenRegex-test.js 
 ```
