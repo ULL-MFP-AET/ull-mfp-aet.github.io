@@ -14,5 +14,5 @@ Modifique la función `runFromEVM` que ejecuta el código de la máquina virtual
 
 **Una Solucion:** (repo privado)
 
-* [json2AST.js](https://github.com/ULL-ESIT-PL-1920/TFA-davafons/blob/master/lib/interp/json2AST.js) 
 * [registry.js](https://github.com/ULL-ESIT-PL-1920/TFA-davafons/blob/master/lib/interp/registry.js#L295-L315) 
+* [json2AST.js](https://github.com/ULL-ESIT-PL-1920/TFA-davafons/blob/master/lib/interp/json2AST.js) 
