@@ -69,34 +69,17 @@ de manera que cada clase de objeto dispone de un método `evaluate`.
   module.exports = {Value, Word, Apply};
 ```
 
-Aisle estas clases en un fichero `lib/ast.js`:
-```
-[~/ull-pl1718-campus-virtual/tema3-analisis-sintactico/src/egg/crguezl-egg(private)]$ tree -I 'node_modules|examples|egg-*'
-  .
-  ├── README.md
-  ├── bin
-  │   ├── egg.js
-  │   ├── eggc.js
-  │   └── evm.js
-  ├── gulpfile.js
-  ├── lib
-  │   ├── ast.js            # Clases para los nodos del AST
-  │   ├── eggvm.js
-  │   ├── environment.js    # specialForms and topEnv initialization
-  │   ├── parse.js
-  │   └── registry.js       # specialForms and topEnv maps
-  ├── package-lock.json
-  ├── package.json
-  └── test
-      └── test.js
+Aisle estas clases en un fichero `lib/ast.js`. 
+La función `evaluate` con el `switch` que estaba inicialmente en `lib/eggvm.js` desaparece en esta versión
 
-  3 directories, 14 files
-```
-La función `evaluate` con el `switch` que estaba en `lib/eggvm.js` desaparece en esta versión
+**Una Solución**:
 
-La jerarquía de ficheros presentada es orientativa.
-Puede resultar conveniente aislar también en clases y en módulos 
-el analizador léxico, el sintáctico y el runner.
+* [ULL-ESIT-PL-1920/TFA-davafons/lib/interp/ast.js](https://github.com/ULL-ESIT-PL-1920/TFA-davafons/blob/casiano/lib/interp/ast.js) 
+
+
+## Jerarquía de Ficheros y Organización
+
+* [Jerarquía de Ficheros y Organización](jerarquia-de-ficheros)
 
 ## Actualice la máquina virtual `evm` para que pueda ejecutar los JSON
 
@@ -316,7 +299,7 @@ Object.prototype[":="] = function(value, ...indices) {
   [~/.../egg/crguezl-egg(json2ast)]$ pwd -P
   /Users/casiano/local/src/javascript/PLgrado/eloquentjsegg
   ```
-  
+
 * Remotes:
 
   ```
@@ -334,5 +317,6 @@ Object.prototype[":="] = function(value, ...indices) {
 
 * [Repo TFA-davafons](https://github.com/ULL-ESIT-PL-1920/TFA-davafons)
   * `/Volumes/2020/pl/pl1819/practicas/TFA-04-16-2020-03-22-00/davafons`
+  * [json2AST.js](https://github.com/ULL-ESIT-PL-1920/TFA-davafons/blob/casiano/lib/parser/json2AST.js)
 * [Repo p6-t3-egg-1-davafons](https://github.com/ULL-ESIT-PL-1920/p6-t3-egg-1-davafons)
   * `/Volumes/2020/pl/pl1819/practicas/p6-t3-egg-1-04-16-2020-03-13-25/davafons`
