@@ -228,6 +228,26 @@ cuya ejecución resulta en:
 1-hello egg
 ```
 
+Esto nos permite disponer del `map`de JS para los arrays:
+
+```
+.../p6-t3-egg-1-04-16-2020-03-13-25/davafons(casiano)]$ cat examples/map-js-chain.egg 
+```
+```js
+do(
+    define(x, array[1,2,3,4]),
+    define(inc, fun(x,i,g, +(x,1))),
+    print(x("map")[inc])
+)
+```
+
+cuya ejecución resulta en:
+
+```
+[.../p6-t3-egg-1-04-16-2020-03-13-25/davafons(casiano)]$ bin/egg.js examples/map-js-chain.egg 
+[ 2, 3, 4, 5 ]
+```
+
 ## Monkey Patching Objetos JS
 
 Utilizando las extensiones anteriores y haciendo Monkey patching de las clases principales de JS, podemos añadir propiedades y métodos a los objetos JavaScript, de manera que programas como este funcionen:
