@@ -70,32 +70,7 @@ available via `npm run-script`:
     nyc report --reporter=text-lcov | coveralls
   docs
     esdoc -c esdoc.json
-  pre-commit-install
-    pre-commit install
 ```
 
 - `coverage`: tests y cubrimiento usando [Istanbul command line interface](https://github.com/istanbuljs/nyc)
 - `docs`: [esdoc usage](https://esdoc.org/manual/usage.html)
-
-## pre-commit-install
-
-[husky](https://github.com/typicode/husky) will ensure that your `npm test` (or other specified scripts) passes before you can commit your changes.
-
-See this [Husky tutorial](https://www.vojtechruzicka.com/githooks-husky/). 
- 
-See also: [Is it good idea to require to commit only working code?](https://softwareengineering.stackexchange.com/questions/119784/is-it-good-idea-to-require-to-commit-only-working-code) 
-
-Adding the option `n` to `git commit` skips the `pre-commit` hook:
-
-```
-.../TFA-04-16-2020-03-22-00/davafons(casiano)]$ git ci -nam 'probando hooks'
-[casiano 93a0f15] probando hooks
- 2 files changed, 3 insertions(+), 2 deletions(-)
- ```
-
-## Referencias
-
-* [Git Hooks](https://git-scm.com/book/en/v2/Customizing-Git-Git-Hooks)
-* [husky](https://github.com/typicode/husky)
-  * [Husky tutorial](https://www.vojtechruzicka.com/githooks-husky/)
-* [git-branch-is](https://www.npmjs.com/package/git-branch-is)
