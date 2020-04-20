@@ -36,7 +36,7 @@ Code smells **are usually not bugs**. They are not technically incorrect and do 
 
 ### Switch Smell
 
-* El uso de un `switch` es siempre un punto débil: si introducimos nuevas casos deberemos modificar el código de la clase original en la que está el switch introduciendo un nuevo `case`.
+* El uso de un `switch` es a veces un punto débil: si introducimos nuevas casos deberemos modificar el código de la clase original en la que está el switch introduciendo un nuevo `case`.
 
  Viola el principio *Open/Closed*.
 
