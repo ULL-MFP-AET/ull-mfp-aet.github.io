@@ -371,7 +371,7 @@ Ejecución:
 
 Observe como `inside module` aparece una sola vez pese a que el módulo es *required* dos veces
 
-### RegExps
+## RegExps
 
 * Añada expresiones regulares al lenguaje Egg
 
