@@ -292,6 +292,9 @@ Object.prototype[":="] = function(value, ...indices) {
 
 ## Recursos del Profesor
 
+### Debugging Simple Examples
+
+{% include debugging-simple-egg-examples.md %}
 * Repo [ULL-ESIT-PL-1819/private-egg](https://github.com/ULL-ESIT-PL-1819/private-egg)
 * Paths:
 
