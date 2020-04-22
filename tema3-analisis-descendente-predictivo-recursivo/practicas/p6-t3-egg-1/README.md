@@ -256,6 +256,8 @@ do{
 4
 ```
 
+Aquí se ha extendido la clase JS Object con un método `sub` que permite la indexación del objeto.
+
 ```
 [.../p6-t3-egg-1-04-16-2020-03-13-25/davafons(casiano)]$ cat examples/setmultiarray.egg
 ```
