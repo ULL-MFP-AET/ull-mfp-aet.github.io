@@ -2,14 +2,13 @@
 
 1. Trabaje partiendo de la práctica anterior. Puede usar la misma *working copy*.
 2. Añada como remoto el repo de GitHub dado por la asignación de esta tarea. Quizá el nombre del remoto podría ser el nombre de la práctica. 
-3. Haga también una branch con el nombre de cada práctica y mamténgala actualizada hasta el último push de entrega.
+3. Haga también una branch con el nombre de cada práctica y manténgala actualizada hasta el último push de entrega.
 4. Mantenga los nombres de los ejemplos que aparecen en las descripciones de las prácticas.
   
 
 ## Índices Negativos
 
 Añada índices negativos (a la Ruby) para los arrays 
-
 
 ```
 [.../p6-t3-egg-1-04-16-2020-03-13-25/davafons(casiano)]$ cat examples/array-neg.egg
