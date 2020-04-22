@@ -10,11 +10,7 @@ previous:
 
 ## Metodologia
 
-1. Trabaje partiendo de la práctica anterior. Puede usar la misma *working copy*.
-2. Añada como remoto el repo de GitHub dado por la asignación de esta tarea. Quizá el nombre del remoto podría ser el nombre de la práctica. 
-3. Haga también una branch con el nombre de cada práctica y manténgala actualizada hasta el último push de entrega de esa práctica.
-4. Mantenga los nombres de los ejemplos que aparecen en las descripciones de las prácticas.
-  
+{% include metodologia-egg.md %}  
 
 ## Índices Negativos
 
@@ -382,63 +378,15 @@ Observe como `inside module` aparece una sola vez pese a que el módulo es *requ
 
 ## RegExps
 
-* Añada expresiones regulares al lenguaje Egg
-
-  **[~/.../crguezl-egg(develop-oop-idea)]$ cat examples/regexp.egg** 
-
-```js
-  do {
-    :=(d, r/
-           (?<year>  \d{4} ) -?  # year 
-           (?<month> \d{2} ) -?  # month 
-           (?<day>   \d{2} )     # day
-          /x),
-    print(d.test("1987-07-14")),  # true
-    :=(m, d.exec("1987-07-14")),  
-    print(m), #  [ '1987-07-14', '1987', '07', '14', index: 0, input: '1987-07-14' ]
-    print(m.index), # 0
-    
-    :=(x, RegExp.exec("2015-02-22", d)), 
-                    /*
-                    [ '2015-02-22',
-                      '2015',
-                      '02',
-                      '22',
-                      index: 0,
-                      input: '2015-02-22',
-                      year: '2015',
-                      month: '02',
-                      day: '22' ]
-                    */
-    print(x),
-    print(x.year), # 2015
-    print(x.month) # 02
-  }
-```
-
-Ejecución:
+* Añada expresiones regulares al lenguaje Egg. 
+* Las delimitaremos mediante `r/regexpExpression/` comenzando por `r/`y terminando con una `/`. 
+* Se admiten cualesquiera caracteres entre los delimitadores, incluyendo retornos de carro.
+* Use XRegExp para darle mayor potencia a las expresiones regulares. 
+* Recuerde que XRegExp admite al menos estas 0 o mas repeticiones de estas opciones en las expresiones regulares: `[nsxAgimuy]*` 
 
 ```
-  [~/.../crguezl-egg(develop-oop-idea)]$ bin/egg.js examples/regexp.egg 
-  true
-  [ '1987-07-14', '1987', '07', '14', index: 0, input: '1987-07-14' ]
-  0
-  [ '2015-02-22',
-    '2015',
-    '02',
-    '22',
-    index: 0,
-    input: '2015-02-22',
-    year: '2015',
-    month: '02',
-    day: '22' ]
-  2015
-  02
+[.../p6-t3-egg-1-04-16-2020-03-13-25/davafons(master)]$ cat examples/regex-simple.egg
 ```
-Otro ejemplo:
-
-  **[~/campus-virtual/1819/pl1819/introduccion/tema3-analisis-descendente-predictivo-recursivo/practicas/p5-t3-egg-0/egg/crguezl-egg(develop-oop-idea)]$ cat examples/regexp-simple.egg** 
-
 ```js
   do {
     :=(r, r/(\w+)
@@ -452,13 +400,78 @@ Otro ejemplo:
   }
 ```
 
-Ejecución:
+```
+[.../p6-t3-egg-1-04-16-2020-03-13-25/davafons(master)]$ bin/egg.js examples/regex-simple.egg 
+true
+[ 'a 42', 'a', '42', index: 4, input: ';;; a 42', groups: undefined ]
+```
+
+Otro ejemplo:
 
 ```
-  [~/campus-virtual/1819/pl1819/introduccion/tema3-analisis-descendente-predictivo-recursivo/practicas/p5-t3-egg-0/egg/crguezl-egg(develop-oop-idea)]$ bin/egg.js examples/regexp-simple.egg 
-  true
-  [ 'a 42', 'a', '42', index: 4, input: ';;; a 42' ]
-  ```
+[.../p6-t3-egg-1-04-16-2020-03-13-25/davafons(master)]$ cat examples/regex-2.egg 
+```
+```js
+do {
+  :=(d, r/
+         (?<year>  \d{4} ) -?  # year
+         (?<month> \d{2} ) -?  # month
+         (?<day>   \d{2} )     # day
+        /x),
+  print(d("test")("1987-07-14")),  # true
+  :=(m, d("exec")("1987-07-14")),
+  print(m), #  [ '1987-07-14', '1987', '07', '14', index: 0, input: '1987-07-14' ] 
+  print(m("index")), # 0
+
+  :=(x, RegExp("exec")("2015-02-22", d)),
+                  /*
+                  [ '2015-02-22',
+                    '2015',
+                    '02',
+                    '22',
+                    index: 0,
+                    input: '2015-02-22',
+                    year: '2015',
+                    month: '02',
+                    day: '22' ]
+                  */
+  print(x), 
+  print(x("year")), # 2015
+  print(x("month")) # 02
+}
+```
+
+```
+[.../p6-t3-egg-1-04-16-2020-03-13-25/davafons(master)]$ bin/egg.js examples/regex-2.egg 
+true
+[
+  '1987-07-14',
+  '1987',
+  '07',
+  '14',
+  index: 0,
+  input: '1987-07-14',
+  groups: undefined
+]
+0
+[
+  '2015-02-22',
+  '2015',
+  '02',
+  '22',
+  index: 0,
+  input: '2015-02-22',
+  groups: undefined,
+  year: '2015',
+  month: '02',
+  day: '22'
+]
+2015
+02
+```
+
+
+## Bucles for
 
 Extienda el lenguaje con uno o varios tipos de  bucle `for`
 
