@@ -259,16 +259,19 @@ do{
 Aquí se ha extendido la clase JS Object con un método `sub` que permite la indexación del objeto.
 
 ```
-[.../p6-t3-egg-1-04-16-2020-03-13-25/davafons(casiano)]$ cat examples/setmultiarray.egg
+[.../p6-t3-egg-1-04-16-2020-03-13-25/davafons(master)]$ cat examples/set-multiarray.egg
 ```
-```js
+```ruby
+
 do{
   :=(w, array[array[1,2], array[3,4]]),
-  w[":="](5, 0, 1),
-  print(w),
-  w[":="](-9, 1,0),
+  w["="](5, 0, 1),
   print(w)
 }
+```
+```
+[.../p6-t3-egg-1-04-16-2020-03-13-25/davafons(master)]$ bin/egg.js examples/set-multiarray.egg
+[ [ 1, 5 ], [ 3, 4 ] ]
 ```
 
 En este ejemplo hemos añadido el método `:=` a la clase JS `Object` que asigna el primer argumento al elemento del array indexado por los subsiguientes argumentos. 
