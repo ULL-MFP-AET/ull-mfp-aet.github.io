@@ -241,6 +241,22 @@ cuya ejecución resulta en:
 Utilizando las extensiones anteriores y haciendo Monkey patching de las clases principales de JS, podemos añadir propiedades y métodos a los objetos JavaScript, de manera que programas como este funcionen:
 
 ```
+[.../p6-t3-egg-1-04-16-2020-03-13-25/davafons(master)]$ cat examples/multi-sub-array.egg
+```
+```ruby
+do{
+  define(x, arr[1, arr[3, 4]]),
+  print(x["sub"](1, 1)),
+  print(element[x, 1, 1])
+}
+```
+```
+[.../p6-t3-egg-1-04-16-2020-03-13-25/davafons(master)]$ bin/egg.js examples/multi-sub-array.egg
+4
+4
+```
+
+```
 [.../p6-t3-egg-1-04-16-2020-03-13-25/davafons(casiano)]$ cat examples/setmultiarray.egg
 ```
 ```js
