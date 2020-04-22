@@ -1,10 +1,10 @@
-# Práctica: Egg. A Programming Language. Continuación. p7-t3-egg-2
+# Práctica: Extending Egg.  p7-t3-egg-2
 
-
-Use el repo de GitHub dado por la asignación de esta tarea.
-Trabaje partiendo de la práctica anterior.
-
-Mantenga los nombres de los ejemplos que aparecen en esta descripción.
+1. Trabaje partiendo de la práctica anterior. Puede usar la misma *working copy*.
+2. Añada como remoto el repo de GitHub dado por la asignación de esta tarea. Quizá el nombre del remoto podría ser el nombre de la práctica. 
+3. Haga también una branch con el nombre de cada práctica y mamténgala actualizada hasta el último push de entrega.
+4. Mantenga los nombres de los ejemplos que aparecen en las descripciones de las prácticas.
+  
 
 ## Índices Negativos
 
