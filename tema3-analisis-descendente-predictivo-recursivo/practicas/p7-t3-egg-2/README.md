@@ -1,3 +1,10 @@
+---
+layout: default
+title: p7-t3-egg-2
+permalink: /tema3-analisis-descendente-predictivo-recursivo/practicas/p7-t3-egg-2/
+previous: 
+  url: /tema3-analisis-descendente-predictivo-recursivo/practicas/p6-t3-egg-1/
+---
 # Práctica: Extending Egg.  p7-t3-egg-2
 
 1. Trabaje partiendo de la práctica anterior. Puede usar la misma *working copy*.
@@ -11,7 +18,7 @@
 Añada índices negativos (a la Ruby) para los arrays 
 
 ```
-[.../p6-t3-egg-1-04-16-2020-03-13-25/davafons(casiano)]$ cat examples/array-neg.egg
+[.../p7-t3-egg-2-04-16-2020-03-13-25/davafons(casiano)]$ cat examples/array-neg.egg
 ```
 ```ruby
 do{
@@ -20,7 +27,7 @@ do{
 }
 ```
 ```
-[.../p6-t3-egg-1-04-16-2020-03-13-25/davafons(casiano)]$ bin/egg.js examples/array-neg.egg
+[.../p7-t3-egg-2-04-16-2020-03-13-25/davafons(casiano)]$ bin/egg.js examples/array-neg.egg
 [ 2, 3 ]
 ```
 
@@ -29,7 +36,7 @@ do{
 * Añada la posibilidad de indexar con mas de un índice a `element`
 
  ```
- [.../p6-t3-egg-1-04-16-2020-03-13-25/davafons(casiano)]$ cat examples/array-index.egg
+ [.../p7-t3-egg-2-04-16-2020-03-13-25/davafons(casiano)]$ cat examples/array-index.egg
 ```
 ```ruby
 do(
@@ -45,7 +52,7 @@ do(
   Ejecución:
 
  ```
-[.../p6-t3-egg-1-04-16-2020-03-13-25/davafons(casiano)]$ bin/egg.js examples/array-index.egg
+[.../p7-t3-egg-2-04-16-2020-03-13-25/davafons(casiano)]$ bin/egg.js examples/array-index.egg
 1
 [ 2, 3 ]
 3
@@ -59,7 +66,7 @@ Extienda `set` para que se puedan modificar elementos de los arrays
 
 
 ```
-[.../p6-t3-egg-1-04-16-2020-03-13-25/davafons(casiano)]$ cat examples/array-set-index.egg
+[.../p7-t3-egg-2-04-16-2020-03-13-25/davafons(casiano)]$ cat examples/array-set-index.egg
 ```
 ```ruby
 do(
@@ -74,7 +81,7 @@ do(
   Ejecución:
 
 ```
-[.../p6-t3-egg-1-04-16-2020-03-13-25/davafons(casiano)]$ bin/egg.js examples/array-set-index.egg
+[.../p7-t3-egg-2-04-16-2020-03-13-25/davafons(casiano)]$ bin/egg.js examples/array-set-index.egg
 [ 1, 2, 9, [ 9, 8, 7 ] ]
 [ 1, 2, 9, [ 9, 1000, 7 ] ]
 ```
@@ -82,7 +89,7 @@ do(
 No se debería poder hacer un `set` con índices de una variable no estructurada
 
 ```
-[.../p6-t3-egg-1-04-16-2020-03-13-25/davafons(casiano)]$ cat examples/set-error.egg
+[.../p7-t3-egg-2-04-16-2020-03-13-25/davafons(casiano)]$ cat examples/set-error.egg
 ```
 ```ruby
 do(
@@ -90,7 +97,7 @@ do(
   set(x, 1, 2),
   print(x)
 )
-[.../p6-t3-egg-1-04-16-2020-03-13-25/davafons(casiano)]$ bin/egg.js examples/set-error.egg
+[.../p7-t3-egg-2-04-16-2020-03-13-25/davafons(casiano)]$ bin/egg.js examples/set-error.egg
 TypeError: The object '4' is not indexable!  
 ```
 
@@ -99,7 +106,7 @@ TypeError: The object '4' is not indexable!
 * Añada mapas/hashes al lenguaje Egg
 
 ```
-[.../p6-t3-egg-1-04-16-2020-03-13-25/davafons(casiano)]$ cat examples/map.egg
+[.../p7-t3-egg-2-04-16-2020-03-13-25/davafons(casiano)]$ cat examples/map.egg
 ```
 ```ruby
 do {
@@ -118,7 +125,7 @@ do {
 Ejecución:
 
 ```
-[.../p6-t3-egg-1-04-16-2020-03-13-25/davafons(casiano)]$ bin/egg.js examples/map.egg
+[.../p7-t3-egg-2-04-16-2020-03-13-25/davafons(casiano)]$ bin/egg.js examples/map.egg
 4
 3
 50
@@ -129,7 +136,7 @@ Ejecución:
 Nos gustaría poder escribir los hashes/mapas usando `:` para separar el nombre de la clave del valor, como en este ejemplo:
 
 ```
-[.../p6-t3-egg-1-04-16-2020-03-13-25/davafons(casiano)]$ cat examples/map-colon.egg
+[.../p7-t3-egg-2-04-16-2020-03-13-25/davafons(casiano)]$ cat examples/map-colon.egg
 ```
 ```ruby
 do {
@@ -142,7 +149,7 @@ do {
 }
 ```
 ```
-[.../p6-t3-egg-1-04-16-2020-03-13-25/davafons(casiano)]$ bin/egg.js examples/map-colon.egg
+[.../p7-t3-egg-2-04-16-2020-03-13-25/davafons(casiano)]$ bin/egg.js examples/map-colon.egg
 3
 4
 3
@@ -179,7 +186,7 @@ y *trucando* nuestro analizador léxico para que siempre que una `WORD` vaya seg
 Haga que los mapas tengan un método `sub`  que permita indexar los mapas:
 
  ```
-[.../p6-t3-egg-1-04-16-2020-03-13-25/davafons(casiano)]$ cat examples/map-sub.egg
+[.../p7-t3-egg-2-04-16-2020-03-13-25/davafons(casiano)]$ cat examples/map-sub.egg
 ```
 ```ruby 
 do(
@@ -194,7 +201,7 @@ do(
   Ejecución:
 
 ```
-[.../p6-t3-egg-1-04-16-2020-03-13-25/davafons(casiano)]$ bin/egg.js examples/map-sub.egg
+[.../p7-t3-egg-2-04-16-2020-03-13-25/davafons(casiano)]$ bin/egg.js examples/map-sub.egg
 1
 5
 3
@@ -206,7 +213,7 @@ do(
 Añada objetos al lenguaje Egg de manera que podamos escribir programas como este:
 
 ```
-.../p6-t3-egg-1-04-16-2020-03-13-25/davafons(casiano)]$ cat examples/objects.egg
+.../p7-t3-egg-2-04-16-2020-03-13-25/davafons(casiano)]$ cat examples/objects.egg
 ```
 ```ruby
 do (
@@ -227,7 +234,7 @@ do (
   Ejecución:
 
 ```
-[.../p6-t3-egg-1-04-16-2020-03-13-25/davafons(casiano)]$ bin/egg.js examples/objects.egg
+[.../p7-t3-egg-2-04-16-2020-03-13-25/davafons(casiano)]$ bin/egg.js examples/objects.egg
 0
 4
 5  
@@ -252,7 +259,7 @@ es equivalente a esta otra expresión:
 Esto es,el dot es como una llamada/apply del objeto en el que el primer argumento es el atributo/método
 
 ```
-[.../p6-t3-egg-1-04-16-2020-03-13-25/davafons(casiano)]$ cat examples/dot.egg
+[.../p7-t3-egg-2-04-16-2020-03-13-25/davafons(casiano)]$ cat examples/dot.egg
 ```
 ```ruby
 do(
@@ -264,7 +271,7 @@ do(
 ```
 
 ```
-[.../p6-t3-egg-1-04-16-2020-03-13-25/davafons(casiano)]$ bin/egg.js examples/dot.egg
+[.../p7-t3-egg-2-04-16-2020-03-13-25/davafons(casiano)]$ bin/egg.js examples/dot.egg
 1-4-5
 5
 ```
@@ -274,7 +281,7 @@ Otro ejemplo, esta vez con objetos Egg.
   **[~/.../crguezl-egg(private2019)]$ cat examples/dot-obj-2.egg**
 
  ```
- .../p6-t3-egg-1-04-16-2020-03-13-25/davafons(casiano)]$ cat examples/dot-obj-2.egg
+ .../p7-t3-egg-2-04-16-2020-03-13-25/davafons(casiano)]$ cat examples/dot-obj-2.egg
 ```
 ```ruby
 do (
@@ -293,9 +300,9 @@ do (
 )
 ```
 ```
-[.../p6-t3-egg-1-04-16-2020-03-13-25/davafons(casiano)]$ bin/egg.js examples/dot-
+[.../p7-t3-egg-2-04-16-2020-03-13-25/davafons(casiano)]$ bin/egg.js examples/dot-
 dot-num.egg        dot-num.egg.evm    dot-obj-2.egg      dot-obj-2.egg.evm  
-[.../p6-t3-egg-1-04-16-2020-03-13-25/davafons(casiano)]$ bin/egg.js examples/dot-obj-2.egg
+[.../p7-t3-egg-2-04-16-2020-03-13-25/davafons(casiano)]$ bin/egg.js examples/dot-obj-2.egg
 3
 3
 3
@@ -309,7 +316,7 @@ Otro ejemplo con números:
   **[~/.../crguezl-egg(private2019)]$ cat examples/dot-num.egg**
 
 ```
-  [.../p6-t3-egg-1-04-16-2020-03-13-25/davafons(casiano)]$ cat examples/dot-num.egg
+  [.../p7-t3-egg-2-04-16-2020-03-13-25/davafons(casiano)]$ cat examples/dot-num.egg
 ```
 ```ruby
 do{
@@ -321,7 +328,7 @@ do{
 }
 ```
 ```
-[.../p6-t3-egg-1-04-16-2020-03-13-25/davafons(casiano)]$ bin/egg.js examples/dot-num.egg
+[.../p7-t3-egg-2-04-16-2020-03-13-25/davafons(casiano)]$ bin/egg.js examples/dot-num.egg
 4.00
 4.00
 4.00
