@@ -4,11 +4,16 @@ title: p6-t3-egg-1
 permalink: /tema3-analisis-descendente-predictivo-recursivo/practicas/p6-t3-egg-1/
 previous: 
   url: /tema3-analisis-descendente-predictivo-recursivo/practicas/p5-t3-egg-0/
+next:
+  url: /tema3-analisis-descendente-predictivo-recursivo/practicas/p7-t3-egg-2/
 ---
 
 # Práctica: Egg. A Programming Language. Continuación. (p6-t3-egg-1)
 
-* Use el repo de GitHub dado por la asignación de esta tarea partiendo de la [práctica anterior](https://crguezl.github.io/ull-esit-1617/_book/practicas/practica-egg.html)
+
+## Metodologia
+
+{% include metodologia-egg.md %}  
 
 ## Design: Smells, The Switch Smell, The Open Closed Principle and the Strategy Pattern
 

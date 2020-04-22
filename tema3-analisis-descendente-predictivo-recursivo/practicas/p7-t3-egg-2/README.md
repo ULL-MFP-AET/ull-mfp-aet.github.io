@@ -5,7 +5,10 @@ permalink: /tema3-analisis-descendente-predictivo-recursivo/practicas/p7-t3-egg-
 previous: 
   url: /tema3-analisis-descendente-predictivo-recursivo/practicas/p6-t3-egg-1/
 ---
+
 # Práctica: Extending Egg.  p7-t3-egg-2
+
+## Metodologia
 
 1. Trabaje partiendo de la práctica anterior. Puede usar la misma *working copy*.
 2. Añada como remoto el repo de GitHub dado por la asignación de esta tarea. Quizá el nombre del remoto podría ser el nombre de la práctica. 
