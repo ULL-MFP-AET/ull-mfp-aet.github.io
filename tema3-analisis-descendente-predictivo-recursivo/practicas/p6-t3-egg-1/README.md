@@ -74,6 +74,22 @@ de manera que cada clase de objeto dispone de un método `evaluate`.
   module.exports = {Value, Word, Apply};
 ```
 
+Por supuesto, ahora, cuando el parser detecta un nuevo nodo en su construcción  del árbol, crea un objeto de la clase correspondiente:
+
+```js
+  parseExpression() {
+    let expr;
+    if (this.lookahead.type === "STRING") {
+      expr = new Value(this.lookahead);
+    } else if (this.lookahead.type === "NUMBER") {
+      ...
+    } else if (this.lookahead.type === "WORD") {
+      expr = new Word(this.lookahead);
+    } else {
+      throw this.__parserSyntaxError("Unrecognized token while parsing the expression.");
+    }
+```
+
 Aisle estas clases en un fichero `lib/ast.js`. 
 La función `evaluate` con el `switch` que estaba inicialmente en `lib/eggvm.js` desaparece en esta versión
 

@@ -382,7 +382,9 @@ Observe como `inside module` aparece una sola vez pese a que el módulo es *requ
 * Las delimitaremos mediante `r/regexpExpression/` comenzando por `r/`y terminando con una `/`. 
 * Se admiten cualesquiera caracteres entre los delimitadores, incluyendo retornos de carro.
 * Use XRegExp para darle mayor potencia a las expresiones regulares. 
-* Recuerde que XRegExp admite al menos estas 0 o mas repeticiones de estas opciones en las expresiones regulares: `[nsxAgimuy]*` 
+* Recuerde que XRegExp admite 0 o mas repeticiones de estas opciones en las expresiones regulares: `[nsxAgimuy]*` 
+* Las expresiones regulares son un nuevo tipo de token y conllevan una ligera modificación de la sintáxis. 
+* Así mismo los AST ahora tendrán un nuevo tipo `regex`
 
 ```
 [.../p6-t3-egg-1-04-16-2020-03-13-25/davafons(master)]$ cat examples/regex-simple.egg
@@ -474,6 +476,54 @@ true
 ## Bucles for
 
 Extienda el lenguaje con uno o varios tipos de  bucle `for`
+
+### Bucle for convencional
+
+```
+[.../TFA-04-16-2020-03-22-00/davafons(casiano)]$ cat examples/for.egg
+```
+```ruby
+do(
+  for(define(x, 0), <(x, 5), ++(x),
+    print(x)
+  )
+)
+```
+
+```
+[.../TFA-04-16-2020-03-22-00/davafons(casiano)]$ bin/egg.js examples/for.egg
+0
+1
+2
+3
+4
+```
+
+### Bucle foreach
+
+```
+[.../TFA-04-16-2020-03-22-00/davafons(casiano)]$ cat examples/foreach.egg
+```
+
+```ruby
+do {
+  def(x, arr(1, 2, 3)),
+  foreach(x, x, print(x)), # Different x from inner and outer scope
+
+  def(y, map(a: 1, b: 2, c: 3)),
+  foreach(key, y.keys(), print(key.toUpperCase()))
+}
+```
+
+```
+[.../TFA-04-16-2020-03-22-00/davafons(casiano)]$ bin/egg.js examples/foreach.egg
+1
+2
+3
+A
+B
+C
+```
 
 ## Recursos
 
