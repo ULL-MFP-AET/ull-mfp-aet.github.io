@@ -86,8 +86,11 @@ Por supuesto, ahora, cuando el parser detecta un nuevo nodo en su construcción 
     } else if (this.lookahead.type === "WORD") {
       expr = new Word(this.lookahead);
     } else {
-      throw this.__parserSyntaxError("Unrecognized token while parsing the expression.");
+      throw ...
     }
+
+    return this.parseApply(expr);
+  }
 ```
 
 Aisle estas clases en un fichero `lib/ast.js`. 
