@@ -24,7 +24,18 @@ Escriba un analizador sintáctico descendente recursivo (PDR) que genere [árbol
 
 
 
-## Un Ejemplo de Gramática de un Alumno de un curso pasado
+
+## Niklaus Wirth PL/0
+
+* [Niklaus Wirth's PL/0](https://en.wikipedia.org/wiki/Recursive_descent_parser) in the Wikipedia.  Sencillo. Cumple todos los requisitos solicitados
+
+Quizá la opción mas sencilla sea empezar con un lenguaje basado en 
+[Niklaus Wirth's PL/0](https://en.wikipedia.org/wiki/Recursive_descent_parser) y -si se dispone de tiempo -
+irlo extendiendo hacia [mini-pascal](https://github.com/ULL-ESIT-PL-1819/mini-pascal-compiler/blob/master/grammar).
+
+Veamos un ejemplo basado en PL/0:
+
+### Grammar
 
 * ∑ = tokens
 * V = { expressions, expression, comparison, sum, factor, operand  }
@@ -63,8 +74,10 @@ Escriba un analizador sintáctico descendente recursivo (PDR) que genere [árbol
 
 ### Tokens
 
+En XRegExp, dobles escapes:
+
 ```
-    WHITES = #.*
+    WHITES = \\s+ | #.*
     SENTENCE_SEPARATOR = [;]
     NUM =
         \\d*          # Can have integer digits 
@@ -102,6 +115,7 @@ Escriba un analizador sintáctico descendente recursivo (PDR) que genere [árbol
 
 ```
 
+
 ### Infix program examples
 
 Below you can see an infix program that declares an array with 4 elements. Prints the array, the length of the array, the string resulting of calling the `join` method of the array and the array resulting of calling the `map` method to return an array formed with the double of each element
@@ -129,13 +143,13 @@ begin
 end
 ```
 
-You can run the previous program, located at `examples/arrays.inf` with 
+Execution of `examples/arrays.inf`  
 
 ```bash
 bin/infix2egg.js --run examples/arrays.inf
 ```
 
-And the result would be 
+And the result is 
 
 ```
 [ 2, 3, 4, 5 ]
@@ -144,15 +158,13 @@ Array length: 4
 [ 4, 6, 8, 10 ]
 ```
 
-Below you can see another program example showing the benefit in readability of making `if` an expression
+Another  example:
 
 ```ruby
 begin
     let variable = if "string" != "string" then 2 else 3
 end
 ```
-
-You can see more examples in the `examples` directory and the tests at `test/Programs.test.js`
 
 ### Executable
 
@@ -169,22 +181,20 @@ You can see more examples in the `examples` directory and the tests at `test/Pro
     -p --plugins [plugin1:plugin2:...:pluginK]  specify infix/egg plugins
     -h, --help                                  output usage information
 ```
-## Posibles puntos de partida para su Gramática
 
-### Buenos puntos de partida
+## Otros buenos puntos de partida
 
-  * [Niklaus Wirth's PL/0](https://en.wikipedia.org/wiki/Recursive_descent_parser) in the Wikipedia.  Sencillo. Cumple todos los requisitos solicitados
-  * [Tiny-C](https://github.com/ULL-ESIT-PL-1718/tiny-c) 
-      - Un subconjunto hiper-minimal de C con un compilador y una VM  escritas en C. 
-      - Contiene un lexer
-      - Un parser PDR que construye un AST
-      - Un generador de código para una VM
-      - Un intérprete para la VM
-  * [Syntax of Mini-Pascal](https://www.cs.helsinki.fi/u/vihavain/k06/okk/items/minipascalsyntax.html)
-      - [Mini Pascal Compiler in Python](https://github.com/ULL-ESIT-PL-1819/mini-pascal-compiler)
-      - [Gramática](https://github.com/ULL-ESIT-PL-1819/mini-pascal-compiler/blob/master/grammar)
-      - Un posible estrategia para esta práctica es empezar con PL/0 e ir haciendo crecer el lenguaje hasta convertirlo en Mini Pascal.
-  * [Tiny Basic](https://en.wikipedia.org/wiki/Tiny_BASIC). Muy sencillo
+* [Tiny-C](https://github.com/ULL-ESIT-PL-1718/tiny-c) 
+   - Un subconjunto hiper-minimal de C con un compilador y una VM  escritas en C. 
+   - Contiene un lexer
+   - Un parser PDR que construye un AST
+   - Un generador de código para una VM
+   - Un intérprete para la VM
+* [Syntax of Mini-Pascal](https://www.cs.helsinki.fi/u/vihavain/k06/okk/items/minipascalsyntax.html)
+   - [Mini Pascal Compiler in Python](https://github.com/ULL-ESIT-PL-1819/mini-pascal-compiler)
+   - [Gramática](https://github.com/ULL-ESIT-PL-1819/mini-pascal-compiler/blob/master/grammar)
+   - Un posible estrategia para esta práctica es empezar con PL/0 e ir haciendo crecer el lenguaje hasta convertirlo en Mini Pascal.
+* [Tiny Basic](https://en.wikipedia.org/wiki/Tiny_BASIC). Muy sencillo
 
 ## Puntos de partida muy Sencillos
 
@@ -216,11 +226,12 @@ You can see more examples in the `examples` directory and the tests at `test/Pro
 
 ## Sugerencias
 
-1. A la hora de escribir el ejecutable que hace la traducción se encontrará con el problema de parsear la línea de comandos.
+A la hora de escribir el ejecutable que hace la traducción se encontrará con el problema de parsear la línea de comandos.
 Puede usar el módulo [commander](https://www.npmjs.com/package/commander) para ello
-2. Dado que esta práctica esta en un repo y su intérprete de `egg` está en otro repo, tenemos que resolver el problema de las "dependecias externas". Podríamos usar submódulos git o simplemente publicar en npm nuestro intérprete egg y usarlo en nuestro compilador del lenguaje infijo que hemos diseñado
 
-  El ejemplo que sigue provee soluciones a estos problemas:
+Dado que esta práctica esta en un repo y su intérprete de `egg` está en otro repo, tenemos que resolver el problema de las "dependecias externas". Podríamos usar submódulos git pero en este caso como tenemos publicado en github-registry nuestro intérprete egg lo usaremos en nuestro compilador del lenguaje infijo que hemos diseñado
+
+El ejemplo que sigue muestra soluciones a estos problemas:
 
   **[~/.../crguezl-infix2-egg(master)]$ cat bin/infix2egg.js**
 
@@ -263,63 +274,6 @@ Puede usar el módulo [commander](https://www.npmjs.com/package/commander) para 
     commander.help();
   }
   ```
-
-3. Posiblemente de los lenguajes considerados en la sección previa la opción mas sencilla sea empezar con un lenguaje basado en 
-[Niklaus Wirth's PL/0](https://en.wikipedia.org/wiki/Recursive_descent_parser) y -si se dispone de tiempo -
-irlo extendiendo hacia [mini-pascal](https://github.com/ULL-ESIT-PL-1819/mini-pascal-compiler/blob/master/grammar).
-Veamos un ejemplo basado en PL/0:
-
-  ```yacc
-      expressions → expression
-          | 'begin' expression (SENTENCE_SEPARATOR expression)* 'end'
-
-      expression → 'if' expression 'then' expressions
-          | 'if' expression 'then' expressions 'else' expressions
-          | 'while' expression 'do' expressions
-          | 'func' ID '(' (ID ',')* ID? ')' expressions
-          | 'func' '(' (ID ',')* ID? ')' expressions
-          | 'let' ID '=' expression
-          | 'set' ID '=' expression
-          | 'call' ID '(' (expression ',')* expression ')'
-          | 'call' ID '(' ')'
-          | comparison
-
-      comparison → sum (COMPOP sum)*
-
-      sum → factor (ADDOP factor)*
-
-      factor → unary (MULOP unary)*
-
-      unary → UNARYOP ? operand
-
-      operand → ID
-          | NUM
-          | STRING
-          | BOOLEAN
-          | '(' expression ')'
-  ```
-
-  Sigue un ejemplo de programa generado por esta gramática, en el que usamos algunas de las primitivas proveídas por la máquina virtual Egg como `array` y `print`
-
-  ```ruby
-  begin
-      # array is an egg function that returns an array
-      let result = call array(2, 3, 4, 5);
-
-      # print is also egg function
-      call print(result);
-  end
-  ```
-
-  Cuando lo ejecutamos:
-
-  ```
-  bin/infix2egg.js --run examples/arrays.inf
-  [ 2, 3, 4, 5 ]
-  ```
-
-
-
 
 ## Recursos
 

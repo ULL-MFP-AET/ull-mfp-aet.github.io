@@ -63,7 +63,6 @@ do(
 
 Extienda `set` para que se puedan modificar elementos de los arrays
 
-
 ```
 [.../p7-t3-egg-2-04-16-2020-03-13-25/davafons(casiano)]$ cat examples/array-set-index.egg
 ```
@@ -277,9 +276,10 @@ do(
 
 Otro ejemplo, esta vez con objetos Egg.
 
-  **[~/.../crguezl-egg(private2019)]$ cat examples/dot-obj-2.egg**
-
- ```
+```
+[~/.../crguezl-egg(private2019)]$ cat examples/dot-obj-2.egg
+```
+```
  .../p7-t3-egg-2-04-16-2020-03-13-25/davafons(casiano)]$ cat examples/dot-obj-2.egg
 ```
 ```ruby
