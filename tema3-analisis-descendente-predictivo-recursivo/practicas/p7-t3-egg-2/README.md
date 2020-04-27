@@ -4,6 +4,8 @@ title: p7-t3-egg-2
 permalink: /tema3-analisis-descendente-predictivo-recursivo/practicas/p7-t3-egg-2/
 previous: 
   url: /tema3-analisis-descendente-predictivo-recursivo/practicas/p6-t3-egg-1/
+next:
+  url: /tema3-analisis-descendente-predictivo-recursivo/practicas/p8-t3-pdr-infix2egg/
 ---
 
 # Práctica: Extending Egg.  p7-t3-egg-2

@@ -1,3 +1,12 @@
+---
+layout: default
+title: p8-t3-pdr-infix2egg
+permalink: /tema3-analisis-descendente-predictivo-recursivo/practicas/p8-t3-pdr-infix2egg/
+previous: 
+  url: /tema3-analisis-descendente-predictivo-recursivo/practicas/p7-t3-egg-2/
+---
+
+
 # Práctica: Analizador Descendente Predictivo Recursivo. Desde Lenguajes de Infijo a EGG Virtual Machine (p8-t3-pdr-infix2eg)
 
 ## Descripción
