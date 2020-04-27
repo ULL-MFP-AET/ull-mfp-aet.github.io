@@ -301,8 +301,6 @@ do (
 )
 ```
 ```
-[.../p7-t3-egg-2-04-16-2020-03-13-25/davafons(casiano)]$ bin/egg.js examples/dot-
-dot-num.egg        dot-num.egg.evm    dot-obj-2.egg      dot-obj-2.egg.evm  
 [.../p7-t3-egg-2-04-16-2020-03-13-25/davafons(casiano)]$ bin/egg.js examples/dot-obj-2.egg
 3
 3
@@ -313,8 +311,6 @@ dot-num.egg        dot-num.egg.evm    dot-obj-2.egg      dot-obj-2.egg.evm
 
 
 Otro ejemplo con números:
-
-  **[~/.../crguezl-egg(private2019)]$ cat examples/dot-num.egg**
 
 ```
   [.../p7-t3-egg-2-04-16-2020-03-13-25/davafons(casiano)]$ cat examples/dot-num.egg
