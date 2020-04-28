@@ -78,7 +78,7 @@ La práctica de evaluación consistirá en la entrega en GitHub Classroom de un 
 * Fecha de cierre de Actas: 15 de Julio
 * Fecha tentativa de revisión de la evaluación: 13 de Julio
 * Fecha tentativa para la Publicación de notas definitivas para Julio: 10 de Julio
-* Fecha última de entrega de Prácticas para Julio: 6 de Julio
+* Fecha última de entrega de Prácticas para Julio: 3 de Julio
 * Fecha de examen: 6 de Julio
   
 ### Entregas de Prácticas en Septiembre:
@@ -86,7 +86,7 @@ La práctica de evaluación consistirá en la entrega en GitHub Classroom de un 
 * Fecha de cierre de Actas: 18 de Septiembre
 * Fecha tentativa de revisión de la evaluación: 15 de Septiembre
 * Fecha tentativa para la Publicación de notas definitivas para Septiembre: 10 de Septiembre
-* Fecha última de entrega de Prácticas para Septiembre: 7 de Septiembre
+* Fecha última de entrega de Prácticas para Septiembre: 3 de Septiembre
 * Fecha de examen: 10 de Septiembre
 
 
