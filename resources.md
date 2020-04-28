@@ -15,7 +15,7 @@
 
 ## Corona Virus
 
-* [Adaptación de la Asignatura al Formato No Presencial](covid10)
+* [Adaptación de la Asignatura al Formato No Presencial](covid19)
 
 ## BULL
 
