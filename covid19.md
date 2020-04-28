@@ -2,8 +2,12 @@
 
 ## Tutorías no presenciales
 
-Medio/s para realizar las tutorías:
-Chat virtual ([chat.google.com](https://chat.google.com) aula ULL-ESIT-PL) y videoconferencia (Google Meet).
+Medios para realizar las tutorías:
+
+* Chat virtual ([chat.google.com](https://chat.google.com) aula ULL-ESIT-PL) y 
+* videoconferencia (Google Meet).
+* Campus Virtual
+* GitHub Issues
  
 En el caso de las tutorías, estamos utilizando las herramientas de chat y meet de Google para dudas y preguntas relacionadas con los contenidos teóricos, la asignatura y las prácticas. También utilizamos los issues de GitHub para resolver cuestiones sobre las prácticas. Bajo demanda se realizan tutorías mediante videoconferencia.
 
@@ -15,7 +19,7 @@ Compartidos via Google Drive, el Campus (Kaltura) y Youtube.
 
 ### Sesiones virtuales/clases 
 
-Se respeta el horario de clase y de tutorías anterior a la crisis. Realizamos videoconferencias (Google Meet). Las de teoría están siendo grabadas y publicadas en el campus virtual mediante Kaltura.
+Se respeta el horario de clase y de tutorías anterior a la crisis. Realizamos las clases mediante videoconferencias (Google Meet). Las de teoría están siendo grabadas y publicadas en el campus virtual mediante Kaltura.
 
 ### Inclusión de documentación sobre cada tema
 
@@ -43,11 +47,12 @@ Para las dudas, utilizamos las herramientas del Campus, las de Google y las de G
 * La entrega del Trabajo Fin de Asignatura es obligatorio (TFA).  
   * Se deberá hacer una presentación del TFA
 
-El alumno tiene hasta el 28 de Mayo para entregar las prácticas y superar la evaluación continua. (Las notas tendrán que estar publicadas sobre el 30 ya que el primer examen de Junio  es el 5 de Junio). Si la supera no tiene que presentarse a examen (pero puede hacerlo para si desea subir nota).
+El alumno tiene hasta el 28 de Mayo para entregar las prácticas y superar la evaluación continua. (Las notas tendrán que estar publicadas sobre el 30 ya que el primer examen de Junio  es el 5 de Junio). Si la supera no tiene que presentarse a examen (pero puede hacerlo si desea subir nota).
 
 ### Alumnos que no superan pero se acogen a Evaluación Contínua
 
-Los alumnos que han asistido a clase, tutorías y han participado en un número suficiente de actividades podrán entregar las prácticas hasta dos días antes de cada convocatoria.
+Los alumnos que han asistido a clase, tutorías y han participado en un número suficiente de actividades pero no han superado la asignatura podrán entregar las prácticas hasta dos días antes de cada convocatoria.
+
 Deberán hacer una defensa de las prácticas presentadas en tiempo acordado con el profesor.
 El profesor les indicará si está aprobado o si debe mejorar  para entregarlas antes de la siguiente convocatoria.
 
