@@ -15,7 +15,7 @@
 
 ## Corona Virus
 
-* [RECURSOS DISPONIBLES PARA REALIZAR ACTIVIDAD DOCENTE NO PRESENCIAL](https://campusvirtual.ull.es/1920/course/view.php?id=201913946)
+* [Adaptación de la Asignatura al Formato No Presencial](covid10)
 
 ## BULL
 
