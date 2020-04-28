@@ -47,11 +47,10 @@ Para las dudas, utilizamos las herramientas del Campus, las de Google y las de G
 * La entrega del Trabajo Fin de Asignatura es obligatorio (TFA).  
   * Se deberá hacer una presentación del TFA
 
-El alumno tiene hasta el 28 de Mayo para entregar las prácticas y superar la evaluación continua. (Las notas tendrán que estar publicadas sobre el 30 ya que el primer examen de Junio  es el 5 de Junio). Si la supera no tiene que presentarse a examen (pero puede hacerlo si desea subir nota).
 
 ### Alumnos que no superan pero se acogen a Evaluación Contínua
 
-Los alumnos que han asistido a clase, tutorías y han participado en un número suficiente de actividades pero no han superado la asignatura podrán entregar las prácticas hasta dos días antes de cada convocatoria.
+Los alumnos que han asistido a clase, tutorías y han participado en un número suficiente de actividades pero no han superado la asignatura podrán entregar las prácticas con la antelación suficiente antes de cada cierre de actas.
 
 Deberán hacer una defensa de las prácticas presentadas en tiempo acordado con el profesor.
 El profesor les indicará si está aprobado o si debe mejorar  para entregarlas antes de la siguiente convocatoria.
@@ -63,6 +62,33 @@ Los alumnos que no puedan (por no haber seguido el curso) o que decidan no acoge
 [convocatorias establecidas por la ULL]({{site.baseurl}}/timetables.html#ex%C3%A1menes-de-convocatoria).
 
 La práctica de evaluación consistirá en la entrega en GitHub Classroom de un ejercicio intensivo que se deben entregar en un tiempo limitado para evaluar los conocimientos del alumno de las competencias de la asignatura.  
+
+## Calendario Apróximado
+
+### Entregas de Prácticas Junio
+
+* Fecha de cierre de Actas de Junio: 18 de Junio
+* Fecha tentativa de revisión de la evaluación: Miércoles 17 de Junio
+* Fecha tentativa para la Publicación de notas definitivas para Junio: 12 de Junio
+* Fecha última de entrega de Prácticas para Junio: Viernes 5 de Junio
+* Exámenes Viernes 5 y 12 de Junio
+   
+### Entregas de Prácticas en Julio:
+
+* Fecha de cierre de Actas: 15 de Julio
+* Fecha tentativa de revisión de la evaluación: 13 de Julio
+* Fecha tentativa para la Publicación de notas definitivas para Julio: 10 de Julio
+* Fecha última de entrega de Prácticas para Julio: 6 de Julio
+* Fecha de examen: 6 de Julio
+  
+### Entregas de Prácticas en Septiembre:
+
+* Fecha de cierre de Actas: 18 de Septiembre
+* Fecha tentativa de revisión de la evaluación: 15 de Septiembre
+* Fecha tentativa para la Publicación de notas definitivas para Septiembre: 10 de Septiembre
+* Fecha última de entrega de Prácticas para Septiembre: 7 de Septiembre
+* Fecha de examen: 10 de Septiembre
+
 
 ## Referencias
 
