@@ -52,12 +52,12 @@ Deberán hacer una defensa de las prácticas presentadas en tiempo acordado con 
 El profesor les indicará si está aprobado o si debe mejorar  para entregarlas antes de la siguiente convocatoria.
 
 
-## Exámenes
+### Exámenes de Convocatoria
 
 Los alumnos que no puedan (por no haber seguido el curso) o que decidan no acogerse a evaluación contínua deberán presentarse a un examen práctico de evaluación en las 
 [convocatorias establecidas por la ULL]({{site.baseurl}}/timetables.html#ex%C3%A1menes-de-convocatoria).
 
-La práctica de evaluación consistirá en la entrega en GitHub Classroom de un ejercicio intensivo que se deben entregar en un tiempo limitado para evaluar los conocimientos del alumno de las competenciasde la asignatura.  
+La práctica de evaluación consistirá en la entrega en GitHub Classroom de un ejercicio intensivo que se deben entregar en un tiempo limitado para evaluar los conocimientos del alumno de las competencias de la asignatura.  
 
 ## Referencias
 
