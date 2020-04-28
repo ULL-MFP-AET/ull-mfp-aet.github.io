@@ -95,3 +95,7 @@ La práctica de evaluación consistirá en la entrega en GitHub Classroom de un 
 * [RECURSOS DISPONIBLES PARA REALIZAR ACTIVIDAD DOCENTE NO PRESENCIAL](https://campusvirtual.ull.es/1920/course/view.php?id=201913946) (Curso Moodle ULL)
 * [ULL Corona Virus](https://www.ull.es/coronavirus/)
 * [ELABORACIÓN DE LAS ADENDAS A LAS GUÍAS DOCENTES. PREGUNTAS FRECUENTES ](https://docs.google.com/document/u/1/d/e/2PACX-1vRI7bTEi93KsUBrb1S9sRmdMbsR3fL9N0MHz39CbtGtdzK-eoA7U4dIsXDvyuV7eSekyY3uyBa1z8Ix/pub)
+* <a href="{{site.calendario_academico}}" target="_blank">Calendario Académico</a>
+* <a href="{{site.horarios_examenes}}" target="_blank">Horarios de Ingeniería Informática para el curso 19/20</a>
+* <a href="{{site.horarios_tutorias}}" target="_blank">Horarios de tutorías del Departamento de Ingeniería Informática</a>
+
