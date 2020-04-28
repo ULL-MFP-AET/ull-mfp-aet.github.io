@@ -9,6 +9,14 @@
 * [Foros](https://campusvirtual.ull.es/1819/mod/forum/index.php?id=1110)
 * Aula de [Recursos Disponibles para Realizar ACTIVIDAD DOCENTE NO PRESENCIAL](https://campusvirtual.ull.es/1920/course/view.php?id=201913946 )
 
+## Guias Docentes
+
+* [Modificación Perfíl del Profesor](https://www.ull.es/apps/guias/teachers/view_profile/)
+
+## Corona Virus
+
+* [RECURSOS DISPONIBLES PARA REALIZAR ACTIVIDAD DOCENTE NO PRESENCIAL](https://campusvirtual.ull.es/1920/course/view.php?id=201913946)
+
 ## BULL
 
 * [BULL PuntoQ](https://www.ull.es/servicios/biblioteca/servicios/puntoq/)
