@@ -1,5 +1,10 @@
 # Calendarios, Horarios y Exámenes
 
+## Adaptación de Procesadores de Lenguajes a la Docencia y Evaluación No Presencial
+
+* [Adaptación de Procesadores de Lenguajes a la Docencia y Evaluación No Presencial](covid19)
+
+
 ## Calendario Académico
 
 - <a href="{{site.calendario_academico}}" target="_blank">Calendario Académico</a>
@@ -38,15 +43,17 @@ scrolling="yes">
 
 *  Exámenes 13926312 Procesadores de Lenguajes
   
-- 5 de junio 9:00 Aula 2.2
-- 12 de junio 9:00 Aula 2.2
-- 6 de julio 9:30 Aula 2.2
-- 10 de septiembre 9:30 Aula 2.2
+Se mantienen las fechas y las horas. 
+
+- 5 de junio 9:00
+- 12 de junio 9:00
+- 6 de julio 9:30
+- 10 de septiembre 9:30
 
 
 ## Revisión de Calificaciones
 
-- Convocatoria de Junio y Evaluación Contínua: Fecha a anunciar. Sala de reuniones 4ª planta de Física y Matemáticas
+- Convocatoria de Junio y Evaluación Contínua: Fecha a anunciar. 
 
 ## Cierre de actas 
 
@@ -70,16 +77,11 @@ Los exámenes de convocatoria incluyen una serie de apartados especiales para lo
 ## Q&A
 
 * Pregunta después de publicadas las notas de prácticas y antes de la convocatoria: He visto que las prácticas las tengo aptas y entonces me preguntaba si finalmente el TFA debo entregarlo o si las notas de prácticas ya están cerradas.
- - Respuesta:
-   1. La nota del TFA es independiente de la de prácticas y hay que superar el TFA para aprobar la asignatura.
-	 2. Las notas de practicas no están aún cerradas. Se pueden entregar y mejorar las prácticas para obtener una mejor calificación. La calificación de APTO significa que no es necesario hacer la parte práctica de los exámenes de convocatoria.
+* Respuesta:
+  1. La nota del TFA es independiente de la de prácticas y hay que superar el TFA para aprobar la asignatura.
+  2. Las notas de practicas no están aún cerradas. Se pueden entregar y mejorar las prácticas para obtener una mejor calificación. La calificación de APTO significa que no es necesario hacer la parte práctica de los exámenes de convocatoria.
 
-* Pregunta: Puesto que tengo el primer y tercer examen aprobados y en el segundo suspendí. Y no sabía si finalmente se hacía media de los 3 o
-	- Respuesta:
-		1. No se hace media.
-		2. Es necesario aprobar todas las partes.
-		3. Se debe ir al examen a recuperar las partes que no se tienen aprobadas.
-
+<!--
 ## Instrucciones para los exámenes de Convocatoria
 
 1. El examen de convocatoria consiste en una prueba escrita
@@ -92,6 +94,6 @@ Los exámenes de convocatoria incluyen una serie de apartados especiales para lo
 7. El empleo por parte del alumnado de medios ilícitos o fraudulentos en la realización de la prueba conducirá a la calificación numérica de 0, debiendo abandonar el lugar de la prueba y quedando sujeto a las consecuencias disciplinarias que se pudieran derivar de su conducta.
 8. Iniciada la prueba no se permitirá al alumnado la entrada al lugar de realización, salvo por razones excepcionales que habrán de ser valoradas por el profesor. El alumnado solo podrá abandonarlo durante la realización de la misma, si está autorizado o acompañado por el profesorado responsable de la vigilancia. En otro caso, el abandono del recinto implicará la finalización del examen, que ha de ser entregado por el estudiante al profesorado.
 9. En el caso de que el alumnado que se presente a la realización de la prueba no conste en el acta en la asignatura, se le permitirá que la lleve a cabo, quedando pendiente su evaluación de la posible subsanación de su situación administrativa.
-
+-->
 
 
