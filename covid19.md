@@ -70,7 +70,7 @@ evaluar los conocimientos del alumno de las competencias de la asignatura.
 
 * Fecha de cierre de Actas de Junio: 18 de Junio
 * Fecha tentativa de revisión de la evaluación: Miércoles 17 de Junio
-* Fecha tentativa para la Publicación de notas definitivas para Junio: 12 de Junio
+* Fecha tentativa para la Publicación de notas definitivas para Junio: 15 de Junio
 * Fecha última de entrega de Prácticas para Junio: Viernes 5 de Junio
 * Exámenes Viernes 5 y 12 de Junio
    
@@ -79,7 +79,7 @@ evaluar los conocimientos del alumno de las competencias de la asignatura.
 * Fecha de cierre de Actas: 15 de Julio
 * Fecha tentativa de revisión de la evaluación: 13 de Julio
 * Fecha tentativa para la Publicación de notas definitivas para Julio: 10 de Julio
-* Fecha última de entrega de Prácticas para Julio: 3 de Julio
+* Fecha última de entrega de Prácticas para Julio: 6 de Julio
 * Fecha de examen: 6 de Julio
   
 ### Entregas de Prácticas en Septiembre:
