@@ -87,7 +87,7 @@ evaluar los conocimientos del alumno de las competencias de la asignatura.
 * Fecha de cierre de Actas: 18 de Septiembre
 * Fecha tentativa de revisión de la evaluación: 15 de Septiembre
 * Fecha tentativa para la Publicación de notas definitivas para Septiembre: 10 de Septiembre
-* Fecha última de entrega de Prácticas para Septiembre: 3 de Septiembre
+* Fecha última de entrega de Prácticas para Septiembre: 5 de Septiembre
 * Fecha de examen: 10 de Septiembre
 
 
