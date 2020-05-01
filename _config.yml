@@ -46,6 +46,9 @@ temas:
   - title: 'Análisis Sintactico Descendente Recursivo Predictivo'
     url: /tema3-analisis-descendente-predictivo-recursivo/
     hover: 'tema3-pdr'
+  - title: 'Parsing Expression Grammars (PEGs)'
+    url: /tema4-parsing-expression-grammars/
+    hover: 'tema4-pegs' 
 practicas:
   - title: 00cuestionarioghalu
     myurl: https://campusvirtual.ull.es/1920/mod/assign/view.php?id=14658
