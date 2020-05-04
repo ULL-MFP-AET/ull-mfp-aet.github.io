@@ -51,7 +51,7 @@ Veamos un ejemplo basado en PL/0:
 * Start symbol: expressions
 * Productions:
 
-```
+```js
     expressions → expression
         | 'begin' expression (SENTENCE_SEPARATOR expression)* 'end'
 
@@ -85,43 +85,37 @@ Veamos un ejemplo basado en PL/0:
 
 En XRegExp, dobles escapes:
 
-```
-    WHITES = \\s+ | #.*
-    SENTENCE_SEPARATOR = [;]
-    NUM =
-        \\d*          # Can have integer digits 
+```js
+    WHITES = `\\s+ | #.*`
+    SENTENCE_SEPARATOR = `[;]`
+    NUM = `
+        \\d+          # Can have integer digits 
         \\.?          # Can have decimal point
-        \\d+          # Can have decimal digits
+        \\d*          # Can have decimal digits
         (
             [eE]        # Can have exponents
             [-+]?\\d+   # Exponents numbers can have sign
-        )?
-    STRING = 
-        "(              # Has to start with double quote
+        )?`
+    STRING = `
+        "(              # Has to start with double quote "
             (
-                [^\\"]  # Anything that is not a slash nor double quote
+                [^\\"]  # Anything that is not a slash nor double quote "
                 | \\.   # Or anything escaped
             )*          # Zero or more times
-        )"              # Has to end with double quote
-    BOOLEAN = (true | false)
-    OPERATORS =
+        )"              # Has to end with double quote "`
+    BOOLEAN = `(true | false)`
+    OPERATORS =`
         (
             \\b( and | or | not )\\b
             | == | != | <= | >= | < | > | [+] | - | [*] | [/] | %
         )
         `, 'xy');
 
-    RESERVED_TOKENS =
+    RESERVED_WORDS = `
     (
-        \\b( begin | end | if | then | else | while | do | func | let | set | call )\\b 
-        | \\(  
-        | ,  
-        | \\)  
-        | = 
-    )
-    ID = [@]?[a-zA-Z0-9._]+     # An identifier can start with @
-                                # And can have dots for referencing object properties
-
+        \\b( true | false | begin | end | if | then | else | while | do | func | let | set | call )\\b 
+    )`
+    ID = `[a-zA-Z]\w*`     # An identifier
 ```
 
 
