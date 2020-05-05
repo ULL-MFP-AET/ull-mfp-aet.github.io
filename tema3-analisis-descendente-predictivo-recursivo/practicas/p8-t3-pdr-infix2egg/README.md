@@ -280,6 +280,13 @@ El ejemplo que sigue muestra soluciones a estos problemas:
 
 ## Recursos
 
+* Una solución:
+  ```
+   [~/.../eval/lucas(casiano)]$ pwd -P
+   /Users/casiano/campus-virtual/1819/pl1819/introduccion/tema3-analisis-descendente-predictivo-recursivo/practicas/p8-t3-pdr-infix2egg/eval/p8-t3-pdr-infix2eg-alu0101042305
+  ```
+  - [Repo](https://github.com/ULL-ESIT-PL-1819/p8-t3-pdr-infix2eg-alu0101042305/tree/casiano)
+
 * [Apuntes de PL: Análisis Sintáctico Predictivo Recursivo](http://crguezl.github.io/pl-html/node22.html)
 * [Repo con una solución a un lenguaje similar](https://github.com/crguezl/prdcalc)
   -  [Despliegue en Heroku](https://pl1718-prdcalc.herokuapp.com/)
