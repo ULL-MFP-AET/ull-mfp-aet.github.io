@@ -93,7 +93,7 @@ evaluar los conocimientos del alumno de las competencias de la asignatura.
 
 ## Referencias
 
-* [RECURSOS DISPONIBLES PARA REALIZAR ACTIVIDAD DOCENTE NO PRESENCIAL](https://campusvirtual.ull.es/1920/course/view.php?id=201913946) (Curso Moodle ULL)
+* [RECURSOS DISPONIBLES PARA REALIZAR ACTIVIDAD DOCENTE NO PRESENCIAL]({{site.covid_ull}}) (Curso Moodle ULL)
 * [Criterios y Procedimiento de Adaptación Temporal a la Docencia y Evaluación no Presencial](https://campusvirtual.ull.es/1920/mod/resource/view.php?id=246298)
 * [ULL Corona Virus](https://www.ull.es/coronavirus/)
 * [ELABORACIÓN DE LAS ADENDAS A LAS GUÍAS DOCENTES. PREGUNTAS FRECUENTES ](https://docs.google.com/document/u/1/d/e/2PACX-1vRI7bTEi93KsUBrb1S9sRmdMbsR3fL9N0MHz39CbtGtdzK-eoA7U4dIsXDvyuV7eSekyY3uyBa1z8Ix/pub)
