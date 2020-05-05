@@ -2,7 +2,11 @@
 
 ## Los Analizadores Descendentes Recursivos Predictivos
 
+### Introducción
+
 [Introducción al Análisis Sintáctico Predictivo Recursivo]({{site.baseurl}}/tema3-analisis-descendente-predictivo-recursivo/pdr-teoria)
+
+### Un poco de Teoría
 
 [Un poco de teoría sore el análisis LL(1)](ll1)
 
