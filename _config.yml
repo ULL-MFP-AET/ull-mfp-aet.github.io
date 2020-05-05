@@ -17,9 +17,9 @@ organization:
   name: ULL-ESIT-PL-1920
   master: https://github.com/ULL-ESIT-PL-1819/introduccion/tree/master/
 apuntes_repo: https://github.com/ULL-ESIT-PL-1819/introduccion/
-campus_virtual: https://campusvirtual.ull.es/1920/course/view.php?id=201911070
-calificador: https://campusvirtual.ull.es/1920/grade/report/grader/index.php?id=201911070
-tareas: https://campusvirtual.ull.es/1920/mod/assign/index.php?id=201911070
+campus_virtual: https://campusvirtual.ull.es/ingenieriaytecnologia/course/view.php?id=201911070
+calificador: https://campusvirtual.ull.es/ingenieriaytecnologia/1920/grade/report/grader/index.php?id=201911070
+tareas: https://campusvirtual.ull.es/ingenieriaytecnologia/1920/mod/assign/index.php?id=201911070
 profesor: https://www.ull.es/apps/guias/guias/view_teacher_niu/588/(%3FPcrguezl.*)/
 profesor_github: crguezl
 bull_permanente: https://puntoq.ull.es/permalink/f
@@ -51,10 +51,10 @@ temas:
     hover: 'tema4-pegs' 
 practicas:
   - title: 00cuestionarioghalu
-    myurl: https://campusvirtual.ull.es/1920/mod/assign/view.php?id=14658
+    myurl: https://campusvirtual.ull.es/ingenieriaytecnologia/1920/mod/assign/view.php?id=14658
     name: Tarea Formulario Usuario de Github
   - title: 01comunidadgpluspl
-    myurl: https://campusvirtual.ull.es/1920/mod/assign/view.php?id=14657
+    myurl: https://campusvirtual.ull.es/ingenieriaytecnologia/1920/mod/assign/view.php?id=14657
     name: Tarea Comunidad G+ de PL
   - title: 02pb-gh-campus-expert
     myurl: /tema0-introduccion-a-pl/practicas/pb-gh-campus-expert/
