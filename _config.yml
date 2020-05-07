@@ -117,5 +117,8 @@ practicas:
   - title: 14p8-t3-pdr-infix2egg
     myurl: /tema3-analisis-descendente-predictivo-recursivo/practicas/p8-t3-pdr-infix2egg/
     name: Práctica p8-t3-pdr-infix2egg
+  - title: r15-t3-langdesign
+    myurl: https://github.com/ULL-ESIT-PL-1920/design-infix-lang
+    name: Práctica r15-t3-langdesign
     
 
