@@ -778,6 +778,7 @@ Obsérvese que la correspondiente gramática genera el lenguaje:
 
 Mientras que el PEG acepta el lenguaje `'bc'`.
 
+En efecto, probemos con una herramienta como [Jison](https://zaa.ch/jison/) que permite procesar gramáticas:
 
 ```
 [~/.../pegjs/examples(master)]$ cat grammarvspeg.jison
@@ -794,7 +795,7 @@ A:  B 'c'
 B: 'b' | 'b' 'a'
 ;
 ```
-
+Cuando parseamos la entrada `bac`con esta gramática obtenemos:
 ```
 [~/.../pegjs/examples(master)]$ ./use.js grammarvspeg bac
 Processing <bac>
