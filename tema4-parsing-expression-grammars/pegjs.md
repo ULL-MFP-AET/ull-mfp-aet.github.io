@@ -936,72 +936,72 @@ el lenguaje reconocido cambia (vease el ejemplo en la sección
 
 
 
-    -   It gets the match results of labeled expressions in preceding
-        expression as its arguments.
+-   It gets the match results of labeled expressions in preceding
+    expression as its arguments.
 
-    -   It should return some JavaScript value using the `return`
-        statement.
+-   It should return some JavaScript value using the `return`
+    statement.
 
-    -   If the returned value evaluates to `true` in boolean context,
-        just return `undefined` and do not advance the parser position;
-        otherwise consider the match failed.
+-   If the returned value evaluates to `true` in boolean context,
+    just return `undefined` and do not advance the parser position;
+    otherwise consider the match failed.
 
-    -   The code inside the predicate can access all variables and
-        functions defined in the initializer at the beginning of the
-        grammar.
+-   The code inside the predicate can access all variables and
+    functions defined in the initializer at the beginning of the
+    grammar.
 
-    -   The code inside the predicate can also access the current parse
-        position using the `offset` function. The `offset` function
-        returns a zero-based character index into the input string.
+-   The code inside the predicate can also access the current parse
+    position using the `offset` function. The `offset` function
+    returns a zero-based character index into the input string.
 
-    -   The code can also access the current line and column using the
-        `line` and `column` functions. Both return one-based indexes.
+-   The code can also access the current line and column using the
+    `line` and `column` functions. Both return one-based indexes.
 
-    -   The code inside the predicate can also access options passed to
-        the parser using the `options` variable.
+-   The code inside the predicate can also access options passed to
+    the parser using the `options` variable.
 
-    -   Note that curly braces in the predicate code must be balanced.
+-   Note that curly braces in the predicate code must be balanced.
 
-    -   The following CoffeeScript example illustrates all these points:
+-   The following CoffeeScript example illustrates all these points:
 
-            [~/srcPLgrado/pegjs_examples(master)]$ cat semantic_predicate.coffee 
-            PEG = require('pegjs')
-            coffee = require 'pegjs-coffee-plugin'
-            grammar = '''
-               {                             
-                 @util = require("util")     
-                 @g = "visible variable" 
-                 console.log("Inside Initializer! options = "+@util.inspect(options))
-               }                             
-               start = 'a' { console.log(@g); 1 } 
-                     / c:'c' '\\n' &   { 
-                                   console.log("inside predicate: @g = '#{@g}' c = '#{c}'")
-                                   console.log("options = #{@util.inspect(options)}")
-                                   console.log("offset = #{offset()}")
-                                   console.log("line = #{line()}")
-                                   console.log("column = #{column()}")
-                                   true 
-                                 } 'b' { 2 }
-            '''
-            parser = PEG.buildParser(grammar, plugins: [coffee])
-            r = parser.parse('a', x: 'hello')
-            console.log r
-            r = parser.parse("c\nb", y : 'world')
-            console.log r
+        [~/srcPLgrado/pegjs_examples(master)]$ cat semantic_predicate.coffee 
+        PEG = require('pegjs')
+        coffee = require 'pegjs-coffee-plugin'
+        grammar = '''
+           {                             
+             @util = require("util")     
+             @g = "visible variable" 
+             console.log("Inside Initializer! options = "+@util.inspect(options))
+           }                             
+           start = 'a' { console.log(@g); 1 } 
+                 / c:'c' '\\n' &   { 
+                               console.log("inside predicate: @g = '#{@g}' c = '#{c}'")
+                               console.log("options = #{@util.inspect(options)}")
+                               console.log("offset = #{offset()}")
+                               console.log("line = #{line()}")
+                               console.log("column = #{column()}")
+                               true 
+                             } 'b' { 2 }
+        '''
+        parser = PEG.buildParser(grammar, plugins: [coffee])
+        r = parser.parse('a', x: 'hello')
+        console.log r
+        r = parser.parse("c\nb", y : 'world')
+        console.log r
 
-        When executed produces the following output:
+    When executed produces the following output:
 
-            [~/srcPLgrado/pegjs_examples(master)]$ coffee semantic_predicate.coffee 
-            Inside Initializer! options = { x: 'hello' }
-            visible variable
-            1
-            Inside Initializer! options = { y: 'world' }
-            inside predicate: @g = 'visible variable' c = 'c'
-            options = { y: 'world' }
-            offset = 2
-            line = 2
-            column = 1
-            2
+        [~/srcPLgrado/pegjs_examples(master)]$ coffee semantic_predicate.coffee 
+        Inside Initializer! options = { x: 'hello' }
+        visible variable
+        1
+        Inside Initializer! options = { y: 'world' }
+        inside predicate: @g = 'visible variable' c = 'c'
+        options = { y: 'world' }
+        offset = 2
+        line = 2
+        column = 1
+        2
 
 -   `! { predicate }`
 
@@ -1112,8 +1112,7 @@ el lenguaje reconocido cambia (vease el ejemplo en la sección
     matched expression. If no expression matches, consider the match
     failed.
 
-La Gramática de PEG.js
-----------------------
+## La Gramática de PEG.js
 
     [~/srcPLgrado/pegjs(master)]$ cat src/parser.pegjs 
     grammar
