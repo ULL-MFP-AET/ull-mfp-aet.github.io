@@ -15,7 +15,7 @@ En su parser irá:
 * Este es un buen momento para meditar su diseño del lenguaje de infijo e introducir modificaciones y extensiones
 * Las acciones semánticas a ejecutar dentro del analizador son las de construcción del AST 
 
-
+<!--
 ## Un Lenguaje
 
 ```
@@ -138,6 +138,7 @@ newline
 whitespace
         = [ \t\n\r]
 ```
+-->
 
 ## Opciones del Compilador
 
