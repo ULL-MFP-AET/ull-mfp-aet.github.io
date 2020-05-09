@@ -3,6 +3,7 @@
 #### Introducción
 
 * [Introducción Parsing Expression Grammars (PEGs)](peg-intro)
+* [PEG.js](pegjs)
 * [Viejos Apuntes:PEGs](http://crguezl.github.io/pl-html/node31.html)
 
 #### PEG.js
