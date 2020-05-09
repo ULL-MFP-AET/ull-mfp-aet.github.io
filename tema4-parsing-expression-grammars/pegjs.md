@@ -537,7 +537,7 @@ used in the call to the parser:
 ```
 [~/.../pegjs/examples(master)]$ cat initializer.js
 ```
-```js
+```ruby
 "use strict";
 const PEG = require("pegjs");
 const grammar = `
@@ -570,349 +570,178 @@ inside predicate: g = visible variable
 2
 ```
 
-## Sintáxis y Semántica de PEG.js
+## Looking Forward
+
+`& expression`
+
+Try to match the expression. If the match succeeds, just return `undefined` and do not advance the parser position, otherwise  consider the match failed.
+
+`! expression`
+
+Try to match the expression. If the match does not succeed, just
+return `undefined` and do not advance the parser position, otherwise
+consider the match failed.
+
+```
+[~/.../pegjs/examples(master)]$ cat anbncn.pegjs
+/*
+  The following parsing expression grammar describes the classic
+  non-context-free language :
+               { a^nb^nc^n / n >= 1 }
+*/
+
+S = &(A 'c') 'a'+ B:B !.  { return B; }
+/* S = &A 'a'+ B:B !.   does not work since accepts abbcc */
+A = 'a' A:A? 'b' { if (A) { return A+1; } else return 1; }
+B = 'b' B:B? 'c' { if (B) { return B+1; } else return 1; }
+```
+
+```
+[~/.../pegjs/examples(master)]$ pegjs anbncn.pegjs
+[~/.../pegjs/examples(master)]$ ./use.js anbncn aabcc
+Processing <aabcc>
+Expected , or undefined but "a" found.
+[~/.../pegjs/examples(master)]$ ./use.js anbncn aabbcc
+Processing <aabbcc>
+2
+[~/.../pegjs/examples(master)]$ ./use.js anbncn aabccc
+Processing <aabccc>
+Expected , or undefined but "a" found.
+```
 
 
+Here is an example recognizing JavaScript whitespaces and comments:
 
--   -   All variables and functions defined in the initializer are
-    accessible in rule actions and semantic predicates (the
-    `& { predicate }` and `! { predicate }` are called )
+```
+[~/srcPLgrado/pegjs/examples(master)]$ cat notpredicate.pegjs 
+__ = (whitespace / eol / comment)*
 
--   The code inside the initializer can access options passed to the
-    parser using the `options` variable.
+/* Modeled after ECMA-262, 5th ed., 7.4. */
+comment "comment"
+  = singleLineComment
+  / multiLineComment
 
--   .
+singleLineComment
+  = "//" (!eolChar .)*   { return text(); }
 
--   This example illustrates what we said about initializers:
+multiLineComment
+  = "/*" (!"*/" .)* "*/" { return text(); }
 
-        [~/srcPLgrado/pegjs_examples(master)]$ cat initializer.js 
-        var PEG = require("pegjs");
-        var grammar = [
-        ' {                             ',
-        '   util = require("util");     ',
-        '                               ',
-        '   var g = "visible variable"; ',
-        '   console.log("Inside Initializer! options = "+util.inspect(options)); ',
-        ' }                             ',
-        " start = 'a' { console.log(g); return 1; } ",
-        "       / &   { console.log('inside predicate: '+g); return true; } 'b' { return 2; }"
-        ];
 
-        grammar = grammar.join('\n');
-        console.log("GRAMMAR:\n"+grammar);
+/* Modeled after ECMA-262, 5th ed., 7.3. */
+eol "end of line"
+  = "\n"
+  / "\r\n"
+  / "\r"
+  / "\u2028"
+  / "\u2029"
 
-        var parser = PEG.buildParser(grammar);
-        var r = parser.parse("a", { x: 'hello' });
-        console.log(r); 
-        r = parser.parse("b");
-        console.log(r); 
+eolChar
+  = [\n\r\u2028\u2029]
 
-    Produces the following output:
+whitespace "whitespace"
+  = [ \t\v\f\u00A0\uFEFF\u1680\u180E\u2000-\u200A\u202F\u205F\u3000]
+```
 
-        [~/srcPLgrado/pegjs_examples(master)]$ node initializer.js 
-        GRAMMAR:
-         {                             
-           util = require("util");     
-                                       
-           var g = "visible variable"; 
-           console.log("Inside Initializer! options = "+util.inspect(options)); 
-         }                             
-         start = 'a' { console.log(g); return 1; } 
-               / &   { console.log('inside predicate: '+g); return true; } 'b' { return 2; }
-        Inside Initializer! options = { x: 'hello' }
-        visible variable
-        1
-        Inside Initializer! options = {}
-        inside predicate: visible variable
-        2
+Once it is compiled we can call it from our main program:
 
--   -   To begin it is empty, then all declarations from the
-        `initializer` are added.
+```js
+[~/srcPLgrado/pegjs/examples(master)]$  cat mainnotpredicate.js 
+var PEG = require("./notpredicate.js");
+var input = process.argv[2] || "// one comment\n"+
+                                "// another comment \t/\n"+
+                                "/* a\n"+
+                                "   third comment */";
+console.log("\n*****\n"+input+"\n*****\n");
+var r = PEG.parse(input);
+console.log(r);
+```
 
-    -   Afterwards you can add and remove stuff (Using for instance
-        `delete myObject.property`) as much as you like.
+This is the output:
 
-    -   This scope is there even if you don’t use the `initializer`.
+```
+[~/srcPLgrado/pegjs/examples(master)]$ pegjs notpredicate.pegjs 
+[~/srcPLgrado/pegjs/examples(master)]$ node mainnotpredicate.js 
 
-    -   So you can do something like the following:
+*****
+// one comment
+// another comment      /
+/* a
+    third comment */
+*****
 
-            start = a { @result }
-            a = "a" { @result = "awesome" }
+[ '// one comment',
+  '\n',
+  '// another comment \t/',
+  '\n',
+  '/* a\n   third comment */' ]
+```
 
-        And this will correctly return `awesome` if you call
-        `parse("a")`.
+## The `i` option for "literal"
 
-    -   Also all variable assignments in an action are safely scoped to
-        the action.
+Appending `i` right after the literal makes the match case-insensitive:
 
-        `{ result = "awesome" }` becomes
-        `{ var result; result = "awesome" }`
+```js
+[~/.../pegjs/examples(master)]$ cat ignorecasejs.js
+"use strict"
+const PEG = require('pegjs');
+const grammar = `start = a: 'a'i `;
+const parser = PEG.generate(grammar);
+let r = parser.parse('A');
+console.log(r);
+```
 
-    -   This gives you the ability to explicitly share variables with
-        other actions via `this` and the security to just assign
-        variables for local use like you are used to when writing
-        CoffeeScript.
+## DOT  `.`
 
-    -   This is the Coffee version of the former JavaScript example:
+Match exactly one character (including `\n`) and return it as a string:
 
-            [~/srcPLgrado/pegjs_examples(master)]$ cat initializer.coffee
-            PEG = require('pegjs')
-            coffee = require 'pegjs-coffee-plugin'
-            grammar = '''
-               {                             
-                 util = require("util")     
-                 @g = "visible variable" 
-                 console.log("Inside Initializer! options = "+util.inspect(options))
-               }                             
-               start = 'a' { console.log(@g); 1 } 
-                     / &   { 
-                             console.log("inside predicate: '#{@g}''")
-                             true 
-                           } 'b' { 2 }
-            '''
-            parser = PEG.buildParser(grammar, plugins: [coffee])
-            r = parser.parse('a', x: 'hello')
-            console.log r
-            r = parser.parse('b')
-            console.log r
+```js
+[~/.../pegjs/examples(master)]$ cat dotjs.js
+const PEG = require('pegjs');
+const grammar = 'start = a: ..';
+const parser = PEG.generate(grammar);
+const r = parser.parse("\n\t");
+console.log(r);
+[~/.../pegjs/examples(master)]$ node dotjs.js
+[ '\n', '\t' ]
+```
 
-    -   When executed produces:
+## Classes  `[characters]`
 
-            [~/srcPLgrado/pegjs_examples(master)]$ coffee initializer.coffee
-            Inside Initializer! options = { x: 'hello' }
-            visible variable
-            1
-            Inside Initializer! options = {}
-            inside predicate: 'visible variable''
-            2
+Match one character from a set and return it as a string.
 
-The parsing expressions of the rules are used to match the input text to
-the grammar.
+The characters in the list can be escaped in exactly the same
+way as in JavaScript string.
 
-There are various types of expressions — matching characters or
-character classes, indicating optional parts and repetition, etc.
+The list of characters can also contain ranges (e.g. `[a-z]`
+means all lowercase letters).
 
-Expressions can also contain references to other rules.
+Preceding the characters with `^` inverts the matched set (e.g.
+`[^a-z]` means <span>*"all character but lowercase letters*</span>).
 
-If an expression successfully matches a part of the text when running
-the generated parser, it produces a , which is a JavaScript value.
-
--   .
-
--   .
-
--   The match results propagate through the rules when the rule names
-    are used in expressions, up to the start rule.
-
--   The generated parser returns start rule’s match result when parsing
-    is successful.
-
-One special case of parser expression is a — a piece of JavaScript code
-inside curly braces (`{` and `}`) that .
-
-<span>*This value is considered match result of the preceding expression
-(in other words, the parser action is a match result
-transformer)*</span>.
-
-In our arithmetics example, there are many parser actions.
-
-Consider this action:
-
-    digits:[0-9]+ { return parseInt(digits.join(""), 10); }
-
--   It takes the match result of the expression `[0-9]+`, , as its
-    parameter.
-
--   It joins the digits together to form a number and converts it to a
-    JavaScript number object.
-
-There are several types of parsing expressions, some of them containing
-subexpressions and thus forming a recursive structure:
-
--   "literal"
-        'literal'
-
-    Match exact literal string and return it. The string syntax is the
-    same as in JavaScript.
-
-    Appending `i` right after the literal makes the match
-    case-insensitive:
-
-        [~/srcPLgrado/pegjs_examples(master)]$ cat ignorecase.coffee 
-        PEG = require('pegjs')
-        coffee = require 'pegjs-coffee-plugin'
-        grammar = '''
-        start = a:'a'i 
-        '''
-        parser = PEG.buildParser(grammar, plugins: [coffee])
-        r = parser.parse('A')
-        console.log r
-        parser = PEG.buildParser(grammar, plugins: [coffee])
-        r = parser.parse('a')
-        console.log r
-
-    when executed produces:
-
-        [~/srcPLgrado/pegjs_examples(master)]$ coffee ignorecase.coffee 
-        A
-        a
-
--   .
-
-    Match exactly one character and return it as a string:
-
-        ~/srcPLgrado/pegjs_examples(master)]$ cat dot.coffee 
-        PEG = require('pegjs')
-        coffee = require 'pegjs-coffee-plugin'
-        grammar = '''
-        start = a: ..
-        '''
-        parser = PEG.buildParser(grammar, plugins: [coffee])
-        r = parser.parse('Ab')
-        console.log r
-        parser = PEG.buildParser(grammar, plugins: [coffee])
-        r = parser.parse("\n\t")
-        console.log r
-
-    When executed produces:
-
-        [~/srcPLgrado/pegjs_examples(master)]$ coffee dot.coffee 
-        [ 'A', 'b' ]
-        [ '\n', '\t' ]
-
--   `[characters]`
-
-    -   Match one character from a set and return it as a string.
-
-    -   The characters in the list can be escaped in exactly the same
-        way as in JavaScript string.
-
-    -   The list of characters can also contain ranges (e.g. `[a-z]`
-        means all lowercase letters).
-
-    -   Preceding the characters with `^` inverts the matched set (e.g.
-        `[^a-z]` means <span>*"all character but lowercase
-        letters*</span>).
-
-    -   Appending `i` right after the literal makes the match
-        case-insensitive.
+Appending `i` right after the literal makes the match case-insensitive.
 
     -   Example:
 
-        \<pre\>
-        [ /srcPLgrado/pegjs~e~xamples(master)]$ cat regexp.coffee 
-        PEG = require('pegjs')
-        coffee = require 'pegjs-coffee-plugin'
-        grammar = '''
-        start = a: [aeiou\u2661]i . [^x-z] 
-        '''
-        parser = PEG.buildParser(grammar, plugins: [coffee])
-        r = parser.parse('Abr')
-        console.log r
-        r = parser.parse('♡br')
-        console.log r
-        [~/srcPLgrado/pegjs_examples(master)]$ coffee regexp.coffee [
-        ’A’, ’b’, ’r’ ] [ ’♡’, ’b’, ’r’ ] \</pre\>
+```js
+[~/.../pegjs/examples(master)]$ cat regexpjs.js
+const PEG = require('pegjs');
+grammar = 'start = a: [aeiou\u2661]i . [^x-z] ';
+parser = PEG.generate(grammar);
+r = parser.parse('Abr');
+console.log(r);
+r = parser.parse('♡br');
+console.log(r);
+```
+```
+[~/.../pegjs/examples(master)]$ node regexpjs.js
+[ 'A', 'b', 'r' ]
+[ '♡', 'b', 'r' ]
+```
 
--   `rule`
+## Predicate `& { predicate }`
 
-    Match a parsing expression of a rule recursively and return its
-    match result.
-
--   `( expression )`
-
-    Match a subexpression and return its match result.
-
--   expression *
-
-    Match zero or more repetitions of the expression and . .
-
--   expression +
-
-    Match one or more repetitions of the expression and . The matching
-    is greedy, i.e. the parser tries to match the expression as many
-    times as possible.
-
--   expression ?
-
-    Try to match the expression. If the match succeeds, return its match
-    result, otherwise return `null`.
-
--   `& expression`
-
-    Try to match the expression. If the match succeeds, just return
-    `undefined` and do not advance the parser position, otherwise
-    consider the match failed.
-
--   `! expression`
-
-    Try to match the expression. If the match does not succeed, just
-    return `undefined` and do not advance the parser position, otherwise
-    consider the match failed.
-
-    -   Here is an example recognizing JavaScript whitespaces and
-        comments:
-
-            [~/srcPLgrado/pegjs/examples(master)]$ cat notpredicate.pegjs 
-            __ = (whitespace / eol / comment)*
-
-            /* Modeled after ECMA-262, 5th ed., 7.4. */
-            comment "comment"
-              = singleLineComment
-              / multiLineComment
-
-            singleLineComment
-              = "//" (!eolChar .)*   { return text(); }
-
-            multiLineComment
-              = "/*" (!"*/" .)* "*/" { return text(); }
-
-
-            /* Modeled after ECMA-262, 5th ed., 7.3. */
-            eol "end of line"
-              = "\n"
-              / "\r\n"
-              / "\r"
-              / "\u2028"
-              / "\u2029"
-
-            eolChar
-              = [\n\r\u2028\u2029]
-
-            whitespace "whitespace"
-              = [ \t\v\f\u00A0\uFEFF\u1680\u180E\u2000-\u200A\u202F\u205F\u3000]
-
-    -   Once it is compiled we can call it from our main program:
-
-            [~/srcPLgrado/pegjs/examples(master)]$  cat mainnotpredicate.js 
-            var PEG = require("./notpredicate.js");
-            var input = process.argv[2] || "// one comment\n"+
-                                           "// another comment \t/\n"+
-                                           "/* a\n"+
-                                           "   third comment */";
-            console.log("\n*****\n"+input+"\n*****\n");
-            var r = PEG.parse(input);
-            console.log(r);
-
-    -   This is the output:
-
-            [~/srcPLgrado/pegjs/examples(master)]$ pegjs notpredicate.pegjs 
-            [~/srcPLgrado/pegjs/examples(master)]$ node mainnotpredicate.js 
-
-            *****
-            // one comment
-            // another comment      /
-            /* a
-               third comment */
-            *****
-
-            [ '// one comment',
-              '\n',
-              '// another comment \t/',
-              '\n',
-              '/* a\n   third comment */' ]
-
--   `& { predicate }`
+The predicate is a piece of JavaScript code that is executed as if it was inside a function. It gets the match results of labeled expressions in preceding expression as its arguments. It should return some JavaScript value using the `return` statement. If the returned value evaluates to `true` in boolean context, just return `undefined` and do not consume any input; otherwise consider the match failed.
 
     -   .
 
