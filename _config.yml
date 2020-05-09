@@ -49,7 +49,10 @@ temas:
     hover: 'tema3-pdr'
   - title: 'Parsing Expression Grammars (PEGs)'
     url: /tema4-parsing-expression-grammars/
-    hover: 'tema4-pegs' 
+    hover: 'tema4-pegs'
+ - title: 'Análisis Ascendente'
+    url: /tema5-analisis-ascendente/
+    hover: 'tema5-analisis-ascendente' 
 practicas:
   - title: 00cuestionarioghalu
     myurl: https://campusvirtual.ull.es/ingenieriaytecnologia/1920/mod/assign/view.php?id=14658
