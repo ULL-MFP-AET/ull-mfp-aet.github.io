@@ -2150,7 +2150,7 @@ PL0 realizado en la práctica [practica:pl0] usando .
 
 -   -   Véase el capítulo <span>*DataMapper*</span> [chapter:datamapper]
 
-## Ambiguity in C++
+## Lab: Ambiguity in C++
 
 This lab illustrates a problem that arises in C++. The C++ syntax does
 not disambiguate between expression statements (`stmt`) and declaration
