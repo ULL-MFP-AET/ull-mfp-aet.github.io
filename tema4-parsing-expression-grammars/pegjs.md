@@ -113,7 +113,7 @@ If an expression successfully matches a part of the text when running the genera
 * An expression matching a literal string produces a JavaScript string containing matched text.
 * An expression matching repeated occurrence of some subexpression produces a JavaScript array with all the matches.
 
-**The match results propagate through the rules when the rule names are used in expressions, up to the start rule. The generated parser returns start rule's match result when parsing is successful.**
+**The match results** propagate through the rules when the **rule names** are used in **expressions**, up to the **start rule**. The generated parser returns start rule's match result when parsing is successful.
 
 That is why in our example:
 
@@ -183,13 +183,16 @@ catch(e) {
 console.log(`The error object:`);
 console.log(util.inspect(r, {depth: null}));
 /*
-{ message: 'Expected "hello" but "w" found.',
-  expected: [ { type: 'literal', value: 'hello', description: '"hello"' } ],
+{
+  message: 'Expected "hello" but "w" found.',
+  expected: [ { type: 'literal', text: 'hello', ignoreCase: false } ],
   found: 'w',
-  offset: 0,
-  line: 1,
-  column: 1,
-  name: 'SyntaxError' }
+  location: {
+    start: { offset: 0, line: 1, column: 1 },
+    end: { offset: 1, line: 1, column: 2 }
+  },
+  name: 'SyntaxError'
+}
 */
 ```
 
