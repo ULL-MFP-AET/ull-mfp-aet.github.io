@@ -402,7 +402,6 @@ In our example there are many parser actions. Consider the action in expression
 It takes the **match result** of the appearance of the rule `multiplicative`, which is provided in a variable named `left` an the **match result** associated with the appearance of the rule `additive`. They must be numbers and the action sets as **match result** 
 of the rule the sum of the two numbers `{ return left + right; }`
 
-
 To produce the parser we compile it with `pegjs`:
 
 ```
@@ -438,11 +437,13 @@ Processing <5+3*2>
     /Users/casiano/local/src/javascript/PLgrado/pegjs/examples
 ```
 ```
-    [~/srcPLgrado/pegjs/examples(master)]$ git remote -v
-    dmajda  https://github.com/dmajda/pegjs.git (fetch)
-    dmajda  https://github.com/dmajda/pegjs.git (push)
-    origin  git@github.com:crguezl/pegjs.git (fetch)
-    origin  git@github.com:crguezl/pegjs.git (push)
+[~/.../pegjs/examples(master)]$ git remote -v
+2020	https://github.com/pegjs/pegjs (fetch)
+2020	https://github.com/pegjs/pegjs (push)
+dmajda	https://github.com/dmajda/pegjs.git (fetch)
+dmajda	https://github.com/dmajda/pegjs.git (push)
+origin	git@github.com:crguezl/pegjs.git (fetch)
+origin	git@github.com:crguezl/pegjs.git (push)
 ```
 
 ## Asociación Incorrecta para la Resta y la División
