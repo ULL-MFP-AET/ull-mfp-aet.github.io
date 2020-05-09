@@ -1,4 +1,13 @@
-# Práctica: Reescribir el Compilador de Infijo a Egg usando PEG.js (p9-t4-peg-infix2egg)
+---
+layout: default
+title: p9-t4-peg-infix2egg
+permalink: /tema4-parsing-expression-grammars/practicas/p9-t4-peg-infix2egg/
+previous: 
+  url: tema3-analisis-descendente-predictivo-recursivo/practicas/p8-t3-pdr-infix2egg/
+---
+
+
+# Práctica: De Infijo a Egg usando PEG.js (p9-t4-peg-infix2egg)
 
 ## Descripción
 

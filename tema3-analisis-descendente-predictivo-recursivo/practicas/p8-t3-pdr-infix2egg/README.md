@@ -4,6 +4,8 @@ title: p8-t3-pdr-infix2egg
 permalink: /tema3-analisis-descendente-predictivo-recursivo/practicas/p8-t3-pdr-infix2egg/
 previous: 
   url: /tema3-analisis-descendente-predictivo-recursivo/practicas/p7-t3-egg-2/
+next:
+  url: /tema4-parsing-expression-grammars/practicas/p9-t4-peg-infix2egg/
 ---
 
 
