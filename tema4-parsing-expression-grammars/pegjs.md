@@ -814,7 +814,7 @@ console.log(r);
 r = parser.parse("c\nb", { y: 'world' });
 console.log(r);
 ```
-
+Execution:
 ```
 [~/.../pegjs/examples(master)]$ node semantic_predicatejs.js
 Inside Initializer! options = { x: 'hello' }
