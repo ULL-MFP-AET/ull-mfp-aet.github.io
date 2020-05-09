@@ -570,7 +570,7 @@ inside predicate: g = visible variable
 2
 ```
 
-## Looking Forward
+## Looking Forward: Parsing a Non Context Free Language
 
 `& expression`
 
@@ -742,6 +742,24 @@ console.log(r);
 ## Predicate `& { predicate }`
 
 The predicate is a piece of JavaScript code that is executed as if it was inside a function. It gets the match results of labeled expressions in preceding expression as its arguments. It should return some JavaScript value using the `return` statement. If the returned value evaluates to `true` in boolean context, just return `undefined` and do not consume any input; otherwise consider the match failed.
+
+```
+[~/.../pegjs/examples(master)]$ cat semantic_intermediajs.js
+const PEG = require('pegjs');
+
+const grammar = `
+a = a:$'a'+
+    & { console.log("acción intermedia. a = "+a); return true; }
+    b:$'b'+ {
+             console.log("acción final. b = "+b);
+             return text();
+          }
+`;
+
+parser = PEG.generate(grammar);
+r = parser.parse("aabb");
+console.log("r = " + r);
+```
 
 
 ## PEGs versus Gramáticas {#subsection:pegvsgrammars}
