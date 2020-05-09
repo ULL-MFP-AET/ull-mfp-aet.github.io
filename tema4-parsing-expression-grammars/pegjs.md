@@ -482,13 +482,11 @@ Processing <5-3-2>
 
 The first rule can be preceded by an _initializer_ — a piece of JavaScript code in curly braces (`{` and `}`). 
 
-This code is executed before the generated parser starts parsing. 
+1. This code is executed before the generated parser starts parsing. 
+2. All variables and functions defined in the initializer are accessible in rule actions and semantic predicates. 
+3. The code inside the initializer can access options passed to the parser using the `options` variable. 
+4. Curly braces in the initializer code must be balanced. 
 
-All variables and functions defined in the initializer are accessible in rule actions and semantic predicates. 
-
-The code inside the initializer can access options passed to the parser using the `options` variable. 
-
-Curly braces in the initializer code must be balanced. 
 Here is an example:
 
 ```
@@ -522,7 +520,7 @@ const r = parse(input);
 console.log(r);
 ```
 
-Now we have an arithmetics calculator that works:
+Now we have an arithmetics calculator that correctly computes substractions and divisions:
 
 ```
 [~/.../pegjs/examples(master)]$ ./use.js 'simple_reduce' 5-3-2
@@ -530,48 +528,51 @@ Processing <5-3-2>
 0
 ```
 
+## Passing Options to the Parser Initializer from Outside
+
+In this example the variable `g `declared inside the initializer is visible 
+in all the actions. Tha variable `options` contains the options argument 
+used in the call to the parser:
+
+```
+[~/.../pegjs/examples(master)]$ cat initializer.js
+```
+```js
+"use strict";
+const PEG = require("pegjs");
+const grammar = `
+ {
+   const util = require("util");
+   const g = "visible variable";
+   console.log("Inside Initializer! options = "+util.inspect(options));
+ }
+ start = 'a' { console.log('g = '+g); return 1; }
+       /  &  { console.log('inside predicate: g = '+g); return true; } 'b' { return 2; }
+`;
+
+const parser = PEG.generate(grammar);
+console.log("PARSING 'a'");
+let r = parser.parse("a", { x: 'hello' });
+console.log(r);
+console.log("PARSING 'b'");
+r = parser.parse("b");
+console.log(r);
+```
+```
+[~/.../pegjs/examples(master)]$ node initializer.js
+PARSING 'a'
+Inside Initializer! options = { x: 'hello' }
+g = visible variable
+1
+PARSING 'b'
+Inside Initializer! options = {}
+inside predicate: g = visible variable
+2
+```
+
 ## Sintáxis y Semántica de PEG.js
 
--   On the top level, the grammar consists of .
 
--   Each rule has a name (e.g. `primary`) that identifies the rule, and
-    a
-
--   e.g.
-
-        integer / LEFTPAR additive:additive RIGHTPAR { return additive; }
-
-    that defines a pattern to match against the input text and possibly
-    contains some JavaScript code that determines what happens when the
-    pattern matches successfully.
-
--   A rule can also contain name that is used in error messages (in our
-    example, only the `integer` rule has a human-readable name).
-
-        integer "integer"
-          = NUMBER
-
--   The parsing starts at the first rule, which is also called the .
-
-<!-- -->
-
--   A rule name must be a JavaScript identifier.
-
--   It is followed by an equality sign (`=`) and a parsing expression.
-
--   If the rule has a human-readable name, it is written as a JavaScript
-    string between the name and separating equality sign.
-
-        integer "integer" = NUMBER
-
--   Rules need to be separated only by whitespace (their beginning is
-    easily recognizable), but a semicolon (`;`) after the parsing
-    expression is allowed.
-
-<!-- -->
-
--   Rules can be preceded by an — a piece of JavaScript code in curly
-    braces (`{` and `}`).
 
 -   -   All variables and functions defined in the initializer are
     accessible in rule actions and semantic predicates (the
