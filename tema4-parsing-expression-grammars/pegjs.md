@@ -367,7 +367,7 @@ A rule can also contain _human-readable name_ that is used in error messages (in
 The parsing starts at the first rule, which is also called the _start rule_.
 
 * A rule name must be a JavaScript identifier. 
-* It is followed by an equality sign `=`) and a parsing expression.
+* It is followed by an equality sign `=` and a parsing expression.
 *  If the rule has a human-readable name, it is written as a JavaScript string between the name and separating equality sign. 
 * Rules need to be separated only by whitespace (their beginning is easily recognizable), but a semicolon (`;`) after the parsing expression is allowed.
 
