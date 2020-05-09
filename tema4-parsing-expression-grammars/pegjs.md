@@ -234,7 +234,6 @@ The error object `e` contains
 -   message
 -   expected,
 -   found
--   offset,
 -   location (`start` and `end` objects with offset, line and column)
 -   name
 
@@ -269,7 +268,7 @@ undefined
   '  funct'
 ```
 
-The default value is: `parser`).
+The default value is: `parser`.
 
 ## Plugins
 
@@ -293,7 +292,7 @@ console.log("r = #{r}")
 One special case of parser expression is a _parser action_ — a piece of JavaScript code inside curly braces (`{` and `}`) that takes **match results** of some of the the preceding expressions **and returns a JavaScript value**. This value is considered match result of the preceding expression (in other words, **the parser action is a match result transformer**).
 
 La ejecución nos muestra además el orden de abajo - arriba y de
-izquierda -derecha en la ejecución de las acciones semánticas:
+izquierda -derecha en la ejecución de las *parser actions** o  acciones semánticas:
 
 ```
 [~/.../pegjs/examples(master)]$ npm i pegjs-coffee-plugin
@@ -308,8 +307,7 @@ r = hello world!
 
 ## Grammar Syntax and Semantics {#section:UnEjemploSencillo}
 
-
-The grammar syntax is similar to JavaScript in that it is not
+The PEG.js syntax is similar to JavaScript in that it is not
 line-oriented and ignores whitespace between tokens.
 
 You can also use JavaScript-style comments (`// ...` and `/* ... */`).
@@ -322,7 +320,7 @@ A parser generated from this grammar computes their values.
  ```
  [~/.../pegjs/examples(master)]$ cat arithmetics-with-minus.pegjs
 ```
-```js
+```
 /*
  * Classic example grammar, which recognizes simple arithmetic expressions like
  * "2*(3+4)". The parser generated from this grammar then computes their value.
@@ -359,6 +357,21 @@ RIGHTPAR = _")"_
 NUMBER = _ digits:$[0-9]+ _ { return parseInt(digits, 10); }
 ```
 
+On the top level, the grammar consists of _rules_ (in our example, there are five of them). Each rule has 
+- a _name_ (e.g. `integer`) that identifies the rule, and 
+- a _parsing expression_ (e.g. `digits:[0-9]+`) that defines a pattern to match against the input text and 
+- possibly contains some JavaScript code that determines what happens when the pattern matches successfully (e.g. `{ return parseInt(digits.join(""), 10); }`). 
+
+A rule can also contain _human-readable name_ that is used in error messages (in our example, only the `integer` rule has a human-readable name). 
+
+The parsing starts at the first rule, which is also called the _start rule_.
+
+* A rule name must be a JavaScript identifier. 
+* It is followed by an equality sign `=`) and a parsing expression.
+*  If the rule has a human-readable name, it is written as a JavaScript string between the name and separating equality sign. 
+* Rules need to be separated only by whitespace (their beginning is easily recognizable), but a semicolon (`;`) after the parsing expression is allowed.
+
+
 To produce the parser we compile it with `pegjs`:
 
 ```
@@ -392,6 +405,8 @@ Processing <5+3*2>
 ```
     [~/srcPLgrado/pegjs/examples(master)]$ pwd -P
     /Users/casiano/local/src/javascript/PLgrado/pegjs/examples
+```
+```
     [~/srcPLgrado/pegjs/examples(master)]$ git remote -v
     dmajda  https://github.com/dmajda/pegjs.git (fetch)
     dmajda  https://github.com/dmajda/pegjs.git (push)
