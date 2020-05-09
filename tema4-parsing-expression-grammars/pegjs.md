@@ -2288,25 +2288,3 @@ Y este un ejemplo de salida:
     input = 'int(4);'
     output=["stmt"]
 
-El objetivo de esta práctica es crear un lenguaje de programación
-imperativa sencillo de estilo . Para ello lea el capítulo del de . Haga
-todos los ejercicios e implemente el lenguaje descrito.
-
-Puede encontrar una solución a la práctica en GitHub en el repositorio
-de . Usela como guía cuando se sienta desorientado.
-
--   por Nathan Whitehead
-
--   Repositorio con las soluciones a esta práctica.
-
-    -   Blog de
-
--   Repositorio con las soluciones a esta práctica.
-
--   Repositorio con contenidos del curso PL101
-
--   -   Sobre Nathan Whitehead
-
-    -   -   -   
-
-
