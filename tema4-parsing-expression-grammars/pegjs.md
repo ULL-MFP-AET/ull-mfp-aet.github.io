@@ -87,6 +87,12 @@ Type ".help" for more information.
 }
 ```
 
+In PEG.js an expression like $$expression_1 / expression_2 / ... / expression_n$$
+tries to match the first expression, if it does not succeed, try the second one, etc. Return the match result of the first successfully matched expression. If no expression matches, the match fails.
+
+Also an expression like `expression +`
+matches one or more repetitions of the expression and **return their match results in an array**. The matching is greedy, i.e. the parser tries to match the expression as many times as possible. Unlike in regular expressions, **there is no backtracking**.
+
 Using the generated parser is simple — just call its `parse` method and
 pass an input string as a parameter.
 
@@ -305,7 +311,7 @@ r = hello world!
 ```
 
 
-## Grammar Syntax and Semantics {#section:UnEjemploSencillo}
+## A Very Simple Calculator {#section:UnEjemploSencillo}
 
 The PEG.js syntax is similar to JavaScript in that it is not
 line-oriented and ignores whitespace between tokens.
@@ -371,6 +377,31 @@ The parsing starts at the first rule, which is also called the _start rule_.
 *  If the rule has a human-readable name, it is written as a JavaScript string between the name and separating equality sign. 
 * Rules need to be separated only by whitespace (their beginning is easily recognizable), but a semicolon (`;`) after the parsing expression is allowed.
 
+In PEG.js the peg expression `$ expression` tries to match the `expression`. If the match succeeds, return the **matched text** instead of the match result.
+
+That is why we use the `$`inside the rule:
+
+```
+_ = $[ \t\n\r]*
+```
+
+This way, instead of returning an array of individual whites, the rule returns the matched string of whites.
+
+We do the same in:
+
+```
+$[0-9]+
+```
+
+Simplifying the parsing to `parseInt(digits, 10)`.
+
+In our example there are many parser actions. Consider the action in expression 
+
+`left:multiplicative PLUS right:additive { return left + right; }`
+
+It takes the **match result** of the appearance of the rule `multiplicative`, which is provided in a variable named `left` an the **match result** associated with the appearance of the rule `additive`. They must be numbers and the action sets as **match result** 
+of the rule the sum of the two numbers `{ return left + right; }`
+
 
 To produce the parser we compile it with `pegjs`:
 
@@ -414,54 +445,91 @@ Processing <5+3*2>
     origin  git@github.com:crguezl/pegjs.git (push)
 ```
 
-Asociación Incorrecta para la Resta y la División
--------------------------------------------------
+## Asociación Incorrecta para la Resta y la División
 
-Una cuando existe una derivación
-$$A \stackrel{*}{\Longrightarrow} A \alpha$$.
+Una Gramática Independiente del Contexto se dice *Recursiva por la Izquierda*
+cuando existe una derivación $$A \stackrel{*}{\Longrightarrow} A \alpha$$.
 
-En particular, es recursiva por la izquierda si contiene una regla de
+En particular, es *recursiva por la izquierda* si contiene una regla de
 producción de la forma $$A \rightarrow A \alpha$$. En este caso se dice
 que la recursión por la izquierda es directa.
 
-Cuando la gramática es , el método de análisis recursivo descendente
-predictivo no funciona. En ese caso, el procedimiento `A` asociado con
+Cuando la gramática es recursiva por la izquierda, un método de análisis recursivo descendente
+como los de los PEGs no funciona. En ese caso, el procedimiento `A` asociado con
 $$A$$ ciclaría para siempre sin llegar a consumir ningún terminal.
 
-Es por eso que hemos escrito las reglas de la calculadora con
+Es por eso que en el ejemplo hemos empezado escribiendo las reglas de la calculadora con
 recursividad a derechas,
 
+```
     additive
       = left:multiplicative PLUS right:additive { return left + right; }
       / left:multiplicative MINUS right:additive { return left - right; }
       / multiplicative
-
-    multiplicative
-      = left:primary MULT right:multiplicative { return left * right; }
-      / left:primary DIV right:multiplicative { return left / right; }
-      / primary
+```
 
 pero eso da lugar a árboles hundidos hacia la derecha y a una aplicación
 de las reglas semánticas errónea:
 
-    [~/pegjs/examples(master)]$ cat main.js 
-    var PEG = require("./arithmetics.js");
-    var r = PEG.parse("5-3-2");
-    console.log(r);
+```
+[~/.../pegjs/examples(master)]$ node use-arithmetics-with-minus.js 5-3-2
+Processing <5-3-2>
+4
+```
 
-    [~/pegjs/examples(master)]$ node main.js
-    4
+## Initializers
 
-Reescriba el PEG de la calculadora presentado en la sección
-[section:UnEjemploSencillo] para que compute las operaciones aritméticas
-con la asociatividad correcta.
+The first rule can be preceded by an _initializer_ — a piece of JavaScript code in curly braces (`{` and `}`). 
 
-Códigos de los que partir:
+This code is executed before the generated parser starts parsing. 
 
--   -   
+All variables and functions defined in the initializer are accessible in rule actions and semantic predicates. 
 
-Sintáxis y Semántica de PEG.js
-==============================
+The code inside the initializer can access options passed to the parser using the `options` variable. 
+
+Curly braces in the initializer code must be balanced. 
+Here is an example:
+
+```
+[~/.../pegjs/examples(master)]$ cat simple_reduce.pegjs
+```
+```
+{
+  function reduce(left, right) {
+    return right.reduce((sum, [op, num]) => eval(`sum ${op}= num`), left);
+  }
+}
+
+sum     = left:product right:($[+-] product)* { return reduce(left, right); }
+product = left:value   right:($[*/] value)*   { return reduce(left, right); }
+value   = number:$[0-9]+                      { return parseInt(number,10); }
+        / '(' sum:sum ')'                     { return sum; }
+```
+
+We have written a helper script `use.js` to load  a parser and execute it on a
+given input:
+
+```
+[~/.../pegjs/examples(master)]$ cat use.js
+```
+```js
+#!/usr/bin/env node
+const [peg, input] = process.argv.splice(2);
+const parse = require('./'+peg).parse;
+console.log(`Processing <${input}>`);
+const r = parse(input);
+console.log(r);
+```
+
+Now we have an arithmetics calculator that works:
+
+```
+[~/.../pegjs/examples(master)]$ ./use.js 'simple_reduce' 5-3-2
+Processing <5-3-2>
+0
+```
+
+## Sintáxis y Semántica de PEG.js
 
 -   On the top level, the grammar consists of .
 
