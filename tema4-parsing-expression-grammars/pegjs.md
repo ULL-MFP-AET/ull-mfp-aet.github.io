@@ -323,7 +323,7 @@ expressions like `2*(3+4)`.
 
 A parser generated from this grammar computes their values.
 
- ```
+```
  [~/.../pegjs/examples(master)]$ cat arithmetics-with-minus.pegjs
 ```
 ```
@@ -743,7 +743,197 @@ console.log(r);
 
 The predicate is a piece of JavaScript code that is executed as if it was inside a function. It gets the match results of labeled expressions in preceding expression as its arguments. It should return some JavaScript value using the `return` statement. If the returned value evaluates to `true` in boolean context, just return `undefined` and do not consume any input; otherwise consider the match failed.
 
-    -   .
+
+## PEGs versus Gramáticas {#subsection:pegvsgrammars}
+
+Una gramática y un PEG con las mismas reglas no definen el mismo
+lenguaje. Véase este ejemplo:
+
+```
+[~/.../pegjs/examples(master)]$ cat grammarvspegjs.js
+```
+```js
+const PEG = require('pegjs');
+const grammar = `
+  A =  B 'c'
+  B = 'b' / 'b' 'a'
+`;
+const parser = PEG.generate(grammar);
+let r = parser.parse("bc");
+console.log("r = " + r);
+try {
+  r = parser.parse("bac");
+  console.log("r = " + r);
+} catch(e) { console.log(e.message); }
+```
+```
+[~/.../pegjs/examples(master)]$ node grammarvspegjs.js
+r = b,c
+Expected "c" but "a" found.
+```
+
+Obsérvese que la correspondiente gramática genera el lenguaje:
+
+    { 'bc', 'bac' }
+
+Mientras que el PEG acepta el lenguaje `'bc'`.
+
+
+```
+[~/.../pegjs/examples(master)]$ cat grammarvspeg.jison
+```
+```
+%lex
+%%
+.                 { return yytext; }
+/lex
+
+%%
+A:  B 'c'
+;
+B: 'b' | 'b' 'a'
+;
+```
+
+```
+[~/.../pegjs/examples(master)]$ ./use.js grammarvspeg bac
+Processing <bac>
+true
+```
+
+## The Dangling else: Asociando un else con su if mas cercano
+
+The dangling else is a problem in computer programming in which an
+optional `else clause` in an `If–then(–else)` statement results in
+nested conditionals being ambiguous.
+
+Formally, the reference context-free grammar of the language is
+ambiguous, meaning there is more than one correct parse tree.
+
+In many programming languages one may write conditionally executed code
+in two forms:
+
+the `if-then` form, and the `if-then-else` form – the `else` clause is
+optional:
+
+```pascal
+                  if a then s
+                  if a then s1 else s2
+```
+
+This gives rise to an ambiguity in interpretation when there are nested
+statements, specifically whenever an `if-then` form appears as `s1` in
+an `if-then-else` form:
+
+```pascal
+                  if a then if b then s else s2
+```
+
+In this example, `s` is unambiguously executed when `a` is `true` and
+`b` is `true`, but one may interpret `s2` as being executed when `a` is
+`false`
+
+-   (thus attaching the `else` to the first `if`) or when
+
+-   `a` is `true` and `b` is `false` (thus attaching the `else` to the
+    second `if`).
+
+In other words, one may see the previous statement as either of the
+following expressions:
+
+```pascal
+    if a then (if b then s) else s2
+```
+
+or
+
+```pascal
+    if a then (if b then s else s2)
+```
+
+This is a problem that often comes up in compiler construction,
+especially scannerless parsing.
+
+The convention when dealing with the dangling `else` is to attach the
+`else` to the nearby `if` statement.
+
+Programming languages like Pascal and C follow this convention, so there
+is no ambiguity in the semantics of the language, though the use of a
+parser generator may lead to ambiguous grammars. In these cases , such
+as `begin...end` in Pascal and `{...}` in C.
+
+Here follows a solution in PEG.js:
+
+    $ cat danglingelse.pegjs 
+    /*
+    S ← 'if' C 'then' S 'else' S / 'if' C 'then' S
+    */
+
+    S =   if C:C then S1:S else S2:S { return [ 'ifthenelse', C, S1, S2 ]; }
+        / if C:C then S:S            { return [ 'ifthen', C, S]; }
+        / O                          { return 'O'; }
+    _ = ' '*
+    C = _'c'_                        { return 'c'; }
+    O = _'o'_                        { return 'o'; }
+    else = _'else'_                 
+    if = _'if'_
+    then = _'then'_
+
+    $ cat use_danglingelse.js 
+    var PEG = require("./danglingelse.js");
+    var r = PEG.parse("if c then if c then o else o");
+    console.log(r);
+
+    $ ../bin/pegjs danglingelse.pegjs 
+    $ node use_danglingelse.js 
+    [ 'ifthen', 'c', [ 'ifthenelse', 'c', 'O', 'O' ] ]
+
+-   [~/srcPLgrado/pegjs/examples(master)]$ pwd -P
+        /Users/casiano/local/src/javascript/PLgrado/pegjs/examples
+
+-   [~/srcPLgrado/pegjs/examples(master)]$ git remote -v
+        dmajda  https://github.com/dmajda/pegjs.git (fetch)
+        dmajda  https://github.com/dmajda/pegjs.git (push)
+        origin  git@github.com:crguezl/pegjs.git (fetch)
+        origin  git@github.com:crguezl/pegjs.git (push)
+
+-   
+
+Si invertimos el orden de las alternativas:
+
+    [~/srcPLgrado/pegjs/examples(master)]$ cat danglingelse2.pegjs 
+    /*
+    S ← 'if' C 'then' S 'else' S / 'if' C 'then' S
+    */
+
+    S =   if C:C then S:S            { return [ 'ifthen', C, S]; }
+        / if C:C then S1:S else S2:S { return [ 'ifthenelse', C, S1, S2 ]; }
+        / O                          { return 'O'; }
+    _ = ' '*
+    C = _'c'_                        { return 'c'; }
+    O = _'o'_                        { return 'o'; }
+    else = _'else'_                 
+    if = _'if'_
+    then = _'then'_
+
+el lenguaje reconocido cambia (vease el ejemplo en la sección
+[subsection:pegvsgrammars]):
+
+    [~/srcPLgrado/pegjs/examples(master)]$ pegjs danglingelse2.pegjs 
+    [~/srcPLgrado/pegjs/examples(master)]$ cat use_danglingelse2.js 
+    var PEG = require("./danglingelse2.js");
+    var r = PEG.parse("if c then if c then o else o");
+    console.log(JSON.stringify(r));
+
+    [~/srcPLgrado/pegjs/examples(master)]$ node use_danglingelse2.js 
+
+    /Users/casiano/local/src/javascript/PLgrado/pegjs/examples/danglingelse2.js:513
+          throw peg$buildException(null, peg$maxFailExpected, peg$maxFailPos);
+                ^
+    SyntaxError: Expected " " or end of input but "e" found.
+
+
+
 
     -   It gets the match results of labeled expressions in preceding
         expression as its arguments.
@@ -1810,161 +2000,6 @@ mas:
     [~/srcPLgrado/pegjs/examples(master)]$ node use_simple3.js 4-1-4
     -1
 
-Reconocimiento de Lenguajes con PEGjs
-=====================================
-
-PEGs versus Gramáticas {#subsection:pegvsgrammars}
-----------------------
-
-Una gramática y un PEG con las mismas reglas no definen el mismo
-lenguaje. Véase este ejemplo:
-
-    [~/srcPLgrado/pegjs/examples(master)]$ cat grammarvspeg.coffee 
-    #!/usr/bin/env coffee
-    PEG = require 'pegjs'
-    coffee = require 'pegjs-coffee-plugin'
-    grammar = """
-    a =  b 'c'           
-    b = 'b' / 'b' 'a'   
-    """
-    parser = PEG.buildParser grammar, plugins: [coffee]
-    r = parser.parse "bc"
-    console.log("r = #{r}")
-    r = parser.parse "bac"
-    console.log("r = #{r}")
-    [~/srcPLgrado/pegjs/examples(master)]$ coffee grammarvspeg.coffee 
-    r = b,c
-    SyntaxError: Expected "c" but "a" found.
-
-Obsérvese que la correspondiente gramática genera el lenguaje:
-
-    { 'bc', 'bac' }
-
-Mientras que el PEG acepta el lenguaje `'bc'`.
-
-: Asociando un else con su if mas cercano
------------------------------------------
-
-The dangling else is a problem in computer programming in which an
-optional `else clause` in an `If–then(–else)` statement results in
-nested conditionals being ambiguous.
-
-Formally, the reference context-free grammar of the language is
-ambiguous, meaning there is more than one correct parse tree.
-
-In many programming languages one may write conditionally executed code
-in two forms:
-
-the `if-then` form, and the `if-then-else` form – the `else` clause is
-optional:
-
-                  if a then s
-                  if a then s1 else s2
-
-This gives rise to an ambiguity in interpretation when there are nested
-statements, specifically whenever an `if-then` form appears as `s1` in
-an `if-then-else` form:
-
-                  if a then if b then s else s2
-
-In this example, `s` is unambiguously executed when `a` is `true` and
-`b` is `true`, but one may interpret `s2` as being executed when `a` is
-`false`
-
--   (thus attaching the `else` to the first `if`) or when
-
--   `a` is `true` and `b` is `false` (thus attaching the `else` to the
-    second `if`).
-
-In other words, one may see the previous statement as either of the
-following expressions:
-
-    if a then (if b then s) else s2
-
-or
-
-    if a then (if b then s else s2)
-
-This is a problem that often comes up in compiler construction,
-especially scannerless parsing.
-
-The convention when dealing with the dangling `else` is to attach the
-`else` to the nearby `if` statement.
-
-Programming languages like Pascal and C follow this convention, so there
-is no ambiguity in the semantics of the language, though the use of a
-parser generator may lead to ambiguous grammars. In these cases , such
-as `begin...end` in Pascal and `{...}` in C.
-
-Here follows a solution in PEG.js:
-
-    $ cat danglingelse.pegjs 
-    /*
-    S ← 'if' C 'then' S 'else' S / 'if' C 'then' S
-    */
-
-    S =   if C:C then S1:S else S2:S { return [ 'ifthenelse', C, S1, S2 ]; }
-        / if C:C then S:S            { return [ 'ifthen', C, S]; }
-        / O                          { return 'O'; }
-    _ = ' '*
-    C = _'c'_                        { return 'c'; }
-    O = _'o'_                        { return 'o'; }
-    else = _'else'_                 
-    if = _'if'_
-    then = _'then'_
-
-    $ cat use_danglingelse.js 
-    var PEG = require("./danglingelse.js");
-    var r = PEG.parse("if c then if c then o else o");
-    console.log(r);
-
-    $ ../bin/pegjs danglingelse.pegjs 
-    $ node use_danglingelse.js 
-    [ 'ifthen', 'c', [ 'ifthenelse', 'c', 'O', 'O' ] ]
-
--   [~/srcPLgrado/pegjs/examples(master)]$ pwd -P
-        /Users/casiano/local/src/javascript/PLgrado/pegjs/examples
-
--   [~/srcPLgrado/pegjs/examples(master)]$ git remote -v
-        dmajda  https://github.com/dmajda/pegjs.git (fetch)
-        dmajda  https://github.com/dmajda/pegjs.git (push)
-        origin  git@github.com:crguezl/pegjs.git (fetch)
-        origin  git@github.com:crguezl/pegjs.git (push)
-
--   
-
-Si invertimos el orden de las alternativas:
-
-    [~/srcPLgrado/pegjs/examples(master)]$ cat danglingelse2.pegjs 
-    /*
-    S ← 'if' C 'then' S 'else' S / 'if' C 'then' S
-    */
-
-    S =   if C:C then S:S            { return [ 'ifthen', C, S]; }
-        / if C:C then S1:S else S2:S { return [ 'ifthenelse', C, S1, S2 ]; }
-        / O                          { return 'O'; }
-    _ = ' '*
-    C = _'c'_                        { return 'c'; }
-    O = _'o'_                        { return 'o'; }
-    else = _'else'_                 
-    if = _'if'_
-    then = _'then'_
-
-el lenguaje reconocido cambia (vease el ejemplo en la sección
-[subsection:pegvsgrammars]):
-
-    [~/srcPLgrado/pegjs/examples(master)]$ pegjs danglingelse2.pegjs 
-    [~/srcPLgrado/pegjs/examples(master)]$ cat use_danglingelse2.js 
-    var PEG = require("./danglingelse2.js");
-    var r = PEG.parse("if c then if c then o else o");
-    console.log(JSON.stringify(r));
-
-    [~/srcPLgrado/pegjs/examples(master)]$ node use_danglingelse2.js 
-
-    /Users/casiano/local/src/javascript/PLgrado/pegjs/examples/danglingelse2.js:513
-          throw peg$buildException(null, peg$maxFailExpected, peg$maxFailPos);
-                ^
-    SyntaxError: Expected " " or end of input but "e" found.
 
 Not Predicate: Comentarios Anidados
 -----------------------------------
