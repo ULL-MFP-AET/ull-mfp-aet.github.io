@@ -120,5 +120,11 @@ practicas:
   - title: 15r15-t3-langdesign
     myurl: https://github.com/ULL-ESIT-PL-1920/design-infix-lang
     name: Práctica r15-t3-langdesign
+  - title: 16p9-t4-peg-infix2egg
+    myurl: /tema4-parsing-expression-grammars/practicas/p9-t4-peg-infix2egg/
+    name: Práctica p9-t4-peg-infix2egg
+    reto:
+      url: /tema4-parsing-expression-grammars/practicas/p9-t4-peg-infix2egg/reto
+      title: Reto Objetos y DOT(.) 
     
 
