@@ -2150,6 +2150,8 @@ PL0 realizado en la práctica [practica:pl0] usando .
 
 -   -   Véase el capítulo <span>*DataMapper*</span> [chapter:datamapper]
 
+## Ambiguity in C++
+
 This lab illustrates a problem that arises in C++. The C++ syntax does
 not disambiguate between expression statements (`stmt`) and declaration
 statements (`decl`). The ambiguity arises when an expression statement
@@ -2170,14 +2172,13 @@ statements when the potential <span>*declarator*</span> is followed by
 an operator different from equal or semicolon (`type_spec` stands for a
 type specifier):
 
-<span>|p<span>3.5cm</span>|p<span>4.5cm</span>|</span> expr & dec\
-
+```
     type_spec(i)++;      
     type_spec(i,3)<<d;  
     type_spec(i)->l=24;
+```
 
-&
-
+```
     type_spec(*i)(int); 
     type_spec(j)[5];   
     type_spec(m) = { 1, 2 }; 
@@ -2186,8 +2187,7 @@ type specifier):
     type_spec(c)=23;         
     type_spec(d),e,f,g=0;   
     type_spec(h)(e,3);     
-
-\
+```
 
 Regarding to this problem, Bjarne Stroustrup remarks:
 
@@ -2245,7 +2245,7 @@ ambiguity:
 
     %%
 
-Escriba un programa PegJS en CoffeeScript que distinga correctamente
+Escriba un programa PegJS  que distinga correctamente
 entre declaraciones y sentencias. Este es un ejemplo de un programa que
 usa una solución al problema:
 
