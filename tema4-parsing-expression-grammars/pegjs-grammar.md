@@ -1,3 +1,5 @@
+# PEG.js Grammar
+
 See [https://github.com/pegjs/pegjs/blob/master/src/parser.pegjs](https://github.com/pegjs/pegjs/blob/master/src/parser.pegjs) for latest version
 
 ```
@@ -213,4 +215,75 @@ See [https://github.com/pegjs/pegjs/blob/master/src/parser.pegjs](https://github
     /* Modeled after ECMA-262, 5th ed., 7.2. */
     whitespace "whitespace"
       = [ \t\v\f\u00A0\uFEFF\u1680\u180E\u2000-\u200A\u202F\u205F\u3000]
+```
+
+# Getting the AST for a Grammar
+
+```js
+[~/.../pegjs/examples(master)]$ node
+Welcome to Node.js v12.10.0.
+Type ".help" for more information.
+> peg = require("pegjs")
+{
+  VERSION: '0.10.0',
+  GrammarError: [Function: GrammarError],
+  parser: {
+    SyntaxError: [Function: peg$SyntaxError] { buildMessage: [Function] },
+    parse: [Function: peg$parse]
+  },
+  compiler: {
+    visitor: { build: [Function: build] },
+    passes: { check: [Object], transform: [Object], generate: [Object] },
+    compile: [Function: compile]
+  },
+  generate: [Function: generate]
+}
+> grammar = "s = 'a'";
+"s = 'a'"
+> ast = peg.parser.parse(grammar)
+{
+  type: 'grammar',
+  initializer: null,
+  rules: [
+    {
+      type: 'rule',
+      name: 's',
+      expression: [Object],
+      location: [Object]
+    }
+  ],
+  location: {
+    start: { offset: 0, line: 1, column: 1 },
+    end: { offset: 7, line: 1, column: 8 }
+  }
+}
+> ins = x => util.inspect(x, {depth:null})
+> ins(ast)
+'{\n' +
+  "  type: 'grammar',\n" +
+  '  initializer: null,\n' +
+  '  rules: [\n' +
+  '    {\n' +
+  "      type: 'rule',\n" +
+  "      name: 's',\n" +
+  '      expression: {\n' +
+  "        type: 'literal',\n" +
+  "        value: 'a',\n" +
+  '        ignoreCase: false,\n' +
+  '        location: {\n' +
+  '          start: { offset: 4, line: 1, column: 5 },\n' +
+  '          end: { offset: 7, line: 1, column: 8 }\n' +
+  '        }\n' +
+  '      },\n' +
+  '      location: {\n' +
+  '        start: { offset: 0, line: 1, column: 1 },\n' +
+  '        end: { offset: 7, line: 1, column: 8 }\n' +
+  '      }\n' +
+  '    }\n' +
+  '  ],\n' +
+  '  location: {\n' +
+  '    start: { offset: 0, line: 1, column: 1 },\n' +
+  '    end: { offset: 7, line: 1, column: 8 }\n' +
+  '  }\n' +
+  '}'
 ```

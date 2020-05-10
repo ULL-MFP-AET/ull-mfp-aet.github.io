@@ -958,40 +958,35 @@ as `begin...end` in Pascal and `{...}` in C.
 
 Here follows a solution in PEG.js:
 
-    $ cat danglingelse.pegjs 
-    /*
-    S ← 'if' C 'then' S 'else' S / 'if' C 'then' S
-    */
+```js
+$ cat danglingelse.pegjs 
+/*
+S ← 'if' C 'then' S 'else' S / 'if' C 'then' S
+*/
 
-    S =   if C:C then S1:S else S2:S { return [ 'ifthenelse', C, S1, S2 ]; }
-        / if C:C then S:S            { return [ 'ifthen', C, S]; }
-        / O                          { return 'O'; }
-    _ = ' '*
-    C = _'c'_                        { return 'c'; }
-    O = _'o'_                        { return 'o'; }
-    else = _'else'_                 
-    if = _'if'_
-    then = _'then'_
+S =   if C:C then S1:S else S2:S { return [ 'ifthenelse', C, S1, S2 ]; }
+    / if C:C then S:S            { return [ 'ifthen', C, S]; }
+    / O                          { return 'O'; }
+_ = ' '*
+C = _'c'_                        { return 'c'; }
+O = _'o'_                        { return 'o'; }
+else = _'else'_                 
+if = _'if'_
+then = _'then'_
+```
 
-    $ cat use_danglingelse.js 
-    var PEG = require("./danglingelse.js");
-    var r = PEG.parse("if c then if c then o else o");
-    console.log(r);
+```
+$ cat use_danglingelse.js
+```
+```js
+var PEG = require("./danglingelse.js");
+var r = PEG.parse("if c then if c then o else o");
+console.log(r);
 
-    $ ../bin/pegjs danglingelse.pegjs 
-    $ node use_danglingelse.js 
-    [ 'ifthen', 'c', [ 'ifthenelse', 'c', 'O', 'O' ] ]
-
--   [~/srcPLgrado/pegjs/examples(master)]$ pwd -P
-        /Users/casiano/local/src/javascript/PLgrado/pegjs/examples
-
--   [~/srcPLgrado/pegjs/examples(master)]$ git remote -v
-        dmajda  https://github.com/dmajda/pegjs.git (fetch)
-        dmajda  https://github.com/dmajda/pegjs.git (push)
-        origin  git@github.com:crguezl/pegjs.git (fetch)
-        origin  git@github.com:crguezl/pegjs.git (push)
-
--   
+$ ../bin/pegjs danglingelse.pegjs 
+$ node use_danglingelse.js 
+[ 'ifthen', 'c', [ 'ifthenelse', 'c', 'O', 'O' ] ]
+```
 
 Si invertimos el orden de las alternativas:
 
@@ -1025,90 +1020,6 @@ el lenguaje reconocido cambia (vease el ejemplo en la sección
           throw peg$buildException(null, peg$maxFailExpected, peg$maxFailPos);
                 ^
     SyntaxError: Expected " " or end of input but "e" found.
-
-
-
-
-
-   
--   $ expression
-
-    Try to match the expression. If the match succeeds, .
-
--   `label : expression`
-
-    -   Match the expression and remember its match result under given
-        `label`.
-
-    -   The label must be a JavaScript identifier.
-
-    -   Labeled expressions are useful together with actions, where
-        saved match results can be accessed by action’s JavaScript code.
-
--   `expression1 expression2 ... expressionn`
-
-    Match a sequence of expressions and return their match results in an
-    array.
-
--   `expression { action }`
-
-    -   Match the expression. If the match is successful, run the
-        `action`, otherwise consider the match failed.
-
-    -   The `action` is a piece of JavaScript code that is executed as
-        if it was inside a function.
-
-    -   It gets the match results of labeled expressions in preceding
-        expression as its arguments.
-
-    -   The action should return some JavaScript value using the
-        `return` statement.
-
-    -   This value is considered match result of the preceding
-        expression.
-
-    -   To indicate an error, the code inside the action can invoke the
-        `expected` function, which makes the parser throw an exception.
-
-        The function takes one parameter — a `description` of what was
-        expected at the current position. This` description` will be
-        used as part of a message of the thrown exception.
-
-    -   The code inside an action can also invoke the `error` function,
-        which also makes the parser throw an exception. The function
-        takes one parameter — an `error` message. This message will be
-        used by the thrown exception.
-
-    -   The code inside the action can access all variables and
-        functions defined in the initializer at the beginning of the
-        grammar.
-
-    -   Curly braces in the action code must be balanced.
-
-    -   The code inside the action can also access the string matched by
-        the expression using the `text` function.
-
-    -   The code inside the action can also access the parse position at
-        the beginning of the action’s expression using the `offset`
-        function. It returns a zero-based character index into the input
-        string.
-
-    -   The code can also access the line and column at the beginning of
-        the action’s expression using the `line` and `column` functions.
-        Both return one-based indexes.
-
-    -   The code inside the action can also access options passed to the
-        parser using the `options` variable.
-
-    -   Note that curly braces in the action code must be balanced.
-
--   expression1 / expression2 / ... / expressionn
-
-    Try to match the first expression, if it does not succeed, try the
-    second one, etc. Return the match result of the first successfully
-    matched expression. If no expression matches, consider the match
-    failed.
-
 
 ## PegJS en los Browser
 
