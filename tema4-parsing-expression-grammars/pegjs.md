@@ -139,6 +139,66 @@ The **match result** for input `abba` is `[ 'a', 'b', 'b', 'a' ]`:
 > parser.parse("abba")
 [ 'a', 'b', 'b', 'a' ]
 ```
+## PEGs versus Gramáticas {#subsection:pegvsgrammars}
+
+Una gramática y un PEG con las mismas reglas no definen el mismo
+lenguaje. Véase este ejemplo:
+
+```
+[~/.../pegjs/examples(master)]$ cat grammarvspegjs.js
+```
+```js
+const PEG = require('pegjs');
+const grammar = `
+  A =  B 'c'
+  B = 'b' / 'b' 'a'
+`;
+const parser = PEG.generate(grammar);
+let r = parser.parse("bc");
+console.log("r = " + r);
+try {
+  r = parser.parse("bac");
+  console.log("r = " + r);
+} catch(e) { console.log(e.message); }
+```
+```
+[~/.../pegjs/examples(master)]$ node grammarvspegjs.js
+r = b,c
+Expected "c" but "a" found.
+```
+
+Obsérvese que la correspondiente gramática genera el lenguaje:
+
+    { 'bc', 'bac' }
+
+Mientras que el PEG acepta el lenguaje `'bc'`.
+
+En efecto, probemos con una herramienta como [Jison](https://zaa.ch/jison/) que permite procesar gramáticas:
+
+```
+[~/.../pegjs/examples(master)]$ cat grammarvspeg.jison
+```
+```
+%lex
+%%
+.                 { return yytext; }
+/lex
+
+%%
+A:  B 'c'
+;
+B: 'b' | 'b' 'a'
+;
+```
+Cuando parseamos la entrada `bac`con esta gramática obtenemos:
+```
+[~/.../pegjs/examples(master)]$ jison grammarvspeg.jison
+[~/.../pegjs/examples(master)]$ ls -ltr |tail -n 1
+-rw-r--r--   1 casiano  staff   20615 10 may 09:18 grammarvspeg.js
+[~/.../pegjs/examples(master)]$ ./use.js grammarvspeg bac
+Processing <bac>
+true
+```
 
 ## Options
 
@@ -847,63 +907,6 @@ location = {
 2
 ```
 
-## PEGs versus Gramáticas {#subsection:pegvsgrammars}
-
-Una gramática y un PEG con las mismas reglas no definen el mismo
-lenguaje. Véase este ejemplo:
-
-```
-[~/.../pegjs/examples(master)]$ cat grammarvspegjs.js
-```
-```js
-const PEG = require('pegjs');
-const grammar = `
-  A =  B 'c'
-  B = 'b' / 'b' 'a'
-`;
-const parser = PEG.generate(grammar);
-let r = parser.parse("bc");
-console.log("r = " + r);
-try {
-  r = parser.parse("bac");
-  console.log("r = " + r);
-} catch(e) { console.log(e.message); }
-```
-```
-[~/.../pegjs/examples(master)]$ node grammarvspegjs.js
-r = b,c
-Expected "c" but "a" found.
-```
-
-Obsérvese que la correspondiente gramática genera el lenguaje:
-
-    { 'bc', 'bac' }
-
-Mientras que el PEG acepta el lenguaje `'bc'`.
-
-En efecto, probemos con una herramienta como [Jison](https://zaa.ch/jison/) que permite procesar gramáticas:
-
-```
-[~/.../pegjs/examples(master)]$ cat grammarvspeg.jison
-```
-```
-%lex
-%%
-.                 { return yytext; }
-/lex
-
-%%
-A:  B 'c'
-;
-B: 'b' | 'b' 'a'
-;
-```
-Cuando parseamos la entrada `bac`con esta gramática obtenemos:
-```
-[~/.../pegjs/examples(master)]$ ./use.js grammarvspeg bac
-Processing <bac>
-true
-```
 
 ## The Dangling else: Asociando un else con su if mas cercano
 
