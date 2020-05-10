@@ -1081,7 +1081,7 @@ console.log(JSON.stringify(r));
         origin  git@github.com:crguezl/pegjs.git (fetch)
         origin  git@github.com:crguezl/pegjs.git (push)
 
-Podemos cargar PEG.js usando un cdn como `unpkg.com` y usarlo en neustros scripts:
+Podemos cargar PEG.js usando un cdn como `unpkg.com` y usarlo en nuestros scripts:
 
 [https://unpkg.com/pegjs@0.10.0/lib/peg.js](https://unpkg.com/pegjs@0.10.0/lib/peg.js)
 
