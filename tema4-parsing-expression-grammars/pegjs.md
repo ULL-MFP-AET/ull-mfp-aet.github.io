@@ -733,6 +733,46 @@ Processing <aabccc>
 Expected , or undefined but "a" found.
 ```
 
+## Not Predicate: Comentarios Anidados
+
+The following recursive program matches Pascal-style nested comment
+syntax:
+
+    (* which can (* nest *) like this *)
+
+```
+[~/.../pegjs/examples(master)]$ cat pascal_comments.pegjs
+/* Pascal nested comments */
+
+P     =   prog:N+                       { return prog; }
+N     =   chars:$(!Begin .)+            { return chars;}
+        / C
+C     = Begin chars:$T* End             { return "C: "+chars; }
+T     =   C
+        / !Begin !End char:.           { return char;}
+Begin = '(*'
+End   = '*)'
+```
+
+```js
+$ cat use_pascal_comments.js 
+var PEG = require("./pascal_comments.js");
+var r = PEG.parse(
+  "not bla bla (* pascal (* nested *) comment *)"+
+  " pum pum (* another comment *)");
+console.log(r);
+```
+
+```
+[~/.../pegjs/examples(master)]$ node use_pascal_comments.js
+[
+  'not bla bla ',
+  'C:  pascal (* nested *) comment ',
+  ' pum pum ',
+  'C:  another comment '
+]
+```
+
 ## Looking Forward: JavaScript Comments
 
 Here is an example recognizing JavaScript whitespaces and comments:
@@ -1172,50 +1212,6 @@ El PEG describe una calculadora:
 ```
 
 <img src="pegjs.png"/>
-
-## Not Predicate: Comentarios Anidados
-
-The following recursive program matches Pascal-style nested comment
-syntax:
-
-    (* which can (* nest *) like this *)
-
-    [~/srcPLgrado/pegjs/examples(master)]$ cat pascal_comments.pegjs 
-    /* Pascal nested comments */
-
-    P     =   prog:N+                       { return prog; }
-    N     =   chars:$(!Begin .)+            { return chars;}
-            / C
-    C     = Begin chars:$T* End             { return "C: "+chars; }
-    T     =   C 
-            / (!Begin !End char:.)          { return char;}
-    Begin = '(*'
-    End   = '*)'
-
-    $ cat use_pascal_comments.js 
-    var PEG = require("./pascal_comments.js");
-    var r = PEG.parse(
-      "not bla bla (* pascal (* nested *) comment *)"+
-      " pum pum (* another comment *)");
-    console.log(r);
-
-    $ ../bin/pegjs pascal_comments.pegjs 
-    $ node use_pascal_comments.js 
-    [ 'not bla bla ',
-      ' pascal  nested  comment ',
-      ' pum pum ',
-      ' another comment ' ]
-
--   [~/srcPLgrado/pegjs/examples(master)]$ pwd -P
-        /Users/casiano/local/src/javascript/PLgrado/pegjs/examples
-
--   [~/srcPLgrado/pegjs/examples(master)]$ git remote -v
-        dmajda  https://github.com/dmajda/pegjs.git (fetch)
-        dmajda  https://github.com/dmajda/pegjs.git (push)
-        origin  git@github.com:crguezl/pegjs.git (fetch)
-        origin  git@github.com:crguezl/pegjs.git (push)
-
--   
 
 ## Un Lenguaje Dependiente del Contexto
 
