@@ -1521,7 +1521,7 @@ See the [PEG.js](pegjs-grammar) grammar here
 * [Repo crguezl/pegjs](https://github.com/crguezl/pegjs)
 * [The examples in this section](https://github.com/crguezl/pegjs/tree/master/examples)
 * [PEG.js Documentation](https://pegjs.org/documentation)
-* [PEG.sj online Editor](https://pegjs.org/online)
+* [PEG.js online Editor](https://pegjs.org/online)
 
 ### Para Localizar Ficheros (Profesor)
 
