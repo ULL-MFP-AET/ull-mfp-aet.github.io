@@ -1117,10 +1117,6 @@ el lenguaje reconocido cambia (vease el ejemplo en la sección
     matched expression. If no expression matches, consider the match
     failed.
 
-## La Gramática de PEG.js
-
-See the [PEG.js](pegjs-grammar) grmmar here
-
 
 ## PegJS en los Browser
 
@@ -1522,4 +1518,8 @@ Y este un ejemplo de salida:
     output=["stmt"]
     input = 'int(4);'
     output=["stmt"]
+
+## La Gramática de PEG.js
+
+See the [PEG.js](pegjs-grammar) grmmar here
 
