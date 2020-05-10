@@ -298,7 +298,7 @@ console.log("r = #{r}")
 One special case of parser expression is a _parser action_ — a piece of JavaScript code inside curly braces (`{` and `}`) that takes **match results** of some of the the preceding expressions **and returns a JavaScript value**. This value is considered match result of the preceding expression (in other words, **the parser action is a match result transformer**).
 
 La ejecución nos muestra además el orden de abajo - arriba y de
-izquierda -derecha en la ejecución de las *parser actions** o  acciones semánticas:
+izquierda -derecha en la ejecución de las **parser actions** o  acciones semánticas:
 
 ```
 [~/.../pegjs/examples(master)]$ npm i pegjs-coffee-plugin
