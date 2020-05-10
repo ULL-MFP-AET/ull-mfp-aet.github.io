@@ -562,7 +562,10 @@ The first rule can be preceded by an _initializer_ — a piece of JavaScript cod
 3. The code inside the initializer can access options passed to the parser using the `options` variable. 
 4. Curly braces in the initializer code must be balanced. 
 
-Here is an example:
+### Solving the Associativity Problem
+
+Here is an example of use of initializers that also solves the associativity problem 
+posed in the section [a very simple calculator(#section:UnEjemploSencillo):
 
 ```
 [~/.../pegjs/examples(master)]$ cat simple_reduce.pegjs
@@ -687,9 +690,9 @@ means all lowercase letters).
 Preceding the characters with `^` inverts the matched set (e.g.
 `[^a-z]` means <span>*"all character but lowercase letters*</span>).
 
-Appending `i` right after the literal makes the match case-insensitive.
+Appending `i` right after the class makes the match case-insensitive.
 
-    -   Example:
+Example:
 
 ```js
 [~/.../pegjs/examples(master)]$ cat regexpjs.js
