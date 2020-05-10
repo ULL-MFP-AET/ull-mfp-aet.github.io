@@ -87,11 +87,20 @@ Type ".help" for more information.
 }
 ```
 
+On the top level, the grammar consists of _rules_ (in our example, there is only one). Each rule has 
+
+- a _name_ (e.g. `start`) that identifies the rule, and 
+- a _parsing expression_ (e.g. `('a' / 'b')+`) that defines a pattern to match against the input text and 
+
+An expression matching a literal string produces a JavaScript string containing matched text (`'a'` matches `a`).
+
 In PEG.js an expression like $$expression_1 / expression_2 / ... / expression_n$$
 tries to match the first expression, if it does not succeed, try the second one, etc. Return the match result of the first successfully matched expression. If no expression matches, the match fails.
 
 Also an expression like `expression +`
 matches one or more repetitions of the expression and **return their match results in an array**. The matching is greedy, i.e. the parser tries to match the expression as many times as possible. Unlike in regular expressions, **there is no backtracking**.
+
+Since an expression matching repeated occurrence of some subexpression produces a JavaScript array with all the matches, the expression `('a' / 'b')+` matches `abb` and has as match result the array `['a', 'b', 'b']`.
 
 Using the generated parser is simple — just call its `parse` method and
 pass an input string as a parameter.
@@ -115,9 +124,6 @@ The method will return
     properties with more details about the error.
 
 If an expression successfully matches a part of the text when running the generated parser, it produces a **match result**, which is a JavaScript value. For example:
-
-* An expression matching a literal string produces a JavaScript string containing matched text.
-* An expression matching repeated occurrence of some subexpression produces a JavaScript array with all the matches.
 
 **The match results** propagate through the rules when the **rule names** are used in **expressions**, up to the **start rule**. The generated parser returns start rule's match result when parsing is successful.
 
@@ -393,7 +399,7 @@ We do the same in:
 $[0-9]+
 ```
 
-Simplifying the parsing to `parseInt(digits, 10)`.
+And thus, instead of an array of digits we have the string with the digits, simplifying the parsing to `parseInt(digits, 10)`.
 
 In our example there are many parser actions. Consider the action in expression 
 
@@ -401,6 +407,15 @@ In our example there are many parser actions. Consider the action in expression
 
 It takes the **match result** of the appearance of the rule `multiplicative`, which is provided in a variable named `left` an the **match result** associated with the appearance of the rule `additive`. They must be numbers and the action sets as **match result** 
 of the rule the sum of the two numbers `{ return left + right; }`
+
+In this example you see many examples of the syntax:
+
+`label : expression`
+
+The meaning is that it matches the expression and remembers its match result under given `label`.
+
+-   The label must be a JavaScript identifier.
+-   Labeled expressions are useful together with actions, where  saved match results can be accessed by action’s JavaScript code.
 
 To produce the parser we compile it with `pegjs`:
 
