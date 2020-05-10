@@ -139,6 +139,40 @@ The **match result** for input `abba` is `[ 'a', 'b', 'b', 'a' ]`:
 > parser.parse("abba")
 [ 'a', 'b', 'b', 'a' ]
 ```
+
+## The OR and Backtracking
+
+PEG parsers don't backtrack like regexps and other recursive-descent parsers or Prolog do. 
+Rather, when confronted with a choice, a PEG parser will try every option until one succeeds.
+**Once one succeeds, it will commit to it** no matter how the rule was invoked.
+
+El siguiente ejemplo ilustra el `/` y el backtracking en los PEGs:
+
+```javascript
+[~/.../pegjs/examples(master)]$ cat backtracking.js
+const PEG = require ("pegjs");
+const grammar1 = `
+start = "test" / "test ;"
+`;
+let parser = PEG.generate(grammar1);
+let input = 'test';
+console.log("OK: "+parser.parse(input)); // OK: test
+try {
+  // This input will not be accepted
+  const input = 'test ;';
+  console.log(parser.parse(input));
+}
+catch (e) { // Expected end of input but " " found
+  console.log(e.message);
+}
+const grammar2 = `
+start = "test" !" ;" / "test ;"
+`;
+parser = PEG.generate(grammar2);
+input = 'test ;';
+console.log("OK: "+parser.parse(input)); // OK: test ;
+```
+
 ## PEGs versus Gramáticas {#subsection:pegvsgrammars}
 
 Una gramática y un PEG con las mismas reglas no definen el mismo
