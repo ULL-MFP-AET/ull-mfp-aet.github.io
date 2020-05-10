@@ -1520,7 +1520,8 @@ See the [PEG.js](pegjs-grammar) grammar here
 * [Apuntes 2015/2016](http://crguezl.github.io/pl-html/node30.html)
 * [Repo crguezl/pegjs](https://github.com/crguezl/pegjs)
 * [The examples in this section](https://github.com/crguezl/pegjs/tree/master/examples)
-
+* [PEG.js Documentation](https://pegjs.org/documentation)
+* [PEG.sj online Editor](https://pegjs.org/online)
 
 ### Para Localizar Ficheros (Profesor)
 
