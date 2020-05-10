@@ -30,6 +30,8 @@ for(let i=0; i<c; i++) {
 ```
 [~/.../pegjs/examples(master)]$ node tracer.js
 tracer called 12 times
+```
+```js
 [
   {
     type: 'rule.enter',
