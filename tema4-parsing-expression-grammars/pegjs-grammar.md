@@ -1,4 +1,7 @@
+```
     [~/srcPLgrado/pegjs(master)]$ cat src/parser.pegjs 
+```
+```
     grammar
       = __ initializer? rule+ 
 
@@ -208,3 +211,4 @@
     /* Modeled after ECMA-262, 5th ed., 7.2. */
     whitespace "whitespace"
       = [ \t\v\f\u00A0\uFEFF\u1680\u180E\u2000-\u200A\u202F\u205F\u3000]
+```

@@ -505,22 +505,6 @@ Processing <5+3*2>
 11
 ```
 
-### Referencias para Localizar Ficheros (Profesor)
-
-```
-    [~/srcPLgrado/pegjs/examples(master)]$ pwd -P
-    /Users/casiano/local/src/javascript/PLgrado/pegjs/examples
-```
-```
-[~/.../pegjs/examples(master)]$ git remote -v
-2020	https://github.com/pegjs/pegjs (fetch)
-2020	https://github.com/pegjs/pegjs (push)
-dmajda	https://github.com/dmajda/pegjs.git (fetch)
-dmajda	https://github.com/dmajda/pegjs.git (push)
-origin	git@github.com:crguezl/pegjs.git (fetch)
-origin	git@github.com:crguezl/pegjs.git (push)
-```
-
 ## Asociación Incorrecta para la Resta y la División
 
 Una Gramática Independiente del Contexto se dice *Recursiva por la Izquierda*
@@ -1529,5 +1513,27 @@ Y este un ejemplo de salida:
 
 ## La Gramática de PEG.js
 
-See the [PEG.js](pegjs-grammar) grmmar here
+See the [PEG.js](pegjs-grammar) grammar here
 
+## Referencias 
+
+* [Apuntes 2015/2016](http://crguezl.github.io/pl-html/node30.html)
+* [Repo crguezl/pegjs](https://github.com/crguezl/pegjs)
+* [The examples in this section](https://github.com/crguezl/pegjs/tree/master/examples)
+
+
+### Para Localizar Ficheros (Profesor)
+
+```
+    [~/srcPLgrado/pegjs/examples(master)]$ pwd -P
+    /Users/casiano/local/src/javascript/PLgrado/pegjs/examples
+```
+```
+[~/.../pegjs/examples(master)]$ git remote -v
+2020	https://github.com/pegjs/pegjs (fetch)
+2020	https://github.com/pegjs/pegjs (push)
+dmajda	https://github.com/dmajda/pegjs.git (fetch)
+dmajda	https://github.com/dmajda/pegjs.git (push)
+origin	git@github.com:crguezl/pegjs.git (fetch)
+origin	git@github.com:crguezl/pegjs.git (push)
+```
