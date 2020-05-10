@@ -808,7 +808,7 @@ Note that curly braces in the predicate code must be balanced.
 [~/.../pegjs/examples(master)]$ cat semantic_predicatejs.js
 ```
 ```js
-let PEG, coffee, grammar, parser, r;
+let PEG, grammar, parser, r;
 PEG = require('pegjs');
 grammar = `
  {
