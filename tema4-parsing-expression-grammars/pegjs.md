@@ -546,7 +546,7 @@ The first rule can be preceded by an _initializer_ — a piece of JavaScript cod
 3. The code inside the initializer can access options passed to the parser using the `options` variable. 
 4. Curly braces in the initializer code must be balanced. 
 
-### Solving the Associativity Problem
+## Solving the Associativity Problem
 
 Here is an example of use of initializers that also solves the associativity problem 
 posed in the section [a very simple calculator(#section:UnEjemploSencillo):
