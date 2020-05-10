@@ -593,7 +593,7 @@ Processing <5-3-2>
 ## Passing Options to the Parser Initializer from Outside
 
 In this example the variable `g `declared inside the initializer is visible 
-in all the actions. Tha variable `options` contains the options argument 
+in all the actions. The variable `options` contains the options argument 
 used in the call to the parser:
 
 ```
