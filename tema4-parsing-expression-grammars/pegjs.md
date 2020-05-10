@@ -624,6 +624,7 @@ Processing <aabccc>
 Expected , or undefined but "a" found.
 ```
 
+## Looking Forward: JavaScript Comments
 
 Here is an example recognizing JavaScript whitespaces and comments:
 
