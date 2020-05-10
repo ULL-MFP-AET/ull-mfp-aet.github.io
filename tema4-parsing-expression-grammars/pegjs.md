@@ -173,6 +173,11 @@ input = 'test ;';
 console.log("OK: "+parser.parse(input)); // OK: test ;
 ```
 
+The expression `! ";"` is like a regexp negative lookahead: 
+tries  to match `";"`. If the match does not succeed, just
+return `undefined` and does not advance the parser position, otherwise
+considers the match failed giving opportunity for the next choice to work.
+
 ## PEGs versus Gramáticas {#subsection:pegvsgrammars}
 
 Una gramática y un PEG con las mismas reglas no definen el mismo
