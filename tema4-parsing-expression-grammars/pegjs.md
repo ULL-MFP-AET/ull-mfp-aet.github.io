@@ -585,6 +585,68 @@ inside predicate: g = visible variable
 2
 ```
 
+## The `i` option for "literal"
+
+Appending `i` right after the literal makes the match case-insensitive:
+
+```js
+[~/.../pegjs/examples(master)]$ cat ignorecasejs.js
+"use strict"
+const PEG = require('pegjs');
+const grammar = `start = a: 'a'i `;
+const parser = PEG.generate(grammar);
+let r = parser.parse('A');
+console.log(r);
+```
+
+## DOT  `.`
+
+Match exactly one character (including `\n`) and return it as a string:
+
+```js
+[~/.../pegjs/examples(master)]$ cat dotjs.js
+const PEG = require('pegjs');
+const grammar = 'start = a: ..';
+const parser = PEG.generate(grammar);
+const r = parser.parse("\n\t");
+console.log(r);
+[~/.../pegjs/examples(master)]$ node dotjs.js
+[ '\n', '\t' ]
+```
+
+## Classes  `[characters]`
+
+Match one character from a set and return it as a string.
+
+The characters in the list can be escaped in exactly the same
+way as in JavaScript string.
+
+The list of characters can also contain ranges (e.g. `[a-z]`
+means all lowercase letters).
+
+Preceding the characters with `^` inverts the matched set (e.g.
+`[^a-z]` means <span>*"all character but lowercase letters*</span>).
+
+Appending `i` right after the literal makes the match case-insensitive.
+
+    -   Example:
+
+```js
+[~/.../pegjs/examples(master)]$ cat regexpjs.js
+const PEG = require('pegjs');
+grammar = 'start = a: [aeiou\u2661]i . [^x-z] ';
+parser = PEG.generate(grammar);
+r = parser.parse('Abr');
+console.log(r);
+r = parser.parse('♡br');
+console.log(r);
+```
+```
+[~/.../pegjs/examples(master)]$ node regexpjs.js
+[ 'A', 'b', 'r' ]
+[ '♡', 'b', 'r' ]
+```
+
 ## Looking Forward: Parsing a Non Context Free Language
 
 `& expression`
@@ -693,67 +755,6 @@ This is the output:
   '/* a\n   third comment */' ]
 ```
 
-## The `i` option for "literal"
-
-Appending `i` right after the literal makes the match case-insensitive:
-
-```js
-[~/.../pegjs/examples(master)]$ cat ignorecasejs.js
-"use strict"
-const PEG = require('pegjs');
-const grammar = `start = a: 'a'i `;
-const parser = PEG.generate(grammar);
-let r = parser.parse('A');
-console.log(r);
-```
-
-## DOT  `.`
-
-Match exactly one character (including `\n`) and return it as a string:
-
-```js
-[~/.../pegjs/examples(master)]$ cat dotjs.js
-const PEG = require('pegjs');
-const grammar = 'start = a: ..';
-const parser = PEG.generate(grammar);
-const r = parser.parse("\n\t");
-console.log(r);
-[~/.../pegjs/examples(master)]$ node dotjs.js
-[ '\n', '\t' ]
-```
-
-## Classes  `[characters]`
-
-Match one character from a set and return it as a string.
-
-The characters in the list can be escaped in exactly the same
-way as in JavaScript string.
-
-The list of characters can also contain ranges (e.g. `[a-z]`
-means all lowercase letters).
-
-Preceding the characters with `^` inverts the matched set (e.g.
-`[^a-z]` means <span>*"all character but lowercase letters*</span>).
-
-Appending `i` right after the literal makes the match case-insensitive.
-
-    -   Example:
-
-```js
-[~/.../pegjs/examples(master)]$ cat regexpjs.js
-const PEG = require('pegjs');
-grammar = 'start = a: [aeiou\u2661]i . [^x-z] ';
-parser = PEG.generate(grammar);
-r = parser.parse('Abr');
-console.log(r);
-r = parser.parse('♡br');
-console.log(r);
-```
-```
-[~/.../pegjs/examples(master)]$ node regexpjs.js
-[ 'A', 'b', 'r' ]
-[ '♡', 'b', 'r' ]
-```
 
 ## Predicate `& { predicate }`
 
