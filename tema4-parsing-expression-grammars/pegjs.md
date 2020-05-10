@@ -1081,7 +1081,12 @@ console.log(JSON.stringify(r));
         origin  git@github.com:crguezl/pegjs.git (fetch)
         origin  git@github.com:crguezl/pegjs.git (push)
 
-Podemos usar directamente las versiones para los browser:
+Podemos cargar PEG.js usando un cdn como `unpkg.com` y usarlo en neustros scripts:
+
+[https://unpkg.com/pegjs@0.10.0/lib/peg.js](https://unpkg.com/pegjs@0.10.0/lib/peg.js)
+
+
+o bien  podemos producir un parser para la web utilizando las opciones del ejecutable `pegjs`:
 
 ```
 [~/.../pegjs/examples(master)]$ pegjs --help
@@ -1097,7 +1102,7 @@ Options:
   ...
 ```
 
-Le indicamos que el parser se guarde en `calculator`:
+De esta forma le indicamos que el parser se guarde en la variable `calculator`:
 
 ```
 [~/.../pegjs/examples(master)]$ pegjs -e calculator --format globals arithmetics.pegjs
