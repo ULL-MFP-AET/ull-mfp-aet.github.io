@@ -213,7 +213,7 @@ Name of the rule to start parsing from.
 
 `tracer`
 
-Tracer to use.
+Tracer to use. See [this example of use](tracer)
 
 Parsers can also support their own custom options.
 
