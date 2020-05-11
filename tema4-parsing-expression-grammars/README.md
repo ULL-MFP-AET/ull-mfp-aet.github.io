@@ -8,8 +8,8 @@
 #### PEG.js
 
 * [Documentación oficial del Módulo PEG.js](https://pegjs.org/documentation)
-* [Viejos Apuntes:PEGs](http://crguezl.github.io/pl-html/node31.html)
-* [Viejos Apuntes del profesor sobre PEG.js](http://crguezl.github.io/pl-html/node32.html)
+* [Viejos Apuntes:PEGs](http://crguezl.github.io/pl-html/node31.html) (Introducción a los PEGs)
+* [Viejos Apuntes del profesor sobre PEG.js](http://crguezl.github.io/pl-html/node32.html) (PEGjs)
 * [Ejemplos en PEG.js](https://github.com/ULL-ESIT-PL-1617/pegjs-examples) Repositorio en GitHub
 * Una Calculadora en infijo. Left recursion removed. Como Hacer Análisis Léxico en PEGs.
     * [simple_reduce.pegjs](https://github.com/ULL-ESIT-PL-1617/pegjs-examples/blob/master/simple_reduce.pegjs)
