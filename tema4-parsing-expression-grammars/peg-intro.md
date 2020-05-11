@@ -148,4 +148,6 @@ The process of rewriting indirectly left-recursive rules is complex in some pack
 * [The Packrat Parsing and Parsing Expression Grammars Page](http://bford.info/packrat/)
 * Michael's Blog: [JavaScript Parser Generators](http://blog.mi-ernst.de/2012/05/14/javascript-parser-generators/).  The PEG.js Tutorial
 
+## Next
 
+* [Next: PEG.js](pegjs)
