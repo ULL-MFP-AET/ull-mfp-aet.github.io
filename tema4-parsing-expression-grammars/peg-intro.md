@@ -122,7 +122,7 @@ PEGs cannot express left-recursive rules where a rule refers to itself
 without moving forward in the string. 
  For example, the following left-recursive CFG rule:
 ```
-string-of-a -> string-of-a 'a' | 'a'
+string-of-a <- string-of-a 'a' | 'a'
 ```
 can be rewritten in a PEG using the plus operator:
 ```
