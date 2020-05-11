@@ -8,6 +8,14 @@ The formalism was introduced by
 [Bryan Ford in 2004 ](https://pdos.csail.mit.edu/papers/parsing:popl04.pdf)
 and is closely related to the family of top-down parsing languages introduced in the early 1970s. 
 
+Here is an example of PEG:
+
+```
+S ← 'if' C 'then' S 'else' S / 'if' C 'then' S
+C ← 'c'
+S ← 's'
+```
+
 Syntactically, PEGs also look similar to
 context-free grammars (CFGs), but they have a different interpretation: 
 
