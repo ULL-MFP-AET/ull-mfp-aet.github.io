@@ -9,14 +9,6 @@
 
 - <a href="{{site.calendario_academico}}" target="_blank">Calendario Académico</a>
 
-## Evaluación
-
-En las horas de prácticas vamos a cambiar el procedimiento de trabajo y vamos a intentar hacer al menos dos evaluaciones de media hora,  por equipos (si es posible ajusten su planificación para estar todos los miembros del equipo presentes el mismo día). Utilizaremos una videoconferencia por equipo. 
-
-* [Teams](https://github.com/orgs/ULL-ESIT-PL-1920/teams)
-
-Asegúrense de haber realizado dos evaluaciones/tutorías antes del 25 de Mayo si quieren tener la oportunidad de estar ya aptos para la publicación de notas del (apróximadamente) 2 de Junio (el primer examen de convocatoria es el 5 de Junio). Si es posible intenten quedar en equipo en una de las reuniones con el profesor y en otra individualmente. 
-
 ## Horarios
 
 - <a href="{{site.horarios_examenes}}" target="_blank">Horarios de Ingeniería Informática para el curso 19/20</a>
