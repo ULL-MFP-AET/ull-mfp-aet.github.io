@@ -588,7 +588,7 @@ The first rule can be preceded by an _initializer_ — a piece of JavaScript cod
 ## Solving the Associativity Problem
 
 Here is an example of use of initializers that also solves the associativity problem 
-posed in the section [a very simple calculator(#section:UnEjemploSencillo):
+posed in the section [a very simple calculator](#section:UnEjemploSencillo):
 
 ```
 [~/.../pegjs/examples(master)]$ cat simple_reduce.pegjs
