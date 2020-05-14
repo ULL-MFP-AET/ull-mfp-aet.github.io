@@ -21,6 +21,7 @@ end
 
 Debería ser posible combinar tanto en el lado izquierdo de una asignación como en el derecho los operadores punto y de indexación.
 Esto es, poder escribir expresiones como:
+
 `a[x+y].c[4].d = b[i][j].z`
 
 ### Recursos
