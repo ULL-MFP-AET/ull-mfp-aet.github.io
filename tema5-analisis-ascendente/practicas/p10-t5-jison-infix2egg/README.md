@@ -10,6 +10,7 @@ usando [Jison](http://zaa.ch/jison/docs/) para re-escribir el analizador sintác
 
 * Este es un buen momento para meditar su diseño del lenguaje de infijo e introducir modificaciones y extensiones
 * Las acciones semánticas a ejecutar dentro del analizador son las de construcción del AST 
+* Realice el [reto](reto)
 
 ### Recursos
 
