@@ -129,5 +129,11 @@ practicas:
     reto:
       url: /tema4-parsing-expression-grammars/practicas/p9-t4-peg-infix2egg/reto
       title: Reto Objetos y DOT(.) 
+  - title: 17p10-t5-jison-infix2egg
+    myurl: /tema5-analisis-ascendente/practicas/p10-t5-jison-infix2egg/
+    name: Práctica p10-t5-jison-infix2egg
+    reto:
+      url: /tema5-analisis-ascendente/practicas/p10-t5-jison-infix2egg/reto
+      title: Nesting brackets and dots 
     
 

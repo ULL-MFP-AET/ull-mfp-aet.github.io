@@ -1,18 +1,5 @@
 # Trabajo Fin de Asignatura PL
 
-## Table of Contents
-
-- [Introducción](#introducci%C3%B3n)
-- [Ideas](#ideas)
-  - [Añadir Herencia entre objetos a Egg](#a%C3%B1adir-herencia-entre-objetos-a-egg)
-  - [Extensión de Egg con `use`](#extensi%C3%B3n-de-egg-con-use)
-  - [Ejemplo: Egg para facilitar el manejo de GitHub](#ejemplo-egg-para-facilitar-el-manejo-de-github)
-  - [Ejemplo: Egg para Calculo Científico](#ejemplo-egg-para-calculo-cient%C3%ADfico)
-  - [Ejemplo: Egg para Describir Tareas](#ejemplo-egg-para-describir-tareas)
-  - [Ejemplo: Command line processing](#ejemplo-command-line-processing)
-- [Entrega](#entrega)
-- [Recursos](#recursos)
-
 ## Introducción
 
 * Cualquier propuesta relacionada con lo visto en la asignatura es bienvenida.
@@ -23,11 +10,10 @@ pero puede proponer un TFA con otro tópico relacionado con PL.
   * En cada caso busque en npm librerías que le den apoyo para que la tarea resulte mas fácil
   * Estas extensiones debería estar en módulos separados que extienden Egg usando el patrón [registry-strategy](https://youtu.be/9nMK2yuln_I)
 *  Todo lo que se dice aquí sobre Egg se puede hacer con cualquiera de los lenguajes Infijo desarrollados en la asignatura
-* Si necesita publicar un módulo npm use el nuevo (Mayo 2019) [GitHub registry](https://help.github.com/en/articles/about-github-package-registry) en vez de npm.js y publique el paquete como privado. 
+* Si necesitas publicar un módulo npm usa [GitHub registry](https://help.github.com/en/articles/about-github-package-registry) en vez de npm.js y publícalo  como paquete privado. 
 
-## Ideas
 
-### Añadir Herencia entre objetos a Egg
+## Añadir Herencia entre objetos a Egg
 
 Podría ser mediante un método `child` como este:
 
@@ -46,7 +32,77 @@ do(
 ```
 La declaración `def(y, child(x))` hace que el objeto `y` herede las propiedades y métodos del objeto `x`
 
-### Extensión de Egg con `use`
+## Añadir Clases al Lenguaje de Infijo
+
+Podría tanto en el lenguaje de infijo como en Egg considerar la posibilidad de introducir clases. Sigue un posible ejemplo:
+
+
+```pascal
+class Math
+begin
+  constructor(x, y)
+  begin
+    this.x = x;
+    this.y = y;
+  end;
+
+  method sum();
+  begin
+    this.x + this.y;
+  end;
+end
+
+begin /* main */
+  let a = new Math(2,3);
+  print(a.sum()); // 5
+end;
+```
+
+## Asincronía en Egg
+
+Añadir soporte para programación asíncrona en Egg.
+Ya de 
+
+```
+topEnv['fetch'] = require('node-fetch');
+```
+
+```
+[~/.../egg/crguezl-egg(private2019)]$ cat examples/fetch.egg
+```
+```js
+do{
+  fetch("https://api.github.com/users/github")
+    .then(->{res, res.json()})
+    .then(->{ json,
+      print(json)
+    })
+}
+```
+
+```js
+[~/.../egg/crguezl-egg(private2019)]$ bin/egg.js examples/fetch.egg
+{
+  login: 'github',
+  id: 9919,
+  node_id: 'MDEyOk9yZ2FuaXphdGlvbjk5MTk=',
+  ...
+  created_at: '2008-05-11T04:37:31Z',
+  updated_at: '2020-02-07T13:08:07Z'
+}
+```
+
+```js
+  do {
+    use("fs"),
+    fs.readFile("input.txt", fun(err, data,
+        print(data)
+      )
+    )
+  }
+```
+
+## Extensión de Egg con `use`
 
 La idea es introducir una función `use` que es parecida a `require` 
 pero con la diferencia de que extiende el lenguaje `Egg-aluXX`
@@ -58,10 +114,10 @@ Y lo ha hecho añadiendo en `specialForms` y `topEnv` nuevas funcionalidades. Pu
 
 Una sentencia como `use('tutu')` debe hacer que el intérprete `egg` haga un `require` de `egg-aluXX-tutu` (que se supone ha sido previamente instalada en `node_modules/`) y que las funcionalidades exportadas por `egg-aluXX-tutu` estén disponibles al programa Egg.
 
-Como ejemplos de uso, véanse las siguientes 
+Como posibles ejemplos de uso, véanse las siguientes 
 secciones 
 
-### Ejemplo: Egg para facilitar el manejo de GitHub
+## Ejemplo: Egg para facilitar el manejo de GitHub
 
 La idea general es extender el lenguaje [Egg](https://github.com/ULL-ESIT-PL-1819/egg) con funcionalidades para la 
 manipulación de GitHub
@@ -83,7 +139,7 @@ Por ejemplo, para implementar la extensión `github` deberá de hacer uso de una
 como [octokit.js](https://www.npmjs.com/package/octokit) o similar.
 
 
-### Ejemplo: Egg para Calculo Científico
+## Ejemplo: Egg para Calculo Científico
 
 La idea general es extender el lenguaje [Egg](https://github.com/ULL-ESIT-PL-1819/egg) con funcionalidades para el cálculo científico
 
@@ -97,7 +153,7 @@ do {
 }
 ```
 
-### Ejemplo: Egg para Describir Tareas
+## Ejemplo: Egg para Describir Tareas
 
 La idea general es extender el lenguaje [Egg](https://github.com/ULL-ESIT-PL-1819/egg) con funcionalidades para la descripción de tareas. Este código sería el contenido de un fichero `eggfile.egg`:
 
@@ -110,7 +166,7 @@ tasks {
 }
 ```
 
-### Ejemplo: Command line processing 
+## Ejemplo: Command line processing 
 
 La idea general es extender el lenguaje [Egg](https://github.com/ULL-ESIT-PL-1819/egg) con funcionalidades para procesar los argumentos dados en línea de comandos (similar a lo que es [commander](https://www.npmjs.com/package/commander) para Node.js):
 
@@ -150,7 +206,6 @@ do {
 Añada como submódulos del repo de entrega todos los repos adicionales que haya tenido que crear 
 para la realización de esta tarea
 
-
 ## Recursos
 
 * [Book *The Modern Javascript Tutorial*. Chapter Promises, async/await](https://javascript.info/async)
@@ -158,14 +213,17 @@ para la realización de esta tarea
 
 ## Table of Contents
 
-- [Introducción](#introducci%C3%B3n)
-- [Ideas](#ideas)
-  - [Añadir Herencia entre objetos a Egg](#a%C3%B1adir-herencia-entre-objetos-a-egg)
-  - [Extensión de Egg con `use`](#extensi%C3%B3n-de-egg-con-use)
+- [Trabajo Fin de Asignatura PL](#trabajo-fin-de-asignatura-pl)
+  - [Introducción](#introducci%c3%b3n)
+  - [Añadir Herencia entre objetos a Egg](#a%c3%b1adir-herencia-entre-objetos-a-egg)
+  - [Añadir Clases al Lenguaje de Infijo](#a%c3%b1adir-clases-al-lenguaje-de-infijo)
+  - [Asincronía en Egg](#asincron%c3%ada-en-egg)
+  - [Extensión de Egg con `use`](#extensi%c3%b3n-de-egg-con-use)
   - [Ejemplo: Egg para facilitar el manejo de GitHub](#ejemplo-egg-para-facilitar-el-manejo-de-github)
-  - [Ejemplo: Egg para Calculo Científico](#ejemplo-egg-para-calculo-cient%C3%ADfico)
+  - [Ejemplo: Egg para Calculo Científico](#ejemplo-egg-para-calculo-cient%c3%adfico)
   - [Ejemplo: Egg para Describir Tareas](#ejemplo-egg-para-describir-tareas)
   - [Ejemplo: Command line processing](#ejemplo-command-line-processing)
-- [Entrega](#entrega)
-- [Recursos](#recursos)
+  - [Entrega](#entrega)
+  - [Recursos](#recursos)
+  - [Table of Contents](#table-of-contents)
 
