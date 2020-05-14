@@ -1,3 +1,11 @@
+---
+layout: default
+title: p10-t5-jison-infix2egg
+permalink: /tema5-analisis-ascendente/practicas/p10-t5-jison-infix2egg/
+previous: 
+  url: /tema4-parsing-expression-grammars/practicas/p9-t4-peg-infix2egg/
+---
+
 ## Re-escribir usando Jison el Traductor del Lenguaje Infijo (p10-t5-jison-infix2egg)
 
 ### Descripción
