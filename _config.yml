@@ -37,7 +37,7 @@ classroom:
 temas:
   - title: 'Tema 0: Introducción a la Asignatura'
     url: /tema0-introduccion-a-pl/guia-docente.html
-    hover: 'Presentación'
+    hover: 'Introduccion-al-Procesamiento-de-Lenguajes'
   - title: 'Tema 1: Introducción a JavaScript'
     url: /tema1-introduccion-a-javascript/
     hover: 'Intro-a-js'
@@ -53,6 +53,9 @@ temas:
   - title: 'Análisis Ascendente'
     url: /tema5-analisis-ascendente/
     hover: 'tema5-analisis-ascendente' 
+  - title: 'TFA'
+    url: /tfa/
+    hover: 'Trabajo-Fin-de-Asignatura' 
 practicas:
   - title: 00cuestionarioghalu
     myurl: https://campusvirtual.ull.es/ingenieriaytecnologia/1920/mod/assign/view.php?id=14658
