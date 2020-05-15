@@ -130,7 +130,7 @@ El problema que me he encontrado es que JS llama a la callback
 con un solo argumento `err` cuando se produce un error y con dos 
 `(err, data)` cuando la operación tiene éxito.
 
-Esta conducta de JS da lugar a que la máquina virtual Egg proteste por cuanto cuando hay error JS llama a la Egg-callback con un número de argumentos diferente de aquel con el que fue declarada.
+Esta conducta de JS da lugar a que la versión actual de la máquina virtual Egg proteste por cuanto espera que el número de argumentos coincida con el número de parámetros declarados. Desafortunadamente, cuando hay error JS llama a la Egg-callback con un número de argumentos diferente de aquel con el que fue declarada.
 
 La cosa tiene varias soluciones, pero en este momento he optado por la mas rápida que ha sido que Egg no proteste ante llamadas con número de argumentos menor que los que le fueron declarados.
 
