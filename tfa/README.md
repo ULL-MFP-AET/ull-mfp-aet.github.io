@@ -58,50 +58,6 @@ begin /* main */
 end;
 ```
 
-## Asincronía en Egg
-
-Añadir soporte para programación asíncrona en Egg.
-Ya de 
-
-```
-topEnv['fetch'] = require('node-fetch');
-```
-
-```
-[~/.../egg/crguezl-egg(private2019)]$ cat examples/fetch.egg
-```
-```js
-do{
-  fetch("https://api.github.com/users/github")
-    .then(->{res, res.json()})
-    .then(->{ json,
-      print(json)
-    })
-}
-```
-
-```js
-[~/.../egg/crguezl-egg(private2019)]$ bin/egg.js examples/fetch.egg
-{
-  login: 'github',
-  id: 9919,
-  node_id: 'MDEyOk9yZ2FuaXphdGlvbjk5MTk=',
-  ...
-  created_at: '2008-05-11T04:37:31Z',
-  updated_at: '2020-02-07T13:08:07Z'
-}
-```
-
-```js
-  do {
-    use("fs"),
-    fs.readFile("input.txt", fun(err, data,
-        print(data)
-      )
-    )
-  }
-```
-
 ## Extensión de Egg con `use`
 
 La idea es introducir una función `use` que es parecida a `require` 
@@ -217,7 +173,6 @@ para la realización de esta tarea
   - [Introducción](#introducci%c3%b3n)
   - [Añadir Herencia entre objetos a Egg](#a%c3%b1adir-herencia-entre-objetos-a-egg)
   - [Añadir Clases al Lenguaje de Infijo](#a%c3%b1adir-clases-al-lenguaje-de-infijo)
-  - [Asincronía en Egg](#asincron%c3%ada-en-egg)
   - [Extensión de Egg con `use`](#extensi%c3%b3n-de-egg-con-use)
   - [Ejemplo: Egg para facilitar el manejo de GitHub](#ejemplo-egg-para-facilitar-el-manejo-de-github)
   - [Ejemplo: Egg para Calculo Científico](#ejemplo-egg-para-calculo-cient%c3%adfico)
