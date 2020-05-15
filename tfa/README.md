@@ -111,7 +111,7 @@ archivos:
 topEnv['fs'] = require('fs');
 ```
 
-Entonces pobamos a escribir un programa como este:
+Cuando probamos a escribir un programa como este:
 
 ```js
 [~/.../egg/crguezl-egg(private2019)]$ cat examples/fs.egg
