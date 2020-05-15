@@ -1,13 +1,18 @@
 
 ## Consideraciones sobre la programación asincrona en Egg
 
-### Promesas en EGg
+### Promesas en Egg
 
-Ejemplo de manejo de la programación asíncrona en Egg.
+A estas alturas la máquina Egg puede manejar promesas por cuanto 
+que es posible en Egg lamar a los métodos de los objetos JavaScript.
+
+Supongamos que extendemos Egg con un objeto `fetch` que impelemnta la API fetch de JS:
 
 ```
 topEnv['fetch'] = require('node-fetch');
 ```
+
+Inmediatamente podemos escribir programas Egg como este:
 
 ```
 [~/.../egg/crguezl-egg(private2019)]$ cat examples/fetch.egg
@@ -21,6 +26,8 @@ do{
     })
 }
 ```
+
+Al ejecutarlo obtenemos:
 
 ```js
 [~/.../egg/crguezl-egg(private2019)]$ bin/egg.js examples/fetch.egg
@@ -36,9 +43,15 @@ do{
 
 ### Callbacks en Egg
 
+Veamos un ejemplo de asíncronía en Egg con callbacks.
+Extendamos Egg con un objeto que provee acceso al sistema de
+archivos:
+
 ```
 topEnv['fs'] = require('fs');
 ```
+
+Entonces pobamos a escribir un programa como este:
 
 ```js
 [~/.../egg/crguezl-egg(private2019)]$ cat examples/fs.egg
@@ -53,9 +66,15 @@ do {
     })
 }
 ```
+El problema que me he encontrado es que JS llama a la callback
+con un solo argumento `err` cuando se produce un error y con dos 
+`(err, data)` cuando la operación tiene éxito.
 
-To make this example to work I
-Removed the fact that the number of parameters must be equal to the number of arguments in a call.
+Esta conducta de JS da lugar a que la máquina virtual Egg proteste por cuanto cuando hay error JS llama a la Egg-callback con un número de argumentos diferente de aquel con el que fue declarada.
+
+La cosa tiene varias soluciones, pero en este momento he optado por la mas rápida que ha sido que Egg no proteste ante llamadas con número de argumentos menor que los que le fueron declarados.
+
+Sigue un ejemplo de ejecución:
 
 ```js
 [~/.../egg/crguezl-egg(private2019)]$ bin/egg.js examples/fs.egg
