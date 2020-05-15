@@ -191,11 +191,11 @@ do {
 }
 ```
 
-Un problema con el que se encontrará a la hora de extender Egg es la asincronía de la mayor parte de las librerías JavaScript
-que va a usar, que casan mal con la naturaleza de Egg, hasta ahora totalmente síncrona.
+Para implementar la extensión `github` podríamos hacer uso de alguna librería asíncrona como [octokit.js](https://www.npmjs.com/package/octokit) o similar.
 
-Por ejemplo, para implementar la extensión `github` podríamos hacer uso de alguna librería asíncrona
-como [octokit.js](https://www.npmjs.com/package/octokit) o similar.
+Todas las librerías de JavaScript para comunicaciones 
+son asíncronas y esto casa mal con la naturaleza de Egg, hasta ahora bastante síncrona.
+
 
 
 ## Ejemplo: Egg para Calculo Científico
