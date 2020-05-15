@@ -1,8 +1,9 @@
 
-## Asincronía en Egg
+## Consideraciones sobre la programación asincrona en Egg
 
-Añadir soporte para programación asíncrona en Egg.
-Ya de 
+### Promesas en EGg
+
+Ejemplo de manejo de la programación asíncrona en Egg.
 
 ```
 topEnv['fetch'] = require('node-fetch');
@@ -15,7 +16,7 @@ topEnv['fetch'] = require('node-fetch');
 do{
   fetch("https://api.github.com/users/github")
     .then(->{res, res.json()})
-    .then(->{ json,
+    .then(->{json,
       print(json)
     })
 }
@@ -32,6 +33,8 @@ do{
   updated_at: '2020-02-07T13:08:07Z'
 }
 ```
+
+### Callbacks en Egg
 
 ```
 topEnv['fs'] = require('fs');
@@ -54,7 +57,7 @@ do {
 To make this example to work I
 Removed the fact that the number of parameters must be equal to the number of arguments in a call.
 
-```
+```js
 [~/.../egg/crguezl-egg(private2019)]$ bin/egg.js examples/fs.egg
 [Error: ENOENT: no such file or directory, open 'examples/no-existe.egg'] {
   errno: -2,

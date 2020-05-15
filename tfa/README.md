@@ -81,7 +81,7 @@ manipulación de GitHub
 ```js
 do {
   use('github'),
-  Org("ULL-ESIT-PL-1819").then(
+  Org("ULL-ESIT-PL-1920").then(
     ->(org, # Object describing the org
     do {
       People(org).then[
