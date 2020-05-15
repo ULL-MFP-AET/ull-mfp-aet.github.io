@@ -260,11 +260,6 @@ do {
 }
 ```
 
-## Entrega
-
-Añada como submódulos del repo de entrega todos los repos adicionales que haya tenido que crear 
-para la realización de esta tarea
-
 ## Recursos
 
 * [Book *The Modern Javascript Tutorial*. Chapter Promises, async/await](https://javascript.info/async)
@@ -284,7 +279,6 @@ para la realización de esta tarea
   - [Ejemplo: Egg para Calculo Científico](#ejemplo-egg-para-calculo-cient%c3%adfico)
   - [Ejemplo: Egg para Describir Tareas](#ejemplo-egg-para-describir-tareas)
   - [Ejemplo: Command line processing](#ejemplo-command-line-processing)
-  - [Entrega](#entrega)
   - [Recursos](#recursos)
   - [Table of Contents](#table-of-contents)
 
