@@ -63,9 +63,10 @@ end;
 ### Promesas en Egg
 
 A estas alturas la máquina Egg puede manejar promesas por cuanto 
-que es posible en Egg lamar a los métodos de los objetos JavaScript.
+que es posible en Egg llamar a los métodos de los objetos JavaScript
+y las promesas no son otra cosa que Objetos JS.
 
-Supongamos que extendemos Egg con un objeto `fetch` que implementa la API fetch de JS:
+Supongamos que extendemos Egg con un objeto `fetch` que implemesnta la API fetch de JS:
 
 ```
 topEnv['fetch'] = require('node-fetch');
