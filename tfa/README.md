@@ -111,7 +111,7 @@ archivos:
 topEnv['fs'] = require('fs');
 ```
 
-Cuando probamos a escribir un programa como este:
+Me he encontrado con un problema cuando probé a escribir este programa:
 
 ```js
 [~/.../egg/crguezl-egg(private2019)]$ cat examples/fs.egg
@@ -126,7 +126,7 @@ do {
     })
 }
 ```
-El problema que me he encontrado es que JS llama a la callback
+El problema es que JS llama a la callback
 con un solo argumento `err` cuando se produce un error y con dos 
 `(err, data)` cuando la operación tiene éxito.
 
