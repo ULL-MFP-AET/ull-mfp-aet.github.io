@@ -81,10 +81,15 @@ manipulación de GitHub
 ```js
 do {
   use('github'),
-  :=(pl, org("ULL-ESIT-PL-1819")), # Object describing the org
-  :=(peoplePL, people(pl)), # Array of objects with the people in the org
-  :=(alus, /alu\d+/.match(peoplePL.names())), # Array of strings 
-  print(alus)
+  Org("ULL-ESIT-PL-1819").then(
+    ->(org, # Object describing the org
+    do {
+      People(org).then[
+        ->(people,  # Array of objects with the people in the org
+             print(people)
+          )
+      ] 
+    }
 }
 ```
 
