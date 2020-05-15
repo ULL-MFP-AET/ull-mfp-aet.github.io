@@ -73,7 +73,7 @@ Una sentencia como `use('tutu')` debe hacer que el intérprete `egg` haga un `re
 Como posibles ejemplos de uso, véanse las siguientes 
 secciones 
 
-## Ejemplo: Egg para facilitar el manejo de GitHub
+## Asincronía en Egg: Una librería para la API de GitHub
 
 La idea general es extender el lenguaje [Egg](https://github.com/ULL-ESIT-PL-1819/egg) con funcionalidades para la 
 manipulación de GitHub
@@ -85,7 +85,7 @@ do {
     ->(org, # Object describing the org
     do {
       People(org).then[
-        ->(people,  # Array of objects with the people in the org
+        ->(people,  # Result is an array of objects with the people in the org
              print(people)
           )
       ] 
@@ -179,7 +179,7 @@ para la realización de esta tarea
   - [Añadir Herencia entre objetos a Egg](#a%c3%b1adir-herencia-entre-objetos-a-egg)
   - [Añadir Clases al Lenguaje de Infijo](#a%c3%b1adir-clases-al-lenguaje-de-infijo)
   - [Extensión de Egg con `use`](#extensi%c3%b3n-de-egg-con-use)
-  - [Ejemplo: Egg para facilitar el manejo de GitHub](#ejemplo-egg-para-facilitar-el-manejo-de-github)
+  - [Asincronía en Egg: Una librería para la API de GitHub](#asincron%c3%ada-en-egg-una-librer%c3%ada-para-la-api-de-github)
   - [Ejemplo: Egg para Calculo Científico](#ejemplo-egg-para-calculo-cient%c3%adfico)
   - [Ejemplo: Egg para Describir Tareas](#ejemplo-egg-para-describir-tareas)
   - [Ejemplo: Command line processing](#ejemplo-command-line-processing)
