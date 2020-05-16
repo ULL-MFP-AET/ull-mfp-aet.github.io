@@ -168,7 +168,7 @@ do {
 }
 ```
 
-## Extensión de Egg con `use`
+## Strategy Pattern: use 
 
 La idea es introducir una función `use` que es parecida a `require` 
 pero con la diferencia de que extiende el lenguaje `Egg-aluXX`
@@ -282,7 +282,7 @@ do {
 Puede resultarte útil leer este tutorial  [JavaScript Default Parameters](https://www.javascripttutorial.net/es6/javascript-default-parameters/)
 si decides abordar esta extensión.
 
-## Ejemplo: Egg para Calculo Vectorial, Algoritmos Evolutivos, IA, etc.
+## Calculo Vectorial, Algoritmos Evolutivos, IA, etc.
 
 Las posibilidades son infinitas, tanto para Egg como para el lenguaje de Infijo. Puede añadir funcionalidades que faciliten la escritura 
 en determinados dominios: algoritmos evolutivos, 
@@ -300,7 +300,7 @@ do {
 }
 ```
 
-## Ejemplo: Egg para Describir Tareas
+## Gestor de Tareas
 
 La idea general es extender el lenguaje [Egg](https://github.com/ULL-ESIT-PL-1819/egg) con funcionalidades para la descripción de tareas. Este código sería el contenido de un fichero `eggfile.egg`:
 
@@ -313,7 +313,7 @@ tasks {
 }
 ```
 
-## Ejemplo: Command line processing 
+## Command line processing 
 
 La idea general es extender el lenguaje [Egg](https://github.com/ULL-ESIT-PL-1819/egg) con funcionalidades para procesar los argumentos dados en línea de comandos (similar a lo que es [commander](https://www.npmjs.com/package/commander) para Node.js):
 
