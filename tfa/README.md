@@ -183,7 +183,7 @@ Una sentencia como `use('tutu')` debe hacer que el intérprete `egg` haga un `re
 Como posibles ejemplos de uso, véanse las siguientes 
 secciones 
 
-## Asincronía en Egg: Una librería para la API de GitHub
+## GitHub Egg
 
 La idea general es extender el lenguaje [Egg](https://github.com/ULL-ESIT-PL-1819/egg) con funcionalidades para la 
 manipulación de GitHub
@@ -205,7 +205,7 @@ do {
 
 Para implementar la extensión `github` podríamos hacer uso de alguna librería asíncrona como [octokit/rest.js](https://github.com/octokit/rest.js/), [github-api](https://www.npmjs.com/package/github-api), [octonode](https://github.com/pksunkara/octonode) o similar.
 
-## Alternativa: Request Síncronos
+## GitHub Egg con Request Síncronos
 
 Todas las librerías de JavaScript para comunicaciones 
 suelen ser asíncronas y esto casa mal con la naturaleza de Egg, hasta ahora bastante síncrona.
@@ -361,8 +361,8 @@ do {
     - [Promesas en Egg](#promesas-en-egg)
     - [Callbacks en Egg](#callbacks-en-egg)
   - [Extensión de Egg con `use`](#extensi%c3%b3n-de-egg-con-use)
-  - [Asincronía en Egg: Una librería para la API de GitHub](#asincron%c3%ada-en-egg-una-librer%c3%ada-para-la-api-de-github)
-  - [Alternativa: Request Síncronos](#alternativa-request-s%c3%adncronos)
+  - [GitHub Egg](#github-egg)
+  - [GitHub Egg con Request Síncronos](#github-egg-con-request-s%c3%adncronos)
   - [Valores por defecto de los parámetros de una función](#valores-por-defecto-de-los-par%c3%a1metros-de-una-funci%c3%b3n)
   - [Ejemplo: Egg para Calculo Científico](#ejemplo-egg-para-calculo-cient%c3%adfico)
   - [Ejemplo: Egg para Describir Tareas](#ejemplo-egg-para-describir-tareas)
