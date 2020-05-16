@@ -216,9 +216,9 @@ Una excepción es `sync-request`:
 
 Usando [sync-request](https://www.npmjs.com/package/sync-request) podemos diseñar una sintáxis mas simple:
 
-```js
+```ruby
 do{
-    use("../lib/github"),     # Carga el módulo para trabajar con la API de GitHub
+    use("../lib/github"),                # Carga el módulo para trabajar con la Api de GitHub
     # setToken(".eggtoken"),  # Token Obtenido en la web de GitHub https://github.com/settings/tokens
     def(me, whoami()),
     print("Teacher: ",me.name),
@@ -228,10 +228,9 @@ do{
     print("Total number of repos in ULL-ESIT-PL-1920: ",pl.total_private_repos),
     print("Number of collaborators in ULL-ESIT-PL-1920: ",pl.collaborators),
     :=(membersPL, members(pl)),
-    # print(peoplePL),
-    print("Members in PL: ",membersPL.length),
+    print("Total members in PL: ",membersPL.length),
     :=(collaboratorsPL, collaborators(pl)),
-    print("Collaborators in PL: ",collaboratorsPL.length),
+    print("Total collaborators in PL: ",collaboratorsPL.length),
 
     :=(inside,
       membersPL.map{->(cv, i, a,
@@ -242,23 +241,20 @@ do{
     print("First and last Members: ", inside[0], element(inside,-1)),
     def(lastCol, element(collaboratorsPL, -1)),
     print("Last collaborator: ", lastCol.login, lastCol.url)
-}
 ```
 
 Cuando se ejecuta obtenemos:
 
 ```
-[.../TFA-04-16-2020-03-22-00/PanchoMen(casiano)]$ bin/egg.js examples/github.egg
 Teacher:  Casiano Rodriguez-Leon
 Teacher's blog: https://crguezl.github.io/quotes-and-thoughts/
 Total number of repos in ULL-ESIT-PL-1920:  829
 Number of collaborators in ULL-ESIT-PL-1920:  54
-Members in PL:  25
-Collaborators in PL:  29
+Total members in PL:  25
+Total collaborators in PL:  29
 First and last Members:  [ 'Alien-97', 'https://api.github.com/users/Alien-97' ] [ 'victoriamr210', 'https://api.github.com/users/victoriamr210' ]
 Last collaborator:  sermg111 https://api.github.com/users/sermg111
 ```
-
 
 * [sync-request](https://www.npmjs.com/package/sync-request)
 * [GitHub: Traversing with Pagination](https://developer.github.com/v3/guides/traversing-with-pagination/)
