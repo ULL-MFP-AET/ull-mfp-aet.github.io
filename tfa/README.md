@@ -110,7 +110,7 @@ archivos:
 topEnv['fs'] = require('fs');
 ```
 
-Me he encontrado con un problema cuando probé a escribir este programa:
+Me he encontrado con algunos problemas cuando probé a escribir este programa:
 
 ```js
 [~/.../egg/crguezl-egg(private2019)]$ cat examples/fs.egg
@@ -205,7 +205,26 @@ Para implementar la extensión `github` podríamos hacer uso de alguna librería
 Todas las librerías de JavaScript para comunicaciones 
 son asíncronas y esto casa mal con la naturaleza de Egg, hasta ahora bastante síncrona.
 
+## Valores por defecto de los parámetros de una función
 
+Esta extensión consiste en añadir la posibilidad de que los
+últimos parámetros de una función tengan valores por defecto y puedan ser omitidos en la llamada:
+
+```js
+do {
+  def(f, fun(x, default(y, 3)), default(z, 2),
+    do {
+      print(x+y+z)
+    }
+  ),
+  f(3),      # 8
+  f(3, 5),   # 10
+  f(3, 1, 9) # 13
+}
+```
+
+Puede resultarte útil leer este tutorial  [JavaScript Default Parameters](https://www.javascripttutorial.net/es6/javascript-default-parameters/)
+si decides abordar esta extensión.
 
 ## Ejemplo: Egg para Calculo Científico
 
@@ -285,6 +304,7 @@ do {
     - [Callbacks en Egg](#callbacks-en-egg)
   - [Extensión de Egg con `use`](#extensi%c3%b3n-de-egg-con-use)
   - [Asincronía en Egg: Una librería para la API de GitHub](#asincron%c3%ada-en-egg-una-librer%c3%ada-para-la-api-de-github)
+  - [Valores por defecto de los parámetros de una función](#valores-por-defecto-de-los-par%c3%a1metros-de-una-funci%c3%b3n)
   - [Ejemplo: Egg para Calculo Científico](#ejemplo-egg-para-calculo-cient%c3%adfico)
   - [Ejemplo: Egg para Describir Tareas](#ejemplo-egg-para-describir-tareas)
   - [Ejemplo: Command line processing](#ejemplo-command-line-processing)
