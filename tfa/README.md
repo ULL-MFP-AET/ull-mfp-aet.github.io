@@ -67,7 +67,7 @@ y las promesas no son otra cosa que Objetos JS.
 
 Supongamos que extendemos Egg con un objeto `fetch` que implementa la API fetch de JS:
 
-```
+```js
 topEnv['fetch'] = require('node-fetch');
 ```
 
@@ -80,8 +80,11 @@ Inmediatamente podemos escribir programas Egg como este:
 do{
   fetch("https://api.github.com/users/github")
     .then(->{res, res.json()})
-    .then(->{json,
+    .then(->{ json,
       print(json)
+    })
+    .catch(->{err,
+      print(err.message)
     })
 }
 ```
