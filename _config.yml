@@ -53,6 +53,9 @@ temas:
   - title: 'Análisis Ascendente'
     url: /tema5-analisis-ascendente/
     hover: 'tema5-analisis-ascendente' 
+  - title: "Análisis Dependiente del Contexto"
+    url: /tema6-analisis-dependiente-del-contexto/
+    hover: 'tema6-analisis-dependiente-del-contexto'
   - title: 'TFA'
     url: /tfa/
     hover: 'Trabajo-Fin-de-Asignatura' 

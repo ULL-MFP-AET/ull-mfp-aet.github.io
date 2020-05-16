@@ -203,7 +203,7 @@ do {
 }
 ```
 
-Para implementar la extensión `github` podríamos hacer uso de alguna librería asíncrona como [github-api](https://www.npmjs.com/package/github-api) o similar.
+Para implementar la extensión `github` podríamos hacer uso de alguna librería asíncrona como [octokit/rest.js](https://github.com/octokit/rest.js/), [github-api](https://www.npmjs.com/package/github-api) o similar.
 
 Todas las librerías de JavaScript para comunicaciones 
 son asíncronas y esto casa mal con la naturaleza de Egg, hasta ahora bastante síncrona.
