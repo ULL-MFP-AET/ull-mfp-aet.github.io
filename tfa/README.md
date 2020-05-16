@@ -3,15 +3,14 @@
 ## Introducción
 
 * Cualquier propuesta relacionada con lo visto en la asignatura es bienvenida.
-* Las ideas que se proponen aquí son las de extender el lenguaje [Egg](https://github.com/ULL-ESIT-PL-1819/egg)
+* Las ideas que se proponen aquí son las de extender el lenguaje [Egg](https://github.com/ULL-ESIT-PL-1819/egg) o el lenguaje de Infijo 
 pero puede proponer un TFA con otro tópico relacionado con PL.
-  * Especial interés puede ser en extender Egg  con un DSL con funcionalidades para 
+  * Especial interés puede ser en extender Egg o el lenguaje de Infijo con un DSL con funcionalidades para 
   facilitar la resolución de problemas en un contexto específico que sea del interés del alumno
   * En cada caso busque en npm librerías que le den apoyo para que la tarea resulte mas fácil
   * Estas extensiones debería estar en módulos separados que extienden Egg usando el patrón [registry-strategy](https://youtu.be/9nMK2yuln_I)
 *  Todo lo que se dice aquí sobre Egg se puede hacer con cualquiera de los lenguajes Infijo desarrollados en la asignatura
-* Si necesitas publicar un módulo npm usa [GitHub registry](https://help.github.com/en/articles/about-github-package-registry) en vez de npm.js y publícalo  como paquete privado. 
-
+* Si necesitas publicar un módulo npm preferiblemente usa [GitHub registry](https://help.github.com/en/articles/about-github-package-registry) en vez de npm.js y publícalo  como paquete privado. 
 
 ## Añadir Herencia entre objetos a Egg
 
@@ -126,6 +125,7 @@ do {
     })
 }
 ```
+
 El problema es que JS llama a la callback
 con un solo argumento `err` cuando se produce un error y con dos 
 `(err, data)` cuando la operación tiene éxito.
@@ -133,6 +133,15 @@ con un solo argumento `err` cuando se produce un error y con dos
 Esta conducta de JS da lugar a que la versión actual de la máquina virtual Egg proteste por cuanto espera que el número de argumentos coincida con el número de parámetros declarados. Desafortunadamente, cuando hay error JS llama a la Egg-callback con un número de argumentos diferente de aquel con el que fue declarada.
 
 La cosa tiene varias soluciones, pero en este momento he optado por la mas rápida que ha sido que Egg no proteste ante llamadas con número de argumentos menor que los que le fueron declarados.
+
+Otro asunto en este ejemplo es que Egg carece del objeto `null` de JS y 
+la convención es que JS llama a la callback con `cb(null, data)` para indicar la ausencia de error. De nuevo hay númerosas formas de abordar este asunto, pero una sencilla es advertir a la máquina virtual Egg de la existencia de `null` para que no proteste:
+
+```
+topEnv['null'] = null;
+topEnv['true'] = true;
+...
+```
 
 Sigue un ejemplo de ejecución:
 
