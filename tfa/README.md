@@ -282,16 +282,20 @@ do {
 Puede resultarte útil leer este tutorial  [JavaScript Default Parameters](https://www.javascripttutorial.net/es6/javascript-default-parameters/)
 si decides abordar esta extensión.
 
-## Ejemplo: Egg para Calculo Científico
+## Ejemplo: Egg para Calculo Vectorial, Algoritmos Evolutivos, IA, etc.
 
-La idea general es extender el lenguaje [Egg](https://github.com/ULL-ESIT-PL-1819/egg) con funcionalidades para el cálculo científico
+Las posibilidades son infinitas, tanto para Egg como para el lenguaje de Infijo. Puede añadir funcionalidades que faciliten la escritura 
+en determinados dominios: algoritmos evolutivos, 
+redes neuronales, estadística, etc.
+
+Un ejemplo simple es extender el lenguaje [Egg](https://github.com/ULL-ESIT-PL-1819/egg) con funcionalidades para el cálculo vectorial
 
 ```js
 do {
   use('science'),
   :=(v1, arr(4, 5, 9)),
   :=(v2, arr(3, 2, 7)), 
-  :=(s, +(v1, v2)),
+  :=(s, *(+(v1, v2),v2)),
   print(s)
 }
 ```
@@ -362,7 +366,7 @@ do {
   - [GitHub Egg](#github-egg)
   - [GitHub Egg con Request Síncronos](#github-egg-con-request-s%c3%adncronos)
   - [Valores por defecto de los parámetros de una función](#valores-por-defecto-de-los-par%c3%a1metros-de-una-funci%c3%b3n)
-  - [Ejemplo: Egg para Calculo Científico](#ejemplo-egg-para-calculo-cient%c3%adfico)
+  - [Ejemplo: Egg para Calculo Vectorial, Algoritmos Evolutivos, IA, etc.](#ejemplo-egg-para-calculo-vectorial-algoritmos-evolutivos-ia-etc)
   - [Ejemplo: Egg para Describir Tareas](#ejemplo-egg-para-describir-tareas)
   - [Ejemplo: Command line processing](#ejemplo-command-line-processing)
   - [Recursos](#recursos)
