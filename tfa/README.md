@@ -348,6 +348,57 @@ do {
 }
 ```
 
+## Plegado de Constantes
+
+Se trata de añadir al compilador de Egg una fase de optimización que haga plegado de constantes.
+
+Por ejemplo, cuando se le da como entrada un programa como este:
+
+```
+[.../TFA-04-16-2020-03-22-00/davafons(casiano)]$ cat examples/optimize.egg
+```
+```ruby
+do {
+  :=(x, +(*(2, 3), -(5, 1))) # 2 * 3 + (5 - 1) == 10
+}
+```
+Si se compila con la opción `--optimize`de lugar a un plegado de constantes (o en inglés [constant folding](https://en.wikipedia.org/wiki/Constant_folding))
+
+```
+[.../TFA-04-16-2020-03-22-00/davafons(casiano)]$ bin/egg.js --optimize -c examples/optimize.egg
+```
+```
+[.../TFA-04-16-2020-03-22-00/davafons(casiano)]$ cat examples/optimize.egg.evm
+```
+```js
+{
+  "type": "apply",
+  "operator": {
+    "type": "word",
+    "name": "do"
+  },
+  "args": [
+    {
+      "type": "apply",
+      "operator": {
+        "type": "word",
+        "name": ":="
+      },
+      "args": [
+        {
+          "type": "word",
+          "name": "x"
+        },
+        {
+          "type": "value",
+          "value": 10
+        }
+      ]
+    }
+  ]
+}
+```
+
 ## Recursos
 
 * [Book *The Modern Javascript Tutorial*. Chapter Promises, async/await](https://javascript.info/async)
