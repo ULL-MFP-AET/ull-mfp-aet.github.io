@@ -352,23 +352,3 @@ do {
 
 * [Book *The Modern Javascript Tutorial*. Chapter Promises, async/await](https://javascript.info/async)
 * Vídeo [Cómo funciona Async/Await en menos de 15 minutos](https://youtu.be/u2axmPnxUoo) YouTube Vídeo por Appdelante
-
-## Table of Contents
-
-- [Trabajo Fin de Asignatura PL](#trabajo-fin-de-asignatura-pl)
-  - [Introducción](#introducci%c3%b3n)
-  - [Añadir Herencia entre objetos a Egg](#a%c3%b1adir-herencia-entre-objetos-a-egg)
-  - [Añadir Clases al Lenguaje de Infijo](#a%c3%b1adir-clases-al-lenguaje-de-infijo)
-  - [Consideraciones sobre la programación asincrona en Egg](#consideraciones-sobre-la-programaci%c3%b3n-asincrona-en-egg)
-    - [Promesas en Egg](#promesas-en-egg)
-    - [Callbacks en Egg](#callbacks-en-egg)
-  - [Extensión de Egg con `use`](#extensi%c3%b3n-de-egg-con-use)
-  - [GitHub Egg](#github-egg)
-  - [GitHub Egg con Request Síncronos](#github-egg-con-request-s%c3%adncronos)
-  - [Valores por defecto de los parámetros de una función](#valores-por-defecto-de-los-par%c3%a1metros-de-una-funci%c3%b3n)
-  - [Ejemplo: Egg para Calculo Vectorial, Algoritmos Evolutivos, IA, etc.](#ejemplo-egg-para-calculo-vectorial-algoritmos-evolutivos-ia-etc)
-  - [Ejemplo: Egg para Describir Tareas](#ejemplo-egg-para-describir-tareas)
-  - [Ejemplo: Command line processing](#ejemplo-command-line-processing)
-  - [Recursos](#recursos)
-  - [Table of Contents](#table-of-contents)
-
