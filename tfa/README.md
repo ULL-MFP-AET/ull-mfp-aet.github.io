@@ -403,6 +403,8 @@ El código resultante produce un programa equivalente a `:= (x, 10)`:
 ```
 
 * [constant folding](https://en.wikipedia.org/wiki/Constant_folding)
+* [estraverse](https://github.com/estools/estraverse)
+
 
 ## Recursos
 
