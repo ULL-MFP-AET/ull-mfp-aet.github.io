@@ -402,8 +402,8 @@ El código resultante produce un programa equivalente a `:= (x, 10)`:
 }
 ```
 
-* [constant folding](https://en.wikipedia.org/wiki/Constant_folding)
-* [estraverse](https://github.com/estools/estraverse)
+* [constant folding](https://en.wikipedia.org/wiki/Constant_folding) en la Wikipedia
+* Puede usar [estraverse](https://github.com/estools/estraverse) para recorrer el AST buscando por árboles constantes
 
 
 ## Recursos
