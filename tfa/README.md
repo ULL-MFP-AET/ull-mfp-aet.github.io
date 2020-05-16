@@ -203,11 +203,66 @@ do {
 }
 ```
 
-Para implementar la extensión `github` podríamos hacer uso de alguna librería asíncrona como [octokit/rest.js](https://github.com/octokit/rest.js/), [github-api](https://www.npmjs.com/package/github-api) o similar.
+Para implementar la extensión `github` podríamos hacer uso de alguna librería asíncrona como [octokit/rest.js](https://github.com/octokit/rest.js/), [github-api](https://www.npmjs.com/package/github-api), [octonode](https://github.com/pksunkara/octonode) o similar.
+
+## Alternativa: Request Síncronos
 
 Todas las librerías de JavaScript para comunicaciones 
-son asíncronas y esto casa mal con la naturaleza de Egg, hasta ahora bastante síncrona.
+suelen ser asíncronas y esto casa mal con la naturaleza de Egg, hasta ahora bastante síncrona.
 
+Una excepción es `sync-request`:
+
+* [sync-request](https://www.npmjs.com/package/sync-request)
+
+Usando [sync-request](https://www.npmjs.com/package/sync-request) podemos diseñar una sintáxis mas simple:
+
+```js
+do{
+    use("../lib/github"),     # Carga el módulo para trabajar con la API de GitHub
+    # setToken(".eggtoken"),  # Token Obtenido en la web de GitHub https://github.com/settings/tokens
+    def(me, whoami()),
+    print("Teacher: ",me.name),
+    print("Teacher's blog:",me.blog),
+    :=(pl, org("ULL-ESIT-PL-1920")),
+    # print(pl),
+    print("Total number of repos in ULL-ESIT-PL-1920: ",pl.total_private_repos),
+    print("Number of collaborators in ULL-ESIT-PL-1920: ",pl.collaborators),
+    :=(membersPL, members(pl)),
+    # print(peoplePL),
+    print("Members in PL: ",membersPL.length),
+    :=(collaboratorsPL, collaborators(pl)),
+    print("Collaborators in PL: ",collaboratorsPL.length),
+
+    :=(inside,
+      membersPL.map{->(cv, i, a,
+          array[cv.login, cv.url]
+        ) # end function
+      } # end map
+    ),
+    print("First and last Members: ", inside[0], element(inside,-1)),
+    def(lastCol, element(collaboratorsPL, -1)),
+    print("Last collaborator: ", lastCol.login, lastCol.url)
+}
+```
+
+Cuando se ejecuta obtenemos:
+
+```
+[.../TFA-04-16-2020-03-22-00/PanchoMen(casiano)]$ bin/egg.js examples/github.egg
+Teacher:  Casiano Rodriguez-Leon
+Teacher's blog: https://crguezl.github.io/quotes-and-thoughts/
+Total number of repos in ULL-ESIT-PL-1920:  829
+Number of collaborators in ULL-ESIT-PL-1920:  54
+Members in PL:  25
+Collaborators in PL:  29
+First and last Members:  [ 'Alien-97', 'https://api.github.com/users/Alien-97' ] [ 'victoriamr210', 'https://api.github.com/users/victoriamr210' ]
+Last collaborator:  sermg111 https://api.github.com/users/sermg111
+```
+
+
+* [sync-request](https://www.npmjs.com/package/sync-request)
+* [GitHub: Traversing with Pagination](https://developer.github.com/v3/guides/traversing-with-pagination/)
+  
 ## Valores por defecto de los parámetros de una función
 
 Esta extensión consiste en añadir la posibilidad de que los
@@ -307,6 +362,7 @@ do {
     - [Callbacks en Egg](#callbacks-en-egg)
   - [Extensión de Egg con `use`](#extensi%c3%b3n-de-egg-con-use)
   - [Asincronía en Egg: Una librería para la API de GitHub](#asincron%c3%ada-en-egg-una-librer%c3%ada-para-la-api-de-github)
+  - [Alternativa: Request Síncronos](#alternativa-request-s%c3%adncronos)
   - [Valores por defecto de los parámetros de una función](#valores-por-defecto-de-los-par%c3%a1metros-de-una-funci%c3%b3n)
   - [Ejemplo: Egg para Calculo Científico](#ejemplo-egg-para-calculo-cient%c3%adfico)
   - [Ejemplo: Egg para Describir Tareas](#ejemplo-egg-para-describir-tareas)
