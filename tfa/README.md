@@ -256,7 +256,7 @@ First and last Members:  [ 'Alien-97', 'https://api.github.com/users/Alien-97' ]
 Last collaborator:  sermg111 https://api.github.com/users/sermg111
 ```
 
-que nos informa que el Sábado 16/05/2020 tenemos 820 repos en la organización.
+que nos informa que el Sábado 16/05/2020 tenemos 54 personas y  820 repos en la organización.
 
 * [sync-request](https://www.npmjs.com/package/sync-request)
 * [GitHub: Traversing with Pagination](https://developer.github.com/v3/guides/traversing-with-pagination/)
