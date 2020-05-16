@@ -80,7 +80,7 @@ Inmediatamente podemos escribir programas Egg como este:
 do{
   fetch("https://api.github.com/users/github")
     .then(->{res, res.json()})
-    .then(->{ json,
+    .then(->{json,
       print(json)
     })
     .catch(->{err,
