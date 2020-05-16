@@ -399,6 +399,8 @@ Si se compila con la opción `--optimize`de lugar a un plegado de constantes (o 
 }
 ```
 
+* [constant folding](https://en.wikipedia.org/wiki/Constant_folding)
+
 ## Recursos
 
 * [Book *The Modern Javascript Tutorial*. Chapter Promises, async/await](https://javascript.info/async)
