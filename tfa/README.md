@@ -506,6 +506,7 @@ Proveer Syntax Highlight en Visual Code para Egg. Véase
 ## Compilador Egg
 
 Escribir un traductor (no un intérprete) para un pequeño subconjunto de Egg a JavaScript.
+
 A continuación un ejemplo borrador de como podría funcionar:
 
 ### input1.egg
@@ -550,11 +551,10 @@ let {sf, te} = require('egg-run-time');
 let ce = Object.create(te); // current environment
 
 sf["do"](
-  sf["def"]("f",
-    sf["fun"]("x", 
-      (ce) => {
-        let le = Object.create(ce);
-        le["x"] = arguments[0];
+  sf["def"]("f", 
+      (x, e) => {
+        let le = Object.create(e);
+        le["x"] = x;
         return sf["+"]("x", 1, le)
     }, ce)
   ,ce),
