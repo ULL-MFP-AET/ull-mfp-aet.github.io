@@ -25,7 +25,7 @@ pdf. Casiano Rodriguez-Leon. Universidad de La Laguna
 HTML. Casiano Rodriguez-Leon. Universidad de La Laguna
   * [GitHub Repo](https://github.com/ULL-ESIT-PL/parsing-strings-and-trees-with-parse-eyapp)
 
-#### Genración de Código
+#### Generación de Código
 
 * [Juan Fumero: TornadoVM](https://www.youtube.com/watch?v=nPlacnadR6k&fbclid=IwAR1J0tpA77p18unBUyLh4tlve_aNmDe56I5VPE8jE4EP7kYh6wz_Zn2StLg)
 
