@@ -507,7 +507,7 @@ Proveer Syntax Highlight en Visual Code para Egg. Véase
 
 Escribir un traductor (no un intérprete) para un pequeño subconjunto de Egg a JavaScript.
 
-A continuación un ejemplo borrador de como podría funcionar:
+A continuación un ejemplo borrador (¡sin contrastar!) de como podría ser el esquema de traducción:
 
 ### input1.egg
 
