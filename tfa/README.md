@@ -526,6 +526,7 @@ Daría una salida como esta
 
 ```js
 let {sf, te} = require('egg-run-time');
+// te es el "topenv" previamente poblado con constantes y variables como "true", "false", etc.
 let ce = Object.create(te); // current environment
 
 sf["do"](
