@@ -57,7 +57,7 @@ begin /* main */
 end;
 ```
 
-## Programación asincrona en Egg: Priemras Consideraciones
+## Programación asincrona en Egg: Primeras Consideraciones
 
 ### Promesas en Egg
 
