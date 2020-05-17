@@ -503,6 +503,64 @@ podemos recorrer el AST comprobando que no se hace ningún intento de modificaci
 Proveer Syntax Highlight en Visual Code para Egg. Véase
 [Syntax Highlight Guide](https://code.visualstudio.com/api/language-extensions/syntax-highlight-guide)
 
+## Compilador Egg
+
+Escribir un traductor (no un intérprete) para un pequeño subconjunto de Egg a JavaScript.
+A continuación un ejemplo borrador de como podría funcionar:
+
+### input1.egg
+
+Supongamos la entrada:
+
+```ruby
+do(
+  def(x, 4*2),
+  print(+(x,1))
+)
+```
+
+Daría una salida como esta
+
+### output1.js
+
+```js
+let {sf, te} = require('egg-run-time');
+let ce = Object.create(te); // current environment
+
+sf["do"](
+  sf["def"]("x", sf["+"](4, 2, ce), ce), 
+  sf["print"](sf["+"]("x", 1, ce), ce),
+  ce
+)
+```
+
+### Input2.egg
+
+```ruby
+do(
+  def(f, fun(x, +(x,1))),
+  f(4)
+)
+```
+
+### output2.js
+
+```js
+let {sf, te} = require('egg-run-time');
+let ce = Object.create(te); // current environment
+
+sf["do"](
+  sf["def"]("f",
+    sf["fun"]("x", 
+      (ce) => {
+        let le = Object.create(ce);
+        le["x"] = arguments[0];
+        return sf["+"]("x", 1, le)
+    }, ce)
+  ,ce),
+  sf["f"](4, ce)
+, ce)
+```
 
 ## Recursos
 
