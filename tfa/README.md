@@ -300,6 +300,7 @@ do{
   print(json)
 }
 ```
+
 Veamos el resultado de una ejecución:
 
 ```
@@ -320,7 +321,8 @@ Veamos el resultado de una ejecución:
 ```
 
 Esta extensión es un reto difícil. 
-Si la realiza las extensiones para DSLs como el de GitHub de la sección anterior quedan mas elegantes.
+Si la realiza las extensiones para DSLs que impliquen llamadas a 
+librerías asíncronas (como el de acceder a la API de GitHub, YouTube, etc.) quedan mas elegantes.
 
 ## Valores por defecto de los parámetros de una función
 
