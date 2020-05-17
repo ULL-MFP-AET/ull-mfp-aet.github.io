@@ -468,6 +468,11 @@ El código resultante produce un programa equivalente a `:= (x, 10)`:
 * [constant folding](https://en.wikipedia.org/wiki/Constant_folding) en la Wikipedia
 * Puede usar [estraverse](https://github.com/estools/estraverse) para recorrer el AST buscando por árboles constantes
 
+## Syntax Higlighting for VSCode
+
+Proveer Syntax Highlight en Visual Code para Egg. Véase
+[Syntax Highlight Guide](https://code.visualstudio.com/api/language-extensions/syntax-highlight-guide)
+
 
 ## Recursos
 
