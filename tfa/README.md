@@ -5,12 +5,13 @@
 * Cualquier propuesta relacionada con lo visto en la asignatura es bienvenida.
 * Las ideas que se proponen aquí son las de extender el lenguaje [Egg](https://github.com/ULL-ESIT-PL-1819/egg) o el lenguaje de Infijo 
 pero puede proponer un TFA con otro tópico relacionado con PL.
-  * Especial interés puede ser en extender Egg o el lenguaje de Infijo con un DSL con funcionalidades para 
-  facilitar la resolución de problemas en un contexto específico que sea del interés del alumno
-  * En cada caso busque en npm librerías que le den apoyo para que la tarea resulte mas fácil
-  * Estas extensiones debería estar en módulos separados que extienden Egg usando el patrón [registry-strategy](https://youtu.be/9nMK2yuln_I)
-*  Todo lo que se dice aquí sobre Egg se puede hacer con cualquiera de los lenguajes Infijo desarrollados en la asignatura
+* Especial interés puede ser extender Egg o el lenguaje de Infijo con un DSL con funcionalidades para facilitar la resolución de problemas en un contexto específico que sea del interés del alumno
+* En cada caso busque en npm librerías que le den apoyo para que la tarea resulte mas fácil
+* Estas extensiones deberían estar en módulos separados que extienden Egg usando el patrón [registry-strategy](https://youtu.be/9nMK2yuln_I).
+En la asignación encontrará una asignación para un repo auxiliar para el módulo.
 * Si necesitas publicar un módulo npm preferiblemente usa [GitHub registry](https://help.github.com/en/articles/about-github-package-registry) en vez de npm.js y publícalo  como paquete privado. 
+*  Todos los ejemplos que se muestran aquí con Egg se pueden hacer con cualquiera de los lenguajes Infijo desarrollados en la asignatura
+
 
 ## Añadir Herencia entre objetos a Egg
 
