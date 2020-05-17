@@ -321,8 +321,8 @@ Veamos el resultado de una ejecución:
 ```
 
 Esta extensión es un reto difícil. 
-Si la realiza las extensiones para DSLs que impliquen llamadas a 
-librerías asíncronas (como el de acceder a la API de GitHub, YouTube, etc.) quedan mas elegantes.
+Con esta versión el diseño de DSLs que extiendan Egg mediante llamadas a 
+librerías asíncronas (como es el caso de accedera a las API de GitHub, YouTube, Google Maps, etc.) quedan simplificadas.
 
 ## Valores por defecto de los parámetros de una función
 
