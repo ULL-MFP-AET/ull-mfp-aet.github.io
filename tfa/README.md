@@ -261,6 +261,46 @@ que nos informa que el Sábado 16/05/2020 tenemos 54 personas y  820 repos en la
 * [sync-request](https://www.npmjs.com/package/sync-request)
 * [GitHub: Traversing with Pagination](https://developer.github.com/v3/guides/traversing-with-pagination/)
   
+## All is Async and Await for Everything
+
+Una manera de simplificar todo el manejo de la asincronía en Egg
+es modificar la forma en la que todo se evalúa: Cambiar los métodos
+`evaluate` para que sean funciones `async` y se haga un `await` en todas 
+las evaluaciones. 
+
+Si la consigue, los programas asíncronos se ven altamente simplificados.
+Vea como reescribimos un `fetch`:
+
+```
+[~/.../PLgrado/eloquentjsegg(async)]$ cat examples/fetch.egg
+```
+```ruby
+do{
+  :=(res, fetch("https://api.github.com/users/github")),
+  :=(json, res.json()),
+  print(json)
+}
+```
+```
+[~/.../PLgrado/eloquentjsegg(async)]$ bin/egg.js examples/fetch.egg
+```
+```js
+{
+  login: 'github',
+  id: 9919,
+  node_id: 'MDEyOk9yZ2FuaXphdGlvbjk5MTk=',
+  avatar_url: 'https://avatars1.githubusercontent.com/u/9919?v=4',
+  gravatar_id: '',
+  url: 'https://api.github.com/users/github',
+  ...
+  created_at: '2008-05-11T04:37:31Z',
+  updated_at: '2020-02-07T13:08:07Z'
+}
+```
+
+Esta extensión es un reto difícil. 
+Si la realiza las extensiones para DSLs como el de GitHub de la sección anterior quedan mas elegantes.
+
 ## Valores por defecto de los parámetros de una función
 
 Esta extensión consiste en añadir la posibilidad de que los
