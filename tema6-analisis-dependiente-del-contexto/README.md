@@ -3,6 +3,8 @@
 ####  Análisis de Ámbito
 
 * [Análisis de Ambito](https://campusvirtual.ull.es/ocw/pluginfile.php/2208/mod_resource/content/0/perlexamples/node282.html)
+* [Práctica: Análisis de Ámbito en PL0](http://crguezl.github.io/pl-html/node51.html)
+* [Práctica: Calculadora con Análisis de Ámbito](http://crguezl.github.io/pl-html/node54.html)
     - [repo pegjscalc-solutions: branch symboltable](https://github.com/ULL-ESIT-GRADOII-PL/pegjscalc-solutions/tree/symboltable)
     - [Análisis de Ámbito en PL0](https://crguezl.github.io/pl-html/node51.html)
 
