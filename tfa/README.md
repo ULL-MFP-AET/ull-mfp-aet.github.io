@@ -557,7 +557,7 @@ sf["do"](
         le["x"] = x;
         return sf["+"]("x", 1, le)
     }, ce)
-  ,ce),
+  , ce),
   sf["f"](4, ce)
 , ce)
 ```
