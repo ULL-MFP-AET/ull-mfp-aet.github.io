@@ -477,14 +477,14 @@ Aunque el lenguaje  Egg dispone de ámbitos, los errores de ámbito (variables n
 set(x, 4)
 ```
 
-Si lo ejecutamos se detecta el error
+Si lo ejecutamos nos da un  run-time error:
 
 ```
 [.../TFA-04-16-2020-03-22-00/davafons(casiano)]$ bin/egg.js examples/set-error-compile.egg
 ReferenceError: Tried setting an undefined variable: x
 ```
 
-De lo que se trata aquí es de detectar los errores antes que se ejecute el programa recorriendo el AST y buscando los nodos de usos de *words* que no han sido definidos en un ámbito superior:
+De lo que se trata aquí es de detectar los errores lo mas temprano posible, antes de que se ejecute el programa recorriendo el AST y buscando los nodos de usos de *words* que no han sido definidos en un ámbito superior:
 
 ```
 [.../TFA-04-16-2020-03-22-00/davafons(casiano)]$ bin/egg.js -c examples/set-error-compile.egg
