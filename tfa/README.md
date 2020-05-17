@@ -529,7 +529,7 @@ let {sf, te} = require('egg-run-time');
 let ce = Object.create(te); // current environment
 
 sf["do"](
-  sf["def"]("x", sf["+"](4, 2, ce), ce), 
+  sf["def"]("x", sf["*"](4, 2, ce), ce), 
   sf["print"](sf["+"]("x", 1, ce), ce),
   ce
 )
