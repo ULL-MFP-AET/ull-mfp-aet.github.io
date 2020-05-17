@@ -494,7 +494,7 @@ ReferenceError: Trying to use the undefined symbol x
 En esta variante de Egg la opción `-c` usada compila el programa pero no lo ejecuta. 
 
 En esta fase de análisis de ámbito también se pueden comprobar algunos otros tipos de errores de uso. Por ejemplo si extendieramos Egg con declaraciones `const` para constantes, 
-podemos comprobar que no se hace ningún intento de modificación (`set`) de esa variable en su ámbito de declaración.
+podemos recorrer el AST comprobando que no se hace ningún intento de modificación (`set`) de esa variable en su ámbito de declaración.
 
 * Vea el Capítulo [Análisis del Contexto]({{site.baseurl}}/tema6-analisis-dependiente-del-contexto/) en estos apuntes
 
