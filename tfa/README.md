@@ -468,6 +468,32 @@ El código resultante produce un programa equivalente a `:= (x, 10)`:
 * [constant folding](https://en.wikipedia.org/wiki/Constant_folding) en la Wikipedia
 * Puede usar [estraverse](https://github.com/estools/estraverse) para recorrer el AST buscando por árboles constantes
 
+## Scope Analysis
+
+Aunque el lenguaje  Egg dispone de ámbitos, los errores de ámbito (variables no declaradas) solo se detectan en tiempo de ejecución:
+
+```ruby
+[.../TFA-04-16-2020-03-22-00/davafons(casiano)]$ cat examples/set-error-compile.egg
+set(x, 4)
+```
+
+Si lo ejecutamos se detecta el error
+
+```
+[.../TFA-04-16-2020-03-22-00/davafons(casiano)]$ bin/egg.js examples/set-error-compile.egg
+ReferenceError: Tried setting an undefined variable: x
+```
+
+De lo que se trata aquí es de detectar los errores antes que se ejecute el programa recorriendo el AST y buscando los nodos de usos de *words* que no han sido definidos en un ámbito superior:
+
+```
+[.../TFA-04-16-2020-03-22-00/davafons(casiano)]$ bin/egg.js -c examples/set-error-compile.egg
+ReferenceError: Trying to use the undefined symbol x
+```
+
+En esta variante de Egg la opción `-c` usada compila el programa pero no lo ejecuta.
+
+
 ## Syntax Higlighting for VSCode
 
 Proveer Syntax Highlight en Visual Code para Egg. Véase
