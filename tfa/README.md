@@ -279,15 +279,16 @@ configuración para Egg:
 * [sync-request](https://www.npmjs.com/package/sync-request)
 * [GitHub: Traversing with Pagination](https://developer.github.com/v3/guides/traversing-with-pagination/)
   
-## All is Async and Await for Everything
+## When All is Async and Egg Awaits for Everything
 
 Una manera de simplificar todo el manejo de la asincronía en Egg
-es modificar la forma en la que todo se evalúa: Cambiar los métodos
+es modificar la forma en la que todo se evalúa: Cambiar todos los métodos
 `evaluate` para que sean funciones `async` y se haga un `await` en todas 
-las evaluaciones. 
+las llamadas a las evaluaciones. 
 
-Si la consigue, los programas asíncronos se ven altamente simplificados.
-Vea como reescribimos un `fetch`:
+Si consigue hacer esta variante, los programas asíncronos se ven altamente simplificados.
+
+Vea como reescribimos nuestro anterior ejemplo de `fetch`:
 
 ```
 [~/.../PLgrado/eloquentjsegg(async)]$ cat examples/fetch.egg
