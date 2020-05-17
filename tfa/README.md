@@ -258,6 +258,24 @@ Last collaborator:  sermg111 https://api.github.com/users/sermg111
 
 que nos informa que el Sábado 16/05/2020 tenemos 54 personas y  820 repos en la organización.
 
+Por supuesto es necesario configurar la extensión con un token.
+En esta solución hemos optado por poner el token en un fichero de 
+configuración para Egg:
+
+```
+[~/.../PLgrado/eloquentjsegg(async)]$ tree ~/.egg/
+/Users/casiano/.egg/
+└── config.json
+
+0 directories, 1 file
+[~/.../PLgrado/eloquentjsegg(async)]$ cat ~/.egg/config.json
+{
+  "github" : {
+    "token": "badbadbadbadbadbadbad..."
+  }
+}
+```
+
 * [sync-request](https://www.npmjs.com/package/sync-request)
 * [GitHub: Traversing with Pagination](https://developer.github.com/v3/guides/traversing-with-pagination/)
   
