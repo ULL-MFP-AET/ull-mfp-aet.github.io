@@ -12,51 +12,6 @@ En la asignación encontrará una asignación para un repo auxiliar para el mód
 * Si necesitas publicar un módulo npm preferiblemente usa [GitHub registry](https://help.github.com/en/articles/about-github-package-registry) en vez de npm.js y publícalo  como paquete privado. 
 *  Todos los ejemplos que se muestran aquí con Egg se pueden hacer con cualquiera de los lenguajes Infijo desarrollados en la asignatura
 
-## Añadir Herencia entre objetos a Egg
-
-Podría ser mediante un método `child` como este:
-
-```js
-do(
-  def(x, object ( 
-    "c", 0,
-    "gc", ->{element[this, "c"]},
-    "sc", ->{value, =(this, "c", value)},
-    "inc", ->{=(this, "c", +(element[this, "c"],1))}
-  )),
-  def(y, child(x)),
-  print(y.sc(5)),
-  print(y.c)
-)
-```
-La declaración `def(y, child(x))` hace que el objeto `y` herede las propiedades y métodos del objeto `x`
-
-## Añadir Clases al Lenguaje de Infijo
-
-Podría tanto en el lenguaje de infijo como en Egg considerar la posibilidad de introducir clases. Sigue un posible ejemplo:
-
-
-```pascal
-class Math
-begin
-  constructor(x, y)
-  begin
-    this.x = x;
-    this.y = y;
-  end;
-
-  method sum();
-  begin
-    this.x + this.y;
-  end;
-end
-
-begin /* main */
-  let a = new Math(2,3);
-  print(a.sum()); // 5
-end;
-```
-
 ## Programación asincrona en Egg: Primeras Consideraciones
 
 ### Promesas en Egg
@@ -323,6 +278,51 @@ Veamos el resultado de una ejecución:
 Esta extensión es un reto difícil. 
 Con esta versión el diseño de DSLs que extiendan Egg mediante llamadas a 
 librerías asíncronas (como es el caso de accedera a las APIs de GitHub, YouTube, Google Maps, etc.) quedan simplificadas.
+
+## Añadir Herencia entre objetos a Egg
+
+Podría ser mediante un método `child` como este:
+
+```js
+do(
+  def(x, object ( 
+    "c", 0,
+    "gc", ->{element[this, "c"]},
+    "sc", ->{value, =(this, "c", value)},
+    "inc", ->{=(this, "c", +(element[this, "c"],1))}
+  )),
+  def(y, child(x)),
+  print(y.sc(5)),
+  print(y.c)
+)
+```
+La declaración `def(y, child(x))` hace que el objeto `y` herede las propiedades y métodos del objeto `x`
+
+## Añadir Clases al Lenguaje de Infijo
+
+Podría tanto en el lenguaje de infijo como en Egg considerar la posibilidad de introducir clases. Sigue un posible ejemplo:
+
+
+```pascal
+class Math
+begin
+  constructor(x, y)
+  begin
+    this.x = x;
+    this.y = y;
+  end;
+
+  method sum();
+  begin
+    this.x + this.y;
+  end;
+end
+
+begin /* main */
+  let a = new Math(2,3);
+  print(a.sum()); // 5
+end;
+```
 
 ## Valores por defecto de los parámetros de una función
 
