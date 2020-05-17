@@ -12,7 +12,6 @@ En la asignación encontrará una asignación para un repo auxiliar para el mód
 * Si necesitas publicar un módulo npm preferiblemente usa [GitHub registry](https://help.github.com/en/articles/about-github-package-registry) en vez de npm.js y publícalo  como paquete privado. 
 *  Todos los ejemplos que se muestran aquí con Egg se pueden hacer con cualquiera de los lenguajes Infijo desarrollados en la asignatura
 
-
 ## Añadir Herencia entre objetos a Egg
 
 Podría ser mediante un método `child` como este:
@@ -58,7 +57,7 @@ begin /* main */
 end;
 ```
 
-## Consideraciones sobre la programación asincrona en Egg
+## Programación asincrona en Egg: Priemras Consideraciones
 
 ### Promesas en Egg
 
