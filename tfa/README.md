@@ -491,8 +491,108 @@ De lo que se trata aquí es de detectar los errores antes que se ejecute el prog
 ReferenceError: Trying to use the undefined symbol x
 ```
 
-En esta variante de Egg la opción `-c` usada compila el programa pero no lo ejecuta.
+En esta variante de Egg la opción `-c` usada compila el programa pero no lo ejecuta. 
 
+En esta fase de análisis de ámbito también se pueden comprobar algunos otros tipos de errores de uso. Por ejemplo si extendierams Egg con declaraciones `const` para constantes, 
+podemos comprobar que no se hace ningún intento de modificación (`set`) de esa variable en su ámbito de declaración.
+
+
+```js
+const estraverse = require("estraverse");
+
+const { TopEnv, SpecialForms } = require("../interp/environment.js");
+const { Apply, Word } = require("../interp/ast.js");
+
+const SCOPE_OPERATORS = ["do", "if", "while", "for", "foreach", "fun", "->", "object"];
+const DEFINE_OPERATORS = [":=", "define", "def"];
+const SET_OPERATORS = ["set", "<-"];
+const FUNCTION_OPERATORS = ["fun", "->"];
+const OBJECT_OPERATORS = ["object", "obj"];
+
+class Semantic {
+  constructor(symboltable) {
+    if (symboltable === undefined) {
+      this.symboltable = Object.create(null);
+    } else {
+      this.symboltable = symboltable;
+    }
+  }
+
+  check(tree) {
+    const methods = this;
+
+    tree = estraverse.replace(tree, {
+      enter: function(node, parent) {
+        if (node.type === "apply") {
+          node = methods.checkApplyEnter(node);
+        } else if (node.type === "word") {
+          node = methods.checkWordEnter(node, parent);
+        }
+
+        return node;
+      },
+      leave: function(node) {
+        if (node.type === "apply") {
+          node = methods.checkApplyLeave(node);
+        }
+
+        return node;
+      },
+      keys: {
+        apply: ["args"],
+        word: [],
+        value: [],
+        regex: []
+      },
+      fallback: "iteration"
+    });
+
+    return tree;
+  }
+
+  static check(tree) {
+    return new Semantic().check(tree);
+  }
+
+  checkApplyEnter(node) {
+    ...
+    return node;
+  }
+
+  assertApplyArgs(node) {
+    ...
+  }
+
+  addToSymboltable(node) {
+    ...
+
+    return node;
+  }
+
+    findInSymboltable(name) {
+    // Find an element on the symboltable or the parent ones
+    for (let table = this.symboltable; table; table = Object.getPrototypeOf(table)) {
+      if (Object.prototype.hasOwnProperty.call(table, name)) {
+        return table[name];
+      }
+    }
+
+    return undefined;
+  }
+
+  checkWordEnter(node, parent) {
+    ...
+  }
+
+  checkApplyLeave(node) {
+    ...
+  }
+}
+
+module.exports = {
+  Semantic
+};
+```
 
 ## Syntax Higlighting for VSCode
 
