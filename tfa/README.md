@@ -503,7 +503,7 @@ podemos recorrer el AST comprobando que no se hace ningún intento de modificaci
 Proveer Syntax Highlight en Visual Code para Egg. Véase
 [Syntax Highlight Guide](https://code.visualstudio.com/api/language-extensions/syntax-highlight-guide)
 
-## Compilador Egg
+## Compilador de Egg a JS
 
 Escribir un traductor (no un intérprete) para un pequeño subconjunto de Egg a JavaScript.
 
