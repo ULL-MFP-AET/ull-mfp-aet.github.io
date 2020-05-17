@@ -498,7 +498,7 @@ podemos recorrer el AST comprobando que no se hace ningún intento de modificaci
 
 * Vea el Capítulo [Análisis del Contexto]({{site.baseurl}}/tema6-analisis-dependiente-del-contexto/) en estos apuntes
 
-## Syntax Higlighting for VSCode
+## Syntax Highlighting for VSCode
 
 Proveer Syntax Highlight en Visual Code para Egg. Véase
 [Syntax Highlight Guide](https://code.visualstudio.com/api/language-extensions/syntax-highlight-guide)
