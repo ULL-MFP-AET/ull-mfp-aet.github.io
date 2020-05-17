@@ -218,7 +218,7 @@ Usando [sync-request](https://www.npmjs.com/package/sync-request) podemos diseñ
 
 ```ruby
 do{
-    use("../lib/github"),                # Carga el módulo para trabajar con la Api de GitHub
+    use("../lib/github"),     # Carga el módulo para trabajar con la Api de GitHub
     # setToken(".eggtoken"),  # Token Obtenido en la web de GitHub https://github.com/settings/tokens
     def(me, whoami()),
     print("Teacher: ",me.name),
