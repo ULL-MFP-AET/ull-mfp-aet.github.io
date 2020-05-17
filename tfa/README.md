@@ -300,6 +300,8 @@ do{
   print(json)
 }
 ```
+Veamos el resultado de una ejecución:
+
 ```
 [~/.../PLgrado/eloquentjsegg(async)]$ bin/egg.js examples/fetch.egg
 ```
