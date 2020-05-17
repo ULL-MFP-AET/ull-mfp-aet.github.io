@@ -322,7 +322,7 @@ Veamos el resultado de una ejecución:
 
 Esta extensión es un reto difícil. 
 Con esta versión el diseño de DSLs que extiendan Egg mediante llamadas a 
-librerías asíncronas (como es el caso de accedera a las API de GitHub, YouTube, Google Maps, etc.) quedan simplificadas.
+librerías asíncronas (como es el caso de accedera a las APIs de GitHub, YouTube, Google Maps, etc.) quedan simplificadas.
 
 ## Valores por defecto de los parámetros de una función
 
