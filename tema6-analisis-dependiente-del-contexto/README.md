@@ -2,15 +2,17 @@
 
 ####  Análisis de Ámbito
 
-* [Análisis de Ambito](http://nereida.deioc.ull.es/~pl/perlexamples/node166.html)
+* [Análisis de Ambito](https://campusvirtual.ull.es/ocw/pluginfile.php/2208/mod_resource/content/0/perlexamples/node282.html)
     - [repo pegjscalc-solutions: branch symboltable](https://github.com/ULL-ESIT-GRADOII-PL/pegjscalc-solutions/tree/symboltable)
-    - [Análisis de Ámbito en PL0](http://nereida.deioc.ull.es/~plgrado/javascriptexamples/node51.html)
+    - [Análisis de Ámbito en PL0](https://crguezl.github.io/pl-html/node51.html)
 
 * [Repo con la solución](https://github.com/ULL-ESIT-PL-1617/solution-pegjs-translate) a la práctica [evaluar-pegjs-translate ](https://github.com/ULL-ESIT-PL-1617/evaluar-pegjs-translate) Curso 16/17
+* [Análisis de Ámbito](https://campusvirtual.ull.es/ocw/pluginfile.php/2319/mod_resource/content/0/perlexamples/node282.html) con Parse::Eyapp
+
 
 ####  Análisis de Tipos
 
-* [Análisis de Tipos](http://nereida.deioc.ull.es/~pl/perlexamples/node177.html)
+* [Análisis de Tipos](https://campusvirtual.ull.es/ocw/pluginfile.php/2208/mod_resource/content/0/perlexamples/node294.html)
     - [repo pegjscalc-solutions: branch semantic](https://github.com/ULL-ESIT-GRADOII-PL/pegjscalc-solutions/tree/semantic)
 
 #### AST and Tree Transformations
