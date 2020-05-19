@@ -2,6 +2,7 @@
 
 ## Análisis LR
 
+* [Jison Debugger](https://nolanlawson.github.io/jison-debugger/)
 * [Análisis Sintáctico Ascendente en JavaScript](http://crguezl.github.io/pl-html/node43.html)
 * [Precedencia y Asociatividad](http://crguezl.github.io/pl-html/node57.html)
     - [Repo de ejemplo crguezl/jison-prec](https://github.com/crguezl/jison-prec)
