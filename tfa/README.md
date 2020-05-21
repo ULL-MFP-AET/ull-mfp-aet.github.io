@@ -505,7 +505,7 @@ Proveer Syntax Highlight en Visual Code para Egg. Véase
 
 ## Compilador de Egg a JS
 
-Escribir un traductor (no un intérprete) para un pequeño subconjunto de Egg a JavaScript.
+Escribir un traductor (no un intérprete) desde Egg a JavaScript.
 
 A continuación un ejemplo borrador (¡sin contrastar!) de como podría ser el esquema de traducción:
 
@@ -515,7 +515,7 @@ Supongamos la entrada:
 
 ```ruby
 do(
-  def(x, 4*2),
+  def(x, *(4,2)),
   print(+(x,1))
 )
 ```
