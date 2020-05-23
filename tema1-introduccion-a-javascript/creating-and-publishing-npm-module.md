@@ -1443,7 +1443,7 @@ Here are the two repos for the scapegoat example:
 
 ### Git Submodule Alternatives
 
-After a while searching for alternatives to `git submodules` I found these two toolswquite convincing:
+After a while searching for alternatives to `git submodules` I found these two tools quite convincing:
 
 * [loop](https://www.npmjs.com/package/loop)
 * [meta](https://www.npmjs.com/package/meta)
