@@ -1441,6 +1441,13 @@ Here are the two repos for the scapegoat example:
   - [Submodule ULL-ESIT-DSI-1617/scapegoat](https://github.com/ULL-ESIT-DSI-1617/scapegoat)
   - [Submodule ULL-ESIT-DSI-1617/prueba-scapegoat](https://github.com/ULL-ESIT-DSI-1617/prueba-scapegoat)
 
+### Git Submodule Alternatives
+
+After a while searching for alternatives to `git submodules` I found these two toolswquite convincing:
+
+* [loop](https://www.npmjs.com/package/loop)
+* [meta](https://www.npmjs.com/package/meta)
+
 
 ## References
 
