@@ -26,6 +26,11 @@
 * [BULL PuntoQ](https://www.ull.es/servicios/biblioteca/servicios/puntoq/)
 * [Video tutoriales de ayuda sobre PuntoQ](https://www.ull.es/servicios/biblioteca/servicios/videotutoriales-de-puntoq/)
 
+## Antiplagio
+
+* [Solicitud de informe de similitud](https://docs.google.com/forms/d/e/1FAIpQLSfEyKnNYAXH5lH9eTh6de6qu5dP-lp33ul4QE8PrFLqeXT66A/viewform) Turnitin
+
+
 ## GitHub
 
 * [Página Web de PL (github gitbook)](https://ull-esit-pl-1819.github.io/ull-esit-pl-1819.github.io/_book/)
