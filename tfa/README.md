@@ -246,6 +246,8 @@ Si consigue hacer esta variante, los programas asíncronos se ven altamente simp
 Vea como reescribimos nuestro anterior ejemplo de `fetch`:
 
 ```
+[~/.../src/egg(async)]$ pwd -P
+/Users/casiano/local/src/javascript/PLgrado/eloquentjsegg
 [~/.../PLgrado/eloquentjsegg(async)]$ cat examples/fetch.egg
 ```
 ```ruby
