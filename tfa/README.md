@@ -357,19 +357,19 @@ Sigue unejemplo:
 
 ```ruby
 do {
-  def(f1, fun(x, y,
+  def(f1, fun(x, y, # f1 espera dos argumentos
     do {
       +(x,y)
     }
   )),
   def(z, array(1,4)),
-  print(f1(spread(z))), # 5
-  def(g, fun(a, spread(x),
+  print(f1(spread(z))), # Lo llamamos con un array. Resultado: 5
+  def(g, fun(a, spread(x), # g espera uno o mas argumentos
     do {
       +(x[0], x[1])
     }
   )),
-  print(g(1, 4, 5)) # 9
+  print(g(1, 4, 5)) # a es 1 y x es [4, 5]. Resultado: 9
 }
 ```
 
