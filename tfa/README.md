@@ -347,6 +347,29 @@ do {
 Puede resultarte útil leer este tutorial  [JavaScript Default Parameters](https://www.javascripttutorial.net/es6/javascript-default-parameters/)
 si decides abordar esta extensión.
 
+## Operador spread
+
+Se trata de añadir a Egg un operador `spread` que funcione como el de JS
+permitiendo que un array sea expandido en llamadas a funciones donde se esperan múltiples elementos y al revés: que los múltiples argumentos de una función sean colocados en un array dentro del cuerpo de la función.
+
+```ruby
+do {
+  def(f1, fun(x, y,
+    do {
+      +(x,y)
+    }
+  )),
+  def(z, array(1,4)),
+  print(f1(spread(z))), # 5
+  def(g, fun(a, spread(x),
+    do {
+      +(x[0], x[1])
+    }
+  )),
+  print(g(1, 4, 5)) # 9
+}
+```
+
 ## Calculo Vectorial, Algoritmos Evolutivos, IA, etc.
 
 Las posibilidades son infinitas, tanto para Egg como para el lenguaje de Infijo. Puede añadir funcionalidades que faciliten la escritura 
