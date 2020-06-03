@@ -30,6 +30,10 @@
 
 * [Solicitud de informe de similitud](https://docs.google.com/forms/d/e/1FAIpQLSfEyKnNYAXH5lH9eTh6de6qu5dP-lp33ul4QE8PrFLqeXT66A/viewform) Turnitin
 
+## Firma Electrónica Masters y TFGs
+
+* [Procedimiento](https://sede.ull.es/ecivilis-site/catalog/showProcedure/257)
+* [Procedimiento para entregar el Trabajo Fin de Grado (TFG) a través de la sede electrónica de la ULL](https://youtu.be/foDDM8tQML4)
 
 ## GitHub
 
