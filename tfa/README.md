@@ -350,7 +350,10 @@ si decides abordar esta extensión.
 ## Operador spread
 
 Se trata de añadir a Egg un operador `spread` que funcione como el de JS
-permitiendo que un array sea expandido en llamadas a funciones donde se esperan múltiples elementos y al revés: que los múltiples argumentos de una función sean colocados en un array dentro del cuerpo de la función.
+permitiendo que un `spread(array)` sea expandido en llamadas a funciones donde se esperan múltiples elementos y al revés: que los múltiples argumentos de una función sean colocados en un array dentro del cuerpo de la función.
+
+Sigue unejemplo:
+
 
 ```ruby
 do {
