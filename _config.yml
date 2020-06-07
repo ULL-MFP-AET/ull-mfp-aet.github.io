@@ -37,7 +37,7 @@ classroom:
   name: ULL-ESIT-PL-1920
 temas:
   - title: 'Tema 0: Introducción a la Asignatura'
-    url: /tema0-introduccion-a-pl/guia-docente.html
+    url: /tema0-introduccion-a-pl/
     hover: 'Introduccion-al-Procesamiento-de-Lenguajes'
   - title: 'Tema 1: Introducción a JavaScript'
     url: /tema1-introduccion-a-javascript/
