@@ -1,8 +1,8 @@
 # Introducción a la Asignatura
 
-## Guia Docente
+## Organización de PL
 
-* [Guía Docente]({{site.baseurl}}/tema0-introduccion-a-pl/guia-docente.html)
+* [Organización de PL]({{site.baseurl}}/tema0-introduccion-a-pl/guia-docente.html)
 
 ## What is a PL About?
 
