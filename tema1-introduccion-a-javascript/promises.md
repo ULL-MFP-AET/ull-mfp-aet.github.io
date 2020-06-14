@@ -60,6 +60,8 @@
 
 ### [Async/await](https://javascript.info/async-await)
 
+* [Async + Await in JavaScript, talk from Wes Bos](https://youtu.be/DwQJ_NPQWWo) Youtube
+  * [Slides](https://wesbos.github.io/Async-Await-Talk/#1)
 
 ## Ejercicios
 
