@@ -30,10 +30,6 @@
 
 * [Solicitud de informe de similitud](https://docs.google.com/forms/d/e/1FAIpQLSfEyKnNYAXH5lH9eTh6de6qu5dP-lp33ul4QE8PrFLqeXT66A/viewform) Turnitin
 
-## Firma Electrónica Masters y TFGs
-
-* [Procedimiento](https://sede.ull.es/ecivilis-site/catalog/showProcedure/257)
-* [Procedimiento para entregar el Trabajo Fin de Grado (TFG) a través de la sede electrónica de la ULL](https://youtu.be/foDDM8tQML4)
 
 ## GitHub
 
@@ -98,7 +94,12 @@
     - [Mis trámites](https://sede.ull.es/ecivilis-site/records/myRecords)
     - [Portafirmas de la ULL](https://sede.ull.es/ecivilis-signature-inbox-application/inbox.html)
     - [Certificado de Docencia Impartida](https://sede.ull.es/ecivilis-site/catalog/showProcedure/550?fbclid=IwAR27HUuu8SbYKpsnoR3RCPzHzCvaMpDqW1ZxB4jeljRLz1SreHgxv1aJqZc)
-    - [Presentación de las Actas del Trabajo Fin de Máster (TFM)](https://sede.ull.es/ecivilis-site/catalog/showProcedure/485) por el secretaio del tribunal
+  
+### Procedimientos en la Sede  para Masters y TFGs
+
+* [Procedimiento Presentación del Trabajo Fin de Máster Universitario](https://sede.ull.es/ecivilis-site/catalog/showProcedure/257)
+* Presentación de las Actas del Trabajo Fin de Máster (TFM)](https://sede.ull.es/ecivilis-site/catalog/showProcedure/485) por el secretaio del tribunal
+* [Procedimiento para entregar el Trabajo Fin de Grado (TFG) a través de la sede electrónica de la ULL](https://youtu.be/foDDM8tQML4)
 
 ## Plan de Ordenación Docente 
 
