@@ -5,6 +5,6 @@ end
 
 desc "serve locally"
 task :serve do
-  sh "bundle exec jekyll serve --future --watch --port 8082"
+  sh "bundle exec jekyll serve --future --watch --host 0.0.0.0 --port 8082"
 end
 

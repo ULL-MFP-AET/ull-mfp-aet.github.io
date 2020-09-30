@@ -37,13 +37,21 @@
             {{ content }}
 
             <h2>Your Comments</h2>
+            
+            {% include laguera.html %}
+
+            <!--
             {% include utterances.html %}
+            -->
+            <!--
+
             <details>
                 <summary>
                     <h2>Comment with Disqus</h2>
                 </summary>
                 {% include disqus.html %}
             </details>
+            -->
 
             <!-- Mathjax Support  -->
             <script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML' async></script>

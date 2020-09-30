@@ -1,8 +1,8 @@
-title: 'Procesadores de Lenguajes'
+title: 'Aprendizaje y Enseñanza de la Tecnología'
 subtitle: 'Itinerario de Computación. Grado en Ingeniería Informática. ULL. Curso 2018/2019'
 theme: jekyll-theme-midnight
 description: '3º. 2º cuatrimestre. Itinerario de Computación. Grado en Ingeniería Informática. ULL'
-acronym: PL
+acronym: AET
 exclude: [ 'Arona-winter-course', 'dsi1819', 'dsi1819-introduccion', 'tema0-introduccion-a-pl/practicas/code']
 baseurl: '/introduccion'
 url: https://ULL-ESIT-PL-1819.github.io/introduccion
@@ -38,28 +38,7 @@ classroom:
 temas:
   - title: 'Tema 0: Introducción a la Asignatura'
     url: /tema0-introduccion-a-pl/
-    hover: 'Introduccion-al-Procesamiento-de-Lenguajes'
-  - title: 'Tema 1: Introducción a JavaScript'
-    url: /tema1-introduccion-a-javascript/
-    hover: 'Intro-a-js'
-  - title: 'Tema 2: Expresiones Regulares y Análisis Léxico'
-    url: /tema2-expresiones-regulares-y-analisis-lexico/
-    hover: 'tema2-expresiones-regulares-y-analisis-lexico'
-  - title: 'Análisis Sintactico Descendente Recursivo Predictivo'
-    url: /tema3-analisis-descendente-predictivo-recursivo/
-    hover: 'tema3-pdr'
-  - title: 'Parsing Expression Grammars (PEGs)'
-    url: /tema4-parsing-expression-grammars/
-    hover: 'tema4-pegs'
-  - title: 'Análisis Ascendente'
-    url: /tema5-analisis-ascendente/
-    hover: 'tema5-analisis-ascendente' 
-  - title: "Análisis Dependiente del Contexto"
-    url: /tema6-analisis-dependiente-del-contexto/
-    hover: 'tema6-analisis-dependiente-del-contexto'
-  - title: 'TFA'
-    url: /tfa/
-    hover: 'Trabajo-Fin-de-Asignatura' 
+    hover: 'Introduccion-al-Procesamiento-de-Lenguajes' 
 practicas:
   - title: 00cuestionarioghalu
     myurl: https://campusvirtual.ull.es/ingenieriaytecnologia/1920/mod/assign/view.php?id=14658
@@ -67,82 +46,5 @@ practicas:
   - title: 01comunidadgpluspl
     myurl: https://campusvirtual.ull.es/ingenieriaytecnologia/1920/mod/assign/view.php?id=14657
     name: Tarea Comunidad G+ de PL
-  - title: 02pb-gh-campus-expert
-    myurl: /tema0-introduccion-a-pl/practicas/pb-gh-campus-expert/
-    name: Práctica pb-gh-campus-expert
-  - title: 03p0-t0-esprima-logging
-    myurl: /tema0-introduccion-a-pl/practicas/p0-t0-esprima-logging
-    name: Práctica p0-t0-esprima-logging
-    reto:
-      title: Funciones Flecha Gorda y Nº de línea
-      url: /tema0-introduccion-a-pl/practicas/p0-t0-esprima-logging-reto
-  - title: 04p1-t1-iaas
-    myurl: /tema1-introduccion-a-javascript/practicas/p1-t1-iaas/
-    name: Práctica p1-t1-iaas
-    reto: 
-      url: /tema1-introduccion-a-javascript/practicas/p1-t1-iaas/reto-async
-      title: Reto Async Map
-  - title: 05p2-t1-vscode
-    myurl: /tema1-introduccion-a-javascript/practicas/p2-t1-vscode/
-    name: Práctica p2-t1-vscode
-  - title: 06p3-t1-handling-events
-    myurl: /tema1-introduccion-a-javascript/practicas/p3-t1-handling-events/
-    name: Práctica p3-t1-handling-events
-    reto: 
-      url: /tema1-introduccion-a-javascript/practicas/p3-t1-handling-events/reto
-      title: Reto Async Serialize
-  - title: 07p2-t1-testing
-    myurl: /tema1-introduccion-a-javascript/practicas/p2-t1-testing/
-    name: Práctica p2-t1-testing
-    reto: 
-      url: /tema1-introduccion-a-javascript/practicas/p2-t1-testing//reto
-      title: Reto Webpages for Authors
-  - title: 08p3-t2-regexp
-    myurl: /tema2-expresiones-regulares-y-analisis-lexico/practicas/p3-t2-regexp/reto
-    name: Práctica p3-t2-regexp
-  - title: 09p9-t2-lexer
-    myurl: /tema2-expresiones-regulares-y-analisis-lexico/practicas/p9-t2-lexer/
-    name: Práctica p9-t2-lexer
-    reto: 
-      url: /tema2-expresiones-regulares-y-analisis-lexico/practicas/p9-t2-lexer/reto-ini
-      title: Reto Parse INI Files
-  - title: 10p10-t2-lexer-generator
-    myurl: /tema2-expresiones-regulares-y-analisis-lexico/practicas/p10-t2-lexer-generator/
-    name: Práctica p10-t2-lexer-generator
-    reto:
-      url: /tema2-expresiones-regulares-y-analisis-lexico/practicas/p10-t2-lexer-generator/reto
-      title: Reto Hello Actions!
-  - title: 11p5-t1-egg-0
-    myurl: /tema3-analisis-descendente-predictivo-recursivo/practicas/p5-t3-egg-0/
-    name: Práctica p5-t1-egg-0
-    reto:
-      url: /tema3-analisis-descendente-predictivo-recursivo/practicas/p5-t3-egg-0/retos
-      title: Reto Parenthesis, Mocking and Stubbing
-  - title: 12p6-t3-egg-1
-    myurl: /tema3-analisis-descendente-predictivo-recursivo/practicas/p6-t3-egg-1/
-    name: Práctica p6-t3-egg-1
-  - title: 13p7-t3-egg-1
-    myurl: /tema3-analisis-descendente-predictivo-recursivo/practicas/p7-t3-egg-2/
-    name: Práctica p7-t3-egg-2
-  - title: 14p8-t3-pdr-infix2egg
-    myurl: /tema3-analisis-descendente-predictivo-recursivo/practicas/p8-t3-pdr-infix2egg/
-    name: Práctica p8-t3-pdr-infix2egg
-  - title: 15r15-t3-langdesign
-    myurl: https://github.com/ULL-ESIT-PL-1920/design-infix-lang
-    name: Práctica r15-t3-langdesign
-  - title: 16p9-t4-peg-infix2egg
-    myurl: /tema4-parsing-expression-grammars/practicas/p9-t4-peg-infix2egg/
-    name: Práctica p9-t4-peg-infix2egg
-    reto:
-      url: /tema4-parsing-expression-grammars/practicas/p9-t4-peg-infix2egg/reto
-      title: Reto Objetos y DOT(.) 
-  - title: 17p10-t5-jison-infix2egg
-    myurl: /tema5-analisis-ascendente/practicas/p10-t5-jison-infix2egg/
-    name: Práctica p10-t5-jison-infix2egg
-    reto:
-      url: /tema5-analisis-ascendente/practicas/p10-t5-jison-infix2egg/reto
-      title: Nesting brackets and dots 
-  - title: 18tfa
-    myurl: /tfa
-    name: Trabajo-Fin-de-Asignatura 
+
 

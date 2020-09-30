@@ -1,5 +1,9 @@
 # Recursos
 
+## Aula
+
+Edificio de la Chocolatera. Segunda planta. B01.3.02
+
 ## Campus Virtual y UDV
 
 * [PL 18/19](https://campusvirtual.ull.es/1819/course/view.php?id=1110)
