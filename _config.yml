@@ -15,8 +15,8 @@ google_plus: https://plus.google.com/u/1/communities/101901734024125937720
 organization: 
   url: https://github.com/ULL-MFP-AET-2021
   name: ULL-MFP-AET-2021
-  master: https://github.com/ULL-ESIT-PL-1819/introduccion/tree/master/
-apuntes_repo: https://github.com/ULL-ESIT-PL-1819/introduccion/
+  master: https://github.com/ULL-MFP-AET-2021/introduccion/tree/master/
+apuntes_repo: https://github.com/ULL-MFP-AET-2021/introduccion/
 campus_virtual: https://campusvirtual.ull.es/ingenieriaytecnologia/course/view.php?id=201911070
 calificador: https://campusvirtual.ull.es/ingenieriaytecnologia/1920/grade/report/grader/index.php?id=201911070
 tareas: https://campusvirtual.ull.es/ingenieriaytecnologia/1920/mod/assign/index.php?id=201911070
@@ -45,6 +45,6 @@ practicas:
     name: Tarea Formulario Usuario de Github
   - title: 01comunidadgpluspl
     myurl: https://campusvirtual.ull.es/ingenieriaytecnologia/1920/mod/assign/view.php?id=14657
-    name: Tarea Comunidad G+ de PL
+    name: Tarea Comunidad G+ de AET
 
 
