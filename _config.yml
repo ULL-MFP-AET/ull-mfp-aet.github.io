@@ -36,9 +36,9 @@ classroom:
   url: https://classroom.github.com/classrooms/53047670-ull-esit-pl-1920
   name: ULL-ESIT-PL-1920
 temas:
-  - title: 'Tema 0: Introducción a la Asignatura'
-    url: /tema0-introduccion-a-pl/
-    hover: 'Introduccion-al-Procesamiento-de-Lenguajes' 
+  - title: 'Tema: Introducción a JS'
+    url: /tema0-introduccion-a-js/
+    hover: 'Introduccion-a-JS' 
 practicas:
   - title: 00cuestionarioghalu
     myurl: https://campusvirtual.ull.es/ingenieriaytecnologia/1920/mod/assign/view.php?id=14658
