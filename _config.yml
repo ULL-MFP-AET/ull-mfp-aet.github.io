@@ -5,7 +5,7 @@ description: '3º. 2º cuatrimestre. Itinerario de Computación. Grado en Ingeni
 acronym: AET
 exclude: [ 'Arona-winter-course', 'dsi1819', 'dsi1819-introduccion', 'tema0-introduccion-a-pl/practicas/code']
 baseurl: '/introduccion'
-url: https://ULL-ESIT-PL-1819.github.io/introduccion
+url: https://ull-mfp-aet-2021.github.io/introduccion
 show_downloads: false
 calendario_academico: https://www.ull.es/estudios-docencia/calendario-academico/
 horarios_examenes: https://www.ull.es/grados/ingenieria-informatica/informacion-academica/horarios-y-calendario-examenes/
