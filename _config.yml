@@ -13,8 +13,8 @@ calendario_examenes: https://docs.google.com/document/d/1j5rJyULD1c42UV4o-g85puu
 horarios_tutorias: https://docs.google.com/spreadsheets/d/1ZTGvLA70qCYEsBwcA8dCiUZby3ZOM9oHt8kmiNNKId0/edit#gid=0
 google_plus: https://plus.google.com/u/1/communities/101901734024125937720
 organization: 
-  url: https://github.com/ULL-ESIT-PL-1920
-  name: ULL-ESIT-PL-1920
+  url: https://github.com/ULL-MFP-AET-2021
+  name: ULL-MFP-AET-2021
   master: https://github.com/ULL-ESIT-PL-1819/introduccion/tree/master/
 apuntes_repo: https://github.com/ULL-ESIT-PL-1819/introduccion/
 campus_virtual: https://campusvirtual.ull.es/ingenieriaytecnologia/course/view.php?id=201911070
@@ -33,8 +33,8 @@ disqus:
   url: https://procesadores-de-lenguajes.disqus.com/embed.js
   comments: true
 classroom: 
-  url: https://classroom.github.com/classrooms/53047670-ull-esit-pl-1920
-  name: ULL-ESIT-PL-1920
+  url: https://classroom.github.com/classrooms/53047670-ULL-MFP-AET-2021
+  name: ULL-MFP-AET-2021
 temas:
   - title: 'Tema: Introducción a JS'
     url: /tema0-introduccion-a-js/
