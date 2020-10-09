@@ -1,7 +1,7 @@
 title: 'Aprendizaje y Enseñanza de la Tecnología'
-subtitle: 'Itinerario de Computación. Grado en Ingeniería Informática. ULL. Curso 2018/2019'
+subtitle: 'Master de Formación del Profesorado. Tecnología. ULL. Curso 2020/2021'
 theme: jekyll-theme-midnight
-description: '3º. 2º cuatrimestre. Itinerario de Computación. Grado en Ingeniería Informática. ULL'
+description: '1º. 1er cuatrimestre. ULL'
 acronym: AET
 exclude: [ 'Arona-winter-course', 'dsi1819', 'dsi1819-introduccion', 'tema0-introduccion-a-pl/practicas/code']
 baseurl: '/introduccion'
@@ -36,9 +36,15 @@ classroom:
   url: https://classroom.github.com/classrooms/53047670-ULL-MFP-AET-2021
   name: ULL-MFP-AET-2021
 temas:
-  - title: 'Tema: Introducción a JS'
-    url: /tema0-introduccion-a-js/
-    hover: 'Introduccion-a-JS' 
+  - title: 'Técnicas de Expresión y Comunicación'
+    url: '/tecnicas-de-expresion-y-comunicacion/'
+    hover: 'tecnicas-de-expresion-y-comunicacion'
+  - title: 'Hardware y Sistemas Operativos'
+    url: '/hardware-y-sistemas-operativos/'
+    hover: 'hardware-y-sistemas-operativos'
+  - title: 'Tecnología de la comunicación. Internet'
+    url: /tecnologia-de-la-comunicacion-internet/index.html
+    hover: 'tecnologia-de-la-comunicacion-internet' 
 practicas:
   - title: 00cuestionarioghalu
     myurl: https://campusvirtual.ull.es/ingenieriaytecnologia/1920/mod/assign/view.php?id=14658
