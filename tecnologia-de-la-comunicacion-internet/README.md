@@ -2,11 +2,16 @@
 
 ## Introduction to Programming with Google Apps Script
 
-* Google tutorial [Custom Functions in Google Sheets](custom-functions-in-google-sheets)
+* [Google tutorials](custom-functions-in-google-sheets)
 
 ## Introduction to Control Version with Google Apps Script
 
 * Google Tutorial [Control version in Google Apps Script](control-version)
+
+## Libraries
+
+* [Libraries](https://developers.google.com/apps-script/guides/libraries)
+* [YouTube Video: How to Create a Google Apps Script Library | Google Apps Script | 8 Min Tutorial](https://youtu.be/agWFuUMR6Vc)
 
 ## Como Hacer Desarrollo en tu Ordenador y no en la Nube
 
