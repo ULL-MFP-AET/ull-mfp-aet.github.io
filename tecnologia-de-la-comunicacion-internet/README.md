@@ -1,21 +1,9 @@
-# Learning JS with Google App Scripts
+# Learning Computational Thinking with Google App Scripts
 
-## Custom Functions in Google Apps Scripts
+## Google SpreadSheets and Custom Functions in Google Apps Scripts
 
-### Google tutorial [Custom Functions in Google Sheets](https://developers.google.com/apps-script/guides/sheets/functions)
+* Google tutorial [Custom Functions in Google Sheets](custom-functions-in-google-sheets)
 
-*   [Table of contents](https://developers.google.com/apps-script/guides/sheets/functions#top_of_page)
-*   [Getting started](https://developers.google.com/apps-script/guides/sheets/functions#getting_started)
-    *   [Creating a custom function](https://developers.google.com/apps-script/guides/sheets/functions#creating_a_custom_function)
-    *   [Getting a custom function from the add-on store](https://developers.google.com/apps-script/guides/sheets/functions#getting_a_custom_function_from_the_add-on_store)
-    *   [Using a custom function](https://developers.google.com/apps-script/guides/sheets/functions#using_a_custom_function)
-*   [Guidelines for custom functions](https://developers.google.com/apps-script/guides/sheets/functions#guidelines_for_custom_functions)
-    *   [Naming](https://developers.google.com/apps-script/guides/sheets/functions#naming)
-    *   [Arguments](https://developers.google.com/apps-script/guides/sheets/functions#arguments)
-    *   [Return values](https://developers.google.com/apps-script/guides/sheets/functions#return_values)
-    *   [Data types](https://developers.google.com/apps-script/guides/sheets/functions#data_types)
-    *   [Autocomplete](https://developers.google.com/apps-script/guides/sheets/functions#autocomplete)
-*   [Advanced](https://developers.google.com/apps-script/guides/sheets/functions#advanced)
-    *   [Using Apps Script services](https://developers.google.com/apps-script/guides/sheets/functions#using_apps_script_services)
-    *   [Sharing](https://developers.google.com/apps-script/guides/sheets/functions#sharing)
-    *   [Optimization](https://developers.google.com/apps-script/guides/sheets/functions#optimization)
+## Introduction to Control Version 
+
+* Google Tutorial [Control version in Google Apps Script](control-version)
