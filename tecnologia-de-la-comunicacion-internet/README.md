@@ -4,6 +4,6 @@
 
 *  [Apuntes de Google Apps Scripts](google-apps/)
 
-## Aprendiendo sobre Internet con Git, GitHub y algunas IDEs 
+## Aprendiendo sobre Internet con Git, GitHub y una IDE en la nube 
 
 * [Apuntes de GitHub](github/)
