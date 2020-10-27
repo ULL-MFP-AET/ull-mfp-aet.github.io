@@ -6,6 +6,10 @@ apuntes-ull-esit-1617
 ull-esit-1617
 jewels
 
+# repl.it 
+.bundle/
+.upm/
+
 tema0-introduccion-a-pl/practicas/code
 
 tema1-introduccion-a-javascript/practicas/p1-t1-iaas/documentacion-iaas-ull-es
