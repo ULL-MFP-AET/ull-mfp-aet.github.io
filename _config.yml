@@ -49,8 +49,9 @@ practicas:
   - title: 00registrarseengithub
     myurl: https://campusdoctoradoyposgrado.ull.es/mod/assign/view.php?id=282455&forceview=1
     name: Tarea Registrarse en Github
-  - title: 01comunidadgpluspl
-    myurl: https://campusvirtual.ull.es/ingenieriaytecnologia/1920/mod/assign/view.php?id=14657
-    name: Tarea Comunidad G+ de AET
-
+  - title: 01aprendermarkdown
+    myurl: https://campusdoctoradoyposgrado.ull.es/mod/assign/view.php?id=282455&forceview=1
+    name: Aprender Markdown
+plugins:
+  - jemoji
 
