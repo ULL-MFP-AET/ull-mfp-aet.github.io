@@ -1,7 +1,7 @@
 title: 'Aprendizaje y Enseñanza de la Tecnología'
-subtitle: 'El Desarrollo Colaborativo de Proyectos de Aprendizaje y Enseñanza de las Tecnologías Informáticas en la Nube'
+subtitle: '1er Cuatrimestre'
 theme: jekyll-theme-midnight
-description: '1º. 1er cuatrimestre. ULL'
+description: 'Desarrollo Colaborativo de Proyectos de Aprendizaje y Enseñanza de Tecnologías en la Nube'
 acronym: AET
 exclude: [ 'Arona-winter-course', 'dsi1819', 'dsi1819-introduccion', 'tema0-introduccion-a-pl/practicas/code']
 baseurl: '/introduccion'
@@ -22,7 +22,7 @@ calificador: https://campusvirtual.ull.es/ingenieriaytecnologia/1920/grade/repor
 tareas: https://campusvirtual.ull.es/ingenieriaytecnologia/1920/mod/assign/index.php?id=201911070
 profesor: https://www.ull.es/apps/guias/guias/view_teacher_niu/588/(%3FPcrguezl.*)/
 profesor_github: crguezl
-chat: https://chat.google.com/u/1/room/AAAANx1edCg
+chat: https://chat.google.com
 bull_permanente: https://puntoq.ull.es/permalink/f
 covid_ull: https://campusvirtual.ull.es/doctoradoyposgrado/course/view.php?id=201913946
 dsi:
@@ -36,15 +36,15 @@ classroom:
   url: https://classroom.github.com/classrooms/53047670-ULL-MFP-AET-2021
   name: ULL-MFP-AET-2021
 temas:
-  - title: 'Técnicas de Expresión y Comunicación'
-    url: '/tecnicas-de-expresion-y-comunicacion/'
-    hover: 'tecnicas-de-expresion-y-comunicacion'
-  - title: 'Hardware y Sistemas Operativos'
-    url: '/hardware-y-sistemas-operativos/'
-    hover: 'hardware-y-sistemas-operativos'
-  - title: 'Tecnología de la comunicación. Internet'
-    url: /tecnologia-de-la-comunicacion-internet/index.html
-    hover: 'tecnologia-de-la-comunicacion-internet' 
+  - title: 'Introducción al Desarrollo Colaborativo de Proyectos en la Nube'
+    url: '/tema0-introduccion/'
+    hover: 'introduccion'
+  - title: 'Desarrollo Colaborativo de Proyectos en la Nube con GitHub Education'
+    url: '/tema1-github-education'
+    hover: 'github-education'
+  - title: 'Desarrollo Colaborativo de Proyectos en la Nube con Google'
+    url: /tema2-google-app-scripts
+    hover: 'google-app-scripts' 
 practicas:
   - title: 00cuestionarioghalu
     myurl: https://campusvirtual.ull.es/ingenieriaytecnologia/1920/mod/assign/view.php?id=14658
