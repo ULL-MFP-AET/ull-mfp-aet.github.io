@@ -41,9 +41,12 @@ CV.
   Content in the first column | Content in the second column
 
 * Incluye un emoji. Por ejemplo: :+1:
-* Añade un fichero `master.md`  en el que describas tu experiencia hasta ahora en este master y lo enlazas desde el fichero `README.md`  en el fichero 
+* Añade un fichero `master.md`  (puedes crearlo usando el menu o bien visitando una ruta con la sintáxis `https://github.com/:owner:/:repo:/new/main`) en el que describas tu experiencia hasta ahora en este master y lo enlazas desde el fichero `README.md`  en el fichero 
 `master.md` pon un enlace de vuelta al `README.md`
 
+
+Usa el editor que provee la interfaz web de GitHub.
+Haz commits para guardarlo.
 
 En la tarea entrega el enlace al repo con los contenidos de tu trabajo
 
