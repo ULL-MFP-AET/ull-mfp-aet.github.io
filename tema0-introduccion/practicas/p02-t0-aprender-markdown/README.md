@@ -24,7 +24,7 @@ CV.
 * Incluya alguna lista 
 * Una cita favorita (blockquote)
 * Un fragmento de código inline de un lenguaje de programación 
-* Un trozo de código que ocupe varias líneas como este:
+* Incluye un trozo de código que ocupe varias líneas como este:
 
   ```javascript
   function fancyAlert(arg) {
@@ -33,14 +33,14 @@ CV.
     }
   }
   ```
-* Una tabla
+* Incluye una tabla
 
   First Header | Second Header
   ------------ | -------------
   Content from cell 1 | Content from cell 2
   Content in the first column | Content in the second column
 
-* Un emoji :+1:
+* Incluye unn emoji. Por ejemplo: :+1:
 * Añade un fichero `master.md`  en el que describas tu experiencia hasta ahora en este master y lo enlazas desde el fichero `README.md`  en el fichero 
 `master.md` pon un enlace de vuelta al `README.md`
 
