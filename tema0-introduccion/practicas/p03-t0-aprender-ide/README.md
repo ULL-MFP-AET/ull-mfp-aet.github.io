@@ -15,8 +15,10 @@ En esta práctica aprenderemos a usar una IDE en la nube ([repl.it](https://repl
 Siga estos pasos:
 
 * Cree una cuenta en replit [https://repl.it/signup](https://repl.it/signup). Use la cuenta de GitHub para crear la cuenta de replit.
-* Autorice a Replit para que pueda acceder a todos su repositorios
+* Autorice a Replit para que pueda acceder a todos su repositorios GitHub
 * Haga un fork de este replit: [https://repl.it/@crguezl/JekyllBlog#main.sh](https://repl.it/@crguezl/JekyllBlog#main.sh)
+* Pulse el boton RUN o escriba en la terminal `source main.sh`
+  - Debería configurarse y ejecutarse `jekyll`, construir las páginas web y arrancar un servidor. La página debería aparecer en la ventana superior derecha
 * Intente familiarizarse con la IDE en la nube Replit. 
   * Este tutorial [Understanding the Repl.it IDE: a practical guide to building your first project with Repl.it](https://www.codewithrepl.it/01-introduction-to-the-repl-it-ide.html) puede ayudar
   * [Repl.it Quick Start Guide](https://docs.repl.it/misc/quick-start)
@@ -33,4 +35,8 @@ Siga estos pasos:
   * [Repo en GitHub](https://github.com/barryclark/jekyll-now.git)
 * [Understanding the Repl.it IDE: a practical guide to building your first project with Repl.it](https://www.codewithrepl.it/01-introduction-to-the-repl-it-ide.html)
 * [Repl.it Quick Start Guide](https://docs.repl.it/misc/quick-start)
+* Documentación en [jekyllrb.com](https://jekyllrb.com)
+* Ejemplo de CV de Biagio Brattoli usando Jekyll:
+  * [Repo en GitHub](https://github.com/bbrattoli/bbrattoli.github.io)
+  * [Despliegue en GitHub Pages](https://bbrattoli.github.io/)
 
