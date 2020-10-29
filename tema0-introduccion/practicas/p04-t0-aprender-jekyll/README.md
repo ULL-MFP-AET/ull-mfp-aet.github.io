@@ -31,14 +31,14 @@ Siga estos pasos:
     Resolving deltas: 100% (482/482), done.
   ```
 
-* Lea la documentación en [jekyllrb.com](https://jekyllrb.com) pay modifique el site para que sea su CV.
+* Lea la documentación en [jekyllrb.com](https://jekyllrb.com) y vaya modificando los ficheros en `_data`, `_config.yml` etc. para personalizarlo como su CV.
 
 * En el repo de entrega asegúrese de añadir un enlace al replit creado.
 * Comparta su replit con el profesor
 * Añada al repo de entrega todos los ficheros del directorio que contienen los fuentes para el web `site`: 
   - Suprimir el directorio `.git`
-  - Crea un repo y lo conecta con el creado en GitHub por la asignación de esta tarea
-  
+  - Crea un repo (desde la IDE o bien `git init`, etc) y lo conecta con el creado en GitHub por la asignación de esta tarea
+
 ## Referencias
 
 * [Repl.it Tutorial MAKE A BLOG USING JEKYLL](https://repl.it/talk/learn/GUIDE-MAKE-A-BLOG-USING-JEKYLL-POG-ALERT-KEK-HAHAYES-ENDORSED/59021)
