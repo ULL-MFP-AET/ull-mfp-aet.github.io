@@ -22,11 +22,15 @@ Siga estos pasos:
 * Intente familiarizarse con la IDE en la nube Replit. 
   * Este tutorial [Understanding the Repl.it IDE: a practical guide to building your first project with Repl.it](https://www.codewithrepl.it/01-introduction-to-the-repl-it-ide.html) puede ayudar
   * [Repl.it Quick Start Guide](https://docs.repl.it/misc/quick-start)
-* Lea la documentación en [jekyllrb.com](https://jekyllrb.com) para ir escribiendo su blog o CV. Aquí tiene un ejemplo por Biagio Brattoli:
+* Lea la documentación en [jekyllrb.com](https://jekyllrb.com) para ir escribiendo su blog o CV de prueba.
+* Añada en el directorio `_posts` algún otro fichero markdown  
+* Aquí tiene un ejemplo de CV usando Jekyll por Biagio Brattoli:
   * [Repo en GitHub](https://github.com/bbrattoli/bbrattoli.github.io)
   * [Despliegue en GitHub Pages](https://bbrattoli.github.io/)
 
-
+* En el repo de entrega asegúrese de añadir un enlace al replit creado.
+* Comparta su replit con el profesor
+* Añada al repo de entrega todos los ficheros del directorio que contienen los fuentes para el web `site` 
 
 ## Referencias
 
