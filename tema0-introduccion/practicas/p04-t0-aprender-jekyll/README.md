@@ -14,8 +14,7 @@ Partiendo del [repl.it](https://repl.it) que creó en la práctica anterior, vam
 
 Siga estos pasos:
 
-* Haga un fork de este replit: [https://repl.it/@crguezl/JekyllBlog#main.sh](https://repl.it/@crguezl/JekyllBlog#main.sh)
-* Añada en el directorio `_posts` algún otro fichero markdown  
+* Haga un fork de este replit: [https://repl.it/@crguezl/JekyllBlog#main.sh](https://repl.it/@crguezl/JekyllBlog#main.sh) o bien duplique el de la última práctica
 * Aquí tiene un ejemplo de CV usando Jekyll por Biagio Brattoli:
   * [Repo en GitHub](https://github.com/bbrattoli/bbrattoli.github.io)
   * [Despliegue en GitHub Pages](https://bbrattoli.github.io/)
