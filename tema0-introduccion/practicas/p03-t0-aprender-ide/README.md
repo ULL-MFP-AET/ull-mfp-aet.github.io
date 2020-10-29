@@ -10,7 +10,7 @@ next:
 
 # Aprendiendo a usar una IDE (p03-t0-aprender-ide)
 
-En esta práctica aprenderemos a usar una IDE en la nube ([repl.it](https://repl.it)) y empezaremos a familiarizarnos con un generador estáticos de web sites ([Jekyll](jekyllrb.com)).
+En esta práctica aprenderemos a usar una IDE en la nube ([repl.it](https://repl.it)) y empezaremos a familiarizarnos con un generador de web sites y blogs estáticos ([Jekyll](jekyllrb.com)).
 
 Siga estos pasos:
 
@@ -20,7 +20,9 @@ Siga estos pasos:
 * Intente familiarizarse con la IDE en la nube Replit. 
   * Este tutorial [Understanding the Repl.it IDE: a practical guide to building your first project with Repl.it](https://www.codewithrepl.it/01-introduction-to-the-repl-it-ide.html) puede ayudar
   * [Repl.it Quick Start Guide](https://docs.repl.it/misc/quick-start)
-
+* Lea la documentación en [jekyllrb.com](https://jekyllrb.com) para ir escribiendo su blog o CV. Aquí tiene un ejemplo por Biagio Brattoli:
+  * [Repo en GitHub](https://github.com/bbrattoli/bbrattoli.github.io)
+  * [Despliegue en GitHub Pages](https://bbrattoli.github.io/)
 
 
 

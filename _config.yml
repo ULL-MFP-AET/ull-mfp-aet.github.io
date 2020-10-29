@@ -52,6 +52,9 @@ practicas:
   - title: 01aprendermarkdown
     myurl: https://campusdoctoradoyposgrado.ull.es/mod/assign/view.php?id=282455&forceview=1
     name: Aprender Markdown
+  - title: 02aprenderide
+    myurl: https://campusdoctoradoyposgrado.ull.es/mod/assign/view.php?id=282487&forceview=1
+    name: Aprender IDE
 plugins:
   - jemoji
 
