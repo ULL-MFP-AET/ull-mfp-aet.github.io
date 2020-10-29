@@ -55,6 +55,9 @@ practicas:
   - title: 02aprenderide
     myurl: https://campusdoctoradoyposgrado.ull.es/mod/assign/view.php?id=282487&forceview=1
     name: Aprender IDE
+  - title: 03aprenderjekyll
+    myurl: https://campusdoctoradoyposgrado.ull.es/mod/assign/view.php?id=282487&forceview=1
+    name: Aprender Jekyll
 plugins:
   - jemoji
 
