@@ -5,6 +5,7 @@ Gemfile.lock
 apuntes-ull-esit-1617
 ull-esit-1617
 jewels
+*.bak
 
 # repl.it 
 .bundle/

@@ -8,12 +8,27 @@ next:
   url: 
 ---
 
-# Aprender IDE (p03-t0-aprender-ide)
+# Aprendiendo a usar una IDE (p03-t0-aprender-ide)
 
-Esta asignación da lugar a un repo que ya incluye un  fichero `README.md` en el que encontrarás un icono **Work in Repl.it**. Cuando hagas click en ese icono se abrirá una [IDE](https://es.wikipedia.org/wiki/Entorno_de_desarrollo_integrado) en la nube. Acepta los permisos solicitados y configura tu cuenta.
+En esta práctica aprenderemos a usar una IDE en la nube ([repl.it](https://repl.it)) y empezaremos a familiarizarnos con un generador estáticos de web sites ([Jekyll](jekyllrb.com)).
 
-Lee el tutorial [Understanding the Repl.it IDE: a practical guide to building your first project with Repl.it](https://www.codewithrepl.it/01-introduction-to-the-repl-it-ide.html)
-y
-[Repl.it Quick Start Guide](https://docs.repl.it/misc/quick-start)
+Siga estos pasos:
 
-En la tarea entregue el enlace al repo.
+* Cree una cuenta en replit [https://repl.it/signup](https://repl.it/signup). Use la cuenta de GitHub para crear la cuenta de replit.
+* Autorice a Replit para que pueda acceder a todos su repositorios
+* Haga un fork de este replit: [https://repl.it/@crguezl/JekyllBlog#main.sh](https://repl.it/@crguezl/JekyllBlog#main.sh)
+* Intente familiarizarse con la IDE en la nube Replit. 
+  * Este tutorial [Understanding the Repl.it IDE: a practical guide to building your first project with Repl.it](https://www.codewithrepl.it/01-introduction-to-the-repl-it-ide.html) puede ayudar
+  * [Repl.it Quick Start Guide](https://docs.repl.it/misc/quick-start)
+
+
+
+
+## Referencias
+
+* [Repl.it Tutorial MAKE A BLOG USING JEKYLL](https://repl.it/talk/learn/GUIDE-MAKE-A-BLOG-USING-JEKYLL-POG-ALERT-KEK-HAHAYES-ENDORSED/59021)
+  * [Repl de ejemplo](https://repl.it/@sourcerose/JekyllBlog#main.sh)
+  * [Repo en GitHub](https://github.com/barryclark/jekyll-now.git)
+* [Understanding the Repl.it IDE: a practical guide to building your first project with Repl.it](https://www.codewithrepl.it/01-introduction-to-the-repl-it-ide.html)
+* [Repl.it Quick Start Guide](https://docs.repl.it/misc/quick-start)
+
