@@ -18,6 +18,9 @@ Siga estos pasos:
 * Aquí tiene un ejemplo de CV usando Jekyll por Biagio Brattoli:
   * [Repo en GitHub](https://github.com/bbrattoli/bbrattoli.github.io)
   * [Despliegue en GitHub Pages](https://bbrattoli.github.io/)
+* Aquí tienes otro ejemplo de CV
+  * [Repo en GitHub](https://github.com/ddbullfrog/resumecard)
+  * [Despliegue](https://ddbullfrog.github.io/resumecard/)
 * Usando [git](https://git-scm.com/) clone en el directorio `site` el repo [bbrattoli/bbrattoli.github.io](https://github.com/bbrattoli/bbrattoli.github.io). Puede hacerlo en la terminal:
 
   ```
@@ -49,4 +52,4 @@ Siga estos pasos:
 * Ejemplo de CV de Biagio Brattoli usando Jekyll:
   * [Repo en GitHub](https://github.com/bbrattoli/bbrattoli.github.io)
   * [Despliegue en GitHub Pages](https://bbrattoli.github.io/)
-
+* [Free Jekyll Themes](https://jekyllthemes.io/free)
