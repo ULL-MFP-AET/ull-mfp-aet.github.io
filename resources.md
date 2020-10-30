@@ -4,27 +4,6 @@
 
 Edificio de la Chocolatera. Segunda planta. B01.3.02
 
-## Campus Virtual y UDV
-
-* [PL 18/19](https://campusvirtual.ull.es/1819/course/view.php?id=1110)
-* [Participantes](https://campusvirtual.ull.es/1819/user/index.php?page=0&perpage=20&contextid=0&id=1110&newcourse)
-* [Calificaciones](https://campusvirtual.ull.es/1819/grade/report/grader/index.php?id=1110)
-* [Tareas](https://campusvirtual.ull.es/1819/mod/assign/index.php?id=1110)
-* [Foros](https://campusvirtual.ull.es/1819/mod/forum/index.php?id=1110)
-* Aula de [Recursos Disponibles para Realizar ACTIVIDAD DOCENTE NO PRESENCIAL]({{site.covid_ull}})
-* [Unidad para la Docencia Virtual. Servicios (UDV)(https://udv.ull.es/servicios)]
-
-## Guias Docentes
-
-* [Modificación Perfíl del Profesor](https://www.ull.es/apps/guias/teachers/view_profile/)
-
-## Corona Virus
-
-* [Adaptación de la Asignatura al Formato No Presencial](covid19)
-* [Grabación y monitorización durante pruebas no presenciales
-](https://campusvirtual.ull.es/facultades/mod/forum/discuss.php?d=33894)
-
-
 ## BULL
 
 * [BULL PuntoQ](https://www.ull.es/servicios/biblioteca/servicios/puntoq/)
