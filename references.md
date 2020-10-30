@@ -1,17 +1,17 @@
 # Referencias y Bibliografía
 
-## GitHub Education
+## Referencias sobre GitHub Education
 
 {% include github-education-references.md %}
 
-## JavaScript
+## Referencias sobre JavaScript
 
 * [Eloquent JS 3rd Edition](https://eloquentjavascript.net/)
 * [The Modern JavaScript Tutorial. https://javascript.info/](https://javascript.info/)
 * [GitHub Learning Lab Courses](https://lab.github.com/)
   
 
-## Repl IDE
+## Referencias sobre Repl IDE
 
 {% include replit-references.md %}%  
 
