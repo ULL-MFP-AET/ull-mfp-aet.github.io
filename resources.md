@@ -43,7 +43,7 @@ Edificio de la Chocolatera. Segunda planta. B01.3.02
 
 - [Servicio de vpn: guías de configuración](https://www.ull.es/servicios/stic/2016/05/10/servicio-de-vpn-de-la-ull/)
   *   [Guía de configuración del cliente VPN GlobalProtect. Sistema Operativo Windows](https://drive.google.com/open?id=0B3mzWpxzbJD1Zm9TdmpXSV9mdGs)
-  *   [Guía de configuración del cliente VPN GlobalProtect. Sistema Operativo Mac OSX](https://drive.google.com/file/d/0B3mzWpxzbJD1VTZhUkFVbUI2NWc/view?usp=sharing)
+  *   [Guía de configuración del cliente VPN GlobalProtect. Sistema Operativo Mac OSX](https://drive.google.com/file/d/0B3mzWpxzbJD1VTZhUkFVbUI2NWc/view?usp=sharing) (Obsoleta)
   *   [Guía de configuración del cliente VPN para Linux, Android e IOS (Ipad, Iphone) con IPSEC](https://drive.google.com/open?id=0B3mzWpxzbJD1Z1p4OWtQSFFzOGs)
 
 ### Mapa de Recursos
@@ -57,14 +57,6 @@ Edificio de la Chocolatera. Segunda planta. B01.3.02
 ### Cambio de contraseña
 
 * [Cambio de contraseña](https://usuarios.ull.es/autogestion/cambio_password_google/)
-
-
-## Prácticas
-
-* Herramientas para la Asignación de Tareas
-  * [GitHub Classroom ULL-ESIT-PL-1819](https://classroom.github.com/classrooms/33938084-procesadores-de-lenguaje)
-  * [CodeLab TFG de Samuel](https://codelab-tfg1718.herokuapp.com/)
-* [Instrucciones para las entregas de Prácticas y Trabajos](https://casianorodriguezleon.gitbooks.io/ull-esit-1617/content/instrucciones/)
 
 ## Sede ULL
 
@@ -90,6 +82,3 @@ Edificio de la Chocolatera. Segunda planta. B01.3.02
 * [Portal ull.es](portal.ull.es) Portal del Empleado y del Estudiante
 
   
-## Google+
-
-* [Comunidad Google+ PL](https://plus.google.com/u/2/communities/101901734024125937720)
