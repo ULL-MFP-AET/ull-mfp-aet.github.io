@@ -2,7 +2,11 @@
 
 ## Aula
 
-Edificio de la Chocolatera. Segunda planta. B01.3.02
+Edificio de la Chocolatera. Última planta. B01.3.02
+
+## Portería
+
+Teléfono: 922 319012 
 
 ## BULL
 
