@@ -66,7 +66,10 @@ Siga estos pasos:
   
     debería verse parecida a esta imagen
   * Ahora pare el servidor  con `Ctrl-C` y edite el fichero `site/_config.yml`.Cambie la entrada `name:` para que contenga su nombre. Vuelva a ejecutar jekyll.
-  ¿Que ocurre?
+  ¿Que ocurre?. 
+
+  Para entender un poco edite el fichero `_site/_layouts/default.html`y busque por la aparición de la palabra `site.name`. El lenguaje de templates que estamos viendo se conoce como [Liquid](https://shopify.github.io/liquid/)
+
 * En el repo de entrega asegúrese de añadir un enlace al replit creado.
 * Comparta su replit con el profesor
 * Añada al repo de entrega todos los ficheros del directorio que contienen los fuentes para el web `site` 
@@ -79,3 +82,4 @@ Siga estos pasos:
 * [Understanding the Repl.it IDE: a practical guide to building your first project with Repl.it](https://www.codewithrepl.it/01-introduction-to-the-repl-it-ide.html)
 * [Repl.it Quick Start Guide](https://docs.repl.it/misc/quick-start)
 * Documentación en [jekyllrb.com](https://jekyllrb.com)
+* [Liquid](https://shopify.github.io/liquid/)
