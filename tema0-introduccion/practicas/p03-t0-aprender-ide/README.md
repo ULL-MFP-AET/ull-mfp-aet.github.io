@@ -60,12 +60,12 @@ Siga estos pasos:
       Server running... press ctrl-c to stop.
     ```
 
-  * Refresque la página
+  * Refresque la página:
      
      ![]({{site.baseurl}}/assets/images/first-jekyll-blog.png)
   
     debería verse parecida a esta imagen
-    
+
 * En el repo de entrega asegúrese de añadir un enlace al replit creado.
 * Comparta su replit con el profesor
 * Añada al repo de entrega todos los ficheros del directorio que contienen los fuentes para el web `site` 
