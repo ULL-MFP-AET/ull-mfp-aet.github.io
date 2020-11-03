@@ -51,3 +51,9 @@ Haz commits para guardarlo.
 
 En la tarea entrega el enlace al repo con los contenidos de tu trabajo
 
+## [Referencias](references)
+
+
+* [A Simple Guide to GitHub for Non-Developers: How to Speak GitHub](https://unito.io/blog/guide-to-github-for-project-managers/#how-to-speak-github) contiene un glosario de términos
+
+* [Apuntes del curso Elaboración de Material Docente con GitBook](https://casianorodriguezleon.gitbooks.io/elaboracion-de-material-docente-con-gitbook/content/)
