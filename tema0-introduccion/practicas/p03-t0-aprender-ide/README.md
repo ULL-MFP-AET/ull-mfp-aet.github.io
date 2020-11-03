@@ -24,7 +24,7 @@ Siga estos pasos:
   * [Repl.it Quick Start Guide](https://docs.repl.it/misc/quick-start)
 * Modifique el fichero `index.html` y compruebe que se reflejan los cambios al refrescar la página
 * Ahora:
-  * Borre el directorio `site` con todos los ficheros en él:
+  * Borre el directorio `site` con todos los ficheros en él. Puede hacerlo desde la IDE o bien si es usted un hacker usar la terminal:
   
     ```
     $ pwd
