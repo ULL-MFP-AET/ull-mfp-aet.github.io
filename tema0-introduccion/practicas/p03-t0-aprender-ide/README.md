@@ -68,7 +68,18 @@ Siga estos pasos:
   * Ahora pare el servidor  con `Ctrl-C` y edite el fichero `site/_config.yml`.Cambie la entrada `name:` para que contenga su nombre. Vuelva a ejecutar jekyll.
   ¿Que ocurre?. 
 
-  Para entender un poco edite el fichero `_site/_layouts/default.html`y busque por la aparición de la palabra `site.name`. El lenguaje de templates que estamos viendo se conoce como [Liquid](https://shopify.github.io/liquid/)
+  Para entender un poco edite el fichero `_site/_layouts/default.html`y busque por la aparición de la palabra `site.name`. El lenguaje que estamos viendo es una mezcla de HTML con un lenguaje de templates que se conoce como [Liquid](https://shopify.github.io/liquid/)
+
+  ```html
+  ...
+  <a href="{ { site.baseurl } }/" class="site-avatar"><img src="{ { site.avatar } }" /></a>
+
+  <div class="site-info">
+    <h1 class="site-name"><a href="{ { site.baseurl } }/">{ { site.name } }</a></h1>
+    <p class="site-description">{ { site.description } }</p>
+  </div>
+  ...
+  ```
 
 * En el repo de entrega asegúrese de añadir un enlace al replit creado.
 * Comparta su replit con el profesor
