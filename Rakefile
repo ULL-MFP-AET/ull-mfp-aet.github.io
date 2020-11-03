@@ -8,3 +8,7 @@ task :serve do
   sh "bundle exec jekyll serve --future --watch --host 0.0.0.0 --port 8083"
 end
 
+task :updatebundler do
+  sh "bundle update --bundler"
+end
+
