@@ -57,3 +57,4 @@ En la tarea entrega el enlace al repo con los contenidos de tu trabajo
 * [Mastering (GitHub) Markdown](https://guides.github.com/features/mastering-markdown/#examples)
 * [A guide to using GitHub for people who don't code and don't want to code.](https://github.com/tvanantwerp/github-for-non-programmers) tvanantwerp/github-for-non-programmers GitBook
 * [Apuntes del curso Elaboración de Material Docente con GitBook](https://casianorodriguezleon.gitbooks.io/elaboracion-de-material-docente-con-gitbook/content/)
+* [GitHub Interface: Mover un archivo a una nueva ubicación](https://docs.github.com/es/free-pro-team@latest/github/managing-files-in-a-repository/moving-a-file-to-a-new-location)
