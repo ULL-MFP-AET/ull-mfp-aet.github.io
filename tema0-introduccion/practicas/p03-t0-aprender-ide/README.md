@@ -65,7 +65,7 @@ Siga estos pasos:
      ![]({{site.baseurl}}/assets/images/first-jekyll-blog.png)
   
     debería verse parecida a esta imagen
-  * Ahora pare el servidor  con `ctrl-C` y edite el fichero `site/_config.yml` cambie la entrada `name:` para que contenga su nombre. Vuelva a ejecutar jekyll.
+  * Ahora pare el servidor  con `Ctrl-C` y edite el fichero `site/_config.yml`.Cambie la entrada `name:` para que contenga su nombre. Vuelva a ejecutar jekyll.
   ¿Que ocurre?
 * En el repo de entrega asegúrese de añadir un enlace al replit creado.
 * Comparta su replit con el profesor
