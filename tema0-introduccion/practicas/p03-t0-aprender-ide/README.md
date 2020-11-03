@@ -60,7 +60,7 @@ Siga estos pasos:
       Server running... press ctrl-c to stop.
     ```
 
-  * Refresque la página:
+  * Refresque la página del blog:
      
      ![]({{site.baseurl}}/assets/images/first-jekyll-blog.png)
   
