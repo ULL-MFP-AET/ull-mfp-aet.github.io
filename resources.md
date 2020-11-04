@@ -33,7 +33,9 @@ Teléfono: 922 319012
 
 * [Servicio IaaS EULA y Solicitud de servicio
 ](https://docs.google.com/document/d/1noIAcAEzX1PuxxSLWuiTKzkLurAm9fL6vUmZN-A-kpE/edit?usp=sharing)
-  - Certificados SSL para máquinas IaaS de PAS/PDI
+  - Certificados SSL para máquinas IaaS de PAS/PDI: Los detalles, la forma de solicitarlos y demás características en el documento del "EULA y Solicitud de Servicio", sección "Certificados SSL para máquinas IaaS de PAS/PDI"
+
+Para cualquier duda, pueden ponerse en contacto con nosotros enviando un correo a stic.iaas@soporte.ull.es
 
 
 ## STIC
