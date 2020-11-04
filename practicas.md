@@ -3,7 +3,7 @@ layout: default
 permalink: practicas
 ---
 
-## Lista de Prácticas Publicadas en el Campus Virtual
+## Prácticas Publicadas en el Campus Virtual
 
 {% include practicas-publicadas.md  %}
 
