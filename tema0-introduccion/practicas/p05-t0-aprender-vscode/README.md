@@ -1,5 +1,5 @@
 
-# Descripción de la Práctica p2-t1-vscode
+# Descripción de la Práctica p05-t0-aprender-vscode
 
 ## Objetivos
 
