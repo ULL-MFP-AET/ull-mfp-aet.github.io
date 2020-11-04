@@ -59,7 +59,7 @@ practicas:
     myurl: https://campusdoctoradoyposgrado.ull.es/mod/assign/view.php?id=282487&forceview=1
     name: Aprender Jekyll
   - title: 04aprendervscode
-    myurl: 
+    myurl: https://campusdoctoradoyposgrado.ull.es/mod/assign/view.php?id=284111&forceview=1
     name: Aprender git y Visual Studio Code
 plugins:
   - jemoji
