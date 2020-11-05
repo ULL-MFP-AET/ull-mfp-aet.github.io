@@ -3,6 +3,8 @@
 
 ## Objetivos
 
+Para hacer esta tarea necesitas un ordenador (Mac OS, Linux, Windows).
+
 En nuestro portátil de trabajo:
 
 1. Instala [git](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git/)
@@ -32,6 +34,7 @@ Para probar, tienes una máquina virtual a la que puede acceder via web y ssh en
 *   [Emmet](https://code.visualstudio.com/docs/editor/emmet)
 *   [Command Line](https://code.visualstudio.com/docs/editor/command-line)
 *   [Accessibility](https://code.visualstudio.com/docs/editor/accessibility)
+*   
 ###  Collaboration con Visual Studio Share
 
 - [Introducing Visual Studio Live Share](https://code.visualstudio.com/blogs/2017/11/15/live-share)
@@ -91,3 +94,8 @@ ServerAliveInterval 240
 * [Servicio IaaS EULA y Solicitud de servicio
 ](https://docs.google.com/document/d/1noIAcAEzX1PuxxSLWuiTKzkLurAm9fL6vUmZN-A-kpE/edit?usp=sharing)
   - Certificados SSL para máquinas IaaS de PAS/PDI: Los detalles, la forma de solicitarlos y demás características en el documento del "EULA y Solicitud de Servicio", sección "Certificados SSL para máquinas IaaS de PAS/PDI"
+
+## Instalando Git y VSCode en un Dispositivo Android
+
+* [How to install Git on Android](https://www.techrepublic.com/article/how-to-install-git-on-android/)
+* [How to install Vscode on android](https://dev.to/josiasaurel/how-to-install-vscode-on-android-5f8d)
