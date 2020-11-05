@@ -1,14 +1,14 @@
 ---
 layout: default
-title: p02-t0-aprender-github-basico
-permalink: /tema0-introduccion/practicas/p02-t0-aprender-github-basico/index.html
+title: p02-t0-aprender-jekyll-basico
+permalink: /tema0-introduccion/practicas/p02-t0-aprender-jekyll-basico/index.html
 previous: 
   url: 
 next:
   url: 
 ---
 
-# Aprender GitHub Básico (p02-t0-aprender-github-basico)
+# Aprender Jekyll Básico (p02-t0-aprender-jekyll-basico)
 
 
 ## Jekyll Data Files
