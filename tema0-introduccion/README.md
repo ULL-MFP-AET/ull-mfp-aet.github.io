@@ -6,6 +6,4 @@
 * [p04-t0-aprender-jekyll]({{site.baseurl}}/tema0-introduccion/practicas/p04-t0-aprender-jekyll)
 * [p05-t0-aprender-vscode]({{site.baseurl}}/tema0-introduccion/practicas/p05-t0-aprender-vscode)
   
-## Referencias
-
-* [Guía docente de la asignatura TÉCNICAS PARA LA COMUNICACIÓN PROFESIONAL](https://www.upct.es/~doctiqa/guias/210601008.pdf)
+## [Referencias]({{site.baseurl}}/references)
