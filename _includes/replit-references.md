@@ -1,3 +1,4 @@
+* [repl.it for computer science teachers: how to create classrooms and build assignments](https://youtu.be/70Pm4ZOPUzk) YouTube video by Pizzey Technology
 * [Help on *I'm getting an error with a Ruby Repl when I try to install the jekyll package*](https://repl.it/talk/ask/Package-Installation-failing-on-SASSC/53457?order=new)
 * [Repl.it Tutorial MAKE A BLOG USING JEKYLL](https://repl.it/talk/learn/GUIDE-MAKE-A-BLOG-USING-JEKYLL-POG-ALERT-KEK-HAHAYES-ENDORSED/59021)
   * [Repl de ejemplo](https://repl.it/@sourcerose/JekyllBlog#main.sh)
