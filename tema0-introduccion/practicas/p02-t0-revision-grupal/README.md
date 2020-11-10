@@ -54,7 +54,7 @@ Podemos seguir el siguiente flujo de trabajo (workflow):
 4. El **revisor** hace una [revisión de los cambios propuestos en el  pull request](https://docs.github.com/en/free-pro-team@latest/github/collaborating-with-issues-and-pull-requests/reviewing-proposed-changes-in-a-pull-request)
 4. En el proceso de mezcla pueden aparecer `merge conflicts`.
   * Los conflictos suceden cuando se quieren fusionar ramas que tienen cambios ireconciliables 
-  * Por ejemplo una determinada línea de un fichero que contenía `hello world!` en la rama `main` se cambio a `hello hell!`y en otra rama `aluXX` la misma línea se cambió a `hello heaven!`). 
+  * Por ejemplo una determinada línea de un fichero que contenía `hello world!` en la rama `main` se cambio a `hello hell!`y en otra rama `aluXX` la misma línea se cambió a `hello heaven!`. 
   * En esos casos Git se negará a hacer la mezcla y requerirá tu ayuda para decidir como debe quedar  la fusión final.
   * Lee el artículo [Resolving a merge conflict on GitHub](https://docs.github.com/en/free-pro-team@latest/github/collaborating-with-issues-and-pull-requests/resolving-a-merge-conflict-on-github). 
   * Si hay conflictos se resolverán poniendose de acuerdo con el **coordinador** en como deben resolverse.
