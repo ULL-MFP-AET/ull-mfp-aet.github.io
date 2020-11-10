@@ -32,10 +32,16 @@ Los pasos a dar son:
 1. Da permisos de **triage** sobre tu repo de la tarea *aprender-markdown* al resto de los miembros del equipo (Ve a *settings* del repo y añádelos)
 2. En equipo, pasen a discutir las dificultades, las soluciones, la estética de la web, sugerir mejoras, etc. 
   * Pueden usar las salas de grupo de [Google Meet](https://campusdoctoradoyposgrado.ull.es/mod/page/view.php?id=284636) o bien directamente [Google Chat](https://chat.google.com) para ello. 
-  * Deberán crear incidencias en los repos para indicar los fallos y  sugerencias. El propietario del repo deberá cerrarlas cuando las haya resuelto. [Puedes en el commit usar una frase como `fixed issue number`](https://docs.github.com/en/enterprise/2.16/user/github/managing-your-work-on-github/closing-issues-using-keywords) y el commit se cerrará automáticamente
+  * Deberán crear incidencias en los repos para indicar los fallos y  sugerencias. El propietario del repo deberá cerrarlas cuando las haya resuelto. [Puedes en el commit usar una frase como `Resolves #10, resolves #123, resolves octo-org/octo-repo#100`](https://docs.github.com/en/free-pro-team@latest/github/managing-your-work-on-github/linking-a-pull-request-to-an-issue) y los issues con esos números se cerrarán automáticamente
 3. En el repo de esta asignación deberan crear en el fichero `README.md` un informe colaborativo sobre la realización de la práctica. Podemos seguir el siguiente flujo de trabajo (workflow):
   1. Se nombra un **coordinador** de equipo
-  2. Cada alumno  crea una rama con su nombre o `aluXXX` e introduce en su sección del fichero `README.md` el informe de su práctica (incluyendo al menos un enlace a su repo y a su web desplegada) 
-  3. Cada alumno hace un [pull request]() a la rama `main` de su rama solicitando la mezcla con la rama principal 
+  2. Cada alumno  crea una rama con su nombre o `aluXXX` e introduce en su sección del fichero `README.md` el informe de su práctica (incluyendo al menos un enlace a su repo y a su web desplegada).
+  [Cree](https://docs.github.com//en/free-pro-team@latest/articles/creating-new-files), [edite](https://docs.github.com//en/free-pro-team@latest/articles/editing-files), [renombre](https://docs.github.com//en/free-pro-team@latest/articles/renaming-a-file), [mueva](https://docs.github.com//en/free-pro-team@latest/articles/moving-a-file-to-a-new-location), o [suprima](https://docs.github.com//en/free-pro-team@latest/articles/deleting-files) ficheros según considere.
+  3. Cada alumno hace un [pull request](https://docs.github.com/en/free-pro-team@latest/articles/creating-a-pull-request) a la rama `main` desde su rama `aluXXX` solicitando la mezcla con la rama principal. Lee la documentación sobre [pull request](https://docs.github.com/en/free-pro-team@latest/articles/creating-a-pull-request)
+    - When thinking about branches, remember that 
+    - the base branch (`main`) is where changes should be applied, 
+    - the head branch (`aluXXX`) contains what you would like to be applied.
+  4. Después de crear el *pull request*, puedes preguntar al coordinador y otros miembros del equipo para que [revisen tu propuesta de cambios](https://docs.github.com//en/free-pro-team@latest/articles/reviewing-proposed-changes-in-a-pull-request). 
+    - For more information, see "[Requesting a pull request review](https://docs.github.com//en/free-pro-team@latest/articles/requesting-a-pull-request-review)."
   4. El coordinador se encarga de acudir a la sección de pull requests y aceptar el request haciendo la mezcla o rechazarla comentando las razones 
 
