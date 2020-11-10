@@ -38,10 +38,15 @@ Los pasos a dar son:
   2. Cada alumno  crea una rama con su nombre o `aluXXX` e introduce en su sección del fichero `README.md` el informe de su práctica (incluyendo al menos un enlace a su repo y a su web desplegada).
   [Cree](https://docs.github.com//en/free-pro-team@latest/articles/creating-new-files), [edite](https://docs.github.com//en/free-pro-team@latest/articles/editing-files), [renombre](https://docs.github.com//en/free-pro-team@latest/articles/renaming-a-file), [mueva](https://docs.github.com//en/free-pro-team@latest/articles/moving-a-file-to-a-new-location), o [suprima](https://docs.github.com//en/free-pro-team@latest/articles/deleting-files) ficheros según considere.
   3. Cada alumno hace un [pull request](https://docs.github.com/en/free-pro-team@latest/articles/creating-a-pull-request) a la rama `main` desde su rama `aluXXX` solicitando la mezcla con la rama principal. Lee la documentación sobre [pull request](https://docs.github.com/en/free-pro-team@latest/articles/creating-a-pull-request)
-    - When thinking about branches, remember that 
+
+    - When thinking about pull request with branches, remember that 
     - the base branch (`main`) is where changes should be applied, 
     - the head branch (`aluXXX`) contains what you would like to be applied.
-  4. Después de crear el *pull request*, puedes preguntar al coordinador y otros miembros del equipo para que [revisen tu propuesta de cambios](https://docs.github.com//en/free-pro-team@latest/articles/reviewing-proposed-changes-in-a-pull-request). 
+  
+  4. Después de crear el *pull request*, puedes preguntar a
+   otro miembro del equipo (que llamaremos **revisor**) para que [revise tu propuesta de cambios](https://docs.github.com//en/free-pro-team@latest/articles/reviewing-proposed-changes-in-a-pull-request).  
     - For more information, see "[Requesting a pull request review](https://docs.github.com//en/free-pro-team@latest/articles/requesting-a-pull-request-review)."
+  4. El **revisor** hace una [revisión de los cambios propuestos en el  pull request](https://docs.github.com/en/free-pro-team@latest/github/collaborating-with-issues-and-pull-requests/reviewing-proposed-changes-in-a-pull-request)
+  4. En el proceso de mezcla pueden aparecer `merge conflicts`. Los conflictos suceden cuando se quieren fusionar ramas que tienen cambios ireconciliables (por ejemplo una determinada línea de un fichero que contenía `hello world!` en la rama `main` se cambio a `hello hell!`y en otra rama `aluXX` la misma línea se cambió a `hello heaven!`). En esos casos Git se negará a hacer la mezcla y requerirá tu ayuda para decidir como debe quedar  la fusión final.
   4. El coordinador se encarga de acudir a la sección de pull requests y aceptar el request haciendo la mezcla o rechazarla comentando las razones 
 
