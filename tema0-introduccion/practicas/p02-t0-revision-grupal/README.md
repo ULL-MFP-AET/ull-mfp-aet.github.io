@@ -30,8 +30,8 @@ next:
 Los pasos a dar son:
 
 1. Da permisos de **triage** sobre tu repo de la tarea *aprender-markdown* al resto de los miembros del equipo (Ve a *settings* del repo y añádelos)
-2. Pasen a discutir uno por uno las dificultades, las soluciones, la estética de la web, sugerir mejoras, etc. 
-  * Pueden usar las salas de grupo de [Google Meet](https://campusdoctoradoyposgrado.ull.es/mod/page/view.php?id=284636)) o bien directamente [Google Chat](https://chat.google.com) para ello. 
+2. En equipo, pasen a discutir las dificultades, las soluciones, la estética de la web, sugerir mejoras, etc. 
+  * Pueden usar las salas de grupo de [Google Meet](https://campusdoctoradoyposgrado.ull.es/mod/page/view.php?id=284636) o bien directamente [Google Chat](https://chat.google.com) para ello. 
   * Deberán crear incidencias en los repos para indicar los fallos y  sugerencias. El propietario del repo deberá cerrarlas cuando las haya resuelto. [Puedes en el commit usar una frase como `fixed issue number`](https://docs.github.com/en/enterprise/2.16/user/github/managing-your-work-on-github/closing-issues-using-keywords) y el commit se cerrará automáticamente
 3. En el repo de esta asignación deberan crear en el fichero `README.md` un informe colaborativo sobre la realización de la práctica. Podemos seguir el siguiente flujo de trabajo (workflow):
   1. Se nombra un **coordinador** de equipo
