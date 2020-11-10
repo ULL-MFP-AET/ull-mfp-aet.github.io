@@ -8,7 +8,7 @@ next:
   url: 
 ---
 
-# Revision Grupal (p02-t0-revision-grupal)
+# Aprender Colaboración con GitHub (p02-t0-revision-grupal)
 
 ## Objetivos
 
