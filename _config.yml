@@ -56,6 +56,9 @@ practicas:
   - title: 02aprenderjekyllbasico
     myurl: https://campusdoctoradoyposgrado.ull.es/mod/assign/view.php?id=284365
     name: Aprender Jekyll Basico
+  - title: 03colaboraciongithub
+    myurl: https://campusdoctoradoyposgrado.ull.es/mod/assign/view.php?id=284635
+    name: Aprender Colaboración con GitHub
   - title: 03aprenderide
     myurl: https://campusdoctoradoyposgrado.ull.es/mod/assign/view.php?id=282487&forceview=1
     name: Aprender IDE
