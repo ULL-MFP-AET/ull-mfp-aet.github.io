@@ -1,6 +1,6 @@
 # Guia Docente
 
-* [Guía Docente]({{site.baseurl}}/tema0-introduccion-a-pl/guia-docente.html)
+* [Guía Docente]({{site.guia_docente}})
 
 ## Organización GitHub
 
