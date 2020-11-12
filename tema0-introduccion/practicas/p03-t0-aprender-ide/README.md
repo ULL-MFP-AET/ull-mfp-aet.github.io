@@ -114,7 +114,7 @@ Siga estos pasos:
   * Pruebe a abrir el fichero descargado  `_site/index.html` con su navegador. ¿Que ve?
   * Luego use la opción `Add file` de la interfaz de GitHub en el repo para añadir los archivos en `_site`
 * Añada un fichero `.nojekyll` vacío al repo de entrega  `p03-t0-aprender-ide-aluXXX`. Esto hará que Jekyll deje de funcionar como servidor por defecto para este repo y se use un servidor estático ordinario
-* Active las GitHub Pages del Repo de entrega  `p03-t0-aprender-ide-aluXXX` a partir de la rama `main` y la carpeta principal
+* Active las GitHub Pages del Repo de entrega  `p03-t0-aprender-ide-aluXXX` a partir de la rama `main` y especifique la carpeta principal como carpeta que contiene el web site
 
 ## Referencias
 
