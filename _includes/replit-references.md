@@ -1,3 +1,4 @@
+* [GIT on repl.it](https://repl.it/talk/learn/Replit-Git-Tutorial/23331/) A tutorial on how to use git and github on repl.it
 * [Help on *I'm getting an error with a Ruby Repl when I try to install the jekyll package*](https://repl.it/talk/ask/Package-Installation-failing-on-SASSC/53457?order=new)
 * [Repl.it Tutorial MAKE A BLOG USING JEKYLL](https://repl.it/talk/learn/GUIDE-MAKE-A-BLOG-USING-JEKYLL-POG-ALERT-KEK-HAHAYES-ENDORSED/59021)
   * [Repl de ejemplo](https://repl.it/@sourcerose/JekyllBlog#main.sh)
@@ -25,10 +26,9 @@
     Use 'man xdg-open' or 'xdg-open --manual' for additional info.
     $ browse https://github.com/cli/cli/releases
   ```
-  * [Repl.it Tutorial MAKE A BLOG USING JEKYLL](https://repl.it/talk/learn/ GUIDE-MAKE-A-BLOG-USING-JEKYLL-POG-ALERT-KEK-HAHAYES-ENDORSED/59021)
-  * [Repl de ejemplo](https://repl.it/@sourcerose/JekyllBlog#main.sh)
-  * [Repo en GitHub](https://github.com/barryclark/jekyll-now.git)
-* [GIT on repl.it](https://repl.it/talk/learn/Replit-Git-Tutorial/23331/) A tutorial on how to use git and github on repl.it
+* [Repl.it Tutorial MAKE A BLOG USING JEKYLL](https://repl.it/talk/learn/ GUIDE-MAKE-A-BLOG-USING-JEKYLL-POG-ALERT-KEK-HAHAYES-ENDORSED/59021)
+* [Repl de ejemplo](https://repl.it/@sourcerose/JekyllBlog#main.sh)
+* [Repo en GitHub](https://github.com/barryclark/jekyll-now.git)
 * [Understanding the Repl.it IDE: a practical guide to building your first project with Repl.it](https://www.codewithrepl.it/01-introduction-to-the-repl-it-ide.html)
 * [Repl.it Quick Start Guide](https://docs.repl.it/misc/quick-start)
 * Documentación en [jekyllrb.com](https://jekyllrb.com)
