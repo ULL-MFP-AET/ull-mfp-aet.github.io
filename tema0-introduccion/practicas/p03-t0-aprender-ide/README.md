@@ -26,7 +26,7 @@ Siga estos pasos:
 * Abre una terminal: Para ello pulse `<F1>` y escriba `shell`. Luego elige `open shell`
 * Vamos a aprender a usar git y GitHub en repl.it. Para ello sigamos el tutorial:
   * [GIT on repl.it](https://repl.it/talk/learn/)
-  * Creamos un nuevo repo **público** en GitHub en la organización **ULL-MFP-AET-2021** y lo llamamos `JekyllBlog-aluXXX`
+  * Creamos un nuevo repo **público** en GitHub en la organización **ULL-MFP-AET-2021** y lo llamamos `JekyllBlog-aluXXX` (sustituya `aluXXX` por su usuario GitHub)
   * Conectamos nuestro replit con el repo
   * Create a new branch by clicking the `+`, and create a branch named `development`
   * After working on your project for a while and you're ready to finish, click `commit & push`
