@@ -43,7 +43,7 @@ Siga estos pasos:
     * Puede hacerlo desde la IDE de replit: To remove the folder `site`, click the icon with 3 dots on the very right and click the `delete` button 
 
       ![](https://storage.googleapis.com/replit/images/1556246404868_e600f8187296777bf09df32fbdc94a58.jpe)
-    * O bien si es usted un hacker usar la terminal:
+    * O bien si es usted un hacker puede usar la terminal:
   
       ```
       $ pwd              # pwd nos dice en que carpeta estamos
