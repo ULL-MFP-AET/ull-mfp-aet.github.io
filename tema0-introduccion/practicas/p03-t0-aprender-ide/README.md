@@ -22,7 +22,7 @@ Siga estos pasos:
 * Intente familiarizarse con la IDE en la nube Replit. 
 * Modifique el fichero `index.html` y compruebe que se reflejan los cambios al refrescar la página
 * Abre una terminal: Para ello pulse `<F1>` y escriba `shell`. Luego elige `open shell`
-* Invite a colaborar a un compañero de equipo (botón `Share`). Puede hacerlo especificando el usuario o mediante un un enlace
+* Invite a colaborar a un compañero de equipo (botón `Share` arriba a la derecha). Puede hacerlo especificando el usuario o mediante un un enlace
 * En otra pestaña acepte y únase a la invitación de su compañero
 * Observe los múltiples cursores. Pueden iniciar un chat haciendo click en el icono de chat abajo a la derecha
 * Vamos a aprender a usar git y GitHub en repl.it. Para ello sigamos el tutorial:
