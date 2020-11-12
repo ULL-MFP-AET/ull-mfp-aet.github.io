@@ -22,6 +22,9 @@ Siga estos pasos:
 * Intente familiarizarse con la IDE en la nube Replit. 
 * Modifique el fichero `index.html` y compruebe que se reflejan los cambios al refrescar la página
 * Abre una terminal: Para ello pulse `<F1>` y escriba `shell`. Luego elige `open shell`
+* Invite a colaborar a un compañero de equipo (botón `Share`). Puede hacerlo especificando el usuario o mediante un un enlace
+* En otra pestaña acepte y únase a la invitación de su compañero
+* Observe los múltiples cursores. Pueden iniciar un chat haciendo click en el icono de chat abajo a la derecha
 * Vamos a aprender a usar git y GitHub en repl.it. Para ello sigamos el tutorial:
   * [GIT on repl.it](https://repl.it/talk/learn/)
   * Creamos un nuevo repo **público** en GitHub en la organización **ULL-MFP-AET-2021** y lo llamamos `JekyllBlog-aluXXX` (sustituya `aluXXX` por su usuario GitHub)
