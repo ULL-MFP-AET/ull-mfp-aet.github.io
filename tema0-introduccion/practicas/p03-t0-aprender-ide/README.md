@@ -16,7 +16,7 @@ Siga estos pasos:
 
 * Cree una cuenta en replit [https://repl.it/signup](https://repl.it/signup). Use la cuenta de GitHub para crear la cuenta de replit.
 * Autorice a Replit para que pueda acceder a todos su repositorios GitHub
-* Haga un fork de este replit: [https://repl.it/@crguezl/JekyllBlog#main.sh](https://repl.it/@crguezl/JekyllBlog#main.sh)
+* Haga un fork de este replit: [https://repl.it/@crguezl/JekyllBlog#main.sh](https://repl.it/@crguezl/JekyllBlog#main.sh) y cambie el nombre a `JekyllBlog-aluXXX` 
 * Pulse el boton RUN o escriba en la terminal `source main.sh`
   - Debería configurarse y ejecutarse `jekyll`, construir las páginas web y arrancar un servidor. La página debería aparecer en la ventana superior derecha
 * Intente familiarizarse con la IDE en la nube Replit. 
