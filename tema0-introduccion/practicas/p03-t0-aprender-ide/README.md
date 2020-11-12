@@ -23,6 +23,19 @@ Siga estos pasos:
   * Este tutorial [Understanding the Repl.it IDE: a practical guide to building your first project with Repl.it](https://www.codewithrepl.it/01-introduction-to-the-repl-it-ide.html) puede ayudar
   * [Repl.it Quick Start Guide](https://docs.repl.it/misc/quick-start)
 * Modifique el fichero `index.html` y compruebe que se reflejan los cambios al refrescar la página
+* Abre una terminal: Para ello pulse `<F1>` y escriba `shell`. Luego elige `open shell`
+* Vamos a aprender a usar git y GitHub en repl.it. Para ello sigamos el tutorial:
+  * [GIT on repl.it](https://repl.it/talk/learn/)
+  * Creamos un nuevo repo **público** en GitHub en la organización **ULL-MFP-AET-2021** y lo llamamos `JekyllBlog-aluXXX`
+  * Conectamos nuestro replit con el repo
+  * Create a new branch by clicking the `+`, and create a branch named `development`
+  * After working on your project for a while and you're ready to finish, click `commit & push`
+  * Now, if you switch branches, you'll see that master does not have the same contents as the development branch
+  * To "merge" the code back into master, you need to create a "Pull request". Go to your GitHub repository
+  * Click `Compare and pull request`, and write a description of the change. Once you're done, click the green `Create pull request` button
+  * If you return to you repl, and switch to the `master` branch, you should see a new button appear
+  * Click `Pull <-` to update your code. Repl.it will update your code to reflect your repo, and you can continue to work!
+  * Congrats! That's the basics of git in repl.it!
 * Ahora:
   * Borre el directorio `site` con todos los ficheros en él. Puede hacerlo desde la IDE de replit o bien si es usted un hacker usar la terminal:
   
