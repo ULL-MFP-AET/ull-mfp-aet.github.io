@@ -10,7 +10,7 @@ next:
 
 # Aprendiendo a usar una IDE (p03-t0-aprender-ide)
 
-En esta práctica aprenderemos a usar una IDE en la nube ([repl.it](https://repl.it)) y empezaremos a familiarizarnos con un generador de web sites y blogs estáticos ([Jekyll](jekyllrb.com)).
+En esta práctica aprenderemos a usar una IDE en la nube ([repl.it](https://repl.it)) y seguiremos familiarizandonos con el generador de web sites estáticos ([Jekyll](jekyllrb.com)).
 
 Siga estos pasos:
 
