@@ -38,14 +38,19 @@ Siga estos pasos:
   * Click `Pull <-` to update your code. Repl.it will update your code to reflect your repo, and you can continue to work!
   * Congrats! That's the basics of git in repl.it!
 * Ahora:
-  * Borre el directorio `site` con todos los ficheros en él. Puede hacerlo desde la IDE de replit o bien si es usted un hacker usar la terminal:
+  * Detenga la ejecución de Jekyll. Para ello, haga click en el botón `stop` o si es usted de la vieja guardia, en la terminal en la que está ejecutándose Jekyll pulse `Ctrl-C` 
+  * Borre el directorio `site` con todos los ficheros en él. 
+    * Puede hacerlo desde la IDE de replit: To remove the folder `site`, click the icon with 3 dots on the very right and click the `delete` button 
+
+      ![](https://storage.googleapis.com/replit/images/1556246404868_e600f8187296777bf09df32fbdc94a58.jpe)
+    * O bien si es usted un hacker usar la terminal:
   
-    ```
-    $ pwd              # pwd nos dice en que carpeta estamos
-  /home/runner/JekyllBlog/site
-    $ cd ..            # nos cambiamos a la carpeta que contiene a esta
-    $ rm -fR site      # rm sirve para borrar. La opción -R indica que se borren recursivamente todas las carpetas dentro de site
-    ```
+      ```
+      $ pwd              # pwd nos dice en que carpeta estamos
+    /home/runner/JekyllBlog/site
+      $ cd ..            # nos cambiamos a la carpeta que contiene a esta
+      $ rm -fR site      # rm sirve para borrar. La opción -R indica que se borren recursivamente todas las carpetas dentro de site
+      ```
   * Clone el repositorio [https://github.com/barryclark/jekyll-now.git](https://github.com/barryclark/jekyll-now) en el directorio `site`:
   
     ```
