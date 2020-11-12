@@ -41,10 +41,10 @@ Siga estos pasos:
   * Borre el directorio `site` con todos los ficheros en él. Puede hacerlo desde la IDE de replit o bien si es usted un hacker usar la terminal:
   
     ```
-    $ pwd
+    $ pwd              # pwd nos dice en que carpeta eestamos
   /home/runner/JekyllBlog/site
-    $ cd ..
-    $ rm -fR site
+    $ cd ..            # nos cambiamos a la carpeta que contiene a esta
+    $ rm -fR site      # rm sirve para borrar. La opción -R indica que se borren recursivamente todas las carpetas dentro de site
     ```
   * Clone el repositorio [https://github.com/barryclark/jekyll-now.git](https://github.com/barryclark/jekyll-now) en el directorio `site`:
   
