@@ -20,8 +20,6 @@ Siga estos pasos:
 * Pulse el boton RUN o escriba en la terminal `source main.sh`
   - Debería configurarse y ejecutarse `jekyll`, construir las páginas web y arrancar un servidor. La página debería aparecer en la ventana superior derecha
 * Intente familiarizarse con la IDE en la nube Replit. 
-  * Este tutorial [Understanding the Repl.it IDE: a practical guide to building your first project with Repl.it](https://www.codewithrepl.it/01-introduction-to-the-repl-it-ide.html) puede ayudar
-  * [Repl.it Quick Start Guide](https://docs.repl.it/misc/quick-start)
 * Modifique el fichero `index.html` y compruebe que se reflejan los cambios al refrescar la página
 * Abre una terminal: Para ello pulse `<F1>` y escriba `shell`. Luego elige `open shell`
 * Vamos a aprender a usar git y GitHub en repl.it. Para ello sigamos el tutorial:
@@ -115,11 +113,5 @@ Siga estos pasos:
 
 ## Referencias
 
-* [Repl.it Tutorial MAKE A BLOG USING JEKYLL](https://repl.it/talk/learn/ GUIDE-MAKE-A-BLOG-USING-JEKYLL-POG-ALERT-KEK-HAHAYES-ENDORSED/59021)
-  * [Repl de ejemplo](https://repl.it/@sourcerose/JekyllBlog#main.sh)
-  * [Repo en GitHub](https://github.com/barryclark/jekyll-now.git)
-* [GIT on repl.it](https://repl.it/talk/learn/Replit-Git-Tutorial/23331/) A tutorial on how to use git and github on repl.it
-* [Understanding the Repl.it IDE: a practical guide to building your first project with Repl.it](https://www.codewithrepl.it/01-introduction-to-the-repl-it-ide.html)
-* [Repl.it Quick Start Guide](https://docs.repl.it/misc/quick-start)
-* Documentación en [jekyllrb.com](https://jekyllrb.com)
-* [Liquid](https://shopify.github.io/liquid/)
+{% include replit-references.md %}
+
