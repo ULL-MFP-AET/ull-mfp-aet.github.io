@@ -111,7 +111,8 @@ Siga estos pasos:
   * Primero descargue a su ordenador todos los ficheros de `JekyllBlog-aluXXX` (Vea en la etiqueta `code` la opción `Download zip`) o bien desde el mismo repl.it:
 
     ![](https://storage.googleapis.com/replit/images/1576753896253_8e8fda782173c0a08fe72fec7d8a0dee.png)
-  * Luego use la opción `Add file` de la interfaz de GitHub en el repo 
+  * Pruebe a abrir el fichero descargado  `_site/index.html` con su navegador. ¿Que ve?
+  * Luego use la opción `Add file` de la interfaz de GitHub en el repo para añadir los archivos en `_site`
 * Añada un fichero `.nojekyll` vacío al repo de entrega  `p03-t0-aprender-ide-aluXXX`. Esto hará que Jekyll deje de funcionar como servidor por defecto para este repo y se use un servidor estático ordinario
 * Active las GitHub Pages del Repo de entrega  `p03-t0-aprender-ide-aluXXX` a partir de la rama `main` y la carpeta principal
 
