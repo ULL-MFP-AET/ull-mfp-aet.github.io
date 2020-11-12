@@ -87,7 +87,7 @@ Siga estos pasos:
 
 ## Referencias
 
-* [Repl.it Tutorial MAKE A BLOG USING JEKYLL](https://repl.it/talk/learn/GUIDE-MAKE-A-BLOG-USING-JEKYLL-POG-ALERT-KEK-HAHAYES-ENDORSED/59021)
+* [Repl.it Tutorial MAKE A BLOG USING JEKYLL](https://repl.it/talk/learn/ GUIDE-MAKE-A-BLOG-USING-JEKYLL-POG-ALERT-KEK-HAHAYES-ENDORSED/59021)
   * [Repl de ejemplo](https://repl.it/@sourcerose/JekyllBlog#main.sh)
   * [Repo en GitHub](https://github.com/barryclark/jekyll-now.git)
 * [GIT on repl.it](https://repl.it/talk/learn/Replit-Git-Tutorial/23331/) A tutorial on how to use git and github on repl.it
