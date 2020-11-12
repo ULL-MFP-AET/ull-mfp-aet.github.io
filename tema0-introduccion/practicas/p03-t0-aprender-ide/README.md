@@ -88,7 +88,7 @@ Siga estos pasos:
      ![]({{site.baseurl}}/assets/images/first-jekyll-blog.png)
   
     debería verse parecida a esta imagen
-  * Ahora pare el servidor  con `Ctrl-C` y edite el fichero `site/_config.yml`.Cambie la entrada `name:` para que contenga su nombre. Vuelva a ejecutar jekyll.
+  * Ahora pare el servidor  con `Ctrl-C` y edite el fichero `site/_config.yml`. Cambie la entrada `name:` para que contenga su nombre. Vuelva a ejecutar jekyll.
   ¿Que ocurre?. 
 
   Para entender un poco edite el fichero `_site/_layouts/default.html`y busque por la aparición de la palabra `site.name`. El lenguaje que estamos viendo es una mezcla de HTML con un lenguaje de templates que se conoce como [Liquid](https://shopify.github.io/liquid/)
@@ -104,10 +104,12 @@ Siga estos pasos:
   ...
   ```
 
-* Añada todos los cambios realizados en las etapas anteriores al repo creado `JekyllBlog-aluXXX`
+* Repita los pasos vistos sobre control de versiones y añada todos los cambios realizados en las etapas anteriores al repo creado `JekyllBlog-aluXXX`
 * En el repo de entrega `p03-t0-aprender-ide-aluXXX` asegúrese de añadir en el `README.md` un enlace al repo creado y un enlace al replit
 * Escriba un informe de lo aprendido
-* Añada al repo de entrega  `p03-t0-aprender-ide-aluXXX`  todos los ficheros del directorio generado por jekyll que están en `_site` (Use la opción `Add file` de la interfaz de GitHub en el repo) 
+* Añada al repo de entrega  `p03-t0-aprender-ide-aluXXX`  todos los ficheros del directorio generado por jekyll que están en `_site` 
+  * Primero descargue a su ordenador todos los ficheros de `JekyllBlog-aluXXX` (Vea en la etiqueta `code` la opción `Download zip`)
+  * Luego use la opción `Add file` de la interfaz de GitHub en el repo 
 * Añada un fichero `.nojekyll` vacío al repo de entrega  `p03-t0-aprender-ide-aluXXX` 
 * Active las GitHub Pages del Repo de entrega  `p03-t0-aprender-ide-aluXXX` a partir de la rama `main` y la carpeta principal
 
