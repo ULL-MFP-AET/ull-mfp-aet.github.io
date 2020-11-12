@@ -31,7 +31,7 @@ Siga estos pasos:
   * Create a new branch by clicking the `+`, and create a branch named `development`
   * After working on your project for a while and you're ready to finish, click `commit & push`
   * Now, if you switch branches, you'll see that master does not have the same contents as the development branch
-  * To `merge` the code back into `master`, you need to create a "Pull request". Go to your GitHub repository
+  * To `merge` the code back into `master`, you need to create a `Pull request`. Go to your GitHub repository
   * Click `Compare and pull request`, and write a description of the change. Once you're done, click the green `Create pull request` button
   * If you return to you repl, and switch to the `master` branch, you should see a new button appear
   * Click `Pull <-` to update your code. Repl.it will update your code to reflect your repo, and you can continue to work!
