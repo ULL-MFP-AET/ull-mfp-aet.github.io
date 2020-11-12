@@ -61,7 +61,13 @@ Siga estos pasos:
     Receiving objects: 100% (1300/1300), 8.17 MiB | 12.47 MiB/s, done.
     Resolving deltas: 100% (717/717), done.
     ```
+  * Si al cabo de un tiempo no ve los cambios en la ventana de `Files`, es posible que tenga que refrescar en el navegador la página para que se actualicen
+  * Borre la carpeta oculta `.git` en el repo clonado:
 
+    ```
+    $ cd site
+    $ rm -fR .git
+    ``` 
   * Vuelva a correr el servidor Jekyll:
 
     ```
@@ -100,9 +106,12 @@ Siga estos pasos:
   ...
   ```
 
-* En el repo de entrega asegúrese de añadir un enlace al replit creado.
-* Comparta su replit con el profesor
-* Añada al repo de entrega todos los ficheros del directorio que contienen los fuentes para el web `site` 
+* Añada todos los cambios realizados en las etapas anteriores al repo creado `JekyllBlog-aluXXX`
+* En el repo de entrega `p03-t0-aprender-ide-aluXXX` asegúrese de añadir en el `README.md` un enlace al repo creado y un enlace al replit
+* Escriba un informe de lo aprendido
+* Añada al repo de entrega  `p03-t0-aprender-ide-aluXXX`  todos los ficheros del directorio generado por jekyll que están en `_site` (Use la opción `Add file` de la interfaz de GitHub en el repo) 
+* Añada un fichero `.nojekyll` vacío al repo de entrega  `p03-t0-aprender-ide-aluXXX` 
+* Active las GitHub Pages del Repo de entrega  `p03-t0-aprender-ide-aluXXX` a partir de la rama `main` y la carpeta principal
 
 ## Referencias
 
