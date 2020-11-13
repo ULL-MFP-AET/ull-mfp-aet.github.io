@@ -38,7 +38,7 @@ title: Search
 
 {{ initSearch | lstrip }}
 
-## Glossary
+# Glossary
 
 * [Glossary]({{site.baseurl}}/glossary.html)
 
