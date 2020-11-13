@@ -69,6 +69,8 @@ Siga estos pasos:
     $ cd site
     $ rm -fR .git
     ``` 
+
+    **¿Que estamos haciendo?** Al borrar la carpeta `.git`estamos borrando todo el histórico del control de versiones del repo `barryclark/jekyll-now`. Con esto la carpeta `site` deja de ser un repo para convertirse en una simple carpeta 
   * Vuelva a correr el servidor Jekyll:
 
     ```
@@ -94,6 +96,8 @@ Siga estos pasos:
   * Ahora pare el servidor  con `Ctrl-C` y edite el fichero `site/_config.yml`. Cambie la entrada `name:` para que contenga su nombre. Vuelva a ejecutar jekyll.
   ¿Que ocurre?. 
 
+    **NOTA:** Jekyll vigila los cambios que hacemos y refresca el web site cada vez que ocurre uno. Sin embargo, no vigila el fichero `_config.yml`. Es por eso que debemos rearrancarlo
+
   Para entender un poco edite el fichero `_site/_layouts/default.html`y busque por la aparición de la palabra `site.name`. El lenguaje que estamos viendo es una mezcla de HTML con un lenguaje de templates que se conoce como [Liquid](https://shopify.github.io/liquid/)
 
   ```html
@@ -116,7 +120,7 @@ Siga estos pasos:
     ![](https://storage.googleapis.com/replit/images/1576753896253_8e8fda782173c0a08fe72fec7d8a0dee.png)
   * Pruebe a abrir el fichero descargado  `_site/index.html` con su navegador. ¿Que ve?
   * Luego use la opción `Add file` de la interfaz de GitHub en el repo para añadir los archivos en `_site`
-* Añada un fichero `.nojekyll` vacío al repo de entrega  `p03-t0-aprender-ide-aluXXX`. Esto hará que Jekyll deje de funcionar como servidor por defecto para este repo y se use un servidor estático ordinario
+* Añada un fichero `.nojekyll` vacío al repo de entrega  `p03-t0-aprender-ide-aluXXX`. Esto hará que Jekyll deje de funcionar como servidor por defecto para este repo y se use un servidor estático ordinario (See [Bypassing Jekyll on GitHub Pages](https://github.blog/2009-12-29-bypassing-jekyll-on-github-pages/) by Tom Preston-Werner)
 * Active las GitHub Pages del Repo de entrega  `p03-t0-aprender-ide-aluXXX` a partir de la rama `main` y especifique la carpeta principal como carpeta que contiene el web site
 
 ## Referencias
