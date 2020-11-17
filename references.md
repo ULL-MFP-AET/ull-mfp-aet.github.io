@@ -4,6 +4,16 @@
 
 {% include github-education-references.md %}
 
+## Tools for Assignments 
+
+* [Repobee](https://repobee.readthedocs.io/en/stable/fundamentals.html)
+
+## Referencias sobre Jekyll
+
+{% include jekyll-references %}
+
+
+
 ## Referencias sobre JavaScript
 
 * [Eloquent JS 3rd Edition](https://eloquentjavascript.net/)
