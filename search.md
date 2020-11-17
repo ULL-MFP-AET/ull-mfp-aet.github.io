@@ -37,3 +37,8 @@ title: Search
 {% endcapture %}
 
 {{ initSearch | lstrip }}
+
+# Glossary
+
+* [Glossary]({{site.baseurl}}/glossary.html)
+
