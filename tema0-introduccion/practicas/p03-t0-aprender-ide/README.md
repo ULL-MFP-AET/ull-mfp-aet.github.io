@@ -161,10 +161,10 @@ Siga estos pasos:
   - Acorte el `excerpt` del post en `index.html` usando un [filtro Liquid](https://shopify.dev/docs/themes/liquid/reference/filters) como [slice](https://shopify.dev/docs/themes/liquid/reference/filters/string-filters)
     - You can access a snippet of a posts’s content by using `excerpt` variable on a post. By default this is the first paragraph of content in the post
 
-* Repita los pasos vistos sobre control de versiones y añada todos los cambios realizados en las etapas anteriores al repo creado `JekyllBlog-aluXXX`
-
 ## Preparando el Repo de Entrega
 
+
+* Repita los pasos vistos sobre control de versiones y añada todos los cambios realizados en las etapas anteriores al repo creado `JekyllBlog-aluXXX`
 * En el repo de entrega `p03-t0-aprender-ide-aluXXX` asegúrese de añadir en el `README.md` un enlace al repo creado y un enlace al replit
 * Escriba un informe de lo aprendido
 * Añada al repo de entrega  `p03-t0-aprender-ide-aluXXX`  todos los ficheros del directorio generado por jekyll que están en `_site` 
