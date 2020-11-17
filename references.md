@@ -4,7 +4,7 @@
 
 {% include github-education-references.md %}
 
-## Tools for Assignments 
+## Alternative Tools for Assignments
 
 {% include classroom-references.md %}
 
