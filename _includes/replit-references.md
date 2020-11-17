@@ -4,8 +4,8 @@
 
 * Education and Teams
   * [repl.it: Teams for Education (Beta)](https://docs.repl.it/classrooms/teams_for_education)
-  * [Repl.it Blog. Teams: Group Projects on Teams for Education](https://blog.repl.it/group-projects-teams-education)
-    - [Repl.it: Teams for Education](https://blog.repl.it/teams-for-education)
+  * [Repl.it Blog. Teams: Group Projects on Teams for Education](https://blog.repl.it/group-projects-teams-education) Wed Oct 21 2020 by David Cako
+  * [Repl.it Blog: Teams for Education](https://blog.repl.it/teams-for-education) Tue Jun 30 2020 by Amjad Masad
   * Obsoleto!: [repl.it for computer science teachers: how to create classrooms and build assignments](https://youtu.be/70Pm4ZOPUzk) YouTube video by Pizzey Technology
 
 * Introduccion a Repl.it
