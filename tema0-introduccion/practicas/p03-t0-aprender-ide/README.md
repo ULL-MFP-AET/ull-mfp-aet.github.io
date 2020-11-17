@@ -161,7 +161,7 @@ Siga estos pasos:
   - Acorte el `excerpt` del post en `index.html` usando un [filtro Liquid](https://shopify.dev/docs/themes/liquid/reference/filters) como [slice](https://shopify.dev/docs/themes/liquid/reference/filters/string-filters)
     - You can access a snippet of a posts’s content by using `excerpt` variable on a post. By default this is the first paragraph of content in the post
  * Edite el fichero `404.md` ¿Cual es la función de este fichero?
-   - Vuelva a editar el post que creó antes. Añádale un enlace a un fichero que no existe `[click here](dos-not-exist.md)`. ¿Que ocurre cuando hacemos click en el enlace?  
+   - Vuelva a editar el post que creó antes. Añádale un enlace a un fichero que no existe `[click here](does-not-exist.md)`. ¿Que ocurre cuando hacemos click en el enlace?  
 
 ## Preparando el Repo de Entrega
 
