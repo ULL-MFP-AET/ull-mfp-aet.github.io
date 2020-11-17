@@ -9,7 +9,7 @@
 * Introduccion a Repl.it
   * [Understanding the Repl.it IDE: a practical guide to building your first project with Repl.it](https://www.codewithrepl.it/01-introduction-to-the-repl-it-ide.html)
   * [Repl.it Quick Start Guide](https://docs.repl.it/misc/quick-start)
-* Jekyll
+* Jekyll on Repl.it
    * [Repl.it Tutorial MAKE A BLOG USING JEKYLL](https://repl.it/talk/learn/GUIDE-MAKE-A-BLOG-USING-JEKYLL-POG-ALERT-KEK-HAHAYES-ENDORSED/59021)
     * [Repl de ejemplo](https://repl.it/@sourcerose/JekyllBlog#main.sh)
     * [Repo en GitHub](https://github.com/barryclark/jekyll-now.git)
