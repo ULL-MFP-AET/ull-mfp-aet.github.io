@@ -132,6 +132,10 @@ Siga estos pasos:
     </div>
     ...
     ```
+* ¿Cómo se especifica que layout se aplica a una página? Mira en:
+  - index.md
+  - 404.md
+  - Un post en `_posts`
 * Observe en el fichero `default.html` la línea:
 
   ```
@@ -176,7 +180,7 @@ Siga estos pasos:
     ```
 
     Note que los apuntes son servidos desde [https://ull-mfp-aet-2021.github.io/introduccion/tema0-introduccion/practicas/p04-t0-aprender-jekyll/]({{site.baseurl}}/tema0-introduccion/practicas/p04-t0-aprender-jekyll/)
-* ¿Que es un [permalink](https://jekyllrb.com/docs/permalinks/)?
+* Observe el uso de la variable permalink en el `404.md`. ¿Que es un [permalink](https://jekyllrb.com/docs/permalinks/)?
   - Permalinks are the output path for your pages, posts, or collections. They allow you to structure the directories of your source code different from the directories in your output 
 
 ## Preparando el Repo de Entrega
