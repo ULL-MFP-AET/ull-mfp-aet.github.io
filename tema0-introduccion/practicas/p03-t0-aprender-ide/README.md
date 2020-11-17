@@ -14,6 +14,8 @@ En esta práctica aprenderemos a usar una IDE en la nube ([repl.it](https://repl
 
 Siga estos pasos:
 
+## Primeros pasos
+
 * Cree una cuenta en replit [https://repl.it/signup](https://repl.it/signup). Use la cuenta de GitHub para crear la cuenta de replit.
 * Autorice a Replit para que pueda acceder a todos su repositorios GitHub
 * Haga un fork de este replit: [https://repl.it/@crguezl/JekyllBlog#main.sh](https://repl.it/@crguezl/JekyllBlog#main.sh) y cambie el nombre a `JekyllBlog-aluXXX` 
@@ -22,9 +24,15 @@ Siga estos pasos:
 * Intente familiarizarse con la IDE en la nube Replit. 
 * Modifique el fichero `index.html` y compruebe que se reflejan los cambios al refrescar la página
 * Abre una terminal: Para ello pulse `<F1>` y escriba `shell`. Luego elige `open shell`
+
+## El Chat
+
 * Invite a colaborar a un compañero de equipo (botón `Share` arriba a la derecha). Puede hacerlo especificando el usuario o mediante un un enlace
 * En otra pestaña acepte y únase a la invitación de su compañero
 * Observe los múltiples cursores. Pueden iniciar un chat haciendo click en el icono de chat abajo a la derecha
+
+## Control de Versiones
+
 * Vamos a aprender a usar git y GitHub en repl.it. Para ello sigamos el tutorial:
   * [GIT on repl.it](https://repl.it/talk/learn/)
   * Creamos un nuevo repo **público** en GitHub en la organización **ULL-MFP-AET-2021** y lo llamamos `JekyllBlog-aluXXX` (sustituya `aluXXX` por su usuario GitHub)
@@ -38,6 +46,9 @@ Siga estos pasos:
   * If you return to you repl, and switch to the `master` branch, you should see a new button appear
   * Click `Pull <-` to update your code. Repl.it will update your code to reflect your repo, and you can continue to work!
   * Congrats! That's the basics of git in repl.it!
+
+## Clonando un Repositorio con un Web Site Jekyll
+
 * Ahora:
   * Detenga la ejecución de Jekyll. Para ello, haga click en el botón `stop` o si es usted de la vieja guardia, en la terminal en la que está ejecutándose Jekyll pulse `Ctrl-C` 
   * Borre el directorio `site` con todos los ficheros en él. 
@@ -63,6 +74,9 @@ Siga estos pasos:
     Resolving deltas: 100% (717/717), done.
     ```
   * Si al cabo de un tiempo no ve los cambios en la ventana de `Files`, es posible que tenga que refrescar en el navegador la página para que se actualicen
+
+  ### Eliminando el Histórico de Versiones del repo clonado
+
   * Borre la carpeta oculta `.git` en el repo clonado:
 
     ```
@@ -71,10 +85,13 @@ Siga estos pasos:
     ``` 
 
     **¿Que estamos haciendo?** Al borrar la carpeta `.git`estamos borrando todo el histórico del control de versiones del repo `barryclark/jekyll-now`. Con esto la carpeta `site` deja de ser un repo para convertirse en una simple carpeta 
+  
+  ## Aprendiendo más sobre Jekyll
+
   * Vuelva a correr el servidor Jekyll:
 
     ```
-    $ source main.sh
+    $ bash main.sh
     Please Wait....
     jekyll 4.1.1
     Configuration file: /home/runner/JekyllBlog/site/_config.yml
@@ -93,25 +110,54 @@ Siga estos pasos:
      ![]({{site.baseurl}}/assets/images/first-jekyll-blog.png)
   
     debería verse parecida a esta imagen
-  * Ahora pare el servidor  con `Ctrl-C` y edite el fichero `site/_config.yml`. Cambie la entrada `name:` para que contenga su nombre. Vuelva a ejecutar jekyll.
+  * Ahora pare el servidor  con `Ctrl-C` y edite el fichero `site/_config.yml`. Cambie la entrada `name:` para que contenga su nombre. 
+  Cambie  el `avatar` o `footer-link.github` ¿Que ocurre cuando refresca? ¿Se ven los cambios?
+  Vuelva a ejecutar jekyll.
   ¿Que ocurre?. 
 
     **NOTA:** Jekyll vigila los cambios que hacemos y refresca el web site cada vez que ocurre uno. Sin embargo, no vigila el fichero `_config.yml`. Es por eso que debemos rearrancarlo
 
-  Para entender un poco edite el fichero `_site/_layouts/default.html`y busque por la aparición de la palabra `site.name`. El lenguaje que estamos viendo es una mezcla de HTML con un lenguaje de templates que se conoce como [Liquid](https://shopify.github.io/liquid/)
 
-  ```html
-  ...
-  <a href="{ { site.baseurl } }/" class="site-avatar"><img src="{ { site.avatar } }" /></a>
+* Mire en el directorio `_layouts` ¿Que es un [layout](https://jekyllrb.com/docs/step-by-step/04-layouts/)?
+  - Layouts are templates that wrap around your content. They live in a directory called `_layouts`.
+  -  Para entender un poco edite el fichero `_site/_layouts/default.html`y busque por la aparición de la palabra `site.name`. El lenguaje que estamos viendo es una mezcla de HTML con un lenguaje de templates que se conoce como [Liquid](https://shopify.github.io/liquid/)
 
-  <div class="site-info">
-    <h1 class="site-name"><a href="{ { site.baseurl } }/">{ { site.name } }</a></h1>
-    <p class="site-description">{ { site.description } }</p>
-  </div>
-  ...
-  ```
+    ```html
+    ...
+    <a href="{ { site.baseurl } }/" class="site-avatar"><img src="{ { site.avatar } }" /></a>
+
+    <div class="site-info">
+      <h1 class="site-name"><a href="{ { site.baseurl } }/">{ { site.name } }</a></h1>
+      <p class="site-description">{ { site.description } }</p>
+    </div>
+    ...
+    ```
+* Vaya al directorio `_posts` y vea los ficheros que hay allí. ¿Que son los [posts](https://jekyllrb.com/docs/posts/)?
+  - Añada un posts. Refresque la página ¿Porque se actualiza automáticamente?
+  - Edite el fichero `index.html` para entender porque se actualiza con el nuevo post:
+
+    ```html
+      <div class="posts">
+    { % for post in site.posts % }
+      <article class="post">
+
+        <h1><a href="{ { site.baseurl } }{ { post.url } }">{ { post.title } }</a></h1>
+
+        <div class="entry">
+          { { post.excerpt } } ...
+        </div>
+
+        <a href="{ { site.baseurl } }{ { post.url } }" class="read-more">Read More</a>
+      </article>
+    { % endfor % }
+    ```
+  - Acorte el `excerpt` del post en `index.html` usando un [filtro Liquid](https://shopify.dev/docs/themes/liquid/reference/filters) como [slice](https://shopify.dev/docs/themes/liquid/reference/filters/string-filters)
+    - You can access a snippet of a posts’s content by using `excerpt` variable on a post. By default this is the first paragraph of content in the post
 
 * Repita los pasos vistos sobre control de versiones y añada todos los cambios realizados en las etapas anteriores al repo creado `JekyllBlog-aluXXX`
+
+## Preparando el Repo de Entrega
+
 * En el repo de entrega `p03-t0-aprender-ide-aluXXX` asegúrese de añadir en el `README.md` un enlace al repo creado y un enlace al replit
 * Escriba un informe de lo aprendido
 * Añada al repo de entrega  `p03-t0-aprender-ide-aluXXX`  todos los ficheros del directorio generado por jekyll que están en `_site` 
