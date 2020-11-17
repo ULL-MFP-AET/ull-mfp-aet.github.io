@@ -132,12 +132,13 @@ Siga estos pasos:
     </div>
     ...
     ```
-* Observe en el fichero `default.html`la línea:
+* Observe en el fichero `default.html` la línea:
 
   ```
      { % include svg-icons.html % }
-  ````
+  ```
   ¿Que hace un [include](https://jekyllrb.com/docs/includes/)?
+* Edite el fichero `_includes/svg-icons.html` ¿Que hacen las sentencias [if](https://shopify.github.io/liquid/tags/control-flow/)?
 * Vaya al directorio `_posts` y vea los ficheros que hay allí. ¿Que son los [posts](https://jekyllrb.com/docs/posts/)?
   - Añada un posts. Refresque la página ¿Porque se actualiza automáticamente?
   - Edite el fichero `index.html` para entender porque se actualiza con el nuevo post:
