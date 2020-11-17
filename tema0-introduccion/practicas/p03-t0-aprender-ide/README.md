@@ -137,6 +137,7 @@ Siga estos pasos:
   - index.md
   - 404.md
   - Un post en `_posts`
+* [front matter](https://jekyllrb.com/docs/front-matter/)
 * Observe en el fichero `default.html` la línea:
 
   ```
