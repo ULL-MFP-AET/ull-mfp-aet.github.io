@@ -6,11 +6,11 @@
 
 ## Tools for Assignments 
 
-* [Repobee](https://repobee.readthedocs.io/en/stable/fundamentals.html)
+{% include classroom-references.md %}
 
 ## Referencias sobre Jekyll
 
-{% include jekyll-references %}
+{% include jekyll-references.md %}
 
 
 
