@@ -119,7 +119,7 @@ Siga estos pasos:
 
 
 * Mire en el directorio `_layouts` ¿Que es un [layout](https://jekyllrb.com/docs/step-by-step/04-layouts/)?
-  - Layouts are templates that wrap around your content. They live in a directory called `_layouts`.
+  - **Layouts are templates that wrap around your content**. They live in a directory called `_layouts`.
   -  Para entender un poco edite el fichero `_site/_layouts/default.html`y busque por la aparición de la palabra `site.name`. El lenguaje que estamos viendo es una mezcla de HTML con un lenguaje de templates que se conoce como [Liquid](https://shopify.github.io/liquid/)
 
     ```html
