@@ -132,6 +132,7 @@ Siga estos pasos:
     </div>
     ...
     ```
+* Observa que `posts.html` es un layout que se envuelve en el layout `default.html`
 * ¿Cómo se especifica que layout se aplica a una página? Mira en:
   - index.md
   - 404.md
