@@ -14,6 +14,35 @@ Partiendo del [repl.it](https://repl.it) que creó en la práctica anterior, vam
 
 Siga estos pasos:
 
+
+## Control de Versiones
+
+* En su repl.it en que trabajó en la práctica anterior [p03-t0-aprender-ide]({{site.baseurl}}//tema0-introduccion/practicas/p03-t0-aprender-ide/), haga una rama `p03-t0-aprender-ide`   y empújela a GitHUb. Vuélvase a la rama `master` y siga trabajando en ella durante toda esta práctica
+
+## Objetivos
+
+* Modifique el projecto para que sea un web site para la asignatura que piensa desarrollar en su TFM y en sus Prácticas en Centros. En el directorio `_posts` escriba varias lecciones de  prueba. Algo así:
+
+  ```
+  ~/.../aet2021/apuntes(master)]$ tree _posts
+  _posts
+  ├── 2020-11-03-leccion.md
+  ├── 2020-11-05-leccion.md
+  ├── 2020-11-10-leccion.md
+  ├── 2020-11-12-leccion.md
+  └── 2020-11-17-leccion.md
+  ```
+* Recuerde poner el front-matter en sus posts. Especifique al menos el layout y el title.
+  
+  ```
+  ---
+  layout: post
+  title:  "Clase del Jueves 12/11/2020"
+  ---
+  * Defina una [collection](https://jekyllrb.com/docs/collections/) `temas` para los temas que va a impartir y ponga algún contenido
+  * Defina una [collection](https://jekyllrb.com/docs/collections/) `tareas`para las tareas que va a asignarles a sus alumnos y añádales algún contenido
+
+<!--
 * Haga un fork de este replit: [https://repl.it/@crguezl/JekyllBlog#main.sh](https://repl.it/@crguezl/JekyllBlog#main.sh) o bien duplique el de la última práctica
 * Aquí tiene un ejemplo de CV usando Jekyll por Biagio Brattoli:
   * [Repo en GitHub](https://github.com/bbrattoli/bbrattoli.github.io)
@@ -34,13 +63,15 @@ Siga estos pasos:
   ```
 
 * Lea la documentación en [jekyllrb.com](https://jekyllrb.com) y vaya modificando los ficheros en `_data`, `_config.yml` etc. para personalizarlo como su CV.
+-->
+## La Entrega
 
 * En el repo de entrega asegúrese de añadir un enlace al replit creado.
 * Comparta su replit con el profesor
-* Añada al repo de entrega todos los ficheros del directorio que contienen los fuentes para el web `site`: 
-  - Suprimir el directorio `.git`
-  - Crea un repo (desde la IDE o bien `git init`, etc) y lo conecta con el creado en GitHub por la asignación de esta tarea
-
+* Añada al repo de entrega todos los ficheros del directorio que contienen los ficheros generados para el web site (directorio `_site`). 
+  * Active GitHub Pages del Repo
+  * Ponga el enlace en la sección de descripción del repo
+  
 ## Referencias
 
 * [Repl.it Tutorial MAKE A BLOG USING JEKYLL](https://repl.it/talk/learn/GUIDE-MAKE-A-BLOG-USING-JEKYLL-POG-ALERT-KEK-HAHAYES-ENDORSED/59021)
