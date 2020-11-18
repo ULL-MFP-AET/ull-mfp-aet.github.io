@@ -71,9 +71,9 @@ Siga estos pasos:
 
   ```yml
   collections:
-  practicas:
-    output: true
-    ```
+    tareas:
+      output: true
+  ```
 
 
 <!--
