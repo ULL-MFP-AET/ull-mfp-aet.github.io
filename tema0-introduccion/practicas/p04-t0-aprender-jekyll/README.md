@@ -89,9 +89,7 @@ Siga estos pasos:
     Blah, blah, blah ...
   ```
 * Now you can iterate over `site.tareas` on a page `practicas-publicadas.md` and output a link to each `tarea`. 
-  
- {% include_relative tareas-traversing.liquid %} 
-
+ 
   ```
   { %- for practica in site.tareas % }
     { %- if practica.visible % }
