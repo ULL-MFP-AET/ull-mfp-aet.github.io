@@ -44,10 +44,14 @@ Siga estos pasos:
 * Defina una [collection](https://jekyllrb.com/docs/collections/) `tareas` para las tareas que va a asignarles a sus alumnos y añádales algún contenido
 * Aisle los datos en el directorio `_data` en un fichero JSON o yml de manera que el web site sea fácilmente modificable para adaptarlo a otra asignatura
 
-## Jekyll Collections
+## An Introduction to Jekyll Collections
 
-{% include jekyll-collections.md%}
 
+{% capture jekyll_collections %}
+  {% include jekyll-collections.md %}
+{% endcapture %}
+
+{{ jekyll_collections | replace: '#', '###' }}
 
 <!--
 * Haga un fork de este replit: [https://repl.it/@crguezl/JekyllBlog#main.sh](https://repl.it/@crguezl/JekyllBlog#main.sh) o bien duplique el de la última práctica

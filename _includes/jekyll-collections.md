@@ -1,6 +1,6 @@
 Jekyll Collections is the way Jekyll extends the functionality Jekyll provides for Posts to other user defined collections of documents (like lessons or task assignments in a web site course or departments or people in a school web site).
 
-### Posts is A Hard-Coded Collection
+# Posts is A Hard-Coded Collection
 
 In addition to any collections you create yourself, the `posts` collection is hard-coded into Jekyll. It exists whether you have a `_posts` directory or not. 
 
@@ -8,7 +8,7 @@ This is something to note when iterating through `site.collections` as you may n
 
 You may wish to use filters to find your collection: `{% raw %}{{ site.collections | where: "label", "myCollection" | first }}{% endraw %}`
 
-### Creating a Collection
+# Creating a Collection
 
 * To use a Collection you first need to define it in your `_config.yml`. For example here’s a collection called `tareas`:
 
@@ -29,7 +29,7 @@ You may wish to use filters to find your collection: `{% raw %}{{ site.collectio
   0 directories, 17 files
 ```
 
-### Adding Documents to a Collection
+# Adding Documents to a Collection
 
 * Here is an example of how you would add a new *tarea* to the collection `tareas` set above. You add a file to the `_tareas` folder. Something like  `./_tareas/10p10-t3-jekyll-search.md`. Follows an example of content:
 
@@ -46,7 +46,7 @@ You may wish to use filters to find your collection: `{% raw %}{{ site.collectio
     Blah, blah, blah ... description of the task the student must do
   ```
 
-### Controlling the Output
+# Controlling the Output
 
 * Regardless of whether front matter exists or not, Jekyll will write to the destination directory (e.g. `_site`) only if `output: true` has been set in the *collection’s metadata*
 
@@ -62,7 +62,7 @@ You may wish to use filters to find your collection: `{% raw %}{{ site.collectio
 * If front matter is provided, Jekyll will process the file contents into the expected output. I.e. the markdown will be converted to HTML
 * Therefore, *be sure you add front matter to the documents in both collections* `tareas` and `temas`
 
-#### Collections and Time
+## Collections and Time
 
 Except for documents in hard-coded default collection `posts`, all documents in collections you create, are accessible via Liquid irrespective of their assigned date, if any, and therefore renderable.
 
@@ -70,7 +70,7 @@ Documents are attempted to be written to disk only if the concerned collection m
 
 More fine-grained control over documents being written to disk can be exercised by setting `published: false` (_`true` by default_) in the document's front matter.
 
-### Making a Page to Show the Links to the Collection Documents
+# Making a Page to Show the Links to the Collection Documents
 
 * Now you can iterate over `site.tareas` on another page, let's say file `tareas.md` and output a link to each `tarea`. 
  
@@ -94,9 +94,9 @@ More fine-grained control over documents being written to disk can be exercised 
   {% endfor %}
   {% endraw %}
   ```
-  * The `markdownify` filter converts a Markdown-formatted string into HTML.
+  * The `markdownify` filter converts a Markdown-formatted string into HTML. The name sounds wrong to me: It will be better to call it *htmlify*
 
-### Sorting Collections
+# Sorting Collections
 
 * By default, two documents in a collection are sorted by their `date` attribute when both of them have the `date` key in their *front matter*. 
 * A date is specified in the format `YYYY-MM-DD HH:MM:SS +/-TTTT`; hours, minutes, seconds, and timezone offset are optional.
@@ -110,7 +110,7 @@ More fine-grained control over documents being written to disk can be exercised 
     ```
 
 
-### Collection Attributes 
+# Collection Attributes 
 
 See [Liquid Attributes section in the Jekyll tutorial about Collections](https://jekyllrb.com/docs/collections/#liquid-attributes)
 
@@ -195,7 +195,7 @@ you specified in your `_config.yml` (if present) and the following information:
 
 
 
-### Documents Attributes
+# Documents Attributes
 
 In addition to any front matter provided in the document's corresponding
 file, each document has the following attributes:
