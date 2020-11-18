@@ -90,20 +90,23 @@ Siga estos pasos:
   ```
 * Now you can iterate over `site.tareas` on a page `practicas-publicadas.md` and output a link to each `tarea`. 
   
+ {% include_relative tareas-traversing.liquid %} 
+
   ```
-  {%- for practica in site.tareas %}
-    {%- if practica.visible %}
-  {{ practica.name | slice: 0, 2  }}.  <a href="{{ practica.url }}">Práctica {{ practica.name }}</a>
-    {%- endif %}
-  {%- endfor %}
+  { %- for practica in site.tareas % }
+    { %- if practica.visible % }
+  { { practica.name | slice: 0, 2  } }.  <a href="{ { practica.url } }">Práctica { { practica.name } }</a>
+    { %- endif % }
+  { %- endfor % }
   ```
+  We can link to the generated page using the `practica.url` attribute
 * Similar to posts, the body of the document can be accessed using the `content` variable:
 
   ```
-  {% for task in site.tareas %}
-    <h2>{{ task.name }} - {{ task.fecha_de_entrega }}</h2>
-    <p>{{ task.content | markdownify }}</p>
-  {% endfor %}
+  { % for task in site.tareas % }
+    <h2>{ { task.name }} - { { task.fecha_de_entrega } }</h2>
+    <p>{ { task.content | markdownify } }</p>
+  { % endfor % }
   ```
 
 
