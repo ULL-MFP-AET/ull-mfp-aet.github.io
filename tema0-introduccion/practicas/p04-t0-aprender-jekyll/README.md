@@ -68,32 +68,34 @@ Siga estos pasos:
 ```
 
 ### Controlling the Output
- 
+
 * Front matter is processed if the front matter exists, and everything after the front matter is pushed into the document’s content attribute
 * If no front matter is provided, Jekyll will consider it to be *a static file* and the contents will not undergo further processing
 * If front matter is provided, Jekyll will process the file contents into the expected output.
-* Therefore, be sure you add front matter to both collections `tareas` and `temas`
+* Therefore, *be sure you add front matter to the documents in both collections* `tareas` and `temas`
 * Regardless of whether front matter exists or not, Jekyll will write to the destination directory (e.g. `_site`) only if `output: true` has been set in the collection’s metadata
 
   ```yml
   collections:
     tareas:
       output: true
+    temas:
+      output: true
   ```
-* For example here’s how you would add a task to the collection set above. The filename is `./_tareas/10p10-t3-jekyll-search.md` with the following content:
+* For example here’s how you would add a task to the collection `tareas` set above. The filename is `./_tareas/10p10-t3-jekyll-search.md` with the following content:
 
   ```
     ---
     name: p10-t3-jekyll-search
     visible: true
-    fecha_de_entrega: 30/11/2020
+    date: 2020-11-30
     ---
 
     # Task to Add Search to Your Jekyll Web Site
 
     Blah, blah, blah ...
   ```
-* Now you can iterate over `site.tareas` on a page `practicas-publicadas.md` and output a link to each `tarea`. 
+* Now you can iterate over `site.tareas` on a page, let's say  `tareas.md` and output a link to each `tarea`. 
  
   ```
   { %- for practica in site.tareas % }
