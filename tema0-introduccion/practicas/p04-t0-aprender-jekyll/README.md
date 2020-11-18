@@ -46,6 +46,8 @@ Siga estos pasos:
 
 ## Jekyll Collections
 
+### Creating a Collection
+
 * To use a Collection you first need to define it in your `_config.yml`. For example here’s a collection called `tareas`:
 
 ```yml
@@ -64,10 +66,13 @@ Siga estos pasos:
 
   0 directories, 17 files
 ```
+
+### Controlling the Output
+ 
 * Front matter is processed if the front matter exists, and everything after the front matter is pushed into the document’s content attribute
-  * Therefore, be sure you add front matter to both collections `tareas` and `temas`
 * If no front matter is provided, Jekyll will consider it to be *a static file* and the contents will not undergo further processing
 * If front matter is provided, Jekyll will process the file contents into the expected output.
+* Therefore, be sure you add front matter to both collections `tareas` and `temas`
 * Regardless of whether front matter exists or not, Jekyll will write to the destination directory (e.g. `_site`) only if `output: true` has been set in the collection’s metadata
 
   ```yml
@@ -106,6 +111,19 @@ Siga estos pasos:
     <p>{ { task.content | markdownify } }</p>
   { % endfor % }
   ```
+
+### Sorting Collections
+
+* By default, two documents in a collection are sorted by their `date` attribute when both of them have the `date` key in their *front matter*. 
+* A date is specified in the format `YYYY-MM-DD HH:MM:SS +/-TTTT`; hours, minutes, seconds, and timezone offset are optional.
+* Documents can be sorted based on a front matter key by setting a `sort_by` metadata to the front matter key string. 
+  * For example, to sort a collection of tutorials based on key `lesson`, the configuration would be:
+
+    ```yml
+    collections:
+      tutorials:
+        sort_by: lesson
+    ```
 
 
 
