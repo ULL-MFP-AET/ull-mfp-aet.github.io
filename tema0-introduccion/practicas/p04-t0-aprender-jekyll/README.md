@@ -75,6 +75,37 @@ Siga estos pasos:
     tareas:
       output: true
   ```
+* For example here’s how you would add a task to the collection set above. The filename is `./_tareas/10p10-t3-jekyll-search.md` with the following content:
+
+  ```
+    ---
+    name: p10-t3-jekyll-search
+    visible: true
+    fecha_de_entrega: 30/11/2020
+    ---
+
+    # Task to Add Search to Your Jekyll Web Site
+
+    Blah, blah, blah ...
+  ```
+* Now you can iterate over `site.tareas` on a page `practicas-publicadas.md` and output a link to each `tarea`. 
+  
+  ```
+  {%- for practica in site.tareas %}
+    {%- if practica.visible %}
+  {{ practica.name | slice: 0, 2  }}.  <a href="{{ practica.url }}">Práctica {{ practica.name }}</a>
+    {%- endif %}
+  {%- endfor %}
+  ```
+* Similar to posts, the body of the document can be accessed using the `content` variable:
+
+  ```
+  {% for task in site.tareas %}
+    <h2>{{ task.name }} - {{ task.fecha_de_entrega }}</h2>
+    <p>{{ task.content | markdownify }}</p>
+  {% endfor %}
+  ```
+
 
 
 <!--
