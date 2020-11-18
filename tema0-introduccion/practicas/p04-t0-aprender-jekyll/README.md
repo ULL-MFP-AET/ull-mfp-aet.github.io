@@ -70,8 +70,8 @@ Siga estos pasos:
 ### Controlling the Output
 
 * Front matter is processed if the front matter exists, and everything after the front matter is pushed into the document’s content attribute
-* If no front matter is provided, Jekyll will consider it to be *a static file* and the contents will not undergo further processing
-* If front matter is provided, Jekyll will process the file contents into the expected output.
+* If no front matter is provided, Jekyll will consider it to be *a static file* and the contents will not undergo further processing. A markdown file with no front matter will not be transformed onto a HTML file 
+* If front matter is provided, Jekyll will process the file contents into the expected output. I.e. the markdown will be converted to HTML
 * Therefore, *be sure you add front matter to the documents in both collections* `tareas` and `temas`
 * Regardless of whether front matter exists or not, Jekyll will write to the destination directory (e.g. `_site`) only if `output: true` has been set in the collection’s metadata
 
