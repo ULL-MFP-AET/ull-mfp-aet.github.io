@@ -69,11 +69,11 @@ Siga estos pasos:
 
 ### Controlling the Output
 
-* Front matter is processed if the front matter exists, and everything after the front matter is pushed into the document’s content attribute
-* If no front matter is provided, Jekyll will consider it to be *a static file* and the contents will not undergo further processing. A markdown file with no front matter will not be transformed onto a HTML file 
+* Front matter is processed if the front matter exists, and everything after the front matter is pushed into the document’s `content` attribute
+* If no front matter is provided, Jekyll will consider it to be *a static file* and the contents will not undergo further processing. A markdown file with no front matter **will not** be transformed onto a HTML file 
 * If front matter is provided, Jekyll will process the file contents into the expected output. I.e. the markdown will be converted to HTML
 * Therefore, *be sure you add front matter to the documents in both collections* `tareas` and `temas`
-* Regardless of whether front matter exists or not, Jekyll will write to the destination directory (e.g. `_site`) only if `output: true` has been set in the collection’s metadata
+* Regardless of whether front matter exists or not, Jekyll will write to the destination directory (e.g. `_site`) only if `output: true` has been set in the *collection’s metadata*
 
   ```yml
   collections:
@@ -82,20 +82,24 @@ Siga estos pasos:
     temas:
       output: true
   ```
-* For example here’s how you would add a task to the collection `tareas` set above. The filename is `./_tareas/10p10-t3-jekyll-search.md` with the following content:
+
+### Adding Documents to a Collection
+
+* Here is an example of how you would add a task to the collection `tareas` set above. The filename is `./_tareas/10p10-t3-jekyll-search.md` with the following content:
 
   ```
     ---
     name: p10-t3-jekyll-search
     visible: true
     date: 2020-11-30
+    my_order: 4
     ---
 
     # Task to Add Search to Your Jekyll Web Site
 
-    Blah, blah, blah ...
+    Blah, blah, blah ... description of the task the student must do
   ```
-* Now you can iterate over `site.tareas` on a page, let's say  `tareas.md` and output a link to each `tarea`. 
+* Now you can iterate over `site.tareas` on another page, let's say file `tareas.md` and output a link to each `tarea`. 
  
   ```
   { %- for practica in site.tareas % }
@@ -105,11 +109,11 @@ Siga estos pasos:
   { %- endfor % }
   ```
   We can link to the generated page using the `practica.url` attribute
-* Similar to posts, the body of the document can be accessed using the `content` variable:
+* Similar to posts, the body of the document can be accessed using the `content` variable. Here is another example:
 
   ```
   { % for task in site.tareas % }
-    <h2>{ { task.name }} - { { task.fecha_de_entrega } }</h2>
+    <h2>{ { task.name }} - { { task.date } }</h2>
     <p>{ { task.content | markdownify } }</p>
   { % endfor % }
   ```
@@ -123,8 +127,8 @@ Siga estos pasos:
 
     ```yml
     collections:
-      tutorials:
-        sort_by: lesson
+      tareas:
+        sort_by: my_order
     ```
 
 
