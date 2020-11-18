@@ -41,7 +41,40 @@ Siga estos pasos:
     ---
   ```
 * Defina una [collection](https://jekyllrb.com/docs/collections/) `temas` para los temas que va a impartir y ponga algún contenido
-* Defina una [collection](https://jekyllrb.com/docs/collections/) `tareas`para las tareas que va a asignarles a sus alumnos y añádales algún contenido
+* Defina una [collection](https://jekyllrb.com/docs/collections/) `tareas` para las tareas que va a asignarles a sus alumnos y añádales algún contenido
+* Aisle los datos en el directorio `_data` en un fichero JSON o yml de manera que el web site sea fácilmente modificable para adaptarlo a otra asignatura
+
+## Jekyll Collections
+
+* To use a Collection you first need to define it in your `_config.yml`. For example here’s a collection called `tareas`:
+
+```yml
+  collections:
+    - tareas
+```
+* Create a corresponding folder (e.g. `<source>/_tareas`) and add there the documents. Something like this:
+
+  ```
+  [~/.../sytws2021/apuntes(curso2021)]$ tree _tareas
+  _practicas
+  ├── 01p01-t0-pb-gh-campus-expert.md
+  ├── 01p01-t1-iaas.md
+  ├── ...
+  └── 12p12-tfa-user-experience.md
+
+  0 directories, 17 files
+```
+* Front matter is processed if the front matter exists, and everything after the front matter is pushed into the document’s content attribute
+* If no front matter is provided, Jekyll will consider it to be *a static file* and the contents will not undergo further processing
+* If front matter is provided, Jekyll will process the file contents into the expected output.
+* Regardless of whether front matter exists or not, Jekyll will write to the destination directory (e.g. `_site`) only if `output: true` has been set in the collection’s metadata
+
+  ```yml
+  collections:
+  practicas:
+    output: true
+    ```
+
 
 <!--
 * Haga un fork de este replit: [https://repl.it/@crguezl/JekyllBlog#main.sh](https://repl.it/@crguezl/JekyllBlog#main.sh) o bien duplique el de la última práctica
