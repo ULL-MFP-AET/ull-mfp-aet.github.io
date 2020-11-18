@@ -54,11 +54,11 @@ Siga estos pasos:
   collections:
     - tareas
 ```
-* Create a corresponding folder (e.g. `<source>/_tareas`) and add there the documents. Something like this:
+* Create a corresponding folder (e.g. `<source>/_tareas`) and add there the collection documents. Something like this:
 
   ```
   [~/.../sytws2021/apuntes(curso2021)]$ tree _tareas
-  _practicas
+  _tareas
   ├── 01p01-t0-pb-gh-campus-expert.md
   ├── 01p01-t1-iaas.md
   ├── ...
