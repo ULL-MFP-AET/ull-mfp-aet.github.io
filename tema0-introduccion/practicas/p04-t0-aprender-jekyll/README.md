@@ -75,6 +75,9 @@ Siga estos pasos:
   
 ## Referencias
 
+{% include jekyll-references.md %}
+
+<!--
 * [Repl.it Tutorial MAKE A BLOG USING JEKYLL](https://repl.it/talk/learn/GUIDE-MAKE-A-BLOG-USING-JEKYLL-POG-ALERT-KEK-HAHAYES-ENDORSED/59021)
   * [Repl de ejemplo](https://repl.it/@sourcerose/JekyllBlog#main.sh)
   * [Repo en GitHub](https://github.com/barryclark/jekyll-now.git)
@@ -85,3 +88,4 @@ Siga estos pasos:
   * [Repo en GitHub](https://github.com/bbrattoli/bbrattoli.github.io)
   * [Despliegue en GitHub Pages](https://bbrattoli.github.io/)
 * [Free Jekyll Themes](https://jekyllthemes.io/free)
+-->
