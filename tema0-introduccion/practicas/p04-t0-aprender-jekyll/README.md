@@ -158,11 +158,9 @@ More fine-grained control over documents being written to disk can be exercised 
     ```
 
 
-### Collection Attributes and Collection Documents Attributes
+### Collection Attributes 
 
 See [Liquid Attributes section in the Jekyll tutorial about Collections](https://jekyllrb.com/docs/collections/#liquid-attributes)
-
-#### Collections Attributes
 
 <!--  See the md source at https://raw.githubusercontent.com/jekyll/jekyll/d596ceb5c2a19abb5a95e5be05f777ae91d7886c/docs/_docs/collections.md -->
 Collections are also available under `site.collections`, with the metadata
@@ -245,7 +243,7 @@ you specified in your `_config.yml` (if present) and the following information:
 
 
 
-#### Documents Attributes
+### Documents Attributes
 
 In addition to any front matter provided in the document's corresponding
 file, each document has the following attributes:
