@@ -35,10 +35,11 @@ Siga estos pasos:
 * Recuerde poner el front-matter en sus posts. Especifique al menos el layout y el title.
   
   ```
-  - - -
-  layout: post
-  title:  "Clase del Jueves 12/11/2020"
-  - - -
+    ---
+    layout: post
+    title:  "Clase del Jueves 12/11/2020"
+    ---
+  ```
 * Defina una [collection](https://jekyllrb.com/docs/collections/) `temas` para los temas que va a impartir y ponga algún contenido
 * Defina una [collection](https://jekyllrb.com/docs/collections/) `tareas`para las tareas que va a asignarles a sus alumnos y añádales algún contenido
 
