@@ -136,6 +136,209 @@ Siga estos pasos:
     ```
 
 
+### Collection Attributes and Collection Documents Attributes
+
+See [Liquid Attributes section in the Jekyll tutorial about Collections](https://jekyllrb.com/docs/collections/#liquid-attributes)
+
+#### Collections Attributes
+
+<!--  See the md source at https://raw.githubusercontent.com/jekyll/jekyll/d596ceb5c2a19abb5a95e5be05f777ae91d7886c/docs/_docs/collections.md -->
+Collections are also available under `site.collections`, with the metadata
+you specified in your `_config.yml` (if present) and the following information:
+
+<div class="mobile-side-scroller">
+<table>
+  <thead>
+    <tr>
+      <th>Variable</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>
+        <p><code>label</code></p>
+      </td>
+      <td>
+        <p>
+          The name of your collection, e.g. <code>my_collection</code>.
+        </p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <p><code>docs</code></p>
+      </td>
+      <td>
+        <p>
+          An array of <a href="#documents">documents</a>.
+        </p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <p><code>files</code></p>
+      </td>
+      <td>
+        <p>
+          An array of static files in the collection.
+        </p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <p><code>relative_directory</code></p>
+      </td>
+      <td>
+        <p>
+          The path to the collection's source directory, relative to the site
+          source.
+        </p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <p><code>directory</code></p>
+      </td>
+      <td>
+        <p>
+          The full path to the collections's source directory.
+        </p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <p><code>output</code></p>
+      </td>
+      <td>
+        <p>
+          Whether the collection's documents will be output as individual
+          files.
+        </p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
+<div class="note info">
+  <h5>A Hard-Coded Collection</h5>
+  <p>In addition to any collections you create yourself, the
+  <code>posts</code> collection is hard-coded into Jekyll. It exists whether
+  you have a <code>_posts</code> directory or not. This is something to note
+  when iterating through <code>site.collections</code> as you may need to
+  filter it out.</p>
+  <p>You may wish to use filters to find your collection:
+  <code>{% raw %}{{ site.collections | where: "label", "myCollection" | first }}{% endraw %}</code></p>
+</div>
+
+<div class="note info">
+  <h5>Collections and Time</h5>
+  <p>Except for documents in hard-coded default collection <code>posts</code>, all documents in collections
+    you create, are accessible via Liquid irrespective of their assigned date, if any, and therefore renderable.
+  </p>
+  <p>Documents are attempted to be written to disk only if the concerned collection
+    metadata has <code>output: true</code>. Additionally, future-dated documents are only written if
+    <code>site.future</code> <em>is also true</em>.
+  </p>
+  <p>More fine-grained control over documents being written to disk can be exercised by setting
+    <code>published: false</code> (<em><code>true</code> by default</em>) in the document's front matter.
+  </p>
+</div>
+
+#### Documents
+
+In addition to any front matter provided in the document's corresponding
+file, each document has the following attributes:
+
+<div class="mobile-side-scroller">
+<table>
+  <thead>
+    <tr>
+      <th>Variable</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>
+        <p><code>content</code></p>
+      </td>
+      <td>
+        <p>
+          The (unrendered) content of the document. If no front matter is
+          provided, Jekyll will not generate the file in your collection. If
+          front matter is used, then this is all the contents of the file
+          after the terminating
+          `---` of the front matter.
+        </p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <p><code>output</code></p>
+      </td>
+      <td>
+        <p>
+          The rendered output of the document, based on the
+          <code>content</code>.
+        </p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <p><code>path</code></p>
+      </td>
+      <td>
+        <p>
+          The full path to the document's source file.
+        </p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <p><code>relative_path</code></p>
+      </td>
+      <td>
+        <p>
+          The path to the document's source file relative to the site source.
+        </p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <p><code>url</code></p>
+      </td>
+      <td>
+        <p>
+          The URL of the rendered collection. The file is only written to the destination when the collection to which it belongs has <code>output: true</code> in the site's configuration.
+          </p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <p><code>collection</code></p>
+      </td>
+      <td>
+        <p>
+          The name of the document's collection.
+        </p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <p><code>date</code></p>
+      </td>
+      <td>
+        <p>
+          The date of the document's collection.
+        </p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
 
 <!--
 * Haga un fork de este replit: [https://repl.it/@crguezl/JekyllBlog#main.sh](https://repl.it/@crguezl/JekyllBlog#main.sh) o bien duplique el de la última práctica
