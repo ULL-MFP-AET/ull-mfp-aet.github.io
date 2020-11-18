@@ -70,8 +70,8 @@ Siga estos pasos:
 * En el repo de entrega asegúrese de añadir un enlace al replit creado.
 * Comparta su replit con el profesor
 * Añada al repo de entrega todos los ficheros del directorio que contienen los ficheros generados para el web site (directorio `_site`). 
-  * Active GitHub Pages del Repo
-  * Ponga el enlace en la sección de descripción del repo
+* Active GitHub Pages del Repo
+* Ponga el enlace en la sección de descripción del repo
   
 ## Referencias
 
