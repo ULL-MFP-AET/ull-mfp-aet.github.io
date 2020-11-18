@@ -46,6 +46,16 @@ Siga estos pasos:
 
 ## Jekyll Collections
 
+Jekyll Collections is the way Jekyll extends the functionality Jekyll provides for Posts to other user defined collections of documents (like lessons or task assignments in a web site course or departments or people in a school web site).
+
+### Posts is A Hard-Coded Collection
+
+In addition to any collections you create yourself, the `posts` collection is hard-coded into Jekyll. It exists whether you have a `_posts` directory or not. 
+
+This is something to note when iterating through `site.collections` as you may need to filter it out.
+
+You may wish to use filters to find your collection: `{% raw %}{{ site.collections | where: "label", "myCollection" | first }}{% endraw %}`
+
 ### Creating a Collection
 
 * To use a Collection you first need to define it in your `_config.yml`. For example here’s a collection called `tareas`:
@@ -99,6 +109,14 @@ Siga estos pasos:
 * If no front matter is provided, Jekyll will consider it to be *a static file* and the contents will not undergo further processing. A markdown file with no front matter **will not** be transformed onto a HTML file 
 * If front matter is provided, Jekyll will process the file contents into the expected output. I.e. the markdown will be converted to HTML
 * Therefore, *be sure you add front matter to the documents in both collections* `tareas` and `temas`
+
+#### Collections and Time
+
+Except for documents in hard-coded default collection `posts`, all documents in collections you create, are accessible via Liquid irrespective of their assigned date, if any, and therefore renderable.
+
+Documents are attempted to be written to disk only if the concerned collection metadata has `output: true`. Additionally, future-dated documents are only written if `site.future` _is also true_. Therefore, you can hide a document by setting the date to a future date.
+
+More fine-grained control over documents being written to disk can be exercised by setting `published: false` (_`true` by default_) in the document's front matter.
 
 ### Making a Page to Show the Links to the Collection Documents
 
@@ -225,30 +243,7 @@ you specified in your `_config.yml` (if present) and the following information:
 </table>
 </div>
 
-<div class="note info">
-  <h5>A Hard-Coded Collection</h5>
-  <p>In addition to any collections you create yourself, the
-  <code>posts</code> collection is hard-coded into Jekyll. It exists whether
-  you have a <code>_posts</code> directory or not. This is something to note
-  when iterating through <code>site.collections</code> as you may need to
-  filter it out.</p>
-  <p>You may wish to use filters to find your collection:
-  <code>{% raw %}{{ site.collections | where: "label", "myCollection" | first }}{% endraw %}</code></p>
-</div>
 
-<div class="note info">
-  <h5>Collections and Time</h5>
-  <p>Except for documents in hard-coded default collection <code>posts</code>, all documents in collections
-    you create, are accessible via Liquid irrespective of their assigned date, if any, and therefore renderable.
-  </p>
-  <p>Documents are attempted to be written to disk only if the concerned collection
-    metadata has <code>output: true</code>. Additionally, future-dated documents are only written if
-    <code>site.future</code> <em>is also true</em>.
-  </p>
-  <p>More fine-grained control over documents being written to disk can be exercised by setting
-    <code>published: false</code> (<em><code>true</code> by default</em>) in the document's front matter.
-  </p>
-</div>
 
 #### Documents Attributes
 
