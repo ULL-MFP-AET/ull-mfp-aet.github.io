@@ -67,25 +67,9 @@ Siga estos pasos:
   0 directories, 17 files
 ```
 
-### Controlling the Output
-
-* Front matter is processed if the front matter exists, and everything after the front matter is pushed into the document’s `content` attribute
-* If no front matter is provided, Jekyll will consider it to be *a static file* and the contents will not undergo further processing. A markdown file with no front matter **will not** be transformed onto a HTML file 
-* If front matter is provided, Jekyll will process the file contents into the expected output. I.e. the markdown will be converted to HTML
-* Therefore, *be sure you add front matter to the documents in both collections* `tareas` and `temas`
-* Regardless of whether front matter exists or not, Jekyll will write to the destination directory (e.g. `_site`) only if `output: true` has been set in the *collection’s metadata*
-
-  ```yml
-  collections:
-    tareas:
-      output: true
-    temas:
-      output: true
-  ```
-
 ### Adding Documents to a Collection
 
-* Here is an example of how you would add a task to the collection `tareas` set above. The filename is `./_tareas/10p10-t3-jekyll-search.md` with the following content:
+* Here is an example of how you would add a new *tarea* to the collection `tareas` set above. You add a file to the `_tareas` folder. Something like  `./_tareas/10p10-t3-jekyll-search.md`. Follows an example of content:
 
   ```
     ---
@@ -99,6 +83,25 @@ Siga estos pasos:
 
     Blah, blah, blah ... description of the task the student must do
   ```
+
+### Controlling the Output
+
+* Regardless of whether front matter exists or not, Jekyll will write to the destination directory (e.g. `_site`) only if `output: true` has been set in the *collection’s metadata*
+
+  ```yml
+  collections:
+    tareas:
+      output: true
+    temas:
+      output: true
+  ```
+* Front matter is processed if the front matter exists, and everything after the front matter is pushed into the document’s `content` attribute
+* If no front matter is provided, Jekyll will consider it to be *a static file* and the contents will not undergo further processing. A markdown file with no front matter **will not** be transformed onto a HTML file 
+* If front matter is provided, Jekyll will process the file contents into the expected output. I.e. the markdown will be converted to HTML
+* Therefore, *be sure you add front matter to the documents in both collections* `tareas` and `temas`
+
+### Making a Page to Show the Links to the Collection Documents
+
 * Now you can iterate over `site.tareas` on another page, let's say file `tareas.md` and output a link to each `tarea`. 
  
   ```
@@ -117,6 +120,7 @@ Siga estos pasos:
     <p>{ { task.content | markdownify } }</p>
   { % endfor % }
   ```
+  * The `markdownify` filter converts a Markdown-formatted string into HTML.
 
 ### Sorting Collections
 
