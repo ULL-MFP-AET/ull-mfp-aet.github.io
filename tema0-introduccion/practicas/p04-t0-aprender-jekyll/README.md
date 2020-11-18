@@ -105,20 +105,24 @@ Siga estos pasos:
 * Now you can iterate over `site.tareas` on another page, let's say file `tareas.md` and output a link to each `tarea`. 
  
   ```
-  { %- for practica in site.tareas % }
-    { %- if practica.visible % }
-  { { practica.name | slice: 0, 2  } }.  <a href="{ { practica.url } }">Práctica { { practica.name } }</a>
-    { %- endif % }
-  { %- endfor % }
+  {% raw %}
+  {%- for practica in site.tareas %}
+    {%- if practica.visible %}
+  {{ practica.name | slice: 0, 2  }}.  <a href="{{ practica.url }}">Práctica {{ practica.name }}</a>
+    {%- endif %}
+  {%- endfor %}
+  {% endraw %}
   ```
   We can link to the generated page using the `practica.url` attribute
 * Similar to posts, the body of the document can be accessed using the `content` variable. Here is another example:
 
   ```
-  { % for task in site.tareas % }
-    <h2>{ { task.name }} - { { task.date } }</h2>
-    <p>{ { task.content | markdownify } }</p>
-  { % endfor % }
+  {% raw %}
+  {% for task in site.tareas %}
+    <h2>{{ task.name }} - {{ task.date }}</h2>
+    <p>{{ task.content | markdownify }}</p>
+  {% endfor %}
+  {% endraw %}
   ```
   * The `markdownify` filter converts a Markdown-formatted string into HTML.
 
@@ -246,7 +250,7 @@ you specified in your `_config.yml` (if present) and the following information:
   </p>
 </div>
 
-#### Documents
+#### Documents Attributes
 
 In addition to any front matter provided in the document's corresponding
 file, each document has the following attributes:
