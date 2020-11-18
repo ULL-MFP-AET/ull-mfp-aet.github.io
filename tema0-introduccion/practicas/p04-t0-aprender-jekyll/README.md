@@ -39,8 +39,8 @@ Siga estos pasos:
   layout: post
   title:  "Clase del Jueves 12/11/2020"
   - - -
-  * Defina una [collection](https://jekyllrb.com/docs/collections/) `temas` para los temas que va a impartir y ponga algún contenido
-  * Defina una [collection](https://jekyllrb.com/docs/collections/) `tareas`para las tareas que va a asignarles a sus alumnos y añádales algún contenido
+* Defina una [collection](https://jekyllrb.com/docs/collections/) `temas` para los temas que va a impartir y ponga algún contenido
+* Defina una [collection](https://jekyllrb.com/docs/collections/) `tareas`para las tareas que va a asignarles a sus alumnos y añádales algún contenido
 
 <!--
 * Haga un fork de este replit: [https://repl.it/@crguezl/JekyllBlog#main.sh](https://repl.it/@crguezl/JekyllBlog#main.sh) o bien duplique el de la última práctica
