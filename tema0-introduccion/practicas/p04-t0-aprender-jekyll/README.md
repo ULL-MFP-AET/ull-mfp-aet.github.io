@@ -127,7 +127,7 @@ Siga estos pasos:
 * By default, two documents in a collection are sorted by their `date` attribute when both of them have the `date` key in their *front matter*. 
 * A date is specified in the format `YYYY-MM-DD HH:MM:SS +/-TTTT`; hours, minutes, seconds, and timezone offset are optional.
 * Documents can be sorted based on a front matter key by setting a `sort_by` metadata to the front matter key string. 
-  * For example, to sort a collection of tutorials based on key `lesson`, the configuration would be:
+  * For example, to sort the collection `tareas` based on key `my_order`, the configuration would be:
 
     ```yml
     collections:
