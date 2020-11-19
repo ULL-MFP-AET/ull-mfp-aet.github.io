@@ -96,8 +96,8 @@ origin  https://github.com/ULL-MFP-AET-2021/JekyllBlog-jrguezl (push)
 Configuramos nuestra identidaad `git` en la máquina virtual de repl.it con estos comandos:
 
 ```
- git config --global user.email juanarguezleon@gmail.com
- git config --global user.name jrguezl
+git config --global user.email juanarguezleon@gmail.com
+git config --global user.name jrguezl
 ```
 
 Nos situamos en el directorio `site`:
@@ -156,10 +156,21 @@ Si nos vamos al repo de la entrega en github deberíamos ver algo como esto:
 
 ![]({{site.baseurl}}/assets/images/github-repo-after-push.png)
 
-* En el repo de entrega asegúrese de añadir un enlace al replit
-* Comparta su replit con el profesor (crguezl)
-* Active GitHub Pages del Repo
-* Ponga el enlace en la sección de descripción del repo
+
+A continuación activamos GitHub Pages del Repo (elegimos la rama `main` y la raíz del proyecto)
+
+![]({{site.baseurl}}/assets/images/activate-github-pages.png)
+
+Compruebe el buen funcionamiento. ¿Se ve mal? ¿funcionan bien los enlaces?
+
+Recordemos poner el enlace al despliegue en la sección de descripción del repo
+
+En el `README.md`:
+
+Añadimos un enlace al replit
+
+Recuerde compartir el replit con el profesor (crguezl) o mejor poner un enlace al mismo en el README.md
+
   
 ## Referencias
 
