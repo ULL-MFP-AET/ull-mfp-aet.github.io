@@ -84,10 +84,106 @@ Siga estos pasos:
 -->
 ## La Entrega
 
+En tu repl.it, el remoto git sigue apuntando al  repo que creaste en su momento:
+
+```
+GNU bash, version 4.4.20(1)-release (x86_64-pc-linux-gnu)
+ git remote -v
+origin  https://github.com/ULL-MFP-AET-2021/JekyllBlog-jrguezl (fetch)
+origin  https://github.com/ULL-MFP-AET-2021/JekyllBlog-jrguezl (push)
+```
+Configuramos nuestra identidaad `git` en la máquina virtual de repl.it con estos comandos:
+
+```
+ git config --global user.email juanarguezleon@gmail.com
+ git config --global user.name jrguezl
+```
+
+Nos situamos en el directorio `site`:
+
+```
+ cd site
+```
+
+Y creamos un nuevo repo local con el comando `git init`:
+
+```
+ git init .
+Initialized empty Git repository in /home/runner/p04-t0-aprender-jekyll-no-aceptado/site/.git/
+```
+
+Le indicamos a git que ponga todos los ficheros bajo el control de versiones del nuevo repo con `git add .`:
+
+```
+ git add .
+ll-jrguezl.gitdd origin https://github.com/ULL-MFP-AET-2021/p04-t0-aprender-jekyl
+```
+
+```
+ignment repo'-am 'creating a repo inside site and linking it with the remote assi
+[master (root-commit) c1fe9a0] creating a repo inside site and linking it with the remote assignment repo
+ 35 files changed, 950 insertions(+)
+ create mode 100644 .gitignore
+ create mode 100644 .jekyll-cache/Jekyll/Cache/Jekyll--Cache/b7/9606fb3afea5bd1609ed40b622142f1c98125abcfe89a76a661b0e8e343910
+ create mode 100644 .jekyll-cache/Jekyll/Cache/Jekyll--Converters--Markdown/15/b6358a87c7cc1498f3e8d812da39625a565466f0f25ecf972285ef0f43f6ae
+ create mode 100644 .jekyll-cache/Jekyll/Cache/Jekyll--Converters--Markdown/1c/a5d52e9e249290dc671a507f5c024b35abaa398ce12ed3ccfc66f1f08019ad
+ create mode 100644 .jekyll-cache/Jekyll/Cache/Jekyll--Converters--Markdown/2f/644b4d1157f7c45f8f31e73874d2c524849c7618b71e00470ee21043263b2a
+ create mode 100644 .jekyll-cache/Jekyll/Cache/Jekyll--Converters--Markdown/52/0cc169b6684dfcb27cce7a5c7d9a5e36c904cc1afce04a119f70cb9715374d
+ create mode 100644 .jekyll-cache/Jekyll/Cache/Jekyll--Converters--Markdown/ad/ec53e4f43e6bb7d97b2ff268bf8439495395f816120581ad7730b8d0ba6bb7
+ create mode 100644 .jekyll-cache/Jekyll/Cache/Jekyll--Converters--Markdown/d8/9b23a2ca96e9a3e0b9e5254fe5e18b7396b29845010f5e813665eecebae45b
+ create mode 100644 404.md
+ create mode 100644 CNAME
+ create mode 100644 LICENSE
+ create mode 100644 README.md
+ create mode 100644 _config.yml
+ create mode 100644 _includes/analytics.html
+ create mode 100644 _includes/disqus.html
+ create mode 100644 _includes/meta.html
+ create mode 100644 _includes/svg-icons.html
+ create mode 100644 _layouts/default.html
+ create mode 100644 _layouts/page.html
+ create mode 100644 _layouts/post.html
+ create mode 100644 _posts/2014-3-3-Hello-World.md
+ create mode 100644 _posts/2020-11-17-clase.md
+ create mode 100644 _sass/_highlights.scss
+ create mode 100644 _sass/_reset.scss
+ create mode 100644 _sass/_svg-icons.scss
+ create mode 100644 _sass/_variables.scss
+ create mode 100644 about.md
+ create mode 100644 images/404.jpg
+ create mode 100644 images/config.png
+ create mode 100644 images/first-post.png
+ create mode 100644 images/jekyll-logo.png
+ create mode 100644 images/jekyll-now-theme-screenshot.jpg
+ create mode 100644 images/step1.gif
+ create mode 100644 index.html
+ create mode 100644 style.scss
+ git branch -a
+* master
+  remotes/origin/feedback
+  remotes/origin/main
+  remotes/origin/master
+```
+Empujamos los contenidos del directorio `site` en el repo de entrega de la práctica con `git push -u --force origin master:main``
+
+```
+ git push -u --force origin master:main
+Username for 'https://github.com': jrguezl
+Password for 'https://jrguezl@github.com': 
+Counting objects: 54, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (50/50), done.
+Writing objects: 100% (54/54), 1.17 MiB | 2.05 MiB/s, done.
+Total 54 (delta 2), reused 0 (delta 0)
+remote: Resolving deltas: 100% (2/2), done.
+To https://github.com/ULL-MFP-AET-2021/p04-t0-aprender-jekyll-jrguezl.git
+ + c948d4f...c1fe9a0 master -> main (forced update)
+Branch 'master' set up to track remote branch 'main' from 'origin'.
+ 
+```
+
 * En el repo de entrega asegúrese de añadir un enlace al replit
 * Comparta su replit con el profesor (crguezl)
-* Añada al repo de entrega todos los ficheros del directorio que contienen los ficheros generados para el web site (directorio `_site`). 
-* Añada el fichero `.nojekyll` al repo
 * Active GitHub Pages del Repo
 * Ponga el enlace en la sección de descripción del repo
   
