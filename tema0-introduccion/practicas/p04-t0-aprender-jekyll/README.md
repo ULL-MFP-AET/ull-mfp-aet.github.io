@@ -133,6 +133,13 @@ Ahora hacemos que este repo local tenga como remoto el repo GitHub de entrega de
 $ git remote add origin https://github.com/ULL-MFP-AET-2021/p04-t0-aprender-jekyll-jrguezl.git
 ```
 
+Para evitar que este preguntando a menudo por el usuario y la password 
+de GitHub podemos decirle que los almacene con este comando:
+
+```
+git config credential.helper store
+```
+
 Empujamos los contenidos del directorio `site` en el repo de entrega de la práctica con `git push -u --force origin master:main``
 
 
