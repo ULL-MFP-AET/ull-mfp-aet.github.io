@@ -167,7 +167,7 @@ A continuación activamos GitHub Pages del Repo (elegimos la rama `main` y la ra
 
 ![]({{site.baseurl}}/assets/images/activate-github-pages.png)
 
-Compruebe el buen funcionamiento. ¿Se ve mal? ¿funcionan bien los enlaces?
+**Compruebe el buen funcionamiento. ¿Se ve mal? ¿funcionan bien los enlaces?**
 
 ![]({{site.baseurl}}/assets/images/github-deployed-page.png)
 
