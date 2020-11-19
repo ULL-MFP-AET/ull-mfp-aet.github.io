@@ -3,9 +3,9 @@ layout: default
 title: p02-t0-revision-grupal
 permalink: /tema0-introduccion/practicas/p02-t0-revision-grupal/index.html
 previous: 
-  url: 
+  url: /tema0-introduccion/practicas/p02-t0-aprender-jekyll-basico/
 next:
-  url: 
+  url: /tema0-introduccion/practicas/p03-t0-aprender-ide/
 ---
 
 # Aprender Colaboración con GitHub (p02-t0-revision-grupal)

@@ -3,9 +3,9 @@ layout: default
 title: p03-t0-aprender-ide
 permalink: /tema0-introduccion/practicas/p03-t0-aprender-ide/index.html
 previous: 
-  url: 
+  url: tema0-introduccion/practicas/p02-t0-revision-grupal/
 next:
-  url: 
+  url: tema0-introduccion/practicas/p04-t0-aprender-jekyll/
 ---
 
 # Aprendiendo a usar una IDE (p03-t0-aprender-ide)

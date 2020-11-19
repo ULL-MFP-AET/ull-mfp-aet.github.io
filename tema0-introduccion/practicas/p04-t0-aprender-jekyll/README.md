@@ -3,9 +3,7 @@ layout: default
 title: p04-t0-aprender-jekyll
 permalink: /tema0-introduccion/practicas/p04-t0-aprender-jekyll/index.html
 previous: 
-  url: 
-next:
-  url: 
+  url: tema0-introduccion/practicas/p03-t0-aprender-ide/
 ---
 
 # Aprendiendo Jekyll (p04-t0-aprender-jekyll)
