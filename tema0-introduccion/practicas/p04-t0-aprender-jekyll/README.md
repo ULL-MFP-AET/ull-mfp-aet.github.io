@@ -15,9 +15,13 @@ Partiendo del [repl.it](https://repl.it) que creó en la práctica anterior, vam
 Siga estos pasos:
 
 
-## Control de Versiones
+## En Repl.it
 
-* En su repl.it en que trabajó en la práctica anterior [p03-t0-aprender-ide]({{site.baseurl}}//tema0-introduccion/practicas/p03-t0-aprender-ide/), haga una rama `p03-t0-aprender-ide`   y empújela a GitHUb. Vuélvase a la rama `master` y siga trabajando en ella durante toda esta práctica
+* Renombre su repl.it en que trabajó en la práctica anterior [p03-t0-aprender-ide]({{site.baseurl}}//tema0-introduccion/practicas/p03-t0-aprender-ide/) como `p03-t0-aprender-ide`
+* Haga un fork de su repl.it en que trabajó en la práctica anterior [p03-t0-aprender-ide]({{site.baseurl}}//tema0-introduccion/practicas/p03-t0-aprender-ide/)
+* Renómbrelo al nombre de esta práctica `p04-t0-aprender-jekyll`
+* A partir de ahora trabajaremos en este replit
+
 
 ## Objetivos
 
