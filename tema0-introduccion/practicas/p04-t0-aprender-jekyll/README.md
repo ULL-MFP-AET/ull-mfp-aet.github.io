@@ -51,7 +51,8 @@ Siga estos pasos:
   {% include jekyll-collections.md %}
 {% endcapture %}
 
-{{ jekyll_collections | replace: '#', '###' }}
+<!-- Use a character as º to mark the substitution points, that does no appear in any other part of the document -->
+{{ jekyll_collections | replace: 'º#', '###' }}
 
 <!--
 * Haga un fork de este replit: [https://repl.it/@crguezl/JekyllBlog#main.sh](https://repl.it/@crguezl/JekyllBlog#main.sh) o bien duplique el de la última práctica
