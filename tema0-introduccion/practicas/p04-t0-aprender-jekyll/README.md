@@ -94,8 +94,8 @@ origin  https://github.com/ULL-MFP-AET-2021/JekyllBlog-mrguezl (push)
 Configuramos nuestra identidaad `git` en la máquina virtual de repl.it con estos comandos:
 
 ```
-git config --global user.email mariarguezleon@gmail.com
-git config --global user.name mrguezl
+git config  user.email mariarguezleon@gmail.com
+git config  user.name mrguezl
 ```
 
 Nos situamos en el directorio `site`:
