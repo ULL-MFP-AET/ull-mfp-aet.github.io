@@ -93,10 +93,6 @@ Siga estos pasos:
   
 ## Referencias
 
-* [js-yaml](https://www.npmjs.com/package/js-yaml)
-  - `npx js-yaml data.yml > data.json` converts from .yml to .json
-{% include jekyll-references.md %}
-
 <!--
 * [Repl.it Tutorial MAKE A BLOG USING JEKYLL](https://repl.it/talk/learn/GUIDE-MAKE-A-BLOG-USING-JEKYLL-POG-ALERT-KEK-HAHAYES-ENDORSED/59021)
   * [Repl de ejemplo](https://repl.it/@sourcerose/JekyllBlog#main.sh)
@@ -109,3 +105,9 @@ Siga estos pasos:
   * [Despliegue en GitHub Pages](https://bbrattoli.github.io/)
 * [Free Jekyll Themes](https://jekyllthemes.io/free)
 -->
+
+## Tips
+
+* [js-yaml](https://www.npmjs.com/package/js-yaml)
+  - `npx js-yaml data.yml > data.json` converts from .yml to .json
+{% include jekyll-references.md %}
