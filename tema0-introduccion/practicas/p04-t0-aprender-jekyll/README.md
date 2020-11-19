@@ -91,7 +91,7 @@ $ git remote -v
 origin  https://github.com/ULL-MFP-AET-2021/JekyllBlog-mrguezl (fetch)
 origin  https://github.com/ULL-MFP-AET-2021/JekyllBlog-mrguezl (push)
 ```
-Configuramos nuestra identidaad `git` en la máquina virtual de repl.it con estos comandos:
+Configuramos nuestra identidad `git` en la máquina virtual de repl.it con estos comandos:
 
 ```
 git config  user.email mariarguezleon@gmail.com
