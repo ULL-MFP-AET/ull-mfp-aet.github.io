@@ -163,6 +163,8 @@ A continuación activamos GitHub Pages del Repo (elegimos la rama `main` y la ra
 
 Compruebe el buen funcionamiento. ¿Se ve mal? ¿funcionan bien los enlaces?
 
+![]({{site.baseurl}}/assets/images/github-deployed-page.png)
+
 Recordemos poner el enlace al despliegue en la sección de descripción del repo
 
 En el `README.md`:
