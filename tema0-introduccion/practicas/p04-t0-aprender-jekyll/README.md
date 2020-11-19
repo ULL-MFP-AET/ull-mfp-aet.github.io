@@ -82,6 +82,7 @@ Siga estos pasos:
 
 * Lea la documentación en [jekyllrb.com](https://jekyllrb.com) y vaya modificando los ficheros en `_data`, `_config.yml` etc. para personalizarlo como su CV.
 -->
+
 ## La Entrega
 
 En tu repl.it, el remoto git sigue apuntando al  repo que creaste en su momento:
@@ -116,55 +117,24 @@ Le indicamos a git que ponga todos los ficheros bajo el control de versiones del
 
 ```
  git add .
-ll-jrguezl.gitdd origin https://github.com/ULL-MFP-AET-2021/p04-t0-aprender-jekyl
 ```
 
+A continuación confirmamos los cambios en el repo con un `git commit``
+
 ```
-ignment repo'-am 'creating a repo inside site and linking it with the remote assi
-[master (root-commit) c1fe9a0] creating a repo inside site and linking it with the remote assignment repo
- 35 files changed, 950 insertions(+)
- create mode 100644 .gitignore
- create mode 100644 .jekyll-cache/Jekyll/Cache/Jekyll--Cache/b7/9606fb3afea5bd1609ed40b622142f1c98125abcfe89a76a661b0e8e343910
- create mode 100644 .jekyll-cache/Jekyll/Cache/Jekyll--Converters--Markdown/15/b6358a87c7cc1498f3e8d812da39625a565466f0f25ecf972285ef0f43f6ae
- create mode 100644 .jekyll-cache/Jekyll/Cache/Jekyll--Converters--Markdown/1c/a5d52e9e249290dc671a507f5c024b35abaa398ce12ed3ccfc66f1f08019ad
- create mode 100644 .jekyll-cache/Jekyll/Cache/Jekyll--Converters--Markdown/2f/644b4d1157f7c45f8f31e73874d2c524849c7618b71e00470ee21043263b2a
- create mode 100644 .jekyll-cache/Jekyll/Cache/Jekyll--Converters--Markdown/52/0cc169b6684dfcb27cce7a5c7d9a5e36c904cc1afce04a119f70cb9715374d
- create mode 100644 .jekyll-cache/Jekyll/Cache/Jekyll--Converters--Markdown/ad/ec53e4f43e6bb7d97b2ff268bf8439495395f816120581ad7730b8d0ba6bb7
- create mode 100644 .jekyll-cache/Jekyll/Cache/Jekyll--Converters--Markdown/d8/9b23a2ca96e9a3e0b9e5254fe5e18b7396b29845010f5e813665eecebae45b
- create mode 100644 404.md
- create mode 100644 CNAME
- create mode 100644 LICENSE
- create mode 100644 README.md
- create mode 100644 _config.yml
- create mode 100644 _includes/analytics.html
- create mode 100644 _includes/disqus.html
- create mode 100644 _includes/meta.html
- create mode 100644 _includes/svg-icons.html
- create mode 100644 _layouts/default.html
- create mode 100644 _layouts/page.html
- create mode 100644 _layouts/post.html
- create mode 100644 _posts/2014-3-3-Hello-World.md
- create mode 100644 _posts/2020-11-17-clase.md
- create mode 100644 _sass/_highlights.scss
- create mode 100644 _sass/_reset.scss
- create mode 100644 _sass/_svg-icons.scss
- create mode 100644 _sass/_variables.scss
- create mode 100644 about.md
- create mode 100644 images/404.jpg
- create mode 100644 images/config.png
- create mode 100644 images/first-post.png
- create mode 100644 images/jekyll-logo.png
- create mode 100644 images/jekyll-now-theme-screenshot.jpg
- create mode 100644 images/step1.gif
- create mode 100644 index.html
- create mode 100644 style.scss
- git branch -a
-* master
-  remotes/origin/feedback
-  remotes/origin/main
-  remotes/origin/master
+$ git commit -am 'creating a repo inside site and linking it with the remote assignment repo'
+...
+create mode 100644 style.scss
 ```
+
+Ahora hacemos que este repo local tenga como remoto el repo GitHub de entrega de la tarea [p4-t0-aprender-jekyll]()
+
+```
+$ git remote add origin https://github.com/ULL-MFP-AET-2021/p04-t0-aprender-jekyll-jrguezl.git
+```
+
 Empujamos los contenidos del directorio `site` en el repo de entrega de la práctica con `git push -u --force origin master:main``
+
 
 ```
  git push -u --force origin master:main
@@ -181,6 +151,10 @@ To https://github.com/ULL-MFP-AET-2021/p04-t0-aprender-jekyll-jrguezl.git
 Branch 'master' set up to track remote branch 'main' from 'origin'.
  
 ```
+
+Si nos vamos al repo de la entrega en github deberíamos ver algo como esto:
+
+![]({{site.baseurl}}/assets/images/github-repo-after-push.png)
 
 * En el repo de entrega asegúrese de añadir un enlace al replit
 * Comparta su replit con el profesor (crguezl)
