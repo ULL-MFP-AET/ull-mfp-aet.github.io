@@ -93,6 +93,8 @@ Siga estos pasos:
   
 ## Referencias
 
+* [js-yaml](https://www.npmjs.com/package/js-yaml)
+  - `npx js-yaml data.yml > data.json` converts from .yml to .json
 {% include jekyll-references.md %}
 
 <!--
