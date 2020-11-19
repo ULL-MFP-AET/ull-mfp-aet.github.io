@@ -188,11 +188,11 @@ Siga estos pasos:
 
 ## Entrega
 
+En el repo de entrega ponga un informe de lo aprendido. Añada enlaces a su repl.it y compártalo con el profesor.
 
-{% include entrega.md %}
-  
 
 ## Referencias
+
 
 {% include replit-references.md %}
 
