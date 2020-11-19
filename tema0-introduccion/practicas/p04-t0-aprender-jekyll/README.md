@@ -140,7 +140,7 @@ de GitHub podemos decirle que los almacene con este comando:
 git config credential.helper store
 ```
 
-Empujamos los contenidos del directorio `site` en el repo de entrega de la práctica con `git push -u --force origin master:main``
+Empujamos los contenidos del directorio `site` en el repo de entrega de la práctica con `git push -u --force origin master:main`
 
 ```
 $ git push -u --force origin master:main
