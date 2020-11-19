@@ -19,6 +19,8 @@ Siga estos pasos:
 
 * Renombre su repl.it en que trabajó en la práctica anterior [p03-t0-aprender-ide]({{site.baseurl}}//tema0-introduccion/practicas/p03-t0-aprender-ide/) como `p03-t0-aprender-ide`
 * Haga un fork de su repl.it en que trabajó en la práctica anterior [p03-t0-aprender-ide]({{site.baseurl}}//tema0-introduccion/practicas/p03-t0-aprender-ide/)
+
+  ![]({{site.baseurl}}/assets/images/replit-fork.png)
 * Renómbrelo al nombre de esta práctica `p04-t0-aprender-jekyll`
 * A partir de ahora trabajaremos en este replit
 
