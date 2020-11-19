@@ -142,7 +142,6 @@ git config credential.helper store
 
 Empujamos los contenidos del directorio `site` en el repo de entrega de la práctica con `git push -u --force origin master:main``
 
-
 ```
  git push -u --force origin master:main
 Username for 'https://github.com': jrguezl
