@@ -94,21 +94,21 @@ of [MathJax](https://quuxplusone.github.io/blog/2020/08/19/mathjax-v3-in-jekyll/
 
 ```html
 <!-- Mathjax Support  -->
- <!-- MathJax version 3 -->
-    <script type="text/javascript">
-    window.MathJax = {
-    tex: {
-        packages: ['base', 'ams']
-    },
-    loader: {
-        load: ['ui/menu', '[tex]/ams']
-    }
-    };
-    </script>
+<!-- MathJax version 3 -->
+<script type="text/javascript">
+window.MathJax = {
+tex: {
+    packages: ['base', 'ams']
+},
+loader: {
+    load: ['ui/menu', '[tex]/ams']
+}
+};
+</script>
 
-    <script type="text/javascript" id="MathJax-script" async
-    src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js">
-    </script>
+<script type="text/javascript" id="MathJax-script" async
+src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js">
+</script>
 ```
 
 Now you can use LaTex formulas everywhere in your website:
