@@ -88,10 +88,9 @@ Branch 'master' set up to track remote branch 'main' from 'origin'.
 $ 
 ```
 
-* La opción `-u` o `--set-upstream` hace en este caso que se vincule la rama empujada `master` del repo local con la rama `main` remoto `origin`. Los subsiguientes `git push` no tendrán que especificar las ramas
 * La opción `--force` en `git push` es un poco peligrosa. Fuerza a que, cualquiera que fuera la historia previa del repo remoto nuestros cambios se impongan y sean llevados al mismo.
 * `master:main` de esta forma le indicamos que nuestra rama local `master` debe ser copiada en la rama del epo remoto con nombre `main`
-  
+* La opción `-u` o `--set-upstream` hace en este caso que se vincule la rama empujada `master` del repo local con la rama `main` remoto `origin`. Los subsiguientes `git push` no tendrán que especificar las ramas implicadas  
 
 Si nos vamos al repo de la entrega en github deberíamos ver algo como esto:
 
@@ -103,7 +102,7 @@ A continuación activamos GitHub Pages del Repo (elegimos la rama `main` y la ra
 ![]({{site.baseurl}}/assets/images/activate-github-pages.png)
 
 **Compruebe el buen funcionamiento. ¿Se ve mal? ¿funcionan bien los enlaces?**
-Si algo va mal en este punto, recuerde abrir la cóonsola en las herramientas del desarrollador para ver los mensajes de error (botón derecho -> inspect).
+Si algo va mal en este punto, recuerde abrir la cóonsola en las herramientas del desarrollador para ver los mensajes de error (En la página de despliegue, botón derecho -> inspect).
 
 ![]({{site.baseurl}}/assets/images/github-deployed-page.png)
 
@@ -113,5 +112,5 @@ En el `README.md`:
 
 Añadimos un enlace al replit
 
-Recuerde compartir el replit con el profesor (crguezl) o mejor poner un enlace al mismo en el README.md
+Recuerde compartir el replit con el profesor (crguezl) y poner un enlace al mismo en el README.md
 
