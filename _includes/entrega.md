@@ -88,6 +88,11 @@ Branch 'master' set up to track remote branch 'main' from 'origin'.
 $ 
 ```
 
+* La opción `-u` o `--set-upstream` hace en este caso que se vincule la rama empujada `master` del repo local con la rama `main` remoto `origin`
+* La opción `--force` en `git push` es un poco peligrosa. Fuerza a que, cualquiera que fuera la historia previa del repo remoto nuestros cambios se impongan y sean llevados al mismo.
+* `master:main` de esta forma le indicamos que nuestra rama local `master` debe ser copiada en la rama del epo remoto con nombre `main`
+  
+
 Si nos vamos al repo de la entrega en github deberíamos ver algo como esto:
 
 ![]({{site.baseurl}}/assets/images/github-repo-after-push.png)
