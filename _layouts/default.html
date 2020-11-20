@@ -8,8 +8,36 @@
     <link rel="stylesheet" href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
     <script src="{{ '/assets/js/respond.js' | relative_url }}"></script>
+    
     <!-- Mathjax Support  -->
-    <script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML' async></script>
+    <!-- version 2
+    <script 
+      src=
+      'https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML' async>
+    </script>
+    -->
+
+
+    <!-- MathJax version 3 -->
+    <script type="text/javascript">
+    window.MathJax = {
+    tex: {
+        packages: ['base', 'ams']
+    },
+    loader: {
+        load: ['ui/menu', '[tex]/ams']
+    }
+    };
+    </script>
+
+    <script type="text/javascript" id="MathJax-script" async
+    src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js">
+    </script>
+
+
+
+
+
 
     <!--[if lt IE 9]>
       <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>

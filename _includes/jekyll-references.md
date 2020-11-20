@@ -13,4 +13,5 @@
 * [Liquid](https://shopify.github.io/liquid/)
 * [Liquid SandBox Editor at JumpSeller](https://jumpseller.com/support/liquid-sandbox/)
 
+* [MathJax v3 in Jekyll]([MathJax](https://quuxplusone.github.io/blog/2020/08/19/mathjax-v3-in-jekyll/)) by Arthur O’Dwyer
 * [How I blog about math: an update on KaTeX with Jekyll](https://gendignoux.com/blog/2020/05/23/katex.html) by GUILLAUME ENDIGNOUX
