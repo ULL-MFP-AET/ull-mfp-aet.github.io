@@ -85,6 +85,39 @@ Siga estos pasos:
 
 {% include entrega.md %}
 
+## Tips
+
+### Maths
+
+To use Math equations in your `temas`or `tareas` collections or in any document, you can make use
+of [MathJax]() and insert in your layout file `_layouts/default.yml` a line like this one:
+
+```html
+  <!-- Mathjax Support  -->
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML' async></script>
+```
+
+Now you can use LaTex formulas everywhere in your website:
+
+```
+You can insert some formula $$f(x) = \int_{-\infty}^\infty \hat f(\xi)\,e^{2 \pi i \xi x} \,d\xi$$ in the middle of a sentence.
+
+You can also put large formulas in their own paragraph.
+
+$$f(x) = \int_{-\infty}^\infty \hat f(\xi)\,e^{2 \pi i \xi x} \,d\xi$$
+```
+
+You can insert some formula $$f(x) = \int_{-\infty}^\infty \hat f(\xi)\,e^{2 \pi i \xi x} \,d\xi$$ in the middle of a sentence.
+
+You can also put large formulas in their own paragraph.
+
+$$f(x) = \int_{-\infty}^\infty \hat f(\xi)\,e^{2 \pi i \xi x} \,d\xi$$
+
+### Data. Converting yml to json
+
+* [js-yaml](https://www.npmjs.com/package/js-yaml)
+  - `npx js-yaml data.yml > data.json` converts from .yml to .json
+{% include jekyll-references.md %}
   
 ## Referencias
 
@@ -101,8 +134,3 @@ Siga estos pasos:
 * [Free Jekyll Themes](https://jekyllthemes.io/free)
 -->
 
-## Tips
-
-* [js-yaml](https://www.npmjs.com/package/js-yaml)
-  - `npx js-yaml data.yml > data.json` converts from .yml to .json
-{% include jekyll-references.md %}

@@ -10,7 +10,7 @@
   * [Repl de ejemplo](https://repl.it/@sourcerose/JekyllBlog#main.sh)
   * [Repo en GitHub](https://github.com/barryclark/jekyll-now.git)
 
-
-
 * [Liquid](https://shopify.github.io/liquid/)
 * [Liquid SandBox Editor at JumpSeller](https://jumpseller.com/support/liquid-sandbox/)
+
+* [How I blog about math: an update on KaTeX with Jekyll](https://gendignoux.com/blog/2020/05/23/katex.html) by GUILLAUME ENDIGNOUX
