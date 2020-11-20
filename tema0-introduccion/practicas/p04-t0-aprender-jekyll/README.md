@@ -83,7 +83,7 @@ Siga estos pasos:
 
 ## La Entrega
 
-En el repo de entrega ponga un informe de lo aprendido. Añada enlaces a su repl.it y compártalo con el profesor.
+{% include entrega.md %}
 
   
 ## Referencias

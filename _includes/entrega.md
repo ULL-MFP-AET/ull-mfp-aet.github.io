@@ -26,11 +26,27 @@ $ git init .
 Initialized empty Git repository in /home/runner/p04-t0-aprender-jekyll-no-aceptado/site/.git/
 ```
 
+En el directorio `site` editamos un fichero con nombre [.gitignore](https://swcarpentry.github.io/git-novice-es/06-ignore/). En este fichero listamos aquellos ficheros y directorios que queremos que no estén bajo el control de versiones. Algo similar a esto:
+
+```
+$ cat .gitignore
+_site
+.DS_Store
+.jekyll
+.jekyll-metadata
+.bundle
+.sass-cache
+.jekyll-cache*
+```
+
 Le indicamos a git que ponga todos los ficheros bajo el control de versiones del nuevo repo con `git add .`:
 
 ```
 $ git add .
 ```
+
+El punto `.` es un sinónimo de *directorio actual*.
+Esto añadirá todos los cambios ocurridos en todos los ficheros en el directorio actual salvo los que fueron especificados en el `.gitignore`.
 
 A continuación confirmamos los cambios en el repo con un `git commit`
 
@@ -40,12 +56,13 @@ $ git commit -am 'creating a repo inside site and linking it with the remote ass
 create mode 100644 style.scss
 ```
 
-Ahora hacemos que este repo local tenga como remoto el repo GitHub de entrega de la tarea [p4-t0-aprender-jekyll]()
+Ahora hacemos que este repo local tenga como remoto el repo GitHub de entrega de la tarea [p4-t0-aprender-jekyll]({{site,baseurl}}/tema0-introduccion/practicas/p04-t0-aprender-jekyll/)
 
 ```
 $ git remote add origin https://github.com/ULL-MFP-AET-2021/p04-t0-aprender-jekyll-mrguezl.git
 ```
 
+Cuando hagamos el `push` git preguntará por el usuario y la clave en el remoto.
 Para evitar que este preguntando a menudo por el usuario y la password 
 de GitHub podemos decirle que los almacene con este comando:
 
@@ -81,6 +98,7 @@ A continuación activamos GitHub Pages del Repo (elegimos la rama `main` y la ra
 ![]({{site.baseurl}}/assets/images/activate-github-pages.png)
 
 **Compruebe el buen funcionamiento. ¿Se ve mal? ¿funcionan bien los enlaces?**
+Si algo va mal en este punto, recuerde abrir la cóonsola en las herramientas del desarrollador para ver los mensajes de error (botón derecho -> inspect).
 
 ![]({{site.baseurl}}/assets/images/github-deployed-page.png)
 
