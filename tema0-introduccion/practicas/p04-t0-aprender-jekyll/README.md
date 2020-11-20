@@ -93,8 +93,8 @@ To use Math equations in your `temas`or `tareas` collections or in any document,
 of [MathJax]() and insert in your layout file `_layouts/default.yml` a line like this one:
 
 ```html
-  <!-- Mathjax Support  -->
-    <script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML' async></script>
+<!-- Mathjax Support  -->
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML' async></script>
 ```
 
 Now you can use LaTex formulas everywhere in your website:
