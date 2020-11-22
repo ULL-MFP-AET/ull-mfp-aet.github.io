@@ -213,7 +213,7 @@ Antes de hacer un commit tenemos que configurar el programa `git` declarando nue
 
 ```
 git config --global user.email "aluXXX@ull.edu.es"
-git config --global user.name aluXXX
+git config --global user.name nombre-aluXXX
 ```
 
 Ahora confirmamos nuestros cambios:
