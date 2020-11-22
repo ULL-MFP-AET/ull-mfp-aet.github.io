@@ -192,19 +192,49 @@ Siga estos pasos:
 
 En su repl.it, asegúrese que Jekyll ha generado correctamente el web site en la carpeta `_site`. 
 
-Después podemos hacer:
+Después nos posicionamos en _site
 
 ```
-cd ~/p03-t0-aprender-ide/site/_site    # nos posicionamos en _site
-git init .  # Convertimos _site en un repo git 
-git add .   # Añadimos todos los ficheros en _site al repo
-git config --global user.email "aluXXX@ull.edu.es"  # cambialos a tu identidad en el futuro
-git config --global user.name aluXXX
-git commit -am '_site converted to repo' # Confirmamos nuestros cambios
-git config credential.helper store  # Para que no nos esté preguntando la password cada vez
-git remote add origin git@github.com:ULL-MFP-AET-2021/p03-t0-aprender-ide-aluXXXX.git # Apuntamos el remoto al repo de la entrega
+cd ~/p03-t0-aprender-ide/site/_site    
 ```
-Estamos en la rama `master`:
+
+Convertimos _site en un repo git. Esto crea la carpeta oculta `.git`:
+
+```
+git init .   
+```
+
+Después añadimos todos los ficheros en _site al repo
+```
+git add .
+```
+
+Antes de hacer un commit tenemos que configurar el programa `git` declarando nuestra identidad para el rastreo de versiones:
+
+```
+git config --global user.email "aluXXX@ull.edu.es"
+git config --global user.name aluXXX
+```
+
+Ahora confirmamos nuestros cambios:
+
+```
+git commit -am '_site converted to repo'
+```
+
+Ahora vamos a establecer el remoto. Esta vez, por simplicidad, elegimos la URL con https:
+
+```
+git remote add origin https://github.com/ULL-MFP-AET-2021/p03-t0-aprender-ide-aluXXX.git # Apuntamos el remoto al repo de la entrega
+```
+
+Cada vez  que empujemos a GitHub se nos pedirán el usuario y la clave de github. Para evitar esto y que sólo ocurra la primera vez le indicamos a git que la primera vez que nos identifiquemos con GitHub almacene el usuario y la clave:
+
+```
+git config credential.helper store  # Para que no nos esté preguntando la password cada vez
+```
+
+En este momento estamos en la rama `master`:
 
 ```
 ~/.../site/_site$ git branch
@@ -217,9 +247,12 @@ Ahora hacemos un empuje al remoto de la rama `master`. Esto creará la rama `mas
 git push -u --force origin master 
 ```
 
-Reconfiguramos en `settings` github-pages del repo para que tire de la rama `master`y el directorio raíz.
+Reconfiguramos en `settings` github-pages del repo para que tire de la rama `master` y el directorio raíz.
 
-Además es necesario cambiar el `_config.yml`  con:
+Visite la web. Algo va mal. ¿Que ocurre?. Abra las herramientas del desarrollador en su navegador. 
+En la cónsola verá el mensaje. 
+
+Resuelva el problema cambiando en `_config.yml`  con una entrada como esta:
 
 ```yml
 baseurl: "/p03-t0-aprender-ide-aluXXXX"
