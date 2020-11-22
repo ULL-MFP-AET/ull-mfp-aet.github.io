@@ -204,7 +204,7 @@ Convertimos `_site` en un repo git. Esto crea la carpeta oculta `.git`:
 git init .   
 ```
 
-Después añadimos todos los ficheros en _site al repo
+Después añadimos todos los ficheros en `_site` al repo
 ```
 git add .
 ```
