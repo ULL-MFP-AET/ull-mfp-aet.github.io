@@ -247,7 +247,9 @@ Ahora hacemos un empuje al remoto de la rama `master`. Esto creará la rama `mas
 git push -u --force origin master 
 ```
 
-En el navegador, en el repo de GitHub, reconfiguramos en la sección `settings` las github-pages del repo para que tire de la rama `master` y el directorio raíz.
+Nos pedirá el usuario y clave de GitHub y las almacenará.
+
+En el navegador, nos situamos en el tab del repo de GitHub, reconfiguramos en la sección `settings` las github-pages del repo para que tire de la rama `master` y el directorio raíz.
 
 Visite la web. Algo va mal. ¿Que ocurre?. Abra las herramientas del desarrollador en su navegador. 
 En la cónsola verá el mensaje. 
