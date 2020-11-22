@@ -233,6 +233,7 @@ Cada vez  que empujemos a GitHub se nos pedirán el usuario y la clave de github
 ```
 git config credential.helper store  # Para que no nos esté preguntando la password cada vez
 ```
+Vea la [documentación de git credentials](https://git-scm.com/docs/gitcredentials) para saber más sobre este punto.
 
 En este momento estamos en la rama `master`:
 
@@ -260,8 +261,14 @@ Resuelva el problema añadiendo en `_config.yml`  una entrada como esta:
 baseurl: "/p03-t0-aprender-ide-aluXXXX"
 ```
 
-Vuelva a generar `_site` y repita todos los pasos anteriores. ¿Se ve bien ahora?
+Vuelva a regenerar `_site` y confirme los cambios y envíelos:
 
+```
+git commit -am 'fixed portability to github pages using site.baseurl'
+git push
+```
+
+Refresque la página de despliegue ¿Se ve bien ahora?
 
 
 ### Opción: Entrega mediante Descarga
