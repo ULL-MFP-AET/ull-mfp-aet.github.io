@@ -260,6 +260,8 @@ Resuelva el problema añadiendo en `_config.yml`  una entrada como esta:
 baseurl: "/p03-t0-aprender-ide-aluXXXX"
 ```
 
+Vuelva a generar `_site` y repita todos los pasos anteriores. ¿Se ve bien ahora?
+
 
 
 ### Opción: Entrega mediante Descarga
