@@ -198,7 +198,7 @@ Después nos posicionamos en `_site`:
 cd ~/p03-t0-aprender-ide/site/_site    
 ```
 
-Convertimos _site en un repo git. Esto crea la carpeta oculta `.git`:
+Convertimos `_site` en un repo git. Esto crea la carpeta oculta `.git`:
 
 ```
 git init .   
