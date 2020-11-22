@@ -254,7 +254,7 @@ En el navegador, nos situamos en el tab del repo de GitHub, reconfiguramos en la
 Visite la web. Algo va mal. ¿Que ocurre?. Abra las herramientas del desarrollador en su navegador. 
 En la cónsola verá el mensaje. 
 
-Resuelva el problema cambiando en `_config.yml`  con una entrada como esta:
+Resuelva el problema añadiendo en `_config.yml`  una entrada como esta:
 
 ```yml
 baseurl: "/p03-t0-aprender-ide-aluXXXX"
