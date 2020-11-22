@@ -192,7 +192,7 @@ Siga estos pasos:
 
 En su repl.it, asegúrese que Jekyll ha generado correctamente el web site en la carpeta `_site`. 
 
-Después nos posicionamos en _site
+Después nos posicionamos en `_site`:
 
 ```
 cd ~/p03-t0-aprender-ide/site/_site    
