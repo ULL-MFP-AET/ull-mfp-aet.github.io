@@ -228,7 +228,7 @@ Ahora vamos a establecer el remoto. Esta vez, por simplicidad, elegimos la URL c
 git remote add origin https://github.com/ULL-MFP-AET-2021/p03-t0-aprender-ide-aluXXX.git # Apuntamos el remoto al repo de la entrega
 ```
 
-Cada vez  que empujemos a GitHub se nos pedirán el usuario y la clave de github. Para evitar esto y que sólo ocurra la primera vez le indicamos a git que la primera vez que nos identifiquemos con GitHub almacene el usuario y la clave:
+Cada vez  que empujemos a GitHub se nos pedirán el usuario y la clave de github. Esto puede resultar pesado. Para evitarlo y que sólo ocurra la primera vez le indicamos a git que la primera vez que nos identifiquemos con GitHub almacene el usuario y la clave:
 
 ```
 git config credential.helper store  # Para que no nos esté preguntando la password cada vez
