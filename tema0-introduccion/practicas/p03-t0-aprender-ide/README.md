@@ -233,6 +233,8 @@ Cada vez  que empujemos a GitHub se nos pedirán el usuario y la clave de github
 ```
 git config credential.helper store  # Para que no nos esté preguntando la password cada vez
 ```
+
+Credential helpers are external programs from which Git can request both usernames and passwords; they typically interface with secure storage provided by the OS or other programs. Credential helpers are in two forms: **cache** which caches credentials in memory for a short period of time, and **store** which basically stores credentials indefinitely on disk. 
 Vea la [documentación de git credentials](https://git-scm.com/docs/gitcredentials) para saber más sobre este punto.
 
 En este momento estamos en la rama `master`:
