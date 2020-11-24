@@ -124,7 +124,7 @@ $$f(x) = \int_{-\infty}^\infty \hat f(\xi)\,e^{2 \pi i \xi x} \,d\xi$$
 
 $$mean = \frac{\displaystyle\sum_{i=1}^{n} x_{i}}{n}$$
 
-See the [References section in this notes about \LaTeX](references.html#referencias-sobre-latex)
+See the [References section in this notes about \LaTeX]({{site.baseurl}}/references.html#referencias-sobre-latex)
 
 ## Data. Converting yml to json
 
