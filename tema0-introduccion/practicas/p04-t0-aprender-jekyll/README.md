@@ -36,7 +36,7 @@ Siga estos pasos:
   ├── 2020-11-12-leccion.md
   └── 2020-11-17-leccion.md
   ```
-* Recuerde poner el front-matter en sus posts. Especifique al menos el layout y el title.
+* Recuerde poner el front-matter en sus posts. Especifique al menos el `layout` y el `title`.
   
   ```
     ---
@@ -49,7 +49,6 @@ Siga estos pasos:
 * Aisle los datos en el directorio `_data` en un fichero JSON o yml de manera que el web site sea fácilmente modificable para adaptarlo a otra asignatura
 
 ## An Introduction to Jekyll Collections
-
 
 {% capture jekyll_collections %}
   {% include jekyll-collections.md %}

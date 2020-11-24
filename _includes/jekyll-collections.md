@@ -1,12 +1,39 @@
 Jekyll Collections is the way Jekyll extends the functionality Jekyll provides for Posts to other user defined collections of documents (like lessons or task assignments in a web site course or departments or people in a school web site).
 
+<!-- Use a character as º to mark the substitution points, that does no appear in any other part of the document -->
 º# Posts is A Hard-Coded Collection
 
 In addition to any collections you create yourself, the `posts` collection is hard-coded into Jekyll. It exists whether you have a `_posts` directory or not. 
 
 This is something to note when iterating through `site.collections` as you may need to filter it out.
 
-You may wish to use filters to find your collection: `{% raw %}{{ site.collections | where: "label", "myCollection" | first }}{% endraw %}`
+You can see your collections with a code like this one:
+
+```
+{% raw %}
+{%- for col in site.collections %}
+1. Colección: {{ col.label }}
+  {%-  assign firstdocs = col.docs | slice: 0,3 %}
+  {%- for elem in firstdocs %}
+    1. **path:** {{ elem.path }} **url:** {{ elem.url }}
+  {%- endfor %}
+{%- endfor %}
+{% endraw %}
+```
+
+when runned in this site produces:
+
+{%- for col in site.collections %}
+1. Colección: {{ col.label }}
+  {%-  assign firstdocs = col.docs | slice: 0,3 %}
+  {%- for elem in firstdocs %}
+    1. **path:** {{ elem.path }} **url:** {{ elem.url }}
+  {%- endfor %}
+{%- endfor %}
+
+
+
+
 
 º# Creating a Collection
 
