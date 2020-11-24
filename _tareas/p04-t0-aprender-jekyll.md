@@ -59,6 +59,7 @@ Siga estos pasos:
 {{ jekyll_collections | replace: 'º#', '###' }}
 
 <!--
+
 * Haga un fork de este replit: [https://repl.it/@crguezl/JekyllBlog#main.sh](https://repl.it/@crguezl/JekyllBlog#main.sh) o bien duplique el de la última práctica
 * Aquí tiene un ejemplo de CV usando Jekyll por Biagio Brattoli:
   * [Repo en GitHub](https://github.com/bbrattoli/bbrattoli.github.io)
