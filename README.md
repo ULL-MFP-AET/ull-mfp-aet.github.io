@@ -10,6 +10,8 @@
 
 ## Clases 
 
+* [Guia Docente y Primeros Pasos en esta parte]({{ site.bseurl }}/tema0-introduccion/guia-docente.html)
+
 {% include clases-impartidas.md %}
 
 ## Prácticas
