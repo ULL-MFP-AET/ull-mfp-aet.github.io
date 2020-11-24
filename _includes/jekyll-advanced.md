@@ -86,8 +86,6 @@ Bundle updated!
 * [PDFKit](https://github.com/pdfkit/PDFKit)
 * [GitHub repo wkhtmltopdf: Convert HTML to PDF using Webkit (QtWebKit)](https://github.com/wkhtmltopdf/wkhtmltopdf) see [https://wkhtmltopdf.org](https://wkhtmltopdf.org)
 
-
-
 ## Blog: A Collection of Music Albums
 
 * [How to maintain a collection of music albums online, using Jekyll and Github Pages](https://dev.to/adrienjoly/how-to-maintain-a-collection-of-music-albums-online-using-jekyll-and-github-pages-3hd6). See it at [http://adrienjoly.com/album-shelf/](http://adrienjoly.com/album-shelf/)
@@ -101,7 +99,6 @@ Bundle updated!
 
 * [benbalter/jekyll-auth: A simple way to use GitHub OAuth to serve a protected Jekyll site to your GitHub organization](https://github.com/benbalter/jekyll-auth)
 
-
 ## E-commerce
 
 * [Jekyll E-Commerce Tutorial: Add a Shopping Cart to Your Static Website](https://snipcart.com/blog/jekyll-ecommerce-tutorial) 2019
@@ -113,7 +110,6 @@ Bundle updated!
 
 * [Change site.url to localhost during jekyll local development](https://stackoverflow.com/questions/27386169/change-site-url-to-localhost-during-jekyll-local-development)
 
-"
 
 This is a common problem between different Jekyll environments.
 
@@ -201,7 +197,7 @@ When pushed on production, the <code>jekyll build</code> command will use the de
 * [Chen Hui Jing talks on Jekyll](https://www.chenhuijing.com/blog/jekyll/#%F0%9F%91%BE)
 * [Chen Hui Jing talks](https://www.chenhuijing.com/talks/#%F0%9F%8F%80) Slides in reveal.js
 
-## Práctica p8-t3-jekyll-netlify
+## Jekyll y Netlify
 
 * [Práctica p8-t3-jekyll-netlify](practicas/p8-t3-jekyll-netlify)
 * [Práctica p10-t3-jekyll-search](practicas/p10-t3-jekyll-search)
