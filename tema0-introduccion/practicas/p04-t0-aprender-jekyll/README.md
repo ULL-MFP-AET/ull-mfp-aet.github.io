@@ -80,7 +80,7 @@ Siga estos pasos:
 * Lea la documentación en [jekyllrb.com](https://jekyllrb.com) y vaya modificando los ficheros en `_data`, `_config.yml` etc. para personalizarlo como su CV.
 -->
 
-### Maths
+## Maths
 
 To use Math equations in your `posts`, `temas` or `tareas` collections or in any document, you can make use
 of [MathJax](https://quuxplusone.github.io/blog/2020/08/19/mathjax-v3-in-jekyll/) and insert in your layout file `_layouts/default.yml` a line like this one:
