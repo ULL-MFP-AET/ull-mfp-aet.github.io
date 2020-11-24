@@ -48,3 +48,7 @@ Usando [GitHub Classroom Assitant](https://classroom.github.com/assistant) desca
 
 * [https://education.github.com/teachers](https://education.github.com/teachers)
 * [https://education.github.com/benefits](https://education.github.com/benefits)
+
+## Referencias
+
+* [Referencias sobre GitHub Education]({{site.baseurl}}/references.html#referencias-sobre-github-education)
