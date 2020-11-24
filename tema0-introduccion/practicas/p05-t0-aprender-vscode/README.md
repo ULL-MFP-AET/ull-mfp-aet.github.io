@@ -15,6 +15,8 @@ En nuestro portátil de trabajo:
 4. Instala  el plugin [Remote SSH](https://code.visualstudio.com/docs/remote/ssh) y aprende a usarlo con el sistema de archivo de una máquina remota via SSH.
 Para probar, tienes una máquina virtual a la que puede acceder via web y ssh en [iaas.ull.es](https://iaas.ull.es). Lea los documentos en la sección 
 5. Instale y use la extensión [Live Share](https://visualstudio.microsoft.com/es/services/live-share/) para colaborar con un compañero
+6. Considere la posibilidad de instalar el plugin para VSCode [Jekyll Run](https://marketplace.visualstudio.com/items?itemName=Dedsec727.jekyll-run). Puede que le simplifiqe la instalación y ejecución de Jekyll
+7. Descargue las prácticas anteriores y trabaje con ellas en VScode
 6. Elabore un informe con la experiencia adquirida
 
 ## Tutoriales de VSCode
