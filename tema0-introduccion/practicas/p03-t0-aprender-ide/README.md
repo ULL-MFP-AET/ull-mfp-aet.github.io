@@ -221,7 +221,7 @@ Antes de hacer un commit tenemos que configurar el programa `git` declarando nue
 git config --global user.email "aluXXX@ull.edu.es"
 git config --global user.name nombre-aluXXX
 ```
-Cuando consultemos la historia del proyecto - por ejemplo con el comando `git logs` - este es el nombre que aprecerá asociado a los commits que hagamos.
+Cuando consultemos la historia del proyecto - por ejemplo con el comando `git logs` - este es el nombre que aparecerá asociado a los commits que hagamos.
 
 Ahora confirmamos nuestros cambios:
 
