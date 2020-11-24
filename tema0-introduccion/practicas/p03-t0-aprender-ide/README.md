@@ -274,7 +274,7 @@ Nos pedirá el usuario y clave de GitHub y las almacenará.
 En el navegador, nos situamos en el tab del repo de GitHub, reconfiguramos en la sección `settings` las github-pages del repo para que tire de la rama `master` y el directorio raíz.
 
 Visite la web. Algo va mal. ¿Que ocurre?. Abra las herramientas del desarrollador en su navegador. 
-En la cónsola verá el mensaje. 
+En la cónsola verá algún mensaje de error. Asegúrese de entender que está ocurriendo. 
 
 Resuelva el problema añadiendo en `_config.yml`  una entrada como esta:
 
