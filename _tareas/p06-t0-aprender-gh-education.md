@@ -9,6 +9,10 @@ date: 0000/01/07
 
 # Descripción de la Práctica p06-t0-aprender-gh-education
 
+
+En las prácticas anteriores aprendimos los rudimentos de Git, GitHub, como hacer un web site con Jekyll y como desplegarlo usando GitHub Pages. En esta práctica final aprenderemos a manejar organizaciones, automatizar la asignación de tareas y utilizar la infraestructura GH para su evaluación.
+
+
 ## Creamos una Organización en GitHub para la Asignatura
 
 Cree una organización en GH con nombre ULL-MFP-*asignatura-aluXXX*
