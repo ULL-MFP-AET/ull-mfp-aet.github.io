@@ -238,15 +238,22 @@ git remote add origin https://github.com/ULL-MFP-AET-2021/p03-t0-aprender-ide-al
 Cada vez  que empujemos a GitHub se nos pedirán el usuario y la clave de github. Esto puede resultar pesado. Para evitarlo y que sólo ocurra la primera vez, le indicamos a git que la primera vez que nos identifiquemos con GitHub almacene el usuario y la clave:
 
 ```
+git config credential.helper cache
+```
+
+o bien
+
+```
 git config credential.helper store  # Para que no nos esté preguntando la password cada vez
 ```
 
 Credential helpers are external programs from which Git can request both usernames and passwords; they typically interface with secure storage provided by the OS or other programs. 
 
 Credential helpers are in two forms: 
-* **cache** which caches credentials in memory for a short period of time, 
-* and **store** which basically stores credentials indefinitely on disk. 
-
+* **cache** which caches credentials in memory for a short period of time
+  - This command caches credentials in memory for use by future Git programs. The stored credentials never touch the disk, and are forgotten after a configurable timeout. The cache is accessible over a Unix domain socket, restricted to the current user by filesystem permissions. 
+* **store** which basically stores credentials indefinitely on disk. 
+  - Using this helper will store your passwords unencrypted on disk, protected only by filesystem permissions. If this is not an acceptable security tradeoff, try `git credential cache`
 Vea la [documentación de git credentials](https://git-scm.com/docs/gitcredentials) para saber más sobre este punto.
 
 En este momento estamos en la rama `master`:
