@@ -198,6 +198,12 @@ Después nos posicionamos en `_site`:
 cd ~/p03-t0-aprender-ide/site/_site    
 ```
 
+Añadamos un fichero `.nojekyll` vacío (See [Bypassing Jekyll on GitHub Pages by Tom Preston-Werner](https://github.blog/2009-12-29-bypassing-jekyll-on-github-pages/))
+
+```
+touch .nojekyll
+```
+
 Convertimos `_site` en un repo git. Esto crea la carpeta oculta `.git`:
 
 ```
