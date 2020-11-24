@@ -80,15 +80,9 @@ Siga estos pasos:
 * Lea la documentación en [jekyllrb.com](https://jekyllrb.com) y vaya modificando los ficheros en `_data`, `_config.yml` etc. para personalizarlo como su CV.
 -->
 
-## La Entrega
-
-{% include entrega.md %}
-
-## Tips
-
 ### Maths
 
-To use Math equations in your `temas`or `tareas` collections or in any document, you can make use
+To use Math equations in your `posts`, `temas` or `tareas` collections or in any document, you can make use
 of [MathJax](https://quuxplusone.github.io/blog/2020/08/19/mathjax-v3-in-jekyll/) and insert in your layout file `_layouts/default.yml` a line like this one:
 
 ```html
@@ -130,7 +124,9 @@ $$f(x) = \int_{-\infty}^\infty \hat f(\xi)\,e^{2 \pi i \xi x} \,d\xi$$
 
 $$mean = \frac{\displaystyle\sum_{i=1}^{n} x_{i}}{n}$$
 
-### Data. Converting yml to json
+See the [References section in this notes about \LaTeX](references.html#referencias-sobre-latex)
+
+## Data. Converting yml to json
 
 * [js-yaml](https://www.npmjs.com/package/js-yaml)
   - `npx js-yaml data.yml > data.json` converts from .yml to .json
@@ -150,4 +146,8 @@ $$mean = \frac{\displaystyle\sum_{i=1}^{n} x_{i}}{n}$$
   * [Despliegue en GitHub Pages](https://bbrattoli.github.io/)
 * [Free Jekyll Themes](https://jekyllthemes.io/free)
 -->
+
+## La Entrega
+
+{% include entrega.md %}
 
