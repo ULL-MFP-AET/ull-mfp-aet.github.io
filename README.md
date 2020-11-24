@@ -18,13 +18,14 @@
 
 ## Etiquetas
 
+<ul>
 {% for tag in site.tags %}
-  <h3>{{ tag[0] }}</h3>
+  <li>{{ tag[0] }}</li>
   <ul>
     {% for post in tag[1] %}
       <li><a href="{{ post.url }}">{{ post.title }}</a></li>
     {% endfor %}
   </ul>
 {% endfor %}
-
+</ul>
 
