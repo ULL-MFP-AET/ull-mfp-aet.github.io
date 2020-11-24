@@ -9,28 +9,39 @@ This is something to note when iterating through `site.collections` as you may n
 
 You can see your collections with a code like this one:
 
-```
+```html
 {% raw %}
+<div style="border-style: solid; border-radius: 25px;">
+<ol>
 {%- for col in site.collections %}
-1. Colección: {{ col.label }}
+<li> Colección: {{ col.label }} </li>
+  <ol>
   {%-  assign firstdocs = col.docs | slice: 0,3 %}
   {%- for elem in firstdocs %}
-    1. **path:** {{ elem.path }} **url:** {{ elem.url }}
+    <li> <b>path:</b> {{ elem.path }} <b>url:</b> {{ elem.url }} </li>
   {%- endfor %}
+  </ol>
 {%- endfor %}
+</ol>
+</div>
 {% endraw %}
 ```
 
 when runned in this site produces:
 
+<div style="border-style: solid; border-radius: 25px;">
+<ol>
 {%- for col in site.collections %}
-1. Colección: {{ col.label }}
+<li> Colección: {{ col.label }} </li>
+  <ol>
   {%-  assign firstdocs = col.docs | slice: 0,3 %}
   {%- for elem in firstdocs %}
-    1. **path:** {{ elem.path }} **url:** {{ elem.url }}
+    <li> <b>path:</b> {{ elem.path }} <b>url:</b> {{ elem.url }} </li>
   {%- endfor %}
+  </ol>
 {%- endfor %}
-
+</ol>
+</div>
 
 
 
