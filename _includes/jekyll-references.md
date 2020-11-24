@@ -1,10 +1,46 @@
-* Documentación en [jekyllrb.com](https://jekyllrb.com)
+Recuerda que GitHub provee un servicio de Hosting de páginas estáticas ([GitHub Pages](https://pages.github.com/)) que se sirven mediante Jekyll.
+
+* [Jekyll docs](https://jekyllrb.com/docs/)
+  *   [Pages](https://jekyllrb.com/docs/pages/)
+  *   [Posts](https://jekyllrb.com/docs/posts/)
+  *   [Front Matter](https://jekyllrb.com/docs/front-matter/)
+  *   [Collections](https://jekyllrb.com/docs/collections/)
+     *   [Page Sections in Jekyll - Separating Content from Layout](https://dev-notes.eu/2016/08/page-sections-in-jekyll-seperating-content-from-layout/)
+     * [Explain like I’m five: Jekyll collections](https://ben.balter.com/2015/02/20/jekyll-collections/)
+  *   [Data Files](https://jekyllrb.com/docs/datafiles/)
+     * [Why I love Jekyll Data Files - Chen Hui Jing // JekyllConf 2019](https://youtu.be/CERXESTZ5w4) YouTube
+  *   [Assets](https://jekyllrb.com/docs/assets/)
+  *   [Static Files](https://jekyllrb.com/docs/static-files/)
+
+* Site Structure
+  *   [Directory Structure](https://jekyllrb.com/docs/structure/)
+  *   [Liquid](https://jekyllrb.com/docs/liquid/)
+    * Liquid Sandbox: [You can test your Liquid code here. This sandbox only loads the default Liquid methods ](https://jumpseller.com/support/liquid-sandbox/)
+  *   [Variables](https://jekyllrb.com/docs/variables/)
+  *   [Includes](https://jekyllrb.com/docs/includes/)
+  *   [Layouts](https://jekyllrb.com/docs/layouts/)
+  *   [Permalinks](https://jekyllrb.com/docs/permalinks/)
+  *   [Themes](https://jekyllrb.com/docs/themes/)
+  *   [Pagination](https://jekyllrb.com/docs/pagination/)
+
+* Tutorials
+  *   [Tutorials](https://jekyllrb.com/tutorials/home/)
+  *   [Video Walkthroughs](https://jekyllrb.com/tutorials/video-walkthroughs/)
+  *   [Navigation](https://jekyllrb.com/tutorials/navigation/)
+  *   [Order of interpretation](https://jekyllrb.com/tutorials/orderofinterpretation/)
+  *   [Custom 404 Page](https://jekyllrb.com/tutorials/custom-404-page/)
+  *   [Convert an HTML site to Jekyll](https://jekyllrb.com/tutorials/convert-site-to-jekyll/)
+  *   [Using Jekyll with Bundler](https://jekyllrb.com/tutorials/using-jekyll-with-bundler/)
+
+
 * [Setting up your GitHub Pages site locally with Jekyll](https://help.github.jp/enterprise/2.11/user/articles/setting-up-your-github-pages-site-locally-with-jekyll/)
 
 * [Jekyll cheat Sheet](https://learn.cloudcannon.com/jekyll-cheat-sheet/) at CloudCannon
+
 * Prose: an Editor for GitHub Jekyll Pages
   * [BLOGGING LIKE A DEV: JEKYLL + GITHUB + PROSE.IO by Allan Denot 11 Jan 2015](https://allandenot.com/development/2015/01/11/blogging-like-a-dev-jekyll-github-prose-io.html)
   * [Using Prose](https://www.websbytodd.com/documentation/using-prose/#introduction)
+
 *   Jekyll CV BiagioBrattoli Example
     - YouTube Video: [How to use minimal Jekyll theme Thunder - Tutorial 10](https://youtu.be/T2nx6tj-ZH4)
     - [Blog: Webjeda](https://blog.webjeda.com/)
