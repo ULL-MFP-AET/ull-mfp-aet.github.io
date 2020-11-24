@@ -82,7 +82,9 @@ Siga estos pasos:
 
 ## Maths
 
-To use Math equations in your `posts`, `temas` or `tareas` collections or in any document, you can make use
+$$\LaTeX$$ is a free professional typesetting, that it is the standard for scientific  documents.
+
+To use the  $$\LaTeX$$ language in your `posts`, `temas` or `tareas` collections or in any document, you can make use
 of [MathJax](https://quuxplusone.github.io/blog/2020/08/19/mathjax-v3-in-jekyll/) and insert in your layout file `_layouts/default.yml` a line like this one:
 
 ```html
