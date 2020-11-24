@@ -41,9 +41,9 @@ collections:
   tareas:
     output: true
 temas:
-  - title: 'Introducción al Desarrollo Colaborativo de Proyectos en la Nube'
-    url: '/tema0-introduccion/'
-    hover: 'introduccion'
+# - title: 'Introducción al Desarrollo Colaborativo de Proyectos en la Nube'
+#    url: '/tema0-introduccion/'
+#    hover: 'introduccion'
 # - title: 'Desarrollo Colaborativo de Proyectos en la Nube con GitHub Education'
 #  url: '/tema1-github-education'
 #  hover: 'github-education'

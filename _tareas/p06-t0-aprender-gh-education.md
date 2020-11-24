@@ -7,7 +7,7 @@ name: Aprender Las Metodologías de GitHub Education
 date: 0000/01/07
 ---
 
-# Descripción de la Práctica p06-t0-aprender-gh-education
+# Aprender las Metodologías de GitHub Education. p06-t0-aprender-gh-education
 
 En las prácticas anteriores aprendimos los rudimentos de Git, GitHub, como hacer un web site con Jekyll, como se usa una IDE en la nube y como desplegar un web site usando GitHub Pages. En esta práctica final aprenderemos a manejar organizaciones GH, automatizar la asignación de tareas mediante Classroom y utilizar la infraestructura GH para la evaluación de las mismas.
 
