@@ -8,11 +8,9 @@
 
 {% include classroom-references.md %}
 
-## Referencias sobre Jekyll
+## Referencias sobre Jekyll Básico
 
 {% include jekyll-references.md %}
-
-
 
 ## Referencias sobre JavaScript
 
@@ -32,3 +30,7 @@
 ## Referencias sobre $$\LaTeX$$
 
 {% include latex-references.md %}
+
+## Referencias sobre Jekyll Avanzado
+
+{% include jekyll-advanced.md %}
