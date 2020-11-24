@@ -1,11 +1,10 @@
 ---
 layout: default
 title: p01-t0-registrarse-en-github
-permalink: /tema0-introduccion/practicas/p01-t0-registrarse-en-github/index.html
-previous: 
-  url: 
-next:
-  url: 
+name: Registrarse en GitHub
+myurl: https://campusdoctoradoyposgrado.ull.es/mod/assign/view.php?id=282455&forceview=1
+permalink: /tema0-introduccion/practicas/p01-t0-registrarse-en-github/
+date: 0000/01/01
 ---
 
 # Registrarse en GitHub (p01-t0-registrarse-en-github)

@@ -2,10 +2,9 @@
 layout: default
 title: p03-t0-aprender-ide
 permalink: /tema0-introduccion/practicas/p03-t0-aprender-ide/index.html
-previous: 
-  url: tema0-introduccion/practicas/p02-t0-revision-grupal/
-next:
-  url: tema0-introduccion/practicas/p04-t0-aprender-jekyll/
+myurl: https://campusdoctoradoyposgrado.ull.es/mod/assign/view.php?id=282487&forceview=1
+name: Aprender IDE
+date: 0000/01/05
 ---
 
 # Aprendiendo a usar una IDE (p03-t0-aprender-ide)

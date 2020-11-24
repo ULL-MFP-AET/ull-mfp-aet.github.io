@@ -2,8 +2,9 @@
 layout: default
 title: p04-t0-aprender-jekyll
 permalink: /tema0-introduccion/practicas/p04-t0-aprender-jekyll/index.html
-previous: 
-  url: tema0-introduccion/practicas/p03-t0-aprender-ide/
+myurl: https://campusdoctoradoyposgrado.ull.es/mod/assign/view.php?id=282487&forceview=1
+name: Aprender Jekyll
+date: 0000/01/06
 ---
 
 # Aprendiendo Jekyll (p04-t0-aprender-jekyll)

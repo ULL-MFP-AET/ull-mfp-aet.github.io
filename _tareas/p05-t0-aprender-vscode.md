@@ -1,3 +1,11 @@
+---
+layout: default
+title: p05-t0-aprendervscode
+myurl: https://campusdoctoradoyposgrado.ull.es/mod/assign/view.php?id=284111&forceview=1
+permalink: tema0-introduccion/practicas/p05-t0-aprender-vscode/
+name: Aprender git y Visual Studio Code
+date: 0000/01/06
+---
 
 # Descripción de la Práctica p05-t0-aprender-vscode
 

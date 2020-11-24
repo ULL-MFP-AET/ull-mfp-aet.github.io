@@ -2,10 +2,9 @@
 layout: default
 title: p02-t0-revision-grupal
 permalink: /tema0-introduccion/practicas/p02-t0-revision-grupal/index.html
-previous: 
-  url: /tema0-introduccion/practicas/p02-t0-aprender-jekyll-basico/
-next:
-  url: /tema0-introduccion/practicas/p03-t0-aprender-ide/
+myurl: https://campusdoctoradoyposgrado.ull.es/mod/assign/view.php?id=284635
+name: Aprender Colaboración con GitHub
+date: 0000/01/04
 ---
 
 # Aprender Colaboración con GitHub (p02-t0-revision-grupal)

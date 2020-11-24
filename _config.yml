@@ -20,7 +20,7 @@ organization:
 apuntes_repo: https://github.com/ULL-MFP-AET-2021/introduccion/
 campus_virtual: https://campusdoctoradoyposgrado.ull.es/course/view.php?id=2020110589
 calificador: https://campusvirtual.ull.es/ingenieriaytecnologia/1920/grade/report/grader/index.php?id=201911070
-tareas: https://campusvirtual.ull.es/ingenieriaytecnologia/1920/mod/assign/index.php?id=201911070
+tareas_en_el_campus: https://campusvirtual.ull.es/ingenieriaytecnologia/1920/mod/assign/index.php?id=201911070
 profesor: https://www.ull.es/apps/guias/guias/view_teacher_niu/588/(%3FPcrguezl.*)/
 profesor_github: crguezl
 chat: https://chat.google.com
@@ -37,6 +37,9 @@ disqus:
 classroom: 
   url: https://classroom.github.com/classrooms/53047670-ULL-MFP-AET-2021
   name: ULL-MFP-AET-2021
+collections:
+  tareas:
+    output: true
 temas:
   - title: 'Introducción al Desarrollo Colaborativo de Proyectos en la Nube'
     url: '/tema0-introduccion/'
@@ -47,28 +50,6 @@ temas:
   - title: 'Desarrollo Colaborativo de Proyectos en la Nube con Google'
     url: /tema2-google-app-scripts
     hover: 'google-app-scripts' 
-practicas:
-  - title: 00registrarseengithub
-    myurl: https://campusdoctoradoyposgrado.ull.es/mod/assign/view.php?id=282455&forceview=1
-    name: Tarea Registrarse en Github
-  - title: 01aprendermarkdown
-    myurl: https://campusdoctoradoyposgrado.ull.es/mod/assign/view.php?id=282485&forceview=1
-    name: Aprender Markdown
-  - title: 02aprenderjekyllbasico
-    myurl: https://campusdoctoradoyposgrado.ull.es/mod/assign/view.php?id=284365
-    name: Aprender Jekyll Basico
-  - title: 03colaboraciongithub
-    myurl: https://campusdoctoradoyposgrado.ull.es/mod/assign/view.php?id=284635
-    name: Aprender Colaboración con GitHub
-  - title: 03aprenderide
-    myurl: https://campusdoctoradoyposgrado.ull.es/mod/assign/view.php?id=282487&forceview=1
-    name: Aprender IDE
-  - title: 04aprenderjekyll
-    myurl: https://campusdoctoradoyposgrado.ull.es/mod/assign/view.php?id=282487&forceview=1
-    name: Aprender Jekyll
-  - title: 05aprendervscode
-    myurl: https://campusdoctoradoyposgrado.ull.es/mod/assign/view.php?id=284111&forceview=1
-    name: Aprender git y Visual Studio Code
 plugins:
   - jemoji
 

@@ -1,10 +1,11 @@
-{%- for practica in site.practicas reversed %}
+
+{%- for practica in site.tareas reversed %}
   {%- if practica.myurl contains "https:" %} 
-*  <a href="{{ practica.myurl }}">{{ practica.title | slice: 0, 2  }}:  {{ practica.name }}</a> 
+*  <a href="{{ site.baseurl}}/{{ practica.url }}">{{ practica.title }}:  {{ practica.name }}</a> 
   {%- else %}
-*  <a href="{{site.baseurl}}{{ practica.myurl }}">{{ practica.title | slice: 0, 2  }}:  {{ practica.name }}</a> 
+*  <a href="{{site.baseurl}}/{{ practica.url }}">{{ practica.title }}:  {{ practica.name }}</a> 
     {%- if practica.reto %}
-    - Reto: <a href="{{site.baseurl}}{{practica.reto.url}}">{{practica.reto.title}}</a>
+    - Reto: <a href="{{site.baseurl}}/{{practica.reto.url}}">{{practica.reto.title}}</a>
     {%- endif %}
   {%- endif %}
 {%- endfor %}

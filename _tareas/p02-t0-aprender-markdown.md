@@ -1,11 +1,10 @@
 ---
 layout: default
 title: p02-t0-aprender-markdown
-permalink: /tema0-introduccion/practicas/p02-t0-aprender-markdown/index.html
-previous: 
-  url: 
-next:
-  url: 
+myurl: https://campusdoctoradoyposgrado.ull.es/mod/assign/view.php?id=282485&forceview=1
+permalink: tema0-introduccion/practicas/p02-t0-aprender-markdown/
+name: Aprender Markdown
+date: 0000/01/02
 ---
 
 # Aprender Markdown (p02-t0-aprender-markdown)
