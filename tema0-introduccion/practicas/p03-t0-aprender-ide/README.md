@@ -229,7 +229,7 @@ Ahora confirmamos nuestros cambios:
 git commit -am '_site converted to repo'
 ```
 
-Ahora vamos a establecer el remoto. Esta vez, por simplicidad, elegimos la URL con https:
+A continuación vamos a establecer el remoto. Esta vez, por simplicidad, elegimos la URL con https:
 
 ```
 git remote add origin https://github.com/ULL-MFP-AET-2021/p03-t0-aprender-ide-aluXXX.git # Apuntamos el remoto al repo de la entrega
