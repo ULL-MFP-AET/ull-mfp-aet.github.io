@@ -42,3 +42,6 @@ title: Search
 
 * [Glossary]({{site.baseurl}}/glossary.html)
 
+# Tópicos Tratados en las Clases
+
+* [Topics by Class]({{site.baseurl}}/topics)
