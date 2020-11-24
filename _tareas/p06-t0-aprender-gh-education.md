@@ -49,7 +49,9 @@ Usando [GitHub Classroom Assitant](https://classroom.github.com/assistant) desca
 ## Solicitar Descuentos
 
 * [https://education.github.com/teachers](https://education.github.com/teachers)
-* [https://education.github.com/benefits](https://education.github.com/benefits)
+* [Upgrade your organization](https://education.github.com/toolbox/offers/github-org-upgrades) link
+* [Enjoy the benefits of being faculty](https://education.github.com/benefits)
+
 
 ## Referencias
 
