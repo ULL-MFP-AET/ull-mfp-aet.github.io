@@ -132,7 +132,13 @@ See the [References section in this notes about \LaTeX](references.html#referenc
   - `npx js-yaml data.yml > data.json` converts from .yml to .json
 {% include jekyll-references.md %}
   
+## La Entrega
+
+{% include entrega.md %}
+
 ## Referencias
+
+See the section [References]({{site.baseurl}}/references) in this notebook
 
 <!--
 * [Repl.it Tutorial MAKE A BLOG USING JEKYLL](https://repl.it/talk/learn/GUIDE-MAKE-A-BLOG-USING-JEKYLL-POG-ALERT-KEK-HAHAYES-ENDORSED/59021)
@@ -146,8 +152,3 @@ See the [References section in this notes about \LaTeX](references.html#referenc
   * [Despliegue en GitHub Pages](https://bbrattoli.github.io/)
 * [Free Jekyll Themes](https://jekyllthemes.io/free)
 -->
-
-## La Entrega
-
-{% include entrega.md %}
-
