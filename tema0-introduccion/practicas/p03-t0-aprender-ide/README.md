@@ -263,7 +263,7 @@ En este momento estamos en la rama `master`:
 * master
 ```
 
-Ahora hacemos un empuje al remoto de la rama `master`. Esto creará la rama `master`en el remoto (recuerde que GitHub trabaja ahora con la rama `main` como rama principal)
+Ahora hacemos un empuje al remoto de la rama `master`. Esto creará la rama `master`en el remoto ([recuerde que GitHub trabaja ahora con la rama `main` como rama principal](https://www.zdnet.com/article/github-to-replace-master-with-main-starting-next-month/#:~:text=Starting%20next%20month%2C%20all%20new,them%20with%20more%20inclusive%20terms.))
 
 ```
 git push -u --force origin master 
