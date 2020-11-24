@@ -21,7 +21,7 @@ Cree un GH Classroom con el mismo nombre asociado a la organización anterior UL
 
 ## Creamos un Sitio Web de la Asignatura
 
-Haga un fork del repo con el web site que creó en la asignatura anterior y renómbrelo para que sea el repo con el sitio web de la organización (If you're creating an organization web site, your repository must be named `<organization>.github.io`)
+Haga un fork del repo con el web site que creó en la asignatura anterior y renómbrelo para que sea el repo con el sitio web de la organización (If you're creating an organization web site, your repository must be named `<organization>.github.io`). 
 
 
 ## Creamos un Sitio Web del Profesor
@@ -33,6 +33,8 @@ Haga un fork del repo con el web site que creó en la asignatura anterior y reno
 En el sitio web de la asignatura se supone que creo una colección `tareas`. Cree en GH Classroom asignaciones para esas tareas y publíquelas en la web de la organización.
 
 De permisos de administración de su repo a los estudiantes.
+
+Haga al menos una asignación de grupo.
 
 ## Hacemos las Tareas y Discutimos los Problemas
 
