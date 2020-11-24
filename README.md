@@ -1,3 +1,4 @@
+<!--
 ## Temas
 
 <ul>
@@ -5,7 +6,7 @@
   <li><a href="{{site.baseurl}}{{tema.url}}" title="{{ tema.hover }}">{{ tema.title }}</a></li>
 {% endfor %}
 </ul>
-
+-->
 
 ## Clases 
 
