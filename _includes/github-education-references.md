@@ -2,6 +2,7 @@
 * [Charla UAI 2018](https://github.com/PAL-ULL/uai-18-talks)
   * [Versión de la charla en Google Slides](https://docs.google.com/presentation/d/1LAZUS4SX7axmzEUElh2Oz2DqC1cJA6PUvb1KixJ1KWw/edit?usp=sharing) Necesita ser actualizada
 * [Upgrade your organization](https://education.github.com/toolbox/offers/github-org-upgrades) link
+* [Enjoy the benefits of being faculty](https://education.github.com/benefits)
 * Curso OCW de la ULL [INTEGRACIÓN DE LAS HERRAMIENTAS "GITHUB EDUCATION" EN EL AULA](https://campusvirtual.ull.es/ocw/course/view.php?id=136)
   - [Repo con material que se usó en la elaboración del curso](https://github.com/ULL-LSI/ocw-ull-github-education-en-el-aula) (privado)
 * [Curso Integración de las herramientas "Github Education" en el aula](https://ull-pfpdi-github-1718.github.io/_book/) Curso de Formación para el Profesorado de la ULL en el curso 17/18
