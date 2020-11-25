@@ -56,14 +56,15 @@
 *   [Pagination](https://jekyllrb.com/docs/pagination/)
 
 ### Tutorials
-    *   [Tutorials](https://jekyllrb.com/tutorials/home/)
-    *   [Video Walkthroughs](https://jekyllrb.com/tutorials/video-walkthroughs/)
-    *   [Navigation](https://jekyllrb.com/tutorials/navigation/)
-    *   [Order of interpretation](https://jekyllrb.com/tutorials/orderofinterpretation/)
-    *   [Custom 404 Page](https://jekyllrb.com/tutorials/custom-404-page/)
-    *   [Convert an HTML site to Jekyll](https://jekyllrb.com/tutorials/convert-site-to-jekyll/)
-    *   [Using Jekyll with Bundler](https://jekyllrb.com/tutorials/using-jekyll-with-bundler/)
-    * [Setting up your GitHub Pages site locally with Jekyll](https://help.github.jp/enterprise/2.11/user/articles/setting-up-your-github-pages-site-locally-with-jekyll/)
+
+*   [Tutorials](https://jekyllrb.com/tutorials/home/)
+*   [Video Walkthroughs](https://jekyllrb.com/tutorials/video-walkthroughs/)
+*   [Navigation](https://jekyllrb.com/tutorials/navigation/)
+*   [Order of interpretation](https://jekyllrb.com/tutorials/orderofinterpretation/)
+*   [Custom 404 Page](https://jekyllrb.com/tutorials/custom-404-page/)
+*   [Convert an HTML site to Jekyll](https://jekyllrb.com/tutorials/convert-site-to-jekyll/)
+*   [Using Jekyll with Bundler](https://jekyllrb.com/tutorials/using-jekyll-with-bundler/)
+* [Setting up your GitHub Pages site locally with Jekyll](https://help.github.jp/enterprise/2.11/user/articles/setting-up-your-github-pages-site-locally-with-jekyll/)
 
 
 ### Repl.it and Jekyll
