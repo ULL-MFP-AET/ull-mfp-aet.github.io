@@ -13,8 +13,9 @@
   *   [Static Files](https://jekyllrb.com/docs/static-files/)
   * Site Structure
     *   [Directory Structure](https://jekyllrb.com/docs/structure/)
-    *   [Liquid](https://jekyllrb.com/docs/liquid/)
+    *   [Liquid at Jekyll](https://jekyllrb.com/docs/liquid/)
           * Liquid Sandbox: [You can test your Liquid code here. This sandbox only loads the default Liquid methods ](https://jumpseller.com/support/liquid-sandbox/)
+          * [Liquid at Shopify](https://shopify.github.io/liquid/)
     *   [Variables](https://jekyllrb.com/docs/variables/)
     *   [Includes](https://jekyllrb.com/docs/includes/)
     *   [Layouts](https://jekyllrb.com/docs/layouts/)
@@ -47,9 +48,6 @@
   * [Repl de ejemplo](https://repl.it/@sourcerose/JekyllBlog#main.sh)
   * [Repo en GitHub](https://github.com/barryclark/jekyll-now.git)
 
-* Liquid
-  * [Liquid](https://shopify.github.io/liquid/)
-  * [Liquid SandBox Editor at JumpSeller](https://jumpseller.com/support/liquid-sandbox/)
 
 * Maths
   * [MathJax v3 in Jekyll]([MathJax](https://quuxplusone.github.io/blog/2020/08/19/mathjax-v3-in-jekyll/)) by Arthur O’Dwyer
