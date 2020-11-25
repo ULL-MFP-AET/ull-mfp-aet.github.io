@@ -15,18 +15,47 @@
          * [Why I love Jekyll Data Files - Chen Hui Jing // JekyllConf 2019](https://youtu.be/CERXESTZ5w4) YouTube
   *   [Assets](https://jekyllrb.com/docs/assets/)
   *   [Static Files](https://jekyllrb.com/docs/static-files/)
-  * Site Structure
-    *   [Directory Structure](https://jekyllrb.com/docs/structure/)
-    *   [Liquid at Jekyll](https://jekyllrb.com/docs/liquid/)
-          * Liquid Sandbox: [You can test your Liquid code here. This sandbox only loads the default Liquid methods ](https://jumpseller.com/support/liquid-sandbox/)
-          * [Liquid at Shopify](https://shopify.github.io/liquid/)
-    *   [Variables](https://jekyllrb.com/docs/variables/)
-    *   [Includes](https://jekyllrb.com/docs/includes/)
-    *   [Layouts](https://jekyllrb.com/docs/layouts/)
-    *   [Permalinks](https://jekyllrb.com/docs/permalinks/)
-    *   [Themes](https://jekyllrb.com/docs/themes/)
-    *   [Pagination](https://jekyllrb.com/docs/pagination/)
-  * Tutorials
+
+### Site Structure
+
+*   [Directory Structure](https://jekyllrb.com/docs/structure/)
+*   [Categories](https://jekyllrb.com/docs/posts/#categories)
+* Having Different types of posts: [Jekyll multiple post types](https://stackoverflow.com/questions/20606197/jekyll-multiple-post-types)
+
+   ```
+   - work
+     -- _posts
+      --- portfolio01.md
+      --- portfolio02.md
+   - blog
+     -- _posts
+       --- blogitem01.md
+       --- blogitem02.md
+  ```
+
+### Liquid
+
+*   [Liquid at Jekyll](https://jekyllrb.com/docs/liquid/)
+* Liquid Sandbox: [You can test your Liquid code here. This sandbox only loads the default Liquid methods ](https://jumpseller.com/support/liquid-sandbox/)
+* [Liquid at Shopify](https://shopify.github.io/liquid/)
+
+### Variables, Includes, Layouts, Permalinks
+
+*   [Variables](https://jekyllrb.com/docs/variables/)
+*   [Includes](https://jekyllrb.com/docs/includes/)
+*   [Layouts](https://jekyllrb.com/docs/layouts/)
+*   [Permalinks](https://jekyllrb.com/docs/permalinks/)
+
+### Themes
+
+*   [Themes](https://jekyllrb.com/docs/themes/)
+* [Jekyll Themes](https://jekyll-themes.com/free/)
+
+### Pagination
+
+*   [Pagination](https://jekyllrb.com/docs/pagination/)
+
+### Tutorials
     *   [Tutorials](https://jekyllrb.com/tutorials/home/)
     *   [Video Walkthroughs](https://jekyllrb.com/tutorials/video-walkthroughs/)
     *   [Navigation](https://jekyllrb.com/tutorials/navigation/)
@@ -58,7 +87,7 @@
 *   Jekyll CV BiagioBrattoli Example
     - YouTube Video: [How to use minimal Jekyll theme Thunder - Tutorial 10](https://youtu.be/T2nx6tj-ZH4)
     - [Blog: Webjeda](https://blog.webjeda.com/)
-* [Jekyll Themes](https://jekyll-themes.com/free/)
+
 
 ### Prose
 
