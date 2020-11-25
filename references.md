@@ -12,6 +12,10 @@
 
 {% include jekyll-references.md %}
 
+## Referencias sobre Jekyll Avanzado
+
+{% include jekyll-advanced.md %}
+
 ## Referencias sobre JavaScript
 
 * [Eloquent JS 3rd Edition](https://eloquentjavascript.net/)
@@ -31,6 +35,3 @@
 
 {% include latex-references.md %}
 
-## Referencias sobre Jekyll Avanzado
-
-{% include jekyll-advanced.md %}
