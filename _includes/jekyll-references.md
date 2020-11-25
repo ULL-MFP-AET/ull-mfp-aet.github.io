@@ -14,7 +14,7 @@
   * Site Structure
     *   [Directory Structure](https://jekyllrb.com/docs/structure/)
     *   [Liquid](https://jekyllrb.com/docs/liquid/)
-      * Liquid Sandbox: [You can test your Liquid code here. This sandbox only loads the default Liquid methods ](https://jumpseller.com/support/liquid-sandbox/)
+          * Liquid Sandbox: [You can test your Liquid code here. This sandbox only loads the default Liquid methods ](https://jumpseller.com/support/liquid-sandbox/)
     *   [Variables](https://jekyllrb.com/docs/variables/)
     *   [Includes](https://jekyllrb.com/docs/includes/)
     *   [Layouts](https://jekyllrb.com/docs/layouts/)
