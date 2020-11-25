@@ -5,8 +5,8 @@
   *   [Posts](https://jekyllrb.com/docs/posts/)
   *   [Front Matter](https://jekyllrb.com/docs/front-matter/)
   *   [Collections](https://jekyllrb.com/docs/collections/)
-     *   [Page Sections in Jekyll - Separating Content from Layout](https://dev-notes.eu/2016/08/page-sections-in-jekyll-seperating-content-from-layout/)
-     * [Explain like I’m five: Jekyll collections](https://ben.balter.com/2015/02/20/jekyll-collections/)
+         *   [Page Sections in Jekyll - Separating Content from Layout](https://dev-notes.eu/2016/08/page-sections-in-jekyll-seperating-content-from-layout/)
+         * [Explain like I’m five: Jekyll collections](https://ben.balter.com/2015/02/20/jekyll-collections/)
   *   [Data Files](https://jekyllrb.com/docs/datafiles/)
      * [Why I love Jekyll Data Files - Chen Hui Jing // JekyllConf 2019](https://youtu.be/CERXESTZ5w4) YouTube
   *   [Assets](https://jekyllrb.com/docs/assets/)
