@@ -41,7 +41,7 @@
 * [PDFKit](https://github.com/pdfkit/PDFKit)
 * [GitHub repo wkhtmltopdf: Convert HTML to PDF using Webkit (QtWebKit)](https://github.com/wkhtmltopdf/wkhtmltopdf) see [https://wkhtmltopdf.org](https://wkhtmltopdf.org)
 
-### Blog: A Collection of Music Albums
+### An Example of a Jekyll Blog: A Collection of Music Albums
 
 * [How to maintain a collection of music albums online, using Jekyll and Github Pages](https://dev.to/adrienjoly/how-to-maintain-a-collection-of-music-albums-online-using-jekyll-and-github-pages-3hd6). See it at [http://adrienjoly.com/album-shelf/](http://adrienjoly.com/album-shelf/)
 
