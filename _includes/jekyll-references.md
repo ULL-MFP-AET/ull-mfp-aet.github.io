@@ -25,11 +25,11 @@
    ```
    - work
      -- _posts
-      --- portfolio01.md
+      --- portfolio01.md  # The portfolio01.md belongs to the work category. 
       --- portfolio02.md
    - blog
      -- _posts
-       --- blogitem01.md
+       --- blogitem01.md # The blogitem01.md belongs to the blog category.
        --- blogitem02.md
   ```
  
