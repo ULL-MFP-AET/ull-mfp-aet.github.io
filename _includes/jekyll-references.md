@@ -1,4 +1,4 @@
-Recuerda que GitHub provee un servicio de Hosting de páginas estáticas ([GitHub Pages](https://pages.github.com/)) que se sirven mediante Jekyll.
+* Recuerda que GitHub provee un servicio de Hosting de páginas estáticas ([GitHub Pages](https://pages.github.com/)) que se sirven mediante Jekyll.
 
 * [Jekyll docs](https://jekyllrb.com/docs/)
   *   [Pages](https://jekyllrb.com/docs/pages/)
@@ -11,29 +11,25 @@ Recuerda que GitHub provee un servicio de Hosting de páginas estáticas ([GitHu
      * [Why I love Jekyll Data Files - Chen Hui Jing // JekyllConf 2019](https://youtu.be/CERXESTZ5w4) YouTube
   *   [Assets](https://jekyllrb.com/docs/assets/)
   *   [Static Files](https://jekyllrb.com/docs/static-files/)
-
-* Site Structure
-  *   [Directory Structure](https://jekyllrb.com/docs/structure/)
-  *   [Liquid](https://jekyllrb.com/docs/liquid/)
-    * Liquid Sandbox: [You can test your Liquid code here. This sandbox only loads the default Liquid methods ](https://jumpseller.com/support/liquid-sandbox/)
-  *   [Variables](https://jekyllrb.com/docs/variables/)
-  *   [Includes](https://jekyllrb.com/docs/includes/)
-  *   [Layouts](https://jekyllrb.com/docs/layouts/)
-  *   [Permalinks](https://jekyllrb.com/docs/permalinks/)
-  *   [Themes](https://jekyllrb.com/docs/themes/)
-  *   [Pagination](https://jekyllrb.com/docs/pagination/)
-
-* Tutorials
-  *   [Tutorials](https://jekyllrb.com/tutorials/home/)
-  *   [Video Walkthroughs](https://jekyllrb.com/tutorials/video-walkthroughs/)
-  *   [Navigation](https://jekyllrb.com/tutorials/navigation/)
-  *   [Order of interpretation](https://jekyllrb.com/tutorials/orderofinterpretation/)
-  *   [Custom 404 Page](https://jekyllrb.com/tutorials/custom-404-page/)
-  *   [Convert an HTML site to Jekyll](https://jekyllrb.com/tutorials/convert-site-to-jekyll/)
-  *   [Using Jekyll with Bundler](https://jekyllrb.com/tutorials/using-jekyll-with-bundler/)
-
-
-* [Setting up your GitHub Pages site locally with Jekyll](https://help.github.jp/enterprise/2.11/user/articles/setting-up-your-github-pages-site-locally-with-jekyll/)
+  * Site Structure
+    *   [Directory Structure](https://jekyllrb.com/docs/structure/)
+    *   [Liquid](https://jekyllrb.com/docs/liquid/)
+      * Liquid Sandbox: [You can test your Liquid code here. This sandbox only loads the default Liquid methods ](https://jumpseller.com/support/liquid-sandbox/)
+    *   [Variables](https://jekyllrb.com/docs/variables/)
+    *   [Includes](https://jekyllrb.com/docs/includes/)
+    *   [Layouts](https://jekyllrb.com/docs/layouts/)
+    *   [Permalinks](https://jekyllrb.com/docs/permalinks/)
+    *   [Themes](https://jekyllrb.com/docs/themes/)
+    *   [Pagination](https://jekyllrb.com/docs/pagination/)
+  * Tutorials
+    *   [Tutorials](https://jekyllrb.com/tutorials/home/)
+    *   [Video Walkthroughs](https://jekyllrb.com/tutorials/video-walkthroughs/)
+    *   [Navigation](https://jekyllrb.com/tutorials/navigation/)
+    *   [Order of interpretation](https://jekyllrb.com/tutorials/orderofinterpretation/)
+    *   [Custom 404 Page](https://jekyllrb.com/tutorials/custom-404-page/)
+    *   [Convert an HTML site to Jekyll](https://jekyllrb.com/tutorials/convert-site-to-jekyll/)
+    *   [Using Jekyll with Bundler](https://jekyllrb.com/tutorials/using-jekyll-with-bundler/)
+    * [Setting up your GitHub Pages site locally with Jekyll](https://help.github.jp/enterprise/2.11/user/articles/setting-up-your-github-pages-site-locally-with-jekyll/)
 
 * [Jekyll cheat Sheet](https://learn.cloudcannon.com/jekyll-cheat-sheet/) at CloudCannon
 
@@ -46,12 +42,16 @@ Recuerda que GitHub provee un servicio de Hosting de páginas estáticas ([GitHu
     - [Blog: Webjeda](https://blog.webjeda.com/)
 * [Jekyll Themes](https://jekyll-themes.com/free/)
 
-* [Repl.it Tutorial MAKE A BLOG USING JEKYLL](https://repl.it/talk/learn/GUIDE-MAKE-A-BLOG-USING-JEKYLL-POG-ALERT-KEK-HAHAYES-ENDORSED/59021)
+* Repl.it and Jekyll
+  * [Repl.it Tutorial MAKE A BLOG USING JEKYLL](https://repl.it/talk/learn/GUIDE-MAKE-A-BLOG-USING-JEKYLL-POG-ALERT-KEK-HAHAYES-ENDORSED/59021)
   * [Repl de ejemplo](https://repl.it/@sourcerose/JekyllBlog#main.sh)
   * [Repo en GitHub](https://github.com/barryclark/jekyll-now.git)
 
-* [Liquid](https://shopify.github.io/liquid/)
-* [Liquid SandBox Editor at JumpSeller](https://jumpseller.com/support/liquid-sandbox/)
+* Liquid
+  * [Liquid](https://shopify.github.io/liquid/)
+  * [Liquid SandBox Editor at JumpSeller](https://jumpseller.com/support/liquid-sandbox/)
 
-* [MathJax v3 in Jekyll]([MathJax](https://quuxplusone.github.io/blog/2020/08/19/mathjax-v3-in-jekyll/)) by Arthur O’Dwyer
-* [How I blog about math: an update on KaTeX with Jekyll](https://gendignoux.com/blog/2020/05/23/katex.html) by GUILLAUME ENDIGNOUX
+* Maths
+  * [MathJax v3 in Jekyll]([MathJax](https://quuxplusone.github.io/blog/2020/08/19/mathjax-v3-in-jekyll/)) by Arthur O’Dwyer
+  * [How I blog about math: an update on KaTeX with Jekyll](https://gendignoux.com/blog/2020/05/23/katex.html) by GUILLAUME ENDIGNOUX
+  
