@@ -32,7 +32,7 @@
        --- blogitem01.md
        --- blogitem02.md
   ```
-
+ 
 ### Liquid
 
 *   [Liquid at Jekyll](https://jekyllrb.com/docs/liquid/)
