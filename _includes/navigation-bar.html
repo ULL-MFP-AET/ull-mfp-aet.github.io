@@ -16,10 +16,8 @@
     </a>
     </li>
 
-    {% for tema in site.temas %}
-    <li><a href="{{site.baseurl}}{{tema.url}}" title={{ tema.hover }}>T{{ forloop.index0 }}</a></li>
-    {% endfor %}
-
+    <li><a href="{{site.baseurl}}/temas.html" title="temas">📖</a></li>  
+     
     {% if page.previous %}
       {%- if page.previous.url contains "https:" %}
         <li><a href="{{page.previous.url}}" title="Previous lesson/task">&#x2190;</a></li>

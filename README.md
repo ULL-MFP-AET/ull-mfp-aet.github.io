@@ -1,12 +1,7 @@
-<!--
+
 ## Temas
 
-<ul>
-{% for tema in site.temas %}
-  <li><a href="{{site.baseurl}}{{tema.url}}" title="{{ tema.hover }}">{{ tema.title }}</a></li>
-{% endfor %}
-</ul>
--->
+{% include temas-list.md %}
 
 ## Clases 
 
