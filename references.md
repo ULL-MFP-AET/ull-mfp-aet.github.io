@@ -16,6 +16,10 @@
 
 {% include jekyll-advanced.md %}
 
+## Referencias sobre otros Static Site Generators
+
+{% include static-generators-references.md %}
+
 ## Referencias sobre JavaScript
 
 * [Eloquent JS 3rd Edition](https://eloquentjavascript.net/)
