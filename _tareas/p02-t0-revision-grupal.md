@@ -17,7 +17,7 @@ date: 0000/01/04
 ## Aceptación de la Tarea
 
 * Usaremos los mismos equipos que en la primera parte de la asignatura ([Grupos Google meet AET1, ..., AET4](https://campusdoctoradoyposgrado.ull.es/mod/page/view.php?id=284636))
-* He configurado esta tare en GH Classroom como tarea de equipo. Al aceptar la asignación de esta tarea en GitHub Classroom el proceso es ligeramente diferente que el que ha ocurrido en la aceptación de las tareas individuales
+* He configurado esta tarea en GH Classroom como tarea de equipo. Al aceptar la asignación de esta tarea en GitHub Classroom el proceso es ligeramente diferente que el que ha ocurrido en la aceptación de las tareas individuales
 * En Esta Tarea de *Equipo* el primer alumno del equipo que accede al enlace de aceptación crea el *equipo GitHub* y le pone el nombre (*AET1*, *AET2*, ...)
 * Los siguientes miembros de ese equipo cuando acceden al enlace de aceptación veran los equipos que ya han sido creados (*AET1*, *AET2*, ...) y eligen la opción de unirse  a su equipo 
 * Para cada equipo se crea dentro de la organización un repo `asignatura-curso/nombredelatarea-nombredelequipo` que los alumnos del equipo  deberán usar para entregar la práctica
