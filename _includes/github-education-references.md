@@ -1,3 +1,4 @@
+* [GitHub Official Docs on Education](https://docs.github.com/en/free-pro-team@latest/education)
 * [GitHub Education Community](https://education.github.community/)
 * [Charla UAI 2018](https://github.com/PAL-ULL/uai-18-talks)
   * [Versión de la charla en Google Slides](https://docs.google.com/presentation/d/1LAZUS4SX7axmzEUElh2Oz2DqC1cJA6PUvb1KixJ1KWw/edit?usp=sharing) Necesita ser actualizada
