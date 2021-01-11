@@ -83,11 +83,13 @@
 
 * [Jekyll cheat Sheet](https://learn.cloudcannon.com/jekyll-cheat-sheet/) at CloudCannon
 
-### CV Example
+### CV Examples
 
 *   Jekyll CV BiagioBrattoli Example
 - YouTube Video: [How to use minimal Jekyll theme Thunder - Tutorial 10](https://youtu.be/T2nx6tj-ZH4)
 - [Blog: Webjeda](https://blog.webjeda.com/)
+* [The GitHub organization academicpages](https://github.com/academicpages) has several repos including one with a beautiful CV template at [academicpages/sb-personal](https://github.com/academicpages/sb-personal). You can see it deployed at 
+[https://academicpages.github.io/](https://academicpages.github.io/)
 
 
 ### Prose
