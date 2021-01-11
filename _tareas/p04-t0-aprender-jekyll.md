@@ -133,7 +133,7 @@ See the [References section in this notes about \LaTeX]({{site.baseurl}}/referen
 
 * [js-yaml](https://www.npmjs.com/package/js-yaml)
   - `npx js-yaml data.yml > data.json` converts from .yml to .json
-{% include jekyll-references.md %}
+
   
 ## La Entrega
 
@@ -142,6 +142,8 @@ See the [References section in this notes about \LaTeX]({{site.baseurl}}/referen
 ## Referencias
 
 See the section [References]({{site.baseurl}}/references) in this notebook
+
+{% include jekyll-references.md %}
 
 <!--
 * [Repl.it Tutorial MAKE A BLOG USING JEKYLL](https://repl.it/talk/learn/GUIDE-MAKE-A-BLOG-USING-JEKYLL-POG-ALERT-KEK-HAHAYES-ENDORSED/59021)
