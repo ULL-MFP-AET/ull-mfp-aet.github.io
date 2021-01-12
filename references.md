@@ -4,6 +4,10 @@
 
 {% include github-education-references.md %}
 
+### GitHub Univers(ity) Conferences
+
+{% include github-university-references.md %}
+
 ## Alternative Tools for Assignments
 
 {% include classroom-references.md %}
