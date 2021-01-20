@@ -98,3 +98,6 @@
 * [BLOGGING LIKE A DEV: JEKYLL + GITHUB + PROSE.IO by Allan Denot 11 Jan 2015](https://allandenot.com/development/2015/01/11/blogging-like-a-dev-jekyll-github-prose-io.html)
 * [Using Prose](https://www.websbytodd.com/documentation/using-prose/#introduction)
 
+### Favicon
+
+* [Favicon Generator. For real](https://realfavicongenerator.net/)
