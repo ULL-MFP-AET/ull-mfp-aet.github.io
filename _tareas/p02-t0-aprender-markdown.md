@@ -50,6 +50,17 @@ Haz commits para guardarlo.
 
 En la tarea entrega el enlace al repo con los contenidos de tu trabajo
 
+
+## StackEdit
+
+* [stackedit.io](https://stackedit.io/)
+
+StackEdit is an  editor in the cloud: it can sync your files with Google Drive, Dropbox and GitHub. It can also publish them as blog posts to Blogger, WordPress and Zendesk. You can choose whether to upload in Markdown format, HTML, or to format the output using the Handlebars template engine.
+
+![]({{site.baseurl}}/assets/images/stackedit-io.png )
+
+You can use it for this lab
+
 ## [Referencias](references)
 
 * [A Simple Guide to GitHub for Non-Developers: How to Speak GitHub](https://unito.io/blog/guide-to-github-for-project-managers/#how-to-speak-github) contiene un glosario de términos
