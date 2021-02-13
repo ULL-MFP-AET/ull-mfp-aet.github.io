@@ -48,7 +48,7 @@
 
 ### Themes
 
-*   [Themes](https://jekyllrb.com/docs/themes/)
+* [Themes](https://jekyllrb.com/docs/themes/)
 * [Jekyll Themes](https://jekyll-themes.com/free/)
 
 ### Pagination
@@ -85,15 +85,16 @@
 
 ### CV Examples
 
-*   Jekyll CV BiagioBrattoli Example
+* Jekyll CV BiagioBrattoli Example
 - YouTube Video: [How to use minimal Jekyll theme Thunder - Tutorial 10](https://youtu.be/T2nx6tj-ZH4)
 - [Blog: Webjeda](https://blog.webjeda.com/)
 * [The GitHub organization academicpages](https://github.com/academicpages) has several repos including one with a beautiful CV template at [academicpages/sb-personal](https://github.com/academicpages/sb-personal). You can see it deployed at 
 [https://academicpages.github.io/](https://academicpages.github.io/)
 
 
-### Prose
+### Cloud Editors: Prose, StackEdit ...
 
+* [stackedit.io](https://stackedit.io/) StackEdit is an  editor in the cloud: it can sync your files with Google Drive, Dropbox and GitHub. 
 * Prose: an Editor for GitHub Jekyll Pages
 * [BLOGGING LIKE A DEV: JEKYLL + GITHUB + PROSE.IO by Allan Denot 11 Jan 2015](https://allandenot.com/development/2015/01/11/blogging-like-a-dev-jekyll-github-prose-io.html)
 * [Using Prose](https://www.websbytodd.com/documentation/using-prose/#introduction)
@@ -101,3 +102,8 @@
 ### Favicon
 
 * [Favicon Generator. For real](https://realfavicongenerator.net/)
+
+### Minimal Mistakes
+
+* [https://github.com/mmistakes](https://github.com/mmistakes)
+* [https://mademistakes.com/](https://mademistakes.com/) blog
