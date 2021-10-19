@@ -7,7 +7,7 @@ permalink: /tema0-introduccion/practicas/p01-t0-registrarse-en-github/
 date: 0000/01/01
 ---
 
-# Registrarse en GitHub (p01-t0-registrarse-en-github)
+# Registrarse en GitHub (registrarse-en-github)
 
 En esta tarea deberás registrarte en [GitHub.com](https://github.com).
 GitHub es una plataforma de desarrollo colaborativo.
