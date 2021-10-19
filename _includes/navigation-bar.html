@@ -1,5 +1,11 @@
 <nav>
   <ul>
+    {% if page.previous %}  
+    <li><a href="{{page.previous.url}}" title="Previous">&#x2190;</a></li>
+    {% endif %}
+    {% if page.next %}
+    <li><a href="{{page.next.url}}" title="Next">&#x2192;</a></li>
+    {% endif %}
     <li><a href="{{site.baseurl}}/search" title="search">&#x1F50D;</a></li>
     <li><a href="{{site.organization.master}}/{{page.path}}" title="Edit this page at GitHub">🐙</a></li>
     <li><a href="{{site.baseurl}}/index.html" title="Home page">&#x1f3e0</a></li>
@@ -15,23 +21,9 @@
     <!--
         <img src="{{site.baseurl}}/assets/images/casianogravatar.jpeg" 
         style="width: 11px; height: 12px;"/>
-    -->
+    
     <li><a href="{{site.baseurl}}/temas.html" title="temas">📖</a></li>  
-
-    {% if page.previous %}
-      {%- if page.previous.url contains "https:" %}
-        <li><a href="{{page.previous.url}}" title="Previous lesson/task">&#x2190;</a></li>
-      {% else %}
-        <li><a href="{{site.baseurl}}/{{page.previous.url}}" title="Previous lesson/task">&#x2190;</a></li>
-       {% endif %}
-    {% endif %}
-    {% if page.next %}
-      {%- if page.next.url contains "https:" %}
-        <li><a href="{{site.baseurl}}/{{page.next.url}}" title="Next lesson/task">&#x2192;</a></li>
-      {% else %}
-        <li><a href="{{site.baseurl}}/{{page.next.url}}" title="Next lesson/task">&#x2192;</a></li>
-      {% endif %}
-    {% endif %}
+    -->
     
 <!--
     <li><a href="{{site.baseurl}}/tema0-introduccion-a-pl/guia-docente.html" title="Tema 0: Presentación">T 0</a></li>

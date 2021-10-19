@@ -60,9 +60,11 @@
 
         <section>
             {% include navigation-links.html %}
-            <h2 >Table of Contents</h2>
            
-            {% include toc.html html=content id="pltoc" %}
+            {% if page.toc %}
+            <h2 >Table of Contents</h2>
+              {% include toc.html html=content id="pltoc" %}
+            {% endif %}
         
 
             {{ content }}

@@ -1,6 +1,6 @@
 ---
 layout: default
-title: p02-t0-aprender-jekyll-basico
+title: aprender-jekyll-basico
 name: Aprender Jekyll Básico
 date: 0000/01/03
 permalink: tema0-introduccion/practicas/p02-t0-aprender-jekyll-basico/
@@ -8,7 +8,7 @@ myurl: https://campusdoctoradoyposgrado.ull.es/mod/assign/view.php?id=284365
 
 ---
 
-# Aprender Jekyll Básico (p02-t0-aprender-jekyll-basico)
+# Aprender Jekyll Básico (aprender-jekyll-basico)
 
 
 ## Jekyll Data Files
