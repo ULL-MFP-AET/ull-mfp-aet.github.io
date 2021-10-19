@@ -7,3 +7,4 @@ gem 'faraday', '~> 0.17.3'
 gem "bundler", "~> 2.1"
 gem 'jemoji'
 
+gem 'webrick'

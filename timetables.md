@@ -7,7 +7,7 @@
 
 ## Horarios
 
-* <a  href="https://drive.google.com/file/d/1JGUsNBr-B76a3SWMdGgHMbsbCLizCUn4/view" target="_blank">Horarios de la Especialidad Enseñanza de la Tecnología</a>
+* <a  href="https://drive.google.com/file/d/15eABsmmoDK4SjjNzsUp0Wr7b6qLYEqdv/view" target="_blank">Horarios de la Especialidad Enseñanza de la Tecnología</a>
   - Martes y Jueves de 17:30 a 19:30. Aula B01.3.02
 * [Cita Previa (Google Appointments)]()
 

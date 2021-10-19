@@ -1,10 +1,11 @@
 title: 'Aprendizaje y Enseñanza de la Tecnología'
 subtitle: '1er Cuatrimestre'
 theme: jekyll-theme-midnight
+light: true
 description: 'Desarrollo Colaborativo de Proyectos de Aprendizaje y Enseñanza de Tecnologías en la Nube'
 acronym: AET
 exclude: [ 'Arona-winter-course', 'dsi1819', 'dsi1819-introduccion', 'tema0-introduccion-a-pl/practicas/code']
-baseurl: '/introduccion'
+baseurl: '/' # '/introduccion'
 url: https://ull-mfp-aet-2021.github.io/introduccion
 guia_docente: https://www.ull.es/apps/guias/guias/view_guide_course/2021/125771143
 show_downloads: false
