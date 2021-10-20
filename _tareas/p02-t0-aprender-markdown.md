@@ -45,12 +45,14 @@ CV.
 `master.md` pon un enlace de vuelta al `README.md`
 
 
-Usa el editor que provee la interfaz web de GitHub.
-Haz commits para guardarlo.
+- Podemos hacer uso del editor que provee la interfaz web de GitHub.
+- Pero hay editores alternativos mejores como [el editor web de GitHub  y GitPod](pages/gitopod)
+- Recuerda hacer "commits" para guardar los cambios.
+- En la tarea entrega el enlace al repo con los contenidos de tu trabajo
 
-En la tarea entrega el enlace al repo con los contenidos de tu trabajo
 
 
+<!--
 ## StackEdit
 
 * [stackedit.io](https://stackedit.io/)
@@ -60,6 +62,8 @@ StackEdit is an  editor in the cloud: it can sync your files with Google Drive, 
 ![]({{site.baseurl}}/assets/images/stackedit-io.png )
 
 You can use it for this lab
+
+-->
 
 ## [Referencias](references)
 
