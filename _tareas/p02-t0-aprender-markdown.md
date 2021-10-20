@@ -65,36 +65,16 @@ You can use it for this lab
 
 -->
 
+## Edición en la Nube de Repositorios GitHub
+
+* [Visual Studio Code in Browsers]({{site.baseurl}}/pages/gitpod)
+
 ## [Referencias](references)
 
-* [A Simple Guide to GitHub for Non-Developers: How to Speak GitHub](https://unito.io/blog/guide-to-github-for-project-managers/#how-to-speak-github) contiene un glosario de términos
 * [Mastering (GitHub) Markdown](https://guides.github.com/features/mastering-markdown/#examples)
+* [Documentación GitHub sobre la Interfaz Web]({{site.baseurl}/documentacion-github-interfaz-web}})
+* [A Simple Guide to GitHub for Non-Developers: How to Speak GitHub](https://unito.io/blog/guide-to-github-for-project-managers/#how-to-speak-github) contiene un glosario de términos
 * [A guide to using GitHub for people who don't code and don't want to code.](https://github.com/tvanantwerp/github-for-non-programmers) tvanantwerp/github-for-non-programmers GitBook
 * [Apuntes del curso Elaboración de Material Docente con GitBook](https://casianorodriguezleon.gitbooks.io/elaboracion-de-material-docente-con-gitbook/content/)
 * [GitHub Interface: Mover un archivo a una nueva ubicación](https://docs.github.com/es/free-pro-team@latest/github/managing-files-in-a-repository/moving-a-file-to-a-new-location)
 
-### Documentación GitHub sobre la Interfaz Web
-           
-*   [Administrar archivos en GitHub](https://docs.github.com/es/free-pro-team@latest/github/managing-files-in-a-repository/managing-files-on-github)
-    *   [Código de navegación en GitHub](https://docs.github.com/es/free-pro-team@latest/github/managing-files-in-a-repository/navigating-code-on-github)
-    *   [Crear nuevos archivos](https://docs.github.com/es/free-pro-team@latest/github/managing-files-in-a-repository/creating-new-files)
-    *   [Agregar un archivo a un repositorio](https://docs.github.com/es/free-pro-team@latest/github/managing-files-in-a-repository/adding-a-file-to-a-repository)
-    *   [Mover un archivo a una nueva ubicación](https://docs.github.com/es/free-pro-team@latest/github/managing-files-in-a-repository/moving-a-file-to-a-new-location)
-    *   [Editar archivos en tu repositorio](https://docs.github.com/es/free-pro-team@latest/github/managing-files-in-a-repository/editing-files-in-your-repository)
-    *   [Editar archivos en el repositorio de otro usuario](https://docs.github.com/es/free-pro-team@latest/github/managing-files-in-a-repository/editing-files-in-another-users-repository)
-    *   [Rastrear cambios en un archivo](https://docs.github.com/es/free-pro-team@latest/github/managing-files-in-a-repository/tracking-changes-in-a-file)
-    *   [Eliminar archivos](https://docs.github.com/es/free-pro-team@latest/github/managing-files-in-a-repository/deleting-files)
-    *   [Renombrar un archivo](https://docs.github.com/es/free-pro-team@latest/github/managing-files-in-a-repository/renaming-a-file)
-    *   [Obtener enlaces permanentes a archivos](https://docs.github.com/es/free-pro-team@latest/github/managing-files-in-a-repository/getting-permanent-links-to-files)
-*   [Administrar archivos utilizando la línea de comando](https://docs.github.com/es/free-pro-team@latest/github/managing-files-in-a-repository/managing-files-using-the-command-line)
-    *   [Agregar un archivo a un repositorio utilizando la línea de comando](https://docs.github.com/es/free-pro-team@latest/github/managing-files-in-a-repository/adding-a-file-to-a-repository-using-the-command-line)
-    *   [Renombrar un archivo usando la línea de comando](https://docs.github.com/es/free-pro-team@latest/github/managing-files-in-a-repository/renaming-a-file-using-the-command-line)
-    *   [Mover un archivo a una nueva ubicación utilizando la línea de comando](https://docs.github.com/es/free-pro-team@latest/github/managing-files-in-a-repository/moving-a-file-to-a-new-location-using-the-command-line)
-*   [Trabajar con archivos sin código](https://docs.github.com/es/free-pro-team@latest/github/managing-files-in-a-repository/working-with-non-code-files)
-    *   [Representar y comparar imágenes](https://docs.github.com/es/free-pro-team@latest/github/managing-files-in-a-repository/rendering-and-diffing-images)
-    *   [Visualizador de archivos 3D](https://docs.github.com/es/free-pro-team@latest/github/managing-files-in-a-repository/3d-file-viewer)
-    *   [Representar datos CSV y TSV](https://docs.github.com/es/free-pro-team@latest/github/managing-files-in-a-repository/rendering-csv-and-tsv-data)
-    *   [Representar documentos PDF](https://docs.github.com/es/free-pro-team@latest/github/managing-files-in-a-repository/rendering-pdf-documents)
-    *   [Representar diferencias en documentos en prosa](https://docs.github.com/es/free-pro-team@latest/github/managing-files-in-a-repository/rendering-differences-in-prose-documents)
-    *   [Mapear archivos geoJSON en GitHub](https://docs.github.com/es/free-pro-team@latest/github/managing-files-in-a-repository/mapping-geojson-files-on-github)
-    *   [Trabajar con archivos notebook Jupyter en GitHub](https://docs.github.com/es/free-pro-team@latest/github/managing-files-in-a-repository/working-with-jupyter-notebook-files-on-github)
