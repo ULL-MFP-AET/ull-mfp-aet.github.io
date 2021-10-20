@@ -46,7 +46,7 @@ CV.
 
 
 - Podemos hacer uso del editor que provee la interfaz web de GitHub.
-- Pero hay editores alternativos mejores como [el editor web de GitHub  y GitPod](pages/gitopod)
+- Pero hay editores alternativos mejores como [el editor web de GitHub  y GitPod]({{site.baseurl}}/pages/gitpod)
 - Recuerda hacer "commits" para guardar los cambios.
 - En la tarea entrega el enlace al repo con los contenidos de tu trabajo
 
