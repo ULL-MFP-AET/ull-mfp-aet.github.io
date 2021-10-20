@@ -72,7 +72,7 @@ You can use it for this lab
 ## [Referencias](references)
 
 * [Mastering (GitHub) Markdown](https://guides.github.com/features/mastering-markdown/#examples)
-* [Documentación GitHub sobre la Interfaz Web]({{site.baseurl}/documentacion-github-interfaz-web}})
+* [Documentación GitHub sobre la Interfaz Web]({{site.baseurl}}/documentacion-github-interfaz-web}})
 * [A Simple Guide to GitHub for Non-Developers: How to Speak GitHub](https://unito.io/blog/guide-to-github-for-project-managers/#how-to-speak-github) contiene un glosario de términos
 * [A guide to using GitHub for people who don't code and don't want to code.](https://github.com/tvanantwerp/github-for-non-programmers) tvanantwerp/github-for-non-programmers GitBook
 * [Apuntes del curso Elaboración de Material Docente con GitBook](https://casianorodriguezleon.gitbooks.io/elaboracion-de-material-docente-con-gitbook/content/)
