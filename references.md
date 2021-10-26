@@ -43,3 +43,7 @@
 
 {% include latex-references.md %}
 
+## Alternativas a GitHub
+
+* [GitLab for Education](https://about.gitlab.com/solutions/education/)
+* [Bitbucket for Education](https://bitbucket.org/product/en/education)
