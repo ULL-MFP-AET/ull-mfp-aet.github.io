@@ -4,7 +4,7 @@ theme: jekyll-theme-midnight
 light: true
 description: 'Desarrollo Colaborativo de Proyectos de Aprendizaje y Enseñanza de Tecnologías en la Nube'
 acronym: AET
-exclude: [ 'Arona-winter-course', 'dsi1819', 'dsi1819-introduccion', 'tema0-introduccion-a-pl/practicas/code']
+exclude: [ '_drafts/not-used/' ]
 baseurl: '' # '/introduccion'
 #url: https://ull-mfp-aet-2122.github.io/ull-mfp-aet-2122.github.io
 guia_docente: https://www.ull.es/apps/guias/guias/view_guide_course/2122/125771143
