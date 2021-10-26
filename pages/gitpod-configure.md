@@ -1,3 +1,7 @@
+---
+title: Configuring GitPod
+---
+
 *   [.gitpod.yml](https://www.gitpod.io/docs/config-gitpod-file)
 *   [Custom Docker Image](https://www.gitpod.io/docs/config-docker)
   * [gitpod-io/workspace-images/full/Dockerfile](https://github.com/gitpod-io/workspace-images/blob/master/full/Dockerfile)

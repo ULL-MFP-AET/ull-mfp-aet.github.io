@@ -1,5 +1,6 @@
 ---
 title: VS Code in Browsers
+toc: true
 --- 
 
 ## Period in a repo
@@ -30,7 +31,9 @@ Gitpod is an open source platform for automated and ready-to-code development en
 
 ## Configure Gitpod
 
--
+* [Configuring GitPod](gitpod-configure)
+
+
 ## Botón GitPod
 
 Para tener el botón GitPod instala la correspondiente extensión en Chrome o Firefox
@@ -82,8 +85,10 @@ See the article
 
 ## Oferta para Estudiantes
 
-* [GitHub Student Developer Pack](https://www.gitpod.io/github-student-developer-pack)
-
+*  <https://education.github.com/>
+* [GitHub Student Developer Pack](https://education.github.com/pack)
+  * [Get the Student Developer Pack](https://education.github.com/pack/join)
+* [GitPod is inside the GitHub Student Developer Pack](https://www.gitpod.io/github-student-developer-pack)
 
 ##  Oferta Plan Personal (2021) Profesores
 
