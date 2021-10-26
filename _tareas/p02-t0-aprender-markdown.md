@@ -18,6 +18,10 @@ Eso significa que cuando hagan click en la aceptación  de la tarea les saldrá 
 
 {% include instrucciones-tareas-de-equipo.md %}
 
+### Entrega en el Campus virtual
+
+En la tarea del campus simplemente escribes el enlace al repo de la tarea.
+
 ## Referencias de consulta para empezar
 
 Lee 
@@ -82,5 +86,6 @@ Para manejar todo el proceso de edición pueden ayudarte estas notas:
 * [A Simple Guide to GitHub for Non-Developers: How to Speak GitHub](https://unito.io/blog/guide-to-github-for-project-managers/#how-to-speak-github) contiene un glosario de términos
 * [A guide to using GitHub for people who don't code and don't want to code.](https://github.com/tvanantwerp/github-for-non-programmers) tvanantwerp/github-for-non-programmers GitBook
 -->
+
 * [Apuntes del curso Elaboración de Material Docente con GitBook](https://casianorodriguezleon.gitbooks.io/elaboracion-de-material-docente-con-gitbook/content/)
 
