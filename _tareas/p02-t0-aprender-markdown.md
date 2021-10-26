@@ -9,21 +9,33 @@ date: 0000/01/02
 
 # Aprender Markdown (aprender-markdown)
 
+## Aceptando la Tarea
+
+Esta tarea inicial ha sido configurada por el profesor como una tarea de equipo.
+Eso significa que cuando hagan click en la aceptación  de la tarea les saldrá un formulario para elegir el nombre del equipo. En este caso el equipo será individual. Escriba su nombre y apellidos seguido de su ID de la ULL:
+
+![]({{site.baseurl}}/assets/images/github-classroom-team-assignment-1.png)
+
+{% include instrucciones-tareas-de-equipo.md %}
+
+## Referencias de consulta para empezar
+
 Lee 
 
 1. El tutorial <a href="https://guides.github.com/features/mastering-markdown/" target="_blank">Mastering Markdown</a> para saber mas sobre esta forma de elaborar documentos
 2. Para mas detalles consulta la guía de usuario
 <a href="https://docs.github.com/en/free-pro-team@latest/github/writing-on-github/getting-started-with-writing-and-formatting-on-github" target="_blank">Getting started with writing and formatting on GitHub</a>
 
-Acepta la asignación de esta tarea y en el repositorio creado en GitHub edita el fichero `README.md` y rellenalo con un breve e informal
-CV.
+## Objetivos
+
+Acepta la asignación de esta tarea y en el repositorio creado en GitHub edita el fichero `README.md` y rellenalo con un breve e informal CV.
 
 * Incluye alguna imagen 
 * Incluye algunos enlaces (por ejemplo un enlace a tu usuario en el campus virtual).
 * Incluya alguna lista 
 * Una cita favorita (blockquote)
 * Un fragmento de código inline de un lenguaje de programación 
-* Incluye un trozo de código que ocupe varias líneas como este:
+* Incluye un trozo de código que ocupe varias líneas como este y asegúrate de que aprece coloreado:
 
   ```javascript
   function fancyAlert(arg) {
@@ -51,20 +63,10 @@ CV.
 
 
 
-<!--
-## StackEdit
-
-* [stackedit.io](https://stackedit.io/)
-
-StackEdit is an  editor in the cloud: it can sync your files with Google Drive, Dropbox and GitHub. It can also publish them as blog posts to Blogger, WordPress and Zendesk. You can choose whether to upload in Markdown format, HTML, or to format the output using the Handlebars template engine.
-
-![]({{site.baseurl}}/assets/images/stackedit-io.png )
-
-You can use it for this lab
-
--->
 
 ## Edición en la Nube de Repositorios GitHub
+
+Para manejar todo el proceso de edición pueden ayudarte estas notas:
 
 * [Visual Studio Code in Browsers]({{site.baseurl}}/pages/gitpod)
 
@@ -76,4 +78,5 @@ You can use it for this lab
 * [A guide to using GitHub for people who don't code and don't want to code.](https://github.com/tvanantwerp/github-for-non-programmers) tvanantwerp/github-for-non-programmers GitBook
 * [Apuntes del curso Elaboración de Material Docente con GitBook](https://casianorodriguezleon.gitbooks.io/elaboracion-de-material-docente-con-gitbook/content/)
 * [GitHub Interface: Mover un archivo a una nueva ubicación](https://docs.github.com/es/free-pro-team@latest/github/managing-files-in-a-repository/moving-a-file-to-a-new-location)
+* [Visual Studio Code in Browsers]({{site.baseurl}}/pages/gitpod)
 
