@@ -140,6 +140,9 @@ Pulsamos `Grant` sobre la organización a la que le queremos dar acceso:
 
 y ya podemos editar nuestros repos privados.
 
+También podemos ir directamente en cualquier momento a la rl <https://github.com/settings/applications> y cambiar nuestros permisos.
+
+
 
 ### Drawbacks according to Pattacini
 
