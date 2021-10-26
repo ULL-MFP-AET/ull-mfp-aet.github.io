@@ -134,6 +134,8 @@ Le damos los permisos adecuados:
 
 ![gitpos-request-permissions]({{site.baseurl}}/assets/images/gitpod/gitpos-request-permissions.png)   
 
+Pulsamos `Grant` sobre la organización a la que le queremos dar acceso:
+
 ![grant-access]({{site.baseurl}}/assets/images/gitpod/grant-access.png)                    
 
 y ya podemos editar nuestros repos privados.
