@@ -110,6 +110,7 @@ Lo que pasa (Abril 2021) es que GitPod está siendo ofertado como parte del [Gi
 * Repositorios privados
 
 
+### Ejemplo: Jekyll Blog 
 
 En el ejemplo se ve los apuntes de PL (un repo público usando Jekyll) siendo editado con VSCode:
 
@@ -118,7 +119,10 @@ En el ejemplo se ve los apuntes de PL (un repo público usando Jekyll) siendo ed
 todo funciona bien.
 
 Con este plan es posible acceder a repos privados. 
-En el repo en GitHub aparece un nuevo botón verde con etiqueta "GitPod". Obsérvese que el repo es privado:
+
+### Autorizando GitPod a Acceder a Nuestros repos
+
+En el repo en GitHub aparece el nuevo botón verde con etiqueta "GitPod". Obsérvese que el repo es privado:
 
 ![boton-gitpod-en-repo-privado]({{site.baseurl}}/assets/images/gitpod/boton-gitpod-en-repo-privado.png)    
 
