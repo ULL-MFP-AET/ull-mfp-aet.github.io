@@ -3,13 +3,13 @@ title: VS Code in Browsers
 toc: true
 --- 
 
-## Editing with GitHub.dev Editor
+# Editing with GitHub.dev Editor
 
-### Period in a repo
+## Period in a repo
 
 From any repo or pull request, developers can simply press the period (`.`) key to bring up the browser-based VS Code environment with the source code file ready for editing. 
 
-### Substitute github by github.dev in a GitHub URL
+## Substitute github by github.dev in a GitHub URL
 
 That dot press to bring up the web-based editor takes you to <https://github.dev/>, so the same one-press `.` functionality can be duplicated just by changing a URL from "github.com" to "github.dev".
 
