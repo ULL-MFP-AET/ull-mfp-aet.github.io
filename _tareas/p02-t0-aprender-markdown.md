@@ -73,10 +73,14 @@ Para manejar todo el proceso de edición pueden ayudarte estas notas:
 ## [Referencias](references)
 
 * [Mastering (GitHub) Markdown](https://guides.github.com/features/mastering-markdown/#examples)
-* [Documentación GitHub sobre la Interfaz Web]({{site.baseurl}}/documentacion-github-interfaz-web}})
+* [Documentación GitHub sobre la Interfaz Web]({{site.baseurl}}/pages/documentacion-github-interfaz-web)
+* [Visual Studio Code in Browsers]({{site.baseurl}}/pages/gitpod)
+
+* [GitHub Glossary](https://docs.github.com/en/free-pro-team@latest/github/getting-started-with-github/github-glossary)
+
+<!--
 * [A Simple Guide to GitHub for Non-Developers: How to Speak GitHub](https://unito.io/blog/guide-to-github-for-project-managers/#how-to-speak-github) contiene un glosario de términos
 * [A guide to using GitHub for people who don't code and don't want to code.](https://github.com/tvanantwerp/github-for-non-programmers) tvanantwerp/github-for-non-programmers GitBook
+-->
 * [Apuntes del curso Elaboración de Material Docente con GitBook](https://casianorodriguezleon.gitbooks.io/elaboracion-de-material-docente-con-gitbook/content/)
-* [GitHub Interface: Mover un archivo a una nueva ubicación](https://docs.github.com/es/free-pro-team@latest/github/managing-files-in-a-repository/moving-a-file-to-a-new-location)
-* [Visual Studio Code in Browsers]({{site.baseurl}}/pages/gitpod)
 
