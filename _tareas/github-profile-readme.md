@@ -29,6 +29,7 @@ Idem en el campus virtual.
 
 ## [Referencias](references)
 
+* [Managing your profile README](https://docs.github.com/en/account-and-profile/setting-up-and-managing-your-github-profile/customizing-your-profile/managing-your-profile-readme)
 * [abhisheknaiidu/awesome-github-profile-readme](https://github.com/abhisheknaiidu/awesome-github-profile-readme)
   * [Página web del repo](https://awesomegithubprofile.tech/)
   * [articles about how to write a profile readme](https://github.com/abhisheknaiidu/awesome-github-profile-readme#articles)
