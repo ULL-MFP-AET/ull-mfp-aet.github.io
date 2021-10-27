@@ -29,6 +29,9 @@ Idem en el campus virtual.
 
 ## [Referencias](references)
 
+* [abhisheknaiidu/awesome-github-profile-readme](https://github.com/abhisheknaiidu/awesome-github-profile-readme)
+  * [Página web del repo](https://awesomegithubprofile.tech/)
+  * [articles about how to write a profile readme](https://github.com/abhisheknaiidu/awesome-github-profile-readme#articles)
 * [Mastering (GitHub) Markdown](https://guides.github.com/features/mastering-markdown/#examples)
 * [Documentación GitHub sobre la Interfaz Web]({{site.baseurl}}/pages/documentacion-github-interfaz-web)
 * [Visual Studio Code in Browsers]({{site.baseurl}}/pages/gitpod)
