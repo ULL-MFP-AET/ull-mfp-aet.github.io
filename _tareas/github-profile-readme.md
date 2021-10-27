@@ -20,6 +20,9 @@ Aquí tienes un repo en el que se han recolectado ejemplos curiosos de *repos pr
   * [Página web del repo](https://awesomegithubprofile.tech/)
   * [articles about how to write a profile readme](https://github.com/abhisheknaiidu/awesome-github-profile-readme#articles)
 
+En el repo de entrega de la tarea en la organización deje enlaces a su página de profile y al crrespondiente repo.
+Idem en el campus virtual.
+ 
 ## Edición en la Nube de Repositorios GitHub
 
 * [Visual Studio Code in Browsers]({{site.baseurl}}/pages/gitpod)
