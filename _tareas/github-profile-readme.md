@@ -17,6 +17,7 @@ Tú decides qué información incluir en el README de tu perfil.
 Aquí tienes un repo en el que se han recolectado ejemplos curiosos de *repos profile*:
 
 * [abhisheknaiidu/awesome-github-profile-readme](https://github.com/abhisheknaiidu/awesome-github-profile-readme)
+  * [Página web del repo](https://awesomegithubprofile.tech/)
   * [articles about how to write a profile readme](https://github.com/abhisheknaiidu/awesome-github-profile-readme#articles)
 
 ## Edición en la Nube de Repositorios GitHub
