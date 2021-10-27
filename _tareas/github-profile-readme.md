@@ -1,7 +1,6 @@
 ---
 layout: default
 title: github-profile-readme
-myurl: 
 #permalink: tema0-introduccion/practicas/p02-t0-aprender-markdown/
 name: Managing your profile README
 date: 0000/01/03
@@ -14,6 +13,10 @@ Siguiendo las instrucciones en la documentación de GitHub [Managing your profil
 GitHub muestra el README de tu perfil al inicio de tu página de perfil.
 
 Tú decides qué información incluir en el README de tu perfil. 
+
+Aquí tienes un repo en el que se han recolectado ejemplos curiosos de *repos profile*:
+
+* [abhisheknaiidu/awesome-github-profile-readme](https://github.com/abhisheknaiidu/awesome-github-profile-readme)
 
 ## Edición en la Nube de Repositorios GitHub
 
