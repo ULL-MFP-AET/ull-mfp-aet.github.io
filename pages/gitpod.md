@@ -63,6 +63,13 @@ Observe the output in the terminal. We are running on the GitPod docker containe
 
 See [Sharing Running Workspaces](https://www.gitpod.io/docs/sharing-and-collaboration#sharing-running-workspaces)
 
+Básicamente: en [gitpod.io/workspaces](https://gitpod.io/workspaces) en los tres puntitos elegimos la opción compartir.
+Luego compartimos la URL del ws con la otra persona.
+
+A fecha de hoy, no muestra los cursores de los participantes.
+
+
+
 #### Snapshots
 
 Gitpod **lets you create reproducible examples for any programming environment and any size of project**. These are Snapshots.
