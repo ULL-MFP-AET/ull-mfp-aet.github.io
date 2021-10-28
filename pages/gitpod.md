@@ -59,18 +59,15 @@ Observe the output in the terminal. We are running on the GitPod docker containe
 ¡Ojo! tu VSCode local está compartiendo el GitPod Workspace. Cualquier modificación que hagas en el VSCode local se refleja en el GitPod Workspace en la nube y viceversa.
 
 
-### GitPod Snapshots
+### GitPod Sharing
 
-Whenever you want to share a reproducible example on StackOverflow or an issue report, providing real code that can be quickly tried, executed and explored is the best you can do. Online code playgrounds, such as CodePen or JSFiddle, are an excellent way to do that, as they are very accessible for both the creator and the readers. Unfortunately, they are not available for every programming platform, language and often don’t work for larger projects or examples.
+See [Sharing Running Workspaces](https://www.gitpod.io/docs/sharing-and-collaboration#sharing-running-workspaces)
 
-Gitpod lets you create reproducible examples for any programming environment and any size of project.
+#### Snapshots
 
-No matter what state your Gitpod workspace is in, taking a Snapshot captures everything and provides you a link to share anywhere: on issues, forums (StackOverflow), emails and blogs. Anybody who clicks on a snapshot link instantly gets an exact copy of that workspace, including any uncommitted file changes and the UI layout.
+Gitpod **lets you create reproducible examples for any programming environment and any size of project**. These are Snapshots.
 
-See
-
-* [Creating reproducibles for any programming language
-](https://www.gitpod.io/blog/workspace-snapshots)
+* [Creating reproducibles for any programming language](https://www.gitpod.io/blog/workspace-snapshots)
 
 ### Sustainable Node.js development with only a browser
 
