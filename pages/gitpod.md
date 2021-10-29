@@ -204,3 +204,9 @@ If you already have a Kubernetes cluster, or don’t want/cannot use AWS or GCP,
 * [A Beginner’s Guide to Understanding and Building Docker Images](https://jfrog.com/knowledge-base/a-beginners-guide-to-understanding-and-building-docker-images/)
 * [Config Docker for GitPod](https://www.gitpod.io/docs/config-docker)
 * [Docker in gitpod](https://www.gitpod.io/blog/docker-in-gitpod)
+
+## CodeSpaces
+
+
+* [GitHub Codespaces](https://docs.github.com/en/codespaces)
+* [GitHub Codespaces vs Gitpod – Full Stack Development Moves to the Cloud](https://www.freecodecamp.org/news/github-codespaces-vs-gitpod-cloud-based-dev-environments/) AUGUST 30, 2021
