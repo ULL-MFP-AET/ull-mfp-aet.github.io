@@ -66,7 +66,8 @@ Acepta la asignación de esta tarea y en el repositorio creado en GitHub edita e
 - Recuerda hacer "commits" para guardar los cambios.
 - En la tarea entrega el enlace al repo con los contenidos de tu trabajo
 
-
+* Añade una imagen-enlace. Se deberá ver la imagen pero esta será un enlace 
+a otra página
 
 
 ## Edición en la Nube de Repositorios GitHub
