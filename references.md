@@ -1,5 +1,12 @@
 # Referencias y Bibliografía
 
+## Teoría y Conceptos
+
+* [ESTRUCTURAS DEL APRENDIZAJE COOPERATIVO](http://proyectoaprender.es/formacion/es-ES/recursos/aprendizaje-cooperativo/16-estructuras-del-aprendizaje-cooperativo)
+* [El trabajo colaborativo como estrategia didáctica para la
+enseñanza/aprendizaje de la programación: una revisión sistemática de literatura](http://www.scielo.org.co/pdf/teclo/v21n41/v21n41a08.pdf), Oscar Revelo-Sánchez,, César A. Collazos-Ordóñez y Javier A. Jiménez-Toledo. TecnoLógicas. 2018
+* [Trabajo y Aprendizaje Colaborativo. Reflexiones y recursos en formación y aprendizaje](https://jesusmartinezmarin.org/2016/12/12/redefiniendo-el-aprendizaje-colaborativo/)
+
 ## Referencias sobre GitHub Education
 
 {% include github-education-references.md %}

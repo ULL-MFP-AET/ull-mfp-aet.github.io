@@ -1,6 +1,3 @@
-### GitHub Pages
-
-* Recuerda que GitHub provee un servicio de Hosting de páginas estáticas ([GitHub Pages](https://pages.github.com/)) que se sirven mediante Jekyll.
 
 ### Jekyll Docs
 
@@ -91,13 +88,6 @@
 * [The GitHub organization academicpages](https://github.com/academicpages) has several repos including one with a beautiful CV template at [academicpages/sb-personal](https://github.com/academicpages/sb-personal). You can see it deployed at 
 [https://academicpages.github.io/](https://academicpages.github.io/)
 
-
-### Cloud Editors: Prose, StackEdit ...
-
-* [stackedit.io](https://stackedit.io/) StackEdit is an  editor in the cloud: it can sync your files with Google Drive, Dropbox and GitHub. 
-* Prose: an Editor for GitHub Jekyll Pages
-* [BLOGGING LIKE A DEV: JEKYLL + GITHUB + PROSE.IO by Allan Denot 11 Jan 2015](https://allandenot.com/development/2015/01/11/blogging-like-a-dev-jekyll-github-prose-io.html)
-* [Using Prose](https://www.websbytodd.com/documentation/using-prose/#introduction)
 
 ### Favicon
 
