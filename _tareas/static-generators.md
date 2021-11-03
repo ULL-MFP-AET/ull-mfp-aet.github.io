@@ -20,6 +20,8 @@ Haga click en *http://127.0.0.1:4000 Follow link using forwarded port*
 
 ![]({{site.baseurl}}/assets/images/minimal-mistakes.png)
 
+A continuación lea los tutorials de [Jekyll](https://jekyllrb.com/docs/) y [Minimal Mistakes](https://github.com/mmistakes)
+
 
 ## References
 
