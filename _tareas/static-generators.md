@@ -14,7 +14,9 @@ Para el desarrollo usaremos [GitPod](https://www.gitpod.io/docs/getting-started)
 
 Al aceptar se le creará un repo con los archivos y carpetas necesarios para la generación de un web site usando Jekyll. Despliegue el repo en GitPod. el contenedor creado instalará Jekyll (lleva su tiempo, tenga paciencia) y arrancará Jekyll en modo servidor.
 
+![]({{site.baseurl}}/assets/images/jekyll-serve.png)
 
+Haga click en *http://127.0.0.1:4000 Follow link using forwarded port*
 
 ## References
 
