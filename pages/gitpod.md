@@ -198,12 +198,7 @@ If you already have a Kubernetes cluster, or don’t want/cannot use AWS or GCP,
 
 ### Referencias sobre GitPod
 
-* [The benefits of integrating Docker and Cloud IDE’s in the GitHub Classroom workflow](https://education.github.community/t/the-benefits-of-integrating-docker-and-cloud-ides-in-the-github-classroom-workflow/40724) by Ugo Pattacini
-* [Introduction to Gitpod](https://www.gitpod.io/docs)
-* [GitPod For Schools, Universities, and Coding Bootcamps](https://www.gitpod.io/education)
-* [A Beginner’s Guide to Understanding and Building Docker Images](https://jfrog.com/knowledge-base/a-beginners-guide-to-understanding-and-building-docker-images/)
-* [Config Docker for GitPod](https://www.gitpod.io/docs/config-docker)
-* [Docker in gitpod](https://www.gitpod.io/blog/docker-in-gitpod)
+{% include gitpod-references.md %}
 
 ## CodeSpaces
 

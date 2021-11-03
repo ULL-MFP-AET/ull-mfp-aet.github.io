@@ -12,6 +12,8 @@ En esta tarea vamos a construir un web site. Para ello usaremos los servicios de
 
 Para el desarrollo usaremos [GitPod](https://www.gitpod.io/docs/getting-started).
 
+Al aceptar se le creará un repo con los archivos y carpetas necesarios para la generación de un web site usando Jekyll. Despliegue el repo en GitPod. el contenedor creado instalará Jekyll (lleva su tiempo, tenga paciencia) y arrancará Jekyll en modo servidor.
+
 
 
 ## References
