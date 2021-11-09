@@ -8,6 +8,11 @@ task :serve do
   sh "bundle exec jekyll serve --future --watch --drafts --host 0.0.0.0 --port 8084"
 end
 
+desc "stop the server"
+task :stop do
+  sh "ps aux |grep jekyll |awk '{print $2}' | xargs kill -9"
+end
+
 desc "build and watch locally"
 task :bw do
   sh "bundle exec jekyll build --future --drafts --watch"

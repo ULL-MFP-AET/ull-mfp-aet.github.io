@@ -95,5 +95,5 @@
 
 ### Minimal Mistakes
 
-* [https://github.com/mmistakes](https://github.com/mmistakes)
+* [Minimal Mistakes Quick Start Guide](https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/)
 * [https://mademistakes.com/](https://mademistakes.com/) blog
