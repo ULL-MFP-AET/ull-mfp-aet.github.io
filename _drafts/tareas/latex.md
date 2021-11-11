@@ -22,7 +22,11 @@ En esta tarea aprenderemos las bases para generar un pdf conteniendo un document
 3. Abra este repo en GitPod
 4. Empiece a extender lo que hemos aprendido para ir diseñando el documento par a la memoria de TFM
 
+
+Este es el repo <https://github.com/crguezl/template-latex-markdown> usado como plantilla para esta tarea.
+
 {% include latex-references.md %}
+
 
 
 
