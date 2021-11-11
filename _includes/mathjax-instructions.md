@@ -44,7 +44,7 @@ See the [References section in this notes about \LaTeX]({{site.baseurl}}/referen
 
 Este es el repo <https://github.com/crguezl/template-latex-markdown> usado como plantilla para esta tarea.
 
-Véase También:
+Véase También: 
 
 * [Adding MathJax to a GitHub Pages Jekyll Blog](http://sgeos.github.io/github/jekyll/2016/08/21/adding_mathjax_to_a_jekyll_github_pages_blog.html)
 * [El código en estos apuntes que activa MathJax](https://github.com/ULL-MFP-AET-2122/ull-mfp-aet-2122.github.io/blob/main/_layouts/default.html#L21-L35)
