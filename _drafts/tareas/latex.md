@@ -12,7 +12,7 @@ En esta tarea aprenderemos las bases para generar un pdf conteniendo un document
 
 ## Using $$\LaTeX$$  in your Web Site
 
-{% include mathjax-instructions %}
+{% include mathjax-instructions.md %}
 
 ## $$\LaTeX$$ para generar un pdf
 
