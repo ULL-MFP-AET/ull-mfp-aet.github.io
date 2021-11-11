@@ -1,3 +1,3 @@
 # Using $$\LaTeX$$  in your Web Site
 
-{% include mathjax-instructions %}
+{% include mathjax-instructions.md %}
