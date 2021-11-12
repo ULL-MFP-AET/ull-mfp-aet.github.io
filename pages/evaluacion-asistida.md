@@ -1,6 +1,12 @@
 ---
 ---
 
+## Comprobando la asistencia de los alumnos via los commits
+
+1. Abrimos  una nueva ventana en el navegador
+2. `gh org-browse-repo -CS static -P 25`
+
+
 ### Creando un super-repo con todos los repos de la práctica:
  
 ```
