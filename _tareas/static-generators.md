@@ -2,7 +2,6 @@
 layout: default
 title: Generating a Web Site with a Static Generator
 #permalink: tema0-introduccion/practicas/p02-t0-aprender-markdown/
-name: Managing your profile README
 date: 0000/01/04
 ---
 

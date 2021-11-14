@@ -1,7 +1,8 @@
 ---
+toc: true
 ---
 
-## Comprobando la asistencia de los alumnos via los commits
+### Comprobando la asistencia y participación de los alumnos via los commits
 
 1. Abrimos  una nueva ventana en el navegador
 2. `gh org-browse-repo -CS static -P 25`
