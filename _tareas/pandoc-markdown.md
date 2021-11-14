@@ -7,7 +7,7 @@ date: 0000/01/05
 
 # Generating Different Formats with pandoc
 
-En esta tarea vamos a aprender a convertir entre formatos y a generar distintos formatos, sobre todo PDFs. Para ello usaremos [pandoc](https://pandoc.org/).
+En esta tarea vamos a aprender a convertir entre formatos y a generar distintos formatos, sobre todo PDFs. Para ello usaremos [pandoc](https://pandoc.org/). Estudiaremos también como escribir una memoria de fin de título, un artículo científico, unos apuntes y otros tipos de documentos usando MarkDown y  $$\LaTeX$$.
 
 Para el desarrollo usaremos [GitPod](https://www.gitpod.io/docs/getting-started).
 
