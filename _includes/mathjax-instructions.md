@@ -57,8 +57,10 @@ src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js">
 </script>
 ```
 
+`➜  static-generator-casiano-rodriguez-alumnoudv5 git:(ensayo-2021-11-11) git diff master  profesion/_posts/2021-11-11-matematicas.md`
+
+
 ```diff
-➜  static-generator-casiano-rodriguez-alumnoudv5 git:(ensayo-2021-11-11) git diff master  profesion/_posts/2021-11-11-matematicas.md 
 diff --git a/profesion/_posts/2021-11-11-matematicas.md b/profesion/_posts/2021-11-11-matematicas.md
 new file mode 100644
 index 0000000..1c2ef8a
