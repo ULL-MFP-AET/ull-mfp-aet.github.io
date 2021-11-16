@@ -57,6 +57,9 @@ src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js">
 </script>
 ```
 
+
+Now you can use LaTex formulas everywhere in your website:
+
 `➜  static-generator-casiano-rodriguez-alumnoudv5 git:(ensayo-2021-11-11) git diff master  profesion/_posts/2021-11-11-matematicas.md`
 
 
@@ -79,18 +82,6 @@ index 0000000..1c2ef8a
 +
 +$$mean = \frac{\displaystyle\sum_{i=1}^{n} x_{i}}{n}$$
 \ No newline at end of file
-```
-
-Now you can use LaTex formulas everywhere in your website:
-
-```
-You can insert some formula $$f(x) = \int_{-\infty}^\infty \hat f(\xi)\,e^{2 \pi i \xi x} \,d\xi$$ in the middle of a sentence.
-
-You can also put large formulas in their own paragraph.
-
-$$f(x) = \int_{-\infty}^\infty \hat f(\xi)\,e^{2 \pi i \xi x} \,d\xi$$
-
-$$mean = \frac{\displaystyle\sum_{i=1}^{n} x_{i}}{n}$$
 ```
 
 You can insert some formula $$f(x) = \int_{-\infty}^\infty \hat f(\xi)\,e^{2 \pi i \xi x} \,d\xi$$ in the middle of a sentence.

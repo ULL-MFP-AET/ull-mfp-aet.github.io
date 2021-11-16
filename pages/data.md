@@ -1,9 +1,8 @@
-----
-----
-
 # Data
 
 Véase el tutorial [Tabulate CSV Data](https://jekyllrb.com/tutorials/csv-to-table/)
+
+Puede descargarse el fichero <https://github.com/ULL-MFP-AET-2122/static-generator-casiano-rodriguez-alumnoudv5/blob/84ed8b73ea8c3848dc7e0cffaf866f9cbff96e7c/_data/calificaciones.csv> en el directorio `_data` de <https://github.com/ULL-MFP-AET-2122/static-generator-casiano-rodriguez-alumnoudv5/tree/ensayo-2021-11-10> de la rama `ensayo-2021-11-10`
 
 ### Inspeccionando site.data 
 
@@ -18,9 +17,9 @@ Véase el tutorial [Tabulate CSV Data](https://jekyllrb.com/tutorials/csv-to-tab
 {% endraw %}
 
 
-### Creando una Tabla en HTML
+![]({{site.baseurl}}/assets/images/jekyll-inspect-filter.png)
 
-* [tablerow](https://liquidjs.com/tags/tablerow.html)
+### Creando una Tabla en HTML
 
 
 {% raw %}
@@ -43,5 +42,8 @@ Véase el tutorial [Tabulate CSV Data](https://jekyllrb.com/tutorials/csv-to-tab
 </table>
 ```
 {% endraw %}
+
+* [tablerow iteration](https://shopify.dev/api/liquid/tags/iteration-tags#tablerow)
+* [tablerow object](https://liquidjs.com/tags/tablerow.html)
 
 Véase <https://github.com/ULL-MFP-AET-2122/static-generator-casiano-rodriguez-alumnoudv5>
