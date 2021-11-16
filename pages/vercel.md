@@ -20,4 +20,4 @@ In this case the repo is a Jekll web site. The Vercel app is smart enough to det
 
 and now we have our site deployed. In this example is at <https://crguezl-github-io.vercel.app/>:
 
-![![]({{ site.baseurl }}/assets/images/vercel/deployment-completed.png)](https://crguezl-github-io.vercel.app/)](https://crguezl-github-io.vercel.app/)
+[![]({{ site.baseurl }}/assets/images/vercel/deployment-completed.png)](https://crguezl-github-io.vercel.app/)](https://crguezl-github-io.vercel.app/)
