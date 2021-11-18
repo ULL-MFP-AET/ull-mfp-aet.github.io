@@ -15,7 +15,8 @@ Estos son los objetivos:
 En el repo de entrega ponga los enlaces relevantes: 
 
 - Para 1) ponga los enlaces a su web site, a los artículos en el web site, al repo de asignación 
-- Para 2) los enlaces al repo y dentro del mismo a la carpeta en la que haya hecho el desarrollo. Opcionalmente haga un snapshot de su gitpod y compártalo con el profesor.
+- Para 2) los enlaces al repo y dentro del mismo a la carpeta en la que haya hecho el desarrollo. 
+  Opcionalmente haga un snapshot de su gitpod y compártalo con el profesor dejando el enlace (el repo de esta asignación es privado).
 
 ## References
 
