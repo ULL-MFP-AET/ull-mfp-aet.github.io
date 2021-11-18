@@ -1,0 +1,38 @@
+{% if page.video %}
+{% if page.video.first%}
+
+
+<!-- Warning duplicated code below-->
+{% for video in page.video %}
+    {% capture video_src %} 
+     https://www.youtube-nocookie.com/embed/{{ video }}
+    {% endcapture %}
+    {% assign video_src = video_src | strip %}
+
+    {% unless video_src == "" %}
+<div class="responsive-video-container">
+    <iframe src="{{ video_src }}" 
+      frameborder="0" 
+      webkitAllowFullScreen mozallowfullscreen allowfullscreen>
+    </iframe>
+</div>
+   {% endunless %}
+{% endfor %}
+
+{% else  %}
+
+{% capture video_src %}
+   https://www.youtube-nocookie.com/embed/{{ page.video }}
+{% endcapture %}
+{% assign video_src = video_src | strip %}
+
+{% unless video_src == "" %}
+<div class="responsive-video-container">
+    <iframe src="{{ video_src }}" 
+      frameborder="0" 
+      webkitAllowFullScreen mozallowfullscreen allowfullscreen>
+    </iframe>
+</div>
+{% endunless %}
+{% endif %}
+{% endif %}
