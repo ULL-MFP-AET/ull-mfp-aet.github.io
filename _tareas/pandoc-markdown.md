@@ -17,5 +17,8 @@ Al aceptar se le creará un repo con los archivos y carpetas necesarios para usa
 
 * [pandoc](https://pandoc.org/)
 * [GitHub Pages](https://pages.github.com/)
+* [Awesome Scientific Writing Awesome](https://github.com/writing-resources/awesome-scientific-writing) also <https://writing-resources.github.io/awesome-scientific-writing/>
+
+
 {% include gitpod-references.md %}
 
