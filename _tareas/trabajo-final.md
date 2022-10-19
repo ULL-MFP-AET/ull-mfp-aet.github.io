@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Trabajo Final de la Parte Desarrollo Colaborativo de Proyectos de AET
-#permalink: tema0-introduccion/practicas/p02-t0-aprender-markdown/
+#permalink: tema0-introduccion/practicas/aprender-markdown/
 date: 0000/01/06
 ---
 

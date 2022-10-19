@@ -3,7 +3,7 @@ layout: default
 title: registrarse-en-github
 name: Registrarse en GitHub
 myurl: https://campusdoctoradoyposgrado.ull.es/mod/assign/view.php?id=282455&forceview=1
-permalink: /tema0-introduccion/practicas/p01-t0-registrarse-en-github/
+permalink: /tema0-introduccion/practicas/registrarse-en-github/
 date: 0000/01/01
 ---
 

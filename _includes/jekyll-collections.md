@@ -59,10 +59,10 @@ when runned in this site produces:
   ```
   [~/.../sytws2021/apuntes(curso2021)]$ tree _tareas
   _tareas
-  ├── 01p01-t0-pb-gh-campus-expert.md
-  ├── 01p01-t1-iaas.md
+  ├── pb-gh-campus-expert.md
+  ├── iaas.md
   ├── ...
-  └── 12p12-tfa-user-experience.md
+  └── tfa-user-experience.md
 
   0 directories, 17 files
 ```
@@ -73,7 +73,7 @@ when runned in this site produces:
 
   ```
     ---
-    name: p10-t3-jekyll-search
+    name: jekyll-search
     visible: true
     date: 2020-11-30
     my_order: 4
