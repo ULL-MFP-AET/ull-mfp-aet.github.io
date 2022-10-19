@@ -7,7 +7,8 @@
 
 {% include practicas-publicadas.md  %}
 
-## Tópicos Avanzados
+<!--
+# Tópicos Avanzados
 
 * [Introducción a JAMStack]({{site.bseurl}}/pages/jam)
-
+-->

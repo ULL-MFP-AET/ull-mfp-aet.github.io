@@ -1,12 +1,18 @@
-# Recursos
+---
+title: "Recursos"
+aula: "Edificio de la Chocolatera. Última planta. B01.3.02"
+porteria: "922 319012"
+---
+
+# {{ page.title }}
 
 ## Aula
 
-Edificio de la Chocolatera. Última planta. B01.3.02
+{{ page.aula }}
 
 ## Portería
 
-Teléfono: 922 319012 
+Teléfono: {{ page.porteria }}
 
 ## BULL
 
