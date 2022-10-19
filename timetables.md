@@ -6,12 +6,16 @@
 
 ## Calendario de la Asignatura 
 
-- Primer cuatrimestre: 27 septiembre 2021 al 21 enero 2022.
-- Segundo cuatrimestre: 10 febrero hasta 30 de marzo 2022. Inicio del Prácticum
+* Primer cuatrimestre: 27 septiembre 2022 al 12 enero 2023.
+* Segundo cuatrimestre: 30 enero hasta 16 de marzo 2023. Inicio del Prácticum
 
-1. Del 28 de septiembre al 21 de octubre se impartirán los temas asignados al profesor Cándido Caballero Gil.
-2. Del 26 de octubre al 18 de noviembre se impartirán los temas asignados al profesor Casiano Rodríguez León.
-3. Del 23 de noviembre al 30 de marzo se impartirán los temas asignados a los profesores Nicolás Marichal Plasencia y Juan Manuel Rodríguez González.
+* Del 27 de septiembre al 17 de octubre de 2022 se impartirán los temas asignados al profesor Cándido Caballero Gil.
+
+* Del Jueves 20 de octubre al 17 de noviembre de 2022 se impartirán los temas asignados al profesor Casiano Rodríguez León. 
+  * El Jueves 3 de Octubre de 2022 la clase la impartirá el profesor Cándido Caballero Gil.
+
+* Del 22 de noviembre de 2022 al 16 de marzo de 2023 se impartirán los temas asignados a los profesores Nicolás Marichal Plasencia y Juan Manuel Rodríguez González.
+ 
  
 ## Horarios
 

@@ -2,13 +2,17 @@
 title: "Recursos"
 aula: "Edificio de la Chocolatera. Última planta. B01.3.02"
 porteria: "922 319012"
+lab: 
+  lugar: "aula de informática B1.1.07"
+  puestos: "28 puestos"
 ---
 
 # {{ page.title }}
 
-## Aula
+## Aulas
 
-{{ page.aula }}
+- Aula: {{ page.aula }}
+- Lab: {{ page.lab.lugar }} {{ page.lab.puestos }}
 
 ## Portería
 

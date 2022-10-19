@@ -1,7 +1,7 @@
 ---
 layout: default
 title: aprender-markdown
-myurl: https://campusdoctoradoyposgrado.ull.es/mod/assign/view.php?id=282485&forceview=1
+myurl: "https://campusdoctoradoyposgrado2223.ull.es/mod/assign/view.php?id=890"
 permalink: tema0-introduccion/practicas/aprender-markdown/
 name: Aprender Markdown
 date: 0000/01/02

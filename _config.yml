@@ -19,10 +19,10 @@ organization:
   name: ULL-MFP-AET-2223
   master: https://github.com/ULL-MFP-AET-2223/ull-mfp-aet-2223.github.io/tree/master/
 apuntes_repo: https://github.com/ULL-MFP-AET-2223/ull-mfp-aet-2223.github.io/
-campus_virtual: https://campusdoctoradoyposgrado2223.ull.es/course/view.php?id=2223110477
-calificador: https://campusdoctoradoyposgrado.ull.es/grade/report/grader/index.php?id=2020110589
+campus_virtual: "https://campusdoctoradoyposgrado2223.ull.es/course/view.php?id=2223110052"
+calificador: https://campusdoctoradoyposgrado2223.ull.es/grade/report/index.php?id=2223110052
 tareas_en_el_campus: https://campusvirtual.ull.es/ingenieriaytecnologia/1920/mod/assign/index.php?id=201911070
-profesor: https://www.ull.es/apps/guias/guias/view_teacher_niu/837/crguezl/
+profesor: "https://www.ull.es/apps/guias/guias/view_teacher_niu/984/crguezl/"
 profesor_github: crguezl
 chat: https://chat.google.com
 future: true
@@ -36,7 +36,7 @@ disqus:
   url: https://procesadores-de-lenguajes.disqus.com/embed.js
   comments: true
 classroom: 
-  url: https://classroom.github.com/classrooms/90842445-ull-mfp-aet-2223
+  url: "https://classroom.github.com/classrooms/108617085-ull-mfp-aet-2223"
   name: ULL-MFP-AET-2223
 collections:
   tareas:
