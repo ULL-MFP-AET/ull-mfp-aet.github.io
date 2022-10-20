@@ -43,7 +43,8 @@ Eso significa que cuando hagan click en la aceptación  de la tarea les saldrá 
 {% include instrucciones-tareas-de-equipo.md %}
 
 Una vez creado el equipo y aceptada la asignación deberá aparecer despues de un momento la URL del repo recién creado.
-Si no aparece, refresque la página en el navegador. Se habrá creado un repo con una URL como esta
+**Si no aparece, refresque la página en el navegador**. Se habrá creado un repo con una URL como esta
+
 "https://github.com/{{ site.organization.name }}/{{ page.title }}-nombre-apellido1-apellido2-aluXXXX"
 
 
