@@ -55,3 +55,6 @@ En cualquier caso, seas profesor o estudiante, para completar esta tarea deberá
 Espera a realizar la siguiente práctica [Aprender Markdown]({{site.baseurl}}/tema0-introduccion/practicas/aprender-markdown/) antes de hacer la entrega de esta tarea. 
 Una vez que haya aprendido a escribir  usando Markdown, entregue en el repo un fichero `README.md` con su informe. En el Campus sube un ZIP con los contenidos el repo.
 
+## Rúbrica
+
+{% include rubrica.md -%}
