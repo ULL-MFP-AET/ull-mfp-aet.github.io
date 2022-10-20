@@ -10,7 +10,7 @@ rubrica:
   - El nombre del equipo creado sigue el formato correcto
   - "Se incluyen todos los aspectos solicitados en el markdown y se visualizan correctamente"
   - "Se ha aprendido a usar un editor  en la nube o en local"
-  - "Ha entregado el enlace en el campus con el repo"
+  - "Ha entregado el enlace al repo en el campus"
 ---
 
 - [Aprender Markdown (aprender-markdown)](#aprender-markdown-aprender-markdown)
