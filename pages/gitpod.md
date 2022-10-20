@@ -1,7 +1,25 @@
 ---
-title: VS Code in Browsers
+title: Edición en la Nube 
 toc: true
 --- 
+
+# {{ page.title }}
+
+Hay múltiples formas de editar en la nube un repositorio GitHub.
+Recogemos aquí estos:
+
+1. Editar directamente usando el editor on-line de GitHub
+2. Usar el editor GitHub.dev: simplemente  tecleando el punto cuando se está visitando el repo
+3. Usar GitPod
+4. Usar Codespaces (si se dispone de este servicio)
+
+## Editor on-line de GitHub
+
+Véase 
+
+* La sección [Editar archivos](https://docs.github.com/es/repositories/working-with-files/managing-files/editing-files)
+* El Editor on-line usado por GH es [Codemirror](https://codemirror.net/)
+* [Documentación GitHub sobre la Interfaz Web]({{site.baseurl}}/pages/documentacion-github-interfaz-web)
 
 ## Editing with GitHub.dev Editor
 
@@ -16,6 +34,17 @@ That dot press to bring up the web-based editor takes you to <https://github.dev
 See also:
 
 * [One-Click VS Code in Browser from GitHub Repo ](https://visualstudiomagazine.com/articles/2021/08/31/github-vs-code.aspx)
+
+## CodeSpaces
+
+Codespaces es un servicio de GH que provee el mismo entorno de desarrollo que VSCode en la nube de GH. 
+
+* Este conjunto de videos es conveniente para empezar con Codespaces <https://m.youtube.com/playlist?list=PLmsFUfdnGr3wTl-NCblzcrEv2lFSX975->
+* [GitHub Codespaces](https://docs.github.com/en/codespaces) en docs.github.com
+* [GitHub Codespaces vs Gitpod – Full Stack Development Moves to the Cloud](https://www.freecodecamp.org/news/github-codespaces-vs-gitpod-cloud-based-dev-environments/) AUGUST 30, 2021
+
+
+Consulte la discusión en <https://github.com/community/Global-Campus-Teachers/discussions/118#discussioncomment-3715087>
 
 ## GitPod 
 
@@ -200,8 +229,3 @@ If you already have a Kubernetes cluster, or don’t want/cannot use AWS or GCP,
 
 {% include gitpod-references.md %}
 
-## CodeSpaces
-
-
-* [GitHub Codespaces](https://docs.github.com/en/codespaces)
-* [GitHub Codespaces vs Gitpod – Full Stack Development Moves to the Cloud](https://www.freecodecamp.org/news/github-codespaces-vs-gitpod-cloud-based-dev-environments/) AUGUST 30, 2021
