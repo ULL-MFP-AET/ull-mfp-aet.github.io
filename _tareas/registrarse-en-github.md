@@ -13,6 +13,12 @@ rubrica:
   - "Ha entregado el enlace al repo en el campus"
 ---
 
+- [Registrarse en GitHub (registrarse-en-github)](#registrarse-en-github-registrarse-en-github)
+  - [Descuentos](#descuentos)
+  - [Entrega](#entrega)
+  - [Rúbrica](#rúbrica)
+
+
 # Registrarse en GitHub (registrarse-en-github)
 
 En esta tarea deberás registrarte en [GitHub.com](https://github.com).
