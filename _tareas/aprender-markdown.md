@@ -10,7 +10,7 @@ rubrica:
   - El nombre del equipo creado sigue el formato correcto
   - Ha rellenado el custionario con la relación GitHub/AluXXX
   - "Se incluyen todos los aspectos solicitados en el markdown y se visualizan correctamente"
-  - "Se ha aprendido a usar un editor  en la nube o en local"
+  - "Se ha aprendido a usar un editor  en la nube y/o en su máquina local"
   - "Ha entregado el enlace al repo en el campus"
 ---
 
