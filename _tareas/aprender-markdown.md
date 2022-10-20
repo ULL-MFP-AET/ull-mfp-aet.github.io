@@ -8,6 +8,7 @@ date: 0000/01/02
 toc: true
 rubrica:
   - El nombre del equipo creado sigue el formato correcto
+  - Ha rellenado el custionario con la relación GitHub/AluXXX
   - "Se incluyen todos los aspectos solicitados en el markdown y se visualizan correctamente"
   - "Se ha aprendido a usar un editor  en la nube o en local"
   - "Ha entregado el enlace al repo en el campus"
