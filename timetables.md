@@ -19,11 +19,13 @@
  
 ## Horarios
 
+* Donde: B1,3.03 o B1.1.07 aula de informática (28 puestos)
 * <a  href="https://drive.google.com/file/d/15eABsmmoDK4SjjNzsUp0Wr7b6qLYEqdv/view" target="_blank">Horarios de la Especialidad Enseñanza de la Tecnología</a>
   - Martes y Jueves de 17:30 a 19:30. 
   - Aula de informática: La B1.1.07, con 28 puestos.
 
 {% include embeded-calendar-iframe.html %}
+
 
 ## Horarios de Tutorías
 
