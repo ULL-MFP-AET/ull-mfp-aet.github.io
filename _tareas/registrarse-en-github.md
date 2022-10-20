@@ -9,8 +9,7 @@ video: "ezxRcdJ8glM"
 rubrica:
   - Se ha registrado en GitHub
   - Ha rellenado el formulario correctamente
-  - Ha realizado un informe correcto
-  - "Ha entregado el enlace al repo en el campus"
+  - "Ha entregado el enlace al enlace en el campus"
 ---
 
 - [Registrarse en GitHub (registrarse-en-github)](#registrarse-en-github-registrarse-en-github)
@@ -58,8 +57,7 @@ En cualquier caso, seas profesor o estudiante, para completar esta tarea deberá
 
 ## Entrega
 
-Espera a realizar la siguiente práctica [Aprender Markdown]({{site.baseurl}}/tema0-introduccion/practicas/aprender-markdown/) antes de hacer la entrega de esta tarea. 
-Una vez que haya aprendido a escribir  usando Markdown, entregue en el repo un fichero `README.md` con su informe. En el Campus sube un ZIP con los contenidos el repo.
+Entrega el enlace  a tu usuario GitHub en la tarea del Campus. 
 
 ## Rúbrica
 
