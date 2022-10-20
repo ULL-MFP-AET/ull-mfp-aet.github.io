@@ -1,0 +1,31 @@
+{
+  "data": {
+    "organization": {
+      "teams": {
+        "totalCount": 1,
+        "edges": [
+          {
+            "node": {
+              "name": "casiano-rodriguez-leon-alumnoudv4",
+              "members": {
+                "totalCount": 1,
+                "edges": [
+                  {
+                    "memberAccessUrl": "https://github.com/orgs/ULL-MFP-AET-2223/people/casiano",
+                    "node": {
+                      "name": "Casiano",
+                      "url": "https://github.com/casiano",
+                      "email": "",
+                      "login": "casiano"
+                    }
+                  }
+                ]
+              },
+              "url": "https://github.com/orgs/ULL-MFP-AET-2223/teams/casiano-rodriguez-leon-alumnoudv4"
+            }
+          }
+        ]
+      }
+    }
+  }
+}
