@@ -1,6 +1,7 @@
 - [Calendarios, Horarios y Exámenes](#calendarios-horarios-y-exámenes)
   - [Calendario Académico](#calendario-académico)
   - [Calendario de la Asignatura](#calendario-de-la-asignatura)
+  - [Donde](#donde)
   - [Horarios](#horarios)
   - [Horarios de Tutorías](#horarios-de-tutorías)
 
@@ -24,10 +25,12 @@
 
 * Del 22 de noviembre de 2022 al 16 de marzo de 2023 se impartirán los temas asignados a los profesores Nicolás Marichal Plasencia y Juan Manuel Rodríguez González.
  
+## Donde
+
+Aula B1.3.03 y/o B1.1.07 aula de informática (28 puestos)
  
 ## Horarios
 
-* Donde: B1.3.03 o B1.1.07 aula de informática (28 puestos)
 * <a  href="https://drive.google.com/file/d/15eABsmmoDK4SjjNzsUp0Wr7b6qLYEqdv/view" target="_blank">Horarios de la Especialidad Enseñanza de la Tecnología</a>
   - Martes y Jueves de 17:30 a 19:30. 
   - Aula de informática: La B1.1.07, con 28 puestos.
