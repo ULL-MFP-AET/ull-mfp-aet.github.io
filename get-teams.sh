@@ -27,7 +27,7 @@ QUERY='query getInfo($organization: String!) {
   }
 }'
 
-TEAMS=$(gh api graphql -F organization="$ORG" -f query="$QUERY" | jq .)
+TEAMS=$(gh api graphql -F organization="$ORG" -f query="$QUERY" )
 
 
-echo $TEAMS
+echo $TEAMS 

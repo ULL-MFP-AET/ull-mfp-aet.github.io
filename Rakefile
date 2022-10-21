@@ -3,10 +3,19 @@ task :default do
   sh "git ci -am 'AET 2022/2023' && git push -u origin main && git push -u aet2223 main"
 end
 
+desc "Actualizar teams y Publicar"
+task :publish => [ :teams ] do
+  sh "git ci -am 'AET 2022/2023' && git push -u origin main && git push -u aet2223 main"
+end
 
 desc "update AET teams"
 task :teams do
-  sh "./get-teams.sh > _data/teams.json"
+  sh ". ./get-teams.sh > _data/teams.json"
+end
+
+desc "update AET students"
+task :students do
+  sh ". ./get-teams.sh > _data/students.json"
 end
 
 desc "serve locally"
