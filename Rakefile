@@ -3,6 +3,12 @@ task :default do
   sh "git ci -am 'AET 2022/2023' && git push -u origin main && git push -u aet2223 main"
 end
 
+
+desc "update AET teams"
+task :teams do
+  sh "./get-teams.sh > _data/teams.json"
+end
+
 desc "serve locally"
 task :serve do
   sh "bundle exec jekyll serve --future --watch --drafts --host 0.0.0.0 --port 8084"
