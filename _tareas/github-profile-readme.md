@@ -113,6 +113,9 @@ En el [foro de la organización de AET]({{ page.foro}}) dentro de la categoría 
 * o bien contestas la pregunta de otro alumno 
 * o bien añades un breve resumen comentando tu opinión sobre el artículo
 
+Añade un foro a la organización que creaste para tu asignatura.
+
+
 ## Entrega
 
 En el repo de entrega de esta tarea en esta organización dejas:
@@ -120,9 +123,7 @@ En el repo de entrega de esta tarea en esta organización dejas:
 1. Enlaces a tu página de profile y al correspondiente repo. Puedes encontrar ejemplos de entregas para una práctica similar de los alumnos de la asignatura [Aprendizaje y Enseñanza de La Tecnología del curso 21/22 aquí](https://github.com/orgs/ULL-MFP-AET-2122/repositories?q=profile-readme&type=all&language=&sort=)
 2. Enlace a la organización creada y al classroom de tu asignatura
 
-
 ## Referencias
-
 
 {% include github-education-references.md %}
 
