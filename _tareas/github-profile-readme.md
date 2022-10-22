@@ -108,7 +108,7 @@ En el [foro de la organización de AET]({{ page.foro}}) dentro de la categoría 
 
 * o bien añades alguna pregunta sobre algo que no hayas entendido 
 * o bien contestas la pregunta de otro alumno 
-* o bien añades un breve resumen 
+* o bien añades un breve resumen comentando tu opinión sobre el artículo
 
 ## Entrega
 
