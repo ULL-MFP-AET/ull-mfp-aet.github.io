@@ -47,7 +47,7 @@ En este paso deberás crear ahora
 1. una organización para una asignatura que quieres impartir 
    * El nombre de la organización debe ser `ull-mfp-aet-2223-aluXXXX-siglas` donde `aluXXXX` es tu identificador ULL y `siglas` son las siglas de tu asignatura.  Si sale muy largo suprime las siglas
    * Invita a [crguezl](https://github.com/crguezl) como **owner** de la organización
-   * Vaya a settings y configurelá. Añádale una profile picture y actualize su profile picture personal
+   * Vaya a settings y configure la org. Añádale una profile picture y actualize su profile picture personal
    * Recuerda poner el enlace a tu organización en el informe de esta práctica
 2. añáde a la organización su repo de perfil/Profile. 
 
