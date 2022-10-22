@@ -99,7 +99,7 @@ Crea  y configura una primera tarea asignación de grupo en GitHub Classroom par
 
 
 
-## Aprendiend s usar un Foro de una Organización
+## Aprendiendo a usar un Foro de una Organización
 
 Deberás leer el artículo [GitHub in the Classroom: Lessons Learnt]({{ site.baseurl}}/assets/pdfs/github-in-the-classroom-lessons-learnt.pdf) por Yu-Cheng Tu, Valerio Terragni, Ewan Tempero, Asma Shakil,
 Andrew Meads, Nasser Giacaman, Allan Fowler, Kelly Blincoe. University of Auckland, [The Australasian Computing Education Conference](https://aceconference.wordpress.com/previous-conferences/), February 14–18, 2022, Virtual Event, Australia.
