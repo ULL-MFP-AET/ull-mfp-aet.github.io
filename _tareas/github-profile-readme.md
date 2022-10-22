@@ -76,20 +76,20 @@ Crea una asignación de grupo GHC para tu clase
 * Configurala como una asignación de grupo con un sólo miembro por grupo como la primera que has hecho en este curso. 
 * Usa la técnica descrita en la sección [Segunda Solución: Asignaciones de Grupos]({{ site.baseurl}}/pages/github-classroom.html#segunda-soluci%C3%B3n-asignaciones-de-grupos) y dale las instrucciones correspondientes a tus [alumnos]({{ page.equipos}}).
 * Crea un repo de template para la asignación con las instrucciones y ejemplos para la tarea. Usa dicho template para la asignación
-* Enviale el enlace a tus compañeros de [equipo]({{ page.equipos}})
-* Documenta lo que has hecho en el fichero `README.md`  de tu repo de entrega de la práctica
+* Enviale el enlace a tus compañeros de [equipo]({{ page.equipos}}) ULL
+* Documenta lo que has hecho en el fichero `README.md`  de tu repo de entrega de esta práctica
   
 ## Acepta tus asignaciones como estudiante
 
-Acepta las asignaciones que te han hecho tus profesores compañeros de equipo y procede a la entrega realizando un [issue]() mencionando al correspondiente profesor.
+Acepta las asignaciones que te han hecho tus profesores/compañeros de [equipo]({{ page.equipos}}) y procede a la entrega realizando un [issue](https://docs.github.com/en/issues) mencionando al correspondiente profesor y a `@crguezl`.
 
 ## Como profesor evalúa a tus estudiantes
 
-Responde a las incidencias generadas por tus alumnos indicándoles si la tarea está bien hecha y cerrando la incidencia o indicándoles que deben corregir la tarea y volver a enviar una incidencia para su aprobación.
+Responde a las incidencias generadas por tus alumnos indicándoles si la tarea está bien hecha y cerrando la incidencia o indicándoles que deben corregir la tarea y volver a enviar una incidencia para su aprobación. En la incidencia, menciona mencionando al alumno y a `@crguezl`
 
 ## Si eres profesor actualiza la organización para que se beneficie de los descuentos
 
-Deberás, si no lo hiciste en la [tarea inicial]({{ site.baseurl }}/registrarse-en-github), beneficiarte de los descuentos que ofrece GitHub para lo que **deberás verificar tu condición de empleo académico** y una vez seas aceptado en el [programa *"Global Campus"*](https://docs.github.com/en/education/explore-the-benefits-of-teaching-and-learning-with-github-education/use-github-at-your-educational-institution/about-github-campus-program), podrás solicitar hojas de atajos, guías, pegatinas, etc. para tus estudiantes. Busca la sección de descuentos en la página [https://education.github.com](https://education.github.com/discount_requests/teacher_application)
+Deberás, si es posible y si no lo hiciste en la [tarea inicial]({{ site.baseurl }}/registrarse-en-github), beneficiarte de los descuentos que ofrece GitHub para lo que **deberás verificar tu condición de empleo académico** y una vez seas aceptado en el [programa *"Global Campus"*](https://docs.github.com/en/education/explore-the-benefits-of-teaching-and-learning-with-github-education/use-github-at-your-educational-institution/about-github-campus-program), podrás solicitar hojas de atajos, guías, pegatinas, etc. para tus estudiantes. Busca la sección de descuentos en la página [https://education.github.com](https://education.github.com/discount_requests/teacher_application)
 
 Una vez que estás en el [programa *"Global Campus"*](https://docs.github.com/en/education/explore-the-benefits-of-teaching-and-learning-with-github-education/use-github-at-your-educational-institution/about-github-campus-program) podrás acogerte a los beneficios que ofrece GitHub a los educadores. 
 
