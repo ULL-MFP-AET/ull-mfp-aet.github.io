@@ -60,6 +60,9 @@ Los siguientes recursos te ayudarán a realizar estas tareas:
 ## Crea un Classroom para la Organización
 
 Crea un aula usando GitHub Classroom y la asocias a la organización creada en el apartado anterior. 
+Si GHC  te provee varias aulas quédate sólo con una. 
+Renombra el aula para que su nombre coincida con el de la organización.
+
 **Invita a [crguezl](https://github.com/crguezl) como profesor asociado**.
 
 Para poder llevar a cabo la tarea de crear un classroom y hacer las asignaciones deberás leer con detenimiento la sección [GitHub Classroom para Profesores]({{ site.baseurl}}/pages/github-classroom.html) de estos apuntes 
