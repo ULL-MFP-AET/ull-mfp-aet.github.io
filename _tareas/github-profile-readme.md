@@ -105,12 +105,12 @@ En el repo de entrega de esta tarea en esta organización dejas:
 
 1. Enlaces a tu página de profile y al correspondiente repo. Puedes encontrar ejemplos de entregas para una práctica similar de los alumnos de la asignatura [Aprendizaje y Enseñanza de La Tecnología del curso 21/22 aquí](https://github.com/orgs/ULL-MFP-AET-2122/repositories?q=profile-readme&type=all&language=&sort=)
 2. Enlace a la organización creada y al classroom de tu asignatura
+3. Deberás leer el artículo [GitHub in the Classroom: Lessons Learnt]({{ site.baseurl}}/assets/pdfs/github-in-the-classroom-lessons-learnt.pdf) por Yu-Cheng Tu, Valerio Terragni, Ewan Tempero, Asma Shakil,
+Andrew Meads, Nasser Giacaman, Allan Fowler, Kelly Blincoe. University of Auckland, [The Australasian Computing Education Conference](https://aceconference.wordpress.com/previous-conferences/), February 14–18, 2022, Virtual Event, Australia y añadir un informe en el fichero `README.md`  de tu repo de entrega
 
 
 ## Referencias
 
-* Deberás leer el artículo [GitHub in the Classroom: Lessons Learnt]({{ site.baseurl}}/assets/pdfs/github-in-the-classroom-lessons-learnt.pdf) por Yu-Cheng Tu, Valerio Terragni, Ewan Tempero, Asma Shakil,
-Andrew Meads, Nasser Giacaman, Allan Fowler, Kelly Blincoe. University of Auckland, [The Australasian Computing Education Conference](https://aceconference.wordpress.com/previous-conferences/), February 14–18, 2022, Virtual Event, Australia y añadir un informe en el fichero `README.md`  de tu repo de entrega
 
 {% include github-education-references.md %}
 
