@@ -104,7 +104,7 @@ Crea  y configura una primera tarea asignación de grupo en GitHub Classroom par
 En el repo de entrega de esta tarea en esta organización dejas:
 
 1. Enlaces a tu página de profile y al correspondiente repo. Puedes encontrar ejemplos de entregas para una práctica similar de los alumnos de la asignatura [Aprendizaje y Enseñanza de La Tecnología del curso 21/22 aquí](https://github.com/orgs/ULL-MFP-AET-2122/repositories?q=profile-readme&type=all&language=&sort=)
-2. Enlace a la organización creada
+2. Enlace a la organización creada y al classroom de tu asignatura
 
 Publica también en el [foro](https://github.com/orgs/ULL-OCW-GITHUB-EDUCATION/discussions)  dentro de la categoría *Cuéntanos lo que haces* un mensaje con estos enlaces.
 
