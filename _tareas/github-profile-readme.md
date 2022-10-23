@@ -49,7 +49,7 @@ En este paso deberás crear ahora
    * Invita a [crguezl](https://github.com/crguezl) como **owner** de la organización
    * Vaya a settings y configure la org. Añádale una profile picture y actualiza también tu profile picture personal
    * Recuerda poner el enlace a tu organización en el informe de esta práctica
-2. Añáde a la organización un repo de perfil/Profile describiendo a los alumnos la asignatura y cuales son los primeros pasos que deben dar para empezar a trabajar en la asignatura 
+2. [Añáde a la organización un repo de perfil/Profile](https://docs.github.com/en/organizations/collaborating-with-groups-in-organizations/customizing-your-organizations-profile#adding-a-public-organization-profile-readme) describiendo a los alumnos la asignatura y cuales son los primeros pasos que deben dar para empezar a trabajar en la asignatura 
 
 Los siguientes recursos te ayudarán a realizar estas tareas:
 
