@@ -6,7 +6,7 @@ classroom: https://classroom.github.com/a/mgV_maOt
 name: Managing your profile README
 date: 0000/03/01
 toc: true
-equipos: https://campusdoctoradoyposgrado2223.ull.es/mod/page/view.php?id=839
+equipos: https://campusdoctoradoyposgrado2223.ull.es/mod/assign/view.php?id=30039&forceview=1
 foro: https://github.com/orgs/ULL-MFP-AET-2223/discussions
 rubrica:
   - Creado perfil GH
@@ -17,6 +17,9 @@ rubrica:
   - Creada correctamente una asignación de grupo de tamaño 1 en GH Classroom
   - Creado repo de template para la asignación en la organización
   - Ha aceptado las tareas asigandas por los otros miembros del equipo
+  - Ha hecho alguna pregunta a algún profesor / compañero haciendo uso de los issues GH
+  - Ha retroalimentado a sus estudiantes usando las issues de GH
+  - Ha hecho un post en el for de discussions de la organización ULL-MFP-AET-2223
 ---
 
 # {{ page.title }}
@@ -86,7 +89,8 @@ Crea una asignación de grupo GHC para tu clase
   * El nombre del repo tendrá que tener el sufijo `-template`
   * En los settings del repo deberás indicar que es un repo template
   * Usa dicho repo template para la asignación
-* Enviale el enlace a tus compañeros de [equipo]({{ page.equipos}}) ULL
+* Pon una fecha de entrega
+* Enviale el enlace a tus compañeros de [equipo]({{ page.equipos}}) 
 * Documenta lo que has hecho en el fichero `README.md`  de tu repo de entrega de esta práctica
   
 ## Acepta tus asignaciones como estudiante
@@ -124,6 +128,10 @@ En el [foro de la organización de AET]({{ page.foro}}) dentro de la categoría 
 * o bien añades un breve resumen comentando tu opinión sobre el artículo
 
 Añade un foro a la organización que creaste para tu asignatura.
+
+## Rúbrica
+
+{% include rubrica.md %}
 
 ## Referencias
 

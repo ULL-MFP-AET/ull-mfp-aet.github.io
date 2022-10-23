@@ -6,17 +6,12 @@ myurl: https://campusdoctoradoyposgrado.ull.es/mod/assign/view.php?id=282455&for
 permalink: /tema0-introduccion/practicas/registrarse-en-github/
 date: 0000/01/01
 video: "ezxRcdJ8glM"
+toc: true
 rubrica:
   - Se ha registrado en GitHub
   - Ha rellenado el formulario correctamente
   - "Ha entregado el enlace al enlace en el campus"
 ---
-
-- [Registrarse en GitHub (registrarse-en-github)](#registrarse-en-github-registrarse-en-github)
-  - [Descuentos](#descuentos)
-  - [Entrega](#entrega)
-  - [Rúbrica](#rúbrica)
-
 
 # Registrarse en GitHub (registrarse-en-github)
 
