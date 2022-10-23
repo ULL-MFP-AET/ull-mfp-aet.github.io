@@ -44,12 +44,12 @@ Puedes encontrar ejemplos curiosos de *repos profile* en esta referencia:
 
 En este paso deberás crear ahora 
 
-1. una organización para una asignatura que quieres impartir 
-   * El nombre de la organización debe ser `ull-mfp-aet-2223-aluXXXX-siglas` donde `aluXXXX` es tu identificador ULL y `siglas` son las siglas de tu asignatura.  Si sale muy largo suprime las siglas
+1. Una organización para una asignatura que quieres impartir 
+   * El nombre de la organización debe ser `ull-mfp-aet-2223-aluXXXX` donde `aluXXXX` es tu identificador ULL
    * Invita a [crguezl](https://github.com/crguezl) como **owner** de la organización
-   * Vaya a settings y configure la org. Añádale una profile picture y actualize también su profile picture personal
+   * Vaya a settings y configure la org. Añádale una profile picture y actualiza también tu profile picture personal
    * Recuerda poner el enlace a tu organización en el informe de esta práctica
-2. añáde a la organización su repo de perfil/Profile describiendo a los alumnos la asignatura y cuales son los primeros pasos que deben dar para empezar a trabajar en la asignatura 
+2. Añáde a la organización un repo de perfil/Profile describiendo a los alumnos la asignatura y cuales son los primeros pasos que deben dar para empezar a trabajar en la asignatura 
 
 Los siguientes recursos te ayudarán a realizar estas tareas:
 
@@ -74,8 +74,8 @@ También te será de utilidad la documentación de GH en [Enseña con GitHub Cla
 Crea una asignación de grupo GHC para tu clase
 
 * Configurala como una asignación de grupo con un sólo miembro por grupo como la primera que has hecho en este curso. 
-* Usa la técnica descrita en la sección [Segunda Solución: Asignaciones de Grupos]({{ site.baseurl}}/pages/github-classroom.html#segunda-soluci%C3%B3n-asignaciones-de-grupos) y dale las instrucciones correspondientes a tus [alumnos]({{ page.equipos}}).
-* Crea un repo de template para la asignación con las instrucciones y ejemplos para la tarea. Usa dicho template para la asignación
+* Usa la técnica descrita en la sección [Segunda Solución: Asignaciones de Grupos]({{ site.baseurl}}/pages/github-classroom.html#segunda-soluci%C3%B3n-asignaciones-de-grupos) y dale las instrucciones correspondientes a tus [alumnos]({{ page.equipos}}). Lee también la sección [El problema de Enlazar las Cuentas GH con las cuentas del LMS]({{ site.baseurl }}/pages/github-classroom.html#el-problema-de-enlazar-las-cuentas-gh-con-las-cuentas-del-lms)
+* Crea un repo de template para la asignación con las instrucciones y ejemplos para la tarea. En los srttings del repo deberás indicar que es un repo template. Usa dicho repo template para la asignación
 * Enviale el enlace a tus compañeros de [equipo]({{ page.equipos}}) ULL
 * Documenta lo que has hecho en el fichero `README.md`  de tu repo de entrega de esta práctica
   
