@@ -16,6 +16,7 @@ rubrica:
   - Creado GH Classroom asociado a la organización
   - Creada correctamente una asignación de grupo de tamaño 1 en GH Classroom
   - Creado repo de template para la asignación en la organización
+  - Ha aceptado las tareas asigandas por los otros miembros del equipo
 ---
 
 # {{ page.title }}
@@ -124,19 +125,11 @@ En el [foro de la organización de AET]({{ page.foro}}) dentro de la categoría 
 
 Añade un foro a la organización que creaste para tu asignatura.
 
-
-## Entrega
-
-En el repo de entrega de esta tarea en esta organización dejas:
-
-1. Enlaces a tu página de profile y al correspondiente repo. Puedes encontrar ejemplos de entregas para una práctica similar de los alumnos de la asignatura [Aprendizaje y Enseñanza de La Tecnología del curso 21/22 aquí](https://github.com/orgs/ULL-MFP-AET-2122/repositories?q=profile-readme&type=all&language=&sort=)
-2. Enlace a la organización creada y al classroom de tu asignatura
-
 ## Referencias
 
 {% include github-education-references.md %}
 
-
+* Ejemplos de entregas para una práctica similar de los alumnos de la asignatura [Aprendizaje y Enseñanza de La Tecnología del curso 21/22 aquí](https://github.com/orgs/ULL-MFP-AET-2122/repositories?q=profile-readme&type=all&language=&sort=)
 * [Mastering (GitHub) Markdown](https://guides.github.com/features/mastering-markdown/#examples)
 * [Documentación GitHub sobre la Interfaz Web]({{site.baseurl}}/pages/documentacion-github-interfaz-web)
 * [Edición en la nube]({{site.baseurl}}/pages/gitpod)
