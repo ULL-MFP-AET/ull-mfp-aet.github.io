@@ -3,6 +3,7 @@
 {% for team in teams -%}
   {%- assign name = team.node.name -%}
   {%- assign names = name | split: "-" -%}
+  {%- assign aluId = names | last  -%}
   {%- assign studentNameList = names[0] | split: "_" -%}
   {%- assign studentName = studentNameList[0] | capitalize %}
   {%- if studentNameList.size > 1 -%}
@@ -10,7 +11,7 @@
     {%- assign studentName = studentName | append: " " | append: secondName %}
   {%- endif -%}
   {%- assign url = team.node.url -%}
-<h2>{{ studentName }} ({{ forloop.index}} of {{ numTeams}})</h2>
+<h2>{{ studentName }} ({{ aluId}}, {{ forloop.index}} of {{ numTeams}})</h2>
 
 <ul>
   <li> Team:
