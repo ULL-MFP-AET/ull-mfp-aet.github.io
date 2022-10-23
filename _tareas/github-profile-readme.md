@@ -57,6 +57,8 @@ En este paso deberás crear ahora
 1. Una organización para una asignatura que quieres impartir 
    * El nombre de la organización debe ser `ull-mfp-aet-2223-aluXXXX` donde `aluXXXX` es tu identificador ULL
    * Invita a [crguezl](https://github.com/crguezl) como **owner** de la organización
+   * Realiza la tarea [crear equipos de 3]({{ page.teams }}) para crear  equipos de 3 personas y decide con que compañeros quieres colaborar 
+     * Cada miembro del equipo colaborará con el rol de estudiante en la organización en la que los otros dos actúan como profesores
    * Vaya a settings y configure la org. Añádale una profile picture y actualiza también tu profile picture personal
    * Recuerda poner el enlace a tu organización en el informe de esta práctica
 2. [Añáde a la organización un repo de perfil/Profile](https://docs.github.com/en/organizations/collaborating-with-groups-in-organizations/customizing-your-organizations-profile#adding-a-public-organization-profile-readme) describiendo a los alumnos tu asignatura de elección y cuales son los primeros pasos que deben dar para empezar a trabajar en la asignatura 
@@ -95,7 +97,7 @@ Crea una asignación de grupo GHC para tu clase
   
 ## Acepta tus asignaciones como estudiante
 
-Acepta las asignaciones que te han hecho tus profesores/compañeros de [equipo]({{ page.equipos}}) y procede a la entrega realizando un [issue](https://docs.github.com/en/issues) mencionando al correspondiente profesor y a `@crguezl`.
+Acepta las asignaciones que te han hecho tus profesores/compañeros de [equipo]({{ page.equipos}}) y procede a la entrega realizando un [issue](https://docs.github.com/en/issues) mencionando al correspondiente profesor y a `@crguezl` indicándole que has acabado.
 
 ## Como profesor evalúa a tus estudiantes
 
