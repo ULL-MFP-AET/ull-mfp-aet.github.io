@@ -33,8 +33,7 @@ rubrica:
     3. Como cuando seas profesor puedes solicitar los descuentos del programa "Global Campus" y actualizar tus organizaciones 
     4. Aprender a crear un repo de perfil de una organización en GitHub
 3. Que es [GitHub Classroom](https://classroom.github.com) desde la perspectiva del profesor 
-   1. Aprenderemos a crear una asignación Individual GHC
-   2. Aprenderemos a crear una asignación de grupo GHC
+4. Aprenderemos a crear una asignación de grupo GHC
 
 ## Crea tu repo profile
 
