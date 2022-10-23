@@ -20,7 +20,7 @@ Esta es una práctica cuyo único objetivo es crear equipos de 3 personas.
 No hay nada que entregar.
 
 El nombre del equipo debe ser la concatenación de los nombres de los nombres de los miembros del equipo separados por guiones: `nombre1-nombre2-nombre3`.
-No use acentos ni caracteres especiales en los nombres. Sólo letras del alfabeto inglés. Sustituya la ñ por "ny".
+No use acentos ni caracteres especiales en los nombres. No use blancos. Sólo letras del alfabeto inglés. Sustituya la ñ por "ny".
 
 ## Rúbrica
 
