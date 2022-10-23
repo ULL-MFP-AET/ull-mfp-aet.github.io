@@ -9,7 +9,13 @@ toc: true
 equipos: https://campusdoctoradoyposgrado2223.ull.es/mod/page/view.php?id=839
 foro: https://github.com/orgs/ULL-MFP-AET-2223/discussions
 rubrica:
-  - Aún sin publicar
+  - Creado perfil GH
+  - Creado  organización con el nombre identificado
+  - Creado perfil de la organización
+  - Organización configurada
+  - Creado GH Classroom asociado a la organización
+  - Creada correctamente una asignación de grupo de tamaño 1 en GH Classroom
+  - Creado repo de template para la asignación en la organización
 ---
 
 # {{ page.title }}
@@ -75,7 +81,10 @@ Crea una asignación de grupo GHC para tu clase
 
 * Configurala como una asignación de grupo con un sólo miembro por grupo como la primera que has hecho en este curso. 
 * Usa la técnica descrita en la sección [Segunda Solución: Asignaciones de Grupos]({{ site.baseurl}}/pages/github-classroom.html#segunda-soluci%C3%B3n-asignaciones-de-grupos) y dale las instrucciones correspondientes a tus [alumnos]({{ page.equipos}}). Lee también la sección [El problema de Enlazar las Cuentas GH con las cuentas del LMS]({{ site.baseurl }}/pages/github-classroom.html#el-problema-de-enlazar-las-cuentas-gh-con-las-cuentas-del-lms)
-* Crea un repo de template para la asignación con las instrucciones y ejemplos para la tarea. En los srttings del repo deberás indicar que es un repo template. Usa dicho repo template para la asignación
+* Crea un repo de template para la asignación dentro de la organización `ull-mfp-aet-2223-aluXXXX` con las instrucciones y ejemplos para la tarea. 
+  * El nombre del repo tendrá que tener el sufijo `-template`
+  * En los settings del repo deberás indicar que es un repo template
+  * Usa dicho repo template para la asignación
 * Enviale el enlace a tus compañeros de [equipo]({{ page.equipos}}) ULL
 * Documenta lo que has hecho en el fichero `README.md`  de tu repo de entrega de esta práctica
   
