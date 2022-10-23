@@ -10,7 +10,7 @@ equipos: https://campusdoctoradoyposgrado2223.ull.es/mod/assign/view.php?id=3003
 foro: https://github.com/orgs/ULL-MFP-AET-2223/discussions
 rubrica:
   - Creado perfil GH
-  - Creado  organización con el nombre identificado
+  - Creado  organización con el nombre correcto
   - Creado perfil de la organización
   - Organización configurada
   - Creado GH Classroom asociado a la organización
