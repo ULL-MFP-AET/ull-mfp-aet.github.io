@@ -13,7 +13,9 @@ rubrica:
   - Creado  organización con el nombre correcto
   - Creado perfil de la organización
   - Organización configurada
+  - crguezl es owner de la organización
   - Creado GH Classroom asociado a la organización
+  - Invitado crguezl como teacher del aula
   - Creada correctamente una asignación de grupo de tamaño 1 en GH Classroom
   - Creado repo de template para la asignación en la organización
   - Ha aceptado las tareas asigandas por los otros miembros del equipo
