@@ -13,12 +13,13 @@ rubrica:
   - Creado  organización con el nombre correcto
   - Creado perfil de la organización
   - Organización configurada
-  - crguezl es owner de la organización
+  - Pertenece a un team de al menos 2 personas
+  - crguezl es owner de la organización y los otros dos estudiantes son members
   - Creado GH Classroom asociado a la organización
   - Invitado crguezl como teacher del aula
   - Creada correctamente una asignación de grupo de tamaño 1 en GH Classroom
   - Creado repo de template para la asignación en la organización
-  - Ha aceptado las tareas asigandas por los otros miembros del equipo
+  - Ha aceptado como alumnos las tareas asignadas por los otros miembros del equipo
   - Ha hecho alguna pregunta a algún profesor / compañero haciendo uso de los issues GH
   - Ha retroalimentado a sus estudiantes usando las issues de GH
   - Ha hecho un post en el for de discussions de la organización ULL-MFP-AET-2223
