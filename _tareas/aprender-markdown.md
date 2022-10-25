@@ -97,7 +97,30 @@ Acepta la asignación de esta tarea y en el repositorio creado en GitHub edita e
 * Añade una imagen-enlace. Se deberá ver la imagen pero esta será un enlace 
 a otra página
 
+* Añade una fórmula matemática escrita en [$LaTeX$](https://docs.github.com/en/get-started/writing-on-github/working-with-advanced-formatting/writing-mathematical-expressions)
+  
+  Si escribes una fórmula  matemática en latex y la rodeas de `$S`, el markdown de GH la mostrará como un bloque. Por ejemplo: 
 
+  ```
+  **The Cauchy-Schwarz Inequality**
+
+  $$\left( \sum_{k=1}^n a_k b_k \right)^2 \leq \left( \sum_{k=1}^n a_k^2 \right) \left( \sum_{k=1}^n b_k^2 \right)$$
+  ```
+  Se ve:
+
+  **The Cauchy-Schwarz Inequality**
+
+  $$\left( \sum_{k=1}^n a_k b_k \right)^2 \leq \left( \sum_{k=1}^n a_k^2 \right) \left( \sum_{k=1}^n b_k^2 \right)$$
+
+  Para incluir una expresión matemática en línea con su texto, delimite la expresión con un símbolo de dólar `$`. Por ejemplo:
+
+  ```
+  This sentence uses `$` delimiters to show math inline:  $\sqrt{3x-1}+(1+x)^2$
+  ```
+  Se ve como esto:
+
+  This sentence uses `$` delimiters to show math inline: \\(\sqrt{3x-1}+(1+x)^2\\)
+  
 ## Edición en la Nube de Repositorios GitHub
 
 Hay múltiples formas de editar en la nube un repositorio GitHub.
