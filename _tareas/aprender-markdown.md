@@ -97,9 +97,9 @@ Acepta la asignación de esta tarea y en el repositorio creado en GitHub edita e
 * Añade una imagen-enlace. Se deberá ver la imagen pero esta será un enlace 
 a otra página
 
-* Añade una fórmula matemática escrita en [$LaTeX$](https://docs.github.com/en/get-started/writing-on-github/working-with-advanced-formatting/writing-mathematical-expressions)
+* Añade una fórmula matemática escrita en [\\(\LaTeX\\)](https://docs.github.com/en/get-started/writing-on-github/working-with-advanced-formatting/writing-mathematical-expressions)
   
-  Si escribes una fórmula  matemática en latex y la rodeas de `$S`, el markdown de GH la mostrará como un bloque. Por ejemplo: 
+  Si escribes una fórmula  matemática en latex y la rodeas de `$$`, el markdown de GH la mostrará como un bloque. Por ejemplo: 
 
   ```
   **The Cauchy-Schwarz Inequality**
@@ -161,6 +161,7 @@ muestra como deben hacer los estudiantes para aceptar, trabajar y entregar una t
 * [Mastering (GitHub) Markdown](https://guides.github.com/features/mastering-markdown/#examples)
 * Para mas detalles consulta la guía de usuario
 <a href="https://docs.github.com/en/free-pro-team@latest/github/writing-on-github/getting-started-with-writing-and-formatting-on-github" target="_blank">Getting started with writing and formatting on GitHub</a>
+* [Use Markdown to display mathematical expressions on GitHub](https://docs.github.com/en/get-started/writing-on-github/working-with-advanced-formatting/writing-mathematical-expressions)
 * [Documentación GitHub sobre la Interfaz Web]({{site.baseurl}}/pages/documentacion-github-interfaz-web)
 * [Visual Studio Code in Browsers]({{site.baseurl}}/pages/gitpod)
 * [GitHub Glossary](https://docs.github.com/en/free-pro-team@latest/github/getting-started-with-github/github-glossary)
