@@ -8,12 +8,12 @@ task :publish => [ :students ] do
   sh "git ci -am 'AET 2022/2023' && git push -u origin main && git push -u aet2223 main"
 end
 
-desc "update AET teams"
+desc "update AET teams (all teams"
 task :teams do
   sh ". ./get-teams.sh > _data/teams.json"
 end
 
-desc "update AET students"
+desc "update AET students (teams of one)"
 task :students do
   sh ". ./get-teams.sh > _data/students.json"
 end
