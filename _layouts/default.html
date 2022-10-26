@@ -34,7 +34,16 @@
     src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js">
     </script>
 
-
+<script src="https://unpkg.com/mermaid@8.9.3/dist/mermaid.min.js"></script>
+<script>
+  $(document).ready(function () {
+    mermaid.initialize({
+      startOnLoad:true,
+      theme: "default",
+    });
+    window.mermaid.init(undefined, document.querySelectorAll('.language-mermaid'));
+  });
+</script>
 
 
 
@@ -96,6 +105,17 @@
 
         </section>
     </div>
+
+    <script src="https://unpkg.com/mermaid@8.9.3/dist/mermaid.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        mermaid.initialize({
+          startOnLoad:true,
+          theme: "forest",
+        });
+        window.mermaid.init(undefined, document.querySelectorAll('.language-mermaid'));
+      });
+    </script>
 
     {% if site.google_analytics %}
     <script type="text/javascript">

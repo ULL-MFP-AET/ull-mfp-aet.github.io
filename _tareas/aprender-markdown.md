@@ -19,6 +19,9 @@ rubrica:
   - [Aceptando la Tarea](#aceptando-la-tarea)
   - [Entrega en el Campus virtual](#entrega-en-el-campus-virtual)
   - [Aprender Markdown](#aprender-markdown)
+    - [Matemáticas](#matemáticas)
+    - [Diagramas con mermaid](#diagramas-con-mermaid)
+    - [Task lists](#task-lists)
   - [Edición en la Nube de Repositorios GitHub](#edición-en-la-nube-de-repositorios-github)
   - [Primeros Pasos con GitHub Classroom](#primeros-pasos-con-github-classroom)
   - [Rúbrica](#rúbrica)
@@ -97,30 +100,67 @@ Acepta la asignación de esta tarea y en el repositorio creado en GitHub edita e
 * Añade una imagen-enlace. Se deberá ver la imagen pero esta será un enlace 
 a otra página
 
-* Añade una fórmula matemática escrita en [\\(\LaTeX\\)](https://docs.github.com/en/get-started/writing-on-github/working-with-advanced-formatting/writing-mathematical-expressions)
+### Matemáticas
+
+Añade una fórmula matemática escrita en [\\(\LaTeX\\)](https://docs.github.com/en/get-started/writing-on-github/working-with-advanced-formatting/writing-mathematical-expressions)
+
+Si escribes una fórmula  matemática en latex y la rodeas de `$$`, el markdown de GH la mostrará como un bloque. Por ejemplo: 
+
+```
+**The Cauchy-Schwarz Inequality**
+
+$$\left( \sum_{k=1}^n a_k b_k \right)^2 \leq \left( \sum_{k=1}^n a_k^2 \right) \left( \sum_{k=1}^n b_k^2 \right)$$
+```
+Se ve:
+
+**The Cauchy-Schwarz Inequality**
+
+$$\left( \sum_{k=1}^n a_k b_k \right)^2 \leq \left( \sum_{k=1}^n a_k^2 \right) \left( \sum_{k=1}^n b_k^2 \right)$$
+
+Para incluir una expresión matemática en línea con su texto, delimite la expresión con un símbolo de dólar `$`. Por ejemplo:
+
+```
+This sentence uses `$` delimiters to show math inline:  $\sqrt{3x-1}+(1+x)^2$
+```
+Se ve como esto:
+
+This sentence uses `$` delimiters to show math inline: \\(\sqrt{3x-1}+(1+x)^2\\)
   
-  Si escribes una fórmula  matemática en latex y la rodeas de `$$`, el markdown de GH la mostrará como un bloque. Por ejemplo: 
+### Diagramas con mermaid
 
-  ```
-  **The Cauchy-Schwarz Inequality**
+Puedes incluir diagramas en tus documentos usando mermaid. Por ejemplo:
 
-  $$\left( \sum_{k=1}^n a_k b_k \right)^2 \leq \left( \sum_{k=1}^n a_k^2 \right) \left( \sum_{k=1}^n b_k^2 \right)$$
-  ```
-  Se ve:
 
-  **The Cauchy-Schwarz Inequality**
+    ```mermaid
+      graph TD;
+          A-->B;
+          A-->C;
+          B-->D;
+          C-->D;
+    ```
 
-  $$\left( \sum_{k=1}^n a_k b_k \right)^2 \leq \left( \sum_{k=1}^n a_k^2 \right) \left( \sum_{k=1}^n b_k^2 \right)$$
+que se verá como:
 
-  Para incluir una expresión matemática en línea con su texto, delimite la expresión con un símbolo de dólar `$`. Por ejemplo:
+![]({{ site.baseurl}}/assets/images/mermaid.png)
 
-  ```
-  This sentence uses `$` delimiters to show math inline:  $\sqrt{3x-1}+(1+x)^2$
-  ```
-  Se ve como esto:
+### Task lists
 
-  This sentence uses `$` delimiters to show math inline: \\(\sqrt{3x-1}+(1+x)^2\\)
-  
+Ejemplo:
+
+    - [x] #739
+    - [ ] https://github.com/octo-org/octo-repo/issues/740
+    - [ ] Add delight to the experience when all tasks are complete :tada:
+
+Se verá así:
+
+- [x] #739
+- [ ] https://github.com/octo-org/octo-repo/issues/740
+- [ ] Add delight to the experience when all tasks are complete :tada:
+
+Este ejemplo muestra también como escribir un emoji por nombre `:tada:`.
+
+Mas información en [Acerca de las listas de tareas](https://docs.github.com/es/issues/tracking-your-work-with-issues/about-task-lists)
+
 ## Edición en la Nube de Repositorios GitHub
 
 Hay múltiples formas de editar en la nube un repositorio GitHub.
