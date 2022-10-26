@@ -128,7 +128,7 @@ This sentence uses `$` delimiters to show math inline: \\(\sqrt{3x-1}+(1+x)^2\\)
   
 ### Diagramas con mermaid
 
-Puedes incluir diagramas en tus documentos usando mermaid. Por ejemplo:
+Puedes incluir diagramas en tus documentos usando [mermaid](https://mermaid-js.github.io/mermaid/). Por ejemplo:
 
 
     ```mermaid
