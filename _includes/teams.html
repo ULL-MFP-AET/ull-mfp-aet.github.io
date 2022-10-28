@@ -3,7 +3,7 @@
 {% for team in teams -%}
   {%- assign name = team.node.name -%}
   {%- assign names = name | split: "-" -%}
-  {%- assign aluId = names | last  -%}
+  {%- assign aluId = names | last  | strip -%}
   {%- assign studentNameList = names[0] | split: "_" -%}
   {%- assign studentName = studentNameList[0] | capitalize %}
   {%- if studentNameList.size > 1 -%}
@@ -25,6 +25,7 @@
   <li> <a href="{{ memberAccessUrl }}" target="_blank">{{ studentName }} ({{ student.login }})</a>  at the organization {{ site.organization.name }}</li>
   <li> <a href="{{ student.url }}" target="_blank">{{ studentName }} at GitHub</a> is {{ student.login }}</li>
   <li><a href="https://github.com/notifications?query=author%3A{{ student.login }}" target="_blank">Notifications</a> to the teacher from {{studentName}}</li>
+  <li><a href="https://github.com/ull-mfp-aet-2223-{{ aluId }}" target="_blank">{{ studentName }} Organization</a></li>
 </ul>
 {% endfor -%}
 
