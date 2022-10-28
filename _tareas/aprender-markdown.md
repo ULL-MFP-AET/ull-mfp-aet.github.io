@@ -25,6 +25,7 @@ rubrica:
   - [Edición en la Nube de Repositorios GitHub](#edición-en-la-nube-de-repositorios-github)
   - [Primeros Pasos con GitHub Classroom](#primeros-pasos-con-github-classroom)
   - [Rúbrica](#rúbrica)
+  - [Actividad de los Alumnos para {{ page.key }}](#actividad-de-los-alumnos-para--pagekey-)
   - [Referencias](#referencias)
 
 
@@ -195,6 +196,10 @@ muestra como deben hacer los estudiantes para aceptar, trabajar y entregar una t
 
 {% include rubrica.md -%}
 
+## Actividad de los Alumnos para {{ page.key }}
+
+{% assign lab=page.key %}
+{% include activity.html lab=lab %}
 
 ## Referencias
 

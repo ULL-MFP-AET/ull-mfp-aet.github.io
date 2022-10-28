@@ -1,31 +1,34 @@
 {% assign numTeams = site.data.students.data.organization.teams.totalCount %}
 {% assign teams = site.data.students.data.organization.teams.edges %}
 {% for team in teams -%}
-  {%- assign name = team.node.name -%}
-  {%- assign names = name | split: "-" -%}
-  {%- assign aluId = names | last  | strip -%}
-  {%- assign studentNameList = names[0] | split: "_" -%}
-  {%- assign studentName = studentNameList[0] | capitalize %}
-  {%- if studentNameList.size > 1 -%}
-    {%- assign secondName = studentNameList[1] | capitalize -%}
-    {%- assign studentName = studentName | append: " " | append: secondName %}
-  {%- endif -%}
-  {%- assign url = team.node.url -%}
-<h2>{{ studentName }} ({{ aluId}}, {{ forloop.index}} of {{ numTeams}})</h2>
+  {%- assign numMembers = team.node.members.totalCount -%}
+  {%- if numMembers == 1 -%} <!-- a student team -->
+    {%- assign name = team.node.name -%}
+    {%- assign names = name | split: "-" -%}
+    {%- assign aluId = names | last  | strip -%}
+    {%- assign studentNameList = names[0] | split: "_" -%}
+    {%- assign studentName = studentNameList[0] | capitalize %}
+    {%- if studentNameList.size > 1 -%}
+      {%- assign secondName = studentNameList[1] | capitalize -%}
+      {%- assign studentName = studentName | append: " " | append: secondName %}
+    {%- endif -%}
+    {%- assign url = team.node.url -%}
+    <h2>Student {{ studentName }} ({{ aluId}}, {{ forloop.index}} of {{ numTeams}})</h2>
 
-<ul>
-  <li> Team:
-    <a href="{{url}}" target="_blank">{{ name }}</a>
-  </li>
-  <li> {{ studentName }} repos: 
-  <a href="{{url}}/repositories" target="_blank">Repositories</a>
-  </li>
-  {% assign memberAccessUrl = team.node.members.edges[0].memberAccessUrl %}
-  {%- assign student = team.node.members.edges[0].node -%}
-  <li> <a href="{{ memberAccessUrl }}" target="_blank">{{ studentName }} ({{ student.login }})</a>  at the organization {{ site.organization.name }}</li>
-  <li> <a href="{{ student.url }}" target="_blank">{{ studentName }} at GitHub</a> is {{ student.login }}</li>
-  <li><a href="https://github.com/notifications?query=author%3A{{ student.login }}" target="_blank">Notifications</a> to the teacher from {{studentName}}</li>
-  <li><a href="https://github.com/ull-mfp-aet-2223-{{ aluId }}" target="_blank">{{ studentName }} Organization</a></li>
-</ul>
+    <ul>
+      <li> Student:
+        <a href="{{url}}" target="_blank">{{ name }}</a> 
+      </li>
+      <li> {{ studentName }} repos: 
+      <a href="{{url}}/repositories" target="_blank">Repositories</a>
+      </li>
+      {% assign memberAccessUrl = team.node.members.edges[0].memberAccessUrl %}
+      {%- assign student = team.node.members.edges[0].node -%}
+      <li> <a href="{{ memberAccessUrl }}" target="_blank">{{ studentName }} ({{ student.login }})</a>  at the organization {{ site.organization.name }}</li>
+      <li> <a href="{{ student.url }}" target="_blank">{{ studentName }} at GitHub</a> is {{ student.login }}</li>
+      <li><a href="https://github.com/notifications?query=author%3A{{ student.login }}" target="_blank">Notifications</a> to the teacher from {{studentName}}</li>
+      <li><a href="https://github.com/ull-mfp-aet-2223-{{ aluId }}" target="_blank">{{ studentName }} Organization</a></li>
+    </ul>
+  {% endif %} <!-- else is a true multiple member team-->
 {% endfor -%}
 

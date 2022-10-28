@@ -5,6 +5,7 @@ permalink: /practicas/creando-un-perfil
 classroom: https://classroom.github.com/a/mgV_maOt
 name: Managing your profile README
 date: 0000/03/01
+key: profile
 toc: true
 equipos: https://campusdoctoradoyposgrado2223.ull.es/mod/assign/view.php?id=30039&forceview=1
 foro: https://github.com/orgs/ULL-MFP-AET-2223/discussions
@@ -132,6 +133,10 @@ En el [foro de la organización de AET]({{ page.foro}}) dentro de la categoría 
 * o bien añades un breve resumen comentando tu opinión sobre el artículo
 
 Añade un foro a la organización que creaste para tu asignatura.
+
+## Actividad de los Alumnos para {{ page.key }}
+
+<a href="{{ site.baseurl }}/assets/tareas/aprender-markdown/activity.html" target="_blank">Medidas de Actividad de los Alumnos para {{ page.key }}</a>
 
 ## Rúbrica
 

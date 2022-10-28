@@ -1,0 +1,25 @@
+<ol>
+  {% assign numTeams = site.data.students.data.organization.teams.totalCount %}
+  {% assign teams = site.data.students.data.organization.teams.edges %}
+  {% for team in teams -%}
+    {%- assign numMembers = team.node.members.totalCount -%}
+    {%- if numMembers == 1 -%} <!-- a student team -->
+      {%- assign name = team.node.name | replace: "é", "e" | replace: " ", "" | replace: "á", "a" -%}
+      {%- assign names = name | split: "-" -%}
+      {%- assign aluId = names | last  | strip -%}
+      {%- assign studentNameList = names[0] | split: "_" -%}
+      {%- assign studentName = studentNameList[0] | capitalize %}
+      {%- if studentNameList.size > 1 -%}
+        {%- assign secondName = studentNameList[1] | capitalize -%}
+        {%- assign studentName = studentName | append: " " | append: secondName %}
+      {%- endif -%}
+      {%- assign url = team.node.url -%}
+        <li>
+          <a href="https://github.com/ull-mfp-aet-2223/{{ include.lab }}-{{name}}/commits" target="_blank">{{ studentName }} Commits</a>, 
+          <a href="https://github.com/ull-mfp-aet-2223/{{ include.lab }}-{{name}}/graphs/commit-activity" target="_blank"> Commit Activity</a> and
+          <a href="https://github.com/ull-mfp-aet-2223/{{ include.lab }}-{{name}}/pulse" target="_blank"> Summary</a>
+
+        </li>
+    {% endif %} <!-- else is a true multiple member team-->
+  {% endfor -%}  
+</ol>
