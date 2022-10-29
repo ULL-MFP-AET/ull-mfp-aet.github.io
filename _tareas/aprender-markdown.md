@@ -198,8 +198,7 @@ muestra como deben hacer los estudiantes para aceptar, trabajar y entregar una t
 
 ## Actividad de los Alumnos para {{ page.key }}
 
-{% assign lab=page.key %}
-{% include activity.html lab=lab %}
+<a href="{{ site.baseurl }}/assets/tareas/aprender-markdown/activity.html" target="_blank">Medidas de Actividad de los Alumnos para {{ page.key }}</a>
 
 ## Referencias
 

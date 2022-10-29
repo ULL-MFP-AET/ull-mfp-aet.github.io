@@ -136,7 +136,7 @@ Añade un foro a la organización que creaste para tu asignatura.
 
 ## Actividad de los Alumnos para {{ page.key }}
 
-<a href="{{ site.baseurl }}/assets/tareas/aprender-markdown/activity.html" target="_blank">Medidas de Actividad de los Alumnos para {{ page.key }}</a>
+<a href="{{ site.baseurl }}/assets/tareas/{{ page.key }}/activity.html" target="_blank">Medidas de Actividad de los Alumnos para {{ page.key }}</a>
 
 ## Rúbrica
 
