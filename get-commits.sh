@@ -1,7 +1,12 @@
 ORG='"ULL-MFP-AET-2223"'
-NAME='"aprender-markdown-ana_marlene-hernandez-alu0100199741"'
-SINCE='"2022-10-25T00:00:01Z"'
-UNTIL='"2022-10-25T23:59:59Z"'
+LAB="aprender-markdown"
+TEAM="ana_marlene-hernandez-alu0100199741"
+NAME="\"$LAB-$TEAM\""
+DAY="2022-10-20"
+BEGIN=17:00:00
+END=17:47:59
+SINCE="\"${DAY}T${BEGIN}Z\""
+UNTIL="\"${DAY}T${END}Z\""
 QUERY='
 {
     repository(owner: '"$ORG"', name: '"$NAME"') {
@@ -34,5 +39,5 @@ QUERY='
   }
 '
 
-echo $QUERY
-gh api graphql -f query="$QUERY"
+#echo $QUERY
+gh api graphql -f query="$QUERY" --jq '.data.repository.object.history.nodes' 
