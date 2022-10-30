@@ -1,4 +1,5 @@
-# Get commits of  a student for a given task or lab
+# Get commits of  a student for a given task/lab in a given subject on a given date
+# It can be used to check attendance of a student in a lab
 ORG='"ULL-MFP-AET-2223"'
 LAB="aprender-markdown"
 TEAM="ana_marlene-hernandez-alu0100199741"
