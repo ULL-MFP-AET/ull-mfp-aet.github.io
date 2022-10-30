@@ -1,3 +1,4 @@
+# Get commits of  a student for a given task or lab
 ORG='"ULL-MFP-AET-2223"'
 LAB="aprender-markdown"
 TEAM="ana_marlene-hernandez-alu0100199741"
