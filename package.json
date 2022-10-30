@@ -1,0 +1,24 @@
+{
+  "name": "apuntes",
+  "version": "1.0.0",
+  "description": "{% include clases-impartidas.md %}",
+  "main": "get-commits.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ULL-MFP-AET/ull-mfp-aet.github.io.git"
+  },
+  "keywords": [],
+  "author": "Casiano Rodriguez Leon <crguezl@ull.edu.es> (https://crguezl.github.io/)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ULL-MFP-AET/ull-mfp-aet.github.io/issues"
+  },
+  "homepage": "https://github.com/ULL-MFP-AET/ull-mfp-aet.github.io#readme",
+  "dependencies": {
+    "graphql": "^16.6.0"
+  }
+}

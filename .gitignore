@@ -7,6 +7,7 @@ apuntes-ull-esit-1617
 ull-esit-1617
 jewels
 *.bak
+node_modules
 
 # repl.it 
 .bundle/
