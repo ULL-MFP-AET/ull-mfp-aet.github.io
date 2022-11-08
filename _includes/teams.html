@@ -27,14 +27,15 @@
       <li> <a href="{{ memberAccessUrl }}" target="_blank">{{ studentName }} ({{ student.login }})</a>  at the organization {{ site.organization.name }}</li>
       <li> <a href="{{ student.url }}" target="_blank">{{ studentName }} at GitHub</a> is {{ student.login }}</li>
       <li><a href="https://github.com/notifications?query=author%3A{{ student.login }}" target="_blank">Notifications</a> to the teacher from {{studentName}}</li>
-      <li><a href="https://github.com/ull-mfp-aet-2223-{{ aluId }}" target="_blank">{{ studentName }} Organization</a></li>
+      <li><a href="https://github.com/{{ site.organization.name }}-{{ aluId }}" target="_blank">{{ studentName }} Organization</a></li>
       <li> {{ studentName }} activity:
         <ol>
           {%- for practica in site.tareas -%}
           {% if practica.key -%}
-              <li> <a href="https://github.com/ull-mfp-aet-2223/{{ practica.key }}-{{name}}/commits" target="_blank">{{ studentName }} Commits</a>, 
-                <a href="https://github.com/ull-mfp-aet-2223/{{ practica.key }}-{{name}}/graphs/commit-activity" target="_blank"> Commit Activity</a> and
-                <a href="https://github.com/ull-mfp-aet-2223/{{ practica.key }}-{{name}}/pulse" target="_blank"> Summary</a> for {{ practica.key }}
+              <li> <a href="https://github.com/{{ site.organization.name }}/{{ practica.key }}-{{name}}/commits" target="_blank">{{ studentName }} Commits</a>, 
+                <a href="https://github.com/{{ site.organization.name }}/{{ practica.key }}-{{name}}/graphs/commit-activity" target="_blank"> Commit Activity</a> and
+                <a href="https://github.com/{{ site.organization.name }}/{{ practica.key }}-{{name}}/pulse" target="_blank"> Summary</a> for 
+                <a href="{{ practica.url }}">{{ practica.key }}</a>
               </li>
           {% endif -%}
           {%- endfor -%}
