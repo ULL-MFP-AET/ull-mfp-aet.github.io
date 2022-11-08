@@ -96,7 +96,7 @@ Crea una asignación de grupo GHC para tu clase
   * En los settings del repo deberás indicar que es un repo template
   * Usa dicho repo template como template para la asignación
 * Pon una fecha de entrega
-* Enviale el enlace a tus compañeros de [equipo]({{ page.equipos}}) 
+* Enviale el enlace a tus compañeros/alumnos del [equipo que formaron en la trea equipos de 3]({{ page.equipos}}).
 * Documenta lo que has hecho en el fichero `README.md`  de tu repo de entrega de esta práctica
   
 ## Acepta tus asignaciones como estudiante
@@ -124,6 +124,13 @@ Crea  y configura una primera tarea asignación de grupo en GitHub Classroom par
 
 ## Aprendiendo a usar un Foro de una Organización
 
+
+Añade un foro a la organización que creaste para tu asignatura.
+
+Para ello creas un repo público con nombre "**foro**" en tu organización y configuras la organización (**settings -> discussions**) para usarlo como foro de discusión. 
+
+Para subscribirse al foro y recibir notificaciones de nuevos mensajes es necesario ir al repo del foro y pulsar el botón **"Watch"** en la barra superior y seleccionar  **"Custom" -> "Discussions"** (o seleccionando **"All Activity"**).
+
 Deberás leer el artículo [GitHub in the Classroom: Lessons Learnt]({{ site.baseurl}}/assets/pdfs/github-in-the-classroom-lessons-learnt.pdf) por Yu-Cheng Tu, Valerio Terragni, Ewan Tempero, Asma Shakil,
 Andrew Meads, Nasser Giacaman, Allan Fowler, Kelly Blincoe. University of Auckland, [The Australasian Computing Education Conference](https://aceconference.wordpress.com/previous-conferences/), February 14–18, 2022, Virtual Event, Australia.
 
@@ -132,8 +139,6 @@ En el [foro de la organización de AET]({{ page.foro}}) dentro de la categoría 
 * o bien añades alguna pregunta sobre algo que no hayas entendido 
 * o bien contestas la pregunta de otro alumno 
 * o bien añades un breve resumen comentando tu opinión sobre el artículo
-
-Añade un foro a la organización que creaste para tu asignatura.
 
 ## Actividad de los Alumnos para {{ page.key }}
 
