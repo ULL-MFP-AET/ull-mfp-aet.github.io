@@ -2,6 +2,7 @@
 * [GitHub Education Community](https://education.github.community/)
 * [The GitHub Blog: All "Education" posts](https://github.blog/category/community/education/)
 * [Curso de Formación: Gestión de la tarea docente con Github](https://www.youtube.com/playlist?list=PLQg_Bl-6Gfo9k0KQg5vaaV9r6Hg--nMA7) por Pedro Prieto. Lista de Videos en YouTube
+  * [Repositorio pedroprieto/curso-github](https://github.com/pedroprieto/curso-github). El capítulo 7 [Metodologías para el trabajo con alumnos](https://github.com/pedroprieto/curso-github/blob/gh-pages/sesion-7.org) está dedicado a su metodología con GH Education
 * [Charla UAI 2018](https://github.com/PAL-ULL/uai-18-talks)
   * [Versión de la charla en Google Slides](https://docs.google.com/presentation/d/1LAZUS4SX7axmzEUElh2Oz2DqC1cJA6PUvb1KixJ1KWw/edit?usp=sharing) Necesita ser actualizada
 * [Upgrade your organization](https://education.github.com/toolbox/offers/github-org-upgrades) link
