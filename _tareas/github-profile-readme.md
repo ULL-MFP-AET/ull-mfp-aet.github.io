@@ -94,7 +94,7 @@ Crea una asignación de grupo GHC para tu clase
 * Crea un repo de template para la asignación dentro de la organización `ull-mfp-aet-2223-aluXXXX` con las instrucciones y ejemplos para la tarea. 
   * El nombre del repo tendrá que tener el sufijo `-template`
   * En los settings del repo deberás indicar que es un repo template
-  * Usa dicho repo template para la asignación
+  * Usa dicho repo template como template para la asignación
 * Pon una fecha de entrega
 * Enviale el enlace a tus compañeros de [equipo]({{ page.equipos}}) 
 * Documenta lo que has hecho en el fichero `README.md`  de tu repo de entrega de esta práctica
