@@ -7,6 +7,7 @@ name: Managing your profile README
 date: 0000/03/01
 key: profile
 toc: true
+teams: /practicas/equipos-de-3/
 equipos: https://campusdoctoradoyposgrado2223.ull.es/mod/assign/view.php?id=30039&forceview=1
 foro: https://github.com/orgs/ULL-MFP-AET-2223/discussions
 rubrica:
@@ -60,7 +61,7 @@ En este paso deberás crear ahora
 1. Una organización para una asignatura que quieres impartir 
    * El nombre de la organización debe ser `ull-mfp-aet-2223-aluXXXX` donde `aluXXXX` es tu identificador ULL
    * Invita a [crguezl](https://github.com/crguezl) como **owner** de la organización
-   * Realiza la tarea [crear equipos de 3]({{ page.teams }}) para crear  equipos de 3 personas y decide con que compañeros quieres colaborar 
+   * Realiza la tarea [crear equipos de 3]({{ page.teams }}) para crear  equipos de 3 personas y decide con que compañeros quieres colaborar
      * Cada miembro del equipo colaborará con el rol de estudiante en la organización en la que los otros dos actúan como profesores
    * Vaya a settings y configure la org. Añádale una profile picture y actualiza también tu profile picture personal
    * Recuerda poner el enlace a tu organización en el informe de esta práctica
