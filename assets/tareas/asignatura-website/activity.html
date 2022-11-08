@@ -1,0 +1,11 @@
+---
+layout: default
+lab: "asignatura-website"
+---
+
+{% assign lab = page.lab %}
+<h2>
+  Students activity for {{ lab }}
+</h2>
+
+{% include students-activity.html lab=lab %}
