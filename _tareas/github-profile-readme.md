@@ -75,7 +75,7 @@ Los siguientes recursos te ayudarán a realizar estas tareas:
 
 ## Crea un Classroom para la Organización
 
-Crea un aula usando GitHub Classroom y la asocias a la organización creada en el apartado anterior. 
+Crea un aula usando GitHub Classroom ([classroom.github.com](/classroom.github.com)y la asocias a la organización creada en el apartado anterior. 
 Si GHC  te provee varias aulas quédate sólo con una. 
 Renombra el aula para que su nombre coincida con el de la organización.
 
