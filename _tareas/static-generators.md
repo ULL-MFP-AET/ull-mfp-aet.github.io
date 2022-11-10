@@ -18,8 +18,6 @@ rubrica:
   - Se ha hecho uso de liquid (mostrar ejemplo en el informe)
   - Se ha hecho uso de un .csv o .json en `_data` (mostrar ejemplo en el informe)
   - Ha reconfigurado los defaults del _config.yml
-  - "Página personal en GitHub Pages"
-  - "Página personal en GitHub Pages enlazada desde el perfil GitHub del alumno"
   - "Ha entregado el .zip en el campus con el repo"
 video: "8KwoKgYz85k"
 ---
