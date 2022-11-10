@@ -32,9 +32,10 @@ Esta es una práctica cuyo único objetivo es crear equipos de 3 personas.
 
 En el README.md del repo pon una lista de enlaces a:
 
-* Tu classroom
-* Tu organización
-  
+* Tu GH classroom como teacher
+* Tu organización GH como teacher
+* Enlaces a los GH profiles de los otros dos miembros del equipo 
+
 ## Rúbrica
 
 {% include rubrica.md %}
