@@ -21,36 +21,68 @@ rubrica:
   - "Página personal en GitHub Pages"
   - "Página personal en GitHub Pages enlazada desde el perfil GitHub del alumno"
   - "Ha entregado el .zip en el campus con el repo"
+video: "8KwoKgYz85k"
 ---
 
-# Generating a Web Site with a Static Generator
+- [{{ page.title}}](#-pagetitle)
+  - [Objetivos](#objetivos)
+  - [Puesta a punto en CodeSpaces](#puesta-a-punto-en-codespaces)
+    - [Puesta a punto con GitPod](#puesta-a-punto-con-gitpod)
+  - [Modificando el Web Site](#modificando-el-web-site)
+  - [Añadir una sección de Comentarios](#añadir-una-sección-de-comentarios)
+  - [Desplegando el Web Site de la Asignatura en Moodle](#desplegando-el-web-site-de-la-asignatura-en-moodle)
+  - [Entrega](#entrega)
+  - [References](#references)
+  - [Rúbrica](#rúbrica)
+  - [Actividad de los Alumnos para {{ page.key }}](#actividad-de-los-alumnos-para--pagekey-)
 
-En esta tarea vamos a construir un web site para una asignatura. 
-Para ello usaremos los servicios de alojamiento de websites que provee GitHub mediante [GitHub Pages](https://pages.github.com/) y el generador de web sites estáticos Jekyll.
 
-Para el desarrollo usaremos [GitPod](https://www.gitpod.io/docs/getting-started).
+# {{ page.title}}
 
-Al aceptar se le creará un repo con los archivos y carpetas necesarios para la generación de un web site usando Jekyll. Despliegue el repo en GitPod usando el botón GitPod. El contenedor/Docker/Máquina Virtual creado instalará Jekyll (lleva su tiempo, tenga paciencia) y arrancará Jekyll en modo servidor.
+## Objetivos
 
-![]({{site.baseurl}}/assets/images/jekyll-serve.png)
+En esta tarea vamos a aprender a construir web sites usando un [generador estático de contenidos]({{ site.baseurl }}/glossary.html#static-site-generators). 
 
-Haga click en *http://127.0.0.1:4000 Follow link using forwarded port*
+Para ello usaremos 
 
-![]({{site.baseurl}}/assets/images/minimal-mistakes.png)
+1. los servicios de alojamiento de websites que provee GitHub mediante [GitHub Pages](https://pages.github.com/)
+2. el generador de web sites estáticos Jekyll.
 
-A continuación lea los tutorials de [Jekyll](https://jekyllrb.com/docs/) y [Minimal Mistakes](https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/)
+Al aceptar esta asignación se creará un repo con los archivos y carpetas necesarios para la generación de un web site usando Jekyll. 
+
+En este  web site deberás crear un web site en un repo con nombre `<organization>/<organization>.github.io` para la organización que creaste en la tarea anterior  con una estructura similar al  web site de este curso conteniendo temas, tareas, comentarios, enlaces, etc. 
+
+## Puesta a punto en CodeSpaces
+
+Véase las [notas sobre CodeSpaces]({{ site.baseurl}}/assets/tareas/asignatura-website/codespaces)
+
+### Puesta a punto con GitPod 
+
+Véase las [notas sobre GitPod]({{ site.baseurl}}/assets/tareas/asignatura-website/gitpod)
+
+## Modificando el Web Site
+
+A continuación lea los tutorials de [Jekyll](https://jekyllrb.com/docs/)
+
+## Añadir una sección de Comentarios
+
+Instale  utterances en su repo [https://github.com/apps/utterances](https://github.com/apps/utterances) y configurela para añadir comentarios a su repo.
+
+## Desplegando el Web Site de la Asignatura en Moodle
+
+Siga las instrucciones en el artículo [Importing a Website into Moodle]({{site.baseurl}}/pages/moodle.html)
+
+
+## Entrega
+
+Deja en el fichero `README.md` de este repositorio los enlaces a la web de tu asignatura. 
+
+Si tienes acceso a un curso Moodle despliega tanto tu página web como tu web site de la asignatura en el curso Moodle.
 
 
 ## References
 
-### GitHub Pages
-
-* [GitHub Pages](https://pages.github.com/)
-{% include jekyll-references.md %}
-
-### GitPod
-
-{% include gitpod-references.md %}
+[Referencias]({{ site.baseurl }}/assets/tareas/asignatura-website/referencias-website) para esta práctica
 
 ## Rúbrica
 
