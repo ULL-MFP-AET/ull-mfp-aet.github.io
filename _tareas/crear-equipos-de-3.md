@@ -17,11 +17,24 @@ rubrica:
 # {{ page.title }}
 
 Esta es una práctica cuyo único objetivo es crear equipos de 3 personas. 
-No hay nada que entregar.
+
+## Antes de aceptar la práctica
+
+1. Ponte de acuerdo con otros dos compañeros de clase para formar un equipo
+2. Si son solo dos también esta bien
+  
+## Cuando aceptes la práctica
 
 * El nombre del equipo debe ser la concatenación de los primeros nombres (en orden alfabético, no usar segundo nombre ni apellidos) de los nombres de los miembros del equipo separados por guiones: `nombre1-nombre2-nombre3`.
 * No use acentos ni caracteres especiales en los nombres. No use blancos. Sólo letras del alfabeto inglés. Sustituya la ñ por "ny".
 
+## Entrega 
+
+En el README.md del repo pon una lista de enlaces a:
+
+* Tu classroom
+* Tu organización
+  
 ## Rúbrica
 
 {% include rubrica.md %}
