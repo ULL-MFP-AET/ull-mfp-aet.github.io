@@ -17,7 +17,7 @@ rubrica:
 
 # {{ page.title }}
 
-Esta es una práctica cuyo único objetivo es crear equipos de 3 personas. 
+Esta es una práctica auxiliar cuyo único objetivo es crear equipos de 3 personas. 
 
 ## Antes de aceptar la práctica
 
