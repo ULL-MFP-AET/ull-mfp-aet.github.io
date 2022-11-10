@@ -76,10 +76,12 @@ Los siguientes recursos te ayudarán a realizar estas tareas:
 ## Crea un Classroom para la Organización
 
 Crea un aula usando GitHub Classroom ([https://classroom.github.com](https://classroom.github.com)) y la asocias a la organización creada en el apartado anterior. 
-Si GHC  te provee varias aulas quédate sólo con una. 
-Renombra el aula para que su nombre coincida con el de la organización.
 
-**Invita a [crguezl](https://github.com/crguezl) como profesor asociado**.
+Si GHC  te provee varias aulas quédate sólo con una. 
+
+**Renombra el aula para que su nombre coincida con el de la organización**: `ull-mfp-aet-2223-aluXXXX` donde `aluXXXX` es tu identificador ULL.
+
+**Invita a [crguezl](https://github.com/crguezl) como profesor asociado**. Para que la invitación pueda hacerse deberás haber primero invitado a [crguezl](https://github.com/crguezl) como **owner** de la organización y este debe haber aceptado.
 
 Para poder llevar a cabo la tarea de crear un classroom y hacer las asignaciones deberás leer con detenimiento la sección [GitHub Classroom para Profesores]({{ site.baseurl}}/pages/github-classroom.html) de estos apuntes 
 
@@ -87,18 +89,27 @@ También te será de utilidad la documentación de GH en [Enseña con GitHub Cla
 
 ## Crea asignaciones para tus estudiantes
 
-Crea una asignación de grupo GHC para tu clase
+
+### Crea una primera asignación de grupo GHC para tu clase
 
 * Configurala como una asignación de grupo con un sólo miembro por grupo como la primera que has hecho en este curso. 
+* El nombre del grupo de teams será 
 * Usa la técnica descrita en la sección [Segunda Solución: Asignaciones de Grupos]({{ site.baseurl}}/pages/github-classroom.html#segunda-soluci%C3%B3n-asignaciones-de-grupos) y dale las instrucciones correspondientes a tus [alumnos]({{ page.equipos}}). Lee también la sección [El problema de Enlazar las Cuentas GH con las cuentas del LMS]({{ site.baseurl }}/pages/github-classroom.html#el-problema-de-enlazar-las-cuentas-gh-con-las-cuentas-del-lms)
 * Crea un repo de template para la asignación dentro de la organización `ull-mfp-aet-2223-aluXXXX` con las instrucciones y ejemplos para la tarea. 
   * El nombre del repo tendrá que tener el sufijo `-template`
   * En los settings del repo deberás indicar que es un repo template
   * Usa dicho repo template como template para la asignación
 * Pon una fecha de entrega
-* Enviale el enlace a tus compañeros/alumnos del [equipo que formaron en la trea equipos de 3]({{ page.equipos}}).
+* Enviale el enlace a tus otros compañeros/alumnos del [equipo que formaron en la trea equipos de 3]({{ page.equipos}})
 * Documenta lo que has hecho en el fichero `README.md`  de tu repo de entrega de esta práctica
-  
+
+### Crea una segunda asignación reutilizando el grupo de teams
+
+* Configurala como una asignación de grupo y reutilizas el grupo de teams creado en la anterior. 
+* Crea un nuevo repo de template para la asignación dentro de la organización `ull-mfp-aet-2223-aluXXXX` con las instrucciones y ejemplos para la tarea como en la anterior
+* Enviale el enlace a tus otros compañeros/alumnos del [equipo que formaron en la trea equipos de 3]({{ page.equipos}})
+* Documenta lo que has hecho en el fichero `README.md`  de tu repo de entrega de esta práctica
+
 ## Acepta tus asignaciones como estudiante
 
 Acepta las asignaciones que te han hecho tus profesores/compañeros de [equipo]({{ page.equipos}}) y procede a la entrega realizando un [issue](https://docs.github.com/en/issues) mencionando al correspondiente profesor y a `@crguezl` indicándole que has acabado.
