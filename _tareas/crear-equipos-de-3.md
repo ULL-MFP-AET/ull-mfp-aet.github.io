@@ -12,6 +12,7 @@ rubrica:
   - Creado el equipo
   - El nombre es correcto
   - Tiene al menos dos miembros
+  - El informe es correcto
 ---
 
 # {{ page.title }}
