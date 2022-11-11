@@ -6,7 +6,7 @@ myurl: "https://campusdoctoradoyposgrado2223.ull.es/mod/assign/view.php?id=890&f
 permalink: tema0-introduccion/practicas/aprender-markdown/
 name: Aprender Markdown
 date: 0000/01/02
-toc: true
+toc: false
 rubrica:
   - El nombre del equipo creado sigue el formato correcto
   - Ha rellenado el custionario con la relación GitHub/AluXXX

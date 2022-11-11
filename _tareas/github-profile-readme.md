@@ -179,7 +179,7 @@ En el README.md del repo de entrega de esta práctica deja enlaces a la organiza
 * [Classroom ULL-MFP-AET-2223-alumnoXXXX](https://classroom.github.com/classrooms/108617085-ull-mfp-aet-2223)
 ```
 
-Añade a la lista enlaces a los profiles GH de los miembros de tu equipo
+Añade a la lista enlaces a los profiles GH de los miembros de tu equipo.
 
 ## Actividad de los Alumnos para {{ page.key }}
 
