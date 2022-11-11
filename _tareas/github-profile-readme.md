@@ -175,8 +175,8 @@ En el [foro de la organización de AET]({{ page.foro}}) dentro de la categoría 
 En el README.md del repo de entrega de esta práctica deja enlaces a la organización y al classroom creados:
 
 ```
-* [Organización de la práctica ull-mfp-aet-2223-alumnoudv4](https://github.com/ull-mfp-aet-2223-alumnoudv4)
-* [Classroom ULL-MFP-AET-2223](https://classroom.github.com/classrooms/108617085-ull-mfp-aet-2223)
+* [Organización de la práctica ull-mfp-aet-2223-alumnoXXX](https://github.com/ull-mfp-aet-2223-alumnoudv4)
+* [Classroom ULL-MFP-AET-2223-alumnoXXXX](https://classroom.github.com/classrooms/108617085-ull-mfp-aet-2223)
 ```
 
 Añade a la lista enlaces a los profiles GH de los miembros de tu equipo
