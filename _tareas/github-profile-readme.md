@@ -114,12 +114,13 @@ También te será de utilidad la documentación de GH en [Enseña con GitHub Cla
 
 Supuesto que tu eres el alumno `AluYYY`, para cada uno de los otros miembros `AluXXX` del equipo procede de este modo:
 
-1. acepta las dos asignaciones que te ha hecho tu compañero  `AluXXX` como profesor 
-1. una vez aceptadas, en la organización `ULL-MFP-AET-AluXXX` del profesor `AluXXX` encontraras los dos repos en los que debes trabajar. Suponiendo que ha puesto como prefijos `tarea-1` y `tarea-2`los nombres de esos repos siguen el patrón:
+1. acepta las dos asignaciones que te ha hecho tu compañero  `AluXXX` como profesor.
+   * La primera vez que aceptes deberás crear el equipo. Sigue las instrucciones en la sección [Aceptando la tarea]({{ site.baseurl }}tema0-introduccion/practicas/aprender-markdown/#aceptando-la-tarea) que dimos en la primera práctica de esta parte
+2. una vez aceptadas, en la organización `ULL-MFP-AET-AluXXX` del profesor `AluXXX` encontraras los dos repos en los que debes trabajar. Suponiendo que ha puesto como prefijos `tarea-1` y `tarea-2`los nombres de esos repos siguen el patrón:
    1. `ULL-MFP-AET-AluXXX/tarea-1-Nombre-Apellidos-AluYYY`
    2. `ULL-MFP-AET-AluXXX/tarea-2-Nombre-Apellidos-AluYYY`
-2. sigue las instrucciones que te ha indicado `AluXXX` y realiza la tarea que te asign´en el repo de entrega
-3. Cuando creas que están terminadas procede a las entregas realizando un [issue](https://docs.github.com/en/issues) en el repo de la tarea `ULL-MFP-AET-AluXXX/tarea-prefijo-Nombre-Apellidos-AluYYY` mencionando al correspondiente profesor `@AluXXX` y a `@crguezl` indicándole que has acabado.
+3. sigue las instrucciones que te ha indicado `AluXXX` y realiza la tarea que te asign´en el repo de entrega
+4. Cuando creas que están terminadas procede a las entregas realizando un [issue](https://docs.github.com/en/issues) en el repo de la tarea `ULL-MFP-AET-AluXXX/tarea-prefijo-Nombre-Apellidos-AluYYY` mencionando al correspondiente profesor `@AluXXX` y a `@crguezl` indicándole que has acabado.
 
 ## Como profesor evalúa a tus estudiantes
 
@@ -142,15 +143,13 @@ Una vez que estás en el [programa *"Global Campus"*](https://docs.github.com/en
 
 Uno de estos es que tus organizaciones podrán tener privilegios especiales (repositorios y equipos privados, acceso al [editor en la nube CodeSpace](https://docs.github.com/es/codespaces/getting-started/quickstart), a la IA GitHub Copilot, etc.).  
 
-Aquí (si estás autenticado y dado de alta) encontrarás el boton de *Upgrade to GitHub Team* para que tus organizaciones se acojan a los beneficios: [GitHub Education: teacher's page](https://education.github.com/globalcampus/teacher). 
+Aquí (si estás autenticado y dado de alta) encontrarás el boton de 
+<span style="color: white; background-color: green; text-decoration: underline;text-decoration-style: dotted;">**Upgrade to GitHub Team**</span>. Haz click en él y sigue las instrucciones para que tus organizaciones se acojan a los beneficios: [GitHub Education: teacher's page](https://education.github.com/globalcampus/teacher). 
 
 ![]({{ site.baseurl }}/assets/images/upgrade-your-organizations.png)
 
 Los pasos iniciales que debes dar para obtener los descuentos y crear un aula para los alumnos en un curso usando GitHub Classroom los encontrarás resumidos en la sección [Inicio rápido para GitHub Educators](https://docs.github.com/es/education/quickstart) (La versión en inglés está aquí: [Quickstart for GitHub Educators
 ](https://docs.github.com/en/education/quickstart)). 
-
-Crea  y configura una primera tarea asignación de grupo en GitHub Classroom para tus estudiantes. Publica el enlace con en tu LMS para que tus  estudiantes tengan acceso a la asignación. Acompañala de las instrucciones necesarias para su realización.
-
 
 
 ## Aprendiendo a usar un Foro de una Organización
