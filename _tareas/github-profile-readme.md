@@ -112,7 +112,10 @@ También te será de utilidad la documentación de GH en [Enseña con GitHub Cla
 
 ## Acepta tus asignaciones como estudiante
 
-Acepta las asignaciones que te han hecho tus profesores/compañeros de [equipo]({{ page.equipos}}) y procede a la entrega realizando un [issue](https://docs.github.com/en/issues) mencionando al correspondiente profesor y a `@crguezl` indicándole que has acabado.
+Para cada uno de los otros miembros del equipo 
+1. acepta las asignaciones que te han hecho tus compañeros como profesores de [equipo]({{ page.equipos}}) 
+2. sigue sus instrucciones y realiza la tarea
+3. procede a la entrega realizando un [issue](https://docs.github.com/en/issues) mencionando al correspondiente profesor y a `@crguezl` indicándole que has acabado.
 
 ## Como profesor evalúa a tus estudiantes
 
