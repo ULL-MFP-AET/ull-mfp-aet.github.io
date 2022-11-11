@@ -1,4 +1,5 @@
 ---
+comments: "Es mejor que los equipos sean de 3 que de 5"
 layout: default
 title: Equipos de 3
 permalink: /practicas/equipos-de-3/
@@ -6,6 +7,7 @@ classroom: https://classroom.github.com/a/mgV_maOt
 name: Managing your profile README
 date: 0000/03/02
 toc: false
+hide: true
 equipos: https://campusdoctoradoyposgrado2223.ull.es/mod/page/view.php?id=839
 foro: https://github.com/orgs/ULL-MFP-AET-2223/discussions
 rubrica:

@@ -1,6 +1,7 @@
 
 <ol reverse>
 {%- for practica in site.tareas -%}
+{% if practica.hide != true %}
 <li> 
   <a href="{{ practica.url }}">Descripción de la Práctica {{ practica.title }}</a>
   <ul>
@@ -10,6 +11,7 @@
     <li><a href="{{practica.permalink}}#rúbrica">Rúbrica</a> </li>
   </ul>
 </li>
+{% endif %}
 {%- endfor -%}
 </ol>
 
