@@ -185,6 +185,7 @@ Añade a la lista enlaces a los profiles GH de los miembros de tu equipo.
 
 <a href="{{ site.baseurl }}/assets/tareas/{{ page.key }}/activity.html" target="_blank">Medidas de Actividad de los Alumnos para {{ page.key }}</a>
 
+
 ## Rúbrica
 
 {% include rubrica.md %}

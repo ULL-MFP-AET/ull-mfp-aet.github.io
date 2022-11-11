@@ -31,7 +31,11 @@
       <li> <a href="{{ memberAccessUrl }}" target="_blank">{{ studentName }} ({{ student.login }})</a>  at the organization {{ site.organization.name }}</li>
       <li> <a href="{{ student.url }}" target="_blank">{{ studentName }} at GitHub</a> is {{ student.login }}</li>
       <li><a href="https://github.com/notifications?query=author%3A{{ student.login }}" target="_blank">Notifications</a> to the teacher from {{studentName}}</li>
-      <li><a href="https://github.com/{{ site.organization.name }}-{{ aluId }}" target="_blank">{{ studentName }} Organization</a></li>
+      <li>
+        <a href="https://github.com/{{ site.organization.name }}-{{ aluId }}" target="_blank">{{ studentName }} Organization</a>
+        and
+        <a href="https://github.com/orgs/{{ site.organization.name }}-{{ aluId }}/teams" target="_blank">Teams inside {{ studentName }} Organization</a> 
+      </li>
       <li><a href="https://classroom.github.com/classrooms/search?query={{ aluId }}&view=Active&sort_by=Newest+first" target="_blank">{{ studentName }} Classroom</a></li>
       <li> {{ studentName }} activity:
         <ol>
