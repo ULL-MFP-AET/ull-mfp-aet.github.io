@@ -100,7 +100,7 @@ También te será de utilidad la documentación de GH en [Enseña con GitHub Cla
   * En los settings del repo deberás indicar que es un repo template
   * Usa dicho repo template como template para la asignación
 * Pon una fecha de entrega
-* Enviale el enlace a tus otros compañeros/alumnos del [equipo que formaron en la trea equipos de 3]({{ page.equipos}})
+* Enviale el enlace a tus otros compañeros/alumnos del [equipo]({{ page.equipos}})
 * Documenta lo que has hecho en el fichero `README.md`  de tu repo de entrega de esta práctica
 
 ### Crea una segunda asignación reutilizando el grupo de teams
@@ -119,7 +119,7 @@ Supuesto que tu eres el alumno `AluYYY`, para cada uno de los otros miembros `Al
 2. una vez aceptadas, en la organización `ULL-MFP-AET-AluXXX` del profesor `AluXXX` encontraras los dos repos en los que debes trabajar. Suponiendo que ha puesto como prefijos `tarea-1` y `tarea-2`los nombres de esos repos siguen el patrón:
    1. `ULL-MFP-AET-AluXXX/tarea-1-Nombre-Apellidos-AluYYY`
    2. `ULL-MFP-AET-AluXXX/tarea-2-Nombre-Apellidos-AluYYY`
-3. sigue las instrucciones que te ha indicado `AluXXX` y realiza la tarea que te asign´en el repo de entrega
+3. sigue las instrucciones que te ha indicado `AluXXX` y realiza las tareas que te asignaron en el repo de entrega
 4. Cuando creas que están terminadas procede a las entregas realizando un [issue](https://docs.github.com/en/issues) en el repo de la tarea `ULL-MFP-AET-AluXXX/tarea-prefijo-Nombre-Apellidos-AluYYY` mencionando al correspondiente profesor `@AluXXX` y a `@crguezl` indicándole que has acabado.
 
 ## Como profesor evalúa a tus estudiantes

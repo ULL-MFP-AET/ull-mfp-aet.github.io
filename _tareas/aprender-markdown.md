@@ -28,12 +28,11 @@ rubrica:
   - [Actividad de los Alumnos para {{ page.key }}](#actividad-de-los-alumnos-para--pagekey-)
   - [Referencias](#referencias)
 
-
 # Aprender Markdown (aprender-markdown)
 
 ## Aceptando la Tarea
 
-Deberás comenzar aceptando la tarea asociada a esta parte haciendo click en el enlace en la [tarea correspondiente del campus]({{ page.myurl}}) con el texto *"acepta la asignación de la tarea"*. 
+Deberás comenzar aceptando la tarea asociada a esta parte haciendo click en el enlace en la [tarea correspondiente del campus]({{ page.myurl}}) con el texto *"acepta la asignación de la tarea"*.
 En cada una de los tareas de esta parte que requieren de la creación de un repositorio de trabajo encontrarás un enlace  similar. 
 
 Esta tarea inicial ha sido configurada por el profesor como una tarea de equipo.
