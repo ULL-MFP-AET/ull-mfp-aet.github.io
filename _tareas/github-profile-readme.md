@@ -112,10 +112,14 @@ También te será de utilidad la documentación de GH en [Enseña con GitHub Cla
 
 ## Acepta tus asignaciones como estudiante
 
-Para cada uno de los otros miembros del equipo 
-1. acepta las asignaciones que te han hecho tus compañeros como profesores de [equipo]({{ page.equipos}}) 
-2. sigue sus instrucciones y realiza la tarea
-3. procede a la entrega realizando un [issue](https://docs.github.com/en/issues) mencionando al correspondiente profesor y a `@crguezl` indicándole que has acabado.
+Supuesto que tu eres el alumno `AluYYY`, para cada uno de los otros miembros `AluXXX` del equipo procede de este modo:
+
+1. acepta las dos asignaciones que te ha hecho tu compañero  `AluXXX` como profesor 
+1. una vez aceptadas, en la organización `ULL-MFP-AET-AluXXX` del profesor `AluXXX` encontraras los dos repos en los que debes trabajar. Suponiendo que ha puesto como prefijos `tarea-1` y `tarea-2`los nombres de esos repos siguen el patrón:
+   1. `ULL-MFP-AET-AluXXX/tarea-1-Nombre-Apellidos-AluYYY`
+   2. `ULL-MFP-AET-AluXXX/tarea-2-Nombre-Apellidos-AluYYY`
+2. sigue las instrucciones que te ha indicado `AluXXX`y realiza la tarea
+3. Cuando creas que están terminadas procede a las entregas realizando un [issue](https://docs.github.com/en/issues) en el repo de la tarea `ULL-MFP-AET-AluXXX/tarea-prefijo-Nombre-Apellidos-AluYYY` mencionando al correspondiente profesor y a `@crguezl` indicándole que has acabado.
 
 ## Como profesor evalúa a tus estudiantes
 
