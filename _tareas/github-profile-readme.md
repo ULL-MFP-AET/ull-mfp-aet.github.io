@@ -118,20 +118,33 @@ Supuesto que tu eres el alumno `AluYYY`, para cada uno de los otros miembros `Al
 1. una vez aceptadas, en la organización `ULL-MFP-AET-AluXXX` del profesor `AluXXX` encontraras los dos repos en los que debes trabajar. Suponiendo que ha puesto como prefijos `tarea-1` y `tarea-2`los nombres de esos repos siguen el patrón:
    1. `ULL-MFP-AET-AluXXX/tarea-1-Nombre-Apellidos-AluYYY`
    2. `ULL-MFP-AET-AluXXX/tarea-2-Nombre-Apellidos-AluYYY`
-2. sigue las instrucciones que te ha indicado `AluXXX`y realiza la tarea
-3. Cuando creas que están terminadas procede a las entregas realizando un [issue](https://docs.github.com/en/issues) en el repo de la tarea `ULL-MFP-AET-AluXXX/tarea-prefijo-Nombre-Apellidos-AluYYY` mencionando al correspondiente profesor y a `@crguezl` indicándole que has acabado.
+2. sigue las instrucciones que te ha indicado `AluXXX` y realiza la tarea que te asign´en el repo de entrega
+3. Cuando creas que están terminadas procede a las entregas realizando un [issue](https://docs.github.com/en/issues) en el repo de la tarea `ULL-MFP-AET-AluXXX/tarea-prefijo-Nombre-Apellidos-AluYYY` mencionando al correspondiente profesor `@AluXXX` y a `@crguezl` indicándole que has acabado.
 
 ## Como profesor evalúa a tus estudiantes
 
-Responde a las incidencias generadas por tus alumnos indicándoles si la tarea está bien hecha y cerrando la incidencia o indicándoles que deben corregir la tarea y volver a enviar una incidencia para su aprobación. En la incidencia, menciona mencionando al alumno y a `@crguezl`
+Responde a las incidencias generadas por tus alumnos indicándoles 
+
+1. si la tarea está bien hecha y **cerrando la incidencia** o 
+2. indicándoles que deben corregir la tarea y volver a enviar una incidencia para su aprobación. 
+3. En la incidencia, menciona  al alumno `@AluYYY` y a `@crguezl`
 
 ## Si eres profesor actualiza la organización para que se beneficie de los descuentos
 
-Deberás, si es posible y si no lo hiciste en la [tarea inicial]({{ site.baseurl }}/registrarse-en-github), beneficiarte de los descuentos que ofrece GitHub para lo que **deberás verificar tu condición de empleo académico** y una vez seas aceptado en el [programa *"Global Campus"*](https://docs.github.com/en/education/explore-the-benefits-of-teaching-and-learning-with-github-education/use-github-at-your-educational-institution/about-github-campus-program), podrás solicitar hojas de atajos, guías, pegatinas, etc. para tus estudiantes. Busca la sección de descuentos en la página [https://education.github.com](https://education.github.com/discount_requests/teacher_application)
+Deberás, si es posible y si no lo hiciste en la [tarea inicial]({{ site.baseurl }}/tema0-introduccion/practicas/registrarse-en-github/)), beneficiarte de los descuentos que ofrece GitHub para lo que 
+
+1. **deberás verificar tu condición de empleo académico** y una vez seas aceptado en el [programa *"Global Campus"*](https://docs.github.com/en/education/explore-the-benefits-of-teaching-and-learning-with-github-education/use-github-at-your-educational-institution/about-github-campus-program), 
+2. podrás solicitar hojas de atajos, guías, pegatinas, etc. para tus estudiantes. 
+
+Busca la sección de descuentos en la página [https://education.github.com](https://education.github.com/discount_requests/teacher_application)
 
 Una vez que estás en el [programa *"Global Campus"*](https://docs.github.com/en/education/explore-the-benefits-of-teaching-and-learning-with-github-education/use-github-at-your-educational-institution/about-github-campus-program) podrás acogerte a los beneficios que ofrece GitHub a los educadores. 
 
-Uno de estos es que tus organizaciones podrán tener privilegios especiales (repositorios y equipos privados, acceso al [editor en la nube CodeSpace](https://docs.github.com/es/codespaces/getting-started/quickstart), a la IA GitHub Copilot, etc.).  Aquí (si estás autenticado y dado de alta) encontrarás el boton de *Upgrade to GitHub Team* para que tus organizaciones se acojan a los beneficios: [GitHub Education: teacher's page](https://education.github.com/globalcampus/teacher). 
+Uno de estos es que tus organizaciones podrán tener privilegios especiales (repositorios y equipos privados, acceso al [editor en la nube CodeSpace](https://docs.github.com/es/codespaces/getting-started/quickstart), a la IA GitHub Copilot, etc.).  
+
+Aquí (si estás autenticado y dado de alta) encontrarás el boton de *Upgrade to GitHub Team* para que tus organizaciones se acojan a los beneficios: [GitHub Education: teacher's page](https://education.github.com/globalcampus/teacher). 
+
+![]({{ site.baseurl }}/assets/images/upgrade-your-organizations.png)
 
 Los pasos iniciales que debes dar para obtener los descuentos y crear un aula para los alumnos en un curso usando GitHub Classroom los encontrarás resumidos en la sección [Inicio rápido para GitHub Educators](https://docs.github.com/es/education/quickstart) (La versión en inglés está aquí: [Quickstart for GitHub Educators
 ](https://docs.github.com/en/education/quickstart)). 
