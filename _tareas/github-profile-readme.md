@@ -100,14 +100,14 @@ También te será de utilidad la documentación de GH en [Enseña con GitHub Cla
   * En los settings del repo deberás indicar que es un repo template
   * Usa dicho repo template como template para la asignación
 * Pon una fecha de entrega
-* Enviale el enlace a tus otros compañeros/alumnos del [equipo]({{ page.equipos}})
+* Enviale el enlace a tus otros compañeros/alumnos del [equipo]({{ page.equipos}}). Puedes usar el [chat de Google](https://mail.google.com/chat/u/0) para comunicarte con tus alumnos. 
 * Documenta lo que has hecho en el fichero `README.md`  de tu repo de entrega de esta práctica
 
 ### Crea una segunda asignación reutilizando el grupo de teams
 
 * Configurala como una asignación de grupo y reutilizas el grupo de teams creado en la anterior. 
 * Crea un nuevo repo de template para la asignación dentro de la organización `ull-mfp-aet-2223-aluXXXX` con las instrucciones y ejemplos para la tarea como en la anterior
-* Enviale el enlace a tus otros compañeros/alumnos del [equipo que formaron en la trea equipos de 3]({{ page.equipos}})
+* Enviale el enlace a tus otros compañeros/alumnos del [equipo]({{ page.equipos}}). Puedes usar el [chat de Google](https://mail.google.com/chat/u/0) para comunicarte con tus alumnos. 
 * Documenta lo que has hecho en el fichero `README.md`  de tu repo de entrega de esta práctica
 
 ## Acepta tus asignaciones como estudiante
