@@ -28,6 +28,7 @@ video: "8KwoKgYz85k"
     - [Puesta a punto con GitPod](#puesta-a-punto-con-gitpod)
   - [Modificando el Web Site](#modificando-el-web-site)
   - [Añadir una sección de Comentarios](#añadir-una-sección-de-comentarios)
+  - [Desplegando en su organización ull-mfp-aet-2223-aluXXXX.github.io](#desplegando-en-su-organización-ull-mfp-aet-2223-aluxxxxgithubio)
   - [Desplegando el Web Site de la Asignatura en Moodle](#desplegando-el-web-site-de-la-asignatura-en-moodle)
   - [Entrega](#entrega)
   - [References](#references)
@@ -65,6 +66,16 @@ A continuación lea los tutorials de [Jekyll](https://jekyllrb.com/docs/)
 ## Añadir una sección de Comentarios
 
 Instale  utterances en su repo [https://github.com/apps/utterances](https://github.com/apps/utterances) y configurela para añadir comentarios a su repo.
+
+## Desplegando en su organización ull-mfp-aet-2223-aluXXXX.github.io
+
+Hemos estado generando el web site en el repo de la asignación de esta tarea. 
+El objetivo es que este web site sea el de su organización, por lo tanto es conveniente que lo despliegue en su organización.
+
+1. Haga un fork del repo de su práctica a su organización. 
+2. El nombre del repo de destino deberá ser el de la organización de su asignatura seguido del sufijo `.github.io`: `ull-mfp-aet-2223-aluXXXX.github.io`
+3. Configure el repo de destino para activar las GitHub Pages
+4. Cambie el `baseurl` a vacío
 
 ## Desplegando el Web Site de la Asignatura en Moodle
 
