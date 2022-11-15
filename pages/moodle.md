@@ -14,7 +14,7 @@ The links will not work properly otherwise.
 
 *  Read the section [Understanding site.url and site.baseurl](jekyll-baseurl.html) to learn how to do this with Jekyll
 
-## Step 2: Zip the root directory of the site into a single zip file. 
+## Step 2: Zip the root directory of the site  
 
 ### On Codespaces
 
