@@ -41,7 +41,9 @@
         <ol>
           {%- for practica in site.tareas -%}
           {% if practica.key -%}
-              <li> <a href="https://github.com/{{ site.organization.name }}/{{ practica.key }}-{{name}}/commits" target="_blank">{{ studentName }} Commits</a>, 
+              <li> {{ studentName }} 
+                <a href="https://github.com/{{ site.organization.name }}/{{ practica.key }}-{{name}}/" target="_blank"> Repo</a>,
+                <a href="https://github.com/{{ site.organization.name }}/{{ practica.key }}-{{name}}/commits" target="_blank">Commits</a>, 
                 <a href="https://github.com/{{ site.organization.name }}/{{ practica.key }}-{{name}}/graphs/commit-activity" target="_blank"> Commit Activity</a> and
                 <a href="https://github.com/{{ site.organization.name }}/{{ practica.key }}-{{name}}/pulse" target="_blank"> Summary</a> for 
                 <a href="{{ practica.url }}">{{ practica.key }}</a>
