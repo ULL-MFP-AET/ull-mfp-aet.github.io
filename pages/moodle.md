@@ -6,7 +6,7 @@ title: Importing a Website into Moodle
 
 It is possible to host a website within Moodle following these instructions:
 
-## Step 1  
+## Step 1: Links within your webpages must be relative to each other
 
 Ensure that all links within your webpages are relative to each other, meaning if you have an `index.html` page and a `book.html` page in the same directory, as a link to the `book.html` page from the `index page`, you have `/book.html`.  
 
