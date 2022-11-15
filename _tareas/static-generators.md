@@ -18,7 +18,7 @@ rubrica:
   - Se ha hecho uso de liquid (mostrar ejemplo en el informe)
   - Se ha hecho uso de un .csv o .json en `_data` (mostrar ejemplo en el informe)
   - Ha reconfigurado los defaults del _config.yml
-  - "Ha entregado el .zip en el campus con el repo"
+  - "Ha entregado el .zip en el campus"
 video: "8KwoKgYz85k"
 ---
 
