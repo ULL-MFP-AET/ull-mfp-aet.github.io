@@ -24,7 +24,7 @@ rubrica:
   - Ha aceptado como alumnos las tareas asignadas por los otros miembros del equipo
   - Ha hecho alguna pregunta a algún profesor / compañero haciendo uso de los issues GH
   - Ha retroalimentado a sus estudiantes usando las issues de GH
-  - Ha hecho un post en el for de discussions de la organización ULL-MFP-AET-2223
+  - Ha hecho un post en el foro de discussions de la organización ULL-MFP-AET-2223
 ---
 
 # {{ page.title }}
