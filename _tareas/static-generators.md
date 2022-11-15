@@ -73,6 +73,7 @@ Hemos estado generando el web site en el repo de la asignación de esta tarea.
 El objetivo es que este web site sea el de su organización, por lo tanto es conveniente que lo despliegue en su organización.
 
 1. Haga un fork del repo de su práctica a su organización. 
+   *  Previamente el profesor debe configurar la organización para permitir los forks (settings -> member priveleges -> repository forking)
 2. El nombre del repo de destino deberá ser el de la organización de su asignatura seguido del sufijo `.github.io`: `ull-mfp-aet-2223-aluXXXX.github.io`
 3. Configure el repo de destino para activar las GitHub Pages
 4. Cambie el `baseurl` a vacío
