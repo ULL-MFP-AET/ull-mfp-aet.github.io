@@ -402,7 +402,7 @@ A branch used to experiment with a new feature or fix an issue that is not in pr
 
 ### [](#fenced-code-block)fenced code block
 
-An indented block of code you can create with GitHub Flavored Markdown using triple backticks \`\`\` before and after the code block. See this [example](/en/articles/creating-and-highlighting-code-blocks#fenced-code-blocks).
+An indented block of code you can create with GitHub Flavored Markdown using triple backticks \`\`\` before and after the code block. See this [example](https://docs.github.com/en/get-started/writing-on-github/working-with-advanced-formatting/creating-and-highlighting-code-blocks).
 
 * * *
 
