@@ -11,13 +11,12 @@ toc: false
 foro: https://github.com/orgs/ULL-MFP-AET-2223/discussions
 
 rubrica:
-  - "Se ha desplegado el sitio Web en GitHub pages usando Jekyll"
-  - Se resumen correctamente los conceptos del capítulo
-  - "Despliegue en netlify"
-  - Se ha creado una Jekyll Collection 
-  - Se ha hecho uso de liquid (mostrar ejemplo en el informe)
-  - Se ha hecho uso de un .csv o .json en `_data` (mostrar ejemplo en el informe)
-  - Ha reconfigurado los defaults del _config.yml
+  - "Se ha desplegado el sitio Web de la práctica"
+  - "Se ha desplegado el sitio Web de la asignatura"
+  - "Se ha aprendido a suar Codespaces"
+  - "Se ha aprendido a hacer un workflow con pull requests"
+  - Se ha aprendido a usar Liquid 
+  - Se ha hecho uso de un .csv o .json en `_data` 
   - "Ha entregado el .zip en el campus"
 video: "8KwoKgYz85k"
 ---
