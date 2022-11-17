@@ -13,7 +13,7 @@ foro: https://github.com/orgs/ULL-MFP-AET-2223/discussions
 rubrica:
   - "Se ha desplegado el sitio Web de la práctica"
   - "Se ha desplegado el sitio Web de la asignatura"
-  - "Se ha aprendido a suar Codespaces"
+  - "Se ha aprendido a usar Codespaces"
   - "Se ha aprendido a hacer un workflow con pull requests"
   - Se ha aprendido a usar Liquid 
   - "Se ha aprendido a parametrizar usando ficheros .csv, .yml  o .json desde la carpeta `_data`" 
