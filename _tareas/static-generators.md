@@ -24,7 +24,6 @@ video: "8KwoKgYz85k"
 - [{{ page.title}}](#-pagetitle)
   - [Objetivos](#objetivos)
   - [Puesta a punto en CodeSpaces](#puesta-a-punto-en-codespaces)
-  - [Puesta a punto con GitPod](#puesta-a-punto-con-gitpod)
   - [Modificando el Web Site](#modificando-el-web-site)
   - [Desplegando en su organización ull-mfp-aet-2223-aluXXXX.github.io](#desplegando-en-su-organización-ull-mfp-aet-2223-aluxxxxgithubio)
   - [Desplegando el Web Site de la Asignatura en Moodle](#desplegando-el-web-site-de-la-asignatura-en-moodle)
@@ -53,9 +52,13 @@ En este  web site deberás crear un web site en un repo con nombre `<organizatio
 
 Véase las [notas sobre CodeSpaces]({{ site.baseurl}}/assets/tareas/asignatura-website/codespaces)
 
+<!--
+
 ## Puesta a punto con GitPod 
 
 Véase las [notas sobre GitPod]({{ site.baseurl}}/assets/tareas/asignatura-website/gitpod)
+
+-->
 
 ## Modificando el Web Site
 
