@@ -99,10 +99,11 @@ Siga las instrucciones en el artículo [Importing a Website into Moodle]({{site.
 
 ## Entrega
 
-Deja en el fichero `README.md` de este repositorio los enlaces a la web de tu asignatura. 
+Deja en el fichero `README.md` de este repositorio 
 
-Si tienes acceso a un curso Moodle despliega tanto tu página web como tu web site de la asignatura en el curso Moodle.
-
+* Los enlaces a la org, classroom y web de tu asignatura. 
+* Evidencias de los requisitos solicitados en la rúbrica (*"Aprender ..."*)
+* Opcional: Si tienes acceso a un curso Moodle despliega  tu web site de la asignatura en el curso Moodle y añádelo al informe
 
 ## References
 
