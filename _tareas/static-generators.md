@@ -16,7 +16,7 @@ rubrica:
   - "Se ha aprendido a suar Codespaces"
   - "Se ha aprendido a hacer un workflow con pull requests"
   - Se ha aprendido a usar Liquid 
-  - Se ha hecho uso de un .csv o .json en `_data` 
+  - Se ha aprendido a parametrizar usando ficheros .csv, .yml  o .json desde la carpeta `_data` 
   - "Ha entregado el .zip en el campus"
 video: "8KwoKgYz85k"
 ---
@@ -95,7 +95,6 @@ Instale  utterances en su repo [https://github.com/apps/utterances](https://gith
 ## Desplegando el Web Site de la Asignatura en Moodle
 
 Siga las instrucciones en el artículo [Importing a Website into Moodle]({{site.baseurl}}/pages/moodle.html)
-
 
 ## Entrega
 
