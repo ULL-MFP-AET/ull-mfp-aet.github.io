@@ -13,12 +13,16 @@ LAB=$(gh pwd-lab)
 
 STUDENT_NAMES_FILE=_data/team-names.txt
 export STUDENT_NAMES_FILE
+
+REGEXP='.'
+export REGEXP
+
 # Acentos, blancos y ñ
 IFS=$'\n'
 #TEAMS=$(cat _data/team-names.txt | tr -d ' "' |tr 'áéíóúñ' 'aeyoun')
-TEAMS=$(cat ${STUDENT_NAMES_FILE} | tr -d ' "' |tr 'áéíóúñ' 'aeyoun')
+TEAMS=$(cat ${STUDENT_NAMES_FILE} | grep -E -i ${REGEXP} | tr -d ' "' |tr 'áéíóúñ' 'aeyoun') 
 
-DAY="2022-11-17"
+DAY="2022-10-27"
 BEGIN=00:00:00
 END=23:59:59
 
