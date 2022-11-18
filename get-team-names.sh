@@ -1,0 +1,1 @@
+jq '.data.organization.teams.edges[].node.name' _data/students.json | tr -d '"'
