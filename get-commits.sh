@@ -11,9 +11,12 @@ ORG=\"$(gh pwd)\"
 LAB=$(gh pwd-lab)
 #echo $LAB
 
+STUDENT_NAMES_FILE=_data/team-names.txt
+export STUDENT_NAMES_FILE
 # Acentos, blancos y ñ
 IFS=$'\n'
-TEAMS=$(cat _data/team-names.txt | tr -d ' "' |tr 'áéíóúñ' 'aeyoun')
+#TEAMS=$(cat _data/team-names.txt | tr -d ' "' |tr 'áéíóúñ' 'aeyoun')
+TEAMS=$(cat ${STUDENT_NAMES_FILE} | tr -d ' "' |tr 'áéíóúñ' 'aeyoun')
 
 DAY="2022-11-17"
 BEGIN=00:00:00
