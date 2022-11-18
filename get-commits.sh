@@ -12,9 +12,56 @@ ORG=\"$(gh pwd)\"
 #LAB=asignatura-website
 LAB=$(gh pwd-lab)
 
+STUDENT_NAMES_FILE=_data/team-names.txt
+
+POSITIONAL_ARGS=()
+while [[ $# -gt 0 ]]; do
+  case $1 in
+    -o|--ORG)
+     ORG=$2
+     shift # past argument
+     shift # past value
+     ;;
+    -l|--lab)
+      LAB="$2"
+      shift # past argument
+      shift # past value
+      ;;
+    -d|--day)
+      DAY="$2"
+      shift # past argument
+      shift # past value
+      ;;
+    -f|--file)
+      STUDENT_NAMES_FILE="$2"
+      shift # past argument
+      shift # past value
+      ;;
+    -b|--begin)
+      BEGIN="$2"
+      shift # past argument
+      shift # past value
+      ;;
+    -e|--end)
+      END="$2"
+      shift # past argument
+      shift # past value
+      ;; 
+
+    -*|--*)
+      echo "USAGE"
+      echo "  $0 [-o|--ORG <ORG>] [-l|--lab <lab>] [-d|--day <year-month-day>] [-f|--file <file>] [-b|--begin <HH:MM:SS>] [-e|--end <HH:MM:SS>]"
+      exit 1
+      ;;
+    *)
+      POSITIONAL_ARGS+=("$1") # save positional arg
+      shift # past argument
+      ;;
+  esac
+done
+
 
 function getTeams() {
-  STUDENT_NAMES_FILE=_data/team-names.txt
   export STUDENT_NAMES_FILE
   REGEXP='^$|^#'
   export REGEXP
