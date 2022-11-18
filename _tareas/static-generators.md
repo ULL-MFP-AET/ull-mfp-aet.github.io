@@ -16,8 +16,8 @@ rubrica:
   - "Se ha aprendido a usar Codespaces"
   - "Se ha aprendido a hacer un workflow con pull requests"
   - Se ha aprendido a usar Liquid 
-  - "Se ha aprendido a parametrizar usando ficheros .csv, .yml  o .json desde la carpeta `_data`" 
-  - "Ha entregado el .zip en el campus"
+  - "Opcional (Trabajo autónomo): Se ha aprendido a parametrizar usando ficheros .csv, .yml  o .json desde la carpeta `_data`" 
+  #- "Ha entregado el .zip en el campus"
 video: "8KwoKgYz85k"
 ---
 
