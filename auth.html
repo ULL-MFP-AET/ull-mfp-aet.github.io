@@ -50,7 +50,7 @@ layout: default
             "Authenticated with GitHub. Access Token: " + data.token.substring(0, Math.min(10, data.token.length)) + "...";
 
           outputEmail.innerText =
-            await JSON.stringify(loadGitHubUserEmails(data.token), 2);
+            JSON.stringify(await loadGitHubUserEmails(data.token), 2);
         }
       }
     );
