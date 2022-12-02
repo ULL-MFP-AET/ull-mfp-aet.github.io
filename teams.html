@@ -4,14 +4,6 @@ title: AET 22/23 Teams
 fakeStudents: "parallel,alumnoudv4"
 ---
 
-<script>
-   let login = localStorage.getItem("login");
-   let emails = localStorage.getItem("emails");
-   console.log(login);
-   console.log(emails);
-
-   document.getElementById("you").innerHTML = login;
-</script>
 
 <h2 id=""you"></h2>
 
@@ -24,3 +16,11 @@ fakeStudents: "parallel,alumnoudv4"
 
 {% include teams.html fake=fakes %}
 
+<script>
+  let login = localStorage.getItem("login");
+  let emails = localStorage.getItem("emails");
+  console.log(login);
+  console.log(emails);
+
+  document.getElementById("you").innerHTML = login;
+</script>
