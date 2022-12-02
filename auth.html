@@ -42,20 +42,19 @@ title: GitHub Authentication
         },
         async function (error, data) {
           if (error) {
-            outputToken.innerText =
-              "Error Authenticating with GitHub: " + error;
+            let message = "Error Authenticating with GitHub: " + error;
+            outputEmail.innerText = message;
+            console.error(message);
           } else {
-            outputToken.innerText =
-              "Authenticated with GitHub. Access Token: " + data.token.substring(0, Math.min(10, data.token.length)) + "...";
-            let userInfo = await loadGitHubUserEmails(data.token);
-            
+            let userInfo = await loadGitHubUserEmails(data.token);           
             outputEmail.innerText = userInfo.login + " " + userInfo.emails.join(", ");
+          
             
-            //localStorage.setItem("githubToken", data.token);
             console.log("githubToken", data.token);
             console.log("githubLogin", userInfo.login);
             console.log("githubEmails", userInfo.emails);
 
+            localStorage.setItem("githubToken", data.token);
             localStorage.setItem("login", userInfo.login);
             localStorage.setItem("emails", JSON.stringify(userInfo.emails));
           }
