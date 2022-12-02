@@ -17,7 +17,7 @@ title: GitHub Authentication
   
   <p>
     User login and emails: <br/>
-    <div id="output-email">Not authenticated yet</div>
+    <div id="output-email"></div>
   </p>
 
   <a href="{{ site.baseurl }}/teams.html">Go to Students Activity</a>
@@ -56,7 +56,7 @@ title: GitHub Authentication
             console.log("githubToken", data.token);
             console.log("githubLogin", userInfo.login);
             console.log("githubEmails", userInfo.emails);
-            
+
             localStorage.setItem("login", userInfo.login);
             localStorage.setItem("emails", JSON.stringify(userInfo.emails));
           }
