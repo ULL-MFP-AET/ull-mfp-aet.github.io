@@ -21,12 +21,13 @@
 
       <div id="{{student.login}}" hidden>
         <script>
-        let login = localStorage.getItem("login"); 
-        console.log(login);
+        ( () => {
+          var login = localStorage.getItem("login"); 
+          //console.log(login);
         
-        if (login == "{{ student.login }}" || login == "{{ site.profesor_github }}") {
-          document.getElementById("{{student.login}}").hidden = false;
-        }
+          if (login == "{{ student.login }}" || login == "{{ site.profesor_github }}") {
+            document.getElementById("{{student.login}}").hidden = false;
+          }})()
         </script>
         <h2>
           {%- if fakes contains aluId -%} <span>Fake </span>{%- endif -%}Student {{ studentName }} ({{ aluId}}, {{ forloop.index}} of {{ numTeams}})
