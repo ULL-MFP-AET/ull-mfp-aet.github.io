@@ -5,12 +5,10 @@ fakeStudents: "parallel,alumnoudv4"
 ---
 
 <script>
-exports.handler = async function (event, context) {
-  const { identity, user } = context.clientContext;
-  // Do stuff and return a response...
-  console.log(identity);
-  console.log(user);
-};
+   let login = localStorage.getItem("login");
+   let emails = localStorage.getItem("emails");
+   console.log(login);
+   console.log(emails);
 </script>
 
 {% assign numTeams = site.data.students.data.organization.teams.totalCount %}
