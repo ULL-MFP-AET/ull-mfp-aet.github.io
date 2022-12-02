@@ -53,6 +53,10 @@ title: GitHub Authentication
             outputEmail.innerText = userInfo.login + " " + userInfo.emails.join(", ");
             
             //localStorage.setItem("githubToken", data.token);
+            console.log("githubToken", data.token);
+            console.log("githubLogin", userInfo.login);
+            console.log("githubEmails", userInfo.emails);
+            
             localStorage.setItem("login", userInfo.login);
             localStorage.setItem("emails", JSON.stringify(userInfo.emails));
           }
@@ -78,4 +82,5 @@ title: GitHub Authentication
       let result = { login: user.login, emails: emails};
       return result;
     }
+
   </script>
