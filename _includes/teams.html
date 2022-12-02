@@ -16,10 +16,14 @@
         {%- assign studentName = studentName | append: " " | append: secondName %}
       {%- endif -%}
       {%- assign url = team.node.url -%}
-  
+      {% assign memberAccessUrl = team.node.members.edges[0].memberAccessUrl %}
+      {%- assign student = team.node.members.edges[0].node -%}
+
       <div id="{{student.login}}" hidden>
         <script>
         let login = localStorage.getItem("login"); 
+        console.log(login);
+        
         if (login == "{{ student.login }}" || login == "{{ site.profesor_github }}") {
           document.getElementById("{{student.login}}").hidden = false;
         }
@@ -34,8 +38,6 @@
           <li> {{ studentName }} repos:
           <a href="{{url}}/repositories" target="_blank">Repositories</a>
           </li>
-          {% assign memberAccessUrl = team.node.members.edges[0].memberAccessUrl %}
-          {%- assign student = team.node.members.edges[0].node -%}
           <li> <a href="{{ memberAccessUrl }}" target="_blank">{{ studentName }} ({{ student.login }})</a>  at the organization {{ site.organization.name }}</li>
           <li> <a href="{{ student.url }}" target="_blank">{{ studentName }} at GitHub</a> is {{ student.login }}
           </li>
