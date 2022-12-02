@@ -159,7 +159,29 @@ Se verá así:
 
 Este ejemplo muestra también como escribir un emoji por nombre `:tada:`.
 
-Mas información en [Acerca de las listas de tareas](https://docs.github.com/es/issues/tracking-your-work-with-issues/about-task-lists)
+Mas información en [Acerca de las listas de tareas](https://docs.github.com/es/issues/tracking-
+See your-work-with-issues/about-task-lists)
+
+###  Special notes
+
+To better highlight and separate certain information from the rest in your documentation on GitHub, there is a way to render a special and accessible note or warning blockquote in Markdown documents. It uses
+the existing syntax for blockquote and bold text.
+
+```
+> **Note**
+> This is a note
+
+> **Warning**
+> This is a warning
+```
+
+> **Note**
+> This is a note
+
+> **Warning**
+> This is a warning
+
+See [An option to highlight a "Note" and "Warning" using blockquote](https://github.com/community/community/discussions/16925)
 
 ## Edición en la Nube de Repositorios GitHub
 
