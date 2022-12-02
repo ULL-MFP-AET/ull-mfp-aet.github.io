@@ -45,7 +45,6 @@ layout: default
           outputToken.innerText =
             "Error Authenticating with GitHub: " + error;
         } else {
-          Window.githubData = data;
           outputToken.innerText =
             "Authenticated with GitHub. Access Token: " + data.token.substring(0, Math.min(10, data.token.length)) + "...";
 
