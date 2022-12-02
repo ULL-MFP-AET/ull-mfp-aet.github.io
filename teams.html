@@ -4,6 +4,15 @@ title: AET 22/23 Teams
 fakeStudents: "parallel,alumnoudv4"
 ---
 
+<script>
+exports.handler = async function (event, context) {
+  const { identity, user } = context.clientContext;
+  // Do stuff and return a response...
+  console.log(identity);
+  console.log(user);
+};
+</script>
+
 {% assign numTeams = site.data.students.data.organization.teams.totalCount %}
 {% assign fakes = page.fakeStudents %}
 {% assign fakeStudents = fakes | split: "," %}
