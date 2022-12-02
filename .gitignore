@@ -8,6 +8,7 @@ ull-esit-1617
 jewels
 *.bak
 node_modules
+.env
 
 # repl.it 
 .bundle/

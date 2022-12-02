@@ -1,0 +1,77 @@
+---
+layout: default
+---
+
+<script src="https://unpkg.com/netlify-auth-providers"></script>
+
+<h1>GitHub Authentication</h1>
+
+<p>
+  <button id="login" class="assign">
+     Authenticate
+  </button>
+</p>
+
+<p>Token:<br />
+   <span id="output-token">Not authenticated yet</span>
+</p>
+
+<p>
+  User login and emails: <br />
+  <span id="output-email">Not authenticated yet</span>
+</p>
+
+<script>
+  const anchorTag = document.getElementById("login");
+  const outputToken = document.getElementById("output-token");
+  const outputEmail = document.getElementById("output-email");
+  debugger;
+
+  anchorTag.addEventListener("click", (event) => {
+    event.preventDefault();
+
+    const authenticator = new netlify.default({}); // {id: site id, base_url: by default is https://api.netlify.com 
+
+    authenticator.authenticate(
+      // Set the OAuth provider and token scope
+      // Provider can be "github", "gitlab", or "bitbucket"
+      // The scopes available depend on your OAuth provider
+      {
+        provider: "github",
+        scope: "user"
+      },
+      async function (error, data) {
+        if (error) {
+          outputToken.innerText =
+            "Error Authenticating with GitHub: " + error;
+        } else {
+          Window.githubData = data;
+          outputToken.innerText =
+            "Authenticated with GitHub. Access Token: " + data.token.substring(0, Math.min(10, data.token.length)) + "...";
+
+          outputEmail.innerText =
+            await JSON.stringify(loadGitHubUserEmails(data.token), 2);
+        }
+      }
+    );
+  });
+
+  async function getGH(url, token) {
+    let response = await fetch(url, {
+      Accept: "application/vnd.github.v3+json",
+      headers: {
+        Authorization: `token ${token}`,
+      },
+    });
+    return await response.json();
+  }
+
+  async function loadGitHubUserEmails(token) {
+
+    let user = await getGH("https://api.github.com/user", token);
+    let emails = await getGH("https://api.github.com/user/emails", token);
+    emails = emails.map(e => e.email);
+    let result = { login: user.login, emails: emails };
+    return result;
+  }
+</script>
