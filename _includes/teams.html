@@ -15,48 +15,51 @@
       {%- assign studentName = studentName | append: " " | append: secondName %}
     {%- endif -%}
     {%- assign url = team.node.url -%}
-    <h2>
-      {%- if fakes contains aluId -%} <span>Fake </span>{%- endif -%}Student {{ studentName }} ({{ aluId}}, {{ forloop.index}} of {{ numTeams}})
-    </h2>
 
-    <ul>
-      <li> Student team:
-        <a href="{{url}}" target="_blank">{{ name }}</a> 
-      </li>
-      <li> {{ studentName }} repos: 
-      <a href="{{url}}/repositories" target="_blank">Repositories</a>
-      </li>
-      {% assign memberAccessUrl = team.node.members.edges[0].memberAccessUrl %}
-      {%- assign student = team.node.members.edges[0].node -%}
-      <li> <a href="{{ memberAccessUrl }}" target="_blank">{{ studentName }} ({{ student.login }})</a>  at the organization {{ site.organization.name }}</li>
-      <li> <a href="{{ student.url }}" target="_blank">{{ studentName }} at GitHub</a> is {{ student.login }}
-      </li> 
-      <li><a href="https://github.com/notifications?query=author%3A{{ student.login }}" target="_blank">Notifications</a> to the teacher from {{studentName}}</li>
-      <li>
-        <a href="https://github.com/{{ site.organization.name }}-{{ aluId }}" target="_blank">{{ studentName }} Organization</a>
-        and
-        <a href="https://github.com/orgs/{{ site.organization.name }}-{{ aluId }}/teams" target="_blank">Teams inside {{ studentName }} Organization</a> 
-      </li>
-      <li><a href="https://classroom.github.com/classrooms/search?query={{ aluId }}&view=Active&sort_by=Newest+first" target="_blank">{{ studentName }} Classroom</a></li>
-      <li> {{ studentName }} activity:
-        <ol>
-          {%- for practica in site.tareas -%}
-          {% if practica.key -%}
-              <li> {{ studentName }} 
-                <a href="https://github.com/{{ site.organization.name }}/{{ practica.key }}-{{name}}/" target="_blank"> Repo</a>,
-                {%- if practica.website -%}
-                <a href="https:{{ site.organization.name }}.github.io/{{ practica.key }}-{{name}}/" target="_blank"> Website</a>, 
-                {% endif -%}
-                <a href="https://github.com/{{ site.organization.name }}/{{ practica.key }}-{{name}}/commits" target="_blank">Commits</a>, 
-                <a href="https://github.com/{{ site.organization.name }}/{{ practica.key }}-{{name}}/graphs/commit-activity" target="_blank"> Commit Activity</a> and
-                <a href="https://github.com/{{ site.organization.name }}/{{ practica.key }}-{{name}}/pulse" target="_blank"> Summary</a> for 
-                <a href="{{ practica.url }}">{{ practica.key }}</a>
-              </li>
-          {% endif -%}
-          {%- endfor -%}
-        </ol>  
-      </li>
-    </ul>
+    <div id="{{student.login}}" hidden>
+      <h2>
+        {%- if fakes contains aluId -%} <span>Fake </span>{%- endif -%}Student {{ studentName }} ({{ aluId}}, {{ forloop.index}} of {{ numTeams}})
+      </h2>
+      <ul>
+        <li> Student team:
+          <a href="{{url}}" target="_blank">{{ name }}</a>
+        </li>
+        <li> {{ studentName }} repos:
+        <a href="{{url}}/repositories" target="_blank">Repositories</a>
+        </li>
+        {% assign memberAccessUrl = team.node.members.edges[0].memberAccessUrl %}
+        {%- assign student = team.node.members.edges[0].node -%}
+        <li> <a href="{{ memberAccessUrl }}" target="_blank">{{ studentName }} ({{ student.login }})</a>  at the organization {{ site.organization.name }}</li>
+        <li> <a href="{{ student.url }}" target="_blank">{{ studentName }} at GitHub</a> is {{ student.login }}
+        </li>
+        <li><a href="https://github.com/notifications?query=author%3A{{ student.login }}" target="_blank">Notifications</a> to the teacher from {{studentName}}</li>
+        <li>
+          <a href="https://github.com/{{ site.organization.name }}-{{ aluId }}" target="_blank">{{ studentName }} Organization</a>
+          and
+          <a href="https://github.com/orgs/{{ site.organization.name }}-{{ aluId }}/teams" target="_blank">Teams inside {{ studentName }} Organization</a>
+        </li>
+        <li><a href="https://classroom.github.com/classrooms/search?query={{ aluId }}&view=Active&sort_by=Newest+first" target="_blank">{{ studentName }} Classroom</a></li>
+        <li> {{ studentName }} activity:
+          <ol>
+            {%- for practica in site.tareas -%}
+            {% if practica.key -%}
+                <li> {{ studentName }}
+                  <a href="https://github.com/{{ site.organization.name }}/{{ practica.key }}-{{name}}/" target="_blank"> Repo</a>,
+                  {%- if practica.website -%}
+                  <a href="https:{{ site.organization.name }}.github.io/{{ practica.key }}-{{name}}/" target="_blank"> Website</a>,
+                  {% endif -%}
+                  <a href="https://github.com/{{ site.organization.name }}/{{ practica.key }}-{{name}}/commits" target="_blank">Commits</a>,
+                  <a href="https://github.com/{{ site.organization.name }}/{{ practica.key }}-{{name}}/graphs/commit-activity" target="_blank"> Commit Activity</a> and
+                  <a href="https://github.com/{{ site.organization.name }}/{{ practica.key }}-{{name}}/pulse" target="_blank"> Summary</a> for
+                  <a href="{{ practica.url }}">{{ practica.key }}</a>
+                </li>
+            {% endif -%}
+            {%- endfor -%}
+          </ol>
+        </li>
+      </ul>
+    </div>
+
   {% endif %} <!-- else is a true multiple member team-->
 {% endfor -%}
 
