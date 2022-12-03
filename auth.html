@@ -40,6 +40,8 @@ title: GitHub Authentication
 
     if (login) {
       localStorage.removeItem("login");
+      //localStorage.removeItem("githubToken");  // don't need to store token
+      //localStorage.removeItem("emails");
       location.reload(); // refresh page
       return;
     }
@@ -64,13 +66,13 @@ title: GitHub Authentication
           outputEmail.innerText = userInfo.login + " " + userInfo.emails.join(", ");
 
 
-          console.log("githubToken", data.token);
-          console.log("githubLogin", userInfo.login);
-          console.log("githubEmails", userInfo.emails);
+          //console.log("githubToken", data.token);
+          //console.log("githubLogin", userInfo.login);
+          //console.log("githubEmails", userInfo.emails);
 
           // localStorage.setItem("githubToken", data.token);  don't need to store token
           localStorage.setItem("login", userInfo.login); 
-          localStorage.setItem("emails", JSON.stringify(userInfo.emails));
+          // localStorage.setItem("emails", JSON.stringify(userInfo.emails)); // don't need to store emails
         }
       }
     );
