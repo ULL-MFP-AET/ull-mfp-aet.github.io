@@ -68,8 +68,8 @@ title: GitHub Authentication
           console.log("githubLogin", userInfo.login);
           console.log("githubEmails", userInfo.emails);
 
-          localStorage.setItem("githubToken", data.token);
-          localStorage.setItem("login", userInfo.login);
+          // localStorage.setItem("githubToken", data.token); // don't need to store token
+          localStorage.setItem("login", userInfo.login); 
           localStorage.setItem("emails", JSON.stringify(userInfo.emails));
         }
       }
