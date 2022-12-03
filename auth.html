@@ -25,6 +25,12 @@ title: GitHub Authentication
   <script>
     const anchorTag = document.getElementById("login");
     const outputEmail = document.getElementById("output-email");
+    let login = localStorage.getItem("login");
+
+    if (login) {
+      outputEmail.innerHTML = `${login}`;
+    }
+
     debugger;
 
     anchorTag.addEventListener("click", (event) => {
