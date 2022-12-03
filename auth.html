@@ -9,82 +9,90 @@ title: GitHub Authentication
 
 <h1>{{ page.title }}</h1>
 
-  <p>
-    <button id="login" class="assign">
-       Authenticate
-    </button>
-  </p>
-  
-  <p>
-    User login and emails: <br/>
-    <div id="output-email"></div>
-  </p>
+<p>
+  <button id="login" class="assign">
+    Authenticate
+  </button>
+</p>
 
-  <a href="{{ site.baseurl }}/teams.html">Go to Students Activity</a>
+<p>
+  User login: <span id="output-email"></span>
+</p>
 
-  <script>
-    const anchorTag = document.getElementById("login");
-    const outputEmail = document.getElementById("output-email");
-    let login = localStorage.getItem("login");
+<a href="{{ site.baseurl }}/teams.html">Go to Students Activity</a>
+
+<script>
+  const anchorTag = document.getElementById("login");
+  const outputEmail = document.getElementById("output-email");
+  const lock = document.getElementById("bar-lock");
+
+  let login = localStorage.getItem("login");
+
+  if (login) {
+    outputEmail.innerHTML = lock.innerHTML = `<b>${login}</b>`;
+    anchorTag.innerHTML = "Logout";
+  }
+
+  debugger;
+
+  anchorTag.addEventListener("click", (event) => {
+    event.preventDefault();
 
     if (login) {
-      outputEmail.innerHTML = `${login}`;
+      localStorage.removeItem("login");
+      location.reload(); // refresh page
+      return;
     }
 
-    debugger;
+    const authenticator = new netlify.default({}); // {id: site id, base_url: by default is https://api.netlify.com 
 
-    anchorTag.addEventListener("click", (event) => {
-      event.preventDefault();
+    authenticator.authenticate(
+      // Set the OAuth provider and token scope
+      // Provider can be "github", "gitlab", or "bitbucket"
+      // The scopes available depend on your OAuth provider
+      {
+        provider: "github",
+        scope: "user"
+      },
+      async function (error, data) {
+        if (error) {
+          let message = "Error Authenticating with GitHub: " + error;
+          outputEmail.innerText = message;
+          console.error(message);
+        } else {
+          let userInfo = await loadGitHubUserEmails(data.token);
+          outputEmail.innerText = userInfo.login + " " + userInfo.emails.join(", ");
 
-      const authenticator = new netlify.default({}); // {id: site id, base_url: by default is https://api.netlify.com 
 
-      authenticator.authenticate(
-        // Set the OAuth provider and token scope
-        // Provider can be "github", "gitlab", or "bitbucket"
-        // The scopes available depend on your OAuth provider
-        {
-          provider: "github",
-          scope: "user"
-        },
-        async function (error, data) {
-          if (error) {
-            let message = "Error Authenticating with GitHub: " + error;
-            outputEmail.innerText = message;
-            console.error(message);
-          } else {
-            let userInfo = await loadGitHubUserEmails(data.token);           
-            outputEmail.innerText = userInfo.login + " " + userInfo.emails.join(", ");
-          
-            
-            console.log("githubToken", data.token);
-            console.log("githubLogin", userInfo.login);
-            console.log("githubEmails", userInfo.emails);
+          console.log("githubToken", data.token);
+          console.log("githubLogin", userInfo.login);
+          console.log("githubEmails", userInfo.emails);
 
-            localStorage.setItem("githubToken", data.token);
-            localStorage.setItem("login", userInfo.login);
-            localStorage.setItem("emails", JSON.stringify(userInfo.emails));
-          }
+          localStorage.setItem("githubToken", data.token);
+          localStorage.setItem("login", userInfo.login);
+          localStorage.setItem("emails", JSON.stringify(userInfo.emails));
         }
-      );
+      }
+    );
+  });
+
+  async function getGH(url, token) {
+    let response = await fetch(url, {
+      Accept: "application/vnd.github.v3+json",
+      headers: {
+        Authorization: `token ${token}`,
+      },
     });
+    return await response.json();
+  }
 
-    async function getGH(url, token) {
-      let response = await fetch(url, {
-        Accept: "application/vnd.github.v3+json",
-        headers: {
-          Authorization: `token ${token}`,
-        },
-      });
-      return await response.json();
-    }
+  async function loadGitHubUserEmails(token) {
 
-    async function loadGitHubUserEmails(token) {
+    let user = await getGH("https://api.github.com/user", token);
+    let emails = await getGH("https://api.github.com/user/emails", token);
+    emails = emails.map(e => e.email);
+    let result = { login: user.login, emails: emails };
+    return result;
+  }
 
-      let user = await getGH("https://api.github.com/user", token);
-      let emails = await getGH("https://api.github.com/user/emails", token);
-      emails = emails.map(e => e.email);
-      let result = { login: user.login, emails: emails};
-      return result;
-    }
-
-  </script>
+</script>
