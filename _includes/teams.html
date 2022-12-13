@@ -25,7 +25,7 @@
           var login = localStorage.getItem("login"); 
           //console.log(login);
         
-          if (login == "{{ student.login }}" || login == "{{ site.profesor_github }}") {
+          if (login == "{{ student.login }}" || login == "{{ site.profesor_github }}" || login == "{{ site.carlosCalzadilla }}") {
             document.getElementById("{{student.login}}").hidden = false;
           }})()
         </script>

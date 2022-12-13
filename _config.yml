@@ -25,6 +25,7 @@ calificador: https://campusdoctoradoyposgrado2223.ull.es/grade/report/index.php?
 tareas_en_el_campus: https://campusvirtual.ull.es/ingenieriaytecnologia/1920/mod/assign/index.php?id=201911070
 profesor: "https://www.ull.es/apps/guias/guias/view_teacher_niu/984/crguezl/"
 profesor_github: crguezl
+carlosCalzadilla: alu0101102726
 netlify: 
   auth: "https://ull-mfp-aet.netlify.app/auth.html"
 chat: https://chat.google.com
