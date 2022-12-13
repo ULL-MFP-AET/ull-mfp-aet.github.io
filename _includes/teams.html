@@ -19,7 +19,7 @@
       {% assign memberAccessUrl = team.node.members.edges[0].memberAccessUrl %}
       {%- assign student = team.node.members.edges[0].node -%}
 
-      <div id="{{student.login}}" hidden>
+      <div id="{{student.login}}"> <!-- hidden by default       <div id="{{student.login}}" hidden>      -->
         <script>
         ( () => {
           var login = localStorage.getItem("login"); 
