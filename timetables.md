@@ -4,6 +4,7 @@
   - [Donde](#donde)
   - [Horarios](#horarios)
   - [Horarios de Tutorías](#horarios-de-tutorías)
+  - [Exámenes](#exámenes)
 
 
 # Calendarios, Horarios y Exámenes
@@ -43,7 +44,10 @@ Aula B1.3.03 y/o B1.1.07 aula de informática (28 puestos)
 * Primer Cuatrimestre: L, M, X de 8:30 a 10:30. 
 * Para reservar envía un email al profesor o inicia un chat usando <a href="https://chat.google.com" target="_blank">Google Chat</a> para quedar
 
+## Exámenes
 
-
+* [Horarios y Calendario de Exámenes](https://www.ull.es/masteres/formacion-profesorado/informacion-academica/horarios-y-calendario-de-examenes/)
+* [Calendario de exámenes 2022-2023](https://drive.google.com/file/d/1SqzP0vUDmGJjbFMZN2KAOsz49TtPpGek/view?usp=share_link)
+  * Para el curso 22/23 las fechas son: 15 de Mayo, 21 de Junio y 7 de Julio de 2023 a las 16:00 horas en el aula B1203
 
 
