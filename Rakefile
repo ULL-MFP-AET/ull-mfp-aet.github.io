@@ -1,11 +1,11 @@
 desc "Publicar en GitHub los apuntes de AET"
 task :default do
-  sh "git ci -am 'AET 2022/2023' && git push -u origin main && git push -u aet2223 main"
+  sh "git ci -am 'AET 2023/2024' && git push -u origin main && git push -u aet2324 main"
 end
 
 desc "Actualizar students y Publicar"
 task :publish => [ :students ] do
-  sh "git ci -am 'AET 2022/2023' && git push -u origin main && git push -u aet2223 main"
+  sh "git ci -am 'AET 2023/2024' && git push -u origin main && git push -u aet2324 main"
 end
 
 desc "update AET teams (all teams"
