@@ -26,6 +26,16 @@ Para ello haga los ejercicios en la sección [Concepts](https://arcade.makecode.
 
 Para hacerlos le será de utilidad la [Documentación de arcade makedocs](https://arcade.makecode.com/docs) y en particular la sección [Blocks](https://arcade.makecode.com/blocks).
 
+## GitHub with MakeCode: Getting Started
+
+{% include youtubePlayer.html id="J-pI1sEWPV0" %}
+
+## GitHub Classroom and MakeCode Arcade
+
+[GitHub Classroom and MakeCode Arcade](https://youtu.be/XQ9TU9R-Gw0?si=VW7sp02TPk2mR2mK). Arelia Jones y Jacqueline Russell. Arelia Jones from the GitHub Education Team gives us a demo of how to use GitHub Classroom to create student assignments using MakeCode Arcade.
+
+{% include youtubePlayer.html id="XQ9TU9R-Gw0" %}
+
 ## Entrega
 
 Deja en el fichero `README.md` de este repositorio 
@@ -40,7 +50,7 @@ Deja en el fichero `README.md` de este repositorio
 * Sección [Blocks](https://arcade.makecode.com/blocks).
 
 {% include youtubePlayer.html id="0dEM3qEHZ4A" %}
-
+* Programación con Javascript y MakeCode Arcade. Programa tu primer videojuego. 2022. 
 {% include youtubePlayer.html id="u3GVIjvyJiU" %}
 
 
