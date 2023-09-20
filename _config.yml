@@ -20,10 +20,10 @@ organization:
   name: ULL-MFP-AET-2324
   master: https://github.dev/ULL-MFP-AET/ull-mfp-aet.github.io/blob/main/
 apuntes_repo: https://github.com/ULL-MFP-AET/ull-mfp-aet.github.io/
-campus_virtual: "https://campusdoctoradoyposgrado2324.ull.es/course/view.php?id=2324110052"
-calificador: https://campusdoctoradoyposgrado2324.ull.es/grade/report/index.php?id=2324110052
-tareas_en_el_campus: https://campusvirtual.ull.es/ingenieriaytecnologia/1920/mod/assign/index.php?id=201911070
-profesor: "https://www.ull.es/apps/guias/guias/view_teacher_niu/984/crguezl/"
+campus_virtual: "https://campusdoctoradoyposgrado2324.ull.es/course/view.php?id=2324110055"
+calificador: https://campusdoctoradoyposgrado2324.ull.es/grade/report/grader/index.php?id=2324110055
+tareas_en_el_campus: https://campusdoctoradoyposgrado2324.ull.es/course/view.php?id=2324110055#section-4
+profesor: "https://www.ull.es/apps/guias/guias/view_teacher_niu/1070/crguezl/"
 profesor_github: crguezl
 carlosCalzadilla: alu0101102726
 netlify: 
@@ -40,7 +40,7 @@ disqus:
   url: https://procesadores-de-lenguajes.disqus.com/embed.js
   comments: true
 classroom: 
-  url: "https://classroom.github.com/classrooms/108617085-ull-mfp-aet-2324"
+  url: "https://classroom.github.com/classrooms/145562104-ull-mfp-aet-2324"
   name: ULL-MFP-AET-2324
 collections:
   tareas:
