@@ -10,6 +10,8 @@ jewels
 node_modules
 .env
 
+.vscode/settings.json
+
 # repl.it 
 .bundle/
 .upm/
