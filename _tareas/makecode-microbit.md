@@ -26,9 +26,22 @@ Para ello haga los ejercicios en la sección [Concepts](https://arcade.makecode.
 
 Para hacerlos le será de utilidad la [Documentación de arcade makedocs](https://arcade.makecode.com/docs) y en particular la sección [Blocks](https://arcade.makecode.com/blocks).
 
+## Piensa Computacionalmente. Programación con Arcade MakeCode
+
+{% include youtubePlayer.html id="k0GVfAtmUmM" %}
+
+En esta píldora, Rafael Herrero Álvarez, estudiante de doctorado en Ingeniería Informática por la Universidad de La Laguna (ULL), nos enseña Arcade MakeCode que nos permite desarrollar nuestro videojuego y ejecutarlo en una videoconsola virtual o cargar el programa en diferentes placas de desarrollo como la Adafruit. 
+
+Además, Arcade Makecode permite trabajar con repositorios alojados en la plataforma GitHub, por lo que siempre estará el trabajo sincronizado. Al crear un nuevo proyecto, Arcade MakeCode nos muestra diferentes opciones de ejercicios que se pueden completar para entrenar habilidades de programación. También hay tutoriales y ejemplos de proyectos que se pueden ejecutar. 
+
+Para comenzar, Herrero accede al tutorial de Chase the pizza y selecciona la opción bloques. Aparece un vídeo que explica el objetivo del juego, similar al de la serpiente, donde un objeto tiene que desplazarse para atrapar otro. Además, dispone de un cronómetro y de un contador de puntos. Una vez que el juego sea totalmente funcional, se pueden agregar muchas más funciones como efectos que se pueden habilitar seleccionando y creando un nuevo proyecto en blanco o saliendo del tutorial. 
+
+
 ## GitHub with MakeCode: Getting Started
 
 {% include youtubePlayer.html id="J-pI1sEWPV0" %}
+
+Enseña como usar GitHub desde MakeCode.
 
 ## GitHub Classroom and MakeCode Arcade
 
