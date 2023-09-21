@@ -12,7 +12,7 @@ foro: https://github.com/orgs/ULL-MFP-AET-2223/discussions
 
 rubrica:
   - "Se ha aprendido a usar Makecode"
-  #- "Ha entregado el .zip en el campus"
+  - "Ha entregado el .zip en el campus"
 video: "8KwoKgYz85k"
 ---
 
@@ -30,7 +30,7 @@ Para hacerlos le será de utilidad la [Documentación de arcade makedocs](https:
 
 {% include youtubePlayer.html id="k0GVfAtmUmM" %}
 
-En esta píldora, Rafael Herrero Álvarez, estudiante de doctorado en Ingeniería Informática por la Universidad de La Laguna (ULL), nos enseña Arcade MakeCode que nos permite desarrollar nuestro videojuego y ejecutarlo en una videoconsola virtual o cargar el programa en diferentes placas de desarrollo como la Adafruit. 
+En esta píldora, [Rafael Herrero Álvarez](https://rafaherrero.github.io/) de la Universidad de La Laguna (ULL), nos enseña Arcade MakeCode que nos permite desarrollar nuestro videojuego y ejecutarlo en una videoconsola virtual o cargar el programa en diferentes placas de desarrollo como la Adafruit. 
 
 Además, Arcade Makecode permite trabajar con repositorios alojados en la plataforma GitHub, por lo que siempre estará el trabajo sincronizado. Al crear un nuevo proyecto, Arcade MakeCode nos muestra diferentes opciones de ejercicios que se pueden completar para entrenar habilidades de programación. También hay tutoriales y ejemplos de proyectos que se pueden ejecutar. 
 
@@ -41,11 +41,11 @@ Para comenzar, Herrero accede al tutorial de Chase the pizza y selecciona la opc
 
 {% include youtubePlayer.html id="J-pI1sEWPV0" %}
 
-Enseña como usar GitHub desde MakeCode.
+Este vídeo enseña como usar GitHub desde MakeCode.
 
 ## GitHub Classroom and MakeCode Arcade
 
-[GitHub Classroom and MakeCode Arcade](https://youtu.be/XQ9TU9R-Gw0?si=VW7sp02TPk2mR2mK). Arelia Jones y Jacqueline Russell. Arelia Jones from the GitHub Education Team gives us a demo of how to use GitHub Classroom to create student assignments using MakeCode Arcade.
+En este vídeo [GitHub Classroom and MakeCode Arcade](https://youtu.be/XQ9TU9R-Gw0?si=VW7sp02TPk2mR2mK), Arelia Jones y Jacqueline Russell muestran como utilizar GitHub Classroom para crear una asignación que use como entorno de desarrollo MakeCode Arcade.
 
 {% include youtubePlayer.html id="XQ9TU9R-Gw0" %}
 
@@ -61,8 +61,7 @@ Deja en el fichero `README.md` de este repositorio
 * [Documentación de arcade makedocs](https://arcade.makecode.com/docs)
 * Sección [Concepts](https://arcade.makecode.com/concepts) de la documentación de MakeCode.
 * Sección [Blocks](https://arcade.makecode.com/blocks).
-
-{% include youtubePlayer.html id="0dEM3qEHZ4A" %}
+* {% include youtubePlayer.html id="0dEM3qEHZ4A" %}
 * Programación con Javascript y MakeCode Arcade. Programa tu primer videojuego. 2022. 
 {% include youtubePlayer.html id="u3GVIjvyJiU" %}
 
