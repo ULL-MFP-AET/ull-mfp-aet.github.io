@@ -9,7 +9,7 @@ name: MakeCode
 website: true
 toc: false
 foro: https://github.com/orgs/ULL-MFP-AET-2223/discussions
-
+hide: true
 rubrica:
   - "Se ha aprendido a usar Makecode"
   - "Ha entregado el .zip en el campus"

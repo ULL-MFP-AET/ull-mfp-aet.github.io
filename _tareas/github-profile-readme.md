@@ -10,6 +10,7 @@ toc: true
 teams: /practicas/equipos-de-3/
 equipos: https://campusdoctoradoyposgrado2223.ull.es/mod/assign/view.php?id=30039&forceview=1
 foro: https://github.com/orgs/ULL-MFP-AET-2223/discussions
+hide: true
 rubrica:
   - Creado perfil GH
   - Creado  organización con el nombre correcto

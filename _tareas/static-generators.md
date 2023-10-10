@@ -9,7 +9,7 @@ name: Managing your profile README
 website: true
 toc: false
 foro: https://github.com/orgs/ULL-MFP-AET-2223/discussions
-
+hide: true
 rubrica:
   - "Se ha desplegado el sitio Web de la práctica"
   - "Se ha desplegado el sitio Web de la asignatura"
