@@ -30,11 +30,15 @@ Para hacerlos le será de utilidad la [Documentación de arcade makedocs](https:
 
 {% include youtubePlayer.html id="k0GVfAtmUmM" %}
 
-En esta píldora, [Rafael Herrero Álvarez](https://rafaherrero.github.io/) de la Universidad de La Laguna (ULL), nos enseña Arcade MakeCode que nos permite desarrollar nuestro videojuego y ejecutarlo en una videoconsola virtual o cargar el programa en diferentes placas de desarrollo como la Adafruit. 
+En esta píldora, [Rafael Herrero Álvarez](https://rafaherrero.github.io/) de la Universidad de La Laguna (ULL), nos enseña como usar [Arcade MakeCode](https://arcade.makecode.com/) para desarrollar nuestro videojuego y ejecutarlo en una videoconsola virtual o cargar el programa en diferentes placas de desarrollo como la [Adafruit](https://learn.adafruit.com/). 
 
-Además, Arcade Makecode permite trabajar con repositorios alojados en la plataforma GitHub, por lo que siempre estará el trabajo sincronizado. Al crear un nuevo proyecto, Arcade MakeCode nos muestra diferentes opciones de ejercicios que se pueden completar para entrenar habilidades de programación. También hay tutoriales y ejemplos de proyectos que se pueden ejecutar. 
+Además, [Arcade Makecode](https://arcade.makecode.com/) permite trabajar con repositorios alojados en la plataforma GitHub, por lo que siempre estará el trabajo sincronizado. Al crear un nuevo proyecto, [Arcade MakeCode](https://arcade.makecode.com/) nos muestra diferentes opciones de ejercicios que se pueden completar para entrenar habilidades de programación. También hay tutoriales y ejemplos de proyectos que se pueden ejecutar. 
 
-Para comenzar, Herrero accede al tutorial de Chase the pizza y selecciona la opción bloques. Aparece un vídeo que explica el objetivo del juego, similar al de la serpiente, donde un objeto tiene que desplazarse para atrapar otro. Además, dispone de un cronómetro y de un contador de puntos. Una vez que el juego sea totalmente funcional, se pueden agregar muchas más funciones como efectos que se pueden habilitar seleccionando y creando un nuevo proyecto en blanco o saliendo del tutorial. 
+- Para comenzar, Herrero accede al tutorial de [Chase the pizza](https://arcade.makecode.com/tutorials/chase-the-pizza) y 
+- selecciona la opción bloques. 
+- Aparece un vídeo que explica el objetivo del juego, similar al de la serpiente, donde un objeto tiene que desplazarse para atrapar otro. 
+- Además, dispone de un cronómetro y de un contador de puntos. 
+- Una vez que el juego sea totalmente funcional, se pueden agregar muchas más funciones 
 
 
 ## GitHub with MakeCode: Getting Started
