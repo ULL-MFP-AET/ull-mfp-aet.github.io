@@ -52,18 +52,21 @@
           <li> {{ studentName }} activity:
             <ol>
               {%- for practica in site.tareas -%}
-              {% if practica.key -%}
-                  <li> {{ studentName }}
-                    <a href="https://github.com/{{ site.organization.name }}/{{ practica.key }}-{{name}}/" target="_blank"> Repo</a>,
-                    {%- if practica.website -%}
-                    <a href="https:{{ site.organization.name }}.github.io/{{ practica.key }}-{{name}}/" target="_blank"> Website</a>,
-                    {% endif -%}
-                    <a href="https://github.com/{{ site.organization.name }}/{{ practica.key }}-{{name}}/commits" target="_blank">Commits</a>,
-                    <a href="https://github.com/{{ site.organization.name }}/{{ practica.key }}-{{name}}/graphs/commit-activity" target="_blank"> Commit Activity</a> and
-                    <a href="https://github.com/{{ site.organization.name }}/{{ practica.key }}-{{name}}/pulse" target="_blank"> Summary</a> for
-                    <a href="{{ practica.url }}">{{ practica.key }}</a>
-                  </li>
+              {%- if practica.hide != true -%}
+                {% if practica.key -%}
+                    <li> {{ studentName }}
+                      <a href="https://github.com/{{ site.organization.name }}/{{ practica.key }}-{{name}}/" target="_blank"> Repo</a>,
+                      {%- if practica.website -%}
+                      <a href="https:{{ site.organization.name }}.github.io/{{ practica.key }}-{{name}}/" target="_blank"> Website</a>,
+                      {% endif -%}
+                      <a href="https://github.com/{{ site.organization.name }}/{{ practica.key }}-{{name}}/commits" target="_blank">Commits</a>,
+                      <a href="https://github.com/{{ site.organization.name }}/{{ practica.key }}-{{name}}/graphs/commit-activity" target="_blank"> Commit Activity</a> and
+                      <a href="https://github.com/{{ site.organization.name }}/{{ practica.key }}-{{name}}/pulse" target="_blank"> Summary</a> for
+                      <a href="{{ practica.url }}">{{ practica.key }}</a>
+                    </li>
+                {% endif -%}
               {% endif -%}
+
               {%- endfor -%}
             </ol>
           </li>
