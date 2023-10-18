@@ -29,7 +29,7 @@ Del 21 de noviembre de 2023 al 12 de marzo de 2024 se impartirán los temas asig
 
 ## Donde
 
-Aula B1.3.03 y/o B1.1.07 aula de informática (28 puestos)
+Aula  B1.106, de 15:30 a 17:30 Martes y Jueves aula de informática 
  
 ## Horarios
 
