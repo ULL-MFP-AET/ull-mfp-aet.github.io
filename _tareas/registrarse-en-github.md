@@ -48,12 +48,14 @@ Para optar debes cumplir con los siguientes requisitos:
 1. Estar inscrito actualmente en un curso que otorgue un título o diploma que garantice un curso de estudio como colegio, escuela secundaria, facultad, universidad, escolarización en casa o institución educativa similar
 2. Tener una dirección de correo electrónico verificable suministrada por la escuela o cargar documentos que demuestren tu situación de estudiante actual. En nuestra universidad es el que tiene el sufijo `ull.edu.es`
 
+En estos enlaces se describe el proceso de solicitud:
 * [Solicitar acceso al GitHub Global Campus](https://docs.github.com/es/education/explore-the-benefits-of-teaching-and-learning-with-github-education/github-global-campus-for-students/apply-to-github-global-campus-as-a-student#solicitar-acceso-al-github-global-campus). Español
 * [Apply to GitHub Global Campus as a student](https://docs.github.com/en/education/explore-the-benefits-of-teaching-and-learning-with-github-education/github-global-campus-for-students/apply-to-github-global-campus-as-a-student#solicitar-acceso-al-github-global-campus). English
 
-Cuando te pida la prueba de tu estado académico, coloca el carnet (si no tienes puedes bajar [la app de la ULL](https://play.google.com/store/apps/details?id=net.universia.ull&hl=es&gl=US) que proporciona uno) u otra prueba de su situación académica actual en el cuadro y, después, haga clic en **Hacer foto**.
+Cuando te pida la prueba de tu estado académico:
 
-En "Tipo de prueba", usa el menú desplegable para seleccionar el tipo de prueba que proporcionas.
+- Coloca el carnet (si no tienes puedes bajar [la app de la ULL](https://play.google.com/store/apps/details?id=net.universia.ull&hl=es&gl=US) que proporciona uno) u otra prueba de su situación académica actual en el cuadro y, después, haga clic en **Hacer foto**.
+- En "Tipo de prueba", usa el menú desplegable para seleccionar el tipo de prueba que proporcionas.
 
 ## Entrega
 
