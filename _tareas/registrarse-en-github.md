@@ -25,6 +25,8 @@ GitHub es una plataforma de desarrollo colaborativo.
 
 ## Descuentos
 
+### Profesores 
+
 Si eres profesor, sigue los pasos explicados en la sección [Inicio rápido para GitHub Educators](https://docs.github.com/es/education/quickstart). Si te encuentras cómodo con el lenguaje Inglés es mejor usar la [versión inglesa de la guía](https://docs.github.com/en/education/quickstart).
 
 Para obtener descuentos de docente o investigador, debes cumplir con los siguientes requisitos:
@@ -33,6 +35,8 @@ Para obtener descuentos de docente o investigador, debes cumplir con los siguien
 2. Ser profesor o  empleado de una institución educativa.
 3. Es conveniente tener una dirección de correo electrónico verificable que haya emitido una institución educativa. En nuestra universidad es el que tiene el sufijo `ull.edu.es`
 4. Cargar los documentos que comprueben tu afiliación a la institución educativa.
+
+### Estudiantes
 
 Si eres estudiante puedes optar a los descuentos del *Paquete de desarrollo para estudiantes* de GitHub.
 Sigue las instrucciones en la sección [Aplicar un paquete de desarrollo para alumnos](https://docs.github.com/es/education/explore-the-benefits-of-teaching-and-learning-with-github-education/use-github-for-your-schoolwork/apply-for-a-student-developer-pack).
@@ -49,6 +53,9 @@ En cualquier caso, seas profesor o estudiante, para completar esta tarea deberá
 
 1. Registrarte en GitHub
 2. Solicitar tus correspondientes descuentos
+
+* [Solicitar acceso al GitHub Global Campus](https://docs.github.com/es/education/explore-the-benefits-of-teaching-and-learning-with-github-education/github-global-campus-for-students/apply-to-github-global-campus-as-a-student#solicitar-acceso-al-github-global-campus). Español
+* [Apply to GitHub Global Campus as a student](https://docs.github.com/en/education/explore-the-benefits-of-teaching-and-learning-with-github-education/github-global-campus-for-students/apply-to-github-global-campus-as-a-student#solicitar-acceso-al-github-global-campus). English
 
 ## Entrega
 
