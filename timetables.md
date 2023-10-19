@@ -21,11 +21,9 @@ Primer cuatrimestre: 11 septiembre al 21 diciembre 2023.
 
 Segundo cuatrimestre: 22 enero hasta 12 de marzo 2024. Inicio del Prácticum
 
-Del 12 de septiembre al 17 de octubre de 2023 se impartirán los temas asignados al profesor Cándido Caballero Gil.
-
-Del 19 de octubre al 16 de noviembre de 2023 se impartirán los temas asignados al profesor Casiano Rodríguez León.
-
-Del 21 de noviembre de 2023 al 12 de marzo de 2024 se impartirán los temas asignados a los profesores Nicolás Marichal Plasencia y Juan Manuel Rodríguez González.
+1. Del 12 de septiembre al 17 de octubre de 2023 se impartirán los temas asignados al profesor Cándido Caballero Gil.
+2. **Del 19 de octubre al 16 de noviembre** de 2023 se impartirán los temas asignados al profesor Casiano Rodríguez León.
+3. Del 21 de noviembre de 2023 al 12 de marzo de 2024 se impartirán los temas asignados a los profesores Nicolás Marichal Plasencia y Juan Manuel Rodríguez González.
 
 ## Donde
 
