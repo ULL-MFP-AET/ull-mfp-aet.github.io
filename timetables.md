@@ -27,7 +27,7 @@ Segundo cuatrimestre: 22 enero hasta 12 de marzo 2024. Inicio del Prácticum
 
 ## Donde
 
-Aula  B1.106, de 15:30 a 17:30 Martes y Jueves aula de informática 
+Aula  B1.106, de 15:30 a 17:30 Martes y Jueves aula de informática.  El aula dispone de 29 ordenadores, aunque hay 31 sillas
  
 ## Horarios
 
