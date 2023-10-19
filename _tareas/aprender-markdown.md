@@ -5,7 +5,7 @@ key: aprender-markdown
 myurl: "https://campusdoctoradoyposgrado2223.ull.es/mod/assign/view.php?id=890&forceview=1"
 permalink: tema0-introduccion/practicas/aprender-markdown/
 name: Aprender Markdown
-date: 0000/01/02
+date: 0000/01/02 01:00:00
 toc: false
 rubrica:
   - El nombre del equipo creado sigue el formato correcto
@@ -22,6 +22,7 @@ rubrica:
     - [Matemáticas](#matemáticas)
     - [Diagramas con mermaid](#diagramas-con-mermaid)
     - [Task lists](#task-lists)
+    - [Special notes](#special-notes)
   - [Edición en la Nube de Repositorios GitHub](#edición-en-la-nube-de-repositorios-github)
   - [Primeros Pasos con GitHub Classroom](#primeros-pasos-con-github-classroom)
   - [Rúbrica](#rúbrica)

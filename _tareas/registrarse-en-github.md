@@ -10,7 +10,8 @@ toc: true
 rubrica:
   - Se ha registrado en GitHub
   - Ha rellenado el formulario correctamente
-  - "Ha entregado el enlace al enlace en el campus"
+  - Ha solicitado Github Campus as a student
+  - "Ha entregado el enlace en el campus"
 ---
 
 # Registrarse en GitHub (registrarse-en-github)
