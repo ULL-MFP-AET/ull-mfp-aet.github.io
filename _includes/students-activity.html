@@ -15,9 +15,9 @@
       {%- endif -%}
       {%- assign url = team.node.url -%}
         <li>
-          <a href="https://github.com/ull-mfp-aet-2223/{{ include.lab }}-{{name}}/commits" target="_blank">{{ studentName }} Commits</a>, 
-          <a href="https://github.com/ull-mfp-aet-2223/{{ include.lab }}-{{name}}/graphs/commit-activity" target="_blank"> Commit Activity</a> and
-          <a href="https://github.com/ull-mfp-aet-2223/{{ include.lab }}-{{name}}/pulse" target="_blank"> Summary</a>
+          <a href="https://github.com/ull-mfp-aet-{{ include.course}}/{{ include.lab }}-{{name}}/commits" target="_blank">{{ studentName }} Commits</a>, 
+          <a href="https://github.com/ull-mfp-aet-{{ include.course }}/{{ include.lab }}-{{name}}/graphs/commit-activity" target="_blank"> Commit Activity</a> and
+          <a href="https://github.com/ull-mfp-aet-{{ include.course }}/{{ include.lab }}-{{name}}/pulse" target="_blank"> Summary</a>
 
         </li>
     {% endif %} <!-- else is a true multiple member team-->
