@@ -8,8 +8,8 @@ date: 0000/03/01
 key: profile
 toc: true
 teams: /practicas/equipos-de-3/
-equipos: https://campusdoctoradoyposgrado2223.ull.es/mod/assign/view.php?id=30039&forceview=1
-foro: https://github.com/orgs/ULL-MFP-AET-2223/discussions
+equipos: https://campusdoctoradoyposgrado2324.ull.es/mod/assign/view.php?id=30039&forceview=1
+foro: https://github.com/orgs/ULL-MFP-AET-2324/discussions
 hide: false
 rubrica:
   - Creado perfil GH
@@ -25,7 +25,7 @@ rubrica:
   - Ha aceptado como alumnos las tareas asignadas por los otros miembros del equipo
   - Ha hecho alguna pregunta a algún profesor / compañero haciendo uso de los issues GH
   - Ha retroalimentado a sus estudiantes usando las issues de GH
-  - Ha hecho un post en el foro de discussions de la organización ULL-MFP-AET-2223
+  - Ha hecho un post en el foro de discussions de la organización ULL-MFP-AET-2324
 ---
 
 # {{ page.title }}
@@ -60,7 +60,7 @@ Puedes encontrar ejemplos curiosos de *repos profile* en esta referencia:
 En este paso deberás crear ahora 
 
 1. Una organización para una asignatura que quieres impartir 
-   * El nombre de la organización debe ser `ull-mfp-aet-2223-aluXXXX` donde `aluXXXX` es tu identificador ULL
+   * El nombre de la organización debe ser `ull-mfp-aet-2324-aluXXXX` donde `aluXXXX` es tu identificador ULL
    * Invita a [crguezl](https://github.com/crguezl) como **owner** de la organización
    * Realiza la tarea [crear equipos de 3]({{ page.teams }}) para crear  equipos de 3 personas y decide con que compañeros quieres colaborar
      * Cada miembro del equipo colaborará con el rol de estudiante en la organización en la que los otros dos actúan como profesores
@@ -80,7 +80,7 @@ Crea un aula usando GitHub Classroom ([https://classroom.github.com](https://cla
 
 Si GHC  te provee varias aulas quédate sólo con una. 
 
-**Renombra el aula para que su nombre coincida con el de la organización**: `ull-mfp-aet-2223-aluXXXX` donde `aluXXXX` es tu identificador ULL.
+**Renombra el aula para que su nombre coincida con el de la organización**: `ull-mfp-aet-2324-aluXXXX` donde `aluXXXX` es tu identificador ULL.
 
 **Invita a [crguezl](https://github.com/crguezl) como profesor asociado**. Para que la invitación pueda hacerse deberás haber primero invitado a [crguezl](https://github.com/crguezl) como **owner** de la organización y este debe haber aceptado.
 
@@ -96,7 +96,7 @@ También te será de utilidad la documentación de GH en [Enseña con GitHub Cla
 * Configurala como una asignación de grupo con un sólo miembro por grupo como la primera que has hecho en este curso. 
 * El nombre del grupo de teams será **STUDENTS**
 * Usa la técnica descrita en la sección [Segunda Solución: Asignaciones de Grupos]({{ site.baseurl}}/pages/github-classroom.html#segunda-soluci%C3%B3n-asignaciones-de-grupos) y dale las instrucciones correspondientes a tus [alumnos]({{ page.equipos}}). Lee también la sección [El problema de Enlazar las Cuentas GH con las cuentas del LMS]({{ site.baseurl }}/pages/github-classroom.html#el-problema-de-enlazar-las-cuentas-gh-con-las-cuentas-del-lms)
-* Crea un repo de template para la asignación dentro de la organización `ull-mfp-aet-2223-aluXXXX` con las instrucciones y ejemplos para la tarea. 
+* Crea un repo de template para la asignación dentro de la organización `ull-mfp-aet-2324-aluXXXX` con las instrucciones y ejemplos para la tarea. 
   * El nombre del repo tendrá que tener el sufijo `-template`
   * En los settings del repo deberás indicar que es un repo template
   * Usa dicho repo template como template para la asignación
@@ -107,7 +107,7 @@ También te será de utilidad la documentación de GH en [Enseña con GitHub Cla
 ### Crea una segunda asignación reutilizando el grupo de teams
 
 * Configurala como una asignación de grupo y reutilizas el grupo de teams creado en la anterior. 
-* Crea un nuevo repo de template para la asignación dentro de la organización `ull-mfp-aet-2223-aluXXXX` con las instrucciones y ejemplos para la tarea como en la anterior
+* Crea un nuevo repo de template para la asignación dentro de la organización `ull-mfp-aet-2324-aluXXXX` con las instrucciones y ejemplos para la tarea como en la anterior
 * Enviale el enlace a tus otros compañeros/alumnos del [equipo]({{ page.equipos}}). Puedes usar el [chat de Google](https://mail.google.com/chat/u/0) para comunicarte con tus alumnos. 
 * Documenta lo que has hecho en el fichero `README.md`  de tu repo de entrega de esta práctica
 
@@ -176,8 +176,8 @@ En el [foro de la organización de AET]({{ page.foro}}) dentro de la categoría 
 En el README.md del repo de entrega de esta práctica deja enlaces a la organización y al classroom creados:
 
 ```
-* [Organización de la práctica ull-mfp-aet-2223-alumnoXXX](https://github.com/ull-mfp-aet-2223-alumnoudv4)
-* [Classroom ULL-MFP-AET-2223-alumnoXXXX](https://classroom.github.com/classrooms/108617085-ull-mfp-aet-2223)
+* [Organización de la práctica ull-mfp-aet-2324-alumnoXXX](https://github.com/ull-mfp-aet-2324-alumnoudv4)
+* [Classroom ULL-MFP-AET-2324-alumnoXXXX](https://classroom.github.com/classrooms/108617085-ull-mfp-aet-2324)
 ```
 
 Añade a la lista enlaces a los profiles GH de los miembros de tu equipo.
