@@ -57,7 +57,7 @@ Una vez creado el equipo y aceptada la asignación deberá aparecer despues de u
 
 ## Entrega en el Campus virtual
 
-En la tarea del campus simplemente escribes el enlace al repo de la tarea.
+En la tarea del campus escribes el enlace al repo de la tarea. En documentos adjuntos puedes adjuntar el ZIP del repo que puedes descargar desde GitHub usando el botón verde "Code" y luego "Download ZIP".
 
 ## Aprender Markdown
 

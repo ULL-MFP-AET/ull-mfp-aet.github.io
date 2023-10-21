@@ -57,7 +57,10 @@ Cuando te pida la prueba de tu estado académico:
 
 - Coloca el carnet (si no tienes puedes bajar [la app de la ULL](https://play.google.com/store/apps/details?id=net.universia.ull&hl=es&gl=US) que proporciona uno) u otra prueba de su situación académica actual en el cuadro y, después, haga clic en **Hacer foto**.
 - En "Tipo de prueba", usa el menú desplegable para seleccionar el tipo de prueba que proporcionas.
-
+- Si tienes problemas puedes [consultar este asistente](https://support.github.com/contact/education?contact[type]=education&flow=student_developer_pack_troubleshooting)
+- [¿Necesitas ayuda con tu solicitud de Global Campus?](https://support.github.com/features/education)
+- [gitHub Education Discussions](https://github.com/orgs/community/discussions/categories/github-education)
+  
 ## Entrega
 
 En cualquier caso, seas profesor o estudiante, para completar esta tarea deberás completar estos  puntos:
