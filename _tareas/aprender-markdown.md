@@ -67,7 +67,13 @@ y  para mas detalles consulta la guía de usuario
 
 Acepta la asignación de esta tarea y en el repositorio creado en GitHub edita el fichero `README.md` y rellenalo con un breve e informal CV.
 
-* Incluye alguna imagen 
+* Incluye alguna imagen. Por ejemplo
+  
+  ```
+  ![](https://avatars.githubusercontent.com/u/131154928?v=4)
+  ```
+  que se verá así:
+  ![https://avatars.githubusercontent.com/u/131154928?v=4](https://avatars.githubusercontent.com/u/131154928?v=4)
 * Incluye algunos enlaces 
   * Por ejemplo un enlace a tu usuario en github se escribe así: 
     ```
@@ -183,7 +189,7 @@ o bien:
 que se verá como:
 
 
-![]({{ site.baseurl}}/assets/images/mermaid2.png)
+![]({{ site.baseurl}}/assets/images/mermaid-2.png)
 
 ### Task lists
 
