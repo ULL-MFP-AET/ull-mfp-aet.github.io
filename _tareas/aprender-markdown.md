@@ -69,11 +69,26 @@ Acepta la asignación de esta tarea y en el repositorio creado en GitHub edita e
 
 * Incluye alguna imagen 
 * Incluye algunos enlaces 
-  * Por ejemplo un enlace a tu usuario en github: `[casiano-rodriguez en GitHub](https://github.com/casiano-rodriguez)` se ve como [casiano-rodriguez en GitHub](https://github.com/casiano-rodriguez).
+  * Por ejemplo un enlace a tu usuario en github se escribe así: 
+    ```
+    [casiano-rodriguez en GitHub](https://github.com/casiano-rodriguez)
+    ``` 
+    y se ve así: [casiano-rodriguez en GitHub](https://github.com/casiano-rodriguez).
 * Incluya alguna lista 
 * Una cita favorita (blockquote)
 * Un fragmento de código inline de un lenguaje de programación 
-* Incluye un trozo de código que ocupe varias líneas como este y asegúrate de que aprece coloreado:
+* Incluye un trozo de código en un lenguaje de programación que ocupe varias líneas como este 
+
+ ````
+  ```javascript
+  function fancyAlert(arg) {
+    if(arg) {
+      $.facebox({div:'#foo'})
+    }
+  }
+  ```
+  ````
+  y se verá así:
 
   ```javascript
   function fancyAlert(arg) {
@@ -90,6 +105,7 @@ Acepta la asignación de esta tarea y en el repositorio creado en GitHub edita e
   Content from cell 1 | Content from cell 2
   Content in the first column | Content in the second column
   ```
+  que se verá así:
 
   First Header | Second Header
   ------------ | -------------
@@ -136,7 +152,7 @@ This sentence uses `$` delimiters to show math inline: \\(\sqrt{3x-1}+(1+x)^2\\)
   
 ### Diagramas con mermaid
 
-Puedes incluir diagramas en tus documentos usando [mermaid](https://mermaid-js.github.io/mermaid/). Por ejemplo:
+Puedes incluir diagramas en tus documentos usando [mermaid](https://mermaid.js.org/intro/getting-started.html). Por ejemplo:
 
 
     ```mermaid
@@ -150,6 +166,30 @@ Puedes incluir diagramas en tus documentos usando [mermaid](https://mermaid-js.g
 que se verá como:
 
 ![]({{ site.baseurl}}/assets/images/mermaid.png)
+
+o bien:
+
+    ```mermaid
+      graph TD
+          A[Enter Chart Definition] --> B(Preview)
+          B --> C{decide}
+          C --> D[Keep]
+          C --> E[Edit Definition]
+          E --> B
+          D --> F[Save Image and Code]
+          F --> B
+    ```
+
+```mermaid
+graph TD
+    A[Enter Chart Definition] --> B(Preview)
+    B --> C{decide}
+    C --> D[Keep]
+    C --> E[Edit Definition]
+    E --> B
+    D --> F[Save Image and Code]
+    F --> B
+```
 
 ### Task lists
 
