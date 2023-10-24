@@ -68,7 +68,8 @@ y  para mas detalles consulta la guía de usuario
 Acepta la asignación de esta tarea y en el repositorio creado en GitHub edita el fichero `README.md` y rellenalo con un breve e informal CV.
 
 * Incluye alguna imagen 
-* Incluye algunos enlaces (por ejemplo un enlace a tu usuario en github: `[casiano-rodriguez en GitHub](https://github.com/casiano-rodriguez)`se ve como [casiano-rodriguez en GitHub](https://github.com/casiano-rodriguez)).
+* Incluye algunos enlaces 
+  * Por ejemplo un enlace a tu usuario en github: `[casiano-rodriguez en GitHub](https://github.com/casiano-rodriguez)` se ve como [casiano-rodriguez en GitHub](https://github.com/casiano-rodriguez).
 * Incluya alguna lista 
 * Una cita favorita (blockquote)
 * Un fragmento de código inline de un lenguaje de programación 
