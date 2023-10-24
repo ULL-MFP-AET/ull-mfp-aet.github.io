@@ -68,7 +68,7 @@ y  para mas detalles consulta la guía de usuario
 Acepta la asignación de esta tarea y en el repositorio creado en GitHub edita el fichero `README.md` y rellenalo con un breve e informal CV.
 
 * Incluye alguna imagen 
-* Incluye algunos enlaces (por ejemplo un enlace a tu usuario en el campus virtual).
+* Incluye algunos enlaces (por ejemplo un enlace a tu usuario en github: `[casiano-rodriguez en GitHub](https://github.com/casiano-rodriguez)`se ve como [casiano-rodriguez en GitHub](https://github.com/casiano-rodriguez)).
 * Incluya alguna lista 
 * Una cita favorita (blockquote)
 * Un fragmento de código inline de un lenguaje de programación 
@@ -81,20 +81,26 @@ Acepta la asignación de esta tarea y en el repositorio creado en GitHub edita e
     }
   }
   ```
-* Incluye una tabla
+* Incluye una tabla como esta:
+  
+  ```
+  First Header | Second Header
+  ------------ | -------------
+  Content from cell 1 | Content from cell 2
+  Content in the first column | Content in the second column
+  ```
 
   First Header | Second Header
   ------------ | -------------
   Content from cell 1 | Content from cell 2
   Content in the first column | Content in the second column
 
-* Incluye un emoji. Por ejemplo: :+1:
-* Añade un fichero `master.md`  (puedes crearlo usando el menu o bien visitando una ruta con la sintáxis `https://github.com/:owner:/:repo:/new/main`) en el que describas tu experiencia hasta ahora en este master y lo enlazas desde el fichero `README.md`.  
-  * En el fichero 
-`master.md` pon un enlace de vuelta al `README.md`
+* Incluye un emoji. Por ejemplo: `:+1:` se ve como :+1:.
+* Añade un fichero `master.md`  (puedes crearlo usando el botón `add file` del menu o bien visitando una ruta con la sintáxis `https://github.com/:owner:/:repo:/new/main`) en el que describas tu experiencia hasta ahora en este master y lo enlazas desde el fichero `README.md`.  
+  * En el fichero `master.md` pon un enlace de vuelta al `README.md`
 
 - Podemos hacer uso del editor que provee la interfaz web de GitHub.
-- Pero hay editores alternativos mejores como [el editor web de GitHub  y GitPod]({{site.baseurl}}/pages/gitpod)
+- Pero hay editores alternativos mejores como [codespaces]({{site.baseurl}}/asssets/tareas/asignatura-website/codespaces), [el editor web de GitHub  y GitPod]({{site.baseurl}}/pages/gitpod)
 - Recuerda hacer "commits" para guardar los cambios.
 - En la tarea entrega el enlace al repo con los contenidos de tu trabajo
 
