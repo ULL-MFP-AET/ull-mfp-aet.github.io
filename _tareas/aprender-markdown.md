@@ -74,14 +74,16 @@ Acepta la asignación de esta tarea y en el repositorio creado en GitHub edita e
   ![](https://avatars.githubusercontent.com/u/131154928?v=4)
   ```
   que se verá así:
-  
+
   ![https://avatars.githubusercontent.com/u/131154928?v=4](https://avatars.githubusercontent.com/u/131154928?v=4)
 * Incluye algunos enlaces 
   * Por ejemplo un enlace a tu usuario en github se escribe así: 
     ```
     [casiano-rodriguez en GitHub](https://github.com/casiano-rodriguez)
     ``` 
-    y se ve así: [casiano-rodriguez en GitHub](https://github.com/casiano-rodriguez).
+    y se ve así: 
+    
+    [casiano-rodriguez en GitHub](https://github.com/casiano-rodriguez).
 * Incluya alguna lista 
 * Una cita favorita (blockquote)
 * Un fragmento de código inline de un lenguaje de programación 
@@ -126,8 +128,8 @@ Acepta la asignación de esta tarea y en el repositorio creado en GitHub edita e
 
 - Podemos hacer uso del editor que provee la interfaz web de GitHub.
 - Pero hay editores alternativos mejores como [codespaces]({{site.baseurl}}/asssets/tareas/asignatura-website/codespaces), [el editor web de GitHub  y GitPod]({{site.baseurl}}/pages/gitpod)
-- Recuerda hacer "commits" para guardar los cambios.
-- En la tarea entrega el enlace al repo con los contenidos de tu trabajo
+- Recuerda hacer `commits` para guardar los cambios en el repo local y `push` para guardarlos en el repo remoto.
+- En la tarea entrega el enlace al repo con los contenidos de tu trabajo, el zip con los contenidos del repo y genera un issue en el repo de la asignación indicando que has terminado.
 
 * Añade una imagen-enlace. Se deberá ver la imagen pero esta será un enlace 
 a otra página
