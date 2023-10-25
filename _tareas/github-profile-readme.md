@@ -39,9 +39,9 @@ Esta tarea inicial ha sido configurada por el profesor como una tarea de equipo.
 Eso significa que cuando hagan click en la aceptación  de la tarea les saldrá un formulario para elegir el nombre del equipo. En este caso el equipo será individual.
 
 1. Escriba su nombre y apellidos seguido de su ID de la ULL separados por guiones `nombre-apellido1-apellido2-idnumerico`. El `idnumerico` es sin el prefijo `alu`. Por ejemplo, para el alumno `alu0101234567` el nombre del equipo será `nombre-apellido1-apellido2-0101234567`.
-2. Si su nombre es compuesto como Ana María Laza Pérez, escriba `ana_maria-laza-perez-XXXXX` usando un guión bajo.
+2. Si su nombre es compuesto como Ana María Laza Pérez, escriba `ana_maria-laza-perez-0101234567` usando un guión bajo.
 3. No uses acentos, ni caracteres especiales, sólo las letras del alfabeto US. Cambia la ñ por la secuencia "ny". No uses blancos.
-4. Si no tiene segundo apellido o si la aplicación GH Classroom se queja de que el nombre del team es muy largo, simplemente omítalo y escriba `nombre-apellido1-ullid`
+4. Si no tiene segundo apellido o si la aplicación GH Classroom se queja de que el nombre del team es muy largo, simplemente omítalo y escriba `nombre-apellido1-ullnumericid`
 5. Si La aplicación se sigue quejando de que el nombre del team es muy largo omita también el primer apellido. 
 
 ## Objetivos
