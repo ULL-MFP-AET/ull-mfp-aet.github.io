@@ -131,8 +131,17 @@ Acepta la asignación de esta tarea y en el repositorio creado en GitHub edita e
 - Recuerda hacer `commits` para guardar los cambios en el repo local y `push` para guardarlos en el repo remoto.
 - En la tarea entrega el enlace al repo con los contenidos de tu trabajo, el zip con los contenidos del repo y genera un issue en el repo de la asignación indicando que has terminado.
 
-* Añade una imagen-enlace. Se deberá ver la imagen pero esta será un enlace 
-a otra página
+* Añade una imagen-enlace. Se deberá ver la imagen pero esta será un enlace a otra página. Por ejemplo:
+
+  ```
+  [![](https://avatars.githubusercontent.com/u/131154928?v=4)](https://github.com/crguezl)
+  ```
+  
+  que se verá así:
+
+  [![](https://avatars.githubusercontent.com/u/131154928?v=4)](https://github.com/crguezl)
+
+  si haces `click` en la imagen te llevará a la página enlazada.
 
 ### Matemáticas
 
