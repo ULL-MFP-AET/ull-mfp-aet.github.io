@@ -34,12 +34,14 @@
           {%- if fakes contains aluId -%} <span>Fake </span>{%- endif -%}Student {{ studentName }} ({{ aluId}}, {{ forloop.index}} of {{ numTeams}})
         </h2>
         <ul>
-          <li> Student team:
-            <a href="{{url}}" target="_blank">{{ name }}</a>
+          <li> 
+            <a href="https://github.com/orgs/{{ site.organization.name }}/teams?query=%40{{ student.login }}" target="_blank" title="{{ studentName}} teams">
+              <img src="{{ avatarUrl }}" width="30%"/>
+            </a>
           </li>
-          <li><img src="{{ avatarUrl }}" width="30%"/></li>
+
           <li> {{ studentName }} repos:
-          <a href="{{url}}/repositories" target="_blank">Repositories</a>
+          <a href="https://github.com/orgs/{{ site.organization.name }}/people/{{ student.login }}" target="_blank">Repositories</a>
           </li>
           <li> <a href="{{ memberAccessUrl }}" target="_blank">{{ studentName }} ({{ student.login }})</a>  at the organization {{ site.organization.name }}</li>
           <li> <a href="{{ student.url }}" target="_blank">{{ studentName }} at GitHub</a> is {{ student.login }}
