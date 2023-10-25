@@ -74,6 +74,7 @@ Acepta la asignación de esta tarea y en el repositorio creado en GitHub edita e
   ![](https://avatars.githubusercontent.com/u/131154928?v=4)
   ```
   que se verá así:
+  
   ![https://avatars.githubusercontent.com/u/131154928?v=4](https://avatars.githubusercontent.com/u/131154928?v=4)
 * Incluye algunos enlaces 
   * Por ejemplo un enlace a tu usuario en github se escribe así: 
