@@ -122,7 +122,7 @@ Acepta la asignación de esta tarea y en el repositorio creado en GitHub edita e
   Content from cell 1 | Content from cell 2
   Content in the first column | Content in the second column
 
-* Incluye un emoji. Por ejemplo: `:+1:` se ve como :+1:.
+* Incluye un emoji. Por ejemplo: `:+1:` se ve como :+1:. Puedes consultar la [lista de nombres de emojis](https://gist.github.com/rxaviers/7360908)
 * Añade un fichero `master.md`  (puedes crearlo usando el botón `add file` del menu o bien visitando una ruta con la sintáxis `https://github.com/:owner:/:repo:/new/main`) en el que describas tu experiencia hasta ahora en este master y lo enlazas desde el fichero `README.md`.  
   * En el fichero `master.md` pon un enlace de vuelta al `README.md`
 
@@ -218,7 +218,7 @@ Se verá así:
 - [ ] https://github.com/octo-org/octo-repo/issues/740
 - [ ] Add delight to the experience when all tasks are complete :tada:
 
-Este ejemplo muestra también como escribir un emoji por nombre `:tada:`.
+Este ejemplo muestra también como escribir un emoji por nombre `:tada:`. 
 
 Mas información en [Acerca de las listas de tareas](https://docs.github.com/es/issues/tracking-
 See your-work-with-issues/about-task-lists)
