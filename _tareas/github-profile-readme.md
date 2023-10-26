@@ -115,6 +115,7 @@ También te será de utilidad la documentación de GH en [Enseña con GitHub Cla
 
 ## Crea asignaciones para tus estudiantes
 
+Lea la información en la sección [Create a Group assignment](https://docs.github.com/en/education/manage-coursework-with-github-classroom/teach-with-github-classroom/create-a-group-assignment)
 
 ### Crea una primera asignación de grupo GHC para tu clase
 
@@ -126,7 +127,7 @@ También te será de utilidad la documentación de GH en [Enseña con GitHub Cla
   * En los settings del repo deberás indicar que es un repo template
   * Usa dicho repo template como template para la asignación
 * Pon una fecha de entrega
-* Enviale el enlace a tus otros compañeros/alumnos del [equipo]({{ page.equipos}}). Puedes usar el [chat de Google](https://mail.google.com/chat/u/0) para comunicarte con tus alumnos. 
+* Enviale el enlace a tus otros compañeros/alumnos del [equipo]({{ page.equipos}}). Puedes dejar el enlace en una incidencia en el repo asignado a la práctica [equipos]({{ site.baseurl }}/practicas/equipos/) mencionando al team creado. También puedes usar el [chat de Google](https://mail.google.com/chat/u/0) para enviarle el link al resto. 
 * Documenta lo que has hecho en el fichero `README.md`  de tu repo de entrega de esta práctica
 
 ### Crea una segunda asignación reutilizando el grupo de teams
