@@ -67,7 +67,7 @@ Tú decides qué información incluir en el README de tu perfil. Reutiliza el ma
 
 GitHub mostrará su perfil `README` en su página de perfil si se cumple:
 
-1. Has creado un repositorio con un nombre que **coincide con tu nombre de usuario** de GitHub.
+1. Has creado un repositorio con un nombre que **coincide con tu nombre de usuario** de GitHub. Por ejemplo mi repo perfil está en <https://github.com/crguezl/crguezl>
 2. El repositorio es **público**.
 3. El repositorio contiene un archivo llamado `README.md` en su raíz.
 
@@ -78,6 +78,26 @@ Puedes encontrar ejemplos curiosos de *repos profile* en estas referencias:
 * [abhisheknaiidu/awesome-github-profile-readme](https://github.com/abhisheknaiidu/awesome-github-profile-readme)
 * La misma información pero en [la web](https://zzetao.github.io/awesome-github-profile/) asociada
 * [articles about how to write a profile readme](https://github.com/abhisheknaiidu/awesome-github-profile-readme#articles). 
+
+Uno de los trucos típicos para hacer algo curioso es "llamar" a una aplicación web (aquí `github-readme-stats.vercel.app/api`) a la que se le pasan ciertos parámetros (p.ej. `username=crguezl`) y devuelve
+una imagen de acuerdo a los parámetros pasados. Por ejemplo:
+
+```markdown
+![crguezl stats](https://github-readme-stats.vercel.app/api?username=crguezl&show_icons=true&locale=en)
+```
+produce esta imagen con las estadísticas correspondientes a la actividad "pública" del usuario `crguezl`:
+
+![crguezl stats](https://github-readme-stats.vercel.app/api?username=crguezl&show_icons=true&locale=en)
+
+O bien esta otra:
+
+```markdown
+![Jokes Card](https://readme-jokes.vercel.app/api)
+```
+
+que produce una imagen conteniendo un chiste aleatorio sobre programación como este:
+
+![Jokes Card](https://readme-jokes.vercel.app/api)
 
 ## Crea una Organización y un repo Profile para la misma
 
