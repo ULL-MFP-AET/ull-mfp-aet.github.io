@@ -154,7 +154,7 @@ Supuesto que tu eres el alumno `AluYYY`, para cada uno de los otros miembros `Al
 Para cada asignación `Tecnologia-i` y cada alumno `AluYYY` visita su repo, lee su informe y visita el enlace **Insights** del repo para ver las estadísticas de actividad del alumno. Puede consultar [Viewing activity and data for your repository](https://docs.github.com/en/repositories/viewing-activity-and-data-for-your-repository)
 
 
-Responde a las incidencias generadas por tus alumnos `aluYYY` indicándoles 
+Responde a las [incidencias/issues](https://docs.github.com/en/issues/tracking-your-work-with-issues/about-issues) generadas por tus alumnos `aluYYY` indicándoles 
 
 1. Si la tarea está bien hecha y en tal caso **cerrando la incidencia** o bien
 2. indicándoles que deben corregir la tarea y volver a enviar una incidencia para su aprobación. 
