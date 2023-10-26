@@ -121,8 +121,8 @@ Lea la información en la sección [Create a Group assignment](https://docs.gith
 
 * Configurala como una asignación de grupo con un sólo miembro por grupo como la primera que has hecho en este curso. 
 * El nombre del grupo de teams será **STUDENTS**
-* Usa la técnica descrita en la sección [Segunda Solución: Asignaciones de Grupos]({{ site.baseurl}}/pages/github-classroom.html#segunda-soluci%C3%B3n-asignaciones-de-grupos) y dale las instrucciones correspondientes a tus [alumnos]({{ page.equipos}}). Lee también la sección [El problema de Enlazar las Cuentas GH con las cuentas del LMS]({{ site.baseurl }}/pages/github-classroom.html#el-problema-de-enlazar-las-cuentas-gh-con-las-cuentas-del-lms)
-* Crea un repo de template para la asignación dentro de la organización `ull-mfp-aet-2324-aluXXXX` con las instrucciones y ejemplos para la tarea. 
+* Usa la técnica descrita en la sección [Segunda Solución: Asignaciones de Grupos]({{ site.baseurl}}/pages/github-classroom.html#segunda-soluci%C3%B3n-asignaciones-de-grupos) y dale las instrucciones correspondientes a tus [alumnos]({{ page.equipos}}). Lee también la sección "[El problema de Enlazar las Cuentas GH con las cuentas del LMS]({{ site.baseurl }}/pages/github-classroom.html#el-problema-de-enlazar-las-cuentas-gh-con-las-cuentas-del-lms)" en estos apuntes
+* [Crea un repo de template](https://docs.github.com/en/repositories/creating-and-managing-repositories/creating-a-template-repository) para la asignación dentro de la organización `ull-mfp-aet-2324-aluXXXX` con las instrucciones y ejemplos para la tarea. 
   * El nombre del repo tendrá que tener el sufijo `-template`
   * En los settings del repo deberás indicar que es un repo template
   * Usa dicho repo template como template para la asignación
