@@ -151,15 +151,19 @@ Supuesto que tu eres el alumno `AluYYY`, para cada uno de los otros miembros `Al
 
 ## Como profesor evalúa a tus estudiantes
 
-Responde a las incidencias generadas por tus alumnos indicándoles 
+Para cada asignación `Tecnologia-i` y cada alumno `AluYYY` visita su repo, lee su informe y visita el enlace **Insights** del repo para ver las estadísticas de actividad del alumno. Puede consultar [Viewing activity and data for your repository](https://docs.github.com/en/repositories/viewing-activity-and-data-for-your-repository)
 
-1. si la tarea está bien hecha y **cerrando la incidencia** o 
+
+Responde a las incidencias generadas por tus alumnos `aluYYY` indicándoles 
+
+1. Si la tarea está bien hecha y en tal caso **cerrando la incidencia** o bien
 2. indicándoles que deben corregir la tarea y volver a enviar una incidencia para su aprobación. 
-3. En la incidencia, menciona  al alumno `@AluYYY` y a `@crguezl`
+3. En la incidencia, menciona  al  alumno `@AluYYY` y al profesor `@crguezl`
+
 
 ## Si eres profesor actualiza la organización para que se beneficie de los descuentos
 
-Deberás, si es posible y si no lo hiciste en la [tarea inicial]({{ site.baseurl }}/tema0-introduccion/practicas/registrarse-en-github/)), beneficiarte de los descuentos que ofrece GitHub para lo que 
+**Si es posible** y no lo hiciste en la [tarea inicial]({{ site.baseurl }}/tema0-introduccion/practicas/registrarse-en-github/)), beneficiarte de los descuentos que ofrece GitHub para lo que 
 
 1. **deberás verificar tu condición de empleo académico** y una vez seas aceptado en el [programa *"Global Campus"*](https://docs.github.com/en/education/explore-the-benefits-of-teaching-and-learning-with-github-education/use-github-at-your-educational-institution/about-github-campus-program), 
 2. podrás solicitar hojas de atajos, guías, pegatinas, etc. para tus estudiantes. 
@@ -180,7 +184,6 @@ Los pasos iniciales que debes dar para obtener los descuentos y crear un aula pa
 
 
 ## Aprendiendo a usar un Foro de una Organización
-
 
 Añade un foro a la organización que creaste para tu asignatura.
 
