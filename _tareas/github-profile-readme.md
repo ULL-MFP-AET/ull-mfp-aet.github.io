@@ -117,7 +117,7 @@ También te será de utilidad la documentación de GH en [Enseña con GitHub Cla
 
 Lea la información en la sección [Create a Group assignment](https://docs.github.com/en/education/manage-coursework-with-github-classroom/teach-with-github-classroom/create-a-group-assignment)
 
-### Crea una primera asignación de grupo GHC para tu clase
+### Crea una primera asignación de grupo GHC para tu clase de Tecnología
 
 * Configurala como una asignación de grupo con un sólo miembro por grupo como la primera que has hecho en este curso. 
 * El nombre del grupo de teams será **STUDENTS**
@@ -130,7 +130,7 @@ Lea la información en la sección [Create a Group assignment](https://docs.gith
 * Enviale el enlace a tus otros compañeros/alumnos del [equipo]({{ page.equipos}}). Puedes dejar el enlace en una incidencia en el repo asignado a la práctica [equipos]({{ site.baseurl }}/practicas/equipos/) mencionando al team creado. También puedes usar el [chat de Google](https://mail.google.com/chat/u/0) para enviarle el link al resto. 
 * Documenta lo que has hecho en el fichero `README.md`  de tu repo de entrega de esta práctica
 
-### Crea una segunda asignación reutilizando el grupo de teams
+### Crea una segunda asignación reutilizando el grupo de teams 
 
 * Configurala como una asignación de grupo y reutilizas el grupo de teams creado en la anterior. 
 * Crea un nuevo repo de template para la asignación dentro de la organización `ull-mfp-aet-2324-aluXXXX` con las instrucciones y ejemplos para la tarea como en la anterior
@@ -143,9 +143,9 @@ Supuesto que tu eres el alumno `AluYYY`, para cada uno de los otros miembros `Al
 
 1. acepta las dos asignaciones que te ha hecho tu compañero  `AluXXX` como profesor.
    * La primera vez que aceptes deberás crear el equipo. Sigue las instrucciones en la sección [Aceptando la tarea]({{ site.baseurl }}tema0-introduccion/practicas/aprender-markdown/#aceptando-la-tarea) que dimos en la primera práctica de esta parte
-2. una vez aceptadas, en la organización `ULL-MFP-AET-AluXXX` del profesor `AluXXX` encontraras los dos repos en los que debes trabajar. Suponiendo que ha puesto como prefijos `tarea-1` y `tarea-2`los nombres de esos repos siguen el patrón:
-   1. `ULL-MFP-AET-AluXXX/tarea-1-Nombre-Apellidos-AluYYY`
-   2. `ULL-MFP-AET-AluXXX/tarea-2-Nombre-Apellidos-AluYYY`
+2. una vez aceptadas, en la organización `ULL-MFP-AET-AluXXX` del profesor `AluXXX` encontraras los dos repos en los que debes trabajar. Suponiendo que ha puesto como prefijos `Tecnologia-1` y `Tecnologia-2`los nombres de esos repos siguen el patrón:
+   1. `ULL-MFP-AET-AluXXX/Tecnologia-1-Nombre-Apellidos-AluYYY`
+   2. `ULL-MFP-AET-AluXXX/Tecnologia-2-Nombre-Apellidos-AluYYY`
 3. sigue las instrucciones que te ha indicado `AluXXX` y realiza las tareas que te asignaron en el repo de entrega
 4. Cuando creas que están terminadas procede a las entregas realizando un [issue](https://docs.github.com/en/issues) en el repo de la tarea `ULL-MFP-AET-AluXXX/tarea-prefijo-Nombre-Apellidos-AluYYY` mencionando al correspondiente profesor `@AluXXX` y a `@crguezl` indicándole que has acabado.
 
