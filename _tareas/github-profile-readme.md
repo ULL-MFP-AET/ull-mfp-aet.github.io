@@ -63,7 +63,17 @@ GitHub muestra el README de tu perfil al inicio de tu página de perfil.
 
 Tú decides qué información incluir en el README de tu perfil. Reutiliza el material creado en la práctica anterior.
 
-Puedes encontrar ejemplos curiosos de *repos profile* en esta referencia:
+### Prerequisitos
+
+GitHub mostrará su perfil `README` en su página de perfil si se cumple:
+
+1. Has creado un repositorio con un nombre que **coincide con tu nombre de usuario** de GitHub.
+2. El repositorio es **público**.
+3. El repositorio contiene un archivo llamado `README.md` en su raíz.
+
+### Ejemplos
+
+Puedes encontrar ejemplos curiosos de *repos profile* en estas referencias:
 
 * [abhisheknaiidu/awesome-github-profile-readme](https://github.com/abhisheknaiidu/awesome-github-profile-readme)
 * La misma información pero en [la web](https://zzetao.github.io/awesome-github-profile/) asociada
@@ -71,11 +81,12 @@ Puedes encontrar ejemplos curiosos de *repos profile* en esta referencia:
 
 ## Crea una Organización y un repo Profile para la misma
 
-En este paso deberás crear ahora 
+En este paso deberás ahora 
 
-1. Una organización para una asignatura que quieres impartir 
+1. [Crear una organización](https://docs.github.com/en/organizations/collaborating-with-groups-in-organizations/creating-a-new-organization-from-scratch) para una asignatura que quieres impartir 
    * El nombre de la organización debe ser `ull-mfp-aet-2324-aluXXXX` donde `aluXXXX` es tu identificador ULL
    * Invita a [crguezl](https://github.com/crguezl) como **owner** de la organización
+   * Esta organización la vas a usar para impartir una asignatura de **Tecnología** al nivel que quieras elegir. Tu serás el profesor encargado de esa asignatura
    * Realiza la tarea [crear equipos de 3]({{ page.teams }}) para crear  equipos de 3 personas y decide con que compañeros quieres colaborar
      * Cada miembro del equipo colaborará con el rol de estudiante en la organización en la que los otros dos actúan como profesores
    * Vaya a settings y configure la org. Añádale una profile picture y actualiza también tu profile picture personal
