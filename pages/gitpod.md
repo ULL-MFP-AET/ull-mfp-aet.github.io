@@ -46,6 +46,24 @@ Codespaces es un servicio de GH que provee el mismo entorno de desarrollo que VS
 
 Consulte la discusión en <https://github.com/community/Global-Campus-Teachers/discussions/118#discussioncomment-3715087>
 
+## Personalizing your Codespace
+
+Si quieres personalizar tu Codespace, puedes leer [Personalizing GitHub Codespaces for your account](https://docs.github.com/en/codespaces/customizing-your-codespace/personalizing-github-codespaces-for-your-account).Puedes personalizar GitHub Codespaces usando un [repositorio `dotfiles` en GitHub](https://docs.github.com/en/codespaces/customizing-your-codespace/personalizing-github-codespaces-for-your-account#dotfiles) o usando [Settings Sync](https://docs.github.com/en/codespaces/customizing-your-codespace/personalizing-github-codespaces-for-your-account#settings-sync).
+
+To speed up codespace creation, you can configure your project to **prebuild codespaces** for specific branches in specific regions. You create and configure prebuilds in your repository's settings. 
+
+- Repository-level settings for GitHub Codespaces are available for all repositories owned by personal accounts.
+- For repositories owned by organizations, repository-level settings for GitHub Codespaces are available for organizations on GitHub Team plans that there is the one you get from GH Education as a teacher. 
+
+See the documentation at [codespaces/prebuilding-your-codespaces](https://docs.github.com/en/codespaces/prebuilding-your-codespaces).
+
+A prebuild assembles the main components of a codespace for a particular combination of repository, branch, and devcontainer.json configuration file. 
+It provides a quick way to create a new codespace. For complex and/or large repositories in particular, you can create a new codespace more quickly by using a prebuild.
+Whenever you push changes to your repository, GitHub Codespaces uses GitHub Actions to automatically update your prebuilds.
+
+See [crguezl/dotfiles](https://github.com/crguezl/dotfiles) (private repo)
+and [arelia/dotfiles](https://github.com/arelia/dotfiles) (public repo)
+
 ## GitPod 
 
 Gitpod is an open source platform for automated and ready-to-code development environments that blends into your existing workflow. It enables developers to describe their dev environment as code and start instant and fresh development environments for each new task directly from your browser.

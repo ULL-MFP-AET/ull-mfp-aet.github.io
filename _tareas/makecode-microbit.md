@@ -53,6 +53,11 @@ En este vídeo [GitHub Classroom and MakeCode Arcade](https://youtu.be/XQ9TU9R-G
 
 {% include youtubePlayer.html id="XQ9TU9R-Gw0" %}
 
+* <https://arcade.makecode.com/>
+* [Jacqueline Russell en GitHub](https://github.com/Jaqster) Tiene muchos repositorios de MakeCode, microbit, etc. Por ejemplo <https://github.com/Jaqster/csta-2021>
+* [Arelia Jones en GitHub](https://github.com/arelia)
+* Microsoft MakeCode is based on the open source project Microsoft Programming Experience Toolkit (PXT): <https://github.com/microsoft/pxt>. [You can installe it on your machine](https://github.com/microsoft/pxt#build)
+
 ## Entrega
 
 Deja en el fichero `README.md` de este repositorio 
