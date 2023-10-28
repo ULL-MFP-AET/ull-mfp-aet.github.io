@@ -12,6 +12,7 @@ foro: https://github.com/orgs/ULL-MFP-AET-2223/discussions
 hide: true
 rubrica:
   - "Se ha aprendido a usar Makecode"
+  - "Ha hecho una asignación con GitHub Classroom en la que el editor asociado es MakeCode Arcade"
   - "Ha entregado el .zip en el campus"
 video: "8KwoKgYz85k"
 ---
@@ -21,10 +22,11 @@ video: "8KwoKgYz85k"
 
 ## Objetivos
 
-En esta tarea vamos a aprender a usar [MakeCode](https://arcade.makecode.com/) arcade, un entorno de programación visual.
-Para ello haga los ejercicios en la sección [Concepts](https://arcade.makecode.com/concepts) de la documentación de MakeCode.
-
-Para hacerlos le será de utilidad la [Documentación de arcade makedocs](https://arcade.makecode.com/docs) y en particular la sección [Blocks](https://arcade.makecode.com/blocks).
+En esta tarea vamos a
+- Aprender a usar [MakeCode](https://arcade.makecode.com/) arcade, un entorno de programación visual.
+- Vamos a hacer una nueva asignación en GitHub Classroom (chase-the-pizza)  en la que el editor asociado será MakeCode Arcade .
+- Heche un vistazo a los ejercicios en la sección [Concepts](https://arcade.makecode.com/concepts) de la documentación de MakeCode.
+- Le será de utilidad la [Documentación de arcade makedocs](https://arcade.makecode.com/docs) y en particular la sección [Blocks](https://arcade.makecode.com/blocks).
 
 ## Piensa Computacionalmente. Programación con Arcade MakeCode
 
@@ -56,7 +58,7 @@ En este vídeo [GitHub Classroom and MakeCode Arcade](https://youtu.be/XQ9TU9R-G
 * <https://arcade.makecode.com/>
 * [Jacqueline Russell en GitHub](https://github.com/Jaqster) Tiene muchos repositorios de MakeCode, microbit, etc. Por ejemplo <https://github.com/Jaqster/csta-2021>
 * [Arelia Jones en GitHub](https://github.com/arelia)
-* Microsoft MakeCode is based on the open source project Microsoft Programming Experience Toolkit (PXT): <https://github.com/microsoft/pxt>. [You can installe it on your machine](https://github.com/microsoft/pxt#build)
+* Microsoft MakeCode is based on the open source project Microsoft Programming Experience Toolkit (PXT): <https://github.com/microsoft/pxt>. [You can install it on your machine](https://github.com/microsoft/pxt#build)
 
 ## Entrega
 
