@@ -24,9 +24,7 @@ video: "8KwoKgYz85k"
 
 En esta tarea vamos a
 - Aprender a usar [MakeCode](https://arcade.makecode.com/) arcade, un entorno de programación visual.
-- Vamos a hacer una nueva asignación en GitHub Classroom (chase-the-pizza)  en la que el editor asociado será MakeCode Arcade .
-- Heche un vistazo a los ejercicios en la sección [Concepts](https://arcade.makecode.com/concepts) de la documentación de MakeCode.
-- Le será de utilidad la [Documentación de arcade makedocs](https://arcade.makecode.com/docs) y en particular la sección [Blocks](https://arcade.makecode.com/blocks).
+- Vamos a hacer una nueva asignación en GitHub Classroom (chase-the-pizza)  en la que el editor asociado será MakeCode Arcade en la organización y classroom que creó en prácticas anteriores. 
 
 ## Piensa Computacionalmente. Programación con Arcade MakeCode
 
@@ -55,6 +53,10 @@ En este vídeo [GitHub Classroom and MakeCode Arcade](https://youtu.be/XQ9TU9R-G
 
 {% include youtubePlayer.html id="XQ9TU9R-Gw0" %}
 
+Comienza Jacqueline Russell explicando que MakeCode Arcade es un entorno de desarrollo para crear videojuegos. Luego Arelia Jones (5:47) repasa que es GitHub Classroom, como se crea una organización, como actualizarla para obtener el "Teams Plan" de forma gratuita, como crear una asignación con GH Classroom, como asociar  un roster, añadir un repo template, etc.  y como asignarle MakeCode Arcade como editor, dándole también permisos a MakeCode para que pueda acceder a la organización del GH Classroom. La asignación es configurada con [Leave feedback with pull requests](https://docs.github.com/en/education/manage-coursework-with-github-classroom/teach-with-github-classroom/leave-feedback-with-pull-requests). También muestra como un estudiante acepta la asignación, se identifica contra el roster  y progresa en la tarea empujando sus cambios a GitHub y como el profesor puede ver el progreso de los estudiantes usando el botón `review` para ver los pull requests creados en la rama `feedback`.
+
+
+
 * <https://arcade.makecode.com/>
 * [Jacqueline Russell en GitHub](https://github.com/Jaqster) Tiene muchos repositorios de MakeCode, microbit, etc. Por ejemplo <https://github.com/Jaqster/csta-2021>
 * [Arelia Jones en GitHub](https://github.com/arelia)
@@ -68,10 +70,10 @@ Deja en el fichero `README.md` de este repositorio
 
 ## References
 
+- Vea los ejercicios en la sección [Concepts](https://arcade.makecode.com/concepts) de la documentación de MakeCode.
+- Le será de utilidad la [Documentación de arcade makedocs](https://arcade.makecode.com/docs) y en particular la sección [Blocks](https://arcade.makecode.com/blocks).
 * [MakeCode](https://arcade.makecode.com/)
-* [Documentación de arcade makedocs](https://arcade.makecode.com/docs)
-* Sección [Concepts](https://arcade.makecode.com/concepts) de la documentación de MakeCode.
-* Sección [Blocks](https://arcade.makecode.com/blocks).
+* Sección [Blocks](https://arcade.makecode.com/blocks) de la documentación.
 * {% include youtubePlayer.html id="0dEM3qEHZ4A" %}
 * Programación con Javascript y MakeCode Arcade. Programa tu primer videojuego. 2022. 
 {% include youtubePlayer.html id="u3GVIjvyJiU" %}
