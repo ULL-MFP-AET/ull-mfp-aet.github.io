@@ -13,6 +13,9 @@ hide: true
 rubrica:
   - "Se ha aprendido a usar Makecode"
   - "Ha hecho una asignación con GitHub Classroom en la que el editor asociado es MakeCode Arcade"
+  - "Se ha hecho un roster para su clase"
+  - "Se ha configurado la asignación con *Leave feedback with pull requests*"
+  - "Se ha hecho la asignación `chase-the-pizza` para los otras clases"
   - "Ha entregado el .zip en el campus"
 video: "8KwoKgYz85k"
 ---
