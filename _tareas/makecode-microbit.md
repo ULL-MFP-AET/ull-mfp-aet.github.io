@@ -135,7 +135,7 @@ En (20:59) crea una asignación de grupo.
 
 
 * <https://arcade.makecode.com/>
-* [Jacqueline Russell en GitHub](https://github.com/Jaqster) Tiene muchos repositorios de MakeCode, microbit, etc. Por ejemplo <https://github.com/Jaqster/csta-2021>
+* [Jacqueline Russell en GitHub](https://github.com/Jaqster) Tiene muchos repositorios de MakeCode, microbit, etc. Por ejemplo <https://github.com/Jaqster/csta-2021> es sencillo 
 * [Arelia Jones en GitHub](https://github.com/arelia)
 * Microsoft MakeCode is based on the open source project Microsoft Programming Experience Toolkit (PXT): <https://github.com/microsoft/pxt>. [You can install it on your machine](https://github.com/microsoft/pxt#build)
 
