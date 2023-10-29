@@ -55,11 +55,11 @@ Ciencias de la Computación son: **[Tecnología y Digitalización](https://educa
 
 Además, se establece que, en el conjunto de los tres primeros cursos, se debe
 cursar alguna materia optativa, cuya oferta debe incluir una materia para el desarrollo de la
-competencia digital. La oferta de estas materias optativas será realizada por las
-administraciones educativas y puede consultarse desde el portal del sistema educativo
-español del Ministerio de Educación y FP.
+competencia digital. 
+La oferta de estas materias optativas será realizada por las [administraciones educativas]({{ site.baseurl }}/assets/pdfs/ordenacion-enseñanzas-lomloe-canarias.pdf) y puede consultarse desde 
+[el portal del sistema educativo español del Ministerio de Educación y FP](https://educagob.educacionyfp.gob.es/inicio.html).
 
-Véase este [resumen]({{ site.baseurl }}/assets/pdfs/ordenacion-enseñanzas-lomloe-canarias.pdf) para algunos detalles sobre la CCAA de Canarias.
+Véase este [resumen]({{ site.baseurl }}/assets/pdfs/ordenacion-enseñanzas-lomloe-canarias.pdf) de un borrador de CCOO de la Enseñanza de 04/2022 para algunos detalles sobre la CCAA de Canarias.
 
 ### Tecnología y Digitalización 
 
@@ -68,7 +68,7 @@ alumnado cursará la materia [Tecnología y Digitalización](https://educagob.ed
 
 1. Proceso de resolución de problemas; 
 2. Comunicación y difusión de ideas; 
-3. Pensamiento computacional, programación y robótica; 
+3. **Pensamiento computacional**, **programación** y robótica; 
 4. Digitalización del entorno personal de aprendizaje; y 
 5. Tecnología sostenible.
 
