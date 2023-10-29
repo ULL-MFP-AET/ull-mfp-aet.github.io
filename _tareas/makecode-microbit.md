@@ -165,6 +165,7 @@ Deja en el fichero `README.md` de este repositorio
 - [Las Ciencias de la Computación en el sistema educativo: Conceptos y Políticas](https://drive.google.com/file/d/1E4IJ_ROXilyqWjDXNwNUTHyxFnbBxP89/view) por Coromoto León, Carmen Elvira Ramos Domínguez, Pedro A. Toledo. JUTE. 2023.
 - [Ordenación de las Enseñanzas LOMLOE Canarias](https://canarias.fe.ccoo.es/0b18b74e01901c629d90fc0ce17715e8000063.pdf) en <https://canarias.fe.ccoo.es/> 11/04/2022
 - [Pensamiento computacional en todas las etapas no universitarias: análisis de la LOMLOE](https://programamos.es/pensamiento-computacional-en-todas-las-etapas-no-universitarias-analisis-de-la-lomloe/). Jesús Moreno León. 2021.
+- [Aula Cultural de Pensamiento Computacional](https://sites.google.com/a/ull.edu.es/pensamiento-computacional/) de la Universidad de La Laguna (ULL) 
 - [Educación Secundaria Obligatoria](https://educagob.educacionyfp.gob.es/ensenanzas/secundaria.html)
   - [Canarias](https://www.gobiernodecanarias.org/educacion/web/secundaria/)
 - [Bachillerato](https://educagob.educacionyfp.gob.es/ensenanzas/bachillerato.html)
