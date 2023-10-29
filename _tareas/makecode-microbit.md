@@ -27,23 +27,30 @@ toc: true
 ## Objetivos
 
 En esta tarea vamos a
-- Aprender a usar [MakeCode](https://arcade.makecode.com/) arcade, un entorno de programación visual que permite desarrollar un videojuego usando un lenguaje de bloques (o en Python o JavaScript/TypeScript) para ejecutarlo luego en una consola virtual o descargarlo en diferentes dispositivos.
+- Aprender a usar [MakeCode](https://arcade.makecode.com/) arcade, un entorno de programación visual que puede ser útil en la introducción del pensamiento computacional y la digitalización en la enseñanza secundaria. Arcade Makecode permite desarrollar un videojuego usando un lenguaje de bloques (o en Python o JavaScript/TypeScript) para ejecutarlo luego en una consola virtual o descargarlo en diferentes dispositivos.
+- Familiarizarnos con el concepto de "Pensamiento Computacional" y  con como la LOMLOE implanta los contenidos de Ciencias de la Computación en la enseñanza secundaria.
 - Aprender,  a hacer una nueva asignación en GitHub Classroom ([chase-the-pizza](https://arcade.makecode.com/tutorials/chase-the-pizza)) que tenga como editor asociado MakeCode Arcade. Deberá hacerlo en la organización y classroom que creó en prácticas anteriores. Cree un [roster](https://docs.github.com/en/education/manage-coursework-with-github-classroom/teach-with-github-classroom/manage-classrooms#creating-a-roster-for-your-classroom) para su clase. La asignación debe configurarse con *Leave feedback with pull requests*
 - Deberá como alumno de los otros compañeros/profesores del equipo realizar la asignación `chase-the-pizza`.
 - En el repo de esta asignación deberá subir un fichero `README.md` con las enlaces a la asiganción, el repo template, y los repos de los alumnos.
 
-## Pensamiento Computacional en la Educación Secundaria
+## Las Ciencias de la Computación y el Pensamiento Computacional en la Educación Secundaria
 
-La Ley Orgánica 3/2020, de 29 de diciembre (**LOMLOE**), por la que se modifica la
+> "... el proceso de pensamiento envuelto en formular un problema y sus soluciones de manera que las soluciones son representadas de una forma en que pueden ser llevadas a un agente de procesamiento de información.".
+
+[Wing (Marzo 2006](https://www.cs.cmu.edu/~15110-s13/Wing06-ct.pdf)
+
+La [Ley Orgánica 3/2020, de 29 de diciembre (**LOMLOE**)](https://www.boe.es/buscar/pdf/2020/BOE-A-2020-17264-consolidado.pdf), 
+por la que se modifica la
 Ley Orgánica 2/2006, de 3 de mayo, de Educación (LOE), ha renovado el ordenamiento
-legal que conlleva, entre otras importantes modificaciones, la implantación de una
-nueva definición del currículo y sus elementos básicos y una redistribución de las
-competencias educativas entre Gobierno y Comunidades Autónomas. Concretamente
-los Reales Decretos: RD 157/2022 y RD 217/2022, por los que se establecen la
-ordenación y las enseñanzas mínimas de la Educación Primaria y Secundaria
-Obligatoria, respectivamente.
+legal que conlleva, entre otras importantes modificaciones, 
 
-En la **Educación Secundaria Obligatoria** las materias con contenidos de
+1. la implantación de una nueva definición del currículo y sus elementos básicos y 
+2. una redistribución de las competencias educativas entre Gobierno y Comunidades Autónomas. 
+
+Concretamente los Reales Decretos: RD 157/2022 y [RD 217/2022](https://www.boe.es/buscar/pdf/2022/BOE-A-2022-4975-consolidado.pdf), por los que se establecen la
+ordenación y las enseñanzas mínimas de la Educación Primaria y Secundaria  Obligatoria, respectivamente.
+
+En la **Educación Secundaria Obligatoria** las materias con contenidos de 
 Ciencias de la Computación son: **Tecnología y Digitalización** y **Digitalización**.
 
 Además, se establece que, en el conjunto de los tres primeros cursos, se debe
@@ -148,14 +155,9 @@ Deja en el fichero `README.md` de este repositorio
 - Le será de utilidad la [Documentación de arcade makedocs](https://arcade.makecode.com/docs) y en particular la sección [Blocks](https://arcade.makecode.com/blocks).
 * [MakeCode](https://arcade.makecode.com/)
 * Sección [Blocks](https://arcade.makecode.com/blocks) de la documentación.
-* GitHub with MakeCode: Getting Started
-
-{% include youtubePlayer.html id="J-pI1sEWPV0" %}
-
-* Programación con Javascript y MakeCode Arcade. Programa tu primer videojuego. 2022. 
-
-{% include youtubePlayer.html id="u3GVIjvyJiU" %}
-
+<!-- [GitHub with MakeCode: Getting Started](J-pI1sEWPV0)
+Programación con Javascript y MakeCode Arcade. Programa tu primer videojuego. 2022. id="u3GVIjvyJiU"
+-->
 
 ## Rúbrica
 
