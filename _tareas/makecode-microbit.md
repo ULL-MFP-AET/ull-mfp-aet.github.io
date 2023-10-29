@@ -23,8 +23,10 @@ video: "8KwoKgYz85k"
 ## Objetivos
 
 En esta tarea vamos a
-- Aprender a usar [MakeCode](https://arcade.makecode.com/) arcade, un entorno de programación visual.
-- Vamos a hacer una nueva asignación en GitHub Classroom ([chase-the-pizza](https://arcade.makecode.com/tutorials/chase-the-pizza))  en la que el editor asociado será MakeCode Arcade en la organización y classroom que creó en prácticas anteriores. 
+- Aprender a usar [MakeCode](https://arcade.makecode.com/) arcade, un entorno de programación visual que permite desarrollar un videojuego usando un lenguaje de bloques (o en Python o JavaScript/TypeScript) para ejecutarlo en una consola virtual o descargarlo en diferentes dispositivos.
+- Aprender,  a hacer una nueva asignación en GitHub Classroom ([chase-the-pizza](https://arcade.makecode.com/tutorials/chase-the-pizza)) que deberá hacer  en la que el editor asociado será MakeCode Arcade en la organización y classroom que creó en prácticas anteriores. 
+- Deberá como alumno de los otros compañeros/profesores del equipo realizar la asignación `chase-the-pizza`.
+- En el repo de esta asignación deberá subir un fichero `README.md` con las enlaces a la asiganción, el repo template, y los repos de los alumnos.
 
 ## Piensa Computacionalmente. Programación con Arcade MakeCode
 
