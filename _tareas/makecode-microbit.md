@@ -85,7 +85,7 @@ del Gobierno de Canarias. Sus saberes básicos se organizan en cuatro bloques:
 
 ### Tecnología e Ingeniería en Bachillerato
 
-Véase [Tecnología e Ingeniería](https://educagob.educacionyfp.gob.es/curriculo/curriculo-lomloe/menu-curriculos-basicos/bachillerato/materias/tecnologia-ingenieria/desarrollo.html) I y II en el [Bachillerato](https://educagob.educacionyfp.gob.es/curriculo/curriculo-lomloe/menu-curriculos-basicos/bachillerato.html).
+Véase [Tecnología e Ingeniería](https://educagob.educacionyfp.gob.es/curriculo/curriculo-lomloe/menu-curriculos-basicos/bachillerato/materias/tecnologia-ingenieria/desarrollo.html) I y II en el [Bachillerato](https://educagob.educacionyfp.gob.es/curriculo/curriculo-lomloe/menu-curriculos-basicos/bachillerato.html). Véase la adaptación de la [Consejería de Educación Gobierno y Deportes](https://www.gobiernodecanarias.org/cmsweb/export/sites/educacion/web/_galerias/descargas/bachillerato/curriculo/nuevo_curriculo/decreto30_2023/Tecnologia_e_Ingenieria_BACH.pdf) del Gobierno de Canarias.
 
 ## Piensa Computacionalmente. Programación con Arcade MakeCode
 
