@@ -18,6 +18,7 @@ rubrica:
   - "Se ha hecho la asignación `chase-the-pizza` para los otras clases"
   - "Ha entregado el .zip en el campus"
 video: "8KwoKgYz85k"
+toc: true
 ---
 
 
@@ -30,6 +31,49 @@ En esta tarea vamos a
 - Aprender,  a hacer una nueva asignación en GitHub Classroom ([chase-the-pizza](https://arcade.makecode.com/tutorials/chase-the-pizza)) que tenga como editor asociado MakeCode Arcade. Deberá hacerlo en la organización y classroom que creó en prácticas anteriores. Cree un [roster](https://docs.github.com/en/education/manage-coursework-with-github-classroom/teach-with-github-classroom/manage-classrooms#creating-a-roster-for-your-classroom) para su clase. La asignación debe configurarse con *Leave feedback with pull requests*
 - Deberá como alumno de los otros compañeros/profesores del equipo realizar la asignación `chase-the-pizza`.
 - En el repo de esta asignación deberá subir un fichero `README.md` con las enlaces a la asiganción, el repo template, y los repos de los alumnos.
+
+## Pensamiento Computacional en la Educación Secundaria
+
+La Ley Orgánica 3/2020, de 29 de diciembre (**LOMLOE**), por la que se modifica la
+Ley Orgánica 2/2006, de 3 de mayo, de Educación (LOE), ha renovado el ordenamiento
+legal que conlleva, entre otras importantes modificaciones, la implantación de una
+nueva definición del currículo y sus elementos básicos y una redistribución de las
+competencias educativas entre Gobierno y Comunidades Autónomas. Concretamente
+los Reales Decretos: RD 157/2022 y RD 217/2022, por los que se establecen la
+ordenación y las enseñanzas mínimas de la Educación Primaria y Secundaria
+Obligatoria, respectivamente.
+
+En la **Educación Secundaria Obligatoria** las materias con contenidos de
+Ciencias de la Computación son: **Tecnología y Digitalización** y **Digitalización**.
+
+Además, se establece que, en el conjunto de los tres primeros cursos, se debe
+cursar alguna materia optativa, cuya oferta debe incluir una materia para el desarrollo de la
+competencia digital. La oferta de estas materias optativas será realizada por las
+administraciones educativas y puede consultarse desde el portal del sistema educativo
+español del Ministerio de Educación y FP
+
+### Tecnología y Digitalización 
+
+En al menos uno de los tres cursos (1o a 3o), todo el
+alumnado cursará la materia. Sus saberes básicos se organizan en cinco bloques:
+
+1. Proceso de resolución de problemas; 
+2. Comunicación y difusión de ideas; 
+3. Pensamiento computacional, programación y robótica; 
+4. Digitalización del entorno personal de aprendizaje; y 
+5. Tecnología sostenible.
+
+### Digitalización 
+
+Materia de opción de 4o curso. La materia se organiza en cuatro
+bloques interrelacionados de saberes básicos: 
+
+1. Dispositivos digitales, sistemas operativos y de comunicación; 
+2. Digitalización del entorno personal de aprendizaje;
+3. Seguridad y bienestar digital; y 
+4. Ciudadanía digital crítica.
+
+Véase este [resumen]({{ site.baseurl }}/assets/pdf/ordenacion-enseñanzas-lomloe-canarias.pdf) para más detalles.
 
 ## Piensa Computacionalmente. Programación con Arcade MakeCode
 
@@ -96,6 +140,9 @@ Deja en el fichero `README.md` de este repositorio
 
 ## References
 
+- [Las Ciencias de la Computación en el sistema educativo: Conceptos y Políticas](https://drive.google.com/file/d/1E4IJ_ROXilyqWjDXNwNUTHyxFnbBxP89/view) por Coromoto León, Carmen Elvira Ramos Domínguez, Pedro A. Toledo. JUTE. 2023.
+- [Ordenación de las Enseñanzas LOMLOE Canarias](https://canarias.fe.ccoo.es/0b18b74e01901c629d90fc0ce17715e8000063.pdf) en <https://canarias.fe.ccoo.es/> 11/04/2022
+- [Pensamiento computacional en todas las etapas no universitarias: análisis de la LOMLOE](https://programamos.es/pensamiento-computacional-en-todas-las-etapas-no-universitarias-analisis-de-la-lomloe/). Jesús Moreno León. 2021.
 - [How to make a 2d game](https://www.youtube.com/playlist?list=PLMMBk9hE-SepfPK6z19t6aAfwbOQNY6K7) with MakeCode Arcade (Video collection)
 - Vea los ejercicios en la sección [Concepts](https://arcade.makecode.com/concepts) de la documentación de MakeCode.
 - Le será de utilidad la [Documentación de arcade makedocs](https://arcade.makecode.com/docs) y en particular la sección [Blocks](https://arcade.makecode.com/blocks).
