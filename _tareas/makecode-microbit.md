@@ -37,7 +37,7 @@ En esta tarea vamos a
 
 > "... el proceso de pensamiento envuelto en formular un problema y sus soluciones de manera que las soluciones son representadas de una forma en que pueden ser llevadas a un agente de procesamiento de información.".
 
-[Wing (Marzo 2006](https://www.cs.cmu.edu/~15110-s13/Wing06-ct.pdf)
+[Wing (Marzo 2006)](https://www.cs.cmu.edu/~15110-s13/Wing06-ct.pdf) Communications of the ACM. Vol 49. No 3.
 
 La [Ley Orgánica 3/2020, de 29 de diciembre (**LOMLOE**)](https://www.boe.es/buscar/pdf/2020/BOE-A-2020-17264-consolidado.pdf), 
 por la que se modifica la
