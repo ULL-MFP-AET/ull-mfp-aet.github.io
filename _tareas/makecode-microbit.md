@@ -27,13 +27,13 @@ toc: true
 ## Objetivos
 
 En esta tarea vamos a
-- Aprender a usar [MakeCode](https://arcade.makecode.com/) arcade, un entorno de programación visual que puede ser útil en la introducción del pensamiento computacional y la digitalización en la enseñanza secundaria. Arcade Makecode permite desarrollar un videojuego usando un lenguaje de bloques (o en Python o JavaScript/TypeScript) para ejecutarlo luego en una consola virtual o descargarlo en diferentes dispositivos.
-- Familiarizarnos con el concepto de "Pensamiento Computacional" y  con como la LOMLOE implanta los contenidos de Ciencias de la Computación en la enseñanza secundaria.
+- Aprender a usar [MakeCode](https://arcade.makecode.com/) arcade, un entorno de programación visual que puede ser útil en la introducción del pensamiento computacional y la digitalización en la enseñanza. Arcade Makecode permite desarrollar un videojuego usando un lenguaje de bloques (o en Python o JavaScript/TypeScript) para ejecutarlo luego en una consola virtual o descargarlo en diferentes dispositivos.
+- Familiarizarnos con el concepto de "Pensamiento Computacional" y  con como la LOMLOE implanta los contenidos de Ciencias de la Computación en la enseñanza secundaria y bachillerato.
 - Aprender,  a hacer una nueva asignación en GitHub Classroom ([chase-the-pizza](https://arcade.makecode.com/tutorials/chase-the-pizza)) que tenga como editor asociado MakeCode Arcade. Deberá hacerlo en la organización y classroom que creó en prácticas anteriores. Cree un [roster](https://docs.github.com/en/education/manage-coursework-with-github-classroom/teach-with-github-classroom/manage-classrooms#creating-a-roster-for-your-classroom) para su clase. La asignación debe configurarse con *[Leave feedback with pull requests](https://docs.github.com/en/education/manage-coursework-with-github-classroom/teach-with-github-classroom/leave-feedback-with-pull-requests)*
 - Deberá como alumno de los otros compañeros/profesores del equipo realizar la asignación `chase-the-pizza`.
 - En el repo de esta asignación deberá subir un fichero `README.md` con las enlaces a la asignación, al repo template, y a  los repos de sus alumnos.
 
-## Las Ciencias de la Computación y el Pensamiento Computacional en la Educación Secundaria
+## Las Ciencias de la Computación y el Pensamiento Computacional en la Educación Secundaria y el Bachillerato
 
 > "... el proceso de pensamiento envuelto en formular un problema y sus soluciones de manera que las soluciones son representadas de una forma en que pueden ser llevadas a un agente de procesamiento de información.".
 
