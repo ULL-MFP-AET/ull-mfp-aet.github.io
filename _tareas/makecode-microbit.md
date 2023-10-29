@@ -24,7 +24,7 @@ video: "8KwoKgYz85k"
 
 En esta tarea vamos a
 - Aprender a usar [MakeCode](https://arcade.makecode.com/) arcade, un entorno de programación visual que permite desarrollar un videojuego usando un lenguaje de bloques (o en Python o JavaScript/TypeScript) para ejecutarlo luego en una consola virtual o descargarlo en diferentes dispositivos.
-- Aprender,  a hacer una nueva asignación en GitHub Classroom ([chase-the-pizza](https://arcade.makecode.com/tutorials/chase-the-pizza)) que tenga como editor asociado MakeCode Arcade. Deberá hacerlo en la organización y classroom que creó en prácticas anteriores. 
+- Aprender,  a hacer una nueva asignación en GitHub Classroom ([chase-the-pizza](https://arcade.makecode.com/tutorials/chase-the-pizza)) que tenga como editor asociado MakeCode Arcade. Deberá hacerlo en la organización y classroom que creó en prácticas anteriores. Cree un [roster](https://docs.github.com/en/education/manage-coursework-with-github-classroom/teach-with-github-classroom/manage-classrooms#creating-a-roster-for-your-classroom) para su clase. La asignación debe configurarse con *Leave feedback with pull requests*
 - Deberá como alumno de los otros compañeros/profesores del equipo realizar la asignación `chase-the-pizza`.
 - En el repo de esta asignación deberá subir un fichero `README.md` con las enlaces a la asiganción, el repo template, y los repos de los alumnos.
 
@@ -42,14 +42,14 @@ Además, [Arcade Makecode](https://arcade.makecode.com/) permite trabajar con re
 - Además, dispone de un cronómetro y de un contador de puntos. 
 - Una vez que el juego sea totalmente funcional, se pueden agregar muchas más funciones 
 
-## Programación con Arcade MakeCode (2)
+## Programación Avanzada con Arcade MakeCode 
 
-Esta es la parte 1 de la colección de vídeos [How to create a video game with MakeCode Arcade](https://youtube.com/playlist?list=PLMMBk9hE-SeoU2gS3trU9gRKbX0hX8p7O&si=JDeC4nLvfDoaUX3K) with MakeCode Arcade
+Esta es la parte 1 de la colección de vídeos [How to create a video game with MakeCode Arcade](https://youtube.com/playlist?list=PLMMBk9hE-SeoU2gS3trU9gRKbX0hX8p7O&si=JDeC4nLvfDoaUX3K)
 
 {% include youtubePlayer.html id="9bSX9Q5aP6E" %}
 
 
-- Puedes encontrar la [Segunda parte](https://youtu.be/8DhGcCPfOU4?si=BN1Etk1uKVvIdJfa)
+- Puedes encontrar la [Segunda parte aquí](https://youtu.be/8DhGcCPfOU4?si=BN1Etk1uKVvIdJfa)
 - [Tercera parte](https://youtu.be/CPkC37FzmnU?si=dnzWHH4FY2-dMRcv)
 - El juego final después de realizar la tercera parte: <https://makecode.com/_Herf79YRm2tU>
 - Handheld devices: https://arcade.makecode.com/hardware
