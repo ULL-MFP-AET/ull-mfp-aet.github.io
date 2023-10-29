@@ -23,8 +23,8 @@ video: "8KwoKgYz85k"
 ## Objetivos
 
 En esta tarea vamos a
-- Aprender a usar [MakeCode](https://arcade.makecode.com/) arcade, un entorno de programación visual que permite desarrollar un videojuego usando un lenguaje de bloques (o en Python o JavaScript/TypeScript) para ejecutarlo en una consola virtual o descargarlo en diferentes dispositivos.
-- Aprender,  a hacer una nueva asignación en GitHub Classroom ([chase-the-pizza](https://arcade.makecode.com/tutorials/chase-the-pizza)) que deberá hacer  en la que el editor asociado será MakeCode Arcade en la organización y classroom que creó en prácticas anteriores. 
+- Aprender a usar [MakeCode](https://arcade.makecode.com/) arcade, un entorno de programación visual que permite desarrollar un videojuego usando un lenguaje de bloques (o en Python o JavaScript/TypeScript) para ejecutarlo luego en una consola virtual o descargarlo en diferentes dispositivos.
+- Aprender,  a hacer una nueva asignación en GitHub Classroom ([chase-the-pizza](https://arcade.makecode.com/tutorials/chase-the-pizza)) que tenga como editor asociado MakeCode Arcade. Deberá hacerlo en la organización y classroom que creó en prácticas anteriores. 
 - Deberá como alumno de los otros compañeros/profesores del equipo realizar la asignación `chase-the-pizza`.
 - En el repo de esta asignación deberá subir un fichero `README.md` con las enlaces a la asiganción, el repo template, y los repos de los alumnos.
 
@@ -48,6 +48,12 @@ Esta es la parte 1 de la colección de vídeos [How to create a video game with 
 
 {% include youtubePlayer.html id="9bSX9Q5aP6E" %}
 
+
+- Puedes encontrar la [Segunda parte](https://youtu.be/8DhGcCPfOU4?si=BN1Etk1uKVvIdJfa)
+- [Tercera parte](https://youtu.be/CPkC37FzmnU?si=dnzWHH4FY2-dMRcv)
+- El juego final después de realizar la tercera parte: <https://makecode.com/_Herf79YRm2tU>
+- Handheld devices: https://arcade.makecode.com/hardware
+- forum: <https://forum.makecode.com>
 
 ## GitHub Classroom and MakeCode Arcade
 
