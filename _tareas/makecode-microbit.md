@@ -64,7 +64,7 @@ Véase este [resumen]({{ site.baseurl }}/assets/pdfs/ordenacion-enseñanzas-loml
 ### Tecnología y Digitalización 
 
 En al menos uno de los tres cursos (1o a 3o), todo el
-alumnado cursará la materia [Tecnología y Digitalización](https://educagob.educacionyfp.gob.es/curriculo/curriculo-lomloe/menu-curriculos-basicos/ed-secundaria-obligatoria/materias/tecno-digitali/desarrollo.html). Sus saberes básicos se organizan en cinco bloques:
+alumnado cursará la materia [Tecnología y Digitalización](https://educagob.educacionyfp.gob.es/curriculo/curriculo-lomloe/menu-curriculos-basicos/ed-secundaria-obligatoria/materias/tecno-digitali/desarrollo.html). Véase la adaptación de la [Consejería de Educación Gobierno y Deportes](https://www.gobiernodecanarias.org/cmsweb/export/sites/educacion/web/_galerias/descargas/Secundaria/Ordenacion_curriculo/borrador_curriculo_2022/Tecnologia_digitalizacion_ESO.odt) del Gobierno de Canarias. Sus saberes básicos se organizan en cinco bloques:
 
 1. Proceso de resolución de problemas; 
 2. Comunicación y difusión de ideas; 
@@ -74,8 +74,9 @@ alumnado cursará la materia [Tecnología y Digitalización](https://educagob.ed
 
 ### Digitalización 
 
-Materia de opción de 4o curso. La materia de [Digitalización](https://educagob.educacionyfp.gob.es/curriculo/curriculo-lomloe/menu-curriculos-basicos/ed-secundaria-obligatoria/materias/digitalizacion/desarrollo.html) se organiza en cuatro
-bloques interrelacionados de saberes básicos: 
+Materia de opción de 4o curso. La materia de [Digitalización](https://educagob.educacionyfp.gob.es/curriculo/curriculo-lomloe/menu-curriculos-basicos/ed-secundaria-obligatoria/materias/digitalizacion/desarrollo.html) 
+Véase la adaptación de la [Consejería de Educación Gobierno y Deportes](https://www.gobiernodecanarias.org/cmsweb/export/sites/educacion/web/_galerias/descargas/Secundaria/Ordenacion_curriculo/borrador_curriculo_2022/Digitalizacion_ESO.odt)
+del Gobierno de Canarias. Sus saberes básicos se organizan en cuatro bloques:
 
 1. Dispositivos digitales, sistemas operativos y de comunicación; 
 2. Digitalización del entorno personal de aprendizaje;
