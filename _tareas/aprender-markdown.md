@@ -27,7 +27,7 @@ rubrica:
   - [Edición en la Nube de Repositorios GitHub](#edición-en-la-nube-de-repositorios-github)
   - [Primeros Pasos con GitHub Classroom](#primeros-pasos-con-github-classroom)
   - [Rúbrica](#rúbrica)
-  - [Actividad de los Alumnos para {{ page.key }}](#actividad-de-los-alumnos-para--pagekey-)
+  - [Actividad de los Alumnos para aprender-markdown](#actividad-de-los-alumnos-para-aprender-markdown)
   - [Referencias](#referencias)
 
 # Aprender Markdown (aprender-markdown)
@@ -278,7 +278,7 @@ muestra como deben hacer los estudiantes para aceptar, trabajar y entregar una t
 
 {% include rubrica.md -%}
 
-## Actividad de los Alumnos para {{ page.key }}
+## Actividad de los Alumnos para aprender-markdown
 
 <a href="{{ site.baseurl }}/assets/tareas/aprender-markdown/activity.html" target="_blank">Medidas de Actividad de los Alumnos para {{ page.key }}</a>
 

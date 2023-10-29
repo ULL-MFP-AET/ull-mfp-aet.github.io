@@ -13,9 +13,13 @@
         {%- assign secondName = studentNameList[1] | capitalize -%}
         {%- assign studentName = studentName | append: " " | append: secondName %}
       {%- endif -%}
+      {% if include.alu == false %}
+        {% assign name = name | replace: "-alu", "-" %}
+      {% endif %}
       {%- assign url = team.node.url -%}
         <li>
-          <a href="https://github.com/ull-mfp-aet-{{ include.course}}/{{ include.lab }}-{{name}}/commits" target="_blank">{{ studentName }} Commits</a>, 
+          <a href="https://github.com/ull-mfp-aet-{{ include.course}}/{{ include.lab }}-{{name}}" target="_blank">{{ studentName }} Repo</a>, 
+          <a href="https://github.com/ull-mfp-aet-{{ include.course}}/{{ include.lab }}-{{name}}/commits" target="_blank">Commits</a>, 
           <a href="https://github.com/ull-mfp-aet-{{ include.course }}/{{ include.lab }}-{{name}}/graphs/commit-activity" target="_blank"> Commit Activity</a> and
           <a href="https://github.com/ull-mfp-aet-{{ include.course }}/{{ include.lab }}-{{name}}/pulse" target="_blank"> Summary</a>
 

@@ -51,18 +51,20 @@ Concretamente los Reales Decretos: RD 157/2022 y [RD 217/2022](https://www.boe.e
 ordenación y las enseñanzas mínimas de la Educación Primaria y Secundaria  Obligatoria, respectivamente.
 
 En la **Educación Secundaria Obligatoria** las materias con contenidos de 
-Ciencias de la Computación son: **Tecnología y Digitalización** y **Digitalización**.
+Ciencias de la Computación son: **Tecnología y Digitalización](https://educagob.educacionyfp.gob.es/curriculo/curriculo-lomloe/menu-curriculos-basicos/ed-secundaria-obligatoria/materias/tecno-digitali/desarrollo.html)** y **[Digitalización](https://educagob.educacionyfp.gob.es/curriculo/curriculo-lomloe/menu-curriculos-basicos/ed-secundaria-obligatoria/materias/digitalizacion/desarrollo.html)**.
 
 Además, se establece que, en el conjunto de los tres primeros cursos, se debe
 cursar alguna materia optativa, cuya oferta debe incluir una materia para el desarrollo de la
 competencia digital. La oferta de estas materias optativas será realizada por las
 administraciones educativas y puede consultarse desde el portal del sistema educativo
-español del Ministerio de Educación y FP
+español del Ministerio de Educación y FP.
+
+Véase este [resumen]({{ site.baseurl }}/assets/pdf/ordenacion-enseñanzas-lomloe-canarias.pdf) para algunos detalles sobre la CCAA de Canarias.
 
 ### Tecnología y Digitalización 
 
 En al menos uno de los tres cursos (1o a 3o), todo el
-alumnado cursará la materia. Sus saberes básicos se organizan en cinco bloques:
+alumnado cursará la materia [Tecnología y Digitalización](https://educagob.educacionyfp.gob.es/curriculo/curriculo-lomloe/menu-curriculos-basicos/ed-secundaria-obligatoria/materias/tecno-digitali/desarrollo.html). Sus saberes básicos se organizan en cinco bloques:
 
 1. Proceso de resolución de problemas; 
 2. Comunicación y difusión de ideas; 
@@ -72,7 +74,7 @@ alumnado cursará la materia. Sus saberes básicos se organizan en cinco bloques
 
 ### Digitalización 
 
-Materia de opción de 4o curso. La materia se organiza en cuatro
+Materia de opción de 4o curso. La materia de [Digitalización](https://educagob.educacionyfp.gob.es/curriculo/curriculo-lomloe/menu-curriculos-basicos/ed-secundaria-obligatoria/materias/digitalizacion/desarrollo.html) se organiza en cuatro
 bloques interrelacionados de saberes básicos: 
 
 1. Dispositivos digitales, sistemas operativos y de comunicación; 
@@ -80,7 +82,9 @@ bloques interrelacionados de saberes básicos:
 3. Seguridad y bienestar digital; y 
 4. Ciudadanía digital crítica.
 
-Véase este [resumen]({{ site.baseurl }}/assets/pdf/ordenacion-enseñanzas-lomloe-canarias.pdf) para más detalles.
+### Tecnología e Ingeniería en Bachillerato
+
+Véase [Tecnología e Ingeniería](https://educagob.educacionyfp.gob.es/curriculo/curriculo-lomloe/menu-curriculos-basicos/bachillerato/materias/tecnologia-ingenieria/desarrollo.html) I y II en el [Bachillerato](https://educagob.educacionyfp.gob.es/curriculo/curriculo-lomloe/menu-curriculos-basicos/bachillerato.html).
 
 ## Piensa Computacionalmente. Programación con Arcade MakeCode
 
@@ -150,6 +154,12 @@ Deja en el fichero `README.md` de este repositorio
 - [Las Ciencias de la Computación en el sistema educativo: Conceptos y Políticas](https://drive.google.com/file/d/1E4IJ_ROXilyqWjDXNwNUTHyxFnbBxP89/view) por Coromoto León, Carmen Elvira Ramos Domínguez, Pedro A. Toledo. JUTE. 2023.
 - [Ordenación de las Enseñanzas LOMLOE Canarias](https://canarias.fe.ccoo.es/0b18b74e01901c629d90fc0ce17715e8000063.pdf) en <https://canarias.fe.ccoo.es/> 11/04/2022
 - [Pensamiento computacional en todas las etapas no universitarias: análisis de la LOMLOE](https://programamos.es/pensamiento-computacional-en-todas-las-etapas-no-universitarias-analisis-de-la-lomloe/). Jesús Moreno León. 2021.
+- [Educación Secundaria Obligatoria](https://educagob.educacionyfp.gob.es/ensenanzas/secundaria.html)
+  - [Canarias](https://www.gobiernodecanarias.org/educacion/web/secundaria/)
+- [Bachillerato](https://educagob.educacionyfp.gob.es/ensenanzas/bachillerato.html)
+  - [Canarias](https://www.gobiernodecanarias.org/educacion/web/bachillerato/)
+- [Ciclos Formativos de Grado Básico](https://www.todofp.es/que-estudiar/ciclos/fp-grado-basico.html)
+- [Ciclos Formativos de Grado Superior](https://www.todofp.es/que-estudiar/ciclos/grado-superior.html)
 - [How to make a 2d game](https://www.youtube.com/playlist?list=PLMMBk9hE-SepfPK6z19t6aAfwbOQNY6K7) with MakeCode Arcade (Video collection)
 - Vea los ejercicios en la sección [Concepts](https://arcade.makecode.com/concepts) de la documentación de MakeCode.
 - Le será de utilidad la [Documentación de arcade makedocs](https://arcade.makecode.com/docs) y en particular la sección [Blocks](https://arcade.makecode.com/blocks).
