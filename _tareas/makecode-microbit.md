@@ -51,7 +51,7 @@ Concretamente los Reales Decretos: RD 157/2022 y [RD 217/2022](https://www.boe.e
 ordenación y las enseñanzas mínimas de la Educación Primaria y Secundaria  Obligatoria, respectivamente.
 
 En la **Educación Secundaria Obligatoria** las materias con contenidos de 
-Ciencias de la Computación son: **Tecnología y Digitalización](https://educagob.educacionyfp.gob.es/curriculo/curriculo-lomloe/menu-curriculos-basicos/ed-secundaria-obligatoria/materias/tecno-digitali/desarrollo.html)** y **[Digitalización](https://educagob.educacionyfp.gob.es/curriculo/curriculo-lomloe/menu-curriculos-basicos/ed-secundaria-obligatoria/materias/digitalizacion/desarrollo.html)**.
+Ciencias de la Computación son: **[Tecnología y Digitalización](https://educagob.educacionyfp.gob.es/curriculo/curriculo-lomloe/menu-curriculos-basicos/ed-secundaria-obligatoria/materias/tecno-digitali/desarrollo.html)** y **[Digitalización](https://educagob.educacionyfp.gob.es/curriculo/curriculo-lomloe/menu-curriculos-basicos/ed-secundaria-obligatoria/materias/digitalizacion/desarrollo.html)**.
 
 Además, se establece que, en el conjunto de los tres primeros cursos, se debe
 cursar alguna materia optativa, cuya oferta debe incluir una materia para el desarrollo de la
