@@ -10,6 +10,9 @@ Elegimos la opción `Create codespace on master` y hacemos click
 ![]({{ site.baseurl }}/assets/images/codespaces-create-on-master.png)
 
 La consecuencia es que se nos abre una página con el editor CodeSpaces. 
+
+## Instalación de Jekyll
+
 En la ventana de la terminal escribimos el comando para instalar las dependencias: 
 
 ```
