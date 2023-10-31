@@ -8,6 +8,7 @@
     {%- if numMembers == 1 -%} <!-- a student team -->
       {%- assign name = team.node.name | replace: "é", "e" | replace: " ", "" | replace: "á", "a" -%}
       {%- assign names = name | split: "-" -%}
+      
       {%- assign aluId = names | last  | strip -%}
       {%- assign studentNameList = names[0] | split: "_" -%}
       {%- assign studentName = studentNameList[0] | capitalize %}
@@ -35,7 +36,12 @@
         </h2>
         <ul>
           <li> 
-            <a href="https://github.com/orgs/{{ site.organization.name }}/people/{{ student.login }}" target="_blank"><img src="{{ avatarUrl }}" width="30%"/></a>
+            <!-- https://github.com/orgs/ULL-MFP-AET-2324/repositories?q=daniel&type=all&language=&sort=
+            https://github.com/orgs/{{ site.organization.name }}/people/{{ student.login }}-->
+
+            <a href="https://github.com/orgs/{{ site.organization.name }}/repositories?q={{ names[0] }}&#45{{ names[1] }}" target="_blank">
+              <img src="{{ avatarUrl }}" width="30%"/>
+            </a>
           </li>
           <li> 
             <a href="https://github.com/orgs/{{ site.organization.name }}/teams?query=%40{{ student.login }}" target="_blank" title="{{ studentName}} teams">
@@ -47,13 +53,14 @@
           <li> <a href="{{ student.url }}" target="_blank">{{ studentName }} at GitHub</a> is {{ student.login }}
           </li>
           <li><a href="https://github.com/notifications?query=author%3A{{ student.login }}" target="_blank">Notifications</a> to the teacher from {{studentName}}</li>
-          <!--
+          
           <li>
             <a href="https://github.com/{{ site.organization.name }}-{{ aluId }}" target="_blank">{{ studentName }} Organization</a>
             and
             <a href="https://github.com/orgs/{{ site.organization.name }}-{{ aluId }}/teams" target="_blank">Teams inside {{ studentName }} Organization</a>
           </li>
           <li><a href="https://classroom.github.com/classrooms/search?query={{ aluId }}&view=Active&sort_by=Newest+first" target="_blank">{{ studentName }} Classroom</a></li>
+          <!--
           <li> {{ studentName }} activity:
             <ol>
               {%- for practica in site.tareas -%}
@@ -75,7 +82,7 @@
               {%- endfor -%}
             </ol>
           </li>
-        -->
+          -->   
         </ul>
       </div>
   
