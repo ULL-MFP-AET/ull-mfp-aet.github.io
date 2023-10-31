@@ -111,7 +111,7 @@ En este paso deberás ahora
   * Cada miembro del equipo actuará como profesor en la organización que ha creado y con el rol de estudiante en las organización de los otros miembros del equipo 
 6. Vaya a **settings**  de la organización y configure la org. Añádale una profile picture. Hay mucha información sobre la gestión de una organización GitHub en [este enlace](https://docs.github.com/en/organizations/managing-organization-settings)
 7. Si tuvieras concedidos los descuentos para profesores ahora podrías acudir a <https://education.github.com/globalcampus/teacher>  y actualizar tu organización <a href="https://education.github.com/globalcampus/teacher" target="_blank"><span style="color: white; background-color: green; text-decoration: underline;text-decoration-style: dotted;">**Upgrade to GitHub Team**</span></a>
-8. [Añáde a la organización un repo de perfil/Profile](https://docs.github.com/en/organizations/collaborating-with-groups-in-organizations/customizing-your-organizations-profile#adding-a-public-organization-profile-readme) describiendo a los alumnos la asignatura  y cuales son los primeros pasos que deberán dar para empezar a trabajar en tu asignatura 
+8. [Añáde a la organización un repo de perfil/Profile](https://docs.github.com/en/organizations/collaborating-with-groups-in-organizations/customizing-your-organizations-profile#adding-a-public-organization-profile-readme) describiendo a los alumnos la asignatura  y cuales son los primeros pasos que deberán dar para empezar a trabajar en tu asignatura. Mas adelante, cuando la crees, pondrás un enlace en el perfil al aula de GitHub Classroom asociada.
 
 Los siguientes recursos contienen la versión en español de las ayudas para realizar estas tareas:
 
