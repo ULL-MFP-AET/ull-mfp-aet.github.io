@@ -121,7 +121,7 @@ Los siguientes recursos contienen la versión en español de las ayudas para rea
 
 ## Crea un Classroom para la Organización
 
-Crea un aula usando GitHub Classroom ([https://classroom.github.com](https://classroom.github.com)) y la asocias a la organización creada en el apartado anterior. 
+[Crea un aula](https://docs.github.com/en/education/manage-coursework-with-github-classroom/teach-with-github-classroom/manage-classrooms#creating-a-classroom) usando GitHub Classroom ([https://classroom.github.com](https://classroom.github.com)) y la asocias a la organización creada en el apartado anterior. 
 
 Si GHC  te provee varias aulas quédate sólo con una. 
 

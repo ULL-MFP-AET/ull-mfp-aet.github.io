@@ -8,7 +8,10 @@
     {%- if numMembers == 1 -%} <!-- a student team -->
       {%- assign name = team.node.name | replace: "é", "e" | replace: " ", "" | replace: "á", "a" -%}
       {%- assign names = name | split: "-" -%}
-      
+      {% if names.size == 1 %} <!-- Joana uso _ -->
+        {%- assign names = name | split: "_" -%}
+      {% endif %}
+
       {%- assign aluId = names | last  | strip -%}
       {%- assign studentNameList = names[0] | split: "_" -%}
       {%- assign studentName = studentNameList[0] | capitalize %}
