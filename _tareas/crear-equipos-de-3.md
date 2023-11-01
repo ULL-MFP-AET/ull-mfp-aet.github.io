@@ -28,7 +28,7 @@ Ponte de acuerdo con los otros compañeros de clase para formar un equipo
   
 ## Cuando aceptes la práctica
 
-* El nombre del equipo debe ser la concatenación de los primeros nombres (**en orden alfabético**, no usar segundo nombre ni apellidos) de los nombres de los miembros del equipo separados por guiones: `nombre1-nombre2-nombre3`.
+* El nombre del equipo debe ser la concatenación de los primeros nombres (**en orden alfabético**, no usar segundo nombre ni apellidos) de los nombres de los miembros del equipo separados por guiones: `eq-nombre1-nombre2-nombre3`.
 * No use acentos ni caracteres especiales en los nombres. No use blancos. Sólo letras del alfabeto inglés. Sustituya la ñ por "ny".
 
 ## Entrega 
