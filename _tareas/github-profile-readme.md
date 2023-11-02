@@ -127,7 +127,7 @@ Si GHC  te provee varias aulas quédate sólo con una.
 
 **Renombra el aula para que su nombre coincida con el de la organización**: `ull-mfp-aet-2324-aluXXXX` donde `aluXXXX` es tu identificador ULL.
 
-**Invita a [crguezl](https://github.com/crguezl) como profesor asociado**. Para que la invitación pueda hacerse deberás haber primero invitado a [crguezl](https://github.com/crguezl) como **owner** de la organización y este debe haber aceptado.
+**Invita a [crguezl](https://github.com/crguezl) como profesor asociado**. Para que la invitación pueda hacerse deberás haber primero invitado a [crguezl](https://github.com/crguezl) como **owner** de la organización y este debe haber aceptado. Aquí describimos el  [proceso de aceptación al Classroom](/assets/tareas/profile/lista-classrooms) para mas detalles.
 
 Para poder llevar a cabo la tarea de crear un classroom y hacer las asignaciones deberás leer con detenimiento la sección [GitHub Classroom para Profesores]({{ site.baseurl}}/pages/github-classroom.html) de estos apuntes 
 
