@@ -15,7 +15,9 @@ rubrica:
   - Creado el equipo
   - El nombre es correcto
   - Tiene al menos dos miembros
-  - El informe es correcto
+  - El informe contiene una sección por alumno del equipo
+  - El informe de cada alumnos contiene enlaces a la organización y el classroom 
+  - El informe contiene enlaces a los profiles de los alumnos
 ---
 
 # {{ page.title }}
@@ -33,11 +35,14 @@ Ponte de acuerdo con los otros compañeros de clase para formar un equipo
 
 ## Entrega 
 
-En el README.md del repo, para cada miembro del equipo  pon una sección con la lista de enlaces a:
+En el README.md del repo deberán aparecer: 
 
-* Tu GH classroom como teacher
-* Tu organización GH como teacher
 * Enlaces a los GH profiles de los otros miembros del equipo como alumnos
+
+para cada alumno miembro del equipo  debe existir una sección (`## Nombre Apellidos Aluxxx`) con la lista de enlaces a:
+
+* Su GH classroom como teacher
+* Su organización GH como teacher
 
 ## Rúbrica
 
