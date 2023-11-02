@@ -16,8 +16,8 @@ rubrica:
   - El nombre es correcto
   - Tiene al menos dos miembros
   - El informe contiene una sección por alumno del equipo
-  - El informe de cada alumnos contiene enlaces a la organización y el classroom 
-  - El informe contiene enlaces a los profiles de los alumnos
+  - El informe contiene enlaces a los profiles GH de los alumnos
+  - La sección de cada alumno contiene enlaces a su organización y classroom 
 ---
 
 # {{ page.title }}
