@@ -2,7 +2,7 @@
 title: "MakeCode"
 permalink: /practicas/makecode/
 date: 0000/03/04
-key: makecode
+key: makecode-arcade
 layout: default
 classroom: 
 name: MakeCode
@@ -12,10 +12,9 @@ foro: https://github.com/orgs/ULL-MFP-AET-2223/discussions
 #hide: false
 rubrica:
   - "Se ha aprendido a usar Makecode"
-  - "Ha hecho una asignación con GitHub Classroom en la que el editor asociado es MakeCode Arcade"
+  - "Ha hecho una asignación basada en este template con GitHub Classroom en la que el editor asociado es MakeCode Arcade"
   - "Se ha hecho un roster para su clase"
   - "Se ha configurado la asignación con *Leave feedback with pull requests*"
-  - "Se ha hecho la asignación `chase-the-pizza` para los otras clases"
   - "Ha entregado el .zip en el campus"
 video: "8KwoKgYz85k"
 toc: true
@@ -156,9 +155,14 @@ Para poder desarrollar un proyecto con micro:bit debemos seguir una serie de pas
 
 ## Entrega
 
-Deja en el fichero `README.md` de este repositorio 
+En la organización y el classroom creados en prácticas anteriores cree una nueva asignación partiendo de este template [ULL-MFP-AET/makecode-template](https://github.com/ULL-MFP-AET/makecode-template). Configure como editor de la asignación MakeCode Arcade. 
 
-* Evidencias de los requisitos solicitados en la rúbrica 
+Cree también un roster para su clase. 
+
+La asignación debe configurarse con *[Leave feedback with pull requests](https://docs.github.com/en/education/manage-coursework-with-github-classroom/teach-with-github-classroom/leave-feedback-with-pull-requests)*
+
+Deja en el fichero `README.md` de este repositorio 
+evidencias de los requisitos solicitados en la rúbrica 
 
 ## References
 
