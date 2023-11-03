@@ -9,7 +9,7 @@ name: MakeCode
 website: true
 toc: false
 foro: https://github.com/orgs/ULL-MFP-AET-2223/discussions
-hide: true
+#hide: false
 rubrica:
   - "Se ha aprendido a usar Makecode"
   - "Ha hecho una asignación con GitHub Classroom en la que el editor asociado es MakeCode Arcade"
