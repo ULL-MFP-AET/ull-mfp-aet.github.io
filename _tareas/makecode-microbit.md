@@ -63,7 +63,7 @@ Véase este [resumen]({{ site.baseurl }}/assets/pdfs/ordenacion-enseñanzas-loml
 ### Tecnología y Digitalización 
 
 En al menos uno de los tres cursos (1o a 3o), todo el
-alumnado cursará la materia [Tecnología y Digitalización](https://educagob.educacionyfp.gob.es/curriculo/curriculo-lomloe/menu-curriculos-basicos/ed-secundaria-obligatoria/materias/tecno-digitali/desarrollo.html). Véase la adaptación de la [Consejería de Educación Gobierno y Deportes](https://www.gobiernodecanarias.org/cmsweb/export/sites/educacion/web/_galerias/descargas/Secundaria/Ordenacion_curriculo/borrador_curriculo_2022/Tecnologia_digitalizacion_ESO.odt) del Gobierno de Canarias. Sus saberes básicos se organizan en cinco bloques:
+alumnado cursará la materia [Tecnología y Digitalización](https://educagob.educacionyfp.gob.es/curriculo/curriculo-lomloe/menu-curriculos-basicos/ed-secundaria-obligatoria/materias/tecno-digitali/desarrollo.html). Véase la adaptación de la [Consejería de Educación Gobierno y Deportes](https://www.gobiernodecanarias.org/cmsweb/export/sites/educacion/web/_galerias/descargas/Secundaria/Ordenacion_curriculo/borrador_curriculo_2022/Tecnologia_digitalizacion_ESO.pdf) del Gobierno de Canarias. Sus saberes básicos se organizan en cinco bloques:
 
 1. Proceso de resolución de problemas; 
 2. Comunicación y difusión de ideas; 
