@@ -157,13 +157,18 @@ Para poder desarrollar un proyecto con micro:bit debemos seguir una serie de pas
 
 ## Entrega
 
-En la organización y el classroom creados en prácticas anteriores cree una nueva asignación partiendo de este template [ULL-MFP-AET/makecode-template](https://github.com/ULL-MFP-AET/makecode-template). Configure como editor de la asignación MakeCode Arcade. 
+En la organización y el classroom creados en prácticas anteriores 
 
-Cree también un roster para su clase. 
+1. Cree una nueva asignación partiendo de este template [ULL-MFP-AET/makecode-template](https://github.com/ULL-MFP-AET/makecode-template).
+2. Configure como editor de la asignación MakeCode Arcade. 
+3. Cree también un roster para su clase. 
+4. La asignación debe configurarse con *[Leave feedback with pull requests](https://docs.github.com/en/education/manage-coursework-with-github-classroom/teach-with-github-classroom/leave-feedback-with-pull-requests)*
 
-La asignación debe configurarse con *[Leave feedback with pull requests](https://docs.github.com/en/education/manage-coursework-with-github-classroom/teach-with-github-classroom/leave-feedback-with-pull-requests)*
+Deja en el fichero `README.md` de este repositorio enlaces a 
 
-Deja en el fichero `README.md` de este repositorio enlaces a su organización, su classroom, a la asignación creada y a los repos de sus alumnos para dicha asignación.
+1. Su organización, 
+2. su classroom, 
+3. a la asignación creada en GitHub Classroom 
 
 Deje evidencias de los requisitos solicitados en la rúbrica 
 
