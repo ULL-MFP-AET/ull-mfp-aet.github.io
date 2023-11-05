@@ -163,8 +163,9 @@ Cree también un roster para su clase.
 
 La asignación debe configurarse con *[Leave feedback with pull requests](https://docs.github.com/en/education/manage-coursework-with-github-classroom/teach-with-github-classroom/leave-feedback-with-pull-requests)*
 
-Deja en el fichero `README.md` de este repositorio 
-evidencias de los requisitos solicitados en la rúbrica 
+Deja en el fichero `README.md` de este repositorio enlaces a su organización, su classroom, a la asignación creada y a los repos de sus alumnos para dicha asignación.
+
+Deje evidencias de los requisitos solicitados en la rúbrica 
 
 ## References
 
