@@ -34,6 +34,8 @@ En esta tarea vamos a
 
 ## Las Ciencias de la Computación y el Pensamiento Computacional en la Educación Secundaria y el Bachillerato
 
+Una de las competencias clave que se deben desarrollar en la educación es el pensamiento computacional. El pensamiento computacional es un proceso de resolución de problemas que incluye:
+
 > "... el proceso de pensamiento envuelto en formular un problema y sus soluciones de manera que las soluciones son representadas de una forma en que pueden ser llevadas a un agente de procesamiento de información.".
 
 [Wing (Marzo 2006)](https://www.cs.cmu.edu/~15110-s13/Wing06-ct.pdf) Communications of the ACM. Vol 49. No 3.
@@ -58,7 +60,7 @@ competencia digital.
 La oferta de estas materias optativas será realizada por las [administraciones educativas]({{ site.baseurl }}/assets/pdfs/ordenacion-enseñanzas-lomloe-canarias.pdf) y puede consultarse desde 
 [el portal del sistema educativo español del Ministerio de Educación y FP](https://educagob.educacionyfp.gob.es/inicio.html).
 
-Véase este [resumen]({{ site.baseurl }}/assets/pdfs/ordenacion-enseñanzas-lomloe-canarias.pdf) de un borrador de CCOO de la Enseñanza de 04/2022 para algunos detalles sobre la CCAA de Canarias.
+Véase este [resumen]({{ site.baseurl }}/assets/pdfs/ordenacion-enseñanzas-lomloe-canarias.pdf) de 21 de Marzo de 2023 para algunos detalles sobre la CCAA de Canarias.
 
 ### Tecnología y Digitalización 
 
@@ -166,16 +168,25 @@ evidencias de los requisitos solicitados en la rúbrica
 
 ## References
 
+### El Pensamiento Computacional en la Educación Secundaria y el Bachillerato
+
 - [Las Ciencias de la Computación en el sistema educativo: Conceptos y Políticas](https://drive.google.com/file/d/1E4IJ_ROXilyqWjDXNwNUTHyxFnbBxP89/view) por Coromoto León, Carmen Elvira Ramos Domínguez, Pedro A. Toledo. JUTE. 2023.
-- [Ordenación de las Enseñanzas LOMLOE Canarias](https://canarias.fe.ccoo.es/0b18b74e01901c629d90fc0ce17715e8000063.pdf) en <https://canarias.fe.ccoo.es/> 11/04/2022
+- [Ordenación de las Enseñanzas LOMLOE Canarias](https://canarias.fe.ccoo.es/0b18b74e01901c629d90fc0ce17715e8000063.pdf) en <https://www3.gobiernodecanarias.org/medusa/edublog/iescandidomaranteexposito/ordenacion-de-las-ensenanzas-lomloe-canarias/> 21/04/2023. Fernando Concepción.
 - [Pensamiento computacional en todas las etapas no universitarias: análisis de la LOMLOE](https://programamos.es/pensamiento-computacional-en-todas-las-etapas-no-universitarias-analisis-de-la-lomloe/). Jesús Moreno León. 2021.
 - [Aula Cultural de Pensamiento Computacional](https://sites.google.com/a/ull.edu.es/pensamiento-computacional/) de la Universidad de La Laguna (ULL) 
-- [Educación Secundaria Obligatoria](https://educagob.educacionyfp.gob.es/ensenanzas/secundaria.html)
-  - [Canarias](https://www.gobiernodecanarias.org/educacion/web/secundaria/)
-- [Bachillerato](https://educagob.educacionyfp.gob.es/ensenanzas/bachillerato.html)
-  - [Canarias](https://www.gobiernodecanarias.org/educacion/web/bachillerato/)
-- [Ciclos Formativos de Grado Básico](https://www.todofp.es/que-estudiar/ciclos/fp-grado-basico.html)
-- [Ciclos Formativos de Grado Superior](https://www.todofp.es/que-estudiar/ciclos/grado-superior.html)
+- Portal del Sistema Educativo Español educagob: [Educación Secundaria Obligatoria](https://educagob.educacionyfp.gob.es/ensenanzas/secundaria.html)
+  - [Gobierno de Canarias. Secundaria](https://www.gobiernodecanarias.org/educacion/web/secundaria/)
+- Portal del Sistema Educativo Español educagob: [Bachillerato](https://educagob.educacionyfp.gob.es/ensenanzas/bachillerato.html)
+  - [Gobierno de Canarias. Bachillerato](https://www.gobiernodecanarias.org/educacion/web/bachillerato/)
+- Ministerio de Educación,. TodoFP. [Ciclos Formativos de Grado Básico](https://www.todofp.es/que-estudiar/ciclos/fp-grado-basico.html)
+- Ministerio de Educación,. TodoFP. [Ciclos Formativos de Grado Superior](https://www.todofp.es/que-estudiar/ciclos/grado-superior.html)
+- [Programas Educativos del Gobierno de Canarias](https://www.gobiernodecanarias.org/educacion/web/programas-redes-educativas/programas-educativos/steam/)
+  - [Programa STEAM del Gobierno de Canarias](https://www.gobiernodecanarias.org/educacion/web/programas-redes-educativas/programas-educativos/steam/) 
+    - [Proyecto Pensamiento Computacional y Ciencias del Espacio](https://www.gobiernodecanarias.org/educacion/web/programas-redes-educativas/programas-educativos/steam/convocatorias/proyecto-pensamiento-computacional-y-ciencias-del-espacio/index.html)
+- [Engaging Primary and Secondary School Students in Computer Science Through Computational Thinking Training](https://ieeexplore.ieee.org/document/9749967) by R. Herrero-Álvarez, G. Miranda, C. León and E. Segredo. IEEE Transactions on Emerging Topics in Computing, vol. 11, no. 1, pp. 56-69, 1 Jan.-March 2023, [doi: 10.1109/TETC.2022.3163650](https://doi.org/10.1109/TETC.2022.3163650).
+  
+### MakeCode
+
 - [How to make a 2d game](https://www.youtube.com/playlist?list=PLMMBk9hE-SepfPK6z19t6aAfwbOQNY6K7) with MakeCode Arcade (Video collection)
 - Vea los ejercicios en la sección [Concepts](https://arcade.makecode.com/concepts) de la documentación de MakeCode.
 - Le será de utilidad la [Documentación de arcade makedocs](https://arcade.makecode.com/docs) y en particular la sección [Blocks](https://arcade.makecode.com/blocks).
