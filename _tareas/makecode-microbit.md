@@ -153,12 +153,12 @@ La parte hardware es una placa que dispone de una pantalla constituida por 25 lu
 
 ![](https://cdn.sanity.io/images/ajwvhvgo/production/4cfb4a0c22aa25164ba6f5f9cb4ae2d53cbf35ba-2577x1068.png?w=653&q=80&fit=max&auto=format)
 
-El software se encarga de indicarle al [micro:bit](https://microbit.org/) lo que debe hacer exactamente en cada momento. Para ello, debemos de escribir un programa con las indicaciones que debe seguir el dispositivo. Hacemos uso de [Microsoft makecode](https://makecode.microbit.org/), entorno de programación gráfico que nos ayuda a definir las instrucciones que le damos al dispositivo a través de lenguaje de programación visual basado en bloques. Otras alternativas para programar y escribir el lenguaje de programación son JavaScript, Python o Scratch.
+El software se encarga de indicarle al [micro:bit](https://microbit.org/) lo que debe hacer exactamente en cada momento. Para ello, debemos de escribir un programa con las indicaciones que debe seguir el dispositivo. Hacemos uso de <https://makecode.microbit.org/>, un entorno de programación gráfico en la nube que nos ayuda a definir las instrucciones que le damos al dispositivo a través de lenguaje de programación visual basado en bloques. Otras alternativas para programar y escribir el lenguaje de programación son JavaScript, Python o Scratch.
 
 
 {% include youtubePlayer.html id="0dEM3qEHZ4A" %}
 
-Para poder desarrollar un proyecto con micro:bit debemos seguir una serie de pasos. El primer paso es escribir el programa, aquí  se eligen los objetivos que queremos alcanzar, lo que nos lleva a crear el código necesario para llevar a conseguirlo. El segundo paso es transferir el programa al dispositivo. Finalmente en el tercer paso ejecutamos el programa para poder conseguir el objetivo que perseguimos.
+Para poder desarrollar un proyecto con micro:bit debemos seguir una serie de pasos. El primer paso es escribir el programa en el editor que se encuentra en <https://makecode.microbit.org/>, aquí  se eligen los objetivos que queremos alcanzar, lo que nos lleva a crear el código necesario para llevar a conseguirlo. El segundo paso es transferir el programa al dispositivo. Finalmente en el tercer paso ejecutamos el programa para poder conseguir el objetivo que perseguimos.
 
 ### micro:bit classroom
 
@@ -228,7 +228,7 @@ Programación con Javascript y MakeCode Arcade. Programa tu primer videojuego. 2
 * [Micro::bit Classroom](https://classroom.microbit.org/) Manage whole class micro:bit coding sessions. [Youtube introductory video](https://youtu.be/QD8kpuSC0Vc?si=-bRF3my_S9IiTMCw). It makes it quick and easy for teachers to share code with students, track their progress, help them debug, and save their progress.
 * [Behind the MakeCode Hardware - LEDs on micro:bit](https://youtu.be/qqBmvHD5bCw?si=LerCSQQv2BumHXhT) Youtube video
 * Repo [carlosperate/awesome-microbit](https://github.com/carlosperate/awesome-microbit)
-
+* [A 14 week Introduction to Computer Science course](https://makecode.microbit.org/courses/csintro)
 
 ## Rúbrica
 
