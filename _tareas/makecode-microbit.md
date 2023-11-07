@@ -60,7 +60,7 @@ competencia digital.
 La oferta de estas materias optativas será realizada por las [administraciones educativas]({{ site.baseurl }}/assets/pdfs/ordenacion-enseñanzas-lomloe-canarias.pdf) y puede consultarse desde 
 [el portal del sistema educativo español del Ministerio de Educación y FP](https://educagob.educacionyfp.gob.es/inicio.html).
 
-Véase este [resumen]({{ site.baseurl }}/assets/pdfs/ordenacion-enseñanzas-lomloe-canarias.pdf) de 21 de Marzo de 2023 para algunos detalles sobre la CCAA de Canarias.
+Véase este [resumen]({{ site.baseurl }}/assets/pdfs/ordenacion-enseñanzas-lomloe-canarias.pdf) anotado de 21 de Marzo de 2023 para algunos detalles sobre la CCAA de Canarias.
 
 ### Tecnología y Digitalización 
 
