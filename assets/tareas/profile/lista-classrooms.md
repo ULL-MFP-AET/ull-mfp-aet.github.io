@@ -59,12 +59,17 @@ Faltan
 Las organizaciones se administran en github.com, no en classroom.github.com.
 Además de invita a los profesores ayudantes como owners a tu organización de GitHub debes:
 
-1. Enviar la URL de invitación al GitHub Classroom al TA. 
-2. Una vez que el TA inicie sesión en GitHub Classroom usando el enlace de invitación, se agregará automáticamente a tu aula como administrador. 
-
-Para invitar al TA  añade la URL de tu GH Classroom en el documento Google docs compartido creado por el profesor y que encontrarás en la tarea <a href= "https://campusdoctoradoyposgrado2324.ull.es/mod/assign/view.php?id=14547&forceview=1" target="_blank">Creando Perfiles, Organizaciones, Aulas y Asignaciones</a> del Campus.
-   
-La figura muestra la sección `TAs and admins` de la página de un classroom:
+La siguiente figura muestra la sección `TAs and admins` de la página de un classroom:
 
 ![/assets/images/github-classroom-tas-and-admins.png)]({{site.baseurl}}/assets/images/github-classroom-tas-and-admins.png)
 
+1. Visita la página de tu classroom y haz click en el botón `TAs and admin`.
+1. Envia la URL de invitación al GitHub Classroom al TA. 
+2. Una vez que el TA inicie sesión en GitHub Classroom usando el enlace de invitación, se agregará automáticamente a tu aula como administrador. 
+
+Para pasarle la URL al TA  
+
+1. Añade la URL de tu GH Classroom en el documento Google docs compartido creado por el profesor 
+2. Encontrarás un enlace a dicho documento en la tarea 
+<a href= "https://campusdoctoradoyposgrado2324.ull.es/mod/assign/view.php?id=14547&forceview=1" target="_blank">Creando Perfiles, Organizaciones, Aulas y Asignaciones</a> del Campus. Es el enlace con título **Documento Google docs compartido para rellenar la URL de tu GitHUb Classroom**.
+   
