@@ -160,6 +160,20 @@ El software se encarga de indicarle al [micro:bit](https://microbit.org/) lo que
 
 Para poder desarrollar un proyecto con micro:bit debemos seguir una serie de pasos. El primer paso es escribir el programa, aquí  se eligen los objetivos que queremos alcanzar, lo que nos lleva a crear el código necesario para llevar a conseguirlo. El segundo paso es transferir el programa al dispositivo. Finalmente en el tercer paso ejecutamos el programa para poder conseguir el objetivo que perseguimos.
 
+### micro:bit classroom
+
+Véase:
+
+* <https://microbit.org/teach/teaching-tools/>
+
+Usando <https://classroom.microbit.org/> el profesor puede:
+
+- Editar el código que ven los estudiantes 
+- Enviar código desde su espacio de codificación o el de cualquiera de los estudiantes a uno o más estudiantes. Esto sobrescribirá el código que ya tienen.
+- Probar el código en el simulador o descargarlo a su micro:bit
+
+{% include youtubePlayer.html id="QD8kpuSC0Vc?si=3tC0O9rjHtPk-Eyk" %}
+
 
 ## Entrega
 
