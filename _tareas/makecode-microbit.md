@@ -112,7 +112,11 @@ Además, [Arcade Makecode](https://arcade.makecode.com/) permite trabajar con re
 - Además, dispone de un cronómetro y de un contador de puntos. 
 - Una vez que el juego sea totalmente funcional, se pueden agregar muchas más funciones 
 
-## Programación Avanzada con Arcade MakeCode 
+## Un ejercicio algo mas complejo
+
+Una posible continuación del ejercicio anterior es el juego de [Jacqueline Russell](https://github.com/Jaqster) en  <https://github.com/ULL-MFP-AET/csta-2021>. Haga un fork del repo en su organización y experimente a cambiarlo.
+
+## Un juego mas Avanzado 
 
 Esta es la parte 1 de la colección de vídeos [How to create a video game with MakeCode Arcade](https://youtube.com/playlist?list=PLMMBk9hE-SeoU2gS3trU9gRKbX0hX8p7O&si=JDeC4nLvfDoaUX3K)
 
@@ -136,7 +140,6 @@ En (20:59) crea una asignación de grupo.
 
 
 * <https://arcade.makecode.com/>
-* [Jacqueline Russell en GitHub](https://github.com/Jaqster) Tiene muchos repositorios de MakeCode, microbit, etc. Por ejemplo <https://github.com/Jaqster/csta-2021> es sencillo 
 * [Arelia Jones en GitHub](https://github.com/arelia)
 * Microsoft MakeCode is based on the open source project Microsoft Programming Experience Toolkit (PXT): <https://github.com/microsoft/pxt>. [You can install it on your machine](https://github.com/microsoft/pxt#build)
 
