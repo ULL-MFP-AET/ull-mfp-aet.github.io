@@ -224,11 +224,13 @@ Programación con Javascript y MakeCode Arcade. Programa tu primer videojuego. 2
 
 ### Micro:bit
 
-* [Micro::bit Makecode editor](https://makecode.microbit.org/)
-* [Micro::bit Classroom](https://classroom.microbit.org/) Manage whole class micro:bit coding sessions. [Youtube introductory video](https://youtu.be/QD8kpuSC0Vc?si=-bRF3my_S9IiTMCw). It makes it quick and easy for teachers to share code with students, track their progress, help them debug, and save their progress.
+* [Micro:bit Makecode editor](https://makecode.microbit.org/)
+* [Micro:bit Classroom](https://classroom.microbit.org/) Manage whole class micro:bit coding sessions. [Youtube introductory video](https://youtu.be/QD8kpuSC0Vc?si=-bRF3my_S9IiTMCw). It makes it quick and easy for teachers to share code with students, track their progress, help them debug, and save their progress.
 * [Behind the MakeCode Hardware - LEDs on micro:bit](https://youtu.be/qqBmvHD5bCw?si=LerCSQQv2BumHXhT) Youtube video
 * Repo [carlosperate/awesome-microbit](https://github.com/carlosperate/awesome-microbit)
 * [A 14 week Introduction to Computer Science course](https://makecode.microbit.org/courses/csintro)
+* [Manual de Programación Micro:bit]({{ site.baseurl }}/assets/pdfs/manual-de-programacion-microbit.pdf). José Francisco Muñoz. 2019
+
 
 ## Rúbrica
 
