@@ -12,7 +12,7 @@ foro: https://github.com/orgs/ULL-MFP-AET-2223/discussions
 #hide: false
 rubrica:
   - "Se ha aprendido a usar Makecode"
-  - "Ha hecho una asignación basada en este template con GitHub Classroom en la que el editor asociado es MakeCode Arcade"
+  - "Ha hecho una asignación basada en un templateadecuado con GitHub Classroom en la que el editor asociado es MakeCode Arcade"
   - "Se ha hecho un roster para su clase"
   - "Se ha configurado la asignación con *Leave feedback with pull requests*"
   - "Ha entregado el .zip en el campus"
