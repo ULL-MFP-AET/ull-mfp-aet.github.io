@@ -11,7 +11,6 @@ toc: false
 foro: https://github.com/orgs/ULL-MFP-AET-2223/discussions
 hide: false # true
 rubrica:
-  - "Se ha desplegado el sitio Web de la práctica"
   - "Se ha desplegado el sitio Web de la asignatura"
   - "Se ha aprendido a usar Codespaces"
   - "Se ha aprendido a hacer un workflow con pull requests"
