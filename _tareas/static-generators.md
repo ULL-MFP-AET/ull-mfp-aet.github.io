@@ -1,7 +1,7 @@
 ---
 title: Generating a Web Site with a Static Generator
 permalink: /practicas/asignatura-website/
-date: 0000/03/03
+date: 0000/03/07
 key: asignatura-website
 layout: default
 classroom: https://classroom.github.com/a/UZ3hh6e8
@@ -9,7 +9,7 @@ name: Managing your profile README
 website: true
 toc: false
 foro: https://github.com/orgs/ULL-MFP-AET-2223/discussions
-hide: true
+hide: false # true
 rubrica:
   - "Se ha desplegado el sitio Web de la práctica"
   - "Se ha desplegado el sitio Web de la asignatura"
