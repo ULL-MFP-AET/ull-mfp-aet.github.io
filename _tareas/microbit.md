@@ -13,8 +13,7 @@ foro: https://github.com/orgs/ULL-MFP-AET-2223/discussions
 rubrica:
   - "Se ha aprendido a usar Microbit"
   - "Ha hecho una asignación basada en este template con GitHub Classroom en la que el editor asociado es makecode.microbit.org"
-  - "Se ha hecho un roster para su clase"
-  - "Se ha configurado la asignación con *Leave feedback with pull requests*"
+  - "Se ha usado https://classroom.microbit.org para una clase simulada"
   - "Ha entregado el .zip en el campus"
 video: 
 toc: true
