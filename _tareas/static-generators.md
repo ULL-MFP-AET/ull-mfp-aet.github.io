@@ -102,11 +102,17 @@ Para aprender mas tenemos los tutorials en la documentación de <a href= "https:
 ## Ejemplos avanzados
 
 Aprender algo de Liquid usando una lección y una tarea
-   1. Ver el fichero `clases.md` de estos apuntes: <https://raw.githubusercontent.com/ULL-MFP-AET/ull-mfp-aet.github.io/main/clases.md>
-   2. El fichero `_includes/clases_impartidas.md`:  <https://raw.githubusercontent.com/ULL-MFP-AET/ull-mfp-aet.github.io/main/_includes/clases-impartidas.md>
-   3.  También ver el ejemplo de  la rúbrica en una práctica como `_tareas/aprender-markdown.md`
-       1.  <https://raw.githubusercontent.com/ULL-MFP-AET/ull-mfp-aet.github.io/main/_tareas/aprender-markdown.md>
-       2.  Contenidos del fichero `_includes/rubrica.md`: <https://raw.githubusercontent.com/ULL-MFP-AET/ull-mfp-aet.github.io/main/_includes/rubrica.md>
+
+1. Ver el fichero `clases.md` de estos apuntes: <https://raw.githubusercontent.com/ULL-MFP-AET/ull-mfp-aet.github.io/main/clases.md>
+2. El fichero `_includes/clases_impartidas.md`:  <https://raw.githubusercontent.com/ULL-MFP-AET/ull-mfp-aet.github.io/main/_includes/clases-impartidas.md>
+3.  También ver el ejemplo de  la rúbrica en una práctica como `_tareas/aprender-markdown.md`
+   1.  <https://raw.githubusercontent.com/ULL-MFP-AET/ull-mfp-aet.github.io/main/_tareas/aprender-markdown.md>
+   2.  Contenidos del fichero `_includes/rubrica.md`: <https://raw.githubusercontent.com/ULL-MFP-AET/ull-mfp-aet.github.io/main/_includes/rubrica.md>
+
+- [get-teams.sh](https://github.com/ULL-MFP-AET/ull-mfp-aet.github.io/blob/main/get-teams.sh)
+- [_data/students.json](https://github.com/ULL-MFP-AET/ull-mfp-aet.github.io/blob/main/_data/students.json)
+- [_includes/teams.html](https://github.com/ULL-MFP-AET/ull-mfp-aet.github.io/blob/main/_includes/teams.html)
+- [/teams.html](https://github.com/ULL-MFP-AET/ull-mfp-aet.github.io/blob/main/teams.html)
 
 ### Liquid extension for VSCode
 
