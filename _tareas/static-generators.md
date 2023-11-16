@@ -25,9 +25,9 @@ video: "8KwoKgYz85k"
   - [Objetivos](#objetivos)
   - [Puesta a punto del entorno de trabajo](#puesta-a-punto-del-entorno-de-trabajo)
   - [Adaptar los contenidos del Web Site a nuestra Asignatura](#adaptar-los-contenidos-del-web-site-a-nuestra-asignatura)
-  - [Aprender Jekyll](#aprender-jekyll)
-    - [Jekyll y Liquid docs](#jekyll-y-liquid-docs)
-    - [Ejemplos](#ejemplos)
+  - [Jekyll docs](#jekyll-docs)
+  - [Liquid docs](#liquid-docs)
+  - [Ejemplos avanzados](#ejemplos-avanzados)
     - [Liquid extension for VSCode](#liquid-extension-for-vscode)
   - [Desplegando en su organización ull-mfp-aet-2324-aluXXXX.github.io](#desplegando-en-su-organización-ull-mfp-aet-2324-aluxxxxgithubio)
   - [Llevando sucesivos cambios del repo de la práctica a su repo de organización](#llevando-sucesivos-cambios-del-repo-de-la-práctica-a-su-repo-de-organización)
@@ -78,9 +78,7 @@ En este  web site deberás crear un web site en un repo con nombre `<organizatio
 2. Limpiar los documentos en las carpetas `leccion` y `_tareas` y sustituirlos por nuestras lecciones y tareas correspondientes a nuestra asignatura
 
 
-## Aprender Jekyll
-
-### Jekyll y Liquid docs
+## Jekyll docs
 
 Para aprender mas tenemos los tutorials en la documentación de <a href= "https://jekyllrb.com/docs/" target="_blank">Jekyll</a>
 
@@ -92,17 +90,16 @@ Para aprender mas tenemos los tutorials en la documentación de <a href= "https:
          *   [Page Sections in Jekyll - Separating Content from Layout](https://dev-notes.eu/2016/08/page-sections-in-jekyll-seperating-content-from-layout/)
          * [Explain like I’m five: Jekyll collections](https://ben.balter.com/2015/02/20/jekyll-collections/)
   *   [Data Files](https://jekyllrb.com/docs/datafiles/)
-         * [Why I love Jekyll Data Files - Chen Hui Jing // JekyllConf 2019](https://youtu.be/CERXESTZ5w4) YouTube
   *   [Assets](https://jekyllrb.com/docs/assets/)
   *   [Static Files](https://jekyllrb.com/docs/static-files/)
 
-Recursos para Liquid:
+## Liquid docs
 
 * [Liquid at Jekyll](https://jekyllrb.com/docs/liquid/)
 * Liquid Sandbox: [You can test your Liquid code here](https://geekplayers.com/run-liquild-online.html)
 * [Liquid at Shopify](https://shopify.github.io/liquid/)
 
-### Ejemplos
+## Ejemplos avanzados
 
 Aprender algo de Liquid usando una lección y una tarea
    1. Ver el fichero `clases.md` de estos apuntes: <https://raw.githubusercontent.com/ULL-MFP-AET/ull-mfp-aet.github.io/main/clases.md>
