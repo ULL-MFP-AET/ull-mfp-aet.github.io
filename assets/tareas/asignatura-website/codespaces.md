@@ -61,5 +61,5 @@ bundle exec jekyll serve
 Ver el vídeo [GitHub Codespaces with GitHub Pages](https://youtu.be/8KwoKgYz85k) por 
 Jon Gallant
 
-{% include video-youtube.html %}
+ideo-youtube.html %}
 
