@@ -26,7 +26,7 @@ video: "8KwoKgYz85k"
   - [Puesta a punto del entorno de trabajo](#puesta-a-punto-del-entorno-de-trabajo)
   - [Adaptar los contenidos del Web Site a nuestra Asignatura](#adaptar-los-contenidos-del-web-site-a-nuestra-asignatura)
   - [Aprender Jekyll](#aprender-jekyll)
-    - [Jekyll docs](#jekyll-docs)
+    - [Jekyll y Liquid docs](#jekyll-y-liquid-docs)
     - [Ejemplos](#ejemplos)
     - [Liquid extension for VSCode](#liquid-extension-for-vscode)
   - [Desplegando en su organización ull-mfp-aet-2324-aluXXXX.github.io](#desplegando-en-su-organización-ull-mfp-aet-2324-aluxxxxgithubio)
@@ -80,7 +80,7 @@ En este  web site deberás crear un web site en un repo con nombre `<organizatio
 
 ## Aprender Jekyll
 
-### Jekyll docs
+### Jekyll y Liquid docs
 
 Para aprender mas tenemos los tutorials en la documentación de <a href= "https://jekyllrb.com/docs/" target="_blank">Jekyll</a>
 
@@ -95,6 +95,12 @@ Para aprender mas tenemos los tutorials en la documentación de <a href= "https:
          * [Why I love Jekyll Data Files - Chen Hui Jing // JekyllConf 2019](https://youtu.be/CERXESTZ5w4) YouTube
   *   [Assets](https://jekyllrb.com/docs/assets/)
   *   [Static Files](https://jekyllrb.com/docs/static-files/)
+
+Recursos para Liquid:
+
+*   [Liquid at Jekyll](https://jekyllrb.com/docs/liquid/)
+* Liquid Sandbox: [You can test your Liquid code here. This sandbox only loads the default Liquid methods ](https://jumpseller.com/support/liquid-sandbox/)
+* [Liquid at Shopify](https://shopify.github.io/liquid/)
 
 ### Ejemplos
 
