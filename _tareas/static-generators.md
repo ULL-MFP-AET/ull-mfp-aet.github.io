@@ -98,8 +98,8 @@ Para aprender mas tenemos los tutorials en la documentación de <a href= "https:
 
 Recursos para Liquid:
 
-*   [Liquid at Jekyll](https://jekyllrb.com/docs/liquid/)
-* Liquid Sandbox: [You can test your Liquid code here. This sandbox only loads the default Liquid methods ](https://jumpseller.com/support/liquid-sandbox/)
+* [Liquid at Jekyll](https://jekyllrb.com/docs/liquid/)
+* Liquid Sandbox: [You can test your Liquid code here](https://geekplayers.com/run-liquild-online.html)
 * [Liquid at Shopify](https://shopify.github.io/liquid/)
 
 ### Ejemplos
