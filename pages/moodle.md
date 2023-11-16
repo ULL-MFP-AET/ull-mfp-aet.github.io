@@ -1,75 +1,51 @@
 ---
-title: Importing a Website into Moodle
+title: Importar un sitio web a Moodle
 ---
 
 # {{ page.title }}
 
-It is possible to host a website within Moodle following these instructions:
+Es posible alojar un sitio web dentro de Moodle siguiendo estas instrucciones:
 
-## Step 1: Links within your webpages must be relative to each other
+1. Asegúrese de que todos los enlaces dentro de sus páginas web sean relativos entre sí, es decir, si tiene una página `index.html` y una página `book.html` en el mismo directorio, como un enlace a la página `book.html` desde la "página de índice", tiene "/book.html". De lo contrario, los enlaces no funcionarán correctamente. 
+   - Lea la sección [Comprensión de site.url y site.baseurl](jekyll-baseurl.html) para aprender cómo hacerlo con Jekyll
+2. **Construya su site estableciendo su `baseurl`**. Por ejemplo en Jekyll:
+    - Use `permalink` en todas las páginas para que los enlaces sean relativos.
+    - El comando Jekyll `build` admite una opción `-b` para establecer la `baseurl`. 
+    - Utilice como `baseurl` el camino donde se alojará su sitio en Moodle. 
+      Por ejemplo, si los ficheros en el sitio Moodle se alojan en  
+   
+      ```
+      https://campusvirtual.ull.es/ocw/pluginfile.php/19489/mod_resource/content/3/_site/
+      ``` 
+      el comando en Jekyll sería
+      ```
+      bundle exec jekyll build -b '/ocw/pluginfile.php/19489/mod_resource/content/3/_site'
+      ```
+3. Comprima el directorio raíz del sitio en un único archivo zip. En una Mac `zip -r _site.zip _site`
+4. Vaya al curso de Moodle y haga clic en el botón <button>Activar edición</button>.
+5. Elija el bloque de temas donde desea agregar la tarea y haga clic en **Agregar una actividad o recurso**.
+6. Seleccione la actividad **Archivo** en el Selector de actividades.
+7. Agregue el archivo zip como archivo para este recurso. 
+   <!--![Zip file added](https://forge.lafayette.edu/wp-content/uploads/sites/451/2018/07/Screen-Shot-2018-07-05-at-3.19.29-PM.png)-->
+   - ![subir-un-archivo.png](/assets/images/subir-un-archivo.png)
+   - ![seleccion-archivo-zip.png](/assets/images/seleccion-archivo-zip.png)
+8. Seleccione el archivo zip en el selector de archivos y aparecerá una ventana emergente.
+     - Seleccione **descomprimir**
+     <!--![Select "Unzip" to open the compressed website file](https://forge.lafayette.edu/wp-content/uploads/sites/451/2018/07/Screen-Shot-2020-05-28-at-1.14.18-PM.png)-->
+     - ![Select "Unzip" to open the compressed website file](/assets/images/descomprimir_site_zip.png)
+     - Aparecerá una carpeta en el selector de archivos.
+     - ![/assets/images/una-vez-descomprimido.png](/assets/images/una-vez-descomprimido.png)
+9.  Navegue hasta la carpeta y seleccione su página de "índice".
+   - Una vez seleccionado, elija la opción "Establecer archivo principal" en la ventana emergente.
 
-Ensure that all links within your webpages are relative to each other, meaning if you have an `index.html` page and a `book.html` page in the same directory, as a link to the `book.html` page from the `index page`, you have `/book.html`.  
+     <!-- ![Set the main file](https://forge.lafayette.edu/wp-content/uploads/sites/451/2018/07/Screen-Shot-2018-07-05-at-3.22.28-PM.png)-->
+     ![Set the main file](/assets/images/configurar-archivo-principal.png)
 
-The links will not work properly otherwise. 
+10. En la opción de recurso "Apariencia" hay varias opciones de visualización que le permiten configurar la página web para que se incruste en el sitio, se abra como una ventana emergente, etc.
+     ![Set the Display setting to "Embed"](https://forge.lafayette.edu/wp-content/uploads/sites/451/2018/07/Screen-Shot-2020-05-28-at-1.15.50-PM.png)
 
-*  Read the section [Understanding site.url and site.baseurl](jekyll-baseurl.html) to learn how to do this with Jekyll
+**Nota:** Los archivos individuales se pueden actualizar una vez finalizado este proceso, por lo que no tendrás que volver a cargar el archivo zip completo cada vez que sea necesario realizar un cambio.
 
-## Step 2: Zip the root directory of the site  
+## Referencias
 
-### On Codespaces
-
-On your codespaces and also in a mac you have installed the `zip` program: `zip -r _site.zip _site`
-
-```
-$ zip --help
-Copyright (c) 1990-2008 Info-ZIP - Type 'zip "-L"' for software license.
-Zip 3.0 (July 5th 2008). Usage:
-zip [-options] [-b path] [-t mmddyyyy] [-n suffixes] [zipfile list] [-xi list]
-The default action is to add or replace zipfile entries from list, which
-can include the special name - to compress standard input.
-If zipfile and list are omitted, zip compresses stdin to stdout.
--f   freshen: only changed files  -u   update: only changed or new files
--d   delete entries in zipfile    -m   move into zipfile (delete OS files)
--r   recurse into directories     -j   junk (don't record) directory names
--0   store only                   -l   convert LF to CR LF (-ll CR LF to LF)
--1   compress faster              -9   compress better
--q   quiet operation              -v   verbose operation/print version info
--c   add one-line comments        -z   add zipfile comment
--@   read names from stdin        -o   make zipfile as old as latest entry
--x   exclude the following names  -i   include only the following names
--F   fix zipfile (-FF try harder) -D   do not add directory entries
--A   adjust self-extracting exe   -J   junk zipfile prefix (unzipsfx)
--T   test zipfile integrity       -X   eXclude eXtra file attributes
--y   store symbolic links as the link instead of the referenced file
--e   encrypt                      -n   don't compress these suffixes
--h2  show more help
-```
-
-### Alternative: Use GitHub Action Generated Artifact
-
-Got to the GH action for building the site and donwload the generated artifact zip file to your local machine
-
-![]({{ site.baseurl }}/assets/images/website-gh-action-artifact.png)
-
-## Step 3: Upload the zip file to Moodle
-
-1.  Go to the Moodle course and click the <button>Turn Editing on</button> button
-2.  Choose the Topics Block where you want to add the assignment and click **Add an activity or resource**.
-3.  Select the **File** activity in the Activity Chooser.
-4.  Add the zip file as the file for this resource.![Zip file added](https://forge.lafayette.edu/wp-content/uploads/sites/451/2018/07/Screen-Shot-2018-07-05-at-3.19.29-PM.png)
-5.  Select the zip file in the file picker, and a popup window will appear.  
-    - Select **unzip**, a folder will appear in the file picker.  
-    
-    ![Select "Unzip" to open the compressed website file](https://forge.lafayette.edu/wp-content/uploads/sites/451/2018/07/Screen-Shot-2020-05-28-at-1.14.18-PM.png)
-6.  Navigate into the folder and select your “index” page.  
-    - Once selected, choose the “Set main file” option from the popup window.  
-
-      ![Set the main file](https://forge.lafayette.edu/wp-content/uploads/sites/451/2018/07/Screen-Shot-2018-07-05-at-3.22.28-PM.png)
-7.  Under the “Appearance” resource option there are several Display options that allow you to set the webpage to be embedded in the site, open as a pop-up, etc.  
-    ![Set the Display setting to "Embed"](https://forge.lafayette.edu/wp-content/uploads/sites/451/2018/07/Screen-Shot-2020-05-28-at-1.15.50-PM.png)
-
-**Note:** Individual files can be updated after this process is done so you will not need to re-upload the entire zip file whenever a change is necessary.
-
-## References
-
-*   Here is the orginal article [Importing a Website into Moodle](https://help.lafayette.edu/importing-a-website-into-moodle/)
+* Véase también [Importing a Website into Moodle](https://help.lafayette.edu/importing-a-website-into-moodle/) 

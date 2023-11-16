@@ -22,8 +22,9 @@ video: "8KwoKgYz85k"
 
 - [{{ page.title}}](#-pagetitle)
   - [Objetivos](#objetivos)
-  - [Puesta a punto en CodeSpaces](#puesta-a-punto-en-codespaces)
   - [Modificando el Web Site](#modificando-el-web-site)
+  - [Adaptar el Web Site a nuestra Asignatura](#adaptar-el-web-site-a-nuestra-asignatura)
+  - [Jekyll Docs](#jekyll-docs)
   - [Desplegando en su organización ull-mfp-aet-2223-aluXXXX.github.io](#desplegando-en-su-organización-ull-mfp-aet-2223-aluxxxxgithubio)
   - [Desplegando el Web Site de la Asignatura en Moodle](#desplegando-el-web-site-de-la-asignatura-en-moodle)
   - [Entrega](#entrega)
@@ -47,29 +48,42 @@ Al aceptar esta asignación se creará un repo con los archivos y carpetas neces
 
 En este  web site deberás crear un web site en un repo con nombre `<organization>/<organization>.github.io` para la organización que creaste en la tarea anterior  con una estructura similar al  web site de este curso conteniendo temas, tareas, comentarios, enlaces, etc. 
 
-## Puesta a punto en CodeSpaces
 
-Véase las [notas sobre CodeSpaces]({{ site.baseurl}}/assets/tareas/asignatura-website/codespaces)
 
-<!--
-
-## Puesta a punto con GitPod 
-
-Véase las [notas sobre GitPod]({{ site.baseurl}}/assets/tareas/asignatura-website/gitpod)
-
--->
 
 ## Modificando el Web Site
 
-Para mas detalle leemos los tutorials de [Jekyll](https://jekyllrb.com/docs/)
+1. Abrimos un codespaces en el repo de la asignación
+   1. Si es necesario repase las [notas sobre CodeSpaces]({{ site.baseurl}}/assets/tareas/asignatura-website/codespaces).
+   2. Alternativamente, véanse las [notas sobre GitPod]({{ site.baseurl}}/assets/tareas/asignatura-website/gitpod)
+2. A continuación arrancamos el server de jekyll. Para ello escriba  en la terminal:
+   1. `cd docs` pulse retorno de carro. Esto le sitúa en la carpeta `docs` que es donde se encuentran los ficheros  del web site de la asignatura
+   2. `bundle install` pulse retorno de carro. Este comando instala las dependencias necesarias para que el generador estático de contenidos Jekyll pueda funcionar
+   3. `rake serve` pulse retorno de carro. Este comando arranca el servidor web de Jekyll
+   4. alternativamente puede escribir `bundle exec jekyll serve` en la terminal
+   5. Haga click en `Open in Browser`: se  abrirá una nueva pestaña en la que visitamos la página web servida.
+     
+     ![/assets/images/codespaces/codespaces-jekyll-serve.png]({{ site.baseurl}}/assets/images/codespaces/codespaces-jekyll-serve.png)
 
-1. Arrancamos el server de jekyll (escriba `rake serve` en la terminal)
-2. Limpiar las carpetas `leccion` y `_tareas` 
-3. Aprender algo de Liquid usando una lección y una tarea
+## Adaptar el Web Site a nuestra Asignatura
+
+1. Cambiar el nombre de la asignatura y los datos en el fichero `_config.yml`
+   - Cada vez que se modifique el fichero `_config.yml` hay que parar el servidor y volverlo a arrancar. Pulse `Ctrl-C` en la terminal para parar el servidor y posicionándose en la carpeta `docs/` vuelva a arrancar el servidor  con `rake serve`
+2. Limpiar las carpetas `leccion` y `_tareas` y ponemos enlaces a las lecciones y tareas de nuestra asignatura
+
+
+4. Aprender algo de Liquid usando una lección y una tarea
    1. Ver el fichero _includes/clases-impartidas.md y explicar
    2.  También ver el ejemplo de  la rúbrica en una práctica
-4. Install paquete Jekyll support para codespaces: Liquid Template Language. Supports Formatting, Syntax Highlighting, Snippets, and more.
-5. To enable Settings Sync, in the bottom-left corner of Visual Studio Code's Activity Bar, select  and click on the wheel. Turn on Settings Sync…. In the dialog box, select all the settings
+
+
+5. Install paquete Jekyll support para codespaces: Liquid Template Language. Supports Formatting, Syntax Highlighting, Snippets, and more.
+
+6. To enable Settings Sync, in the bottom-left corner of Visual Studio Code's Activity Bar, select  and click on the wheel. Turn on Settings Sync…. In the dialog box, select all the settings
+
+## Jekyll Docs
+
+Para mas detalle leemos los tutorials de [Jekyll](https://jekyllrb.com/docs/)
 
 ## Desplegando en su organización ull-mfp-aet-2223-aluXXXX.github.io
 
