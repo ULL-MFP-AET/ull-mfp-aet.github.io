@@ -168,16 +168,23 @@ Para ello puede seguir las instrucciones en la sección [Importing a Website int
 
 ## Desplegando en Netlify
 
-si desea hacer un despliegue en Netlify, cree una cuenta en Netlify autenticándose con GitHub. Deberá dar permisos a Netlify para que acceda a su cuenta de GitHub.
+Si desea hacer un despliegue en Netlify, vaya a [Netlify](https://www.netlify.com/) pulse `login` y autentiquese usando su cuenta de GitHub. Deberá dar permisos a Netlify para que acceda a su cuenta de GitHub.
 
-Configure el despliegue de su repo en Netlify como sigue:
+1. Añada un nuevo site
+   ![](https://www.netlify.com/v3/img/blog/new-site-from-git-betabp.png)
 
-![/assets/images/netlify-config.png]({{ site.baseurl }}/assets/images/netlify-config.png)
+2. Cree un nuevo site y enlace a su repositorio de GitHub
+   ![](https://www.netlify.com/v3/img/blog/create-a-new-site-git.png)
 
-Recuerde modificar el `baseurl` en el archivo `_config.yml` a vacío `baseurl: ""` o de otro modo no funcionará correctamente el despliegue en Netlify:
+   Cada vez que envías un push a GitHub (o GitLab/BitBucket), ¡Netlify implementará automáticamente tus actualizaciones y cambios!
 
-![/assets/images/netlify-despliegue-incorrecto.png]({{ site.baseurl }}/assets/images/netlify-despliegue-incorrecto.png)
+3. Configure el despliegue de su repo en Netlify como sigue:
+   ![/assets/images/netlify-config.png]({{ site.baseurl }}/assets/images/netlify-config.png)
 
+4. Recuerde modificar el `baseurl` en el archivo `_config.yml` a vacío `baseurl: ""` o de otro modo no funcionará correctamente el despliegue en Netlify:
+     ![/assets/images/netlify-despliegue-incorrecto.png]({{ site.baseurl }}/assets/images/netlify-despliegue-incorrecto.png)
+
+Tienes un tutorial detallado en <https://www.netlify.com/blog/2020/04/02/a-step-by-step-guide-jekyll-4.0-on-netlify/>
 
 ## Entrega
 
