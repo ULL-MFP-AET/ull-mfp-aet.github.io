@@ -33,6 +33,7 @@ video: "8KwoKgYz85k"
   - [Llevando sucesivos cambios del repo de la práctica a su repo de organización](#llevando-sucesivos-cambios-del-repo-de-la-práctica-a-su-repo-de-organización)
   - [Página web del usuario en GitHub](#página-web-del-usuario-en-github)
   - [Desplegando el Web Site de la Asignatura en Moodle](#desplegando-el-web-site-de-la-asignatura-en-moodle)
+  - [Desplegando en Netlify](#desplegando-en-netlify)
   - [Entrega](#entrega)
   - [References](#references)
   - [Rúbrica](#rúbrica)
@@ -164,6 +165,19 @@ Siguen algunos ejemplos de páginas web de usuarios en GitHub que pueden servir 
 
 Si tiene acceso a un curso Moodle puede desplegar el web site de la asignatura en el curso Moodle.
 Para ello puede seguir las instrucciones en la sección [Importing a Website into Moodle]({{site.baseurl}}/pages/moodle.html)
+
+## Desplegando en Netlify
+
+si desea hacer un despliegue en Netlify, cree una cuenta en Netlify autenticándose con GitHub. Deberá dar permisos a Netlify para que acceda a su cuenta de GitHub.
+
+Configure el despliegue de su repo en Netlify como sigue:
+
+![/assets/images/netlify-config.png]({{ site.baseurl }}/assets/images/netlify-config.png)
+
+Recuerde modificar el `baseurl` en el archivo `_config.yml` a vacío `baseurl: ""` o de otro modo no funcionará correctamente el despliegue en Netlify:
+
+![/assets/images/netlify-despliegue-incorrecto.png]({{ site.baseurl }}/assets/images/netlify-despliegue-incorrecto.png)
+
 
 ## Entrega
 
