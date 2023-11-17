@@ -25,51 +25,49 @@
                             "url": "https://github.com/orgs/ULL-MFP-AET-2324/teams/adrian-sacramento-alu0100817065"
                         }
                     },
-
                     {
-                                            {
-                        "node": {
-                            "name": "adrian-jorge",
-                            "members": {
-                                "totalCount": 1,
-                                "edges": [
-                                    {
-                                        "memberAccessUrl": "https://github.com/orgs/ULL-MFP-AET-2324/people/adrianrsac",
-                                        "node": {
-                                            "name": null,
-                                            "url": "https://github.com/adrianrsac",
-                                            "email": "",
-                                            "login": "adrianrsac",
-                                            "avatarUrl": "https://avatars.githubusercontent.com/u/148857696?v=4"
+                        {
+                            "node": {
+                                "name": "adrian-jorge",
+                                "members": {
+                                    "totalCount": 1,
+                                    "edges": [
+                                        {
+                                            "memberAccessUrl": "https://github.com/orgs/ULL-MFP-AET-2324/people/adrianrsac",
+                                            "node": {
+                                                "name": null,
+                                                "url": "https://github.com/adrianrsac",
+                                                "email": "",
+                                                "login": "adrianrsac",
+                                                "avatarUrl": "https://avatars.githubusercontent.com/u/148857696?v=4"
+                                            }
                                         }
-                                    }
-                                ]
-                            },
-                            "url": "https://github.com/orgs/ULL-MFP-AET-2324/teams/adrian-jorge"
-                        }
-                    },
-                    {
-                        "node": {
-                            "name": "adrian-sacramento-alu0100817065",
-                            "members": {
-                                "totalCount": 1,
-                                "edges": [
-                                    {
-                                        "memberAccessUrl": "https://github.com/orgs/ULL-MFP-AET-2324/people/adrianrsac",
-                                        "node": {
-                                            "name": null,
-                                            "url": "https://github.com/adrianrsac",
-                                            "email": "",
-                                            "login": "adrianrsac",
-                                            "avatarUrl": "https://avatars.githubusercontent.com/u/148857696?v=4"
+                                    ]
+                                },
+                                "url": "https://github.com/orgs/ULL-MFP-AET-2324/teams/adrian-jorge"
+                            }
+                        },
+                        {
+                            "node": {
+                                "name": "adrian-sacramento-alu0100817065",
+                                "members": {
+                                    "totalCount": 1,
+                                    "edges": [
+                                        {
+                                            "memberAccessUrl": "https://github.com/orgs/ULL-MFP-AET-2324/people/adrianrsac",
+                                            "node": {
+                                                "name": null,
+                                                "url": "https://github.com/adrianrsac",
+                                                "email": "",
+                                                "login": "adrianrsac",
+                                                "avatarUrl": "https://avatars.githubusercontent.com/u/148857696?v=4"
+                                            }
                                         }
-                                    }
-                                ]
-                            },
-                            "url": "https://github.com/orgs/ULL-MFP-AET-2324/teams/adrian-sacramento-alu0100817065"
-                        }
-                    },
-
+                                    ]
+                                },
+                                "url": "https://github.com/orgs/ULL-MFP-AET-2324/teams/adrian-sacramento-alu0100817065"
+                            }
+                        },
                         "node": {
                             "name": "airam-gonzalez-hernandez-alu0100615975",
                             "members": {
@@ -342,7 +340,6 @@
                             "url": "https://github.com/orgs/ULL-MFP-AET-2324/teams/jorge-sanchez-tapia-alu0100829952"
                         }
                     },
-
                     {
                         "node": {
                             "name": "miguel-belda-ribera-alu0101681092",
@@ -383,6 +380,27 @@
                                 ]
                             },
                             "url": "https://github.com/orgs/ULL-MFP-AET-2324/teams/paola-gonzalez-colli-alu0100773231"
+                        }
+                    },
+                    {
+                        "node": {
+                            "name": "oscar-garcia-arteaga-alu0100332025",
+                            "members": {
+                                "totalCount": 1,
+                                "edges": [
+                                    {
+                                        "memberAccessUrl": "https://github.com/orgs/ULL-MFP-AET-2324/people/OscarGarciaArteaga",
+                                        "node": {
+                                            "name": null,
+                                            "url": "https://github.com/OscarGarciaArteaga",
+                                            "email": "",
+                                            "login": "OscarGarciaArteaga",
+                                            "avatarUrl": "https://avatars.githubusercontent.com/u/148896260?u=db332e79cdeef57b0db494811c441ccbbeb2a4cd&v=4"
+                                        }
+                                    }
+                                ]
+                            },
+                            "url": "https://github.com/orgs/ULL-MFP-AET-2324/teams/oscar-garcia-arteaga-alu0100332025"
                         }
                     },
                     {
