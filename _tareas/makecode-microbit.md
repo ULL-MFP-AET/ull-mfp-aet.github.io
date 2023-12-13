@@ -166,6 +166,7 @@ Deje evidencias de los requisitos solicitados en la rúbrica
 ### El Pensamiento Computacional en la Educación Secundaria y el Bachillerato
 
 - [Las Ciencias de la Computación en el sistema educativo: Conceptos y Políticas](https://drive.google.com/file/d/1E4IJ_ROXilyqWjDXNwNUTHyxFnbBxP89/view) por Coromoto León, Carmen Elvira Ramos Domínguez, Pedro A. Toledo. JUTE. 2023.
+- [Integración curricular del pensamiento computacional. Una nueva oportunidad para conectar Informática y Matemáticas]({{ site.baseurl }}/assets/pdfs/eduardo-quevedo-pensamiento-computacional.pdf) por Eduardo Quevedo. 2023. XXVII Edición del Seminario "Últimos Avances en Informática”
 - [Ordenación de las Enseñanzas LOMLOE Canarias](https://canarias.fe.ccoo.es/0b18b74e01901c629d90fc0ce17715e8000063.pdf) en <https://www3.gobiernodecanarias.org/medusa/edublog/iescandidomaranteexposito/ordenacion-de-las-ensenanzas-lomloe-canarias/> 21/04/2023. Fernando Concepción.
 - [Pensamiento computacional en todas las etapas no universitarias: análisis de la LOMLOE](https://programamos.es/pensamiento-computacional-en-todas-las-etapas-no-universitarias-analisis-de-la-lomloe/). Jesús Moreno León. 2021.
 - [Aula Cultural de Pensamiento Computacional](https://sites.google.com/a/ull.edu.es/pensamiento-computacional/) de la Universidad de La Laguna (ULL) 
